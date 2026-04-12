@@ -6,13 +6,16 @@ PUBLIC_ROOT = Path('/home/lukafinzgar/projects/.caller_tasks/_public/artists')
 ARTISTS_BASE = Path('/home/lukafinzgar/projects/.caller_tasks/artists')
 REPO_ROOT = Path('/home/lukafinzgar/projects/.caller_tasks/artists-infographic-archive')
 SITE_DIR = REPO_ROOT / 'site'
+DOCS_DIR = REPO_ROOT / 'docs'
 
 SITE_DIR.mkdir(parents=True, exist_ok=True)
+DOCS_DIR.mkdir(parents=True, exist_ok=True)
 
-# Copy public site artifacts
+# Copy public site artifacts to both archival site/ and GitHub Pages docs/
 for path in PUBLIC_ROOT.iterdir():
     if path.is_file():
         shutil.copy2(path, SITE_DIR / path.name)
+        shutil.copy2(path, DOCS_DIR / path.name)
 
 # Copy generator/support files worth preserving
 for name in ['rebuild_gallery.py', 'sync_archive_to_repo.py']:
@@ -26,7 +29,8 @@ if not readme.exists():
         '# Artists Infographic Archive\n\n'
         'Daily generated Slovenian kid-friendly artist/scientist birthday infographics.\n\n'
         'Contents:\n'
-        '- `site/` public static archive (images + HTML + metadata)\n'
+        '- `site/` archive copy of the public static site\n'
+        '- `docs/` GitHub Pages published copy of the static site\n'
         '- `rebuild_gallery.py` gallery builder used by the local workflow\n'
         '- `sync_archive_to_repo.py` sync helper that copies the latest public artifacts into this repo\n',
         encoding='utf-8'
