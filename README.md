@@ -3,6 +3,7 @@
 Daily generated Slovenian kid-friendly artist/scientist birthday infographics.
 
 Contents:
-- `site/` public static archive (images + HTML + metadata)
+- `docs/` canonical GitHub-pushed static site (images + HTML + metadata)
+- `site/` in-repo mirror backup of the generated static site
 - `rebuild_gallery.py` gallery builder used by the local workflow
-- `sync_archive_to_repo.py` sync helper that copies the latest public artifacts into this repo
+- `sync_archive_to_repo.py` helper that mirrors docs/ into other repo files

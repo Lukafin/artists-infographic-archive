@@ -8,7 +8,7 @@ from datetime import datetime
 
 BASE = Path('/home/lukafinzgar/projects/.caller_tasks/artists')
 RUNS_DIR = BASE / 'runs'
-PUBLIC_ROOT = Path('/home/lukafinzgar/projects/.caller_tasks/_public/artists')
+PUBLIC_ROOT = Path('/home/lukafinzgar/projects/.caller_tasks/artists-infographic-archive/docs')
 LEGACY_IMPORTED = BASE / 'imported_legacy_entries.json'
 LATEST_META = PUBLIC_ROOT / 'latest.json'
 PER_PAGE = 10

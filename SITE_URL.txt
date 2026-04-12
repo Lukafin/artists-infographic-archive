@@ -1,1 +1,2 @@
-Public site: https://raspberrypi.tail7e067c.ts.net/artists/
+GitHub repo: https://github.com/Lukafin/artists-infographic-archive
+GitHub docs folder: https://github.com/Lukafin/artists-infographic-archive/tree/main/docs

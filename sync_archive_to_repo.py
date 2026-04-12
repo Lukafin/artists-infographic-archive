@@ -2,20 +2,19 @@
 import shutil
 from pathlib import Path
 
-PUBLIC_ROOT = Path('/home/lukafinzgar/projects/.caller_tasks/_public/artists')
 ARTISTS_BASE = Path('/home/lukafinzgar/projects/.caller_tasks/artists')
 REPO_ROOT = Path('/home/lukafinzgar/projects/.caller_tasks/artists-infographic-archive')
-SITE_DIR = REPO_ROOT / 'site'
 DOCS_DIR = REPO_ROOT / 'docs'
+SITE_DIR = REPO_ROOT / 'site'
+GITHUB_REPO_URL = 'https://github.com/Lukafin/artists-infographic-archive'
 
-SITE_DIR.mkdir(parents=True, exist_ok=True)
 DOCS_DIR.mkdir(parents=True, exist_ok=True)
+SITE_DIR.mkdir(parents=True, exist_ok=True)
 
-# Copy public site artifacts to both archival site/ and GitHub Pages docs/
-for path in PUBLIC_ROOT.iterdir():
+# Mirror docs/ into site/ as an in-repo backup; no files are copied via the old RPi public root anymore.
+for path in DOCS_DIR.iterdir():
     if path.is_file():
         shutil.copy2(path, SITE_DIR / path.name)
-        shutil.copy2(path, DOCS_DIR / path.name)
 
 # Copy generator/support files worth preserving
 for name in ['rebuild_gallery.py', 'sync_archive_to_repo.py']:
@@ -24,24 +23,21 @@ for name in ['rebuild_gallery.py', 'sync_archive_to_repo.py']:
         shutil.copy2(src, REPO_ROOT / name)
 
 readme = REPO_ROOT / 'README.md'
-if not readme.exists():
-    readme.write_text(
-        '# Artists Infographic Archive\n\n'
-        'Daily generated Slovenian kid-friendly artist/scientist birthday infographics.\n\n'
-        'Contents:\n'
-        '- `site/` archive copy of the public static site\n'
-        '- `docs/` GitHub Pages published copy of the static site\n'
-        '- `rebuild_gallery.py` gallery builder used by the local workflow\n'
-        '- `sync_archive_to_repo.py` sync helper that copies the latest public artifacts into this repo\n',
-        encoding='utf-8'
-    )
+readme.write_text(
+    '# Artists Infographic Archive\n\n'
+    'Daily generated Slovenian kid-friendly artist/scientist birthday infographics.\n\n'
+    'Contents:\n'
+    '- `docs/` canonical GitHub-pushed static site (images + HTML + metadata)\n'
+    '- `site/` in-repo mirror backup of the generated static site\n'
+    '- `rebuild_gallery.py` gallery builder used by the local workflow\n'
+    '- `sync_archive_to_repo.py` helper that mirrors docs/ into other repo files\n',
+    encoding='utf-8'
+)
 
-# Small landing page note for GitHub viewers if site/index.html exists
-index_src = SITE_DIR / 'index.html'
-if index_src.exists():
-    (REPO_ROOT / 'SITE_URL.txt').write_text(
-        'Public site: https://raspberrypi.tail7e067c.ts.net/artists/\n',
-        encoding='utf-8'
-    )
+(REPO_ROOT / 'SITE_URL.txt').write_text(
+    f'GitHub repo: {GITHUB_REPO_URL}\n'
+    f'GitHub docs folder: {GITHUB_REPO_URL}/tree/main/docs\n',
+    encoding='utf-8'
+)
 
-print(f'Synced public archive into {REPO_ROOT}')
+print(f'Synced GitHub archive artifacts inside {REPO_ROOT}')
