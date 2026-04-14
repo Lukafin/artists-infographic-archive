@@ -1,15 +1,14 @@
 {
-  "date": "2026-04-13",
-  "person": "Robert Watson-Watt",
-  "image_filename": "RobertWatsonWatt.png",
+  "date": "2026-04-14",
+  "person": "Christiaan Huygens",
+  "image_filename": "ChristiaanHuygens.png",
   "sources": [
-    "https://www.britannica.com/biography/Robert-Alexander-Watson-Watt",
-    "https://en.wikipedia.org/wiki/Robert_Watson-Watt",
-    "https://www.historic-uk.com/HistoryUK/HistoryofScotland/Robert-Watson-Watt/",
-    "https://www.undiscoveredscotland.co.uk/usbiography/w/robertwatsonwatt.html",
-    "https://lemelson.mit.edu/resources/robert-wattson-watt"
+    "https://en.wikipedia.org/wiki/Christiaan_Huygens",
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Huygens/",
+    "https://www.britannica.com/biography/Christiaan-Huygens",
+    "https://www.newworldencyclopedia.org/entry/Christiaan_Huygens"
   ],
-  "total_entries": 79,
+  "total_entries": 80,
   "total_pages": 8,
   "per_page": 10
 }
