@@ -1,13 +1,13 @@
 {
-  "date": "2026-04-15",
-  "person": "Leonardo da Vinci",
-  "image_filename": "LeonardoDaVinci.png",
+  "date": "2026-04-16",
+  "person": "Wilbur Wright",
+  "image_filename": "WilburWright.png",
   "sources": [
-    "https://en.wikipedia.org/wiki/Leonardo_da_Vinci",
-    "https://www.britannica.com/biography/Leonardo-da-Vinci",
-    "https://mathshistory.st-andrews.ac.uk/Biographies/Leonardo/"
+    "https://en.wikipedia.org/wiki/Wilbur_Wright",
+    "https://www.britannica.com/biography/Wilbur-Wright",
+    "https://www.nps.gov/people/wilbur-wright.htm"
   ],
-  "total_entries": 81,
-  "total_pages": 8,
+  "total_entries": 82,
+  "total_pages": 9,
   "per_page": 10
 }
