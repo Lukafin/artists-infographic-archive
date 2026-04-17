@@ -1,13 +1,14 @@
 {
-  "date": "2026-04-16",
-  "person": "Wilbur Wright",
-  "image_filename": "WilburWright.png",
+  "date": "2026-04-17",
+  "person": "Giovanni Battista Riccioli",
+  "image_filename": "GiovanniBattistaRiccioli.png",
   "sources": [
-    "https://en.wikipedia.org/wiki/Wilbur_Wright",
-    "https://www.britannica.com/biography/Wilbur-Wright",
-    "https://www.nps.gov/people/wilbur-wright.htm"
+    "https://en.wikipedia.org/wiki/Giovanni_Battista_Riccioli",
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Riccioli/",
+    "https://www.britannica.com/biography/Giovanni-Battista-Riccioli",
+    "https://www.lindahall.org/about/news/scientist-of-the-day/giovanni-battista-riccioli/"
   ],
-  "total_entries": 82,
+  "total_entries": 83,
   "total_pages": 9,
   "per_page": 10
 }
