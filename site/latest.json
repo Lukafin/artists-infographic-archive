@@ -1,14 +1,13 @@
 {
-  "date": "2026-04-18",
-  "person": "Leopold Stokowski",
-  "image_filename": "LeopoldStokowski.png",
+  "date": "2026-04-19",
+  "person": "Fernando Botero",
+  "image_filename": "FernandoBotero.png",
   "sources": [
-    "https://en.wikipedia.org/wiki/Leopold_Stokowski",
-    "https://www.britannica.com/biography/Leopold-Stokowski",
-    "https://d23.com/a-to-z/stokowski-leopold/",
-    "https://en.wikipedia.org/wiki/Fantasia_(1940_film)"
+    "https://en.wikipedia.org/wiki/Fernando_Botero",
+    "https://www.britannica.com/biography/Fernando-Botero",
+    "https://www.theartstory.org/artist/botero-fernando/"
   ],
-  "total_entries": 84,
+  "total_entries": 85,
   "total_pages": 9,
   "per_page": 10
 }
