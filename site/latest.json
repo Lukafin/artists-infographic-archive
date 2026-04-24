@@ -1,14 +1,14 @@
 {
-  "date": "2026-04-23",
-  "person": "Max Planck",
-  "image_filename": "MaxPlanck.png",
+  "date": "2026-04-24",
+  "person": "David Blackwell",
+  "image_filename": "DavidBlackwell.png",
   "sources": [
-    "https://en.wikipedia.org/wiki/Max_Planck",
-    "https://www.britannica.com/biography/Max-Planck",
-    "https://www.nobelprize.org/prizes/physics/1918/planck/biographical/",
-    "https://www.mpg.de/19730582/75-years-max-planck-society"
+    "https://en.wikipedia.org/wiki/David_Blackwell",
+    "https://www.britannica.com/biography/David-Blackwell",
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Blackwell/",
+    "https://en.wikipedia.org/api/rest_v1/page/summary/David_Blackwell"
   ],
-  "total_entries": 89,
+  "total_entries": 90,
   "total_pages": 9,
   "per_page": 10
 }
