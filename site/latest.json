@@ -1,14 +1,13 @@
 {
-  "date": "2026-04-24",
-  "person": "David Blackwell",
-  "image_filename": "DavidBlackwell.png",
+  "date": "2026-04-25",
+  "person": "Guglielmo Marconi",
+  "image_filename": "GuglielmoMarconi.png",
   "sources": [
-    "https://en.wikipedia.org/wiki/David_Blackwell",
-    "https://www.britannica.com/biography/David-Blackwell",
-    "https://mathshistory.st-andrews.ac.uk/Biographies/Blackwell/",
-    "https://en.wikipedia.org/api/rest_v1/page/summary/David_Blackwell"
+    "https://en.wikipedia.org/wiki/Guglielmo_Marconi",
+    "https://www.britannica.com/biography/Guglielmo-Marconi",
+    "https://www.nobelprize.org/prizes/physics/1909/marconi/facts/"
   ],
-  "total_entries": 90,
+  "total_entries": 91,
   "total_pages": 9,
   "per_page": 10
 }
