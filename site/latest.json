@@ -1,13 +1,13 @@
 {
-  "date": "2026-04-25",
-  "person": "Guglielmo Marconi",
-  "image_filename": "GuglielmoMarconi.png",
+  "date": "2026-04-26",
+  "person": "John James Audubon",
+  "image_filename": "JohnJamesAudubon.png",
   "sources": [
-    "https://en.wikipedia.org/wiki/Guglielmo_Marconi",
-    "https://www.britannica.com/biography/Guglielmo-Marconi",
-    "https://www.nobelprize.org/prizes/physics/1909/marconi/facts/"
+    "https://en.wikipedia.org/wiki/John_James_Audubon",
+    "https://www.britannica.com/biography/John-James-Audubon",
+    "https://www.biography.com/scientists/john-james-audubon"
   ],
-  "total_entries": 91,
-  "total_pages": 9,
+  "total_entries": 92,
+  "total_pages": 10,
   "per_page": 10
 }
