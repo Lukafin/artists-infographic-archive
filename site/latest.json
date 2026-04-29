@@ -2,6 +2,10 @@
   "date": "2026-04-29",
   "person": "Duke Ellington",
   "image_filename": "DukeEllington.png",
+  "category": "artist",
+  "category_label": "Umetnik",
+  "language": "sl",
+  "language_label": "SL",
   "sources": [
     "https://en.wikipedia.org/wiki/Duke_Ellington",
     "https://www.britannica.com/biography/Duke-Ellington",
