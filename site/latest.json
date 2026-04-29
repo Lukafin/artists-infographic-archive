@@ -1,13 +1,14 @@
 {
-  "date": "2026-04-28",
-  "person": "Jan Oort",
-  "image_filename": "JanOort.png",
+  "date": "2026-04-29",
+  "person": "Duke Ellington",
+  "image_filename": "DukeEllington.png",
   "sources": [
-    "https://en.wikipedia.org/wiki/Jan_Oort",
-    "https://www.britannica.com/biography/Jan-Oort",
-    "https://earthsky.org/space/jan-oort-biography-contributions-oort-cloud/"
+    "https://en.wikipedia.org/wiki/Duke_Ellington",
+    "https://www.britannica.com/biography/Duke-Ellington",
+    "https://www.biography.com/musicians/duke-ellington",
+    "https://www.allmusic.com/artist/duke-ellington-mn0000120323/biography"
   ],
-  "total_entries": 94,
+  "total_entries": 95,
   "total_pages": 10,
   "per_page": 10
 }
