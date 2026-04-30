@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 95,
+    "total_entries": 96,
     "categories": [
       "artist",
       "scientist"
@@ -9,14 +9,43 @@
       "sl"
     ],
     "category_counts": {
-      "artist": 17,
-      "scientist": 78
+      "scientist": 79,
+      "artist": 17
     },
     "language_counts": {
-      "sl": 95
+      "sl": 96
     }
   },
   "entries": [
+    {
+      "date": "2026-04-30",
+      "person": "Carl Friedrich Gauss",
+      "filename": "CarlFriedrichGauss.png",
+      "image_filename": "CarlFriedrichGauss.png",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss",
+        "https://www.britannica.com/biography/Carl-Friedrich-Gauss",
+        "https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/"
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss",
+        "https://www.britannica.com/biography/Carl-Friedrich-Gauss",
+        "https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/"
+      ],
+      "category": "scientist",
+      "openrouter_model": "openai/gpt-5.4-image-2",
+      "openrouter_resolved_model": "openai/gpt-5.4-image-2-20260421",
+      "image_mime": "image/png",
+      "image_converted_to_png": false,
+      "github_repo_url": "https://github.com/Lukafin/artists-infographic-archive",
+      "_kind": "native",
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language": "sl",
+      "language_label": "SL",
+      "source_count": 3,
+      "search_text": "carl friedrich gauss scientist znanstvenik sl"
+    },
     {
       "date": "2026-04-29",
       "person": "Duke Ellington",
