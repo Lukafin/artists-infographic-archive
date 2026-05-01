@@ -1,13 +1,13 @@
 {
-  "date": "2026-04-30",
-  "person": "Marie Curie",
-  "image_filename": "MarieCurie.png",
+  "date": "2026-05-01",
+  "person": "Santiago Ramón y Cajal",
+  "image_filename": "SantiagoRamonYCajal.png",
   "sources": [
-    "https://en.wikipedia.org/wiki/Marie_Curie",
-    "https://www.britannica.com/biography/Marie-Curie",
-    "https://www.nobelprize.org/prizes/physics/1903/marie-curie/biographical/"
+    "https://en.wikipedia.org/wiki/Santiago_Ram%C3%B3n_y_Cajal",
+    "https://www.britannica.com/biography/Santiago-Ramon-y-Cajal",
+    "https://www.nobelprize.org/prizes/medicine/1906/cajal/biographical/"
   ],
-  "total_entries": 96,
+  "total_entries": 97,
   "total_pages": 10,
   "per_page": 10
 }
