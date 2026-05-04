@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 105,
+    "total_entries": 106,
     "categories": [
       "artist",
       "scientist",
@@ -12,13 +12,13 @@
       "sl"
     ],
     "category_counts": {
-      "scientist": 84,
+      "scientist": 85,
       "artist": 19,
       "sport": 2
     },
     "language_counts": {
       "it": 1,
-      "sl": 101,
+      "sl": 102,
       "en": 3
     }
   },
@@ -298,6 +298,57 @@
       "language_label": "EN",
       "source_count": 1,
       "search_text": "frida kahlo artist umetnik en"
+    },
+    {
+      "date": "2026-05-04",
+      "person": "Abdus Salam",
+      "filename": "AbdusSalam.jpg",
+      "image_filename": "AbdusSalam.jpg",
+      "sources": [
+        "https://www.nobelprize.org/prizes/physics/1979/salam/facts/",
+        "https://www.britannica.com/biography/Abdus-Salam",
+        "https://www.ictp.it/about/abdus-salam",
+        "https://en.wikipedia.org/wiki/Abdus_Salam"
+      ],
+      "title": "Abdus Salam — sile, ki povezujejo vesolje",
+      "summary": "Slovenska otroška infografika o Abdusu Salamu, elektrosibki teoriji, Nobelovi nagradi in znanosti, ki povezuje svet.",
+      "age_suitability_details": {
+        "age_6": "Abdus Salam je iskal vzorce v naravi in pokazal, da se nekatere sile lahko povežejo kot dva žarka svetlobe.",
+        "age_13": "Salam je pomembno prispeval k elektrosibki teoriji, ki poveže elektromagnetno in šibko silo; za to je leta 1979 prejel Nobelovo nagrado za fiziko skupaj z Glashowom in Weinbergom.",
+        "adult": "Abdus Salam je bil ključni soustvarjalec elektrosibke unifikacije v standardnem modelu delcev ter pomemben zagovornik znanstvene infrastrukture za raziskovalce iz držav v razvoju, zlasti prek ICTP v Trstu."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "sl",
+      "assignment_id": "fe8e0c6c-7d49-4b5a-a15a-b1d88c4a931b",
+      "_kind": "native",
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "source_count": 4,
+      "search_text": "abdus salam scientist znanstvenik sl"
     },
     {
       "date": "2026-05-04",
