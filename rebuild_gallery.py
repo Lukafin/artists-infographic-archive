@@ -349,6 +349,9 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     .pill {{ display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:999px; background:var(--chip); border:1px solid #e4dbce; font-size:14px; color:#3f3933; text-decoration:none; }}
     .pill.primary {{ background:var(--accent); border-color:var(--accent); color:#fff; font-weight:700; }}
     .pill.soft {{ background:rgba(255,255,255,.72); }}
+    .support-note {{ max-width:360px; text-align:right; color:var(--muted); font-size:13px; line-height:1.35; }}
+    .support-note a {{ color:var(--accent); font-weight:800; text-decoration:none; }}
+    .support-note a:hover {{ text-decoration:underline; }}
     .hero {{ margin-top:24px; display:grid; grid-template-columns:1.1fr .9fr; gap:20px; align-items:stretch; }}
     .hero-copy {{ padding:34px 34px 30px; display:flex; flex-direction:column; justify-content:space-between; }}
     .eyebrow {{ font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:#8a5c09; display:inline-flex; align-items:center; gap:8px; }}
@@ -414,6 +417,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     }}
     @media (max-width:700px) {{
       .nav {{ position:static; flex-direction:column; align-items:stretch; }}
+      .support-note {{ max-width:none; text-align:left; }}
       .archive-top, .footer {{ flex-direction:column; align-items:flex-start; }}
       .pagination {{ justify-content:flex-start; }}
       .hero-copy {{ padding:26px; }}
@@ -435,6 +439,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
           <p>Dnevno ustvarjene slovenske infografike za otroke</p>
         </div>
       </div>
+      <p class="support-note"><a href="https://ko-fi.com/" target="_blank" rel="noopener noreferrer">Ko-fi</a>: pomagaj plačati swarm backend, ki razdeljuje delo za dnevne infografike.</p>
     </header>
     {featured_html}
     <section class="archive-shell">
