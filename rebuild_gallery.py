@@ -439,7 +439,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
           <p>Dnevno ustvarjene slovenske infografike za otroke</p>
         </div>
       </div>
-      <p class="support-note"><a href="https://ko-fi.com/" target="_blank" rel="noopener noreferrer">Ko-fi</a>: pomagaj plačati swarm backend, ki razdeljuje delo za dnevne infografike.</p>
+      <p class="support-note"><a href="https://ko-fi.com/lukafinzgar" target="_blank" rel="noopener noreferrer">Ko-fi</a>: pomagaj plačati swarm backend, ki razdeljuje delo za dnevne infografike.</p>
     </header>
     {featured_html}
     <section class="archive-shell">
