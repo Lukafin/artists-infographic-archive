@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 99,
+    "total_entries": 100,
     "categories": [
       "artist",
       "scientist"
@@ -10,10 +10,10 @@
     ],
     "category_counts": {
       "artist": 18,
-      "scientist": 81
+      "scientist": 82
     },
     "language_counts": {
-      "sl": 99
+      "sl": 100
     }
   },
   "entries": [
@@ -39,6 +39,29 @@
       "language_label": "SL",
       "source_count": 4,
       "search_text": "vincent van gogh artist umetnik sl"
+    },
+    {
+      "date": "2026-05-04",
+      "person": "Aaron Sopher",
+      "filename": "AaronSopher.png",
+      "image_filename": "AaronSopher.png",
+      "sources": [
+        "https://en.wikipedia.org/api/rest_v1/page/summary/Aaron_Sopher",
+        "https://www.wikidata.org/wiki/Special:EntityData/Q14107.json",
+        "https://www.jmcohen.com/artist/Aaron_Sopher/biography/",
+        "https://artbma.contentdm.oclc.org/digital/collection/p16075coll1/id/0/"
+      ],
+      "title": "Aaron Sopher — slovenska otroška infografika",
+      "summary": "Slovenska otroška infografika o Aaronu Sopherju, opazovalcu baltimorskih ulic, hitrih risbah s peresom, časopisnih ilustracijah ter tušu in akvarelu.",
+      "category": "scientist",
+      "language": "sl",
+      "assignment_id": "6c902394-475c-4f12-b300-0dd70027b9d0",
+      "_kind": "native",
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "source_count": 4,
+      "search_text": "aaron sopher scientist znanstvenik sl"
     },
     {
       "date": "2026-05-03",
