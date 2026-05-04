@@ -15,6 +15,8 @@ LEGACY_IMPORTED = BASE / 'imported_legacy_entries.json'
 LATEST_META = PUBLIC_ROOT / 'latest.json'
 ENTRIES_INDEX = PUBLIC_ROOT / 'entries.json'
 PER_PAGE = 10
+KOFI_ICON_FILENAME = 'kofi_stroke_cup.svg'
+KOFI_ICON_SVG = '''<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 13.12"><defs><style>.cls-1{fill:#fff;stroke:#323a47;stroke-linecap:round;stroke-linejoin:round;}.cls-2{fill:#ff5e5b;}</style></defs><title>Kofi_logo_RGB_Outline copy</title><g id="layer1"><g id="g40"><g id="g4184"><path id="path38" class="cls-1" d="M15.54,7.29a5.87,5.87,0,0,1-1.33,0V2.82h.9a2,2,0,0,1,2.06,2.09,2.21,2.21,0,0,1-1.63,2.38m3.87-3.15a4.34,4.34,0,0,0-1.78-2.8A4.8,4.8,0,0,0,14.91.5H1.17a.72.72,0,0,0-.67.71s0,.15,0,.15,0,6.08,0,9.33A2,2,0,0,0,2.58,12.6l9.28,0a3,3,0,0,0,.42-.05,2.65,2.65,0,0,0,1.87-2.91c3.44.19,5.87-2.24,5.26-5.47"/><path id="path42" class="cls-2" d="M7.24,10.08a.19.19,0,0,0,.24,0s2.19-2,3.17-3.14a2.1,2.1,0,0,0-.57-3.41,2.57,2.57,0,0,0-2.74.76A2.41,2.41,0,0,0,3.89,4,2.43,2.43,0,0,0,4,6.88C4.49,7.6,6.8,9.66,7.15,10l.09.07"/></g></g></g></svg>'''
 
 PUBLIC_ROOT.mkdir(parents=True, exist_ok=True)
 RUNS_DIR.mkdir(parents=True, exist_ok=True)
@@ -352,6 +354,8 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     .support-note {{ max-width:360px; text-align:right; color:var(--muted); font-size:13px; line-height:1.35; }}
     .support-note a {{ color:var(--accent); font-weight:800; text-decoration:none; }}
     .support-note a:hover {{ text-decoration:underline; }}
+    .kofi-link {{ display:inline-flex; align-items:center; gap:5px; }}
+    .kofi-icon {{ width:22px; height:auto; display:inline-block; }}
     .hero {{ margin-top:24px; display:grid; grid-template-columns:1.1fr .9fr; gap:20px; align-items:stretch; }}
     .hero-copy {{ padding:34px 34px 30px; display:flex; flex-direction:column; justify-content:space-between; }}
     .eyebrow {{ font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:#8a5c09; display:inline-flex; align-items:center; gap:8px; }}
@@ -439,7 +443,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
           <p>Dnevno ustvarjene slovenske infografike za otroke</p>
         </div>
       </div>
-      <p class="support-note"><a href="https://ko-fi.com/lukafinzgar" target="_blank" rel="noopener noreferrer">Ko-fi</a>: pomagaj plačati swarm backend, ki razdeljuje delo za dnevne infografike.</p>
+      <p class="support-note"><a class="kofi-link" href="https://ko-fi.com/lukafinzgar" target="_blank" rel="noopener noreferrer"><img class="kofi-icon" src="kofi_stroke_cup.svg" alt="">Ko-fi</a>: pomagaj pokriti stroške z gostovanjem.</p>
     </header>
     {featured_html}
     <section class="archive-shell">
@@ -488,6 +492,7 @@ if featured and featured.get('date'):
     archive_entries = [e for e in archive_entries if e.get('date') != featured.get('date')]
 
 ENTRIES_INDEX.write_text(json.dumps(entries_index, ensure_ascii=False, indent=2), encoding='utf-8')
+(PUBLIC_ROOT / KOFI_ICON_FILENAME).write_text(KOFI_ICON_SVG + '\n', encoding='utf-8')
 
 total_pages = max(1, math.ceil(len(archive_entries) / PER_PAGE))
 
