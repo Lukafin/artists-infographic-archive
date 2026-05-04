@@ -1,72 +1,22 @@
 {
   "summary": {
-    "total_entries": 106,
+    "total_entries": 102,
     "categories": [
       "artist",
-      "scientist",
-      "sport"
+      "scientist"
     ],
     "languages": [
-      "en",
-      "it",
       "sl"
     ],
     "category_counts": {
-      "scientist": 85,
-      "artist": 19,
-      "sport": 2
+      "artist": 18,
+      "scientist": 84
     },
     "language_counts": {
-      "it": 1,
-      "sl": 102,
-      "en": 3
+      "sl": 102
     }
   },
   "entries": [
-    {
-      "date": "2026-12-10",
-      "person": "Birthday Match Hero",
-      "filename": "BirthdayMatchHero.png",
-      "image_filename": "BirthdayMatchHero.png",
-      "sources": [
-        "https://www.wikidata.org/wiki/Q7259"
-      ],
-      "title": "Birthday Match Hero — archived",
-      "summary": "Birthday-priority scientist entry.",
-      "age_suitability_details": {},
-      "age_suitability_levels": [
-        {
-          "key": "age_6",
-          "label": "Age 6",
-          "target_age": 6,
-          "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
-        },
-        {
-          "key": "age_13",
-          "label": "Age 13",
-          "target_age": 13,
-          "complexity": "intermediate",
-          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
-        },
-        {
-          "key": "adult",
-          "label": "Adults",
-          "target_age": null,
-          "complexity": "advanced",
-          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
-        }
-      ],
-      "category": "scientist",
-      "language": "it",
-      "assignment_id": "e12552c6-fd34-4039-84cc-825398a57929",
-      "_kind": "native",
-      "category_label": "Znanstvenik",
-      "category_class": "science",
-      "language_label": "IT",
-      "source_count": 1,
-      "search_text": "birthday match hero scientist znanstvenik it"
-    },
     {
       "date": "2026-05-04",
       "person": "Vincent van Gogh",
@@ -110,99 +60,6 @@
       "language_label": "SL",
       "source_count": 1,
       "search_text": "vincent van gogh artist umetnik sl"
-    },
-    {
-      "date": "2026-05-04",
-      "person": "Serena Williams",
-      "filename": "SerenaWilliams.png",
-      "image_filename": "SerenaWilliams.png",
-      "sources": [
-        "https://example.com/serena"
-      ],
-      "title": "Serena Williams — tennis champion",
-      "summary": "Sport archive entry.",
-      "age_suitability_details": {},
-      "age_suitability_levels": [
-        {
-          "key": "age_6",
-          "label": "Age 6",
-          "target_age": 6,
-          "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
-        },
-        {
-          "key": "age_13",
-          "label": "Age 13",
-          "target_age": 13,
-          "complexity": "intermediate",
-          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
-        },
-        {
-          "key": "adult",
-          "label": "Adults",
-          "target_age": null,
-          "complexity": "advanced",
-          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
-        }
-      ],
-      "category": "sport",
-      "language": "en",
-      "assignment_id": "08551263-9315-4845-bfae-4366ae8638cb",
-      "_kind": "native",
-      "category_label": "Športnik",
-      "category_class": "sport",
-      "language_label": "EN",
-      "source_count": 1,
-      "search_text": "serena williams sport športnik en"
-    },
-    {
-      "date": "2026-05-04",
-      "person": "Michael Jordan",
-      "filename": "MichaelJordan.png",
-      "image_filename": "MichaelJordan.png",
-      "sources": [
-        "https://example.com/jordan-notes",
-        "https://example.com/jordan-biography"
-      ],
-      "title": "Michael Jordan — basketball icon",
-      "summary": "English sports archive entry.",
-      "age_suitability_details": {
-        "age_6": "Michael Jordan was a basketball star who jumped high, worked hard, and helped his team win big games.",
-        "age_13": "Michael Jordan became a global sports icon through six NBA championships, elite scoring, and a competitive style that changed basketball culture.",
-        "adult": "Michael Jordan combined extraordinary athletic performance, branding power, and competitive leadership to reshape the NBA as a global entertainment business."
-      },
-      "age_suitability_levels": [
-        {
-          "key": "age_6",
-          "label": "Age 6",
-          "target_age": 6,
-          "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
-        },
-        {
-          "key": "age_13",
-          "label": "Age 13",
-          "target_age": 13,
-          "complexity": "intermediate",
-          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
-        },
-        {
-          "key": "adult",
-          "label": "Adults",
-          "target_age": null,
-          "complexity": "advanced",
-          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
-        }
-      ],
-      "category": "sport",
-      "language": "en",
-      "assignment_id": "20e74b9d-ac85-40aa-af96-59731387b3d1",
-      "_kind": "native",
-      "category_label": "Športnik",
-      "category_class": "sport",
-      "language_label": "EN",
-      "source_count": 2,
-      "search_text": "michael jordan sport športnik en"
     },
     {
       "date": "2026-05-04",
@@ -254,50 +111,6 @@
       "language_label": "SL",
       "source_count": 4,
       "search_text": "louis pasteur scientist znanstvenik sl"
-    },
-    {
-      "date": "2026-05-04",
-      "person": "Frida Kahlo",
-      "filename": "FridaKahlo.png",
-      "image_filename": "FridaKahlo.png",
-      "sources": [
-        "https://example.com/frida"
-      ],
-      "title": "Frida Kahlo — bold self-portraits",
-      "summary": "Artist archive entry.",
-      "age_suitability_details": {},
-      "age_suitability_levels": [
-        {
-          "key": "age_6",
-          "label": "Age 6",
-          "target_age": 6,
-          "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
-        },
-        {
-          "key": "age_13",
-          "label": "Age 13",
-          "target_age": 13,
-          "complexity": "intermediate",
-          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
-        },
-        {
-          "key": "adult",
-          "label": "Adults",
-          "target_age": null,
-          "complexity": "advanced",
-          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
-        }
-      ],
-      "category": "artist",
-      "language": "en",
-      "assignment_id": "6e8c9844-f60b-4e11-a2c6-6c80aaba942b",
-      "_kind": "native",
-      "category_label": "Umetnik",
-      "category_class": "artist",
-      "language_label": "EN",
-      "source_count": 1,
-      "search_text": "frida kahlo artist umetnik en"
     },
     {
       "date": "2026-05-04",
