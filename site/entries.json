@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 96,
+    "total_entries": 99,
     "categories": [
       "artist",
       "scientist"
@@ -9,73 +9,123 @@
       "sl"
     ],
     "category_counts": {
-      "scientist": 79,
-      "artist": 17
+      "artist": 18,
+      "scientist": 81
     },
     "language_counts": {
-      "sl": 96
+      "sl": 99
     }
   },
   "entries": [
     {
-      "date": "2026-04-30",
-      "person": "Carl Friedrich Gauss",
-      "filename": "CarlFriedrichGauss.png",
-      "image_filename": "CarlFriedrichGauss.png",
+      "date": "2026-05-04",
+      "person": "Vincent van Gogh",
+      "filename": "VincentVanGogh.png",
+      "image_filename": "VincentVanGogh.png",
       "sources": [
-        "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss",
-        "https://www.britannica.com/biography/Carl-Friedrich-Gauss",
-        "https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/"
+        "https://en.wikipedia.org/api/rest_v1/page/summary/Vincent_van_Gogh",
+        "https://www.britannica.com/biography/Vincent-van-Gogh",
+        "https://www.vangoghmuseum.nl/en/art-and-stories/vincents-life-1853-1890",
+        "https://www.wikidata.org/wiki/Special:EntityData/Q5582.json"
       ],
-      "source_urls": [
-        "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss",
-        "https://www.britannica.com/biography/Carl-Friedrich-Gauss",
-        "https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/"
-      ],
-      "category": "scientist",
-      "openrouter_model": "openai/gpt-5.4-image-2",
-      "openrouter_resolved_model": "openai/gpt-5.4-image-2-20260421",
-      "image_mime": "image/png",
-      "image_converted_to_png": false,
-      "github_repo_url": "https://github.com/Lukafin/artists-infographic-archive",
-      "_kind": "native",
-      "category_label": "Znanstvenik",
-      "category_class": "science",
-      "language": "sl",
-      "language_label": "SL",
-      "source_count": 3,
-      "search_text": "carl friedrich gauss scientist znanstvenik sl"
-    },
-    {
-      "date": "2026-04-29",
-      "person": "Duke Ellington",
-      "filename": "DukeEllington.png",
-      "image_filename": "DukeEllington.png",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Duke_Ellington",
-        "https://www.britannica.com/biography/Duke-Ellington",
-        "https://www.biography.com/musicians/duke-ellington",
-        "https://www.allmusic.com/artist/duke-ellington-mn0000120323/biography"
-      ],
-      "source_urls": [
-        "https://en.wikipedia.org/wiki/Duke_Ellington",
-        "https://www.britannica.com/biography/Duke-Ellington",
-        "https://www.biography.com/musicians/duke-ellington",
-        "https://www.allmusic.com/artist/duke-ellington-mn0000120323/biography"
-      ],
+      "title": "Vincent van Gogh — slovenska otroška infografika",
+      "summary": "Slovenska otroška infografika o Vincentu van Goghu, njegovih sončnicah, zvezdnem nebu, živih potezah čopiča in pismih bratu Theu.",
       "category": "artist",
-      "openrouter_model": "openai/gpt-5.4-image-2",
-      "openrouter_resolved_model": "openai/gpt-5.4-image-2-20260421",
-      "image_mime": "image/png",
-      "image_converted_to_png": false,
-      "github_repo_url": "https://github.com/Lukafin/artists-infographic-archive",
+      "language": "sl",
+      "assignment_id": "ca34eeb7-35d9-406d-8798-9dc71efc9aee",
       "_kind": "native",
       "category_label": "Umetnik",
       "category_class": "artist",
-      "language": "sl",
       "language_label": "SL",
       "source_count": 4,
-      "search_text": "duke ellington artist umetnik sl"
+      "search_text": "vincent van gogh artist umetnik sl"
+    },
+    {
+      "date": "2026-05-03",
+      "person": "Max Volmer",
+      "filename": "MaxVolmer.png",
+      "image_filename": "MaxVolmer.png",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Max_Volmer",
+        "https://www.chemeurope.com/en/encyclopedia/Max_Volmer.html",
+        "https://www.wikidata.org/wiki/Q65226"
+      ],
+      "title": "Max Volmer — otroška infografika",
+      "summary": "Slovenska otroška infografika o Maxu Volmerju, elektrokemiji, elektronih in Butler-Volmerjevi enačbi s kratkimi preverjenimi dejstvi.",
+      "category": "scientist",
+      "language": "sl",
+      "assignment_id": "80463c5b-352f-49a1-96af-ba7515fd6e24",
+      "_kind": "native",
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "source_count": 3,
+      "search_text": "max volmer scientist znanstvenik sl"
+    },
+    {
+      "date": "2026-05-01",
+      "person": "Santiago Ramón y Cajal",
+      "filename": "SantiagoRamonYCajal.png",
+      "image_filename": "SantiagoRamonYCajal.png",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Santiago_Ram%C3%B3n_y_Cajal",
+        "https://www.britannica.com/biography/Santiago-Ramon-y-Cajal",
+        "https://www.nobelprize.org/prizes/medicine/1906/cajal/biographical/"
+      ],
+      "title": "Santiago Ramón y Cajal — otroška infografika",
+      "summary": "Slovenska otroška infografika o Santiagu Ramónu y Cajalu z nevroni, mikroskopom in kratkimi preverjenimi dejstvi.",
+      "category": "scientist",
+      "language": "sl",
+      "assignment_id": "de269cd7-08b7-40f5-936a-5a5c5bef40cf",
+      "_kind": "native",
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "source_count": 3,
+      "search_text": "santiago ramón y cajal scientist znanstvenik sl"
+    },
+    {
+      "date": "2026-04-30",
+      "person": "Marie Curie",
+      "filename": "MarieCurie.png",
+      "image_filename": "MarieCurie.png",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Marie_Curie",
+        "https://www.britannica.com/biography/Marie-Curie",
+        "https://www.nobelprize.org/prizes/physics/1903/marie-curie/biographical/"
+      ],
+      "title": "Marie Curie — otroška infografika",
+      "summary": "Slovenska otroška infografika o Marie Curie z neposredno generirano sliko in kratkimi znanstvenimi dejstvi.",
+      "category": "scientist",
+      "language": "sl",
+      "assignment_id": "cdfb907c-0ec5-42c4-afee-fe9a6685dca9",
+      "_kind": "native",
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "source_count": 3,
+      "search_text": "marie curie scientist znanstvenik sl"
+    },
+    {
+      "date": "2026-04-30",
+      "person": "Jaroslav Hašek",
+      "filename": "JaroslavHasek.png",
+      "image_filename": "JaroslavHasek.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2754",
+        "https://en.wikipedia.org/wiki/Jaroslav_Ha%C5%A1ek"
+      ],
+      "title": "Jaroslav Hašek — otroška infografika",
+      "summary": "Slovenska infografika o osebi Jaroslav Hašek za preizkus backend objave.",
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "a7f018b9-0658-4d9c-8fb3-ce9b09fa0c3f",
+      "_kind": "native",
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "source_count": 2,
+      "search_text": "jaroslav hašek artist umetnik sl"
     },
     {
       "date": "2026-04-28",

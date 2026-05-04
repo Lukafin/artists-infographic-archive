@@ -89,12 +89,23 @@
     .tag { display:inline-flex; padding:7px 10px; border-radius:999px; background:#f7f2ea; border:1px solid #ece1d4; font-size:12px; color:#564f47; }
     .tag.artist { background:#ffe9ec; border-color:#ffd4dc; color:#8d2440; }
     .tag.science { background:#eaf5ff; border-color:#d4e7ff; color:#29547f; }
+    .tag.sport { background:#fff1d6; border-color:#ffe2a8; color:#8a5c09; }
+    .tag.language { background:#f1ecff; border-color:#ddd3ff; color:#55408d; }
     .tag.source-count { background:#eaf8ee; border-color:#d9efd9; color:#2b6a3c; }
+    .filter-bar { display:grid; grid-template-columns:minmax(220px, 1.6fr) repeat(2, minmax(160px, .8fr)); gap:12px; margin:0 0 18px; }
+    .filter-control { display:flex; flex-direction:column; gap:6px; }
+    .filter-control label { font-size:13px; color:var(--muted); font-weight:700; }
+    .filter-control input, .filter-control select {
+      width:100%; padding:12px 14px; border-radius:16px; border:1px solid var(--line);
+      background:#fff; color:var(--ink); font:inherit;
+    }
+    .results-summary { margin:0 0 14px; color:var(--muted); font-size:14px; }
     .sources { list-style:none; display:flex; flex-wrap:wrap; gap:8px; padding:0; margin:12px 0 0; }
     .direct-link { margin-top:auto; }
     .sources a { display:inline-flex; padding:7px 10px; border-radius:999px; text-decoration:none; background:#faf7f2; border:1px solid var(--line); color:#594e44; font-size:12px; }
     .pagination { margin-top:22px; justify-content:flex-end; }
-    .pager.active { background:var(--accent); border-color:var(--accent); color:#fff; font-weight:700; }
+    .pagination.is-hidden { display:none; }
+
     .footer { margin-top:20px; padding:18px 22px; display:flex; justify-content:space-between; gap:12px; color:var(--muted); font-size:14px; }
     .empty { color:var(--muted); font-size:16px; }
     @media (max-width:1200px) {
@@ -113,6 +124,7 @@
       .intro { font-size:18px; }
       .hero-stats { grid-template-columns:1fr; }
       .wrap { padding:18px 14px 44px; }
+      .filter-bar { grid-template-columns:1fr; }
       .masonry { grid-template-columns:1fr; }
     }
   </style>
@@ -133,19 +145,41 @@
       <div class="archive-top">
         <div>
           <h2>Arhiv – stran 7</h2>
-          <p>Prelistaj starejše dnevne infografike po straneh.</p>
+          <p>Prelistaj starejše dnevne infografike po straneh ali uporabi iskanje in filtre.</p>
         </div>
         <div class="archive-filters">
           <span class="pill">Skupaj: 99</span>
           <span class="pill">Stran 7/10</span>
         </div>
       </div>
-      <div class="masonry"><article class="card">
+      <div class="filter-bar">
+  <div class="filter-control">
+    <label for="archive-search">Išči po osebi</label>
+    <input id="archive-search" type="search" placeholder="npr. Duke Ellington">
+  </div>
+  <div class="filter-control">
+    <label for="archive-category">Vrsta</label>
+    <select id="archive-category">
+      <option value="">Vse vrste</option>
+      <option value="artist">Umetnik</option><option value="scientist">Znanstvenik</option>
+    </select>
+  </div>
+  <div class="filter-control">
+    <label for="archive-language">Jezik</label>
+    <select id="archive-language">
+      <option value="">Vsi jeziki</option>
+      <option value="sl">SL</option>
+    </select>
+  </div>
+</div>
+<p id="results-summary" class="results-summary">Prikazan je začetni izbor za to stran. Za iskanje ali filtriranje uporabi polja zgoraj.</p>
+      <div class="masonry"><article class="card" data-person="Theodor Geisel" data-category="scientist" data-language="sl">
   <a class="thumb" href="TheodorGeisel.png"><img src="TheodorGeisel.png" alt="Infografika: Theodor Geisel" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-03-02</span>
       <span class="tag science">Znanstvenik</span>
+      <span class="tag language">SL</span>
       <span class="tag source-count">Brez virov</span>
     </div>
     <h3>Theodor Geisel</h3>
@@ -153,12 +187,13 @@
     
   </div>
 </article>
-<article class="card">
+<article class="card" data-person="Frederic Chopin" data-category="scientist" data-language="sl">
   <a class="thumb" href="FredericChopin.png"><img src="FredericChopin.png" alt="Infografika: Frederic Chopin" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-03-01</span>
       <span class="tag science">Znanstvenik</span>
+      <span class="tag language">SL</span>
       <span class="tag source-count">Brez virov</span>
     </div>
     <h3>Frederic Chopin</h3>
@@ -166,12 +201,13 @@
     
   </div>
 </article>
-<article class="card">
+<article class="card" data-person="Linus Pauling" data-category="scientist" data-language="sl">
   <a class="thumb" href="LinusPauling.png"><img src="LinusPauling.png" alt="Infografika: Linus Pauling" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-28</span>
       <span class="tag science">Znanstvenik</span>
+      <span class="tag language">SL</span>
       <span class="tag source-count">Brez virov</span>
     </div>
     <h3>Linus Pauling</h3>
@@ -179,12 +215,13 @@
     
   </div>
 </article>
-<article class="card">
+<article class="card" data-person="Charles Best" data-category="scientist" data-language="sl">
   <a class="thumb" href="CharlesBest.png"><img src="CharlesBest.png" alt="Infografika: Charles Best" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-27</span>
       <span class="tag science">Znanstvenik</span>
+      <span class="tag language">SL</span>
       <span class="tag source-count">Brez virov</span>
     </div>
     <h3>Charles Best</h3>
@@ -192,12 +229,13 @@
     
   </div>
 </article>
-<article class="card">
+<article class="card" data-person="Ahmed Zewail" data-category="scientist" data-language="sl">
   <a class="thumb" href="AhmedZewail.png"><img src="AhmedZewail.png" alt="Infografika: Ahmed Zewail" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-26</span>
       <span class="tag science">Znanstvenik</span>
+      <span class="tag language">SL</span>
       <span class="tag source-count">Brez virov</span>
     </div>
     <h3>Ahmed Zewail</h3>
@@ -205,12 +243,13 @@
     
   </div>
 </article>
-<article class="card">
+<article class="card" data-person="George Harrison" data-category="scientist" data-language="sl">
   <a class="thumb" href="GeorgeHarrison.png"><img src="GeorgeHarrison.png" alt="Infografika: George Harrison" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-25</span>
       <span class="tag science">Znanstvenik</span>
+      <span class="tag language">SL</span>
       <span class="tag source-count">Brez virov</span>
     </div>
     <h3>George Harrison</h3>
@@ -218,12 +257,13 @@
     
   </div>
 </article>
-<article class="card">
+<article class="card" data-person="Brian Schmidt" data-category="scientist" data-language="sl">
   <a class="thumb" href="BrianSchmidt.png"><img src="BrianSchmidt.png" alt="Infografika: Brian Schmidt" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-24</span>
       <span class="tag science">Znanstvenik</span>
+      <span class="tag language">SL</span>
       <span class="tag source-count">Brez virov</span>
     </div>
     <h3>Brian Schmidt</h3>
@@ -231,12 +271,13 @@
     
   </div>
 </article>
-<article class="card">
+<article class="card" data-person="Casimir Funk" data-category="scientist" data-language="sl">
   <a class="thumb" href="CasimirFunk.png"><img src="CasimirFunk.png" alt="Infografika: Casimir Funk" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-23</span>
       <span class="tag science">Znanstvenik</span>
+      <span class="tag language">SL</span>
       <span class="tag source-count">Brez virov</span>
     </div>
     <h3>Casimir Funk</h3>
@@ -244,12 +285,13 @@
     
   </div>
 </article>
-<article class="card">
+<article class="card" data-person="Ansel Adams" data-category="scientist" data-language="sl">
   <a class="thumb" href="AnselAdams.png"><img src="AnselAdams.png" alt="Infografika: Ansel Adams" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-20</span>
       <span class="tag science">Znanstvenik</span>
+      <span class="tag language">SL</span>
       <span class="tag source-count">Brez virov</span>
     </div>
     <h3>Ansel Adams</h3>
@@ -257,12 +299,13 @@
     
   </div>
 </article>
-<article class="card">
+<article class="card" data-person="Nicolaus Copernicus" data-category="scientist" data-language="sl">
   <a class="thumb" href="NicolausCopernicus.png"><img src="NicolausCopernicus.png" alt="Infografika: Nicolaus Copernicus" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-19</span>
       <span class="tag science">Znanstvenik</span>
+      <span class="tag language">SL</span>
       <span class="tag source-count">Brez virov</span>
     </div>
     <h3>Nicolaus Copernicus</h3>
@@ -273,9 +316,99 @@
       <nav class="pagination"><a class="pill pager" href="page-6.html">← Prejšnja</a><a class="pill pager" href="./">1</a><a class="pill pager" href="page-2.html">2</a><a class="pill pager" href="page-3.html">3</a><a class="pill pager" href="page-4.html">4</a><a class="pill pager" href="page-5.html">5</a><a class="pill pager" href="page-6.html">6</a><a class="pill pager active" href="page-7.html">7</a><a class="pill pager" href="page-8.html">8</a><a class="pill pager" href="page-9.html">9</a><a class="pill pager" href="page-10.html">10</a><a class="pill pager" href="page-8.html">Naslednja →</a></nav>
     </section>
     <footer class="footer surface">
-      <div>Javni arhiv dnevnih infografik o znanih umetnikih in znanstvenikih.</div>
-      <div>Posodobljeno: 2026-05-04 05:11</div>
+      <div>Javni arhiv dnevnih infografik o znanih umetnikih, znanstvenikih in športnikih.</div>
+      <div>Posodobljeno: 2026-05-04 08:45</div>
     </footer>
   </main>
+  <script>
+(function () {
+  const masonry = document.querySelector('.masonry');
+  const pagination = document.querySelector('.pagination');
+  const summary = document.getElementById('results-summary');
+  const searchInput = document.getElementById('archive-search');
+  const categorySelect = document.getElementById('archive-category');
+  const languageSelect = document.getElementById('archive-language');
+  if (!masonry || !summary || !searchInput || !categorySelect || !languageSelect) return;
+
+  const initialMarkup = masonry.innerHTML;
+  let entries = [];
+
+  function escapeHtml(value) {
+    return String(value ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function sourceCountLabel(count) {
+    if (count === 1) return '1 vir';
+    return count ? `${count} viri` : 'Brez virov';
+  }
+
+  function renderSources(sources) {
+    if (!sources || !sources.length) return '';
+    return `<ul class="sources">${sources.slice(0, 4).map((url) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">vir</a></li>`).join('')}</ul>`;
+  }
+
+  function renderCard(entry, featured) {
+    const featureClass = featured ? ' feature' : '';
+    return `<article class="card${featureClass}" data-person="${escapeHtml(entry.person)}" data-category="${escapeHtml(entry.category)}" data-language="${escapeHtml(entry.language)}">
+      <a class="thumb" href="${escapeHtml(entry.filename)}"><img src="${escapeHtml(entry.filename)}" alt="Infografika: ${escapeHtml(entry.person)}" loading="lazy"></a>
+      <div class="content">
+        <div class="meta-row">
+          <span class="tag date">${escapeHtml(entry.date)}</span>
+          <span class="tag ${escapeHtml(entry.category_class)}">${escapeHtml(entry.category_label)}</span>
+          <span class="tag language">${escapeHtml(entry.language_label)}</span>
+          <span class="tag source-count">${sourceCountLabel(entry.source_count)}</span>
+        </div>
+        <h3>${escapeHtml(entry.person)}</h3>
+        <p class="direct-link"><a href="${escapeHtml(entry.filename)}">Odpri sliko</a></p>
+        ${renderSources(entry.sources || [])}
+      </div>
+    </article>`;
+  }
+
+  function applyFilters() {
+    const query = searchInput.value.trim().toLowerCase();
+    const category = categorySelect.value;
+    const language = languageSelect.value;
+    const hasFilters = Boolean(query || category || language);
+
+    if (!hasFilters) {
+      masonry.innerHTML = initialMarkup;
+      summary.textContent = 'Prikazan je začetni izbor za to stran. Za iskanje ali filtriranje uporabi polja zgoraj.';
+      if (pagination) pagination.classList.remove('is-hidden');
+      return;
+    }
+
+    const filtered = entries.filter((entry) => {
+      if (query && !entry.search_text.includes(query)) return false;
+      if (category && entry.category !== category) return false;
+      if (language && entry.language !== language) return false;
+      return true;
+    });
+
+    masonry.innerHTML = filtered.length
+      ? filtered.map((entry, index) => renderCard(entry, index % 4 === 0)).join('')
+      : '<p class="empty">Za izbrane filtre ni zadetkov.</p>';
+    summary.textContent = `Najdenih zadetkov: ${filtered.length}`;
+    if (pagination) pagination.classList.add('is-hidden');
+  }
+
+  fetch('entries.json')
+    .then((response) => response.ok ? response.json() : Promise.reject(new Error('entries.json fetch failed')))
+    .then((data) => {
+      entries = data.entries || [];
+      searchInput.addEventListener('input', applyFilters);
+      categorySelect.addEventListener('change', applyFilters);
+      languageSelect.addEventListener('change', applyFilters);
+    })
+    .catch(() => {
+      summary.textContent = 'Iskanje in filtri trenutno niso na voljo.';
+    });
+})();
+</script>
 </body>
 </html>
