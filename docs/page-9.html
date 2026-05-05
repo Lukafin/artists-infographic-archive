@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="sl">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Arhiv dnevnih rojstnodnevnih infografik – Arhiv – stran 9</title>
-  <meta name="description" content="Dnevno ustvarjene slovenske infografike o znanih umetnikih in znanstvenikih za otroke.">
+  <title>Daily birthday infographic archive – Archive – page 9</title>
+  <meta name="description" content="Daily Slovenian kid-friendly infographics about famous artists, scientists and athletes.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -53,6 +53,11 @@
     .pill { display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:999px; background:var(--chip); border:1px solid #e4dbce; font-size:14px; color:#3f3933; text-decoration:none; }
     .pill.primary { background:var(--accent); border-color:var(--accent); color:#fff; font-weight:700; }
     .pill.soft { background:rgba(255,255,255,.72); }
+    .nav-right { display:flex; align-items:center; justify-content:flex-end; gap:14px; flex-wrap:wrap; }
+    .lang-picker { display:inline-flex; align-items:center; gap:6px; padding:6px; border-radius:999px; background:#fff; border:1px solid var(--line); box-shadow:0 6px 18px rgba(33,25,34,.06); }
+    .lang-icon { width:22px; height:22px; display:grid; place-items:center; font-size:16px; }
+    .lang-picker button { border:0; border-radius:999px; background:transparent; color:#51483f; font:inherit; font-size:12px; font-weight:800; padding:7px 9px; cursor:pointer; }
+    .lang-picker button.active { background:var(--ink); color:#fff; }
     .hero { margin-top:24px; display:grid; grid-template-columns:1.1fr .9fr; gap:20px; align-items:stretch; }
     .hero-copy { padding:34px 34px 30px; display:flex; flex-direction:column; justify-content:space-between; }
     .eyebrow { font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:#8a5c09; display:inline-flex; align-items:center; gap:8px; }
@@ -91,8 +96,9 @@
     .tag.science { background:#eaf5ff; border-color:#d4e7ff; color:#29547f; }
     .tag.sport { background:#fff1d6; border-color:#ffe2a8; color:#8a5c09; }
     .tag.language { background:#f1ecff; border-color:#ddd3ff; color:#55408d; }
+    .tag.age { background:#fff7dc; border-color:#ffe7a5; color:#7b5a07; }
     .tag.source-count { background:#eaf8ee; border-color:#d9efd9; color:#2b6a3c; }
-    .filter-bar { display:grid; grid-template-columns:minmax(220px, 1.6fr) repeat(2, minmax(160px, .8fr)); gap:12px; margin:0 0 18px; }
+    .filter-bar { display:grid; grid-template-columns:minmax(220px, 1.6fr) repeat(3, minmax(150px, .8fr)); gap:12px; margin:0 0 18px; }
     .filter-control { display:flex; flex-direction:column; gap:6px; }
     .filter-control label { font-size:13px; color:var(--muted); font-weight:700; }
     .filter-control input, .filter-control select {
@@ -118,6 +124,7 @@
     }
     @media (max-width:700px) {
       .nav { position:static; flex-direction:column; align-items:stretch; }
+      .nav-right { justify-content:flex-start; }
       .archive-top, .footer { flex-direction:column; align-items:flex-start; }
       .pagination { justify-content:flex-start; }
       .hero-copy { padding:26px; }
@@ -135,189 +142,204 @@
       <div class="brand">
         <div class="logo">🖼️</div>
         <div>
-          <h1>Arhiv dnevnih rojstnodnevnih infografik</h1>
-          <p>Dnevno ustvarjene slovenske infografike za otroke</p>
+          <h1 data-i18n="brand_title">Daily birthday infographic archive</h1>
+          <p data-i18n="brand_subtitle">Daily Slovenian infographics for kids</p>
         </div>
+      </div>
+      <div class="nav-right">
+        <div class="lang-picker" role="group" aria-label="Site language">
+          <span class="lang-icon" aria-hidden="true">🌐</span>
+          <button type="button" class="active" data-lang-option="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang-option="sl" aria-pressed="false">SL</button>
+        </div>
+        <p class="support-note"><a class="kofi-link" href="https://ko-fi.com/lukafinzgar" target="_blank" rel="noopener noreferrer" aria-label="Support the site author on Ko-fi"><img class="kofi-icon" src="kofi_stroke_cup.svg" alt="Ko-fi"><span data-i18n="kofi">Support the site author</span></a></p>
       </div>
     </header>
     
     <section class="archive-shell">
       <div class="archive-top">
         <div>
-          <h2>Arhiv – stran 9</h2>
-          <p>Prelistaj starejše dnevne infografike po straneh ali uporabi iskanje in filtre.</p>
+          <h2 data-archive-heading="1" data-page="9">Archive – page 9</h2>
+          <p data-archive-intro="1" data-page="9">Browse older daily infographics by page or use search and filters.</p>
         </div>
         <div class="archive-filters">
-          <span class="pill">Skupaj: 104</span>
-          <span class="pill">Stran 9/11</span>
+          <span class="pill" data-total-pill="1" data-total="104">Total: 104</span>
+          <span class="pill" data-page-pill="1" data-page="9" data-total="11">Page 9/11</span>
         </div>
       </div>
       <div class="filter-bar">
   <div class="filter-control">
-    <label for="archive-search">Išči po osebi</label>
-    <input id="archive-search" type="search" placeholder="npr. Duke Ellington">
+    <label for="archive-search" data-i18n="search_label">Search by person</label>
+    <input id="archive-search" type="search" placeholder="e.g. Duke Ellington" data-i18n-placeholder="search_placeholder">
   </div>
   <div class="filter-control">
-    <label for="archive-category">Vrsta</label>
+    <label for="archive-category" data-i18n="category_label">Type</label>
     <select id="archive-category">
-      <option value="">Vse vrste</option>
-      <option value="artist">Umetnik</option><option value="scientist">Znanstvenik</option>
+      <option value="" data-i18n="category_all">All types</option>
+      <option value="artist" data-category-option="artist">Artist</option><option value="scientist" data-category-option="scientist">Scientist</option>
     </select>
   </div>
   <div class="filter-control">
-    <label for="archive-language">Jezik</label>
+    <label for="archive-language" data-i18n="image_language_label">Image language</label>
     <select id="archive-language">
-      <option value="">Vsi jeziki</option>
+      <option value="" data-i18n="language_all">All image languages</option>
       <option value="sl">SL</option>
     </select>
   </div>
+  <div class="filter-control">
+    <label for="archive-age" data-i18n="age_label">Age suitability</label>
+    <select id="archive-age">
+      <option value="" data-i18n="age_all">All age levels</option>
+      <option value="age_6" data-age-option="age_6">Ages 6+</option><option value="age_13" data-age-option="age_13">Ages 13+</option><option value="adult" data-age-option="adult">Adults</option>
+    </select>
+  </div>
 </div>
-<p id="results-summary" class="results-summary">Prikazan je začetni izbor za to stran. Za iskanje ali filtriranje uporabi polja zgoraj.</p>
+<p id="results-summary" class="results-summary" data-i18n="initial_summary">Showing the initial selection for this page. Use search or filters above to search the full archive.</p>
       <div class="masonry"><article class="card" data-person="20260206 104245 svetel otrokom prijazen infografi ni pla" data-category="scientist" data-language="sl">
-  <a class="thumb" href="20260206-104245_svetel-otrokom-prijazen-infografi-ni-pla.png"><img src="20260206-104245_svetel-otrokom-prijazen-infografi-ni-pla.png" alt="Infografika: 20260206 104245 svetel otrokom prijazen infografi ni pla" loading="lazy"></a>
+  <a class="thumb" href="20260206-104245_svetel-otrokom-prijazen-infografi-ni-pla.png"><img src="20260206-104245_svetel-otrokom-prijazen-infografi-ni-pla.png" alt="Infographic: 20260206 104245 svetel otrokom prijazen infografi ni pla" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-06</span>
-      <span class="tag science">Znanstvenik</span>
+      <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
-      <span class="tag source-count">Brez virov</span>
+      <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>20260206 104245 svetel otrokom prijazen infografi ni pla</h3>
-    <p class="direct-link"><a href="20260206-104245_svetel-otrokom-prijazen-infografi-ni-pla.png">Odpri sliko</a></p>
+    <p class="direct-link"><a href="20260206-104245_svetel-otrokom-prijazen-infografi-ni-pla.png" data-i18n="open_image">Open image</a></p>
     
   </div>
 </article>
 <article class="card" data-person="20260205 194011 ustvari ivahno otrokom prijazno infograf" data-category="scientist" data-language="sl">
-  <a class="thumb" href="20260205-194011_ustvari-ivahno-otrokom-prijazno-infograf.png"><img src="20260205-194011_ustvari-ivahno-otrokom-prijazno-infograf.png" alt="Infografika: 20260205 194011 ustvari ivahno otrokom prijazno infograf" loading="lazy"></a>
+  <a class="thumb" href="20260205-194011_ustvari-ivahno-otrokom-prijazno-infograf.png"><img src="20260205-194011_ustvari-ivahno-otrokom-prijazno-infograf.png" alt="Infographic: 20260205 194011 ustvari ivahno otrokom prijazno infograf" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-05</span>
-      <span class="tag science">Znanstvenik</span>
+      <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
-      <span class="tag source-count">Brez virov</span>
+      <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>20260205 194011 ustvari ivahno otrokom prijazno infograf</h3>
-    <p class="direct-link"><a href="20260205-194011_ustvari-ivahno-otrokom-prijazno-infograf.png">Odpri sliko</a></p>
+    <p class="direct-link"><a href="20260205-194011_ustvari-ivahno-otrokom-prijazno-infograf.png" data-i18n="open_image">Open image</a></p>
     
   </div>
 </article>
 <article class="card" data-person="20260204 193923 ustvari zelo podroben infografik v razme" data-category="scientist" data-language="sl">
-  <a class="thumb" href="20260204-193923_ustvari-zelo-podroben-infografik-v-razme.png"><img src="20260204-193923_ustvari-zelo-podroben-infografik-v-razme.png" alt="Infografika: 20260204 193923 ustvari zelo podroben infografik v razme" loading="lazy"></a>
+  <a class="thumb" href="20260204-193923_ustvari-zelo-podroben-infografik-v-razme.png"><img src="20260204-193923_ustvari-zelo-podroben-infografik-v-razme.png" alt="Infographic: 20260204 193923 ustvari zelo podroben infografik v razme" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-04</span>
-      <span class="tag science">Znanstvenik</span>
+      <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
-      <span class="tag source-count">Brez virov</span>
+      <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>20260204 193923 ustvari zelo podroben infografik v razme</h3>
-    <p class="direct-link"><a href="20260204-193923_ustvari-zelo-podroben-infografik-v-razme.png">Odpri sliko</a></p>
+    <p class="direct-link"><a href="20260204-193923_ustvari-zelo-podroben-infografik-v-razme.png" data-i18n="open_image">Open image</a></p>
     
   </div>
 </article>
 <article class="card" data-person="20260203 193940 ustvari otrokom prijazno infografiko v r" data-category="scientist" data-language="sl">
-  <a class="thumb" href="20260203-193940_ustvari-otrokom-prijazno-infografiko-v-r.png"><img src="20260203-193940_ustvari-otrokom-prijazno-infografiko-v-r.png" alt="Infografika: 20260203 193940 ustvari otrokom prijazno infografiko v r" loading="lazy"></a>
+  <a class="thumb" href="20260203-193940_ustvari-otrokom-prijazno-infografiko-v-r.png"><img src="20260203-193940_ustvari-otrokom-prijazno-infografiko-v-r.png" alt="Infographic: 20260203 193940 ustvari otrokom prijazno infografiko v r" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-03</span>
-      <span class="tag science">Znanstvenik</span>
+      <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
-      <span class="tag source-count">Brez virov</span>
+      <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>20260203 193940 ustvari otrokom prijazno infografiko v r</h3>
-    <p class="direct-link"><a href="20260203-193940_ustvari-otrokom-prijazno-infografiko-v-r.png">Odpri sliko</a></p>
+    <p class="direct-link"><a href="20260203-193940_ustvari-otrokom-prijazno-infografiko-v-r.png" data-i18n="open_image">Open image</a></p>
     
   </div>
 </article>
 <article class="card" data-person="20260202 193945 ustvari barvit otrokom prijazen infograf" data-category="scientist" data-language="sl">
-  <a class="thumb" href="20260202-193945_ustvari-barvit-otrokom-prijazen-infograf.png"><img src="20260202-193945_ustvari-barvit-otrokom-prijazen-infograf.png" alt="Infografika: 20260202 193945 ustvari barvit otrokom prijazen infograf" loading="lazy"></a>
+  <a class="thumb" href="20260202-193945_ustvari-barvit-otrokom-prijazen-infograf.png"><img src="20260202-193945_ustvari-barvit-otrokom-prijazen-infograf.png" alt="Infographic: 20260202 193945 ustvari barvit otrokom prijazen infograf" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-02</span>
-      <span class="tag science">Znanstvenik</span>
+      <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
-      <span class="tag source-count">Brez virov</span>
+      <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>20260202 193945 ustvari barvit otrokom prijazen infograf</h3>
-    <p class="direct-link"><a href="20260202-193945_ustvari-barvit-otrokom-prijazen-infograf.png">Odpri sliko</a></p>
+    <p class="direct-link"><a href="20260202-193945_ustvari-barvit-otrokom-prijazen-infograf.png" data-i18n="open_image">Open image</a></p>
     
   </div>
 </article>
 <article class="card" data-person="20260201 193903 ustvari otrokom prijazno infografiko v r" data-category="scientist" data-language="sl">
-  <a class="thumb" href="20260201-193903_ustvari-otrokom-prijazno-infografiko-v-r.png"><img src="20260201-193903_ustvari-otrokom-prijazno-infografiko-v-r.png" alt="Infografika: 20260201 193903 ustvari otrokom prijazno infografiko v r" loading="lazy"></a>
+  <a class="thumb" href="20260201-193903_ustvari-otrokom-prijazno-infografiko-v-r.png"><img src="20260201-193903_ustvari-otrokom-prijazno-infografiko-v-r.png" alt="Infographic: 20260201 193903 ustvari otrokom prijazno infografiko v r" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-01</span>
-      <span class="tag science">Znanstvenik</span>
+      <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
-      <span class="tag source-count">Brez virov</span>
+      <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>20260201 193903 ustvari otrokom prijazno infografiko v r</h3>
-    <p class="direct-link"><a href="20260201-193903_ustvari-otrokom-prijazno-infografiko-v-r.png">Odpri sliko</a></p>
+    <p class="direct-link"><a href="20260201-193903_ustvari-otrokom-prijazno-infografiko-v-r.png" data-i18n="open_image">Open image</a></p>
     
   </div>
 </article>
 <article class="card" data-person="20260129 111309 ustvari prijazno otro ko infografiko v r" data-category="scientist" data-language="sl">
-  <a class="thumb" href="20260129-111309_ustvari-prijazno-otro-ko-infografiko-v-r.png"><img src="20260129-111309_ustvari-prijazno-otro-ko-infografiko-v-r.png" alt="Infografika: 20260129 111309 ustvari prijazno otro ko infografiko v r" loading="lazy"></a>
+  <a class="thumb" href="20260129-111309_ustvari-prijazno-otro-ko-infografiko-v-r.png"><img src="20260129-111309_ustvari-prijazno-otro-ko-infografiko-v-r.png" alt="Infographic: 20260129 111309 ustvari prijazno otro ko infografiko v r" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-01-29</span>
-      <span class="tag science">Znanstvenik</span>
+      <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
-      <span class="tag source-count">Brez virov</span>
+      <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>20260129 111309 ustvari prijazno otro ko infografiko v r</h3>
-    <p class="direct-link"><a href="20260129-111309_ustvari-prijazno-otro-ko-infografiko-v-r.png">Odpri sliko</a></p>
+    <p class="direct-link"><a href="20260129-111309_ustvari-prijazno-otro-ko-infografiko-v-r.png" data-i18n="open_image">Open image</a></p>
     
   </div>
 </article>
 <article class="card" data-person="20260128 111258 ustvari zivahno otrokom prijazno izobraz" data-category="scientist" data-language="sl">
-  <a class="thumb" href="20260128-111258_ustvari-zivahno-otrokom-prijazno-izobraz.png"><img src="20260128-111258_ustvari-zivahno-otrokom-prijazno-izobraz.png" alt="Infografika: 20260128 111258 ustvari zivahno otrokom prijazno izobraz" loading="lazy"></a>
+  <a class="thumb" href="20260128-111258_ustvari-zivahno-otrokom-prijazno-izobraz.png"><img src="20260128-111258_ustvari-zivahno-otrokom-prijazno-izobraz.png" alt="Infographic: 20260128 111258 ustvari zivahno otrokom prijazno izobraz" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-01-28</span>
-      <span class="tag science">Znanstvenik</span>
+      <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
-      <span class="tag source-count">Brez virov</span>
+      <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>20260128 111258 ustvari zivahno otrokom prijazno izobraz</h3>
-    <p class="direct-link"><a href="20260128-111258_ustvari-zivahno-otrokom-prijazno-izobraz.png">Odpri sliko</a></p>
+    <p class="direct-link"><a href="20260128-111258_ustvari-zivahno-otrokom-prijazno-izobraz.png" data-i18n="open_image">Open image</a></p>
     
   </div>
 </article>
 <article class="card" data-person="20260127 111144 ustvari ivahno prijazno infografiko v ra" data-category="scientist" data-language="sl">
-  <a class="thumb" href="20260127-111144_ustvari-ivahno-prijazno-infografiko-v-ra.png"><img src="20260127-111144_ustvari-ivahno-prijazno-infografiko-v-ra.png" alt="Infografika: 20260127 111144 ustvari ivahno prijazno infografiko v ra" loading="lazy"></a>
+  <a class="thumb" href="20260127-111144_ustvari-ivahno-prijazno-infografiko-v-ra.png"><img src="20260127-111144_ustvari-ivahno-prijazno-infografiko-v-ra.png" alt="Infographic: 20260127 111144 ustvari ivahno prijazno infografiko v ra" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-01-27</span>
-      <span class="tag science">Znanstvenik</span>
+      <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
-      <span class="tag source-count">Brez virov</span>
+      <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>20260127 111144 ustvari ivahno prijazno infografiko v ra</h3>
-    <p class="direct-link"><a href="20260127-111144_ustvari-ivahno-prijazno-infografiko-v-ra.png">Odpri sliko</a></p>
+    <p class="direct-link"><a href="20260127-111144_ustvari-ivahno-prijazno-infografiko-v-ra.png" data-i18n="open_image">Open image</a></p>
     
   </div>
 </article>
 <article class="card" data-person="20260125 111136 ustvari ivahno otrokom prijazno infograf" data-category="scientist" data-language="sl">
-  <a class="thumb" href="20260125-111136_ustvari-ivahno-otrokom-prijazno-infograf.png"><img src="20260125-111136_ustvari-ivahno-otrokom-prijazno-infograf.png" alt="Infografika: 20260125 111136 ustvari ivahno otrokom prijazno infograf" loading="lazy"></a>
+  <a class="thumb" href="20260125-111136_ustvari-ivahno-otrokom-prijazno-infograf.png"><img src="20260125-111136_ustvari-ivahno-otrokom-prijazno-infograf.png" alt="Infographic: 20260125 111136 ustvari ivahno otrokom prijazno infograf" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-01-25</span>
-      <span class="tag science">Znanstvenik</span>
+      <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
-      <span class="tag source-count">Brez virov</span>
+      <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>20260125 111136 ustvari ivahno otrokom prijazno infograf</h3>
-    <p class="direct-link"><a href="20260125-111136_ustvari-ivahno-otrokom-prijazno-infograf.png">Odpri sliko</a></p>
+    <p class="direct-link"><a href="20260125-111136_ustvari-ivahno-otrokom-prijazno-infograf.png" data-i18n="open_image">Open image</a></p>
     
   </div>
 </article></div>
-      <nav class="pagination"><a class="pill pager" href="page-8.html">← Prejšnja</a><a class="pill pager" href="./">1</a><a class="pill pager" href="page-2.html">2</a><a class="pill pager" href="page-3.html">3</a><a class="pill pager" href="page-4.html">4</a><a class="pill pager" href="page-5.html">5</a><a class="pill pager" href="page-6.html">6</a><a class="pill pager" href="page-7.html">7</a><a class="pill pager" href="page-8.html">8</a><a class="pill pager active" href="page-9.html">9</a><a class="pill pager" href="page-10.html">10</a><a class="pill pager" href="page-11.html">11</a><a class="pill pager" href="page-10.html">Naslednja →</a></nav>
+      <nav class="pagination"><a class="pill pager" href="page-8.html" data-i18n="pager_previous">← Previous</a><a class="pill pager" href="./">1</a><a class="pill pager" href="page-2.html">2</a><a class="pill pager" href="page-3.html">3</a><a class="pill pager" href="page-4.html">4</a><a class="pill pager" href="page-5.html">5</a><a class="pill pager" href="page-6.html">6</a><a class="pill pager" href="page-7.html">7</a><a class="pill pager" href="page-8.html">8</a><a class="pill pager active" href="page-9.html">9</a><a class="pill pager" href="page-10.html">10</a><a class="pill pager" href="page-11.html">11</a><a class="pill pager" href="page-10.html" data-i18n="pager_next">Next →</a></nav>
     </section>
     <footer class="footer surface">
-      <div>Javni arhiv dnevnih infografik o znanih umetnikih, znanstvenikih in športnikih.</div>
-      <div>Posodobljeno: 2026-05-05 07:10</div>
+      <div data-i18n="footer_text">Public archive of daily infographics about famous artists, scientists and athletes.</div>
+      <div data-updated="2026-05-05 07:10">Updated: 2026-05-05 07:10</div>
     </footer>
   </main>
   <script>
@@ -328,10 +350,114 @@
   const searchInput = document.getElementById('archive-search');
   const categorySelect = document.getElementById('archive-category');
   const languageSelect = document.getElementById('archive-language');
-  if (!masonry || !summary || !searchInput || !categorySelect || !languageSelect) return;
+  const ageSelect = document.getElementById('archive-age');
+  if (!masonry || !summary || !searchInput || !categorySelect || !languageSelect || !ageSelect) return;
 
   const initialMarkup = masonry.innerHTML;
+  const defaultLang = 'en';
+  let uiLang = localStorage.getItem('archive-ui-lang') || defaultLang;
   let entries = [];
+
+  const dict = {
+    en: {
+      document_title: 'Daily birthday infographic archive',
+      brand_title: 'Daily birthday infographic archive',
+      brand_subtitle: 'Daily Slovenian infographics for kids',
+      kofi: 'Support the site author',
+      hero_eyebrow: 'Today’s image',
+      hero_title: 'A new daily infographic about famous artists, scientists and athletes.',
+      hero_intro: 'This public archive collects educational infographics for kids. Search, filter and browse older posts as a modern image gallery.',
+      archive_heading_home: 'Archive as a modern gallery',
+      archive_heading_page: 'Archive – page {page}',
+      archive_intro_home: 'Search by person, type, image language and age suitability.',
+      archive_intro_page: 'Browse older daily infographics by page or use search and filters.',
+      total_prefix: 'Total:',
+      page_prefix: 'Page {page}/{total}',
+      search_label: 'Search by person',
+      search_placeholder: 'e.g. Duke Ellington',
+      category_label: 'Type',
+      category_all: 'All types',
+      image_language_label: 'Image language',
+      language_all: 'All image languages',
+      age_label: 'Age suitability',
+      age_all: 'All age levels',
+      initial_summary: 'Showing the initial selection for this page. Use search or filters above to search the full archive.',
+      no_results: 'No results for the selected filters.',
+      found: 'Results found: {count}',
+      open_image: 'Open image',
+      open_today: 'Open today’s image',
+      source: 'source',
+      sources_zero: 'No sources',
+      sources_one: '1 source',
+      sources_many: '{count} sources',
+      footer_text: 'Public archive of daily infographics about famous artists, scientists and athletes.',
+      updated: 'Updated:',
+      search_unavailable: 'Search and filters are currently unavailable.',
+      pager_previous: '← Previous',
+      pager_next: 'Next →',
+      lang_picker_label: 'Site language',
+      category_artist: 'Artist',
+      category_scientist: 'Scientist',
+      category_sport: 'Athlete',
+      age_age_6: 'Ages 6+',
+      age_age_13: 'Ages 13+',
+      age_adult: 'Adults'
+    },
+    sl: {
+      document_title: 'Arhiv dnevnih rojstnodnevnih infografik',
+      brand_title: 'Arhiv dnevnih rojstnodnevnih infografik',
+      brand_subtitle: 'Dnevno ustvarjene slovenske infografike za otroke',
+      kofi: 'Podpri avtorja strani',
+      hero_eyebrow: 'Današnja slika',
+      hero_title: 'Vsak dan nova infografika o znanih umetnikih, znanstvenikih in športnikih.',
+      hero_intro: 'Javni arhiv zbira dnevno ustvarjene izobraževalne infografike za otroke. Spodaj lahko hitro iščeš, filtriraš in prelistaš starejše objave kot moderno galerijo slik.',
+      archive_heading_home: 'Arhiv kot moderna galerija',
+      archive_heading_page: 'Arhiv – stran {page}',
+      archive_intro_home: 'Išči po osebi ter filtriraj po vrsti, jeziku slike in starostni primernosti.',
+      archive_intro_page: 'Prelistaj starejše dnevne infografike po straneh ali uporabi iskanje in filtre.',
+      total_prefix: 'Skupaj:',
+      page_prefix: 'Stran {page}/{total}',
+      search_label: 'Išči po osebi',
+      search_placeholder: 'npr. Duke Ellington',
+      category_label: 'Vrsta',
+      category_all: 'Vse vrste',
+      image_language_label: 'Jezik slike',
+      language_all: 'Vsi jeziki slik',
+      age_label: 'Starostna primernost',
+      age_all: 'Vse starostne ravni',
+      initial_summary: 'Prikazan je začetni izbor za to stran. Za iskanje ali filtriranje celotnega arhiva uporabi polja zgoraj.',
+      no_results: 'Za izbrane filtre ni zadetkov.',
+      found: 'Najdenih zadetkov: {count}',
+      open_image: 'Odpri sliko',
+      open_today: 'Odpri današnjo sliko',
+      source: 'vir',
+      sources_zero: 'Brez virov',
+      sources_one: '1 vir',
+      sources_many: '{count} viri',
+      footer_text: 'Javni arhiv dnevnih infografik o znanih umetnikih, znanstvenikih in športnikih.',
+      updated: 'Posodobljeno:',
+      search_unavailable: 'Iskanje in filtri trenutno niso na voljo.',
+      pager_previous: '← Prejšnja',
+      pager_next: 'Naslednja →',
+      lang_picker_label: 'Jezik strani',
+      category_artist: 'Umetnik',
+      category_scientist: 'Znanstvenik',
+      category_sport: 'Športnik',
+      age_age_6: '6+ let',
+      age_age_13: '13+ let',
+      age_adult: 'Odrasli'
+    }
+  };
+
+  function t(key, params) {
+    let value = (dict[uiLang] && dict[uiLang][key]) || dict.en[key] || key;
+    if (params) {
+      Object.entries(params).forEach(([name, replacement]) => {
+        value = value.replace(`{${name}}`, replacement);
+      });
+    }
+    return value;
+  }
 
   function escapeHtml(value) {
     return String(value ?? '')
@@ -342,44 +468,97 @@
       .replace(/'/g, '&#39;');
   }
 
+  function categoryLabel(category) {
+    return t(`category_${category || 'scientist'}`);
+  }
+
   function sourceCountLabel(count) {
-    if (count === 1) return '1 vir';
-    return count ? `${count} viri` : 'Brez virov';
+    if (count === 1) return t('sources_one');
+    return count ? t('sources_many', {count}) : t('sources_zero');
+  }
+
+  function ageLabel(key) {
+    return t(`age_${key}`);
+  }
+
+  function ageBadges(keys) {
+    if (!keys || !keys.length) return '';
+    return `<span class="tag age" data-age-tag="1">${escapeHtml(keys.map(ageLabel).join(', '))}</span>`;
   }
 
   function renderSources(sources) {
     if (!sources || !sources.length) return '';
-    return `<ul class="sources">${sources.slice(0, 4).map((url) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">vir</a></li>`).join('')}</ul>`;
+    return `<ul class="sources">${sources.slice(0, 4).map((url) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" data-source-link="1">${escapeHtml(t('source'))}</a></li>`).join('')}</ul>`;
   }
 
   function renderCard(entry, featured) {
     const featureClass = featured ? ' feature' : '';
-    return `<article class="card${featureClass}" data-person="${escapeHtml(entry.person)}" data-category="${escapeHtml(entry.category)}" data-language="${escapeHtml(entry.language)}">
-      <a class="thumb" href="${escapeHtml(entry.filename)}"><img src="${escapeHtml(entry.filename)}" alt="Infografika: ${escapeHtml(entry.person)}" loading="lazy"></a>
+    const ageKeys = entry.age_suitability_keys || [];
+    return `<article class="card${featureClass}" data-person="${escapeHtml(entry.person)}" data-category="${escapeHtml(entry.category)}" data-language="${escapeHtml(entry.language)}" data-age-suitability="${escapeHtml(ageKeys.join(' '))}">
+      <a class="thumb" href="${escapeHtml(entry.filename)}"><img src="${escapeHtml(entry.filename)}" alt="Infographic: ${escapeHtml(entry.person)}" loading="lazy"></a>
       <div class="content">
         <div class="meta-row">
           <span class="tag date">${escapeHtml(entry.date)}</span>
-          <span class="tag ${escapeHtml(entry.category_class)}">${escapeHtml(entry.category_label)}</span>
+          <span class="tag ${escapeHtml(entry.category_class)}" data-category-tag="${escapeHtml(entry.category)}">${escapeHtml(categoryLabel(entry.category))}</span>
           <span class="tag language">${escapeHtml(entry.language_label)}</span>
-          <span class="tag source-count">${sourceCountLabel(entry.source_count)}</span>
+          ${ageBadges(ageKeys)}
+          <span class="tag source-count" data-source-count="${Number(entry.source_count || 0)}">${sourceCountLabel(entry.source_count)}</span>
         </div>
         <h3>${escapeHtml(entry.person)}</h3>
-        <p class="direct-link"><a href="${escapeHtml(entry.filename)}">Odpri sliko</a></p>
+        <p class="direct-link"><a href="${escapeHtml(entry.filename)}" data-i18n="open_image">${escapeHtml(t('open_image'))}</a></p>
         ${renderSources(entry.sources || [])}
       </div>
     </article>`;
+  }
+
+  function updateStaticTranslations() {
+    document.documentElement.lang = uiLang;
+    document.title = t('document_title');
+    document.querySelectorAll('[data-i18n]').forEach((node) => {
+      node.textContent = t(node.dataset.i18n);
+    });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach((node) => {
+      node.setAttribute('placeholder', t(node.dataset.i18nPlaceholder));
+    });
+    document.querySelectorAll('[data-source-link]').forEach((node) => { node.textContent = t('source'); });
+    document.querySelectorAll('[data-source-count]').forEach((node) => { node.textContent = sourceCountLabel(Number(node.dataset.sourceCount || 0)); });
+    document.querySelectorAll('[data-category-option]').forEach((node) => { node.textContent = categoryLabel(node.dataset.categoryOption); });
+    document.querySelectorAll('[data-age-option]').forEach((node) => { node.textContent = ageLabel(node.dataset.ageOption); });
+    document.querySelectorAll('[data-category-tag]').forEach((node) => { node.textContent = categoryLabel(node.dataset.categoryTag); });
+    document.querySelectorAll('[data-age-tag]').forEach((node) => {
+      const parent = node.closest('[data-age-suitability]');
+      const keys = parent ? parent.dataset.ageSuitability.split(/\s+/).filter(Boolean) : [];
+      node.textContent = keys.map(ageLabel).join(', ');
+    });
+    document.querySelectorAll('[data-lang-option]').forEach((button) => {
+      const active = button.dataset.langOption === uiLang;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+    const totalPill = document.querySelector('[data-total-pill]');
+    if (totalPill) totalPill.textContent = `${t('total_prefix')} ${totalPill.dataset.total}`;
+    const pagePill = document.querySelector('[data-page-pill]');
+    if (pagePill) pagePill.textContent = t('page_prefix', {page: pagePill.dataset.page, total: pagePill.dataset.total});
+    const archiveHeading = document.querySelector('[data-archive-heading]');
+    if (archiveHeading) archiveHeading.textContent = archiveHeading.dataset.page === '1' ? t('archive_heading_home') : t('archive_heading_page', {page: archiveHeading.dataset.page});
+    const archiveIntro = document.querySelector('[data-archive-intro]');
+    if (archiveIntro) archiveIntro.textContent = archiveIntro.dataset.page === '1' ? t('archive_intro_home') : t('archive_intro_page');
+    const updatedNode = document.querySelector('[data-updated]');
+    if (updatedNode) updatedNode.textContent = `${t('updated')} ${updatedNode.dataset.updated}`;
   }
 
   function applyFilters() {
     const query = searchInput.value.trim().toLowerCase();
     const category = categorySelect.value;
     const language = languageSelect.value;
-    const hasFilters = Boolean(query || category || language);
+    const age = ageSelect.value;
+    const hasFilters = Boolean(query || category || language || age);
 
     if (!hasFilters) {
       masonry.innerHTML = initialMarkup;
-      summary.textContent = 'Prikazan je začetni izbor za to stran. Za iskanje ali filtriranje uporabi polja zgoraj.';
+      summary.textContent = t('initial_summary');
       if (pagination) pagination.classList.remove('is-hidden');
+      updateStaticTranslations();
       return;
     }
 
@@ -387,15 +566,25 @@
       if (query && !entry.search_text.includes(query)) return false;
       if (category && entry.category !== category) return false;
       if (language && entry.language !== language) return false;
+      if (age && !(entry.age_suitability_keys || []).includes(age)) return false;
       return true;
     });
 
     masonry.innerHTML = filtered.length
       ? filtered.map((entry, index) => renderCard(entry, index % 4 === 0)).join('')
-      : '<p class="empty">Za izbrane filtre ni zadetkov.</p>';
-    summary.textContent = `Najdenih zadetkov: ${filtered.length}`;
+      : `<p class="empty">${escapeHtml(t('no_results'))}</p>`;
+    summary.textContent = t('found', {count: filtered.length});
     if (pagination) pagination.classList.add('is-hidden');
+    updateStaticTranslations();
   }
+
+  document.querySelectorAll('[data-lang-option]').forEach((button) => {
+    button.addEventListener('click', () => {
+      uiLang = button.dataset.langOption;
+      localStorage.setItem('archive-ui-lang', uiLang);
+      applyFilters();
+    });
+  });
 
   fetch('entries.json')
     .then((response) => response.ok ? response.json() : Promise.reject(new Error('entries.json fetch failed')))
@@ -404,9 +593,12 @@
       searchInput.addEventListener('input', applyFilters);
       categorySelect.addEventListener('change', applyFilters);
       languageSelect.addEventListener('change', applyFilters);
+      ageSelect.addEventListener('change', applyFilters);
+      applyFilters();
     })
     .catch(() => {
-      summary.textContent = 'Iskanje in filtri trenutno niso na voljo.';
+      summary.textContent = t('search_unavailable');
+      updateStaticTranslations();
     });
 })();
 </script>

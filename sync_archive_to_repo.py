@@ -17,7 +17,7 @@ for path in DOCS_DIR.iterdir():
         shutil.copy2(path, SITE_DIR / path.name)
 
 # Copy generator/support files worth preserving
-for name in ['rebuild_gallery.py', 'sync_archive_to_repo.py']:
+for name in ['rebuild_gallery.py', 'sync_archive_to_repo.py', 'gallery_index.py']:
     src = ARTISTS_BASE / name
     if src.exists():
         shutil.copy2(src, REPO_ROOT / name)

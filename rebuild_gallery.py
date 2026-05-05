@@ -6,7 +6,7 @@ import re
 from pathlib import Path
 from datetime import datetime
 
-from gallery_index import CATEGORY_LABELS, build_entries_index, normalize_entry_metadata
+from gallery_index import AGE_SUITABILITY_LEVELS, CATEGORY_LABELS, build_entries_index, normalize_entry_metadata
 
 BASE = Path('/home/lukafinzgar/projects/.caller_tasks/artists')
 RUNS_DIR = BASE / 'runs'
@@ -55,8 +55,28 @@ def dedupe_entries(entries):
 def source_count_label(e):
     count = e.get('source_count', len(e.get('sources', [])))
     if count == 1:
-        return '1 vir'
-    return f'{count} viri' if count else 'Brez virov'
+        return '1 source'
+    return f'{count} sources' if count else 'No sources'
+
+
+def age_suitability_badge(e):
+    keys = e.get('age_suitability_keys') or []
+    if not keys:
+        return ''
+    label = ', '.join(AGE_SUITABILITY_LEVELS.get(key, {}).get('label_en', key) for key in keys)
+    return f'<span class="tag age" data-age-tag="1">{html.escape(label)}</span>'
+
+
+def age_suitability_data(e):
+    return ' '.join(e.get('age_suitability_keys') or [])
+
+
+def category_label_en(category: str) -> str:
+    return {
+        'artist': 'Artist',
+        'scientist': 'Scientist',
+        'sport': 'Athlete',
+    }.get(category, category.title() if category else 'Scientist')
 
 
 def page_filename(page_num: int) -> str:
@@ -72,12 +92,12 @@ def render_pagination(current: int, total: int) -> str:
         return ''
     links = []
     if current > 1:
-        links.append(f'<a class="pill pager" href="{page_link(current-1)}">← Prejšnja</a>')
+        links.append(f'<a class="pill pager" href="{page_link(current-1)}" data-i18n="pager_previous">← Previous</a>')
     for p in range(1, total + 1):
         cls = 'pill pager active' if p == current else 'pill pager'
         links.append(f'<a class="{cls}" href="{page_link(p)}">{p}</a>')
     if current < total:
-        links.append(f'<a class="pill pager" href="{page_link(current+1)}">Naslednja →</a>')
+        links.append(f'<a class="pill pager" href="{page_link(current+1)}" data-i18n="pager_next">Next →</a>')
     return '<nav class="pagination">' + ''.join(links) + '</nav>'
 
 
@@ -86,7 +106,7 @@ def render_sources(e):
     if not sources:
         return ''
     items = ''.join(
-        f'<li><a href="{html.escape(url)}" target="_blank" rel="noopener noreferrer">vir</a></li>'
+        f'<li><a href="{html.escape(url)}" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li>'
         for url in sources[:4]
     )
     return f'<ul class="sources">{items}</ul>'
@@ -96,22 +116,25 @@ def render_masonry_card(e, featured=False):
     person = html.escape(e.get('person', ''))
     filename = html.escape(e.get('filename', ''))
     date = html.escape(e.get('date', ''))
-    category = e.get('category_label', 'Znanstvenik')
+    category = category_label_en(e.get('category', 'scientist'))
     category_cls = e.get('category_class', 'science')
     language_label = html.escape(e.get('language_label', 'SL'))
     count_label = source_count_label(e)
+    age_data = html.escape(age_suitability_data(e))
+    age_badge = age_suitability_badge(e)
     feature_cls = ' feature' if featured else ''
-    return f'''<article class="card{feature_cls}" data-person="{html.escape(e.get('person', ''))}" data-category="{html.escape(e.get('category', ''))}" data-language="{html.escape(e.get('language', 'sl'))}">
-  <a class="thumb" href="{filename}"><img src="{filename}" alt="Infografika: {person}" loading="lazy"></a>
+    return f'''<article class="card{feature_cls}" data-person="{html.escape(e.get('person', ''))}" data-category="{html.escape(e.get('category', ''))}" data-language="{html.escape(e.get('language', 'sl'))}" data-age-suitability="{age_data}">
+  <a class="thumb" href="{filename}"><img src="{filename}" alt="Infographic: {person}" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">{date}</span>
-      <span class="tag {category_cls}">{html.escape(category)}</span>
+      <span class="tag {category_cls}" data-category-tag="{html.escape(e.get('category', ''))}">{html.escape(category)}</span>
       <span class="tag language">{language_label}</span>
-      <span class="tag source-count">{count_label}</span>
+      {age_badge}
+      <span class="tag source-count" data-source-count="{e.get('source_count', len(e.get('sources', [])))}">{count_label}</span>
     </div>
     <h3>{person}</h3>
-    <p class="direct-link"><a href="{filename}">Odpri sliko</a></p>
+    <p class="direct-link"><a href="{filename}" data-i18n="open_image">Open image</a></p>
     {render_sources(e)}
   </div>
 </article>'''
@@ -122,33 +145,35 @@ def render_featured(featured):
         return ''
     person = html.escape(featured.get('person', ''))
     date = html.escape(featured.get('date', ''))
-    category_label = html.escape(featured.get('category_label', 'Znanstvenik'))
+    category_label = html.escape(category_label_en(featured.get('category', 'scientist')))
     category_class = featured.get('category_class', 'science')
     language_label = html.escape(featured.get('language_label', 'SL'))
     count_label = source_count_label(featured)
+    age_badge = age_suitability_badge(featured)
     featured_file = html.escape(featured.get('filename', ''))
     return f'''<section class="hero">
   <div class="hero-copy surface">
     <div>
-      <div class="eyebrow">Današnja slika</div>
-      <h2>Vsak dan nova infografika o znanih umetnikih, znanstvenikih in športnikih.</h2>
-      <p class="intro">Javni arhiv zbira dnevno ustvarjene izobraževalne infografike za otroke. Spodaj lahko hitro iščeš, filtriraš in prelistaš starejše objave kot moderno galerijo slik.</p>
+      <div class="eyebrow" data-i18n="hero_eyebrow">Today’s image</div>
+      <h2 data-i18n="hero_title">A new daily infographic about famous artists, scientists and athletes.</h2>
+      <p class="intro" data-i18n="hero_intro">This public archive collects educational infographics for kids. Search, filter and browse older posts as a modern image gallery.</p>
     </div>
     <div>
     </div>
   </div>
   <article class="hero-card surface">
     <a class="hero-image-wrap" href="{featured_file}">
-      <img src="{featured_file}" alt="Infografika: {person}">
+      <img src="{featured_file}" alt="Infographic: {person}">
     </a>
     <div class="meta-row hero-meta">
       <span class="tag date">{date}</span>
-      <span class="tag {category_class}">{category_label}</span>
+      <span class="tag {category_class}" data-category-tag="{html.escape(featured.get('category', ''))}">{category_label}</span>
       <span class="tag language">{language_label}</span>
-      <span class="tag source-count">{count_label}</span>
+      {age_badge}
+      <span class="tag source-count" data-source-count="{featured.get('source_count', len(featured.get('sources', [])))}">{count_label}</span>
     </div>
     <h3>{person}</h3>
-    <p class="hero-link"><a href="{featured_file}">Odpri današnjo sliko</a></p>
+    <p class="hero-link"><a href="{featured_file}" data-i18n="open_today">Open today’s image</a></p>
     {render_sources(featured)}
   </article>
 </section>'''
@@ -156,34 +181,45 @@ def render_featured(featured):
 
 def render_filter_bar(index_summary):
     category_options = ''.join(
-        f'<option value="{html.escape(category)}">{html.escape(CATEGORY_LABELS.get(category, (category.title(),))[0])}</option>'
+        f'<option value="{html.escape(category)}" data-category-option="{html.escape(category)}">{html.escape(category_label_en(category))}</option>'
         for category in index_summary.get('categories', [])
     )
     language_options = ''.join(
         f'<option value="{html.escape(language)}">{html.escape(language.upper())}</option>'
         for language in index_summary.get('languages', [])
     )
+    age_options = ''.join(
+        f'<option value="{html.escape(key)}" data-age-option="{html.escape(key)}">{html.escape(AGE_SUITABILITY_LEVELS.get(key, {}).get("label_en", key))}</option>'
+        for key in index_summary.get('age_suitability_levels', AGE_SUITABILITY_LEVELS.keys())
+    )
     return f'''<div class="filter-bar">
   <div class="filter-control">
-    <label for="archive-search">Išči po osebi</label>
-    <input id="archive-search" type="search" placeholder="npr. Duke Ellington">
+    <label for="archive-search" data-i18n="search_label">Search by person</label>
+    <input id="archive-search" type="search" placeholder="e.g. Duke Ellington" data-i18n-placeholder="search_placeholder">
   </div>
   <div class="filter-control">
-    <label for="archive-category">Vrsta</label>
+    <label for="archive-category" data-i18n="category_label">Type</label>
     <select id="archive-category">
-      <option value="">Vse vrste</option>
+      <option value="" data-i18n="category_all">All types</option>
       {category_options}
     </select>
   </div>
   <div class="filter-control">
-    <label for="archive-language">Jezik</label>
+    <label for="archive-language" data-i18n="image_language_label">Image language</label>
     <select id="archive-language">
-      <option value="">Vsi jeziki</option>
+      <option value="" data-i18n="language_all">All image languages</option>
       {language_options}
     </select>
   </div>
+  <div class="filter-control">
+    <label for="archive-age" data-i18n="age_label">Age suitability</label>
+    <select id="archive-age">
+      <option value="" data-i18n="age_all">All age levels</option>
+      {age_options}
+    </select>
+  </div>
 </div>
-<p id="results-summary" class="results-summary">Prikazan je začetni izbor za to stran. Za iskanje ali filtriranje uporabi polja zgoraj.</p>'''
+<p id="results-summary" class="results-summary" data-i18n="initial_summary">Showing the initial selection for this page. Use search or filters above to search the full archive.</p>'''
 
 
 def render_client_script():
@@ -195,10 +231,114 @@ def render_client_script():
   const searchInput = document.getElementById('archive-search');
   const categorySelect = document.getElementById('archive-category');
   const languageSelect = document.getElementById('archive-language');
-  if (!masonry || !summary || !searchInput || !categorySelect || !languageSelect) return;
+  const ageSelect = document.getElementById('archive-age');
+  if (!masonry || !summary || !searchInput || !categorySelect || !languageSelect || !ageSelect) return;
 
   const initialMarkup = masonry.innerHTML;
+  const defaultLang = 'en';
+  let uiLang = localStorage.getItem('archive-ui-lang') || defaultLang;
   let entries = [];
+
+  const dict = {
+    en: {
+      document_title: 'Daily birthday infographic archive',
+      brand_title: 'Daily birthday infographic archive',
+      brand_subtitle: 'Daily Slovenian infographics for kids',
+      kofi: 'Support the site author',
+      hero_eyebrow: 'Today’s image',
+      hero_title: 'A new daily infographic about famous artists, scientists and athletes.',
+      hero_intro: 'This public archive collects educational infographics for kids. Search, filter and browse older posts as a modern image gallery.',
+      archive_heading_home: 'Archive as a modern gallery',
+      archive_heading_page: 'Archive – page {page}',
+      archive_intro_home: 'Search by person, type, image language and age suitability.',
+      archive_intro_page: 'Browse older daily infographics by page or use search and filters.',
+      total_prefix: 'Total:',
+      page_prefix: 'Page {page}/{total}',
+      search_label: 'Search by person',
+      search_placeholder: 'e.g. Duke Ellington',
+      category_label: 'Type',
+      category_all: 'All types',
+      image_language_label: 'Image language',
+      language_all: 'All image languages',
+      age_label: 'Age suitability',
+      age_all: 'All age levels',
+      initial_summary: 'Showing the initial selection for this page. Use search or filters above to search the full archive.',
+      no_results: 'No results for the selected filters.',
+      found: 'Results found: {count}',
+      open_image: 'Open image',
+      open_today: 'Open today’s image',
+      source: 'source',
+      sources_zero: 'No sources',
+      sources_one: '1 source',
+      sources_many: '{count} sources',
+      footer_text: 'Public archive of daily infographics about famous artists, scientists and athletes.',
+      updated: 'Updated:',
+      search_unavailable: 'Search and filters are currently unavailable.',
+      pager_previous: '← Previous',
+      pager_next: 'Next →',
+      lang_picker_label: 'Site language',
+      category_artist: 'Artist',
+      category_scientist: 'Scientist',
+      category_sport: 'Athlete',
+      age_age_6: 'Ages 6+',
+      age_age_13: 'Ages 13+',
+      age_adult: 'Adults'
+    },
+    sl: {
+      document_title: 'Arhiv dnevnih rojstnodnevnih infografik',
+      brand_title: 'Arhiv dnevnih rojstnodnevnih infografik',
+      brand_subtitle: 'Dnevno ustvarjene slovenske infografike za otroke',
+      kofi: 'Podpri avtorja strani',
+      hero_eyebrow: 'Današnja slika',
+      hero_title: 'Vsak dan nova infografika o znanih umetnikih, znanstvenikih in športnikih.',
+      hero_intro: 'Javni arhiv zbira dnevno ustvarjene izobraževalne infografike za otroke. Spodaj lahko hitro iščeš, filtriraš in prelistaš starejše objave kot moderno galerijo slik.',
+      archive_heading_home: 'Arhiv kot moderna galerija',
+      archive_heading_page: 'Arhiv – stran {page}',
+      archive_intro_home: 'Išči po osebi ter filtriraj po vrsti, jeziku slike in starostni primernosti.',
+      archive_intro_page: 'Prelistaj starejše dnevne infografike po straneh ali uporabi iskanje in filtre.',
+      total_prefix: 'Skupaj:',
+      page_prefix: 'Stran {page}/{total}',
+      search_label: 'Išči po osebi',
+      search_placeholder: 'npr. Duke Ellington',
+      category_label: 'Vrsta',
+      category_all: 'Vse vrste',
+      image_language_label: 'Jezik slike',
+      language_all: 'Vsi jeziki slik',
+      age_label: 'Starostna primernost',
+      age_all: 'Vse starostne ravni',
+      initial_summary: 'Prikazan je začetni izbor za to stran. Za iskanje ali filtriranje celotnega arhiva uporabi polja zgoraj.',
+      no_results: 'Za izbrane filtre ni zadetkov.',
+      found: 'Najdenih zadetkov: {count}',
+      open_image: 'Odpri sliko',
+      open_today: 'Odpri današnjo sliko',
+      source: 'vir',
+      sources_zero: 'Brez virov',
+      sources_one: '1 vir',
+      sources_many: '{count} viri',
+      footer_text: 'Javni arhiv dnevnih infografik o znanih umetnikih, znanstvenikih in športnikih.',
+      updated: 'Posodobljeno:',
+      search_unavailable: 'Iskanje in filtri trenutno niso na voljo.',
+      pager_previous: '← Prejšnja',
+      pager_next: 'Naslednja →',
+      lang_picker_label: 'Jezik strani',
+      category_artist: 'Umetnik',
+      category_scientist: 'Znanstvenik',
+      category_sport: 'Športnik',
+      age_age_6: '6+ let',
+      age_age_13: '13+ let',
+      age_adult: 'Odrasli'
+    }
+  };
+
+  function t(key, params) {
+    let value = (dict[uiLang] && dict[uiLang][key]) || dict.en[key] || key;
+    if (params) {
+      Object.entries(params).forEach(([name, replacement]) => {
+        value = value.replace(`{${name}}`, replacement);
+      });
+    }
+    return value;
+  }
 
   function escapeHtml(value) {
     return String(value ?? '')
@@ -209,44 +349,97 @@ def render_client_script():
       .replace(/'/g, '&#39;');
   }
 
+  function categoryLabel(category) {
+    return t(`category_${category || 'scientist'}`);
+  }
+
   function sourceCountLabel(count) {
-    if (count === 1) return '1 vir';
-    return count ? `${count} viri` : 'Brez virov';
+    if (count === 1) return t('sources_one');
+    return count ? t('sources_many', {count}) : t('sources_zero');
+  }
+
+  function ageLabel(key) {
+    return t(`age_${key}`);
+  }
+
+  function ageBadges(keys) {
+    if (!keys || !keys.length) return '';
+    return `<span class="tag age" data-age-tag="1">${escapeHtml(keys.map(ageLabel).join(', '))}</span>`;
   }
 
   function renderSources(sources) {
     if (!sources || !sources.length) return '';
-    return `<ul class="sources">${sources.slice(0, 4).map((url) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">vir</a></li>`).join('')}</ul>`;
+    return `<ul class="sources">${sources.slice(0, 4).map((url) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" data-source-link="1">${escapeHtml(t('source'))}</a></li>`).join('')}</ul>`;
   }
 
   function renderCard(entry, featured) {
     const featureClass = featured ? ' feature' : '';
-    return `<article class="card${featureClass}" data-person="${escapeHtml(entry.person)}" data-category="${escapeHtml(entry.category)}" data-language="${escapeHtml(entry.language)}">
-      <a class="thumb" href="${escapeHtml(entry.filename)}"><img src="${escapeHtml(entry.filename)}" alt="Infografika: ${escapeHtml(entry.person)}" loading="lazy"></a>
+    const ageKeys = entry.age_suitability_keys || [];
+    return `<article class="card${featureClass}" data-person="${escapeHtml(entry.person)}" data-category="${escapeHtml(entry.category)}" data-language="${escapeHtml(entry.language)}" data-age-suitability="${escapeHtml(ageKeys.join(' '))}">
+      <a class="thumb" href="${escapeHtml(entry.filename)}"><img src="${escapeHtml(entry.filename)}" alt="Infographic: ${escapeHtml(entry.person)}" loading="lazy"></a>
       <div class="content">
         <div class="meta-row">
           <span class="tag date">${escapeHtml(entry.date)}</span>
-          <span class="tag ${escapeHtml(entry.category_class)}">${escapeHtml(entry.category_label)}</span>
+          <span class="tag ${escapeHtml(entry.category_class)}" data-category-tag="${escapeHtml(entry.category)}">${escapeHtml(categoryLabel(entry.category))}</span>
           <span class="tag language">${escapeHtml(entry.language_label)}</span>
-          <span class="tag source-count">${sourceCountLabel(entry.source_count)}</span>
+          ${ageBadges(ageKeys)}
+          <span class="tag source-count" data-source-count="${Number(entry.source_count || 0)}">${sourceCountLabel(entry.source_count)}</span>
         </div>
         <h3>${escapeHtml(entry.person)}</h3>
-        <p class="direct-link"><a href="${escapeHtml(entry.filename)}">Odpri sliko</a></p>
+        <p class="direct-link"><a href="${escapeHtml(entry.filename)}" data-i18n="open_image">${escapeHtml(t('open_image'))}</a></p>
         ${renderSources(entry.sources || [])}
       </div>
     </article>`;
+  }
+
+  function updateStaticTranslations() {
+    document.documentElement.lang = uiLang;
+    document.title = t('document_title');
+    document.querySelectorAll('[data-i18n]').forEach((node) => {
+      node.textContent = t(node.dataset.i18n);
+    });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach((node) => {
+      node.setAttribute('placeholder', t(node.dataset.i18nPlaceholder));
+    });
+    document.querySelectorAll('[data-source-link]').forEach((node) => { node.textContent = t('source'); });
+    document.querySelectorAll('[data-source-count]').forEach((node) => { node.textContent = sourceCountLabel(Number(node.dataset.sourceCount || 0)); });
+    document.querySelectorAll('[data-category-option]').forEach((node) => { node.textContent = categoryLabel(node.dataset.categoryOption); });
+    document.querySelectorAll('[data-age-option]').forEach((node) => { node.textContent = ageLabel(node.dataset.ageOption); });
+    document.querySelectorAll('[data-category-tag]').forEach((node) => { node.textContent = categoryLabel(node.dataset.categoryTag); });
+    document.querySelectorAll('[data-age-tag]').forEach((node) => {
+      const parent = node.closest('[data-age-suitability]');
+      const keys = parent ? parent.dataset.ageSuitability.split(/\\s+/).filter(Boolean) : [];
+      node.textContent = keys.map(ageLabel).join(', ');
+    });
+    document.querySelectorAll('[data-lang-option]').forEach((button) => {
+      const active = button.dataset.langOption === uiLang;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+    const totalPill = document.querySelector('[data-total-pill]');
+    if (totalPill) totalPill.textContent = `${t('total_prefix')} ${totalPill.dataset.total}`;
+    const pagePill = document.querySelector('[data-page-pill]');
+    if (pagePill) pagePill.textContent = t('page_prefix', {page: pagePill.dataset.page, total: pagePill.dataset.total});
+    const archiveHeading = document.querySelector('[data-archive-heading]');
+    if (archiveHeading) archiveHeading.textContent = archiveHeading.dataset.page === '1' ? t('archive_heading_home') : t('archive_heading_page', {page: archiveHeading.dataset.page});
+    const archiveIntro = document.querySelector('[data-archive-intro]');
+    if (archiveIntro) archiveIntro.textContent = archiveIntro.dataset.page === '1' ? t('archive_intro_home') : t('archive_intro_page');
+    const updatedNode = document.querySelector('[data-updated]');
+    if (updatedNode) updatedNode.textContent = `${t('updated')} ${updatedNode.dataset.updated}`;
   }
 
   function applyFilters() {
     const query = searchInput.value.trim().toLowerCase();
     const category = categorySelect.value;
     const language = languageSelect.value;
-    const hasFilters = Boolean(query || category || language);
+    const age = ageSelect.value;
+    const hasFilters = Boolean(query || category || language || age);
 
     if (!hasFilters) {
       masonry.innerHTML = initialMarkup;
-      summary.textContent = 'Prikazan je začetni izbor za to stran. Za iskanje ali filtriranje uporabi polja zgoraj.';
+      summary.textContent = t('initial_summary');
       if (pagination) pagination.classList.remove('is-hidden');
+      updateStaticTranslations();
       return;
     }
 
@@ -254,15 +447,25 @@ def render_client_script():
       if (query && !entry.search_text.includes(query)) return false;
       if (category && entry.category !== category) return false;
       if (language && entry.language !== language) return false;
+      if (age && !(entry.age_suitability_keys || []).includes(age)) return false;
       return true;
     });
 
     masonry.innerHTML = filtered.length
       ? filtered.map((entry, index) => renderCard(entry, index % 4 === 0)).join('')
-      : '<p class="empty">Za izbrane filtre ni zadetkov.</p>';
-    summary.textContent = `Najdenih zadetkov: ${filtered.length}`;
+      : `<p class="empty">${escapeHtml(t('no_results'))}</p>`;
+    summary.textContent = t('found', {count: filtered.length});
     if (pagination) pagination.classList.add('is-hidden');
+    updateStaticTranslations();
   }
+
+  document.querySelectorAll('[data-lang-option]').forEach((button) => {
+    button.addEventListener('click', () => {
+      uiLang = button.dataset.langOption;
+      localStorage.setItem('archive-ui-lang', uiLang);
+      applyFilters();
+    });
+  });
 
   fetch('entries.json')
     .then((response) => response.ok ? response.json() : Promise.reject(new Error('entries.json fetch failed')))
@@ -271,38 +474,40 @@ def render_client_script():
       searchInput.addEventListener('input', applyFilters);
       categorySelect.addEventListener('change', applyFilters);
       languageSelect.addEventListener('change', applyFilters);
+      ageSelect.addEventListener('change', applyFilters);
+      applyFilters();
     })
     .catch(() => {
-      summary.textContent = 'Iskanje in filtri trenutno niso na voljo.';
+      summary.textContent = t('search_unavailable');
+      updateStaticTranslations();
     });
 })();
 </script>'''
 
-
 def render_page(page_num: int, total_pages: int, chunk, featured=None):
-    page_heading = 'Arhiv kot moderna galerija' if page_num == 1 else f'Arhiv – stran {page_num}'
+    page_heading = 'Archive as a modern gallery' if page_num == 1 else f'Archive – page {page_num}'
     page_intro = (
-        'Išči po osebi ter filtriraj po vrsti in jeziku.'
+        'Search by person, type, image language and age suitability.'
         if page_num == 1 else
-        'Prelistaj starejše dnevne infografike po straneh ali uporabi iskanje in filtre.'
+        'Browse older daily infographics by page or use search and filters.'
     )
     updated = datetime.now().strftime('%Y-%m-%d %H:%M')
     cards = '\n'.join(
         render_masonry_card(e, featured=(page_num == 1 and idx in (0, 3)))
         for idx, e in enumerate(chunk)
-    ) if chunk else '<p class="empty">Na tej strani še ni slik.</p>'
+    ) if chunk else '<p class="empty">No images on this page yet.</p>'
     featured_html = render_featured(featured) if page_num == 1 and featured else ''
     pagination = render_pagination(page_num, total_pages)
     filters_html = render_filter_bar(entries_index['summary'])
     client_script = render_client_script()
-    title_suffix = 'Današnja slika in arhiv' if page_num == 1 else f'Arhiv – stran {page_num}'
+    title_suffix = 'Today’s image and archive' if page_num == 1 else f'Archive – page {page_num}'
     return f'''<!doctype html>
-<html lang="sl">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Arhiv dnevnih rojstnodnevnih infografik – {title_suffix}</title>
-  <meta name="description" content="Dnevno ustvarjene slovenske infografike o znanih umetnikih in znanstvenikih za otroke.">
+  <title>Daily birthday infographic archive – {title_suffix}</title>
+  <meta name="description" content="Daily Slovenian kid-friendly infographics about famous artists, scientists and athletes.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -356,6 +561,11 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     .support-note a:hover {{ text-decoration:underline; }}
     .kofi-link {{ display:inline-flex; align-items:center; gap:5px; }}
     .kofi-icon {{ width:22px; height:auto; display:inline-block; }}
+    .nav-right {{ display:flex; align-items:center; justify-content:flex-end; gap:14px; flex-wrap:wrap; }}
+    .lang-picker {{ display:inline-flex; align-items:center; gap:6px; padding:6px; border-radius:999px; background:#fff; border:1px solid var(--line); box-shadow:0 6px 18px rgba(33,25,34,.06); }}
+    .lang-icon {{ width:22px; height:22px; display:grid; place-items:center; font-size:16px; }}
+    .lang-picker button {{ border:0; border-radius:999px; background:transparent; color:#51483f; font:inherit; font-size:12px; font-weight:800; padding:7px 9px; cursor:pointer; }}
+    .lang-picker button.active {{ background:var(--ink); color:#fff; }}
     .hero {{ margin-top:24px; display:grid; grid-template-columns:1.1fr .9fr; gap:20px; align-items:stretch; }}
     .hero-copy {{ padding:34px 34px 30px; display:flex; flex-direction:column; justify-content:space-between; }}
     .eyebrow {{ font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:#8a5c09; display:inline-flex; align-items:center; gap:8px; }}
@@ -394,8 +604,9 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     .tag.science {{ background:#eaf5ff; border-color:#d4e7ff; color:#29547f; }}
     .tag.sport {{ background:#fff1d6; border-color:#ffe2a8; color:#8a5c09; }}
     .tag.language {{ background:#f1ecff; border-color:#ddd3ff; color:#55408d; }}
+    .tag.age {{ background:#fff7dc; border-color:#ffe7a5; color:#7b5a07; }}
     .tag.source-count {{ background:#eaf8ee; border-color:#d9efd9; color:#2b6a3c; }}
-    .filter-bar {{ display:grid; grid-template-columns:minmax(220px, 1.6fr) repeat(2, minmax(160px, .8fr)); gap:12px; margin:0 0 18px; }}
+    .filter-bar {{ display:grid; grid-template-columns:minmax(220px, 1.6fr) repeat(3, minmax(150px, .8fr)); gap:12px; margin:0 0 18px; }}
     .filter-control {{ display:flex; flex-direction:column; gap:6px; }}
     .filter-control label {{ font-size:13px; color:var(--muted); font-weight:700; }}
     .filter-control input, .filter-control select {{
@@ -421,6 +632,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     }}
     @media (max-width:700px) {{
       .nav {{ position:static; flex-direction:column; align-items:stretch; }}
+      .nav-right {{ justify-content:flex-start; }}
       .support-note {{ max-width:none; text-align:left; }}
       .archive-top, .footer {{ flex-direction:column; align-items:flex-start; }}
       .pagination {{ justify-content:flex-start; }}
@@ -439,22 +651,29 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
       <div class="brand">
         <div class="logo">🖼️</div>
         <div>
-          <h1>Arhiv dnevnih rojstnodnevnih infografik</h1>
-          <p>Dnevno ustvarjene slovenske infografike za otroke</p>
+          <h1 data-i18n="brand_title">Daily birthday infographic archive</h1>
+          <p data-i18n="brand_subtitle">Daily Slovenian infographics for kids</p>
         </div>
       </div>
-      <p class="support-note"><a class="kofi-link" href="https://ko-fi.com/lukafinzgar" target="_blank" rel="noopener noreferrer" aria-label="Podpri avtorja strani na Ko-fi"><img class="kofi-icon" src="kofi_stroke_cup.svg" alt="Ko-fi"><span>Podpri avtorja strani</span></a></p>
+      <div class="nav-right">
+        <div class="lang-picker" role="group" aria-label="Site language">
+          <span class="lang-icon" aria-hidden="true">🌐</span>
+          <button type="button" class="active" data-lang-option="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang-option="sl" aria-pressed="false">SL</button>
+        </div>
+        <p class="support-note"><a class="kofi-link" href="https://ko-fi.com/lukafinzgar" target="_blank" rel="noopener noreferrer" aria-label="Support the site author on Ko-fi"><img class="kofi-icon" src="kofi_stroke_cup.svg" alt="Ko-fi"><span data-i18n="kofi">Support the site author</span></a></p>
+      </div>
     </header>
     {featured_html}
     <section class="archive-shell">
       <div class="archive-top">
         <div>
-          <h2>{page_heading}</h2>
-          <p>{page_intro}</p>
+          <h2 data-archive-heading="1" data-page="{page_num}">{page_heading}</h2>
+          <p data-archive-intro="1" data-page="{page_num}">{page_intro}</p>
         </div>
         <div class="archive-filters">
-          <span class="pill">Skupaj: {len(entries)}</span>
-          <span class="pill">Stran {page_num}/{total_pages}</span>
+          <span class="pill" data-total-pill="1" data-total="{len(entries)}">Total: {len(entries)}</span>
+          <span class="pill" data-page-pill="1" data-page="{page_num}" data-total="{total_pages}">Page {page_num}/{total_pages}</span>
         </div>
       </div>
       {filters_html}
@@ -462,8 +681,8 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
       {pagination}
     </section>
     <footer class="footer surface">
-      <div>Javni arhiv dnevnih infografik o znanih umetnikih, znanstvenikih in športnikih.</div>
-      <div>Posodobljeno: {html.escape(updated)}</div>
+      <div data-i18n="footer_text">Public archive of daily infographics about famous artists, scientists and athletes.</div>
+      <div data-updated="{html.escape(updated)}">Updated: {html.escape(updated)}</div>
     </footer>
   </main>
   {client_script}
