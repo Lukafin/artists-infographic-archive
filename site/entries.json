@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 103,
+    "total_entries": 104,
     "categories": [
       "artist",
       "scientist"
@@ -9,14 +9,64 @@
       "sl"
     ],
     "category_counts": {
-      "artist": 19,
-      "scientist": 84
+      "scientist": 85,
+      "artist": 19
     },
     "language_counts": {
-      "sl": 103
+      "sl": 104
     }
   },
   "entries": [
+    {
+      "date": "2026-05-05",
+      "person": "Johann Faulhaber",
+      "filename": "JohannFaulhaber.png",
+      "image_filename": "JohannFaulhaber.png",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Johann_Faulhaber",
+        "https://mathshistory.st-andrews.ac.uk/Biographies/Faulhaber/",
+        "https://www.wikidata.org/wiki/Q72369"
+      ],
+      "title": "Johann Faulhaber – številski vzorci",
+      "summary": "Slovenska otroška infografika o Johannu Faulhaberju, matematiku, rojenem 5. 5. 1580, znanem po vzorcih v seštevkih potenc.",
+      "age_suitability_details": {
+        "age_6": "Johann Faulhaber je rad opazoval števila in iskal vzorce, podobno kot bi gradil stopnice iz kock.",
+        "age_13": "Faulhaber je preučeval vsote potenc, na primer 1² + 2² + 3², in pomagal pokazati, da imajo dolgi računi skrita pravila.",
+        "adult": "Johann Faulhaber (1580–1635) je bil nemški matematik, povezan z zgodnjimi formulami za vsote potenc; njegovo delo je del zgodovine simbolne algebre pred razvojem moderne analize."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "sl",
+      "assignment_id": "14d878ce-f99b-4b5f-89d1-9b249fb4030f",
+      "_kind": "native",
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "source_count": 3,
+      "search_text": "johann faulhaber scientist znanstvenik sl"
+    },
     {
       "date": "2026-05-05",
       "person": "Delia Derbyshire",
