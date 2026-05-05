@@ -470,7 +470,10 @@ def render_client_script():
     });
   });
 
-  fetch('entries.json')
+  const entriesUrl = new URL('entries.json', window.location.href);
+  const pageVersion = new URLSearchParams(window.location.search).get('v');
+  if (pageVersion) entriesUrl.searchParams.set('v', pageVersion);
+  fetch(entriesUrl.toString(), {cache: 'no-store'})
     .then((response) => response.ok ? response.json() : Promise.reject(new Error('entries.json fetch failed')))
     .then((data) => {
       entries = data.entries || [];
