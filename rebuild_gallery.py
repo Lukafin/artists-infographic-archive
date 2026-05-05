@@ -443,7 +443,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
           <p>Dnevno ustvarjene slovenske infografike za otroke</p>
         </div>
       </div>
-      <p class="support-note"><a class="kofi-link" href="https://ko-fi.com/lukafinzgar" target="_blank" rel="noopener noreferrer" aria-label="Podpri na Ko-fi"><img class="kofi-icon" src="kofi_stroke_cup.svg" alt="Ko-fi"></a></p>
+      <p class="support-note"><a class="kofi-link" href="https://ko-fi.com/lukafinzgar" target="_blank" rel="noopener noreferrer" aria-label="Podpri avtorja strani na Ko-fi"><img class="kofi-icon" src="kofi_stroke_cup.svg" alt="Ko-fi"><span>Podpri avtorja strani</span></a></p>
     </header>
     {featured_html}
     <section class="archive-shell">
