@@ -396,6 +396,7 @@ def render_client_script():
     document.documentElement.lang = uiLang;
     document.title = t('document_title');
     document.querySelectorAll('[data-i18n]').forEach((node) => {
+      if (node.id === 'results-summary' && node.dataset.dynamic === 'true') return;
       node.textContent = t(node.dataset.i18n);
     });
     document.querySelectorAll('[data-i18n-placeholder]').forEach((node) => {
@@ -437,6 +438,7 @@ def render_client_script():
 
     if (!hasFilters) {
       masonry.innerHTML = initialMarkup;
+      summary.dataset.dynamic = 'false';
       summary.textContent = t('initial_summary');
       if (pagination) pagination.classList.remove('is-hidden');
       updateStaticTranslations();
@@ -454,6 +456,7 @@ def render_client_script():
     masonry.innerHTML = filtered.length
       ? filtered.map((entry, index) => renderCard(entry, index % 4 === 0)).join('')
       : `<p class="empty">${escapeHtml(t('no_results'))}</p>`;
+    summary.dataset.dynamic = 'true';
     summary.textContent = t('found', {count: filtered.length});
     if (pagination) pagination.classList.add('is-hidden');
     updateStaticTranslations();
