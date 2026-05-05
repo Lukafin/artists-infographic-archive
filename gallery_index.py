@@ -57,6 +57,11 @@ def normalize_entry_metadata(entry: dict) -> dict:
     if not isinstance(details, dict):
         details = {}
     age_keys = [key for key in AGE_SUITABILITY_LEVELS if key in details and details.get(key)]
+    if not age_keys:
+        # Legacy archive entries were produced before age-suitability metadata
+        # existed in the backend. Those older kid-friendly Slovenian pages should
+        # remain discoverable in the 6+ filter instead of disappearing entirely.
+        age_keys = ['age_6']
     age_labels_en = [AGE_SUITABILITY_LEVELS[key]['label_en'] for key in age_keys]
     age_labels_sl = [AGE_SUITABILITY_LEVELS[key]['label_sl'] for key in age_keys]
 
