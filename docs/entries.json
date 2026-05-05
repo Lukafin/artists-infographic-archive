@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 102,
+    "total_entries": 103,
     "categories": [
       "artist",
       "scientist"
@@ -9,14 +9,64 @@
       "sl"
     ],
     "category_counts": {
-      "artist": 18,
+      "artist": 19,
       "scientist": 84
     },
     "language_counts": {
-      "sl": 102
+      "sl": 103
     }
   },
   "entries": [
+    {
+      "date": "2026-05-05",
+      "person": "Delia Derbyshire",
+      "filename": "DeliaDerbyshire.png",
+      "image_filename": "DeliaDerbyshire.png",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Delia_Derbyshire",
+        "https://britishmusiccollection.org.uk/composer/delia-derbyshire",
+        "https://www.bbc.com/historyofthebbc/100-voices/pioneering-women/women-of-the-workshop/delia-derbyshire"
+      ],
+      "title": "Delia Derbyshire — zvočni laboratorij časa",
+      "summary": "Slovenska otroška infografika o Delii Derbyshire, pionirki elektronske glasbe, BBC Radiophonic Workshopu in zvokih, ki so dali polet temi Doctor Who.",
+      "age_suitability_details": {
+        "age_6": "Delia je iz radijskih in domačih zvokov ustvarjala čarobno glasbo, ki jo lahko poslušamo kot zvočno pustolovščino.",
+        "age_13": "Delia Derbyshire je leta 1963 v BBC Radiophonic Workshopu z magnetofonskimi trakovi, zankami in oscilatorji soustvarila elektronski zvok teme Doctor Who ter pokazala, kako lahko tehnologija postane glasbeni instrument.",
+        "adult": "Delia Derbyshire je pionirka britanske elektronske glasbe in musique concrète; njeno delo v BBC Radiophonic Workshopu, zlasti realizacija teme Doctor Who, je zgodnji primer studijske manipulacije trakov, sinteznih tonov in radiodifuzne zvočne umetnosti z dolgotrajnim kulturnim vplivom."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "bfce23df-fa12-448f-94ef-1b0971d19924",
+      "_kind": "native",
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "source_count": 3,
+      "search_text": "delia derbyshire artist umetnik sl"
+    },
     {
       "date": "2026-05-04",
       "person": "Vincent van Gogh",
