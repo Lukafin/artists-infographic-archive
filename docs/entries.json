@@ -21,9 +21,7 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 104,
-      "age_13": 4,
-      "adult": 4
+      "age_6": 104
     }
   },
   "entries": [
@@ -75,21 +73,15 @@
       "category_class": "science",
       "language_label": "SL",
       "source_count": 3,
-      "search_text": "johann faulhaber scientist znanstvenik sl age_6 age_13 adult ages 6+ ages 13+ adults 6+ let 13+ let odrasli",
+      "search_text": "johann faulhaber scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
-        "age_6",
-        "age_13",
-        "adult"
+        "age_6"
       ],
       "age_suitability_labels_en": [
-        "Ages 6+",
-        "Ages 13+",
-        "Adults"
+        "Ages 6+"
       ],
       "age_suitability_labels_sl": [
-        "6+ let",
-        "13+ let",
-        "Odrasli"
+        "6+ let"
       ]
     },
     {
@@ -140,21 +132,15 @@
       "category_class": "artist",
       "language_label": "SL",
       "source_count": 3,
-      "search_text": "delia derbyshire artist umetnik sl age_6 age_13 adult ages 6+ ages 13+ adults 6+ let 13+ let odrasli",
+      "search_text": "delia derbyshire artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
-        "age_6",
-        "age_13",
-        "adult"
+        "age_6"
       ],
       "age_suitability_labels_en": [
-        "Ages 6+",
-        "Ages 13+",
-        "Adults"
+        "Ages 6+"
       ],
       "age_suitability_labels_sl": [
-        "6+ let",
-        "13+ let",
-        "Odrasli"
+        "6+ let"
       ]
     },
     {
@@ -259,21 +245,15 @@
       "category_class": "science",
       "language_label": "SL",
       "source_count": 4,
-      "search_text": "louis pasteur scientist znanstvenik sl age_6 age_13 adult ages 6+ ages 13+ adults 6+ let 13+ let odrasli",
+      "search_text": "louis pasteur scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
-        "age_6",
-        "age_13",
-        "adult"
+        "age_6"
       ],
       "age_suitability_labels_en": [
-        "Ages 6+",
-        "Ages 13+",
-        "Adults"
+        "Ages 6+"
       ],
       "age_suitability_labels_sl": [
-        "6+ let",
-        "13+ let",
-        "Odrasli"
+        "6+ let"
       ]
     },
     {
@@ -325,21 +305,15 @@
       "category_class": "science",
       "language_label": "SL",
       "source_count": 4,
-      "search_text": "abdus salam scientist znanstvenik sl age_6 age_13 adult ages 6+ ages 13+ adults 6+ let 13+ let odrasli",
+      "search_text": "abdus salam scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
-        "age_6",
-        "age_13",
-        "adult"
+        "age_6"
       ],
       "age_suitability_labels_en": [
-        "Ages 6+",
-        "Ages 13+",
-        "Adults"
+        "Ages 6+"
       ],
       "age_suitability_labels_sl": [
-        "6+ let",
-        "13+ let",
-        "Odrasli"
+        "6+ let"
       ]
     },
     {
