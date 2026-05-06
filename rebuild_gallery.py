@@ -29,6 +29,33 @@ def load_json(path: Path, default):
         return default
 
 
+
+
+def validate_entry_assets(entries):
+    missing = []
+    invalid = []
+    for entry in entries:
+        filename = (entry.get('filename') or '').strip()
+        label = f"{entry.get('date', 'unknown-date')} {entry.get('person', 'unknown-person')}"
+        if not filename:
+            invalid.append(f"{label}: empty filename")
+            continue
+        filename_path = Path(filename)
+        if filename_path.is_absolute() or '..' in filename_path.parts:
+            invalid.append(f"{label}: unsafe filename {filename!r}")
+            continue
+        if not (PUBLIC_ROOT / filename_path).is_file():
+            missing.append(f"{label}: {filename}")
+    if invalid or missing:
+        details = []
+        if invalid:
+            details.append('Invalid archive image filenames:\n- ' + '\n- '.join(invalid))
+        if missing:
+            details.append('Missing archive image files under ' + str(PUBLIC_ROOT) + ':\n- ' + '\n- '.join(missing))
+        raise SystemExit('Refusing to rebuild artists archive with broken image references.\n' + '\n'.join(details))
+    return entries
+
+
 def dedupe_entries(entries):
     best = {}
     for e in entries:
@@ -708,6 +735,7 @@ for entry_path in sorted(RUNS_DIR.glob('*/entry.json')):
         entries.append(entry)
 
 entries = [normalize_entry_metadata(entry) for entry in dedupe_entries(entries)]
+entries = validate_entry_assets(entries)
 entries.sort(key=lambda x: ((x.get('date') or ''), (x.get('person') or ''), (x.get('filename') or '')), reverse=True)
 entries_index = build_entries_index(entries)
 
