@@ -53,11 +53,11 @@
     .pill { display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:999px; background:var(--chip); border:1px solid #e4dbce; font-size:14px; color:#3f3933; text-decoration:none; }
     .pill.primary { background:var(--accent); border-color:var(--accent); color:#fff; font-weight:700; }
     .pill.soft { background:rgba(255,255,255,.72); }
-    .support-note { max-width:360px; text-align:right; color:var(--muted); font-size:13px; line-height:1.35; margin:0; }
+    .support-note { max-width:360px; text-align:right; color:var(--muted); font-size:13px; line-height:1.35; }
     .support-note a { color:var(--accent); font-weight:800; text-decoration:none; }
     .support-note a:hover { text-decoration:underline; }
     .kofi-link { display:inline-flex; align-items:center; gap:5px; }
-    .kofi-icon { width:22px; height:22px; display:inline-block; flex:0 0 22px; object-fit:contain; }
+    .kofi-icon { width:22px; height:auto; display:inline-block; }
     .nav-right { display:flex; align-items:center; justify-content:flex-end; gap:14px; flex-wrap:wrap; }
     .lang-picker { display:inline-flex; align-items:center; gap:6px; padding:6px; border-radius:999px; background:#fff; border:1px solid var(--line); box-shadow:0 6px 18px rgba(33,25,34,.06); }
     .lang-icon { width:22px; height:22px; display:grid; place-items:center; font-size:16px; }
@@ -130,6 +130,7 @@
     @media (max-width:700px) {
       .nav { position:static; flex-direction:column; align-items:stretch; }
       .nav-right { justify-content:flex-start; }
+      .support-note { max-width:none; text-align:left; }
       .archive-top, .footer { flex-direction:column; align-items:flex-start; }
       .pagination { justify-content:flex-start; }
       .hero-copy { padding:26px; }
@@ -171,18 +172,19 @@
     </div>
   </div>
   <article class="hero-card surface">
-    <a class="hero-image-wrap" href="JohannFaulhaber.png">
-      <img src="JohannFaulhaber.png" alt="Infographic: Johann Faulhaber">
+    <a class="hero-image-wrap" href="GeorgeClooney.png">
+      <img src="GeorgeClooney.png" alt="Infographic: George Clooney">
     </a>
     <div class="meta-row hero-meta">
-      <span class="tag date">2026-05-05</span>
-      <span class="tag science" data-category-tag="scientist">Scientist</span>
+      <span class="tag date">2026-05-06</span>
+      <span class="tag artist" data-category-tag="artist">Artist</span>
       <span class="tag language">SL</span>
-      <span class="tag source-count" data-source-count="3">3 sources</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
+      <span class="tag source-count" data-source-count="4">4 sources</span>
     </div>
-    <h3>Johann Faulhaber</h3>
-    <p class="hero-link"><a href="JohannFaulhaber.png" data-i18n="open_today">Open today’s image</a></p>
-    <ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Johann_Faulhaber" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://mathshistory.st-andrews.ac.uk/Biographies/Faulhaber/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.wikidata.org/wiki/Q72369" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
+    <h3>George Clooney</h3>
+    <p class="hero-link"><a href="GeorgeClooney.png" data-i18n="open_today">Open today’s image</a></p>
+    <ul class="sources"><li><a href="https://www.wikidata.org/wiki/Special:EntityData/Q23844.json" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://en.wikipedia.org/wiki/George_Clooney" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.britannica.com/biography/George-Clooney" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.biography.com/actors/george-clooney" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </article>
 </section>
     <section class="archive-shell">
@@ -192,7 +194,7 @@
           <p data-archive-intro="1" data-page="1">Search by person, type, image language and age suitability.</p>
         </div>
         <div class="archive-filters">
-          <span class="pill" data-total-pill="1" data-total="104">Total: 104</span>
+          <span class="pill" data-total-pill="1" data-total="105">Total: 105</span>
           <span class="pill" data-page-pill="1" data-page="1" data-total="11">Page 1/11</span>
         </div>
       </div>
@@ -224,13 +226,44 @@
   </div>
 </div>
 <p id="results-summary" class="results-summary" data-i18n="initial_summary">Showing the initial selection for this page. Use search or filters above to search the full archive.</p>
-      <div class="masonry"><article class="card feature" data-person="Vincent van Gogh" data-category="artist" data-language="sl">
+      <div class="masonry"><article class="card feature" data-person="Johann Faulhaber" data-category="scientist" data-language="sl" data-age-suitability="age_6">
+  <a class="thumb" href="JohannFaulhaber.png"><img src="JohannFaulhaber.png" alt="Infographic: Johann Faulhaber" loading="lazy"></a>
+  <div class="content">
+    <div class="meta-row">
+      <span class="tag date">2026-05-05</span>
+      <span class="tag science" data-category-tag="scientist">Scientist</span>
+      <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
+      <span class="tag source-count" data-source-count="3">3 sources</span>
+    </div>
+    <h3>Johann Faulhaber</h3>
+    <p class="direct-link"><a href="JohannFaulhaber.png" data-i18n="open_image">Open image</a></p>
+    <ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Johann_Faulhaber" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://mathshistory.st-andrews.ac.uk/Biographies/Faulhaber/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.wikidata.org/wiki/Q72369" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
+  </div>
+</article>
+<article class="card" data-person="Delia Derbyshire" data-category="artist" data-language="sl" data-age-suitability="age_6">
+  <a class="thumb" href="DeliaDerbyshire.png"><img src="DeliaDerbyshire.png" alt="Infographic: Delia Derbyshire" loading="lazy"></a>
+  <div class="content">
+    <div class="meta-row">
+      <span class="tag date">2026-05-05</span>
+      <span class="tag artist" data-category-tag="artist">Artist</span>
+      <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
+      <span class="tag source-count" data-source-count="3">3 sources</span>
+    </div>
+    <h3>Delia Derbyshire</h3>
+    <p class="direct-link"><a href="DeliaDerbyshire.png" data-i18n="open_image">Open image</a></p>
+    <ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Delia_Derbyshire" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://britishmusiccollection.org.uk/composer/delia-derbyshire" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.bbc.com/historyofthebbc/100-voices/pioneering-women/women-of-the-workshop/delia-derbyshire" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
+  </div>
+</article>
+<article class="card" data-person="Vincent van Gogh" data-category="artist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="VincentVanGogh.png"><img src="VincentVanGogh.png" alt="Infographic: Vincent van Gogh" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-05-04</span>
       <span class="tag artist" data-category-tag="artist">Artist</span>
       <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="1">1 source</span>
     </div>
     <h3>Vincent van Gogh</h3>
@@ -238,13 +271,14 @@
     <ul class="sources"><li><a href="https://example.com/van-gogh-sl-research" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </div>
 </article>
-<article class="card" data-person="Louis Pasteur" data-category="scientist" data-language="sl">
+<article class="card feature" data-person="Louis Pasteur" data-category="scientist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="LouisPasteur.png"><img src="LouisPasteur.png" alt="Infographic: Louis Pasteur" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-05-04</span>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="4">4 sources</span>
     </div>
     <h3>Louis Pasteur</h3>
@@ -252,13 +286,14 @@
     <ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Louis_Pasteur" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.britannica.com/biography/Louis-Pasteur" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.pasteur.fr/en/institut-pasteur/history/louis-pasteur" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.wikidata.org/wiki/Special:EntityData/Q529.json" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </div>
 </article>
-<article class="card" data-person="Abdus Salam" data-category="scientist" data-language="sl">
+<article class="card" data-person="Abdus Salam" data-category="scientist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="AbdusSalam.jpg"><img src="AbdusSalam.jpg" alt="Infographic: Abdus Salam" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-05-04</span>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="4">4 sources</span>
     </div>
     <h3>Abdus Salam</h3>
@@ -266,13 +301,14 @@
     <ul class="sources"><li><a href="https://www.nobelprize.org/prizes/physics/1979/salam/facts/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.britannica.com/biography/Abdus-Salam" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.ictp.it/about/abdus-salam" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://en.wikipedia.org/wiki/Abdus_Salam" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </div>
 </article>
-<article class="card feature" data-person="Aaron Sopher" data-category="scientist" data-language="sl">
+<article class="card" data-person="Aaron Sopher" data-category="scientist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="AaronSopher.png"><img src="AaronSopher.png" alt="Infographic: Aaron Sopher" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-05-04</span>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="4">4 sources</span>
     </div>
     <h3>Aaron Sopher</h3>
@@ -280,13 +316,14 @@
     <ul class="sources"><li><a href="https://en.wikipedia.org/api/rest_v1/page/summary/Aaron_Sopher" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.wikidata.org/wiki/Special:EntityData/Q14107.json" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.jmcohen.com/artist/Aaron_Sopher/biography/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://artbma.contentdm.oclc.org/digital/collection/p16075coll1/id/0/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </div>
 </article>
-<article class="card" data-person="Max Volmer" data-category="scientist" data-language="sl">
+<article class="card" data-person="Max Volmer" data-category="scientist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="MaxVolmer.png"><img src="MaxVolmer.png" alt="Infographic: Max Volmer" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-05-03</span>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="3">3 sources</span>
     </div>
     <h3>Max Volmer</h3>
@@ -294,13 +331,14 @@
     <ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Max_Volmer" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.chemeurope.com/en/encyclopedia/Max_Volmer.html" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.wikidata.org/wiki/Q65226" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </div>
 </article>
-<article class="card" data-person="Santiago Ramón y Cajal" data-category="scientist" data-language="sl">
+<article class="card" data-person="Santiago Ramón y Cajal" data-category="scientist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="SantiagoRamonYCajal.png"><img src="SantiagoRamonYCajal.png" alt="Infographic: Santiago Ramón y Cajal" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-05-01</span>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="3">3 sources</span>
     </div>
     <h3>Santiago Ramón y Cajal</h3>
@@ -308,13 +346,14 @@
     <ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Santiago_Ram%C3%B3n_y_Cajal" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.britannica.com/biography/Santiago-Ramon-y-Cajal" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.nobelprize.org/prizes/medicine/1906/cajal/biographical/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </div>
 </article>
-<article class="card" data-person="Marie Curie" data-category="scientist" data-language="sl">
+<article class="card" data-person="Marie Curie" data-category="scientist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="MarieCurie.png"><img src="MarieCurie.png" alt="Infographic: Marie Curie" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-04-30</span>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="3">3 sources</span>
     </div>
     <h3>Marie Curie</h3>
@@ -322,53 +361,26 @@
     <ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Marie_Curie" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.britannica.com/biography/Marie-Curie" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.nobelprize.org/prizes/physics/1903/marie-curie/biographical/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </div>
 </article>
-<article class="card" data-person="Jaroslav Hašek" data-category="artist" data-language="sl">
+<article class="card" data-person="Jaroslav Hašek" data-category="artist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="JaroslavHasek.png"><img src="JaroslavHasek.png" alt="Infographic: Jaroslav Hašek" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-04-30</span>
       <span class="tag artist" data-category-tag="artist">Artist</span>
       <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="2">2 sources</span>
     </div>
     <h3>Jaroslav Hašek</h3>
     <p class="direct-link"><a href="JaroslavHasek.png" data-i18n="open_image">Open image</a></p>
     <ul class="sources"><li><a href="https://www.wikidata.org/wiki/Q2754" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://en.wikipedia.org/wiki/Jaroslav_Ha%C5%A1ek" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </div>
-</article>
-<article class="card" data-person="Jan Oort" data-category="scientist" data-language="sl">
-  <a class="thumb" href="JanOort.png"><img src="JanOort.png" alt="Infographic: Jan Oort" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
-      <span class="tag date">2026-04-28</span>
-      <span class="tag science" data-category-tag="scientist">Scientist</span>
-      <span class="tag language">SL</span>
-      <span class="tag source-count" data-source-count="3">3 sources</span>
-    </div>
-    <h3>Jan Oort</h3>
-    <p class="direct-link"><a href="JanOort.png" data-i18n="open_image">Open image</a></p>
-    <ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Jan_Oort" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.britannica.com/biography/Jan-Oort" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://earthsky.org/space/jan-oort-biography-contributions-oort-cloud/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
-  </div>
-</article>
-<article class="card" data-person="Samuel Morse" data-category="scientist" data-language="sl">
-  <a class="thumb" href="SamuelMorse.png"><img src="SamuelMorse.png" alt="Infographic: Samuel Morse" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
-      <span class="tag date">2026-04-27</span>
-      <span class="tag science" data-category-tag="scientist">Scientist</span>
-      <span class="tag language">SL</span>
-      <span class="tag source-count" data-source-count="3">3 sources</span>
-    </div>
-    <h3>Samuel Morse</h3>
-    <p class="direct-link"><a href="SamuelMorse.png" data-i18n="open_image">Open image</a></p>
-    <ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Samuel_Morse" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.britannica.com/biography/Samuel-F-B-Morse" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.biography.com/inventors/samuel-morse" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
-  </div>
 </article></div>
       <nav class="pagination"><a class="pill pager active" href="./">1</a><a class="pill pager" href="page-2.html">2</a><a class="pill pager" href="page-3.html">3</a><a class="pill pager" href="page-4.html">4</a><a class="pill pager" href="page-5.html">5</a><a class="pill pager" href="page-6.html">6</a><a class="pill pager" href="page-7.html">7</a><a class="pill pager" href="page-8.html">8</a><a class="pill pager" href="page-9.html">9</a><a class="pill pager" href="page-10.html">10</a><a class="pill pager" href="page-11.html">11</a><a class="pill pager" href="page-2.html" data-i18n="pager_next">Next →</a></nav>
     </section>
     <footer class="footer surface">
       <div data-i18n="footer_text">Public archive of daily infographics about famous artists, scientists and athletes.</div>
-      <div data-updated="2026-05-05 07:10">Updated: 2026-05-05 07:10</div>
+      <div data-updated="2026-05-06 05:05">Updated: 2026-05-06 05:05</div>
     </footer>
   </main>
   <script>

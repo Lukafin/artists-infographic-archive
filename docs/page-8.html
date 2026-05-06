@@ -53,11 +53,11 @@
     .pill { display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:999px; background:var(--chip); border:1px solid #e4dbce; font-size:14px; color:#3f3933; text-decoration:none; }
     .pill.primary { background:var(--accent); border-color:var(--accent); color:#fff; font-weight:700; }
     .pill.soft { background:rgba(255,255,255,.72); }
-    .support-note { max-width:360px; text-align:right; color:var(--muted); font-size:13px; line-height:1.35; margin:0; }
+    .support-note { max-width:360px; text-align:right; color:var(--muted); font-size:13px; line-height:1.35; }
     .support-note a { color:var(--accent); font-weight:800; text-decoration:none; }
     .support-note a:hover { text-decoration:underline; }
     .kofi-link { display:inline-flex; align-items:center; gap:5px; }
-    .kofi-icon { width:22px; height:22px; display:inline-block; flex:0 0 22px; object-fit:contain; }
+    .kofi-icon { width:22px; height:auto; display:inline-block; }
     .nav-right { display:flex; align-items:center; justify-content:flex-end; gap:14px; flex-wrap:wrap; }
     .lang-picker { display:inline-flex; align-items:center; gap:6px; padding:6px; border-radius:999px; background:#fff; border:1px solid var(--line); box-shadow:0 6px 18px rgba(33,25,34,.06); }
     .lang-icon { width:22px; height:22px; display:grid; place-items:center; font-size:16px; }
@@ -130,6 +130,7 @@
     @media (max-width:700px) {
       .nav { position:static; flex-direction:column; align-items:stretch; }
       .nav-right { justify-content:flex-start; }
+      .support-note { max-width:none; text-align:left; }
       .archive-top, .footer { flex-direction:column; align-items:flex-start; }
       .pagination { justify-content:flex-start; }
       .hero-copy { padding:26px; }
@@ -168,7 +169,7 @@
           <p data-archive-intro="1" data-page="8">Browse older daily infographics by page or use search and filters.</p>
         </div>
         <div class="archive-filters">
-          <span class="pill" data-total-pill="1" data-total="104">Total: 104</span>
+          <span class="pill" data-total-pill="1" data-total="105">Total: 105</span>
           <span class="pill" data-page-pill="1" data-page="8" data-total="11">Page 8/11</span>
         </div>
       </div>
@@ -200,13 +201,44 @@
   </div>
 </div>
 <p id="results-summary" class="results-summary" data-i18n="initial_summary">Showing the initial selection for this page. Use search or filters above to search the full archive.</p>
-      <div class="masonry"><article class="card" data-person="Brian Schmidt" data-category="scientist" data-language="sl">
+      <div class="masonry"><article class="card" data-person="Ahmed Zewail" data-category="scientist" data-language="sl" data-age-suitability="age_6">
+  <a class="thumb" href="AhmedZewail.png"><img src="AhmedZewail.png" alt="Infographic: Ahmed Zewail" loading="lazy"></a>
+  <div class="content">
+    <div class="meta-row">
+      <span class="tag date">2026-02-26</span>
+      <span class="tag science" data-category-tag="scientist">Scientist</span>
+      <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
+      <span class="tag source-count" data-source-count="0">No sources</span>
+    </div>
+    <h3>Ahmed Zewail</h3>
+    <p class="direct-link"><a href="AhmedZewail.png" data-i18n="open_image">Open image</a></p>
+    
+  </div>
+</article>
+<article class="card" data-person="George Harrison" data-category="scientist" data-language="sl" data-age-suitability="age_6">
+  <a class="thumb" href="GeorgeHarrison.png"><img src="GeorgeHarrison.png" alt="Infographic: George Harrison" loading="lazy"></a>
+  <div class="content">
+    <div class="meta-row">
+      <span class="tag date">2026-02-25</span>
+      <span class="tag science" data-category-tag="scientist">Scientist</span>
+      <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
+      <span class="tag source-count" data-source-count="0">No sources</span>
+    </div>
+    <h3>George Harrison</h3>
+    <p class="direct-link"><a href="GeorgeHarrison.png" data-i18n="open_image">Open image</a></p>
+    
+  </div>
+</article>
+<article class="card" data-person="Brian Schmidt" data-category="scientist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="BrianSchmidt.png"><img src="BrianSchmidt.png" alt="Infographic: Brian Schmidt" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-24</span>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>Brian Schmidt</h3>
@@ -214,13 +246,14 @@
     
   </div>
 </article>
-<article class="card" data-person="Casimir Funk" data-category="scientist" data-language="sl">
+<article class="card" data-person="Casimir Funk" data-category="scientist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="CasimirFunk.png"><img src="CasimirFunk.png" alt="Infographic: Casimir Funk" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-23</span>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>Casimir Funk</h3>
@@ -228,13 +261,14 @@
     
   </div>
 </article>
-<article class="card" data-person="Ansel Adams" data-category="scientist" data-language="sl">
+<article class="card" data-person="Ansel Adams" data-category="scientist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="AnselAdams.png"><img src="AnselAdams.png" alt="Infographic: Ansel Adams" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-20</span>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>Ansel Adams</h3>
@@ -242,13 +276,14 @@
     
   </div>
 </article>
-<article class="card" data-person="Nicolaus Copernicus" data-category="scientist" data-language="sl">
+<article class="card" data-person="Nicolaus Copernicus" data-category="scientist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="NicolausCopernicus.png"><img src="NicolausCopernicus.png" alt="Infographic: Nicolaus Copernicus" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-19</span>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>Nicolaus Copernicus</h3>
@@ -256,13 +291,14 @@
     
   </div>
 </article>
-<article class="card" data-person="Alessandro Volta" data-category="scientist" data-language="sl">
+<article class="card" data-person="Alessandro Volta" data-category="scientist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="AlessandroVolta.png"><img src="AlessandroVolta.png" alt="Infographic: Alessandro Volta" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-18</span>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>Alessandro Volta</h3>
@@ -270,13 +306,14 @@
     
   </div>
 </article>
-<article class="card" data-person="Otto Stern" data-category="scientist" data-language="sl">
+<article class="card" data-person="Otto Stern" data-category="scientist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="OttoStern.png"><img src="OttoStern.png" alt="Infographic: Otto Stern" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-17</span>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>Otto Stern</h3>
@@ -284,13 +321,14 @@
     
   </div>
 </article>
-<article class="card" data-person="Armand Guillaumin" data-category="scientist" data-language="sl">
+<article class="card" data-person="Armand Guillaumin" data-category="scientist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="ArmandGuillaumin.png"><img src="ArmandGuillaumin.png" alt="Infographic: Armand Guillaumin" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-16</span>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>Armand Guillaumin</h3>
@@ -298,45 +336,18 @@
     
   </div>
 </article>
-<article class="card" data-person="20260210 165742 ustvari barvito risankasto infografiko z" data-category="scientist" data-language="sl">
+<article class="card" data-person="20260210 165742 ustvari barvito risankasto infografiko z" data-category="scientist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="20260210-165742_ustvari-barvito-risankasto-infografiko-z.png"><img src="20260210-165742_ustvari-barvito-risankasto-infografiko-z.png" alt="Infographic: 20260210 165742 ustvari barvito risankasto infografiko z" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
       <span class="tag date">2026-02-10</span>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
     <h3>20260210 165742 ustvari barvito risankasto infografiko z</h3>
     <p class="direct-link"><a href="20260210-165742_ustvari-barvito-risankasto-infografiko-z.png" data-i18n="open_image">Open image</a></p>
-    
-  </div>
-</article>
-<article class="card" data-person="20260209 170025 ustvari jasno barvito infografiko za 10" data-category="scientist" data-language="sl">
-  <a class="thumb" href="20260209-170025_ustvari-jasno-barvito-infografiko-za-10.png"><img src="20260209-170025_ustvari-jasno-barvito-infografiko-za-10.png" alt="Infographic: 20260209 170025 ustvari jasno barvito infografiko za 10" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
-      <span class="tag date">2026-02-09</span>
-      <span class="tag science" data-category-tag="scientist">Scientist</span>
-      <span class="tag language">SL</span>
-      <span class="tag source-count" data-source-count="0">No sources</span>
-    </div>
-    <h3>20260209 170025 ustvari jasno barvito infografiko za 10</h3>
-    <p class="direct-link"><a href="20260209-170025_ustvari-jasno-barvito-infografiko-za-10.png" data-i18n="open_image">Open image</a></p>
-    
-  </div>
-</article>
-<article class="card" data-person="20260207 134709 otrokom prijazen infografski plakat v ra" data-category="scientist" data-language="sl">
-  <a class="thumb" href="20260207-134709_otrokom-prijazen-infografski-plakat-v-ra.png"><img src="20260207-134709_otrokom-prijazen-infografski-plakat-v-ra.png" alt="Infographic: 20260207 134709 otrokom prijazen infografski plakat v ra" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
-      <span class="tag date">2026-02-07</span>
-      <span class="tag science" data-category-tag="scientist">Scientist</span>
-      <span class="tag language">SL</span>
-      <span class="tag source-count" data-source-count="0">No sources</span>
-    </div>
-    <h3>20260207 134709 otrokom prijazen infografski plakat v ra</h3>
-    <p class="direct-link"><a href="20260207-134709_otrokom-prijazen-infografski-plakat-v-ra.png" data-i18n="open_image">Open image</a></p>
     
   </div>
 </article></div>
@@ -344,7 +355,7 @@
     </section>
     <footer class="footer surface">
       <div data-i18n="footer_text">Public archive of daily infographics about famous artists, scientists and athletes.</div>
-      <div data-updated="2026-05-05 07:10">Updated: 2026-05-05 07:10</div>
+      <div data-updated="2026-05-06 05:05">Updated: 2026-05-06 05:05</div>
     </footer>
   </main>
   <script>

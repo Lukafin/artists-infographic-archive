@@ -1,17 +1,18 @@
 {
-  "date": "2026-05-05",
-  "person": "Johann Faulhaber",
-  "image_filename": "JohannFaulhaber.png",
-  "category": "scientist",
-  "category_label": "Znanstvenik",
+  "date": "2026-05-06",
+  "person": "George Clooney",
+  "image_filename": "GeorgeClooney.png",
+  "category": "artist",
+  "category_label": "Umetnik",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://en.wikipedia.org/wiki/Johann_Faulhaber",
-    "https://mathshistory.st-andrews.ac.uk/Biographies/Faulhaber/",
-    "https://www.wikidata.org/wiki/Q72369"
+    "https://www.wikidata.org/wiki/Special:EntityData/Q23844.json",
+    "https://en.wikipedia.org/wiki/George_Clooney",
+    "https://www.britannica.com/biography/George-Clooney",
+    "https://www.biography.com/actors/george-clooney"
   ],
-  "total_entries": 104,
+  "total_entries": 105,
   "total_pages": 11,
   "per_page": 10
 }

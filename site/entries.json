@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 104,
+    "total_entries": 105,
     "categories": [
       "artist",
       "scientist"
@@ -8,23 +8,83 @@
     "languages": [
       "sl"
     ],
-    "category_counts": {
-      "scientist": 85,
-      "artist": 19
-    },
-    "language_counts": {
-      "sl": 104
-    },
     "age_suitability_levels": [
       "age_6",
       "age_13",
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 104
+      "age_6": 105
+    },
+    "category_counts": {
+      "artist": 20,
+      "scientist": 85
+    },
+    "language_counts": {
+      "sl": 105
     }
   },
   "entries": [
+    {
+      "date": "2026-05-06",
+      "person": "George Clooney",
+      "filename": "GeorgeClooney.png",
+      "image_filename": "GeorgeClooney.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Special:EntityData/Q23844.json",
+        "https://en.wikipedia.org/wiki/George_Clooney",
+        "https://www.britannica.com/biography/George-Clooney",
+        "https://www.biography.com/actors/george-clooney"
+      ],
+      "title": "George Clooney — filmski pripovedovalec",
+      "summary": "Slovenska otroška infografika za rojstni dan Georgea Clooneyja, oblikovana kot filmski trak/storyboard o ER, Ocean’s Eleven, režiji in humanitarnosti.",
+      "age_suitability_details": {
+        "age_6": "George Clooney je igralec in režiser: nastopa v filmih, pomaga pripovedovati zgodbe in spodbuja pomoč ljudem v stiski.",
+        "age_13": "Clooney je iz televizijske serije ER prešel med velike filmske zvezde, nato pa kot režiser in producent pokazal, kako nastajajo zgodbe pred kamero in za njo.",
+        "adult": "George Clooney je ameriško-francoski igralec, režiser in producent, čigar kariera povezuje televizijski preboj v ER, hollywoodski zvezdniški status, avtorsko režijo ter javno humanitarno in politično angažiranost."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "6b54308d-a777-4ef4-ae96-29730c9b97a2",
+      "_kind": "native",
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "george clooney artist umetnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-05",
       "person": "Johann Faulhaber",
@@ -72,8 +132,6 @@
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
-      "source_count": 3,
-      "search_text": "johann faulhaber scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -82,7 +140,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 3,
+      "search_text": "johann faulhaber scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-05",
@@ -131,8 +191,6 @@
       "category_label": "Umetnik",
       "category_class": "artist",
       "language_label": "SL",
-      "source_count": 3,
-      "search_text": "delia derbyshire artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -141,7 +199,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 3,
+      "search_text": "delia derbyshire artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-04",
@@ -184,8 +244,6 @@
       "category_label": "Umetnik",
       "category_class": "artist",
       "language_label": "SL",
-      "source_count": 1,
-      "search_text": "vincent van gogh artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -194,7 +252,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 1,
+      "search_text": "vincent van gogh artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-04",
@@ -244,8 +304,6 @@
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
-      "source_count": 4,
-      "search_text": "louis pasteur scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -254,7 +312,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 4,
+      "search_text": "louis pasteur scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-04",
@@ -304,8 +364,6 @@
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
-      "source_count": 4,
-      "search_text": "abdus salam scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -314,7 +372,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 4,
+      "search_text": "abdus salam scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-04",
@@ -336,8 +396,6 @@
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
-      "source_count": 4,
-      "search_text": "aaron sopher scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -346,7 +404,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 4,
+      "search_text": "aaron sopher scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-03",
@@ -367,8 +427,6 @@
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
-      "source_count": 3,
-      "search_text": "max volmer scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -377,7 +435,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 3,
+      "search_text": "max volmer scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-01",
@@ -398,8 +458,6 @@
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
-      "source_count": 3,
-      "search_text": "santiago ramón y cajal scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -408,7 +466,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 3,
+      "search_text": "santiago ramón y cajal scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-30",
@@ -429,8 +489,6 @@
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
-      "source_count": 3,
-      "search_text": "marie curie scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -439,7 +497,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 3,
+      "search_text": "marie curie scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-30",
@@ -459,8 +519,6 @@
       "category_label": "Umetnik",
       "category_class": "artist",
       "language_label": "SL",
-      "source_count": 2,
-      "search_text": "jaroslav hašek artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -469,7 +527,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 2,
+      "search_text": "jaroslav hašek artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-28",
@@ -497,8 +557,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 3,
-      "search_text": "jan oort scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -507,7 +565,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 3,
+      "search_text": "jan oort scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-27",
@@ -534,8 +594,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 3,
-      "search_text": "samuel morse scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -544,7 +602,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 3,
+      "search_text": "samuel morse scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-26",
@@ -570,8 +630,6 @@
       "category_class": "artist",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 3,
-      "search_text": "john james audubon artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -580,7 +638,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 3,
+      "search_text": "john james audubon artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-25",
@@ -606,8 +666,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 3,
-      "search_text": "guglielmo marconi scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -616,7 +674,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 3,
+      "search_text": "guglielmo marconi scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-24",
@@ -644,8 +704,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 4,
-      "search_text": "david blackwell scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -654,7 +712,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 4,
+      "search_text": "david blackwell scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-23",
@@ -681,8 +741,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 4,
-      "search_text": "max planck scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -691,7 +749,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 4,
+      "search_text": "max planck scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-22",
@@ -716,8 +776,6 @@
       "category_class": "artist",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 3,
-      "search_text": "sidney nolan artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -726,7 +784,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 3,
+      "search_text": "sidney nolan artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-21",
@@ -751,8 +811,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 3,
-      "search_text": "jean-baptiste biot scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -761,7 +819,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 3,
+      "search_text": "jean-baptiste biot scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-20",
@@ -786,8 +846,6 @@
       "category_class": "artist",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 3,
-      "search_text": "joan miró artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -796,7 +854,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 3,
+      "search_text": "joan miró artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-19",
@@ -821,8 +881,6 @@
       "category_class": "artist",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 3,
-      "search_text": "fernando botero artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -831,7 +889,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 3,
+      "search_text": "fernando botero artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-18",
@@ -858,8 +918,6 @@
       "category_class": "artist",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 4,
-      "search_text": "leopold stokowski artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -868,7 +926,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 4,
+      "search_text": "leopold stokowski artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-17",
@@ -895,8 +955,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 4,
-      "search_text": "giovanni battista riccioli scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -905,7 +963,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 4,
+      "search_text": "giovanni battista riccioli scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-16",
@@ -930,8 +990,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 3,
-      "search_text": "wilbur wright scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -940,7 +998,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 3,
+      "search_text": "wilbur wright scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-15",
@@ -965,8 +1025,6 @@
       "category_class": "artist",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 3,
-      "search_text": "leonardo da vinci artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -975,7 +1033,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 3,
+      "search_text": "leonardo da vinci artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-14",
@@ -994,8 +1054,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 4,
-      "search_text": "christiaan huygens scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1004,7 +1062,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 4,
+      "search_text": "christiaan huygens scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-13",
@@ -1024,8 +1084,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 5,
-      "search_text": "robert watson-watt scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1034,7 +1092,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 5,
+      "search_text": "robert watson-watt scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-12",
@@ -1053,8 +1113,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 4,
-      "search_text": "evelyn berezin scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1063,7 +1121,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 4,
+      "search_text": "evelyn berezin scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-11",
@@ -1081,8 +1141,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 4,
-      "search_text": "percy julian scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1091,7 +1149,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 4,
+      "search_text": "percy julian scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-09",
@@ -1107,8 +1167,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "thomas johann seebeck scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1117,7 +1175,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "thomas johann seebeck scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-09",
@@ -1135,8 +1195,6 @@
       "category_class": "artist",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 4,
-      "search_text": "eadweard muybridge artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1145,7 +1203,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 4,
+      "search_text": "eadweard muybridge artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-08",
@@ -1161,8 +1221,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "melvin calvin scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1171,7 +1229,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "melvin calvin scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-07",
@@ -1187,8 +1247,6 @@
       "category_class": "artist",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "jackie chan artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1197,7 +1255,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "jackie chan artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-06",
@@ -1213,8 +1273,6 @@
       "category_class": "artist",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "raffaello sanzio artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1223,7 +1281,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "raffaello sanzio artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-05",
@@ -1239,8 +1299,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "joseph lister scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1249,7 +1307,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "joseph lister scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-04",
@@ -1265,8 +1325,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "shing tung yau scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1275,7 +1333,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "shing tung yau scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-03",
@@ -1291,8 +1351,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "jane goodall scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1301,7 +1359,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "jane goodall scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-02",
@@ -1317,8 +1377,6 @@
       "category_class": "artist",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "maria sibylla merian artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1327,7 +1385,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "maria sibylla merian artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-01",
@@ -1343,8 +1403,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "sophie germain scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1353,7 +1411,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "sophie germain scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-31",
@@ -1369,8 +1429,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "william lawrence bragg scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1379,7 +1437,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "william lawrence bragg scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-30",
@@ -1395,8 +1455,6 @@
       "category_class": "artist",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "vincent van gogh artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1405,7 +1463,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "vincent van gogh artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-29",
@@ -1421,8 +1481,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "richard lewontin scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1431,7 +1489,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "richard lewontin scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-28",
@@ -1447,8 +1507,6 @@
       "category_class": "artist",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "lady gaga artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1457,7 +1515,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "lady gaga artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-27",
@@ -1473,8 +1533,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "wilhelm rontgen scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1483,7 +1541,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "wilhelm rontgen scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-25",
@@ -1499,8 +1559,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "norman borlaug scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1509,7 +1567,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "norman borlaug scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-24",
@@ -1525,8 +1585,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "peter joseph william debye scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1535,7 +1593,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "peter joseph william debye scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-23",
@@ -1551,8 +1611,6 @@
       "category_class": "artist",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "akira kurosawa artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1561,7 +1619,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "akira kurosawa artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-22",
@@ -1577,8 +1637,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "robert millikan scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1587,7 +1645,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "robert millikan scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-21",
@@ -1603,8 +1663,6 @@
       "category_class": "artist",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "modest mussorgsky artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1613,7 +1671,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "modest mussorgsky artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-20",
@@ -1629,8 +1689,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "burrhus frederic skinner scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1639,7 +1697,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "burrhus frederic skinner scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-19",
@@ -1655,8 +1715,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "frederic joliot curie scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1665,7 +1723,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "frederic joliot curie scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-18",
@@ -1681,8 +1741,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "rudolf diesel scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1691,7 +1749,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "rudolf diesel scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-17",
@@ -1707,8 +1767,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "gottlieb daimler scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1717,7 +1775,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "gottlieb daimler scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-16",
@@ -1733,8 +1793,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "georg ohm scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1743,7 +1801,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "georg ohm scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-15",
@@ -1759,8 +1819,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "john snow scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1769,7 +1827,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "john snow scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-14",
@@ -1785,8 +1845,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "albert einstein scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1795,7 +1853,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "albert einstein scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-13",
@@ -1811,8 +1871,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "percival lowell scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1821,7 +1879,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "percival lowell scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-12",
@@ -1837,8 +1897,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "william henry perkin scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1847,7 +1905,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "william henry perkin scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-11",
@@ -1863,8 +1923,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "jcr licklider scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1873,7 +1931,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "jcr licklider scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-10",
@@ -1889,8 +1949,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "marcello malpighi scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1899,7 +1957,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "marcello malpighi scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-09",
@@ -1915,8 +1975,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "walter kohn scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1925,7 +1983,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "walter kohn scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-08",
@@ -1941,8 +2001,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "otto hahn scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1951,7 +2009,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "otto hahn scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-07",
@@ -1967,8 +2027,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "piet mondrian scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -1977,7 +2035,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "piet mondrian scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-06",
@@ -1993,8 +2053,6 @@
       "category_class": "artist",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "michelangelo buonarroti artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2003,7 +2061,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "michelangelo buonarroti artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-05",
@@ -2019,8 +2079,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "lynn margulis scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2029,7 +2087,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "lynn margulis scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-04",
@@ -2045,8 +2105,6 @@
       "category_class": "artist",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "antonio vivaldi artist umetnik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2055,7 +2113,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "antonio vivaldi artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-03",
@@ -2071,8 +2131,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "alexander graham bell scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2081,7 +2139,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "alexander graham bell scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-02",
@@ -2097,8 +2157,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "theodor geisel scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2107,7 +2165,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "theodor geisel scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-03-01",
@@ -2123,8 +2183,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "frederic chopin scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2133,7 +2191,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "frederic chopin scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-28",
@@ -2149,8 +2209,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "linus pauling scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2159,7 +2217,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "linus pauling scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-27",
@@ -2175,8 +2235,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "charles best scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2185,7 +2243,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "charles best scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-26",
@@ -2201,8 +2261,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "ahmed zewail scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2211,7 +2269,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "ahmed zewail scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-25",
@@ -2227,8 +2287,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "george harrison scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2237,7 +2295,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "george harrison scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-24",
@@ -2253,8 +2313,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "brian schmidt scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2263,7 +2321,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "brian schmidt scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-23",
@@ -2279,8 +2339,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "casimir funk scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2289,7 +2347,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "casimir funk scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-20",
@@ -2305,8 +2365,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "ansel adams scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2315,7 +2373,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "ansel adams scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-19",
@@ -2331,8 +2391,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "nicolaus copernicus scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2341,7 +2399,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "nicolaus copernicus scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-18",
@@ -2357,8 +2417,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "alessandro volta scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2367,7 +2425,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "alessandro volta scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-17",
@@ -2383,8 +2443,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "otto stern scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2393,7 +2451,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "otto stern scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-16",
@@ -2409,8 +2469,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "armand guillaumin scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2419,7 +2477,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "armand guillaumin scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-10",
@@ -2435,8 +2495,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260210 165742 ustvari barvito risankasto infografiko z scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2445,7 +2503,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260210 165742 ustvari barvito risankasto infografiko z scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-09",
@@ -2461,8 +2521,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260209 170025 ustvari jasno barvito infografiko za 10 scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2471,7 +2529,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260209 170025 ustvari jasno barvito infografiko za 10 scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-07",
@@ -2487,8 +2547,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260207 134709 otrokom prijazen infografski plakat v ra scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2497,7 +2555,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260207 134709 otrokom prijazen infografski plakat v ra scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-06",
@@ -2513,8 +2573,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260206 104245 svetel otrokom prijazen infografi ni pla scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2523,7 +2581,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260206 104245 svetel otrokom prijazen infografi ni pla scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-05",
@@ -2539,8 +2599,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260205 194011 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2549,7 +2607,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260205 194011 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-04",
@@ -2565,8 +2625,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260204 193923 ustvari zelo podroben infografik v razme scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2575,7 +2633,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260204 193923 ustvari zelo podroben infografik v razme scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-03",
@@ -2591,8 +2651,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260203 193940 ustvari otrokom prijazno infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2601,7 +2659,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260203 193940 ustvari otrokom prijazno infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-02",
@@ -2617,8 +2677,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260202 193945 ustvari barvit otrokom prijazen infograf scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2627,7 +2685,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260202 193945 ustvari barvit otrokom prijazen infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-01",
@@ -2643,8 +2703,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260201 193903 ustvari otrokom prijazno infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2653,7 +2711,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260201 193903 ustvari otrokom prijazno infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-29",
@@ -2669,8 +2729,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260129 111309 ustvari prijazno otro ko infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2679,7 +2737,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260129 111309 ustvari prijazno otro ko infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-28",
@@ -2695,8 +2755,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260128 111258 ustvari zivahno otrokom prijazno izobraz scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2705,7 +2763,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260128 111258 ustvari zivahno otrokom prijazno izobraz scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-27",
@@ -2721,8 +2781,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260127 111144 ustvari ivahno prijazno infografiko v ra scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2731,7 +2789,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260127 111144 ustvari ivahno prijazno infografiko v ra scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-25",
@@ -2747,8 +2807,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260125 111136 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2757,7 +2815,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260125 111136 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-24",
@@ -2773,8 +2833,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260124 111132 svetla otrokom prijazna infografika o fi scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2783,7 +2841,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260124 111132 svetla otrokom prijazna infografika o fi scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-23",
@@ -2799,8 +2859,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260123 111113 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2809,7 +2867,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260123 111113 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-22",
@@ -2825,8 +2885,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260122 111101 ustvari barvit otrokom prijazen infograf scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2835,7 +2893,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260122 111101 ustvari barvit otrokom prijazen infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-21",
@@ -2851,8 +2911,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260121 112025 ustvari zelo podrobno ivahno infografiko scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2861,7 +2919,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260121 112025 ustvari zelo podrobno ivahno infografiko scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-20",
@@ -2877,8 +2937,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260120 111248 barvit prijazen 16 9 infografik 2k 1920x scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2887,7 +2945,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260120 111248 barvit prijazen 16 9 infografik 2k 1920x scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-18",
@@ -2903,8 +2963,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260118 115810 ustvari svetel prijazen infografi ni pla scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2913,7 +2971,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260118 115810 ustvari svetel prijazen infografi ni pla scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-17",
@@ -2929,8 +2989,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260117 115711 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2939,7 +2997,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260117 115711 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-16",
@@ -2955,8 +3015,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260116 075624 ustvari barvit risankasto infografiko za scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2965,7 +3023,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260116 075624 ustvari barvit risankasto infografiko za scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-13",
@@ -2981,8 +3041,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260113 071226 barvita infografika za otroke 10 let o j scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -2991,7 +3049,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260113 071226 barvita infografika za otroke 10 let o j scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-12",
@@ -3007,8 +3067,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260112 071135 ustvari barvito otrokom prijazno infogra scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -3017,7 +3075,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260112 071135 ustvari barvito otrokom prijazno infogra scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-11",
@@ -3033,8 +3093,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260111 071228 barvita otro ka infografika o nicolausu scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -3043,7 +3101,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260111 071228 barvita otro ka infografika o nicolausu scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-10",
@@ -3059,8 +3119,6 @@
       "category_class": "science",
       "language": "sl",
       "language_label": "SL",
-      "source_count": 0,
-      "search_text": "20260110 211323 barvit otro ki infografi ni plakat o roc scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -3069,7 +3127,9 @@
       ],
       "age_suitability_labels_sl": [
         "6+ let"
-      ]
+      ],
+      "source_count": 0,
+      "search_text": "20260110 211323 barvit otro ki infografi ni plakat o roc scientist znanstvenik sl age_6 ages 6+ 6+ let"
     }
   ]
 }
