@@ -73,28 +73,35 @@
     .stat { background:var(--paper); border:1px solid var(--line); border-radius:22px; padding:18px 16px; }
     .stat strong { display:block; font-size:30px; margin-bottom:4px; }
     .stat span { font-size:14px; color:var(--muted); }
-    .hero-card { padding:18px; background:linear-gradient(180deg,#fff,#fffaf4); }
-    .hero-image-wrap { display:block; padding:12px; background:linear-gradient(135deg,var(--hero2),var(--hero1),var(--hero3)); border-radius:26px; text-decoration:none; }
-    .hero-image-wrap img { width:100%; display:block; border-radius:20px; border:8px solid rgba(255,255,255,.96); }
-    .hero-meta { margin-top:18px; }
-    .hero-card h3 { margin:16px 0 8px; font-size:32px; letter-spacing:-.03em; }
+    .hero-card { min-height:420px; }
+    .hero-image-wrap { position:absolute; inset:0; display:block; text-decoration:none; background:#fff; }
+    .hero-image-wrap img { width:100%; height:100%; display:block; object-fit:contain; }
+    .hero-title-overlay h3 { font-size:32px; }
     .sources a:hover { text-decoration:underline; }
     .archive-shell { margin-top:24px; padding:24px; background:rgba(255,255,255,.84); border:1px solid var(--line); border-radius:30px; box-shadow:var(--shadow); }
     .archive-top { display:flex; justify-content:space-between; gap:18px; align-items:end; margin-bottom:22px; }
     .archive-top h2 { margin:0; font-size:34px; letter-spacing:-.04em; }
     .archive-top p { margin:8px 0 0; color:var(--muted); font-size:17px; max-width:60ch; }
-    .masonry { display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:16px; align-items:stretch; }
-    .card {
-      margin:0; background:var(--panel); border:1px solid var(--line);
-      border-radius:22px; overflow:hidden; box-shadow:0 8px 24px rgba(33,25,34,.06);
-      height:100%; display:flex; flex-direction:column;
+    .masonry { display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:18px; align-items:stretch; }
+    .card, .image-card {
+      position:relative; isolation:isolate; margin:0; background:#fff; border:1px solid var(--line);
+      border-radius:22px; overflow:hidden; box-shadow:0 10px 28px rgba(33,25,34,.08);
+      aspect-ratio:16/9;
     }
-    .card.feature { background:linear-gradient(180deg,#fffefb,#fff7ee); }
-    .thumb { display:block; text-decoration:none; }
-    .thumb img { width:100%; display:block; }
-    .content { padding:14px 14px 16px; flex:1; display:flex; flex-direction:column; }
-    .content h3 { margin:8px 0 8px; font-size:22px; line-height:1.08; letter-spacing:-.03em; min-height:2.16em; display:block; }
-    .card.feature .content h3 { font-size:28px; min-height:2.16em; }
+    .card.feature { box-shadow:0 14px 36px rgba(33,25,34,.11); }
+    .thumb { position:absolute; inset:0; display:block; text-decoration:none; background:#fff; }
+    .thumb img { width:100%; height:100%; display:block; object-fit:contain; }
+    .image-title { position:absolute; left:0; right:0; bottom:0; z-index:2; padding:56px 16px 14px; color:#fff; background:linear-gradient(180deg, transparent, rgba(0,0,0,.68)); pointer-events:none; }
+    .image-title h3 { margin:0; font-size:22px; line-height:1.05; letter-spacing:-.03em; text-shadow:0 1px 12px rgba(0,0,0,.38); }
+    .card.feature .image-title h3 { font-size:28px; }
+    .info-popover { position:absolute; top:12px; right:12px; z-index:4; }
+    .info-popover[open] { left:12px; bottom:12px; }
+    .info-popover summary { list-style:none; }
+    .info-popover summary::-webkit-details-marker { display:none; }
+    .info-button { width:38px; height:38px; display:grid; place-items:center; margin-left:auto; border-radius:999px; border:1px solid rgba(255,255,255,.78); background:rgba(255,255,255,.9); color:#211922; font-weight:900; font-size:18px; box-shadow:0 8px 22px rgba(0,0,0,.14); cursor:pointer; }
+    .info-button:hover, .info-button:focus-visible { background:#211922; color:#fff; outline:0; }
+    .info-panel { margin-top:10px; max-width:min(420px, calc(100vw - 56px)); padding:14px; border-radius:18px; background:rgba(255,253,249,.95); border:1px solid rgba(255,255,255,.9); box-shadow:0 16px 38px rgba(0,0,0,.2); backdrop-filter:blur(16px); }
+    .info-panel .sources { margin-top:12px; }
     .tag { display:inline-flex; padding:7px 10px; border-radius:999px; background:#f7f2ea; border:1px solid #ece1d4; font-size:12px; color:#564f47; }
     .tag.artist { background:#ffe9ec; border-color:#ffd4dc; color:#8d2440; }
     .tag.science { background:#eaf5ff; border-color:#d4e7ff; color:#29547f; }
@@ -120,7 +127,7 @@
     .footer a:hover { text-decoration:underline; }
     .empty { color:var(--muted); font-size:16px; }
     @media (max-width:1200px) {
-      .masonry { grid-template-columns:repeat(3, minmax(0, 1fr)); }
+      .masonry { grid-template-columns:repeat(2, minmax(0, 1fr)); }
     }
     @media (max-width:1100px) {
       .hero { grid-template-columns:1fr; }
@@ -202,144 +209,194 @@
 </div>
 <p id="results-summary" class="results-summary" data-i18n="initial_summary">Showing the initial selection for this page. Use search or filters above to search the full archive.</p>
       <div class="masonry"><article class="card" data-person="Eadweard Muybridge" data-category="artist" data-language="sl" data-age-suitability="age_6">
-  <a class="thumb" href="EadweardMuybridge.png"><img src="EadweardMuybridge.png" alt="Infographic: Eadweard Muybridge" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
+  <a class="thumb" href="EadweardMuybridge.png" aria-label="Open infographic: Eadweard Muybridge"><img src="EadweardMuybridge.png" alt="Infographic: Eadweard Muybridge" loading="lazy"></a>
+  <div class="image-title">
+    <h3>Eadweard Muybridge</h3>
+  </div>
+  <details class="info-popover">
+    <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+    <div class="info-panel">
+      <div class="meta-row">
       <time class="tag date" datetime="2026-04-09" data-date="2026-04-09">9. 4. 2026</time>
       <span class="tag artist" data-category-tag="artist">Artist</span>
       <span class="tag language">SL</span>
       <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="4">4 sources</span>
     </div>
-    <h3>Eadweard Muybridge</h3>
-    <ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Eadweard_Muybridge" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.britannica.com/biography/Eadweard-Muybridge" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.getty.edu/art/collection/person/103KGS" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.loc.gov/pictures/item/97518887/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
-  </div>
+      <ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Eadweard_Muybridge" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.britannica.com/biography/Eadweard-Muybridge" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.getty.edu/art/collection/person/103KGS" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.loc.gov/pictures/item/97518887/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
+    </div>
+  </details>
 </article>
 <article class="card" data-person="Melvin Calvin" data-category="scientist" data-language="sl" data-age-suitability="age_6">
-  <a class="thumb" href="MelvinCalvin.png"><img src="MelvinCalvin.png" alt="Infographic: Melvin Calvin" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
+  <a class="thumb" href="MelvinCalvin.png" aria-label="Open infographic: Melvin Calvin"><img src="MelvinCalvin.png" alt="Infographic: Melvin Calvin" loading="lazy"></a>
+  <div class="image-title">
+    <h3>Melvin Calvin</h3>
+  </div>
+  <details class="info-popover">
+    <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+    <div class="info-panel">
+      <div class="meta-row">
       <time class="tag date" datetime="2026-04-08" data-date="2026-04-08">8. 4. 2026</time>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
       <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
-    <h3>Melvin Calvin</h3>
-    
-  </div>
+      
+    </div>
+  </details>
 </article>
 <article class="card" data-person="Jackie Chan" data-category="artist" data-language="sl" data-age-suitability="age_6">
-  <a class="thumb" href="JackieChan.png"><img src="JackieChan.png" alt="Infographic: Jackie Chan" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
+  <a class="thumb" href="JackieChan.png" aria-label="Open infographic: Jackie Chan"><img src="JackieChan.png" alt="Infographic: Jackie Chan" loading="lazy"></a>
+  <div class="image-title">
+    <h3>Jackie Chan</h3>
+  </div>
+  <details class="info-popover">
+    <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+    <div class="info-panel">
+      <div class="meta-row">
       <time class="tag date" datetime="2026-04-07" data-date="2026-04-07">7. 4. 2026</time>
       <span class="tag artist" data-category-tag="artist">Artist</span>
       <span class="tag language">SL</span>
       <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
-    <h3>Jackie Chan</h3>
-    
-  </div>
+      
+    </div>
+  </details>
 </article>
 <article class="card" data-person="Raffaello Sanzio" data-category="artist" data-language="sl" data-age-suitability="age_6">
-  <a class="thumb" href="RaffaelloSanzio.png"><img src="RaffaelloSanzio.png" alt="Infographic: Raffaello Sanzio" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
+  <a class="thumb" href="RaffaelloSanzio.png" aria-label="Open infographic: Raffaello Sanzio"><img src="RaffaelloSanzio.png" alt="Infographic: Raffaello Sanzio" loading="lazy"></a>
+  <div class="image-title">
+    <h3>Raffaello Sanzio</h3>
+  </div>
+  <details class="info-popover">
+    <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+    <div class="info-panel">
+      <div class="meta-row">
       <time class="tag date" datetime="2026-04-06" data-date="2026-04-06">6. 4. 2026</time>
       <span class="tag artist" data-category-tag="artist">Artist</span>
       <span class="tag language">SL</span>
       <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
-    <h3>Raffaello Sanzio</h3>
-    
-  </div>
+      
+    </div>
+  </details>
 </article>
 <article class="card" data-person="Joseph Lister" data-category="scientist" data-language="sl" data-age-suitability="age_6">
-  <a class="thumb" href="JosephLister.png"><img src="JosephLister.png" alt="Infographic: Joseph Lister" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
+  <a class="thumb" href="JosephLister.png" aria-label="Open infographic: Joseph Lister"><img src="JosephLister.png" alt="Infographic: Joseph Lister" loading="lazy"></a>
+  <div class="image-title">
+    <h3>Joseph Lister</h3>
+  </div>
+  <details class="info-popover">
+    <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+    <div class="info-panel">
+      <div class="meta-row">
       <time class="tag date" datetime="2026-04-05" data-date="2026-04-05">5. 4. 2026</time>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
       <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
-    <h3>Joseph Lister</h3>
-    
-  </div>
+      
+    </div>
+  </details>
 </article>
 <article class="card" data-person="Shing Tung Yau" data-category="scientist" data-language="sl" data-age-suitability="age_6">
-  <a class="thumb" href="ShingTungYau.png"><img src="ShingTungYau.png" alt="Infographic: Shing Tung Yau" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
+  <a class="thumb" href="ShingTungYau.png" aria-label="Open infographic: Shing Tung Yau"><img src="ShingTungYau.png" alt="Infographic: Shing Tung Yau" loading="lazy"></a>
+  <div class="image-title">
+    <h3>Shing Tung Yau</h3>
+  </div>
+  <details class="info-popover">
+    <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+    <div class="info-panel">
+      <div class="meta-row">
       <time class="tag date" datetime="2026-04-04" data-date="2026-04-04">4. 4. 2026</time>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
       <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
-    <h3>Shing Tung Yau</h3>
-    
-  </div>
+      
+    </div>
+  </details>
 </article>
 <article class="card" data-person="Jane Goodall" data-category="scientist" data-language="sl" data-age-suitability="age_6">
-  <a class="thumb" href="JaneGoodall.png"><img src="JaneGoodall.png" alt="Infographic: Jane Goodall" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
+  <a class="thumb" href="JaneGoodall.png" aria-label="Open infographic: Jane Goodall"><img src="JaneGoodall.png" alt="Infographic: Jane Goodall" loading="lazy"></a>
+  <div class="image-title">
+    <h3>Jane Goodall</h3>
+  </div>
+  <details class="info-popover">
+    <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+    <div class="info-panel">
+      <div class="meta-row">
       <time class="tag date" datetime="2026-04-03" data-date="2026-04-03">3. 4. 2026</time>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
       <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
-    <h3>Jane Goodall</h3>
-    
-  </div>
+      
+    </div>
+  </details>
 </article>
 <article class="card" data-person="Maria Sibylla Merian" data-category="artist" data-language="sl" data-age-suitability="age_6">
-  <a class="thumb" href="MariaSibyllaMerian.png"><img src="MariaSibyllaMerian.png" alt="Infographic: Maria Sibylla Merian" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
+  <a class="thumb" href="MariaSibyllaMerian.png" aria-label="Open infographic: Maria Sibylla Merian"><img src="MariaSibyllaMerian.png" alt="Infographic: Maria Sibylla Merian" loading="lazy"></a>
+  <div class="image-title">
+    <h3>Maria Sibylla Merian</h3>
+  </div>
+  <details class="info-popover">
+    <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+    <div class="info-panel">
+      <div class="meta-row">
       <time class="tag date" datetime="2026-04-02" data-date="2026-04-02">2. 4. 2026</time>
       <span class="tag artist" data-category-tag="artist">Artist</span>
       <span class="tag language">SL</span>
       <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
-    <h3>Maria Sibylla Merian</h3>
-    
-  </div>
+      
+    </div>
+  </details>
 </article>
 <article class="card" data-person="Sophie Germain" data-category="scientist" data-language="sl" data-age-suitability="age_6">
-  <a class="thumb" href="SophieGermain.png"><img src="SophieGermain.png" alt="Infographic: Sophie Germain" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
+  <a class="thumb" href="SophieGermain.png" aria-label="Open infographic: Sophie Germain"><img src="SophieGermain.png" alt="Infographic: Sophie Germain" loading="lazy"></a>
+  <div class="image-title">
+    <h3>Sophie Germain</h3>
+  </div>
+  <details class="info-popover">
+    <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+    <div class="info-panel">
+      <div class="meta-row">
       <time class="tag date" datetime="2026-04-01" data-date="2026-04-01">1. 4. 2026</time>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
       <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
-    <h3>Sophie Germain</h3>
-    
-  </div>
+      
+    </div>
+  </details>
 </article>
 <article class="card" data-person="William Lawrence Bragg" data-category="scientist" data-language="sl" data-age-suitability="age_6">
-  <a class="thumb" href="WilliamLawrenceBragg.png"><img src="WilliamLawrenceBragg.png" alt="Infographic: William Lawrence Bragg" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
+  <a class="thumb" href="WilliamLawrenceBragg.png" aria-label="Open infographic: William Lawrence Bragg"><img src="WilliamLawrenceBragg.png" alt="Infographic: William Lawrence Bragg" loading="lazy"></a>
+  <div class="image-title">
+    <h3>William Lawrence Bragg</h3>
+  </div>
+  <details class="info-popover">
+    <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+    <div class="info-panel">
+      <div class="meta-row">
       <time class="tag date" datetime="2026-03-31" data-date="2026-03-31">31. 3. 2026</time>
       <span class="tag science" data-category-tag="scientist">Scientist</span>
       <span class="tag language">SL</span>
       <span class="tag age" data-age-tag="1">Ages 6+</span>
       <span class="tag source-count" data-source-count="0">No sources</span>
     </div>
-    <h3>William Lawrence Bragg</h3>
-    
-  </div>
+      
+    </div>
+  </details>
 </article></div>
       <nav class="pagination"><a class="pill pager" href="page-3.html" data-i18n="pager_previous">← Previous</a><a class="pill pager" href="./">1</a><a class="pill pager" href="page-2.html">2</a><a class="pill pager" href="page-3.html">3</a><a class="pill pager active" href="page-4.html">4</a><a class="pill pager" href="page-5.html">5</a><a class="pill pager" href="page-6.html">6</a><a class="pill pager" href="page-7.html">7</a><a class="pill pager" href="page-8.html">8</a><a class="pill pager" href="page-9.html">9</a><a class="pill pager" href="page-10.html">10</a><a class="pill pager" href="page-11.html">11</a><a class="pill pager" href="page-5.html" data-i18n="pager_next">Next →</a></nav>
     </section>
@@ -407,7 +464,8 @@
       category_sport: 'Athlete',
       age_age_6: 'Ages 6+',
       age_age_13: 'Ages 13+',
-      age_adult: 'Adults'
+      age_adult: 'Adults',
+      image_details: 'Show image details'
     },
     sl: {
       document_title: 'Arhiv dnevnih rojstnodnevnih infografik',
@@ -451,7 +509,8 @@
       category_sport: 'Športnik',
       age_age_6: '6+ let',
       age_age_13: '13+ let',
-      age_adult: 'Odrasli'
+      age_adult: 'Odrasli',
+      image_details: 'Pokaži podrobnosti slike'
     }
   };
 
@@ -509,12 +568,11 @@
     return `<ul class="sources">${sources.slice(0, 4).map((url) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" data-source-link="1">${escapeHtml(t('source'))}</a></li>`).join('')}</ul>`;
   }
 
-  function renderCard(entry, featured) {
-    const featureClass = featured ? ' feature' : '';
+  function renderInfoOverlay(entry) {
     const ageKeys = entry.age_suitability_keys || [];
-    return `<article class="card${featureClass}" data-person="${escapeHtml(entry.person)}" data-category="${escapeHtml(entry.category)}" data-language="${escapeHtml(entry.language)}" data-age-suitability="${escapeHtml(ageKeys.join(' '))}">
-      <a class="thumb" href="${escapeHtml(entry.filename)}"><img src="${escapeHtml(entry.filename)}" alt="Infographic: ${escapeHtml(entry.person)}" loading="lazy"></a>
-      <div class="content">
+    return `<details class="info-popover">
+      <summary class="info-button" aria-label="${escapeHtml(t('image_details'))}" data-info-label="1">i</summary>
+      <div class="info-panel">
         <div class="meta-row">
           <time class="tag date" datetime="${escapeHtml(entry.date)}" data-date="${escapeHtml(entry.date)}">${escapeHtml(formatDate(entry.date))}</time>
           <span class="tag ${escapeHtml(entry.category_class)}" data-category-tag="${escapeHtml(entry.category)}">${escapeHtml(categoryLabel(entry.category))}</span>
@@ -522,9 +580,18 @@
           ${ageBadges(ageKeys)}
           <span class="tag source-count" data-source-count="${Number(entry.source_count || 0)}">${sourceCountLabel(entry.source_count)}</span>
         </div>
-        <h3>${escapeHtml(entry.person)}</h3>
         ${renderSources(entry.sources || [])}
       </div>
+    </details>`;
+  }
+
+  function renderCard(entry, featured) {
+    const featureClass = featured ? ' feature' : '';
+    const ageKeys = entry.age_suitability_keys || [];
+    return `<article class="card${featureClass}" data-person="${escapeHtml(entry.person)}" data-category="${escapeHtml(entry.category)}" data-language="${escapeHtml(entry.language)}" data-age-suitability="${escapeHtml(ageKeys.join(' '))}">
+      <a class="thumb" href="${escapeHtml(entry.filename)}" aria-label="Open infographic: ${escapeHtml(entry.person)}"><img src="${escapeHtml(entry.filename)}" alt="Infographic: ${escapeHtml(entry.person)}" loading="lazy"></a>
+      <div class="image-title"><h3>${escapeHtml(entry.person)}</h3></div>
+      ${renderInfoOverlay(entry)}
     </article>`;
   }
 
@@ -539,6 +606,7 @@
       node.setAttribute('placeholder', t(node.dataset.i18nPlaceholder));
     });
     document.querySelectorAll('[data-source-link]').forEach((node) => { node.textContent = t('source'); });
+    document.querySelectorAll('[data-info-label]').forEach((node) => { node.setAttribute('aria-label', t('image_details')); });
     document.querySelectorAll('[data-date]').forEach((node) => { node.textContent = formatDate(node.dataset.date); });
     document.querySelectorAll('[data-source-count]').forEach((node) => { node.textContent = sourceCountLabel(Number(node.dataset.sourceCount || 0)); });
     document.querySelectorAll('[data-category-option]').forEach((node) => { node.textContent = categoryLabel(node.dataset.categoryOption); });

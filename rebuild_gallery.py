@@ -155,6 +155,31 @@ def render_sources(e):
     return f'<ul class="sources">{items}</ul>'
 
 
+def render_info_overlay(e, panel_id, expanded=False):
+    raw_date = e.get('date', '')
+    date = html.escape(raw_date)
+    display_date = html.escape(format_display_date(raw_date))
+    category = category_label_en(e.get('category', 'scientist'))
+    category_cls = e.get('category_class', 'science')
+    language_label = html.escape(e.get('language_label', 'SL'))
+    count_label = source_count_label(e)
+    age_badge = age_suitability_badge(e)
+    open_attr = ' open' if expanded else ''
+    return f'''<details class="info-popover"{open_attr}>
+      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <div class="info-panel" id="{html.escape(panel_id)}">
+        <div class="meta-row">
+          <time class="tag date" datetime="{date}" data-date="{date}">{display_date}</time>
+          <span class="tag {category_cls}" data-category-tag="{html.escape(e.get('category', ''))}">{html.escape(category)}</span>
+          <span class="tag language">{language_label}</span>
+          {age_badge}
+          <span class="tag source-count" data-source-count="{e.get('source_count', len(e.get('sources', [])))}">{count_label}</span>
+        </div>
+        {render_sources(e)}
+      </div>
+    </details>'''
+
+
 def format_display_date(value):
     if not value:
         return ''
@@ -178,29 +203,15 @@ def format_display_datetime(value):
 def render_masonry_card(e, featured=False):
     person = html.escape(e.get('person', ''))
     filename = html.escape(e.get('filename', ''))
-    raw_date = e.get('date', '')
-    date = html.escape(raw_date)
-    display_date = html.escape(format_display_date(raw_date))
-    category = category_label_en(e.get('category', 'scientist'))
-    category_cls = e.get('category_class', 'science')
-    language_label = html.escape(e.get('language_label', 'SL'))
-    count_label = source_count_label(e)
     age_data = html.escape(age_suitability_data(e))
-    age_badge = age_suitability_badge(e)
     feature_cls = ' feature' if featured else ''
+    panel_id = 'info-' + re.sub(r'[^a-zA-Z0-9_-]+', '-', f"{e.get('date', '')}-{e.get('filename', '')}").strip('-')
     return f'''<article class="card{feature_cls}" data-person="{html.escape(e.get('person', ''))}" data-category="{html.escape(e.get('category', ''))}" data-language="{html.escape(e.get('language', 'sl'))}" data-age-suitability="{age_data}">
-  <a class="thumb" href="{filename}"><img src="{filename}" alt="Infographic: {person}" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
-      <time class="tag date" datetime="{date}" data-date="{date}">{display_date}</time>
-      <span class="tag {category_cls}" data-category-tag="{html.escape(e.get('category', ''))}">{html.escape(category)}</span>
-      <span class="tag language">{language_label}</span>
-      {age_badge}
-      <span class="tag source-count" data-source-count="{e.get('source_count', len(e.get('sources', [])))}">{count_label}</span>
-    </div>
+  <a class="thumb" href="{filename}" aria-label="Open infographic: {person}"><img src="{filename}" alt="Infographic: {person}" loading="lazy"></a>
+  <div class="image-title">
     <h3>{person}</h3>
-    {render_sources(e)}
   </div>
+  {render_info_overlay(e, panel_id)}
 </article>'''
 
 
@@ -208,14 +219,6 @@ def render_featured(featured):
     if not featured:
         return ''
     person = html.escape(featured.get('person', ''))
-    raw_date = featured.get('date', '')
-    date = html.escape(raw_date)
-    display_date = html.escape(format_display_date(raw_date))
-    category_label = html.escape(category_label_en(featured.get('category', 'scientist')))
-    category_class = featured.get('category_class', 'science')
-    language_label = html.escape(featured.get('language_label', 'SL'))
-    count_label = source_count_label(featured)
-    age_badge = age_suitability_badge(featured)
     age_data = html.escape(age_suitability_data(featured))
     featured_file = html.escape(featured.get('filename', ''))
     return f'''<section class="hero">
@@ -228,19 +231,14 @@ def render_featured(featured):
     <div>
     </div>
   </div>
-  <article class="hero-card surface" data-age-suitability="{age_data}">
-    <a class="hero-image-wrap" href="{featured_file}">
+  <article class="hero-card surface image-card" data-age-suitability="{age_data}">
+    <a class="hero-image-wrap" href="{featured_file}" aria-label="Open infographic: {person}">
       <img src="{featured_file}" alt="Infographic: {person}">
     </a>
-    <div class="meta-row hero-meta">
-      <time class="tag date" datetime="{date}" data-date="{date}">{display_date}</time>
-      <span class="tag {category_class}" data-category-tag="{html.escape(featured.get('category', ''))}">{category_label}</span>
-      <span class="tag language">{language_label}</span>
-      {age_badge}
-      <span class="tag source-count" data-source-count="{featured.get('source_count', len(featured.get('sources', [])))}">{count_label}</span>
+    <div class="image-title hero-title-overlay">
+      <h3>{person}</h3>
     </div>
-    <h3>{person}</h3>
-    {render_sources(featured)}
+    {render_info_overlay(featured, 'featured-info', expanded=True)}
   </article>
 </section>'''
 
@@ -348,7 +346,8 @@ def render_client_script():
       category_sport: 'Athlete',
       age_age_6: 'Ages 6+',
       age_age_13: 'Ages 13+',
-      age_adult: 'Adults'
+      age_adult: 'Adults',
+      image_details: 'Show image details'
     },
     sl: {
       document_title: 'Arhiv dnevnih rojstnodnevnih infografik',
@@ -392,7 +391,8 @@ def render_client_script():
       category_sport: 'Športnik',
       age_age_6: '6+ let',
       age_age_13: '13+ let',
-      age_adult: 'Odrasli'
+      age_adult: 'Odrasli',
+      image_details: 'Pokaži podrobnosti slike'
     }
   };
 
@@ -450,12 +450,11 @@ def render_client_script():
     return `<ul class="sources">${sources.slice(0, 4).map((url) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" data-source-link="1">${escapeHtml(t('source'))}</a></li>`).join('')}</ul>`;
   }
 
-  function renderCard(entry, featured) {
-    const featureClass = featured ? ' feature' : '';
+  function renderInfoOverlay(entry) {
     const ageKeys = entry.age_suitability_keys || [];
-    return `<article class="card${featureClass}" data-person="${escapeHtml(entry.person)}" data-category="${escapeHtml(entry.category)}" data-language="${escapeHtml(entry.language)}" data-age-suitability="${escapeHtml(ageKeys.join(' '))}">
-      <a class="thumb" href="${escapeHtml(entry.filename)}"><img src="${escapeHtml(entry.filename)}" alt="Infographic: ${escapeHtml(entry.person)}" loading="lazy"></a>
-      <div class="content">
+    return `<details class="info-popover">
+      <summary class="info-button" aria-label="${escapeHtml(t('image_details'))}" data-info-label="1">i</summary>
+      <div class="info-panel">
         <div class="meta-row">
           <time class="tag date" datetime="${escapeHtml(entry.date)}" data-date="${escapeHtml(entry.date)}">${escapeHtml(formatDate(entry.date))}</time>
           <span class="tag ${escapeHtml(entry.category_class)}" data-category-tag="${escapeHtml(entry.category)}">${escapeHtml(categoryLabel(entry.category))}</span>
@@ -463,9 +462,18 @@ def render_client_script():
           ${ageBadges(ageKeys)}
           <span class="tag source-count" data-source-count="${Number(entry.source_count || 0)}">${sourceCountLabel(entry.source_count)}</span>
         </div>
-        <h3>${escapeHtml(entry.person)}</h3>
         ${renderSources(entry.sources || [])}
       </div>
+    </details>`;
+  }
+
+  function renderCard(entry, featured) {
+    const featureClass = featured ? ' feature' : '';
+    const ageKeys = entry.age_suitability_keys || [];
+    return `<article class="card${featureClass}" data-person="${escapeHtml(entry.person)}" data-category="${escapeHtml(entry.category)}" data-language="${escapeHtml(entry.language)}" data-age-suitability="${escapeHtml(ageKeys.join(' '))}">
+      <a class="thumb" href="${escapeHtml(entry.filename)}" aria-label="Open infographic: ${escapeHtml(entry.person)}"><img src="${escapeHtml(entry.filename)}" alt="Infographic: ${escapeHtml(entry.person)}" loading="lazy"></a>
+      <div class="image-title"><h3>${escapeHtml(entry.person)}</h3></div>
+      ${renderInfoOverlay(entry)}
     </article>`;
   }
 
@@ -480,6 +488,7 @@ def render_client_script():
       node.setAttribute('placeholder', t(node.dataset.i18nPlaceholder));
     });
     document.querySelectorAll('[data-source-link]').forEach((node) => { node.textContent = t('source'); });
+    document.querySelectorAll('[data-info-label]').forEach((node) => { node.setAttribute('aria-label', t('image_details')); });
     document.querySelectorAll('[data-date]').forEach((node) => { node.textContent = formatDate(node.dataset.date); });
     document.querySelectorAll('[data-source-count]').forEach((node) => { node.textContent = sourceCountLabel(Number(node.dataset.sourceCount || 0)); });
     document.querySelectorAll('[data-category-option]').forEach((node) => { node.textContent = categoryLabel(node.dataset.categoryOption); });
@@ -661,28 +670,35 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     .stat {{ background:var(--paper); border:1px solid var(--line); border-radius:22px; padding:18px 16px; }}
     .stat strong {{ display:block; font-size:30px; margin-bottom:4px; }}
     .stat span {{ font-size:14px; color:var(--muted); }}
-    .hero-card {{ padding:18px; background:linear-gradient(180deg,#fff,#fffaf4); }}
-    .hero-image-wrap {{ display:block; padding:12px; background:linear-gradient(135deg,var(--hero2),var(--hero1),var(--hero3)); border-radius:26px; text-decoration:none; }}
-    .hero-image-wrap img {{ width:100%; display:block; border-radius:20px; border:8px solid rgba(255,255,255,.96); }}
-    .hero-meta {{ margin-top:18px; }}
-    .hero-card h3 {{ margin:16px 0 8px; font-size:32px; letter-spacing:-.03em; }}
+    .hero-card {{ min-height:420px; }}
+    .hero-image-wrap {{ position:absolute; inset:0; display:block; text-decoration:none; background:#fff; }}
+    .hero-image-wrap img {{ width:100%; height:100%; display:block; object-fit:contain; }}
+    .hero-title-overlay h3 {{ font-size:32px; }}
     .sources a:hover {{ text-decoration:underline; }}
     .archive-shell {{ margin-top:24px; padding:24px; background:rgba(255,255,255,.84); border:1px solid var(--line); border-radius:30px; box-shadow:var(--shadow); }}
     .archive-top {{ display:flex; justify-content:space-between; gap:18px; align-items:end; margin-bottom:22px; }}
     .archive-top h2 {{ margin:0; font-size:34px; letter-spacing:-.04em; }}
     .archive-top p {{ margin:8px 0 0; color:var(--muted); font-size:17px; max-width:60ch; }}
-    .masonry {{ display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:16px; align-items:stretch; }}
-    .card {{
-      margin:0; background:var(--panel); border:1px solid var(--line);
-      border-radius:22px; overflow:hidden; box-shadow:0 8px 24px rgba(33,25,34,.06);
-      height:100%; display:flex; flex-direction:column;
+    .masonry {{ display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:18px; align-items:stretch; }}
+    .card, .image-card {{
+      position:relative; isolation:isolate; margin:0; background:#fff; border:1px solid var(--line);
+      border-radius:22px; overflow:hidden; box-shadow:0 10px 28px rgba(33,25,34,.08);
+      aspect-ratio:16/9;
     }}
-    .card.feature {{ background:linear-gradient(180deg,#fffefb,#fff7ee); }}
-    .thumb {{ display:block; text-decoration:none; }}
-    .thumb img {{ width:100%; display:block; }}
-    .content {{ padding:14px 14px 16px; flex:1; display:flex; flex-direction:column; }}
-    .content h3 {{ margin:8px 0 8px; font-size:22px; line-height:1.08; letter-spacing:-.03em; min-height:2.16em; display:block; }}
-    .card.feature .content h3 {{ font-size:28px; min-height:2.16em; }}
+    .card.feature {{ box-shadow:0 14px 36px rgba(33,25,34,.11); }}
+    .thumb {{ position:absolute; inset:0; display:block; text-decoration:none; background:#fff; }}
+    .thumb img {{ width:100%; height:100%; display:block; object-fit:contain; }}
+    .image-title {{ position:absolute; left:0; right:0; bottom:0; z-index:2; padding:56px 16px 14px; color:#fff; background:linear-gradient(180deg, transparent, rgba(0,0,0,.68)); pointer-events:none; }}
+    .image-title h3 {{ margin:0; font-size:22px; line-height:1.05; letter-spacing:-.03em; text-shadow:0 1px 12px rgba(0,0,0,.38); }}
+    .card.feature .image-title h3 {{ font-size:28px; }}
+    .info-popover {{ position:absolute; top:12px; right:12px; z-index:4; }}
+    .info-popover[open] {{ left:12px; bottom:12px; }}
+    .info-popover summary {{ list-style:none; }}
+    .info-popover summary::-webkit-details-marker {{ display:none; }}
+    .info-button {{ width:38px; height:38px; display:grid; place-items:center; margin-left:auto; border-radius:999px; border:1px solid rgba(255,255,255,.78); background:rgba(255,255,255,.9); color:#211922; font-weight:900; font-size:18px; box-shadow:0 8px 22px rgba(0,0,0,.14); cursor:pointer; }}
+    .info-button:hover, .info-button:focus-visible {{ background:#211922; color:#fff; outline:0; }}
+    .info-panel {{ margin-top:10px; max-width:min(420px, calc(100vw - 56px)); padding:14px; border-radius:18px; background:rgba(255,253,249,.95); border:1px solid rgba(255,255,255,.9); box-shadow:0 16px 38px rgba(0,0,0,.2); backdrop-filter:blur(16px); }}
+    .info-panel .sources {{ margin-top:12px; }}
     .tag {{ display:inline-flex; padding:7px 10px; border-radius:999px; background:#f7f2ea; border:1px solid #ece1d4; font-size:12px; color:#564f47; }}
     .tag.artist {{ background:#ffe9ec; border-color:#ffd4dc; color:#8d2440; }}
     .tag.science {{ background:#eaf5ff; border-color:#d4e7ff; color:#29547f; }}
@@ -708,7 +724,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     .footer a:hover {{ text-decoration:underline; }}
     .empty {{ color:var(--muted); font-size:16px; }}
     @media (max-width:1200px) {{
-      .masonry {{ grid-template-columns:repeat(3, minmax(0, 1fr)); }}
+      .masonry {{ grid-template-columns:repeat(2, minmax(0, 1fr)); }}
     }}
     @media (max-width:1100px) {{
       .hero {{ grid-template-columns:1fr; }}
