@@ -1,15 +1,17 @@
 {
-  "date": "2026-05-06",
-  "person": "Vincent van Gogh",
-  "image_filename": "VincentVanGogh.png",
-  "category": "artist",
-  "category_label": "Umetnik",
-  "language": "en",
-  "language_label": "EN",
+  "date": "2026-05-07",
+  "person": "Oskar Perron",
+  "image_filename": "OskarPerron.png",
+  "category": "scientist",
+  "category_label": "Znanstvenik",
+  "language": "sl",
+  "language_label": "SL",
   "sources": [
-    "https://example.com/van-gogh-research"
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Perron/",
+    "https://en.wikipedia.org/wiki/Oskar_Perron",
+    "https://www.wikidata.org/wiki/Q65189"
   ],
-  "total_entries": 107,
+  "total_entries": 108,
   "total_pages": 11,
   "per_page": 10
 }
