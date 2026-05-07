@@ -63,7 +63,7 @@ def normalize_entry_metadata(entry: dict) -> dict:
     age_keys = [key for key in explicit_keys if key in AGE_SUITABILITY_LEVELS]
 
     # The backend can include age_suitability_details for multiple reading levels
-    # on the same kid-friendly image. Those are text variants, not separate image
+    # on the same all-ages image. Those are text variants, not separate image
     # suitability tags. Unless there is a narrower explicit target, treat archive
     # images as the current kid-friendly 6+ level.
     if set(age_keys) == set(AGE_SUITABILITY_LEVELS):
@@ -74,7 +74,7 @@ def normalize_entry_metadata(entry: dict) -> dict:
             age_keys = [target_key]
         else:
             # Legacy archive entries were produced before age-suitability metadata
-            # existed in the backend. Those older kid-friendly Slovenian pages should
+            # existed in the backend. Those older Slovenian all-ages pages should
             # remain discoverable in the 6+ filter instead of disappearing entirely.
             age_keys = ['age_6']
 
