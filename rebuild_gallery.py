@@ -31,6 +31,22 @@ def load_json(path: Path, default):
 
 
 
+def validate_entry_provenance(entries):
+    placeholder = []
+    for entry in entries:
+        sources = [str(source).strip().lower() for source in entry.get('sources', []) if str(source).strip()]
+        if sources and all('://example.com/' in source or source.startswith('https://example.com/') for source in sources):
+            label = f"{entry.get('date', 'unknown-date')} {entry.get('person', 'unknown-person')}"
+            placeholder.append(f"{label}: {entry.get('filename', 'unknown-file')} -> {', '.join(entry.get('sources', []))}")
+    if placeholder:
+        raise SystemExit(
+            'Refusing to rebuild artists archive with placeholder example.com sources.\n'
+            'These entries are usually test/demo artifacts and can publish wrong dates for reused images.\n'
+            '- ' + '\n- '.join(placeholder)
+        )
+    return entries
+
+
 def validate_entry_assets(entries):
     missing = []
     invalid = []
@@ -735,6 +751,7 @@ for entry_path in sorted(RUNS_DIR.glob('*/entry.json')):
         entries.append(entry)
 
 entries = [normalize_entry_metadata(entry) for entry in dedupe_entries(entries)]
+entries = validate_entry_provenance(entries)
 entries = validate_entry_assets(entries)
 entries.sort(key=lambda x: ((x.get('date') or ''), (x.get('person') or ''), (x.get('filename') or '')), reverse=True)
 entries_index = build_entries_index(entries)

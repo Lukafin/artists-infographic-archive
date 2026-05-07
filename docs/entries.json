@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 108,
+    "total_entries": 106,
     "categories": [
       "artist",
       "scientist"
@@ -15,15 +15,15 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 108
+      "age_6": 106
     },
     "category_counts": {
       "scientist": 87,
-      "artist": 21
+      "artist": 19
     },
     "language_counts": {
-      "sl": 106,
-      "en": 2
+      "sl": 105,
+      "en": 1
     }
   },
   "entries": [
@@ -85,59 +85,6 @@
       ],
       "source_count": 3,
       "search_text": "oskar perron scientist znanstvenik sl age_6 ages 6+ 6+ let"
-    },
-    {
-      "date": "2026-05-06",
-      "person": "Vincent van Gogh",
-      "filename": "VincentVanGogh.png",
-      "image_filename": "VincentVanGogh.png",
-      "sources": [
-        "https://example.com/van-gogh-research"
-      ],
-      "title": "Vincent van Gogh — post-impressionist master",
-      "summary": "English entry for the artists lane.",
-      "age_suitability_details": {},
-      "age_suitability_levels": [
-        {
-          "key": "age_6",
-          "label": "Age 6",
-          "target_age": 6,
-          "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
-        },
-        {
-          "key": "age_13",
-          "label": "Age 13",
-          "target_age": 13,
-          "complexity": "intermediate",
-          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
-        },
-        {
-          "key": "adult",
-          "label": "Adults",
-          "target_age": null,
-          "complexity": "advanced",
-          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
-        }
-      ],
-      "category": "artist",
-      "language": "en",
-      "assignment_id": "704a5de7-663e-4077-add6-99467bdd08e3",
-      "_kind": "native",
-      "category_label": "Umetnik",
-      "category_class": "artist",
-      "language_label": "EN",
-      "age_suitability_keys": [
-        "age_6"
-      ],
-      "age_suitability_labels_en": [
-        "Ages 6+"
-      ],
-      "age_suitability_labels_sl": [
-        "6+ let"
-      ],
-      "source_count": 1,
-      "search_text": "vincent van gogh artist umetnik en age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-06",
@@ -376,59 +323,6 @@
       ],
       "source_count": 3,
       "search_text": "delia derbyshire artist umetnik sl age_6 ages 6+ 6+ let"
-    },
-    {
-      "date": "2026-05-04",
-      "person": "Vincent van Gogh",
-      "filename": "VincentVanGogh.png",
-      "image_filename": "VincentVanGogh.png",
-      "sources": [
-        "https://example.com/van-gogh-sl-research"
-      ],
-      "title": "Vincent van Gogh — postimpresionistični mojster",
-      "summary": "Slovene translation lane entry.",
-      "age_suitability_details": {},
-      "age_suitability_levels": [
-        {
-          "key": "age_6",
-          "label": "Age 6",
-          "target_age": 6,
-          "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
-        },
-        {
-          "key": "age_13",
-          "label": "Age 13",
-          "target_age": 13,
-          "complexity": "intermediate",
-          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
-        },
-        {
-          "key": "adult",
-          "label": "Adults",
-          "target_age": null,
-          "complexity": "advanced",
-          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
-        }
-      ],
-      "category": "artist",
-      "language": "sl",
-      "assignment_id": "42ace987-f8d7-4f31-9900-70db6c7ae37f",
-      "_kind": "native",
-      "category_label": "Umetnik",
-      "category_class": "artist",
-      "language_label": "SL",
-      "age_suitability_keys": [
-        "age_6"
-      ],
-      "age_suitability_labels_en": [
-        "Ages 6+"
-      ],
-      "age_suitability_labels_sl": [
-        "6+ let"
-      ],
-      "source_count": 1,
-      "search_text": "vincent van gogh artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-04",
