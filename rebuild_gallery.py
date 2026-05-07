@@ -695,8 +695,8 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     .info-popover[open] {{ right:12px; bottom:12px; }}
     .info-popover summary {{ list-style:none; }}
     .info-popover summary::-webkit-details-marker {{ display:none; }}
-    .info-button {{ width:38px; height:38px; display:grid; place-items:center; margin-left:auto; border-radius:999px; border:1px solid rgba(255,255,255,.78); background:rgba(255,255,255,.9); color:#211922; font-weight:900; font-size:18px; box-shadow:0 8px 22px rgba(0,0,0,.14); cursor:pointer; }}
-    .info-button:hover, .info-button:focus-visible {{ background:#211922; color:#fff; outline:0; }}
+    .info-button {{ width:32px; height:32px; display:grid; place-items:center; margin-left:auto; border-radius:999px; border:1px solid rgba(255,255,255,.5); background:rgba(255,255,255,.58); color:rgba(33,25,34,.72); font-weight:850; font-size:15px; box-shadow:0 6px 16px rgba(0,0,0,.10); backdrop-filter:blur(8px); cursor:pointer; }}
+    .info-button:hover, .info-button:focus-visible {{ background:rgba(33,25,34,.82); color:#fff; outline:0; }}
     .info-panel {{ position:absolute; top:48px; right:0; margin-top:0; width:min(320px, calc(100vw - 56px)); max-width:calc(100vw - 56px); max-height:calc(100% - 76px); overflow:auto; padding:12px; border-radius:18px; background:rgba(255,253,249,.95); border:1px solid rgba(255,255,255,.9); box-shadow:0 16px 38px rgba(0,0,0,.2); backdrop-filter:blur(16px); }}
     .info-panel .meta-row {{ gap:7px; }}
     .info-panel .tag {{ padding:6px 9px; }}
