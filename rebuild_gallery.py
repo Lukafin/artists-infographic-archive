@@ -193,6 +193,7 @@ def render_featured(featured):
     language_label = html.escape(featured.get('language_label', 'SL'))
     count_label = source_count_label(featured)
     age_badge = age_suitability_badge(featured)
+    age_data = html.escape(age_suitability_data(featured))
     featured_file = html.escape(featured.get('filename', ''))
     return f'''<section class="hero">
   <div class="hero-copy surface">
@@ -204,7 +205,7 @@ def render_featured(featured):
     <div>
     </div>
   </div>
-  <article class="hero-card surface">
+  <article class="hero-card surface" data-age-suitability="{age_data}">
     <a class="hero-image-wrap" href="{featured_file}">
       <img src="{featured_file}" alt="Infographic: {person}">
     </a>
