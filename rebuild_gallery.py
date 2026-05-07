@@ -155,10 +155,32 @@ def render_sources(e):
     return f'<ul class="sources">{items}</ul>'
 
 
+def format_display_date(value):
+    if not value:
+        return ''
+    try:
+        parsed = datetime.strptime(str(value)[:10], '%Y-%m-%d')
+    except ValueError:
+        return str(value)
+    return f'{parsed.day}. {parsed.month}. {parsed.year}'
+
+
+def format_display_datetime(value):
+    if not value:
+        return ''
+    try:
+        parsed = datetime.strptime(str(value), '%Y-%m-%d %H:%M')
+    except ValueError:
+        return str(value)
+    return f'{parsed.day}. {parsed.month}. {parsed.year}, {parsed:%H:%M}'
+
+
 def render_masonry_card(e, featured=False):
     person = html.escape(e.get('person', ''))
     filename = html.escape(e.get('filename', ''))
-    date = html.escape(e.get('date', ''))
+    raw_date = e.get('date', '')
+    date = html.escape(raw_date)
+    display_date = html.escape(format_display_date(raw_date))
     category = category_label_en(e.get('category', 'scientist'))
     category_cls = e.get('category_class', 'science')
     language_label = html.escape(e.get('language_label', 'SL'))
@@ -170,7 +192,7 @@ def render_masonry_card(e, featured=False):
   <a class="thumb" href="{filename}"><img src="{filename}" alt="Infographic: {person}" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
-      <span class="tag date">{date}</span>
+      <time class="tag date" datetime="{date}" data-date="{date}">{display_date}</time>
       <span class="tag {category_cls}" data-category-tag="{html.escape(e.get('category', ''))}">{html.escape(category)}</span>
       <span class="tag language">{language_label}</span>
       {age_badge}
@@ -186,7 +208,9 @@ def render_featured(featured):
     if not featured:
         return ''
     person = html.escape(featured.get('person', ''))
-    date = html.escape(featured.get('date', ''))
+    raw_date = featured.get('date', '')
+    date = html.escape(raw_date)
+    display_date = html.escape(format_display_date(raw_date))
     category_label = html.escape(category_label_en(featured.get('category', 'scientist')))
     category_class = featured.get('category_class', 'science')
     language_label = html.escape(featured.get('language_label', 'SL'))
@@ -209,7 +233,7 @@ def render_featured(featured):
       <img src="{featured_file}" alt="Infographic: {person}">
     </a>
     <div class="meta-row hero-meta">
-      <span class="tag date">{date}</span>
+      <time class="tag date" datetime="{date}" data-date="{date}">{display_date}</time>
       <span class="tag {category_class}" data-category-tag="{html.escape(featured.get('category', ''))}">{category_label}</span>
       <span class="tag language">{language_label}</span>
       {age_badge}
@@ -265,7 +289,7 @@ def render_filter_bar(index_summary):
 
 
 def render_client_script():
-    return '''<script>
+    return r'''<script>
 (function () {
   const masonry = document.querySelector('.masonry');
   const pagination = document.querySelector('.pagination');
@@ -387,6 +411,18 @@ def render_client_script():
       .replace(/'/g, '&#39;');
   }
 
+  function formatDate(value) {
+    const match = String(value || '').match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if (!match) return value || '';
+    return `${Number(match[3])}. ${Number(match[2])}. ${match[1]}`;
+  }
+
+  function formatUpdated(value) {
+    const match = String(value || '').match(/^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}:\d{2})/);
+    if (!match) return value || '';
+    return `${Number(match[3])}. ${Number(match[2])}. ${match[1]}, ${match[4]}`;
+  }
+
   function categoryLabel(category) {
     return t(`category_${category || 'scientist'}`);
   }
@@ -417,7 +453,7 @@ def render_client_script():
       <a class="thumb" href="${escapeHtml(entry.filename)}"><img src="${escapeHtml(entry.filename)}" alt="Infographic: ${escapeHtml(entry.person)}" loading="lazy"></a>
       <div class="content">
         <div class="meta-row">
-          <span class="tag date">${escapeHtml(entry.date)}</span>
+          <time class="tag date" datetime="${escapeHtml(entry.date)}" data-date="${escapeHtml(entry.date)}">${escapeHtml(formatDate(entry.date))}</time>
           <span class="tag ${escapeHtml(entry.category_class)}" data-category-tag="${escapeHtml(entry.category)}">${escapeHtml(categoryLabel(entry.category))}</span>
           <span class="tag language">${escapeHtml(entry.language_label)}</span>
           ${ageBadges(ageKeys)}
@@ -440,6 +476,7 @@ def render_client_script():
       node.setAttribute('placeholder', t(node.dataset.i18nPlaceholder));
     });
     document.querySelectorAll('[data-source-link]').forEach((node) => { node.textContent = t('source'); });
+    document.querySelectorAll('[data-date]').forEach((node) => { node.textContent = formatDate(node.dataset.date); });
     document.querySelectorAll('[data-source-count]').forEach((node) => { node.textContent = sourceCountLabel(Number(node.dataset.sourceCount || 0)); });
     document.querySelectorAll('[data-category-option]').forEach((node) => { node.textContent = categoryLabel(node.dataset.categoryOption); });
     document.querySelectorAll('[data-age-option]').forEach((node) => { node.textContent = ageLabel(node.dataset.ageOption); });
@@ -463,7 +500,7 @@ def render_client_script():
     const archiveIntro = document.querySelector('[data-archive-intro]');
     if (archiveIntro) archiveIntro.textContent = archiveIntro.dataset.page === '1' ? t('archive_intro_home') : t('archive_intro_page');
     const updatedNode = document.querySelector('[data-updated]');
-    if (updatedNode) updatedNode.textContent = `${t('updated')} ${updatedNode.dataset.updated}`;
+    if (updatedNode) updatedNode.textContent = `${t('updated')} ${formatUpdated(updatedNode.dataset.updated)}`;
   }
 
   function applyFilters() {
@@ -535,6 +572,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
         'Browse older daily infographics by page or use search and filters.'
     )
     updated = datetime.now().strftime('%Y-%m-%d %H:%M')
+    updated_display = html.escape(format_display_datetime(updated))
     cards = '\n'.join(
         render_masonry_card(e, featured=(page_num == 1 and idx in (0, 3)))
         for idx, e in enumerate(chunk)
@@ -723,7 +761,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     </section>
     <footer class="footer surface">
       <div data-i18n="footer_text">Public archive of daily infographics about famous artists, scientists and athletes.</div>
-      <div data-updated="{html.escape(updated)}">Updated: {html.escape(updated)}</div>
+      <div data-updated="{html.escape(updated)}">Updated: {updated_display}</div>
     </footer>
   </main>
   {client_script}
