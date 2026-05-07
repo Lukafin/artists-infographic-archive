@@ -177,7 +177,6 @@ def render_masonry_card(e, featured=False):
       <span class="tag source-count" data-source-count="{e.get('source_count', len(e.get('sources', [])))}">{count_label}</span>
     </div>
     <h3>{person}</h3>
-    <p class="direct-link"><a href="{filename}" data-i18n="open_image">Open image</a></p>
     {render_sources(e)}
   </div>
 </article>'''
@@ -217,7 +216,6 @@ def render_featured(featured):
       <span class="tag source-count" data-source-count="{featured.get('source_count', len(featured.get('sources', [])))}">{count_label}</span>
     </div>
     <h3>{person}</h3>
-    <p class="hero-link"><a href="{featured_file}" data-i18n="open_today">Open today’s image</a></p>
     {render_sources(featured)}
   </article>
 </section>'''
@@ -309,8 +307,6 @@ def render_client_script():
       initial_summary: 'Showing the initial selection for this page. Use search or filters above to search the full archive.',
       no_results: 'No results for the selected filters.',
       found: 'Results found: {count}',
-      open_image: 'Open image',
-      open_today: 'Open today’s image',
       source: 'source',
       sources_zero: 'No sources',
       sources_one: '1 source',
@@ -353,8 +349,6 @@ def render_client_script():
       initial_summary: 'Prikazan je začetni izbor za to stran. Za iskanje ali filtriranje celotnega arhiva uporabi polja zgoraj.',
       no_results: 'Za izbrane filtre ni zadetkov.',
       found: 'Najdenih zadetkov: {count}',
-      open_image: 'Odpri sliko',
-      open_today: 'Odpri današnjo sliko',
       source: 'vir',
       sources_zero: 'Brez virov',
       sources_one: '1 vir',
@@ -430,7 +424,6 @@ def render_client_script():
           <span class="tag source-count" data-source-count="${Number(entry.source_count || 0)}">${sourceCountLabel(entry.source_count)}</span>
         </div>
         <h3>${escapeHtml(entry.person)}</h3>
-        <p class="direct-link"><a href="${escapeHtml(entry.filename)}" data-i18n="open_image">${escapeHtml(t('open_image'))}</a></p>
         ${renderSources(entry.sources || [])}
       </div>
     </article>`;
@@ -631,8 +624,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     .hero-image-wrap img {{ width:100%; display:block; border-radius:20px; border:8px solid rgba(255,255,255,.96); }}
     .hero-meta {{ margin-top:18px; }}
     .hero-card h3 {{ margin:16px 0 8px; font-size:32px; letter-spacing:-.03em; }}
-    .hero-link a, .direct-link a {{ color:var(--accent); font-weight:700; text-decoration:none; }}
-    .hero-link a:hover, .direct-link a:hover, .sources a:hover {{ text-decoration:underline; }}
+    .sources a:hover {{ text-decoration:underline; }}
     .archive-shell {{ margin-top:24px; padding:24px; background:rgba(255,255,255,.84); border:1px solid var(--line); border-radius:30px; box-shadow:var(--shadow); }}
     .archive-top {{ display:flex; justify-content:space-between; gap:18px; align-items:end; margin-bottom:22px; }}
     .archive-top h2 {{ margin:0; font-size:34px; letter-spacing:-.04em; }}
@@ -665,7 +657,6 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     }}
     .results-summary {{ margin:0 0 14px; color:var(--muted); font-size:14px; }}
     .sources {{ list-style:none; display:flex; flex-wrap:wrap; gap:8px; padding:0; margin:12px 0 0; }}
-    .direct-link {{ margin-top:auto; }}
     .sources a {{ display:inline-flex; padding:7px 10px; border-radius:999px; text-decoration:none; background:#faf7f2; border:1px solid var(--line); color:#594e44; font-size:12px; }}
     .pagination {{ margin-top:22px; justify-content:flex-end; }}
     .pagination.is-hidden {{ display:none; }}
