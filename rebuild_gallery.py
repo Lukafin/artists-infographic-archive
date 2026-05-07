@@ -660,7 +660,8 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     .lang-icon {{ width:22px; height:22px; display:grid; place-items:center; font-size:16px; }}
     .lang-picker button {{ border:0; border-radius:999px; background:transparent; color:#51483f; font:inherit; font-size:12px; font-weight:800; padding:7px 9px; cursor:pointer; }}
     .lang-picker button.active {{ background:var(--ink); color:#fff; }}
-    .hero {{ margin-top:24px; display:grid; grid-template-columns:1.1fr .9fr; gap:20px; align-items:stretch; }}
+    .hero {{ margin-top:24px; display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:20px; align-items:stretch; }}
+    .hero > * {{ min-width:0; }}
     .hero-copy {{ padding:34px 34px 30px; display:flex; flex-direction:column; justify-content:space-between; }}
     .eyebrow {{ font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:#8a5c09; display:inline-flex; align-items:center; gap:8px; }}
     .eyebrow::before {{ content:''; width:10px; height:10px; border-radius:999px; background:linear-gradient(135deg,#ff9d00,#ff4d6d); }}
@@ -670,7 +671,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     .stat {{ background:var(--paper); border:1px solid var(--line); border-radius:22px; padding:18px 16px; }}
     .stat strong {{ display:block; font-size:30px; margin-bottom:4px; }}
     .stat span {{ font-size:14px; color:var(--muted); }}
-    .hero-card {{ min-height:420px; }}
+    .hero-card {{ min-height:420px; width:100%; max-width:100%; }}
     .hero-image-wrap {{ position:absolute; inset:0; display:block; text-decoration:none; background:#fff; }}
     .hero-image-wrap img {{ width:100%; height:100%; display:block; object-fit:contain; }}
     .hero-title-overlay h3 {{ font-size:32px; }}

@@ -37,12 +37,12 @@
         "https://en.wikipedia.org/wiki/Oskar_Perron",
         "https://www.wikidata.org/wiki/Q65189"
       ],
-      "title": "Oskar Perron — matematična spiralna pot",
-      "summary": "Slovenska otroška infografika o Oskarju Perronu, nemškem matematiku, rojenem 7. 5. 1880, z editorialno spiralno kompozicijo o verižnih ulomkih, dokazih in skritih poteh skozi številke.",
+      "title": "Oskar Perron — verižni ulomki in pozitivne matrike",
+      "summary": "Slovenska infografika za vse starosti o Oskarju Perronu, nemškem matematiku, rojenem 7. 5. 1880, z jasnim poudarkom na verižnih ulomkih, Perronovem izreku in pozitivnih matrikah.",
       "age_suitability_details": {
-        "age_6": "Oskar Perron je imel rad številske vzorce. Otroku razložimo, da je iskal poti skozi številke, podobno kot po stopnicah ali spirali.",
-        "age_13": "Perron je raziskoval verižne ulomke, diferencialne enačbe in lastnosti matrik. Njegovo delo pomaga razumeti, kako se ponavljajoči računi približajo stabilnemu rezultatu ali glavni smeri.",
-        "adult": "Perron je pomemben za teorijo verižnih ulomkov, diferencialne enačbe in linearno algebro; Perron–Frobeniusova teorija opisuje dominantne lastne vrednosti pozitivnih matrik in ima široke uporabe v dinamiki, verjetnosti in omrežjih."
+        "age_6": "Oskar Perron je raziskoval številske vzorce. Najmlajšim lahko razložimo, da je iskal urejene poti skozi številke.",
+        "age_13": "Perron je raziskoval verižne ulomke, diferencialne enačbe in pozitivne matrike. Njegovo delo pomaga razumeti približevanje, stabilnost in glavne smeri v matematičnih sistemih.",
+        "adult": "Perron je pomemben za teorijo verižnih ulomkov, diferencialne enačbe in linearno algebro; Perron–Frobeniusova teorija opisuje dominantne lastne vrednosti in lastne vektorje pozitivnih matrik ter ima široke uporabe v dinamiki, verjetnosti in omrežjih."
       },
       "age_suitability_levels": [
         {
