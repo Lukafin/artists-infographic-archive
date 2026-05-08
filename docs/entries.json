@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 110,
+    "total_entries": 111,
     "categories": [
       "artist",
       "scientist"
@@ -15,14 +15,14 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 110
+      "age_6": 111
     },
     "category_counts": {
-      "artist": 23,
+      "artist": 24,
       "scientist": 87
     },
     "language_counts": {
-      "sl": 108,
+      "sl": 109,
       "en": 2
     }
   },
@@ -145,6 +145,65 @@
       ],
       "source_count": 3,
       "search_text": "serena williams artist umetnik sl age_6 ages 6+ 6+ let"
+    },
+    {
+      "date": "2026-05-08",
+      "person": "Antoine de Saint-Exupéry",
+      "filename": "AntoineDeSaintExupery.png",
+      "image_filename": "AntoineDeSaintExupery.png",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry",
+        "https://www.wikidata.org/wiki/Q2908",
+        "https://www.britannica.com/biography/Antoine-de-Saint-Exupery"
+      ],
+      "title": "Antoine de Saint-Exupéry — pisatelj in pilot",
+      "summary": "Slovenska otroška editorialna infografika o Antoinu de Saint-Exupéryju: letalska pošta, puščavske zgodbe, Mali princ in domišljijsko letenje med zvezdami.",
+      "age_suitability_details": {
+        "age_6": "Antoine je bil pisatelj in pilot. Letel je z letali, nato pa iz svojih dogodivščin naredil zgodbe, med njimi Malega princa.",
+        "age_13": "Antoine de Saint-Exupéry (1900–1944) je bil francoski aviator, novinar in pisatelj. Iz izkušenj z letalsko pošto, nevarnimi poleti in puščavo je ustvaril poetične pripovedi; Mali princ je postal ena najbolj znanih modernih knjig za otroke in odrasle.",
+        "adult": "Antoine de Saint-Exupéry je povezal pionirsko dobo letalstva z literaturo 20. stoletja: njegove knjige izhajajo iz resničnih izkušenj pilota, vojne in nevarnosti, vendar jih preoblikujejo v humanistično, poetično razmišljanje o odgovornosti, prijateljstvu, domišljiji in krhkosti človeških vezi."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "e3fbe406-40c8-492b-a71e-dadb12a41640",
+      "_kind": "native",
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "antoine de saint-exupéry artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-07",
