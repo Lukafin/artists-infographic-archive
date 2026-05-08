@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 106,
+    "total_entries": 109,
     "categories": [
       "artist",
       "scientist"
@@ -15,18 +15,78 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 106
+      "age_6": 109
     },
     "category_counts": {
-      "scientist": 87,
-      "artist": 19
+      "artist": 22,
+      "scientist": 87
     },
     "language_counts": {
-      "sl": 105,
-      "en": 1
+      "sl": 107,
+      "en": 2
     }
   },
   "entries": [
+    {
+      "date": "2026-05-08",
+      "person": "Simon Ungers",
+      "filename": "SimonUngers.png",
+      "image_filename": "SimonUngers.png",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Simon_Ungers",
+        "https://www.wikidata.org/wiki/Q76015",
+        "https://d-nb.info/gnd/123201772",
+        "https://snaccooperative.org/ark:/99166/w6rp0mm2"
+      ],
+      "title": "Simon Ungers — arhitekt in umetnik",
+      "summary": "Slovenska otroška editorialna infografika o Simonu Ungersu, rojstnodnevnem ujemanju za 8. maj: arhitektura kot skice, makete, kockasta hiša in T-House.",
+      "age_suitability_details": {
+        "age_6": "Simon Ungers je risal in gradil posebne hiše. Predstavljaj si hišo kot veliko sestavljanko iz papirja, lesa in jekla.",
+        "age_13": "Simon Ungers je bil nemški arhitekt in umetnik, rojen 8. 5. 1957. Študiral je na Cornellu, delal med New Yorkom in Kölnom ter raziskoval, kako lahko skica postane prostor, maketa in prava hiša.",
+        "adult": "Simon Ungers (1957–2006) je bil nemški arhitekt in umetnik, povezan z eksperimentalno arhitekturo, maketami, skulpturalnim razumevanjem prostora ter projekti, kot sta T-House iz corten jekla in Cube House; njegova praksa povezuje arhitekturni načrt, materialnost in umetniško instalacijo."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "d3673690-7202-4492-9917-f9dfd0f038b3",
+      "_kind": "native",
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "simon ungers artist umetnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-07",
       "person": "Oskar Perron",
@@ -37,12 +97,12 @@
         "https://en.wikipedia.org/wiki/Oskar_Perron",
         "https://www.wikidata.org/wiki/Q65189"
       ],
-      "title": "Oskar Perron — verižni ulomki in pozitivne matrike",
-      "summary": "Slovenska infografika za vse starosti o Oskarju Perronu, nemškem matematiku, rojenem 7. 5. 1880, z jasnim poudarkom na verižnih ulomkih, Perronovem izreku in pozitivnih matrikah.",
+      "title": "Oskar Perron — matematična spiralna pot",
+      "summary": "Slovenska otroška infografika o Oskarju Perronu, nemškem matematiku, rojenem 7. 5. 1880, z editorialno spiralno kompozicijo o verižnih ulomkih, dokazih in skritih poteh skozi številke.",
       "age_suitability_details": {
-        "age_6": "Oskar Perron je raziskoval številske vzorce. Najmlajšim lahko razložimo, da je iskal urejene poti skozi številke.",
-        "age_13": "Perron je raziskoval verižne ulomke, diferencialne enačbe in pozitivne matrike. Njegovo delo pomaga razumeti približevanje, stabilnost in glavne smeri v matematičnih sistemih.",
-        "adult": "Perron je pomemben za teorijo verižnih ulomkov, diferencialne enačbe in linearno algebro; Perron–Frobeniusova teorija opisuje dominantne lastne vrednosti in lastne vektorje pozitivnih matrik ter ima široke uporabe v dinamiki, verjetnosti in omrežjih."
+        "age_6": "Oskar Perron je imel rad številske vzorce. Otroku razložimo, da je iskal poti skozi številke, podobno kot po stopnicah ali spirali.",
+        "age_13": "Perron je raziskoval verižne ulomke, diferencialne enačbe in lastnosti matrik. Njegovo delo pomaga razumeti, kako se ponavljajoči računi približajo stabilnemu rezultatu ali glavni smeri.",
+        "adult": "Perron je pomemben za teorijo verižnih ulomkov, diferencialne enačbe in linearno algebro; Perron–Frobeniusova teorija opisuje dominantne lastne vrednosti pozitivnih matrik in ima široke uporabe v dinamiki, verjetnosti in omrežjih."
       },
       "age_suitability_levels": [
         {
@@ -50,7 +110,7 @@
           "label": "Age 6",
           "target_age": 6,
           "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current all-ages level."
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
         },
         {
           "key": "age_13",
@@ -88,6 +148,59 @@
     },
     {
       "date": "2026-05-06",
+      "person": "Vincent van Gogh",
+      "filename": "VincentVanGogh.png",
+      "image_filename": "VincentVanGogh.png",
+      "sources": [
+        "https://example.com/van-gogh-research"
+      ],
+      "title": "Vincent van Gogh — post-impressionist master",
+      "summary": "English entry for the artists lane.",
+      "age_suitability_details": {},
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "en",
+      "assignment_id": "704a5de7-663e-4077-add6-99467bdd08e3",
+      "_kind": "native",
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 1,
+      "search_text": "vincent van gogh artist umetnik en age_6 ages 6+ 6+ let"
+    },
+    {
+      "date": "2026-05-06",
       "person": "George Clooney",
       "filename": "GeorgeClooney.png",
       "image_filename": "GeorgeClooney.png",
@@ -110,7 +223,7 @@
           "label": "Age 6",
           "target_age": 6,
           "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current all-ages level."
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
         },
         {
           "key": "age_13",
@@ -170,7 +283,7 @@
           "label": "Age 6",
           "target_age": 6,
           "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current all-ages level."
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
         },
         {
           "key": "age_13",
@@ -229,7 +342,7 @@
           "label": "Age 6",
           "target_age": 6,
           "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current all-ages level."
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
         },
         {
           "key": "age_13",
@@ -288,7 +401,7 @@
           "label": "Age 6",
           "target_age": 6,
           "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current all-ages level."
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
         },
         {
           "key": "age_13",
@@ -326,6 +439,59 @@
     },
     {
       "date": "2026-05-04",
+      "person": "Vincent van Gogh",
+      "filename": "VincentVanGogh.png",
+      "image_filename": "VincentVanGogh.png",
+      "sources": [
+        "https://example.com/van-gogh-sl-research"
+      ],
+      "title": "Vincent van Gogh — postimpresionistični mojster",
+      "summary": "Slovene translation lane entry.",
+      "age_suitability_details": {},
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "42ace987-f8d7-4f31-9900-70db6c7ae37f",
+      "_kind": "native",
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 1,
+      "search_text": "vincent van gogh artist umetnik sl age_6 ages 6+ 6+ let"
+    },
+    {
+      "date": "2026-05-04",
       "person": "Louis Pasteur",
       "filename": "LouisPasteur.png",
       "image_filename": "LouisPasteur.png",
@@ -348,7 +514,7 @@
           "label": "Age 6",
           "target_age": 6,
           "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current all-ages level."
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
         },
         {
           "key": "age_13",
@@ -408,7 +574,7 @@
           "label": "Age 6",
           "target_age": 6,
           "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current all-ages level."
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
         },
         {
           "key": "age_13",
@@ -2603,7 +2769,7 @@
     },
     {
       "date": "2026-02-07",
-      "person": "20260207 134709 za vse starosti infografski plakat v ra",
+      "person": "20260207 134709 otrokom prijazen infografski plakat v ra",
       "filename": "20260207-134709_otrokom-prijazen-infografski-plakat-v-ra.png",
       "sources": [],
       "legacy_run_id": "0ea8dcb8",
@@ -2625,11 +2791,11 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260207 134709 za vse starosti infografski plakat v ra scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260207 134709 otrokom prijazen infografski plakat v ra scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-06",
-      "person": "20260206 104245 svetel za vse starosti infografi ni pla",
+      "person": "20260206 104245 svetel otrokom prijazen infografi ni pla",
       "filename": "20260206-104245_svetel-otrokom-prijazen-infografi-ni-pla.png",
       "sources": [],
       "legacy_run_id": "3066f2a0",
@@ -2651,11 +2817,11 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260206 104245 svetel za vse starosti infografi ni pla scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260206 104245 svetel otrokom prijazen infografi ni pla scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-05",
-      "person": "20260205 194011 ustvari ivahno za vse starosti infograf",
+      "person": "20260205 194011 ustvari ivahno otrokom prijazno infograf",
       "filename": "20260205-194011_ustvari-ivahno-otrokom-prijazno-infograf.png",
       "sources": [],
       "legacy_run_id": "8b3f80c6",
@@ -2677,7 +2843,7 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260205 194011 ustvari ivahno za vse starosti infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260205 194011 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-04",
@@ -2707,7 +2873,7 @@
     },
     {
       "date": "2026-02-03",
-      "person": "20260203 193940 ustvari za vse starosti infografiko v r",
+      "person": "20260203 193940 ustvari otrokom prijazno infografiko v r",
       "filename": "20260203-193940_ustvari-otrokom-prijazno-infografiko-v-r.png",
       "sources": [],
       "legacy_run_id": "d6862407",
@@ -2729,11 +2895,11 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260203 193940 ustvari za vse starosti infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260203 193940 ustvari otrokom prijazno infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-02",
-      "person": "20260202 193945 ustvari barvit za vse starosti infograf",
+      "person": "20260202 193945 ustvari barvit otrokom prijazen infograf",
       "filename": "20260202-193945_ustvari-barvit-otrokom-prijazen-infograf.png",
       "sources": [],
       "legacy_run_id": "4ee2679c",
@@ -2755,11 +2921,11 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260202 193945 ustvari barvit za vse starosti infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260202 193945 ustvari barvit otrokom prijazen infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-02-01",
-      "person": "20260201 193903 ustvari za vse starosti infografiko v r",
+      "person": "20260201 193903 ustvari otrokom prijazno infografiko v r",
       "filename": "20260201-193903_ustvari-otrokom-prijazno-infografiko-v-r.png",
       "sources": [],
       "legacy_run_id": "b5b52089",
@@ -2781,7 +2947,7 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260201 193903 ustvari za vse starosti infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260201 193903 ustvari otrokom prijazno infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-29",
@@ -2811,7 +2977,7 @@
     },
     {
       "date": "2026-01-28",
-      "person": "20260128 111258 ustvari zivahno za vse starosti izobraz",
+      "person": "20260128 111258 ustvari zivahno otrokom prijazno izobraz",
       "filename": "20260128-111258_ustvari-zivahno-otrokom-prijazno-izobraz.png",
       "sources": [],
       "legacy_run_id": "5199604a",
@@ -2833,7 +2999,7 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260128 111258 ustvari zivahno za vse starosti izobraz scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260128 111258 ustvari zivahno otrokom prijazno izobraz scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-27",
@@ -2863,7 +3029,7 @@
     },
     {
       "date": "2026-01-25",
-      "person": "20260125 111136 ustvari ivahno za vse starosti infograf",
+      "person": "20260125 111136 ustvari ivahno otrokom prijazno infograf",
       "filename": "20260125-111136_ustvari-ivahno-otrokom-prijazno-infograf.png",
       "sources": [],
       "legacy_run_id": "38e69964",
@@ -2885,11 +3051,11 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260125 111136 ustvari ivahno za vse starosti infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260125 111136 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-24",
-      "person": "20260124 111132 svetla za vse starosti infografika o fi",
+      "person": "20260124 111132 svetla otrokom prijazna infografika o fi",
       "filename": "20260124-111132_svetla-otrokom-prijazna-infografika-o-fi.png",
       "sources": [],
       "legacy_run_id": "3a0fb77a",
@@ -2911,11 +3077,11 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260124 111132 svetla za vse starosti infografika o fi scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260124 111132 svetla otrokom prijazna infografika o fi scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-23",
-      "person": "20260123 111113 ustvari ivahno za vse starosti infograf",
+      "person": "20260123 111113 ustvari ivahno otrokom prijazno infograf",
       "filename": "20260123-111113_ustvari-ivahno-otrokom-prijazno-infograf.png",
       "sources": [],
       "legacy_run_id": "690d7fdb",
@@ -2937,11 +3103,11 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260123 111113 ustvari ivahno za vse starosti infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260123 111113 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-22",
-      "person": "20260122 111101 ustvari barvit za vse starosti infograf",
+      "person": "20260122 111101 ustvari barvit otrokom prijazen infograf",
       "filename": "20260122-111101_ustvari-barvit-otrokom-prijazen-infograf.png",
       "sources": [],
       "legacy_run_id": "32b7c5ed",
@@ -2963,7 +3129,7 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260122 111101 ustvari barvit za vse starosti infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260122 111101 ustvari barvit otrokom prijazen infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-21",
@@ -3045,7 +3211,7 @@
     },
     {
       "date": "2026-01-17",
-      "person": "20260117 115711 ustvari ivahno za vse starosti infograf",
+      "person": "20260117 115711 ustvari ivahno otrokom prijazno infograf",
       "filename": "20260117-115711_ustvari-ivahno-otrokom-prijazno-infograf.png",
       "sources": [],
       "legacy_run_id": "aeffdd79",
@@ -3067,7 +3233,7 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260117 115711 ustvari ivahno za vse starosti infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260117 115711 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-16",
@@ -3097,7 +3263,7 @@
     },
     {
       "date": "2026-01-13",
-      "person": "20260113 071226 barvita infografika za vse starosti o j",
+      "person": "20260113 071226 barvita infografika za otroke 10 let o j",
       "filename": "20260113-071226_barvita-infografika-za-otroke-10-let-o-j.png",
       "sources": [],
       "legacy_run_id": "b3b1a8d4",
@@ -3119,11 +3285,11 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260113 071226 barvita infografika za vse starosti o j scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260113 071226 barvita infografika za otroke 10 let o j scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-12",
-      "person": "20260112 071135 ustvari barvito za vse starosti infogra",
+      "person": "20260112 071135 ustvari barvito otrokom prijazno infogra",
       "filename": "20260112-071135_ustvari-barvito-otrokom-prijazno-infogra.png",
       "sources": [],
       "legacy_run_id": "260a1431",
@@ -3145,7 +3311,7 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260112 071135 ustvari barvito za vse starosti infogra scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260112 071135 ustvari barvito otrokom prijazno infogra scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-01-11",
