@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 109,
+    "total_entries": 110,
     "categories": [
       "artist",
       "scientist"
@@ -15,14 +15,14 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 109
+      "age_6": 110
     },
     "category_counts": {
-      "artist": 22,
+      "artist": 23,
       "scientist": 87
     },
     "language_counts": {
-      "sl": 107,
+      "sl": 108,
       "en": 2
     }
   },
@@ -86,6 +86,65 @@
       ],
       "source_count": 4,
       "search_text": "simon ungers artist umetnik sl age_6 ages 6+ 6+ let"
+    },
+    {
+      "date": "2026-05-08",
+      "person": "Serena Williams",
+      "filename": "SerenaWilliams.png",
+      "image_filename": "SerenaWilliams.png",
+      "sources": [
+        "https://www.britannica.com/biography/Serena-Williams",
+        "https://www.wtatennis.com/players/230234/serena-williams",
+        "https://olympics.com/en/athletes/serena-williams"
+      ],
+      "title": "Serena Williams — teniška moč in zbranost",
+      "summary": "Slovenska otroška editorialna infografika o Sereni Williams: tenis kot dinamična zgodba o moči, fokusu, Grand Slam naslovih, olimpijskih medaljah in navdihu za mlade športnike.",
+      "age_suitability_details": {
+        "age_6": "Serena Williams je odlična teniška igralka. Z močnim servisom, veliko vaje in pogumom je postala navdih mnogim otrokom.",
+        "age_13": "Serena Williams je ena najuspešnejših teniških igralk v zgodovini, z 23 naslovi Grand Slam med posameznicami in olimpijskimi zlatimi medaljami. Njena kariera kaže pomen vztrajnosti, tehnike in psihične moči.",
+        "adult": "Serena Williams (rojena 1981) je ameriška teniška igralka, ključna figura sodobnega športa; njeni Grand Slam dosežki, dolgotrajna prevlada, fizično agresiven slog igre in kulturni vpliv so pomembno preoblikovali profesionalni tenis in javno predstavo o športnicah."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "8a4c1b13-23ae-4833-8dc7-02b3ac31ef68",
+      "_kind": "native",
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "serena williams artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-07",
