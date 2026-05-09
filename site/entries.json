@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 111,
+    "total_entries": 112,
     "categories": [
       "artist",
       "scientist"
@@ -15,18 +15,78 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 111
+      "age_6": 112
     },
     "category_counts": {
-      "artist": 24,
-      "scientist": 87
+      "scientist": 88,
+      "artist": 24
     },
     "language_counts": {
-      "sl": 109,
+      "sl": 110,
       "en": 2
     }
   },
   "entries": [
+    {
+      "date": "2026-05-09",
+      "person": "Alexis Clairaut",
+      "filename": "AlexisClairaut.jpg",
+      "image_filename": "AlexisClairaut.jpg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q28937",
+        "https://en.wikipedia.org/wiki/Alexis_Clairaut",
+        "https://mathshistory.st-andrews.ac.uk/Biographies/Clairaut/",
+        "https://www.britannica.com/biography/Alexis-Claude-Clairaut"
+      ],
+      "title": "Alexis Clairaut — matematik, ki je računal nebo",
+      "summary": "Slovenska otroška editorialna infografika o Alexisu Clairautu: čudežni matematik, oblika Zemlje, gravitacija, tirnice in izračun vrnitve Halleyjevega kometa.",
+      "age_suitability_details": {
+        "age_6": "Alexis je rad računal zvezde in komete. S številkami je pomagal napovedati, kdaj se bo komet spet pokazal na nebu.",
+        "age_13": "Alexis Clairaut (1713–1765) je francoski matematik in astronom. Ukvarjal se je z obliko Zemlje, gravitacijo in tirnicami; z izračuni je pomagal napovedati vrnitev Halleyevega kometa leta 1759.",
+        "adult": "Alexis-Claude Clairaut je bil pomemben predstavnik 18. stoletne matematične astronomije. Njegovo delo o obliki Zemlje, problemu treh teles in motnjah tirnic je povezalo Newtonovo gravitacijo z natančnejšimi napovedmi gibanja Lune in kometov, vključno s Halleyevim kometom."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "sl",
+      "assignment_id": "cd63fc95-564c-4461-9f4f-370e32cd7783",
+      "_kind": "native",
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "alexis clairaut scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-08",
       "person": "Simon Ungers",

@@ -1,18 +1,18 @@
 {
-  "date": "2026-05-08",
-  "person": "Simon Ungers",
-  "image_filename": "SimonUngers.png",
-  "category": "artist",
-  "category_label": "Umetnik",
+  "date": "2026-05-09",
+  "person": "Alexis Clairaut",
+  "image_filename": "AlexisClairaut.jpg",
+  "category": "scientist",
+  "category_label": "Znanstvenik",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://en.wikipedia.org/wiki/Simon_Ungers",
-    "https://www.wikidata.org/wiki/Q76015",
-    "https://d-nb.info/gnd/123201772",
-    "https://snaccooperative.org/ark:/99166/w6rp0mm2"
+    "https://www.wikidata.org/wiki/Q28937",
+    "https://en.wikipedia.org/wiki/Alexis_Clairaut",
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Clairaut/",
+    "https://www.britannica.com/biography/Alexis-Claude-Clairaut"
   ],
-  "total_entries": 111,
-  "total_pages": 11,
+  "total_entries": 112,
+  "total_pages": 12,
   "per_page": 10
 }
