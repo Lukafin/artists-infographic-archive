@@ -1,9 +1,10 @@
 {
   "summary": {
-    "total_entries": 113,
+    "total_entries": 114,
     "categories": [
       "artist",
-      "scientist"
+      "scientist",
+      "sport"
     ],
     "languages": [
       "en",
@@ -15,18 +16,78 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 113
+      "age_6": 114
     },
     "category_counts": {
+      "sport": 1,
       "artist": 25,
       "scientist": 88
     },
     "language_counts": {
-      "sl": 111,
+      "sl": 112,
       "en": 2
     }
   },
   "entries": [
+    {
+      "date": "2026-05-11",
+      "person": "Christina McHale",
+      "filename": "ChristinaMchale.png",
+      "image_filename": "ChristinaMchale.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q45405",
+        "https://en.wikipedia.org/wiki/Christina_McHale",
+        "https://www.wtatennis.com/players/315751/christina-mchale"
+      ],
+      "title": "Christina McHale — tenis kot pot žogice",
+      "summary": "Slovenska otroška editorialna infografika o Christini McHale: tenis, trening, svetovna lestvica in vztrajnost prikazani kot pot žogice po igrišču.",
+      "age_suitability_details": {
+        "age_6": "Christina McHale je teniška igralka. Veliko je vadila, tekla za žogico in se učila ostati mirna pri vsaki točki.",
+        "age_13": "Christina McHale, rojena 11. 5. 1992, je ameriška profesionalna teniška igralka. Prišla je do 24. mesta na svetovni lestvici posameznic, kar pomeni leta treninga, turnirjev in zbranosti pod pritiskom.",
+        "adult": "Christina Maria McHale je ameriška profesionalna teniška igralka s kariernim vrhom WTA št. 24 v posameznicah in št. 35 v dvojicah. Njena kariera ponazarja zahtevnost preboja in obstanka na najvišji ravni ženskega profesionalnega tenisa, kjer štejejo uvrstitve, turnirska konsistentnost in prilagajanje različnim podlagam."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "sport",
+      "language": "sl",
+      "assignment_id": "0ad78de7-6adc-4817-a947-05a215d12af1",
+      "_kind": "native",
+      "category_label": "Športnik",
+      "category_class": "sport",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "christina mchale sport športnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-10",
       "person": "Bob Dylan",

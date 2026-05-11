@@ -1,18 +1,17 @@
 {
-  "date": "2026-05-10",
-  "person": "Bob Dylan",
-  "image_filename": "BobDylan.jpg",
-  "category": "artist",
-  "category_label": "Umetnik",
+  "date": "2026-05-11",
+  "person": "Christina McHale",
+  "image_filename": "ChristinaMchale.png",
+  "category": "sport",
+  "category_label": "Športnik",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://www.wikidata.org/wiki/Q392",
-    "https://en.wikipedia.org/wiki/Bob_Dylan",
-    "https://www.nobelprize.org/prizes/literature/2016/dylan/facts/",
-    "https://www.britannica.com/biography/Bob-Dylan-American-musician"
+    "https://www.wikidata.org/wiki/Q45405",
+    "https://en.wikipedia.org/wiki/Christina_McHale",
+    "https://www.wtatennis.com/players/315751/christina-mchale"
   ],
-  "total_entries": 113,
+  "total_entries": 114,
   "total_pages": 12,
   "per_page": 10
 }
