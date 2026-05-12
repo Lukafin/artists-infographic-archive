@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 114,
+    "total_entries": 115,
     "categories": [
       "artist",
       "scientist",
@@ -16,19 +16,78 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 114
+      "age_6": 115
     },
     "category_counts": {
+      "scientist": 89,
       "sport": 1,
-      "artist": 25,
-      "scientist": 88
+      "artist": 25
     },
     "language_counts": {
-      "sl": 112,
+      "sl": 113,
       "en": 2
     }
   },
   "entries": [
+    {
+      "date": "2026-05-12",
+      "person": "Johann Heinrich Schulze",
+      "filename": "JohannHeinrichSchulze.png",
+      "image_filename": "JohannHeinrichSchulze.png",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Johann_Heinrich_Schulze",
+        "https://www.wikidata.org/wiki/Special:EntityData/Q76698.json",
+        "https://books.google.com/books?id=CU7-2ZLGFpYC&pg=PA6"
+      ],
+      "title": "Johann Heinrich Schulze – svetloba, srebro in začetek fotografije",
+      "summary": "Slovenska otroška infografika o Johannu Heinrichu Schulzeju, nemškem zdravniku, kemiku in profesorju, ki je pokazal, da svetloba temni srebrne soli in s tem odprl pomembno pot k fotografiji.",
+      "age_suitability_details": {
+        "age_6": "Schulze je opazil, da sončna svetloba spremeni srebrno mešanico v temnejšo barvo, zato lahko naredi preproste senčne sledi.",
+        "age_13": "Okoli leta 1717 je s poskusi pokazal, da srebrove soli potemnijo zaradi svetlobe in ne toplote; to je pomemben korak pred izumom fotografije.",
+        "adult": "Johann Heinrich Schulze je z eksperimentalno ločitvijo vpliva svetlobe in toplote pri srebrovem nitratu pokazal fotokemično občutljivost srebrovih soli ter s stencilnimi odtisi ustvaril začasne pred-fotografske podobe."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "sl",
+      "assignment_id": "cf814690-36f5-4524-b90d-ef9dfc34b78d",
+      "_kind": "native",
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "johann heinrich schulze scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-11",
       "person": "Christina McHale",
