@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 115,
+    "total_entries": 116,
     "categories": [
       "artist",
       "scientist",
@@ -16,19 +16,80 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 115
+      "age_6": 116
     },
     "category_counts": {
+      "artist": 26,
       "scientist": 89,
-      "sport": 1,
-      "artist": 25
+      "sport": 1
     },
     "language_counts": {
-      "sl": 113,
+      "sl": 114,
       "en": 2
     }
   },
   "entries": [
+    {
+      "date": "2026-05-13",
+      "person": "Stevie Wonder",
+      "filename": "StevieWonder.png",
+      "image_filename": "StevieWonder.png",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Stevie_Wonder",
+        "https://www.wikidata.org/wiki/Q714",
+        "https://www.grammy.com/artists/stevie-wonder/8257",
+        "https://www.britannica.com/biography/Stevie-Wonder",
+        "https://rockhall.com/inductees/stevie-wonder/"
+      ],
+      "title": "Stevie Wonder: Glasbenik, ki sliši barve ritma",
+      "summary": "Slovenska otroška editorial infografika o Stevieju Wonderju: rojstvo 13. 5. 1950, Motown pri 11 letih, glasbeni hiti, sintetizatorji, nagrade in družbeni vpliv.",
+      "age_suitability_details": {
+        "age_6": "Stevie Wonder je glasbenik, ki čudovito poje in igra klavir. Čeprav ne vidi, z ušesi in rokami ustvarja ritme, ob katerih ljudje plešejo.",
+        "age_13": "Stevie Wonder je od otroštva slep glasbenik, ki je pri 11 letih prišel k Motownu. V 70. letih je z uporabo sintetizatorjev in lastnim pisanjem pesmi pomagal spremeniti soul, funk in pop glasbo.",
+        "adult": "Stevie Wonder (Stevland Hardaway Morris, rojen 13. 5. 1950) je kantavtor, multiinstrumentalist in producent, čigar avtorska neodvisnost, studijska raba sintetizatorjev ter družbeno angažirana besedila so pomembno preoblikovali R&B, soul, funk in pop v albumskem obdobju 70. let."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "007a7147-649f-4a49-9224-36f0686cc1eb",
+      "_kind": "native",
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 5,
+      "search_text": "stevie wonder artist umetnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-12",
       "person": "Johann Heinrich Schulze",

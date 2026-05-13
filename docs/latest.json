@@ -1,17 +1,19 @@
 {
-  "date": "2026-05-12",
-  "person": "Johann Heinrich Schulze",
-  "image_filename": "JohannHeinrichSchulze.png",
-  "category": "scientist",
-  "category_label": "Znanstvenik",
+  "date": "2026-05-13",
+  "person": "Stevie Wonder",
+  "image_filename": "StevieWonder.png",
+  "category": "artist",
+  "category_label": "Umetnik",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://en.wikipedia.org/wiki/Johann_Heinrich_Schulze",
-    "https://www.wikidata.org/wiki/Special:EntityData/Q76698.json",
-    "https://books.google.com/books?id=CU7-2ZLGFpYC&pg=PA6"
+    "https://en.wikipedia.org/wiki/Stevie_Wonder",
+    "https://www.wikidata.org/wiki/Q714",
+    "https://www.grammy.com/artists/stevie-wonder/8257",
+    "https://www.britannica.com/biography/Stevie-Wonder",
+    "https://rockhall.com/inductees/stevie-wonder/"
   ],
-  "total_entries": 115,
+  "total_entries": 116,
   "total_pages": 12,
   "per_page": 10
 }
