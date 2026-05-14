@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 116,
+    "total_entries": 117,
     "categories": [
       "artist",
       "scientist",
@@ -16,19 +16,77 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 116
+      "age_6": 117
     },
     "category_counts": {
+      "sport": 2,
       "artist": 26,
-      "scientist": 89,
-      "sport": 1
+      "scientist": 89
     },
     "language_counts": {
-      "sl": 114,
+      "sl": 115,
       "en": 2
     }
   },
   "entries": [
+    {
+      "date": "2026-05-14",
+      "person": "Davy Commeyne",
+      "filename": "DavyCommeyne.png",
+      "image_filename": "DavyCommeyne.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q358126",
+        "https://www.wikidata.org/wiki/Special:EntityData/Q358126.json"
+      ],
+      "title": "Davy Commeyne — blatna pot ciklokrosa",
+      "summary": "Slovenska otroška editorial infografika o belgijskem kolesarju Davyju Commeynu, rojenem 14. 5. 1980: ciklokros, blato, zavoji, ovire in vztrajnost.",
+      "age_suitability_details": {
+        "age_6": "Davy Commeyne je kolesar, ki vozi po blatnih progah. V ciklokrosu mora včasih tudi sestopiti s kolesa, preskočiti oviro in nadaljevati.",
+        "age_13": "Davy Commeyne, rojen 14. 5. 1980, je belgijski ciklokros kolesar. Ciklokros združuje hitrost cestnega kolesarstva, vožnjo po travi in blatu ter tehnične ovire, zato sta pomembna moč in spretnost.",
+        "adult": "Davy Commeyne je belgijski tekmovalec v ciklokrosu, disciplini z več krogi po mešani podlagi, kratkimi strmimi odseki, ovirami in pogostimi pospeševanji. Njegov profil dobro ponazarja belgijsko tradicijo ciklokrosa, kjer tehnična vožnja, anaerobni napori in taktika v zavojih odločajo o rezultatu."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "sport",
+      "language": "sl",
+      "assignment_id": "a17f3b8e-accc-4838-824c-84e6b1468cc8",
+      "_kind": "native",
+      "category_label": "Športnik",
+      "category_class": "sport",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 2,
+      "search_text": "davy commeyne sport športnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-13",
       "person": "Stevie Wonder",
