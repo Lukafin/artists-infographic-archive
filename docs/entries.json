@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 120,
+    "total_entries": 121,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,79 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 120
+      "age_6": 121
     },
     "category_counts": {
+      "scientist": 91,
       "school_poster": 1,
       "artist": 27,
-      "scientist": 90,
       "sport": 2
     },
     "language_counts": {
-      "sl": 117,
-      "en": 3
+      "en": 4,
+      "sl": 117
     }
   },
   "entries": [
+    {
+      "date": "2026-05-15",
+      "person": "Élie Metchnikoff",
+      "filename": "ElieMetchnikoff.png",
+      "image_filename": "ElieMetchnikoff.png",
+      "sources": [
+        "https://www.nobelprize.org/prizes/medicine/1908/mechnikov/biographical/",
+        "https://www.nobelprize.org/prizes/medicine/1908/mechnikov/facts/",
+        "https://www.britannica.com/biography/Elie-Metchnikoff"
+      ],
+      "title": "Elie Metchnikoff - Father of Cellular Immunity",
+      "summary": "A classroom-friendly infographic about Elie Metchnikoff's discovery of phagocytosis, his Pasteur Institute work, and his 1908 Nobel Prize in Physiology or Medicine.",
+      "age_suitability_details": {
+        "age_6": "Elie Metchnikoff studied tiny body cells that help catch and eat germs.",
+        "age_13": "Metchnikoff discovered phagocytosis, the process where immune cells surround and engulf invaders, helping explain how the body fights infection.",
+        "adult": "Metchnikoff's phagocyte research and cellular theory of immunity helped establish innate immune defense as a core part of modern immunology, earning him the 1908 Nobel Prize in Physiology or Medicine with Paul Ehrlich."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "en",
+      "assignment_id": "2feedbc8-5d76-4fe7-bbd8-86365e96535b",
+      "_kind": "native",
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "élie metchnikoff scientist znanstvenik en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-15",
       "person": "Fotosinteza",

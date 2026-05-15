@@ -97,7 +97,6 @@
     .content h3 { margin:8px 0 8px; font-size:22px; line-height:1.08; letter-spacing:-.03em; min-height:2.16em; display:block; }
     .card.feature .content h3 { font-size:28px; min-height:2.16em; }
     .tag { display:inline-flex; padding:7px 10px; border-radius:999px; background:#f7f2ea; border:1px solid #ece1d4; font-size:12px; color:#564f47; }
-    .tag[hidden] { display:none !important; }
     .tag.artist { background:#ffe9ec; border-color:#ffd4dc; color:#8d2440; }
     .tag.science { background:#eaf5ff; border-color:#d4e7ff; color:#29547f; }
     .tag.sport { background:#fff1d6; border-color:#ffe2a8; color:#8a5c09; }
@@ -171,7 +170,7 @@
           <p data-archive-intro="1" data-page="10">Browse older daily infographics by page or use search and filters.</p>
         </div>
         <div class="archive-filters">
-          <span class="pill" data-total-pill="1" data-total="120">Total: 120</span>
+          <span class="pill" data-total-pill="1" data-total="121">Total: 121</span>
           <span class="pill" data-page-pill="1" data-page="10" data-total="12">Page 10/12</span>
         </div>
       </div>
@@ -357,7 +356,7 @@
     </section>
     <footer class="footer surface">
       <div data-i18n="footer_text">Public archive of daily infographics about famous artists, scientists and athletes.</div>
-      <div data-updated="2026-05-15 13:26">Updated: 2026-05-15 13:26</div>
+      <div data-updated="2026-05-15 14:33">Updated: 2026-05-15 14:33</div>
     </footer>
   </main>
   <script>
@@ -549,14 +548,7 @@
     document.querySelectorAll('[data-age-tag]').forEach((node) => {
       const parent = node.closest('[data-age-suitability]');
       const keys = parent ? parent.dataset.ageSuitability.split(/\s+/).filter(Boolean) : [];
-      const label = keys.map(ageLabel).join(', ');
-      if (label) {
-        node.textContent = label;
-        node.hidden = false;
-      } else {
-        node.hidden = true;
-        node.textContent = '';
-      }
+      node.textContent = keys.map(ageLabel).join(', ');
     });
     document.querySelectorAll('[data-lang-option]').forEach((button) => {
       const active = button.dataset.langOption === uiLang;
