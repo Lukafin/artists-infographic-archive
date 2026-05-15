@@ -712,6 +712,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     .info-panel .sources {{ margin-top:9px; gap:6px; }}
     .info-panel .sources a {{ padding:6px 9px; }}
     .tag {{ display:inline-flex; padding:7px 10px; border-radius:999px; background:#f7f2ea; border:1px solid #ece1d4; font-size:12px; color:#564f47; }}
+    .tag[hidden] {{ display:none !important; }}
     .tag.artist {{ background:#ffe9ec; border-color:#ffd4dc; color:#8d2440; }}
     .tag.science {{ background:#eaf5ff; border-color:#d4e7ff; color:#29547f; }}
     .tag.sport {{ background:#fff1d6; border-color:#ffe2a8; color:#8a5c09; }}
