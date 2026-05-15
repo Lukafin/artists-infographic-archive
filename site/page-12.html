@@ -503,7 +503,14 @@
     document.querySelectorAll('[data-age-tag]').forEach((node) => {
       const parent = node.closest('[data-age-suitability]');
       const keys = parent ? parent.dataset.ageSuitability.split(/\s+/).filter(Boolean) : [];
-      node.textContent = keys.map(ageLabel).join(', ');
+      const label = keys.map(ageLabel).join(', ');
+      if (label) {
+        node.textContent = label;
+        node.hidden = false;
+      } else {
+        node.hidden = true;
+        node.textContent = '';
+      }
     });
     document.querySelectorAll('[data-lang-option]').forEach((button) => {
       const active = button.dataset.langOption === uiLang;
