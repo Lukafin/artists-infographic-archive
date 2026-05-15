@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 117,
+    "total_entries": 118,
     "categories": [
       "artist",
       "scientist",
@@ -16,19 +16,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 117
+      "age_6": 118
     },
     "category_counts": {
+      "artist": 27,
       "sport": 2,
-      "artist": 26,
       "scientist": 89
     },
     "language_counts": {
-      "sl": 115,
+      "sl": 116,
       "en": 2
     }
   },
   "entries": [
+    {
+      "date": "2026-05-15",
+      "person": "Alfred Rethel",
+      "filename": "AlfredRethel.png",
+      "image_filename": "AlfredRethel.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q67036",
+        "https://en.wikipedia.org/wiki/Alfred_Rethel",
+        "https://www.britannica.com/biography/Alfred-Rethel",
+        "https://en.wikipedia.org/wiki/Alfred_Rethel",
+        "https://www.catholic.com/encyclopedia/alfred-rethel",
+        "https://www.wga.hu/bio_m/r/rethel/biograph.html",
+        "https://www.germanexpressionismleicester.org/leicesters-collection/artists-and-artworks/alfred-rethel/",
+        "https://www.meisterdrucke.us/artist/Alfred-Rethel.html"
+      ],
+      "title": "Alfred Rethel — freske, lesorezi in zgodovina kot slikovna zgodba",
+      "summary": "Slovenska otroška editorial infografika o Alfredu Rethelu, nemškem zgodovinskem slikarju, rojenem 15. 5. 1816: freske o Karlu Velikem, dramatični lesorezi in umetnost kot pripoved zgodovine.",
+      "age_suitability_details": {
+        "age_6": "Za otroke približno 6 let se poudari del leve strani: barvita dvorana fresk, jasne figure (kralji, konji, gore) in preprost poskus doma (nariši velik prizor). Motiv Smrti je na desni strani močno stiliziran, brez podrobnih strašljivih prizorov, poudarek je na tem, da je Alfred risal zgodbe iz zgodovine in »malo strašne zgodbe«, da bi ljudje razmišljali. Besedilo naj bo kratko, z velikimi črkami in veliko slikopisa (piktogramov).",
+        "age_13": "Pri približno 13 letih se lahko celotna desna stran uporabi bolj poglobljeno: razlaga, kaj so revolucije 1848, kako umetnost komentira politiko in bolezni (kolera), kako lesorez tehnika deluje. Smrt se lahko predstavi tudi kot simbol, ki opozarja na nevarnosti in krivice. Dodajo se kratke, a jasne opombe o njegovi duševni stiski in nedokončanih freskah, kot primer pritiska velikih naročil na umetnika.",
+        "adult": "Odrasla publika lahko v istem layoutu dobi dodatne, manj invazivne tekstovne sloje: drobne opombe o povezavi z Dürerjem in Holbeinom, o konservativnem pogledu na revolucijo 1848, o vplivu Rethelovih lesorezov na kasnejši nemški ekspresionizem. V rob infografike se lahko dodajo QR-kode ali reference na dejanske serije »Auch ein Todtentanz« in freske v Aachnu, brez spreminjanja osnovne otrokom prijazne vizualne pripovedi."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "b2bd82c2-dfaa-4723-8eb4-9c227042e035",
+      "_kind": "native",
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 8,
+      "search_text": "alfred rethel artist umetnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-14",
       "person": "Davy Commeyne",
