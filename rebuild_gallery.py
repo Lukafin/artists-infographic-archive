@@ -119,6 +119,7 @@ def category_label_en(category: str) -> str:
         'artist': 'Artist',
         'scientist': 'Scientist',
         'sport': 'Athlete',
+        'school_poster': 'School poster',
     }.get(category, category.title() if category else 'Scientist')
 
 
