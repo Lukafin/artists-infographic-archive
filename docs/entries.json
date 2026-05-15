@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 118,
+    "total_entries": 119,
     "categories": [
       "artist",
       "scientist",
@@ -16,19 +16,78 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 118
+      "age_6": 119
     },
     "category_counts": {
+      "scientist": 90,
       "artist": 27,
-      "sport": 2,
-      "scientist": 89
+      "sport": 2
     },
     "language_counts": {
-      "sl": 116,
+      "sl": 117,
       "en": 2
     }
   },
   "entries": [
+    {
+      "date": "2026-05-15",
+      "person": "Fotosinteza",
+      "filename": "Fotosinteza.png",
+      "image_filename": "Fotosinteza.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q11982",
+        "https://sl.wikipedia.org/wiki/Fotosinteza",
+        "https://en.wikipedia.org/wiki/Photosynthesis"
+      ],
+      "title": "Fotosinteza — šolski plakat",
+      "summary": "Slovenski srednješolski stenski plakat o fotosintezi: osnovna enačba, klorofil in kloroplasti, pretok CO₂/O₂, Calvinov cikel, omejitveni dejavniki in pomen za ekosisteme.",
+      "age_suitability_details": {
+        "age_6": "Rastline s pomočjo sončne svetlobe iz vode in zraka izdelajo sladkor za rast, pri tem pa nastane kisik.",
+        "age_13": "Fotosinteza poteka v kloroplastih: klorofil ujame svetlobo, voda se razcepi, CO₂ pa se v Calvinovem ciklu vgradi v sladkorje.",
+        "adult": "Fotosinteza je redoks proces pretvorbe svetlobne energije v kemično energijo, ki poganja primarno produkcijo, vpliva na kroženje ogljika in vzdržuje kisikovo ozračje."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "sl",
+      "assignment_id": "73cdab5d-888b-4bf6-bc05-a98c6c013760",
+      "_kind": "native",
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "fotosinteza scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-15",
       "person": "Alfred Rethel",
