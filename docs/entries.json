@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 119,
+    "total_entries": 120,
     "categories": [
       "artist",
       "school_poster",
@@ -17,17 +17,17 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 119
+      "age_6": 120
     },
     "category_counts": {
       "school_poster": 1,
       "artist": 27,
-      "sport": 2,
-      "scientist": 89
+      "scientist": 90,
+      "sport": 2
     },
     "language_counts": {
       "sl": 117,
-      "en": 2
+      "en": 3
     }
   },
   "entries": [
@@ -153,6 +153,65 @@
       ],
       "source_count": 8,
       "search_text": "alfred rethel artist umetnik sl age_6 ages 6+ 6+ let"
+    },
+    {
+      "date": "2026-05-15",
+      "person": "Ada Lovelace",
+      "filename": "AdaLovelace.png",
+      "image_filename": "AdaLovelace.png",
+      "sources": [
+        "https://www.britannica.com/biography/Ada-Lovelace",
+        "https://www.britannica.com/technology/Analytical-Engine",
+        "https://www.computerhistory.org/babbage/adalovelace"
+      ],
+      "title": "Ada Lovelace - The imagination behind early programming",
+      "summary": "English educational infographic about Ada Lovelace, her 1843 notes on the Analytical Engine, the Bernoulli-number algorithm, and her legacy in early programming history.",
+      "age_suitability_details": {
+        "age_6": "Ada Lovelace imagined that a machine could follow instructions, like a recipe, to solve number puzzles.",
+        "age_13": "Ada Lovelace studied Charles Babbage's planned Analytical Engine and wrote detailed 1843 notes, including steps for calculating Bernoulli numbers, which are often called the first published computer program.",
+        "adult": "Ada Lovelace connected mathematics, symbolic reasoning, and mechanical computation in her 1843 notes on Babbage's Analytical Engine, articulating how a programmable machine could manipulate symbols beyond arithmetic and leaving a lasting reference point for computing history."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "en",
+      "assignment_id": "b7afc0fb-f07d-43f1-84ac-42a053693d1f",
+      "_kind": "native",
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "ada lovelace scientist znanstvenik en age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-14",
