@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 122,
+    "total_entries": 123,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,78 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 122
+      "age_6": 123
     },
     "category_counts": {
+      "artist": 28,
       "scientist": 92,
       "school_poster": 1,
-      "artist": 27,
       "sport": 2
     },
     "language_counts": {
-      "sl": 118,
+      "sl": 119,
       "en": 4
     }
   },
   "entries": [
+    {
+      "date": "2026-05-17",
+      "person": "Ernst von Bandel",
+      "filename": "ErnstVonBandel.png",
+      "image_filename": "ErnstVonBandel.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q87997",
+        "https://en.wikipedia.org/wiki/Ernst_von_Bandel"
+      ],
+      "title": "Ernst von Bandel — slovenska otroška infografika",
+      "summary": "Slovenska otroška infografika o osebi Ernst von Bandel z unikatno editorialno postavitvijo: zavit kiparski načrt / gradbiščni zemljevid Hermannsdenkmal spomenika.",
+      "age_suitability_details": {
+        "age_6": "Ernst von Bandel je razložen preprosto: bil je kipar, ki je dolgo načrtoval in gradil ogromen spomenik, skoraj kot velikansko sestavljanko iz kamna in kovine.",
+        "age_13": "Ernst von Bandel je umeščen v 19. stoletje: njegov Hermannsdenkmal je nastajal desetletja, združeval kiparstvo, arhitekturo, zbiranje denarja in nemški narodni spomin.",
+        "adult": "Bandel je predstavljen kot nemški kipar in arhitekt monumentalnega zgodovinskega spomenika Hermannsdenkmal, z niansami romantike, nacionalnega simbolizma, dolgotrajnega financiranja in tehnične izvedbe kolosalne javne plastike."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "cf525379-6a6e-4097-b3b3-bcc3a831a01a",
+      "_kind": "native",
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 2,
+      "search_text": "ernst von bandel artist umetnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-16",
       "person": "Adam Lonitzer",

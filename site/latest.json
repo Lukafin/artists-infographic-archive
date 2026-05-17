@@ -1,15 +1,16 @@
 {
-  "date": "2026-05-16",
-  "person": "Adam Lonitzer",
-  "image_filename": "AdamLonitzer.jpg",
-  "category": "scientist",
-  "category_label": "Znanstvenik",
+  "date": "2026-05-17",
+  "person": "Ernst von Bandel",
+  "image_filename": "ErnstVonBandel.png",
+  "category": "artist",
+  "category_label": "Umetnik",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://www.wikidata.org/wiki/Q65192"
+    "https://www.wikidata.org/wiki/Q87997",
+    "https://en.wikipedia.org/wiki/Ernst_von_Bandel"
   ],
-  "total_entries": 122,
+  "total_entries": 123,
   "total_pages": 13,
   "per_page": 10
 }
