@@ -4,11 +4,13 @@
   "image_filename": "ErnstVonBandel.png",
   "category": "artist",
   "category_label": "Umetnik",
-  "language": "sl",
-  "language_label": "SL",
+  "language": "en",
+  "language_label": "EN",
   "sources": [
-    "https://www.wikidata.org/wiki/Q87997",
-    "https://en.wikipedia.org/wiki/Ernst_von_Bandel"
+    "https://www.hermannsdenkmal.de/wissenswertes/der-erbauer-ernst-von-bandel/",
+    "https://www.hermannsdenkmal.de/wissenswertes/entstehungsgeschichte/",
+    "https://www.dhm.de/archiv/ausstellungen/gruenderzeit/biografien/bandel_ernst_von.html",
+    "https://sh-kunst.de/kuenstler/von-bandel-ernst/"
   ],
   "total_entries": 123,
   "total_pages": 13,

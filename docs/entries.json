@@ -26,8 +26,8 @@
       "sport": 2
     },
     "language_counts": {
-      "sl": 119,
-      "en": 4
+      "en": 5,
+      "sl": 118
     }
   },
   "entries": [
@@ -37,15 +37,17 @@
       "filename": "ErnstVonBandel.png",
       "image_filename": "ErnstVonBandel.png",
       "sources": [
-        "https://www.wikidata.org/wiki/Q87997",
-        "https://en.wikipedia.org/wiki/Ernst_von_Bandel"
+        "https://www.hermannsdenkmal.de/wissenswertes/der-erbauer-ernst-von-bandel/",
+        "https://www.hermannsdenkmal.de/wissenswertes/entstehungsgeschichte/",
+        "https://www.dhm.de/archiv/ausstellungen/gruenderzeit/biografien/bandel_ernst_von.html",
+        "https://sh-kunst.de/kuenstler/von-bandel-ernst/"
       ],
-      "title": "Ernst von Bandel — slovenska otroška infografika",
-      "summary": "Slovenska otroška infografika o osebi Ernst von Bandel z unikatno editorialno postavitvijo: zavit kiparski načrt / gradbiščni zemljevid Hermannsdenkmal spomenika.",
+      "title": "Ernst von Bandel - Builder of the Hermannsdenkmal",
+      "summary": "A classroom-friendly infographic about Ernst von Bandel, the German sculptor and architect who spent decades turning early sketches into the Hermannsdenkmal near Detmold.",
       "age_suitability_details": {
-        "age_6": "Ernst von Bandel je razložen preprosto: bil je kipar, ki je dolgo načrtoval in gradil ogromen spomenik, skoraj kot velikansko sestavljanko iz kamna in kovine.",
-        "age_13": "Ernst von Bandel je umeščen v 19. stoletje: njegov Hermannsdenkmal je nastajal desetletja, združeval kiparstvo, arhitekturo, zbiranje denarja in nemški narodni spomin.",
-        "adult": "Bandel je predstavljen kot nemški kipar in arhitekt monumentalnega zgodovinskega spomenika Hermannsdenkmal, z niansami romantike, nacionalnega simbolizma, dolgotrajnega financiranja in tehnične izvedbe kolosalne javne plastike."
+        "age_6": "Ernst von Bandel was an artist who spent many years building a huge statue from his drawings.",
+        "age_13": "Bandel was a German sculptor and architect who turned early monument sketches into the Hermannsdenkmal after decades of design, fundraising, and construction near Detmold.",
+        "adult": "Bandel's Hermannsdenkmal combined Romantic-national monument culture, sculpture, architecture, and difficult metal-and-frame engineering; its long 1838-1875 construction history made it his defining life work."
       },
       "age_suitability_levels": [
         {
@@ -71,12 +73,12 @@
         }
       ],
       "category": "artist",
-      "language": "sl",
-      "assignment_id": "cf525379-6a6e-4097-b3b3-bcc3a831a01a",
+      "language": "en",
+      "assignment_id": "15b27b61-9f2b-479e-b7e5-5d2ecdab61d1",
       "_kind": "native",
       "category_label": "Umetnik",
       "category_class": "artist",
-      "language_label": "SL",
+      "language_label": "EN",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -86,8 +88,8 @@
       "age_suitability_labels_sl": [
         "6+ let"
       ],
-      "source_count": 2,
-      "search_text": "ernst von bandel artist umetnik sl age_6 ages 6+ 6+ let"
+      "source_count": 4,
+      "search_text": "ernst von bandel artist umetnik en age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-16",
