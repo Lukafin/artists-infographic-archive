@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 123,
+    "total_entries": 124,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,80 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 123
+      "age_6": 124
     },
     "category_counts": {
+      "scientist": 93,
       "artist": 28,
-      "scientist": 92,
       "school_poster": 1,
       "sport": 2
     },
     "language_counts": {
-      "en": 5,
-      "sl": 118
+      "sl": 119,
+      "en": 5
     }
   },
   "entries": [
+    {
+      "date": "2026-05-18",
+      "person": "Bertrand Russell",
+      "filename": "BertrandRussell.jpg",
+      "image_filename": "BertrandRussell.jpg",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bertrand_Russell",
+        "https://www.wikidata.org/wiki/Q33760",
+        "https://www.nobelprize.org/prizes/literature/1950/russell/facts/",
+        "https://plato.stanford.edu/entries/russell/"
+      ],
+      "title": "Bertrand Russell — slovenska otroška infografika",
+      "summary": "Slovenska otroška infografika o Bertrandu Russellu z unikatno editorialno postavitvijo: logični labirint miru, ki poveže filozofijo, logiko, Nobelovo nagrado in pacifizem.",
+      "age_suitability_details": {
+        "age_6": "Bertrand Russell je predstavljen preprosto: rad je postavljal velika vprašanja, iskal poštene odgovore in pokazal, da je mir pomembnejši od prepira.",
+        "age_13": "Russell je razložen kot filozof, logik in pisatelj, rojen 18. 5. 1872, ki je povezal matematiko, jasne argumente, družbeno kritiko, pacifizem in Nobelovo nagrado za književnost leta 1950.",
+        "adult": "Russell je umeščen kot soustvarjalec analitične filozofije in matematične logike, avtor z Whiteheadom pri Principia Mathematica, vpliven javni intelektualec, protivojni aktivist in nobelovec za literaturo z napetostjo med formalno rigoroznostjo in političnim angažmajem."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "sl",
+      "assignment_id": "4d6a95a3-910e-454a-b335-506d86fc5bde",
+      "_kind": "native",
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "bertrand russell scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-17",
       "person": "Ernst von Bandel",

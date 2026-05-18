@@ -1,18 +1,18 @@
 {
-  "date": "2026-05-17",
-  "person": "Ernst von Bandel",
-  "image_filename": "ErnstVonBandel.png",
-  "category": "artist",
-  "category_label": "Umetnik",
-  "language": "en",
-  "language_label": "EN",
+  "date": "2026-05-18",
+  "person": "Bertrand Russell",
+  "image_filename": "BertrandRussell.jpg",
+  "category": "scientist",
+  "category_label": "Znanstvenik",
+  "language": "sl",
+  "language_label": "SL",
   "sources": [
-    "https://www.hermannsdenkmal.de/wissenswertes/der-erbauer-ernst-von-bandel/",
-    "https://www.hermannsdenkmal.de/wissenswertes/entstehungsgeschichte/",
-    "https://www.dhm.de/archiv/ausstellungen/gruenderzeit/biografien/bandel_ernst_von.html",
-    "https://sh-kunst.de/kuenstler/von-bandel-ernst/"
+    "https://en.wikipedia.org/wiki/Bertrand_Russell",
+    "https://www.wikidata.org/wiki/Q33760",
+    "https://www.nobelprize.org/prizes/literature/1950/russell/facts/",
+    "https://plato.stanford.edu/entries/russell/"
   ],
-  "total_entries": 123,
+  "total_entries": 124,
   "total_pages": 13,
   "per_page": 10
 }
