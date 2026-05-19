@@ -8,6 +8,7 @@ CATEGORY_LABELS = {
     'scientist': ('Znanstvenik', 'science'),
     'sport': ('Športnik', 'sport'),
     'school_poster': ('Šolski plakat', 'school-poster'),
+    'science_news': ('Znanstvena novica', 'science-news'),
 }
 
 LANGUAGE_LABELS = {
