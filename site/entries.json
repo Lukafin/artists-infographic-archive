@@ -20,17 +20,75 @@
       "age_6": 127
     },
     "category_counts": {
+      "sport": 3,
       "artist": 29,
       "scientist": 94,
-      "sport": 3,
       "school_poster": 1
     },
     "language_counts": {
-      "en": 6,
-      "sl": 121
+      "sl": 121,
+      "en": 6
     }
   },
   "entries": [
+    {
+      "date": "2026-05-19",
+      "person": "Anatoly Kashirov",
+      "filename": "AnatolyKashirov.jpg",
+      "image_filename": "AnatolyKashirov.jpg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q115629"
+      ],
+      "title": "Anatoly Kashirov — zgodba za radovedne",
+      "summary": "Slovenska otroška editorialna infografika o Anatoly Kashirov.",
+      "age_suitability_details": {
+        "age_6": "Anatoly Kashirov je znana oseba, ki je s svojim delom navdihnila ljudi.",
+        "age_13": "Anatoly Kashirov je pomembna oseba s področja sport; za razumevanje poglej čas, delo in vpliv.",
+        "adult": "Anatoly Kashirov zahteva preverjen zgodovinski kontekst in razlikovanje med dosežki, vplivom ter poznejšo recepcijo."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "sport",
+      "language": "sl",
+      "assignment_id": "1bd82aea-3dc3-40c6-a2b9-3ce46867e268",
+      "_kind": "native",
+      "_source_mtime": 1779176616.4388442,
+      "category_label": "Športnik",
+      "category_class": "sport",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 1,
+      "search_text": "anatoly kashirov sport športnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-19",
       "person": "Jean Gabin",
@@ -75,6 +133,7 @@
       "language": "en",
       "assignment_id": "c5172ca7-486f-4250-af8f-1caed5d90636",
       "_kind": "native",
+      "_source_mtime": 1779176163.4381404,
       "category_label": "Umetnik",
       "category_class": "artist",
       "language_label": "EN",
@@ -135,6 +194,7 @@
       "language": "sl",
       "assignment_id": "ece204f9-6437-46f1-b932-73efc04cf004",
       "_kind": "native",
+      "_source_mtime": 1779167413.837304,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
@@ -149,63 +209,6 @@
       ],
       "source_count": 4,
       "search_text": "günter m. ziegler scientist znanstvenik sl age_6 ages 6+ 6+ let"
-    },
-    {
-      "date": "2026-05-19",
-      "person": "Anatoly Kashirov",
-      "filename": "AnatolyKashirov.jpg",
-      "image_filename": "AnatolyKashirov.jpg",
-      "sources": [
-        "https://www.wikidata.org/wiki/Q115629"
-      ],
-      "title": "Anatoly Kashirov — zgodba za radovedne",
-      "summary": "Slovenska otroška editorialna infografika o Anatoly Kashirov.",
-      "age_suitability_details": {
-        "age_6": "Anatoly Kashirov je znana oseba, ki je s svojim delom navdihnila ljudi.",
-        "age_13": "Anatoly Kashirov je pomembna oseba s področja sport; za razumevanje poglej čas, delo in vpliv.",
-        "adult": "Anatoly Kashirov zahteva preverjen zgodovinski kontekst in razlikovanje med dosežki, vplivom ter poznejšo recepcijo."
-      },
-      "age_suitability_levels": [
-        {
-          "key": "age_6",
-          "label": "Age 6",
-          "target_age": 6,
-          "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
-        },
-        {
-          "key": "age_13",
-          "label": "Age 13",
-          "target_age": 13,
-          "complexity": "intermediate",
-          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
-        },
-        {
-          "key": "adult",
-          "label": "Adults",
-          "target_age": null,
-          "complexity": "advanced",
-          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
-        }
-      ],
-      "category": "sport",
-      "language": "sl",
-      "assignment_id": "1bd82aea-3dc3-40c6-a2b9-3ce46867e268",
-      "_kind": "native",
-      "category_label": "Športnik",
-      "category_class": "sport",
-      "language_label": "SL",
-      "age_suitability_keys": [
-        "age_6"
-      ],
-      "age_suitability_labels_en": [
-        "Ages 6+"
-      ],
-      "age_suitability_labels_sl": [
-        "6+ let"
-      ],
-      "source_count": 1,
-      "search_text": "anatoly kashirov sport športnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-18",
@@ -252,6 +255,7 @@
       "language": "sl",
       "assignment_id": "4d6a95a3-910e-454a-b335-506d86fc5bde",
       "_kind": "native",
+      "_source_mtime": 1779080889.5863605,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
@@ -312,6 +316,7 @@
       "language": "en",
       "assignment_id": "15b27b61-9f2b-479e-b7e5-5d2ecdab61d1",
       "_kind": "native",
+      "_source_mtime": 1779040549.3727016,
       "category_label": "Umetnik",
       "category_class": "artist",
       "language_label": "EN",
@@ -369,6 +374,7 @@
       "language": "sl",
       "assignment_id": "64eeb2f9-677c-4048-91de-221b4033ae17",
       "_kind": "native",
+      "_source_mtime": 1778908061.3993986,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
@@ -428,6 +434,7 @@
       "language": "en",
       "assignment_id": "2feedbc8-5d76-4fe7-bbd8-86365e96535b",
       "_kind": "native",
+      "_source_mtime": 1778855636.8421435,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "EN",
@@ -442,6 +449,66 @@
       ],
       "source_count": 3,
       "search_text": "élie metchnikoff scientist znanstvenik en age_6 ages 6+ 6+ let"
+    },
+    {
+      "date": "2026-05-15",
+      "person": "Ada Lovelace",
+      "filename": "AdaLovelace.png",
+      "image_filename": "AdaLovelace.png",
+      "sources": [
+        "https://www.britannica.com/biography/Ada-Lovelace",
+        "https://www.britannica.com/technology/Analytical-Engine",
+        "https://www.computerhistory.org/babbage/adalovelace"
+      ],
+      "title": "Ada Lovelace - The imagination behind early programming",
+      "summary": "English educational infographic about Ada Lovelace, her 1843 notes on the Analytical Engine, the Bernoulli-number algorithm, and her legacy in early programming history.",
+      "age_suitability_details": {
+        "age_6": "Ada Lovelace imagined that a machine could follow instructions, like a recipe, to solve number puzzles.",
+        "age_13": "Ada Lovelace studied Charles Babbage's planned Analytical Engine and wrote detailed 1843 notes, including steps for calculating Bernoulli numbers, which are often called the first published computer program.",
+        "adult": "Ada Lovelace connected mathematics, symbolic reasoning, and mechanical computation in her 1843 notes on Babbage's Analytical Engine, articulating how a programmable machine could manipulate symbols beyond arithmetic and leaving a lasting reference point for computing history."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "en",
+      "assignment_id": "b7afc0fb-f07d-43f1-84ac-42a053693d1f",
+      "_kind": "native",
+      "_source_mtime": 1778851589.4007628,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "ada lovelace scientist znanstvenik en age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-15",
@@ -487,6 +554,7 @@
       "language": "sl",
       "assignment_id": "73cdab5d-888b-4bf6-bc05-a98c6c013760",
       "_kind": "native",
+      "_source_mtime": 1778845516.349219,
       "category_label": "Šolski plakat",
       "category_class": "school-poster",
       "language_label": "SL",
@@ -551,6 +619,7 @@
       "language": "sl",
       "assignment_id": "b2bd82c2-dfaa-4723-8eb4-9c227042e035",
       "_kind": "native",
+      "_source_mtime": 1778821677.5951521,
       "category_label": "Umetnik",
       "category_class": "artist",
       "language_label": "SL",
@@ -565,65 +634,6 @@
       ],
       "source_count": 8,
       "search_text": "alfred rethel artist umetnik sl age_6 ages 6+ 6+ let"
-    },
-    {
-      "date": "2026-05-15",
-      "person": "Ada Lovelace",
-      "filename": "AdaLovelace.png",
-      "image_filename": "AdaLovelace.png",
-      "sources": [
-        "https://www.britannica.com/biography/Ada-Lovelace",
-        "https://www.britannica.com/technology/Analytical-Engine",
-        "https://www.computerhistory.org/babbage/adalovelace"
-      ],
-      "title": "Ada Lovelace - The imagination behind early programming",
-      "summary": "English educational infographic about Ada Lovelace, her 1843 notes on the Analytical Engine, the Bernoulli-number algorithm, and her legacy in early programming history.",
-      "age_suitability_details": {
-        "age_6": "Ada Lovelace imagined that a machine could follow instructions, like a recipe, to solve number puzzles.",
-        "age_13": "Ada Lovelace studied Charles Babbage's planned Analytical Engine and wrote detailed 1843 notes, including steps for calculating Bernoulli numbers, which are often called the first published computer program.",
-        "adult": "Ada Lovelace connected mathematics, symbolic reasoning, and mechanical computation in her 1843 notes on Babbage's Analytical Engine, articulating how a programmable machine could manipulate symbols beyond arithmetic and leaving a lasting reference point for computing history."
-      },
-      "age_suitability_levels": [
-        {
-          "key": "age_6",
-          "label": "Age 6",
-          "target_age": 6,
-          "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
-        },
-        {
-          "key": "age_13",
-          "label": "Age 13",
-          "target_age": 13,
-          "complexity": "intermediate",
-          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
-        },
-        {
-          "key": "adult",
-          "label": "Adults",
-          "target_age": null,
-          "complexity": "advanced",
-          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
-        }
-      ],
-      "category": "scientist",
-      "language": "en",
-      "assignment_id": "b7afc0fb-f07d-43f1-84ac-42a053693d1f",
-      "_kind": "native",
-      "category_label": "Znanstvenik",
-      "category_class": "science",
-      "language_label": "EN",
-      "age_suitability_keys": [
-        "age_6"
-      ],
-      "age_suitability_labels_en": [
-        "Ages 6+"
-      ],
-      "age_suitability_labels_sl": [
-        "6+ let"
-      ],
-      "source_count": 3,
-      "search_text": "ada lovelace scientist znanstvenik en age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-14",
@@ -668,6 +678,7 @@
       "language": "sl",
       "assignment_id": "a17f3b8e-accc-4838-824c-84e6b1468cc8",
       "_kind": "native",
+      "_source_mtime": 1778735413.9571934,
       "category_label": "Športnik",
       "category_class": "sport",
       "language_label": "SL",
@@ -729,6 +740,7 @@
       "language": "sl",
       "assignment_id": "007a7147-649f-4a49-9224-36f0686cc1eb",
       "_kind": "native",
+      "_source_mtime": 1778648793.461592,
       "category_label": "Umetnik",
       "category_class": "artist",
       "language_label": "SL",
@@ -788,6 +800,7 @@
       "language": "sl",
       "assignment_id": "cf814690-36f5-4524-b90d-ef9dfc34b78d",
       "_kind": "native",
+      "_source_mtime": 1778562547.5730488,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
@@ -847,6 +860,7 @@
       "language": "sl",
       "assignment_id": "0ad78de7-6adc-4817-a947-05a215d12af1",
       "_kind": "native",
+      "_source_mtime": 1778475958.0767224,
       "category_label": "Športnik",
       "category_class": "sport",
       "language_label": "SL",
@@ -907,6 +921,7 @@
       "language": "sl",
       "assignment_id": "a5f355a9-565a-4648-b8f9-9812fb26070f",
       "_kind": "native",
+      "_source_mtime": 1778389493.1721787,
       "category_label": "Umetnik",
       "category_class": "artist",
       "language_label": "SL",
@@ -967,6 +982,7 @@
       "language": "sl",
       "assignment_id": "cd63fc95-564c-4461-9f4f-370e32cd7783",
       "_kind": "native",
+      "_source_mtime": 1778303346.771641,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
@@ -981,6 +997,126 @@
       ],
       "source_count": 4,
       "search_text": "alexis clairaut scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
+    {
+      "date": "2026-05-08",
+      "person": "Antoine de Saint-Exupéry",
+      "filename": "AntoineDeSaintExupery.png",
+      "image_filename": "AntoineDeSaintExupery.png",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry",
+        "https://www.wikidata.org/wiki/Q2908",
+        "https://www.britannica.com/biography/Antoine-de-Saint-Exupery"
+      ],
+      "title": "Antoine de Saint-Exupéry — pisatelj in pilot",
+      "summary": "Slovenska otroška editorialna infografika o Antoinu de Saint-Exupéryju: letalska pošta, puščavske zgodbe, Mali princ in domišljijsko letenje med zvezdami.",
+      "age_suitability_details": {
+        "age_6": "Antoine je bil pisatelj in pilot. Letel je z letali, nato pa iz svojih dogodivščin naredil zgodbe, med njimi Malega princa.",
+        "age_13": "Antoine de Saint-Exupéry (1900–1944) je bil francoski aviator, novinar in pisatelj. Iz izkušenj z letalsko pošto, nevarnimi poleti in puščavo je ustvaril poetične pripovedi; Mali princ je postal ena najbolj znanih modernih knjig za otroke in odrasle.",
+        "adult": "Antoine de Saint-Exupéry je povezal pionirsko dobo letalstva z literaturo 20. stoletja: njegove knjige izhajajo iz resničnih izkušenj pilota, vojne in nevarnosti, vendar jih preoblikujejo v humanistično, poetično razmišljanje o odgovornosti, prijateljstvu, domišljiji in krhkosti človeških vezi."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "e3fbe406-40c8-492b-a71e-dadb12a41640",
+      "_kind": "native",
+      "_source_mtime": 1778222462.7092586,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "antoine de saint-exupéry artist umetnik sl age_6 ages 6+ 6+ let"
+    },
+    {
+      "date": "2026-05-08",
+      "person": "Serena Williams",
+      "filename": "SerenaWilliams.png",
+      "image_filename": "SerenaWilliams.png",
+      "sources": [
+        "https://www.britannica.com/biography/Serena-Williams",
+        "https://www.wtatennis.com/players/230234/serena-williams",
+        "https://olympics.com/en/athletes/serena-williams"
+      ],
+      "title": "Serena Williams — teniška moč in zbranost",
+      "summary": "Slovenska otroška editorialna infografika o Sereni Williams: tenis kot dinamična zgodba o moči, fokusu, Grand Slam naslovih, olimpijskih medaljah in navdihu za mlade športnike.",
+      "age_suitability_details": {
+        "age_6": "Serena Williams je odlična teniška igralka. Z močnim servisom, veliko vaje in pogumom je postala navdih mnogim otrokom.",
+        "age_13": "Serena Williams je ena najuspešnejših teniških igralk v zgodovini, z 23 naslovi Grand Slam med posameznicami in olimpijskimi zlatimi medaljami. Njena kariera kaže pomen vztrajnosti, tehnike in psihične moči.",
+        "adult": "Serena Williams (rojena 1981) je ameriška teniška igralka, ključna figura sodobnega športa; njeni Grand Slam dosežki, dolgotrajna prevlada, fizično agresiven slog igre in kulturni vpliv so pomembno preoblikovali profesionalni tenis in javno predstavo o športnicah."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "8a4c1b13-23ae-4833-8dc7-02b3ac31ef68",
+      "_kind": "native",
+      "_source_mtime": 1778221874.1106231,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "serena williams artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-08",
@@ -1027,6 +1163,7 @@
       "language": "sl",
       "assignment_id": "d3673690-7202-4492-9917-f9dfd0f038b3",
       "_kind": "native",
+      "_source_mtime": 1778220719.103059,
       "category_label": "Umetnik",
       "category_class": "artist",
       "language_label": "SL",
@@ -1041,124 +1178,6 @@
       ],
       "source_count": 4,
       "search_text": "simon ungers artist umetnik sl age_6 ages 6+ 6+ let"
-    },
-    {
-      "date": "2026-05-08",
-      "person": "Serena Williams",
-      "filename": "SerenaWilliams.png",
-      "image_filename": "SerenaWilliams.png",
-      "sources": [
-        "https://www.britannica.com/biography/Serena-Williams",
-        "https://www.wtatennis.com/players/230234/serena-williams",
-        "https://olympics.com/en/athletes/serena-williams"
-      ],
-      "title": "Serena Williams — teniška moč in zbranost",
-      "summary": "Slovenska otroška editorialna infografika o Sereni Williams: tenis kot dinamična zgodba o moči, fokusu, Grand Slam naslovih, olimpijskih medaljah in navdihu za mlade športnike.",
-      "age_suitability_details": {
-        "age_6": "Serena Williams je odlična teniška igralka. Z močnim servisom, veliko vaje in pogumom je postala navdih mnogim otrokom.",
-        "age_13": "Serena Williams je ena najuspešnejših teniških igralk v zgodovini, z 23 naslovi Grand Slam med posameznicami in olimpijskimi zlatimi medaljami. Njena kariera kaže pomen vztrajnosti, tehnike in psihične moči.",
-        "adult": "Serena Williams (rojena 1981) je ameriška teniška igralka, ključna figura sodobnega športa; njeni Grand Slam dosežki, dolgotrajna prevlada, fizično agresiven slog igre in kulturni vpliv so pomembno preoblikovali profesionalni tenis in javno predstavo o športnicah."
-      },
-      "age_suitability_levels": [
-        {
-          "key": "age_6",
-          "label": "Age 6",
-          "target_age": 6,
-          "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
-        },
-        {
-          "key": "age_13",
-          "label": "Age 13",
-          "target_age": 13,
-          "complexity": "intermediate",
-          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
-        },
-        {
-          "key": "adult",
-          "label": "Adults",
-          "target_age": null,
-          "complexity": "advanced",
-          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
-        }
-      ],
-      "category": "artist",
-      "language": "sl",
-      "assignment_id": "8a4c1b13-23ae-4833-8dc7-02b3ac31ef68",
-      "_kind": "native",
-      "category_label": "Umetnik",
-      "category_class": "artist",
-      "language_label": "SL",
-      "age_suitability_keys": [
-        "age_6"
-      ],
-      "age_suitability_labels_en": [
-        "Ages 6+"
-      ],
-      "age_suitability_labels_sl": [
-        "6+ let"
-      ],
-      "source_count": 3,
-      "search_text": "serena williams artist umetnik sl age_6 ages 6+ 6+ let"
-    },
-    {
-      "date": "2026-05-08",
-      "person": "Antoine de Saint-Exupéry",
-      "filename": "AntoineDeSaintExupery.png",
-      "image_filename": "AntoineDeSaintExupery.png",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry",
-        "https://www.wikidata.org/wiki/Q2908",
-        "https://www.britannica.com/biography/Antoine-de-Saint-Exupery"
-      ],
-      "title": "Antoine de Saint-Exupéry — pisatelj in pilot",
-      "summary": "Slovenska otroška editorialna infografika o Antoinu de Saint-Exupéryju: letalska pošta, puščavske zgodbe, Mali princ in domišljijsko letenje med zvezdami.",
-      "age_suitability_details": {
-        "age_6": "Antoine je bil pisatelj in pilot. Letel je z letali, nato pa iz svojih dogodivščin naredil zgodbe, med njimi Malega princa.",
-        "age_13": "Antoine de Saint-Exupéry (1900–1944) je bil francoski aviator, novinar in pisatelj. Iz izkušenj z letalsko pošto, nevarnimi poleti in puščavo je ustvaril poetične pripovedi; Mali princ je postal ena najbolj znanih modernih knjig za otroke in odrasle.",
-        "adult": "Antoine de Saint-Exupéry je povezal pionirsko dobo letalstva z literaturo 20. stoletja: njegove knjige izhajajo iz resničnih izkušenj pilota, vojne in nevarnosti, vendar jih preoblikujejo v humanistično, poetično razmišljanje o odgovornosti, prijateljstvu, domišljiji in krhkosti človeških vezi."
-      },
-      "age_suitability_levels": [
-        {
-          "key": "age_6",
-          "label": "Age 6",
-          "target_age": 6,
-          "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
-        },
-        {
-          "key": "age_13",
-          "label": "Age 13",
-          "target_age": 13,
-          "complexity": "intermediate",
-          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
-        },
-        {
-          "key": "adult",
-          "label": "Adults",
-          "target_age": null,
-          "complexity": "advanced",
-          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
-        }
-      ],
-      "category": "artist",
-      "language": "sl",
-      "assignment_id": "e3fbe406-40c8-492b-a71e-dadb12a41640",
-      "_kind": "native",
-      "category_label": "Umetnik",
-      "category_class": "artist",
-      "language_label": "SL",
-      "age_suitability_keys": [
-        "age_6"
-      ],
-      "age_suitability_labels_en": [
-        "Ages 6+"
-      ],
-      "age_suitability_labels_sl": [
-        "6+ let"
-      ],
-      "source_count": 3,
-      "search_text": "antoine de saint-exupéry artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-07",
@@ -1204,6 +1223,7 @@
       "language": "sl",
       "assignment_id": "a05fac8b-82da-4e3f-83ac-f634ca771da4",
       "_kind": "native",
+      "_source_mtime": 1778130288.6888056,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
@@ -1218,6 +1238,67 @@
       ],
       "source_count": 3,
       "search_text": "oskar perron scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
+    {
+      "date": "2026-05-06",
+      "person": "Bernhard Nebel",
+      "filename": "BernhardNebel.png",
+      "image_filename": "BernhardNebel.png",
+      "sources": [
+        "https://www.ai.uni-freiburg.de/de/frai-personen/bernhard-nebel",
+        "https://gki.informatik.uni-freiburg.de/people/nebel/index_de.html",
+        "https://dblp.org/pid/n/BernhardNebel",
+        "https://www.dfki.de/web/forschung/projekte-publikacije/publikation/2368"
+      ],
+      "title": "Bernhard Nebel",
+      "summary": "English educational infographic about German AI scientist Bernhard Nebel and his work on automated planning, temporal reasoning, and practical AI systems.",
+      "age_suitability_details": {
+        "age_6": "Bernhard Nebel teaches computers how to make smart plans, a bit like choosing steps to solve a puzzle.",
+        "age_13": "Bernhard Nebel is a German AI scientist who studies automated planning, where computers reason about actions, time, and goals so robots or programs can choose better next steps.",
+        "adult": "Bernhard Nebel works in artificial intelligence on automated planning, temporal reasoning, knowledge representation, and multi-agent systems, connecting formal computational theory with applied domains such as robotics and path finding."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "en",
+      "assignment_id": "23063d33-712c-420a-adc4-d04c64e1053c",
+      "_kind": "native",
+      "_source_mtime": 1778076625.9859226,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "bernhard nebel scientist znanstvenik en age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-06",
@@ -1257,6 +1338,7 @@
       "language": "en",
       "assignment_id": "704a5de7-663e-4077-add6-99467bdd08e3",
       "_kind": "native",
+      "_source_mtime": 1778070643.6303005,
       "category_label": "Umetnik",
       "category_class": "artist",
       "language_label": "EN",
@@ -1317,6 +1399,7 @@
       "language": "sl",
       "assignment_id": "6b54308d-a777-4ef4-ae96-29730c9b97a2",
       "_kind": "native",
+      "_source_mtime": 1778043941.3763542,
       "category_label": "Umetnik",
       "category_class": "artist",
       "language_label": "SL",
@@ -1331,66 +1414,6 @@
       ],
       "source_count": 4,
       "search_text": "george clooney artist umetnik sl age_6 ages 6+ 6+ let"
-    },
-    {
-      "date": "2026-05-06",
-      "person": "Bernhard Nebel",
-      "filename": "BernhardNebel.png",
-      "image_filename": "BernhardNebel.png",
-      "sources": [
-        "https://www.ai.uni-freiburg.de/de/frai-personen/bernhard-nebel",
-        "https://gki.informatik.uni-freiburg.de/people/nebel/index_de.html",
-        "https://dblp.org/pid/n/BernhardNebel",
-        "https://www.dfki.de/web/forschung/projekte-publikacije/publikation/2368"
-      ],
-      "title": "Bernhard Nebel",
-      "summary": "English educational infographic about German AI scientist Bernhard Nebel and his work on automated planning, temporal reasoning, and practical AI systems.",
-      "age_suitability_details": {
-        "age_6": "Bernhard Nebel teaches computers how to make smart plans, a bit like choosing steps to solve a puzzle.",
-        "age_13": "Bernhard Nebel is a German AI scientist who studies automated planning, where computers reason about actions, time, and goals so robots or programs can choose better next steps.",
-        "adult": "Bernhard Nebel works in artificial intelligence on automated planning, temporal reasoning, knowledge representation, and multi-agent systems, connecting formal computational theory with applied domains such as robotics and path finding."
-      },
-      "age_suitability_levels": [
-        {
-          "key": "age_6",
-          "label": "Age 6",
-          "target_age": 6,
-          "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
-        },
-        {
-          "key": "age_13",
-          "label": "Age 13",
-          "target_age": 13,
-          "complexity": "intermediate",
-          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
-        },
-        {
-          "key": "adult",
-          "label": "Adults",
-          "target_age": null,
-          "complexity": "advanced",
-          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
-        }
-      ],
-      "category": "scientist",
-      "language": "en",
-      "assignment_id": "23063d33-712c-420a-adc4-d04c64e1053c",
-      "_kind": "native",
-      "category_label": "Znanstvenik",
-      "category_class": "science",
-      "language_label": "EN",
-      "age_suitability_keys": [
-        "age_6"
-      ],
-      "age_suitability_labels_en": [
-        "Ages 6+"
-      ],
-      "age_suitability_labels_sl": [
-        "6+ let"
-      ],
-      "source_count": 4,
-      "search_text": "bernhard nebel scientist znanstvenik en age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-05",
@@ -1436,6 +1459,7 @@
       "language": "sl",
       "assignment_id": "14d878ce-f99b-4b5f-89d1-9b249fb4030f",
       "_kind": "native",
+      "_source_mtime": 1777965042.3655932,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
@@ -1495,6 +1519,7 @@
       "language": "sl",
       "assignment_id": "bfce23df-fa12-448f-94ef-1b0971d19924",
       "_kind": "native",
+      "_source_mtime": 1777964836.4071002,
       "category_label": "Umetnik",
       "category_class": "artist",
       "language_label": "SL",
@@ -1509,119 +1534,6 @@
       ],
       "source_count": 3,
       "search_text": "delia derbyshire artist umetnik sl age_6 ages 6+ 6+ let"
-    },
-    {
-      "date": "2026-05-04",
-      "person": "Vincent van Gogh",
-      "filename": "VincentVanGogh.png",
-      "image_filename": "VincentVanGogh.png",
-      "sources": [
-        "https://example.com/van-gogh-sl-research"
-      ],
-      "title": "Vincent van Gogh — postimpresionistični mojster",
-      "summary": "Slovene translation lane entry.",
-      "age_suitability_details": {},
-      "age_suitability_levels": [
-        {
-          "key": "age_6",
-          "label": "Age 6",
-          "target_age": 6,
-          "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
-        },
-        {
-          "key": "age_13",
-          "label": "Age 13",
-          "target_age": 13,
-          "complexity": "intermediate",
-          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
-        },
-        {
-          "key": "adult",
-          "label": "Adults",
-          "target_age": null,
-          "complexity": "advanced",
-          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
-        }
-      ],
-      "category": "artist",
-      "language": "sl",
-      "assignment_id": "42ace987-f8d7-4f31-9900-70db6c7ae37f",
-      "_kind": "native",
-      "category_label": "Umetnik",
-      "category_class": "artist",
-      "language_label": "SL",
-      "age_suitability_keys": [
-        "age_6"
-      ],
-      "age_suitability_labels_en": [
-        "Ages 6+"
-      ],
-      "age_suitability_labels_sl": [
-        "6+ let"
-      ],
-      "source_count": 1,
-      "search_text": "vincent van gogh artist umetnik sl age_6 ages 6+ 6+ let"
-    },
-    {
-      "date": "2026-05-04",
-      "person": "Louis Pasteur",
-      "filename": "LouisPasteur.png",
-      "image_filename": "LouisPasteur.png",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Louis_Pasteur",
-        "https://www.britannica.com/biography/Louis-Pasteur",
-        "https://www.pasteur.fr/en/institut-pasteur/history/louis-pasteur",
-        "https://www.wikidata.org/wiki/Special:EntityData/Q529.json"
-      ],
-      "title": "Louis Pasteur — slovenska otroška infografika",
-      "summary": "Slovenska otroška infografika o Louisu Pasteurju, mikrobih, pasterizaciji, laboratorijskih dokazih in cepivih.",
-      "age_suitability_details": {
-        "age_6": "Louis Pasteur je raziskoval drobne mikrobe. Pomagal je narediti mleko varnejše in pokazal, da znanost lahko varuje zdravje.",
-        "age_13": "Pasteur je z natančnimi poskusi pokazal, da mikroorganizmi povzročajo kvarjenje hrane in bolezni. Njegovo delo je vodilo do pasterizacije in pomembnih cepiv.",
-        "adult": "Louis Pasteur je s poskusi o fermentaciji, pasterizaciji, spontanem nastanku in imunizaciji pomembno utrdil germ theory of disease ter preoblikoval mikrobiologijo, javno zdravje in živilsko varnost."
-      },
-      "age_suitability_levels": [
-        {
-          "key": "age_6",
-          "label": "Age 6",
-          "target_age": 6,
-          "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
-        },
-        {
-          "key": "age_13",
-          "label": "Age 13",
-          "target_age": 13,
-          "complexity": "intermediate",
-          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
-        },
-        {
-          "key": "adult",
-          "label": "Adults",
-          "target_age": null,
-          "complexity": "advanced",
-          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
-        }
-      ],
-      "category": "scientist",
-      "language": "sl",
-      "assignment_id": "d48624a8-681e-4cfc-8147-2ca0df06e366",
-      "_kind": "native",
-      "category_label": "Znanstvenik",
-      "category_class": "science",
-      "language_label": "SL",
-      "age_suitability_keys": [
-        "age_6"
-      ],
-      "age_suitability_labels_en": [
-        "Ages 6+"
-      ],
-      "age_suitability_labels_sl": [
-        "6+ let"
-      ],
-      "source_count": 4,
-      "search_text": "louis pasteur scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-04",
@@ -1668,6 +1580,7 @@
       "language": "sl",
       "assignment_id": "fe8e0c6c-7d49-4b5a-a15a-b1d88c4a931b",
       "_kind": "native",
+      "_source_mtime": 1777904116.1986647,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
@@ -1682,6 +1595,121 @@
       ],
       "source_count": 4,
       "search_text": "abdus salam scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
+    {
+      "date": "2026-05-04",
+      "person": "Louis Pasteur",
+      "filename": "LouisPasteur.png",
+      "image_filename": "LouisPasteur.png",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Louis_Pasteur",
+        "https://www.britannica.com/biography/Louis-Pasteur",
+        "https://www.pasteur.fr/en/institut-pasteur/history/louis-pasteur",
+        "https://www.wikidata.org/wiki/Special:EntityData/Q529.json"
+      ],
+      "title": "Louis Pasteur — slovenska otroška infografika",
+      "summary": "Slovenska otroška infografika o Louisu Pasteurju, mikrobih, pasterizaciji, laboratorijskih dokazih in cepivih.",
+      "age_suitability_details": {
+        "age_6": "Louis Pasteur je raziskoval drobne mikrobe. Pomagal je narediti mleko varnejše in pokazal, da znanost lahko varuje zdravje.",
+        "age_13": "Pasteur je z natančnimi poskusi pokazal, da mikroorganizmi povzročajo kvarjenje hrane in bolezni. Njegovo delo je vodilo do pasterizacije in pomembnih cepiv.",
+        "adult": "Louis Pasteur je s poskusi o fermentaciji, pasterizaciji, spontanem nastanku in imunizaciji pomembno utrdil germ theory of disease ter preoblikoval mikrobiologijo, javno zdravje in živilsko varnost."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "sl",
+      "assignment_id": "d48624a8-681e-4cfc-8147-2ca0df06e366",
+      "_kind": "native",
+      "_source_mtime": 1777903617.490803,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "louis pasteur scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
+    {
+      "date": "2026-05-04",
+      "person": "Vincent van Gogh",
+      "filename": "VincentVanGogh.png",
+      "image_filename": "VincentVanGogh.png",
+      "sources": [
+        "https://example.com/van-gogh-sl-research"
+      ],
+      "title": "Vincent van Gogh — postimpresionistični mojster",
+      "summary": "Slovene translation lane entry.",
+      "age_suitability_details": {},
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "42ace987-f8d7-4f31-9900-70db6c7ae37f",
+      "_kind": "native",
+      "_source_mtime": 1777903100.3589618,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 1,
+      "search_text": "vincent van gogh artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-04",
@@ -1700,6 +1728,7 @@
       "language": "sl",
       "assignment_id": "6c902394-475c-4f12-b300-0dd70027b9d0",
       "_kind": "native",
+      "_source_mtime": 1777890028.996137,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
@@ -1731,6 +1760,7 @@
       "language": "sl",
       "assignment_id": "80463c5b-352f-49a1-96af-ba7515fd6e24",
       "_kind": "native",
+      "_source_mtime": 1777784859.1184793,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
@@ -1762,6 +1792,7 @@
       "language": "sl",
       "assignment_id": "de269cd7-08b7-40f5-936a-5a5c5bef40cf",
       "_kind": "native",
+      "_source_mtime": 1777612190.3989058,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
@@ -1793,6 +1824,7 @@
       "language": "sl",
       "assignment_id": "cdfb907c-0ec5-42c4-afee-fe9a6685dca9",
       "_kind": "native",
+      "_source_mtime": 1777566873.8768659,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language_label": "SL",
@@ -1823,6 +1855,7 @@
       "language": "sl",
       "assignment_id": "a7f018b9-0658-4d9c-8fb3-ce9b09fa0c3f",
       "_kind": "native",
+      "_source_mtime": 1777545279.7720745,
       "category_label": "Umetnik",
       "category_class": "artist",
       "language_label": "SL",
@@ -1860,6 +1893,7 @@
       "image_converted_to_png": false,
       "github_repo_url": "https://github.com/Lukafin/artists-infographic-archive",
       "_kind": "native",
+      "_source_mtime": 1777352938.0,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language": "sl",
@@ -1897,6 +1931,7 @@
       "image_mime": "image/png",
       "image_converted_to_png": false,
       "_kind": "native",
+      "_source_mtime": 1777266631.0,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language": "sl",
@@ -1933,6 +1968,7 @@
       "openrouter_resolved_model": "google/gemini-3-pro-image-preview-20251120",
       "fallback_retry_used": false,
       "_kind": "native",
+      "_source_mtime": 1777182270.0,
       "category_label": "Umetnik",
       "category_class": "artist",
       "language": "sl",
@@ -1969,6 +2005,7 @@
       "openrouter_resolved_model": "openai/gpt-5.4-image-2-20260421",
       "fallback_retry_used": false,
       "_kind": "native",
+      "_source_mtime": 1777093951.0,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language": "sl",
@@ -2007,6 +2044,7 @@
       "openrouter_resolved_model": "openai/gpt-5.4-image-2-20260421",
       "fallback_retry_used": false,
       "_kind": "native",
+      "_source_mtime": 1777007437.0,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language": "sl",
@@ -2044,6 +2082,7 @@
       "openrouter_model": "openai/gpt-5.4-image-2",
       "fallback_retry_used": false,
       "_kind": "native",
+      "_source_mtime": 1776920888.0,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language": "sl",
@@ -2079,6 +2118,7 @@
       "openrouter_model": "google/gemini-3-pro-image-preview",
       "fallback_retry_used": false,
       "_kind": "native",
+      "_source_mtime": 1776834543.0,
       "category_label": "Umetnik",
       "category_class": "artist",
       "language": "sl",
@@ -2114,6 +2154,7 @@
       "openrouter_model": "google/gemini-3-pro-image-preview",
       "fallback_retry_used": false,
       "_kind": "native",
+      "_source_mtime": 1776747987.0,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language": "sl",
@@ -2149,6 +2190,7 @@
       "openrouter_model": "google/gemini-3-pro-image-preview",
       "fallback_retry_used": false,
       "_kind": "native",
+      "_source_mtime": 1776661627.0,
       "category_label": "Umetnik",
       "category_class": "artist",
       "language": "sl",
@@ -2184,6 +2226,7 @@
       "openrouter_model": "google/gemini-3.1-flash-image-preview",
       "fallback_retry_used": true,
       "_kind": "native",
+      "_source_mtime": 1776575217.0,
       "category_label": "Umetnik",
       "category_class": "artist",
       "language": "sl",
@@ -2221,6 +2264,7 @@
       "openrouter_model": "google/gemini-3-pro-image-preview",
       "fallback_retry_used": false,
       "_kind": "native",
+      "_source_mtime": 1776488955.0,
       "category_label": "Umetnik",
       "category_class": "artist",
       "language": "sl",
@@ -2258,6 +2302,7 @@
       "openrouter_model": "google/gemini-3-pro-image-preview",
       "fallback_retry_used": false,
       "_kind": "native",
+      "_source_mtime": 1776402468.0,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language": "sl",
@@ -2293,6 +2338,7 @@
       "openrouter_model": "google/gemini-3-pro-image-preview-20251120",
       "fallback_retry_used": false,
       "_kind": "native",
+      "_source_mtime": 1776316251.0,
       "category_label": "Znanstvenik",
       "category_class": "science",
       "language": "sl",
@@ -2328,6 +2374,7 @@
       "openrouter_model": "google/gemini-3-pro-image-preview-20251120",
       "fallback_retry_used": false,
       "_kind": "native",
+      "_source_mtime": 1776236383.0,
       "category_label": "Umetnik",
       "category_class": "artist",
       "language": "sl",
@@ -2356,6 +2403,7 @@
         "https://www.newworldencyclopedia.org/entry/Christiaan_Huygens"
       ],
       "_kind": "native",
+      "_source_mtime": 1776143144.0,
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -2386,6 +2434,7 @@
         "https://lemelson.mit.edu/resources/robert-wattson-watt"
       ],
       "_kind": "native",
+      "_source_mtime": 1776062064.0,
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -2415,6 +2464,7 @@
         "https://www.nytimes.com/2018/12/10/obituaries/evelyn-berezin-dead.html"
       ],
       "_kind": "native",
+      "_source_mtime": 1776237775.0,
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -2443,6 +2493,7 @@
         "https://www.uspto.gov/learning-and-resources/journeys-innovation/historical-stories/surmounting-insurmountable"
       ],
       "_kind": "native",
+      "_source_mtime": 1775894822.0,
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -2459,6 +2510,35 @@
       ],
       "source_count": 4,
       "search_text": "percy julian scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
+    {
+      "date": "2026-04-09",
+      "person": "Eadweard Muybridge",
+      "filename": "EadweardMuybridge.png",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Eadweard_Muybridge",
+        "https://www.britannica.com/biography/Eadweard-Muybridge",
+        "https://www.getty.edu/art/collection/person/103KGS",
+        "https://www.loc.gov/pictures/item/97518887/"
+      ],
+      "_kind": "native",
+      "_source_mtime": 1775755604.0,
+      "category": "artist",
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language": "sl",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "eadweard muybridge artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-09",
@@ -2485,34 +2565,6 @@
       ],
       "source_count": 0,
       "search_text": "thomas johann seebeck scientist znanstvenik sl age_6 ages 6+ 6+ let"
-    },
-    {
-      "date": "2026-04-09",
-      "person": "Eadweard Muybridge",
-      "filename": "EadweardMuybridge.png",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Eadweard_Muybridge",
-        "https://www.britannica.com/biography/Eadweard-Muybridge",
-        "https://www.getty.edu/art/collection/person/103KGS",
-        "https://www.loc.gov/pictures/item/97518887/"
-      ],
-      "_kind": "native",
-      "category": "artist",
-      "category_label": "Umetnik",
-      "category_class": "artist",
-      "language": "sl",
-      "language_label": "SL",
-      "age_suitability_keys": [
-        "age_6"
-      ],
-      "age_suitability_labels_en": [
-        "Ages 6+"
-      ],
-      "age_suitability_labels_sl": [
-        "6+ let"
-      ],
-      "source_count": 4,
-      "search_text": "eadweard muybridge artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-08",

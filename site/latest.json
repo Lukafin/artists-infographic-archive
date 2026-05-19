@@ -1,15 +1,13 @@
 {
   "date": "2026-05-19",
-  "person": "Jean Gabin",
-  "image_filename": "JeanGabin.png",
-  "category": "artist",
-  "category_label": "Umetnik",
-  "language": "en",
-  "language_label": "EN",
+  "person": "Anatoly Kashirov",
+  "image_filename": "AnatolyKashirov.jpg",
+  "category": "sport",
+  "category_label": "Športnik",
+  "language": "sl",
+  "language_label": "SL",
   "sources": [
-    "https://en.wikipedia.org/wiki/Jean_Gabin",
-    "https://www.wikidata.org/wiki/Q23842",
-    "https://www.britannica.com/biography/Jean-Gabin"
+    "https://www.wikidata.org/wiki/Q115629"
   ],
   "total_entries": 127,
   "total_pages": 13,
