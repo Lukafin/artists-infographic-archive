@@ -826,12 +826,32 @@ for entry_path in sorted(RUNS_DIR.glob('*/entry.json')):
     entry = load_json(entry_path, None)
     if isinstance(entry, dict):
         entry['_kind'] = 'native'
+        # Multiple lanes can publish on the same calendar day. Preserve the
+        # newest native bridge entry as the homepage/latest item instead of
+        # letting a same-day alphabetical person sort choose stale content.
+        entry['_source_mtime'] = entry_path.stat().st_mtime
         entries.append(entry)
 
 entries = [normalize_entry_metadata(entry) for entry in dedupe_entries(entries)]
 entries = validate_entry_provenance(entries)
 entries = validate_entry_assets(entries)
-entries.sort(key=lambda x: ((x.get('date') or ''), (x.get('person') or ''), (x.get('filename') or '')), reverse=True)
+
+def entry_sort_key(entry):
+    published_hint = (
+        entry.get('published_at')
+        or entry.get('updated_at')
+        or entry.get('created_at')
+        or entry.get('_source_mtime')
+        or 0
+    )
+    return (
+        entry.get('date') or '',
+        str(published_hint),
+        entry.get('person') or '',
+        entry.get('filename') or '',
+    )
+
+entries.sort(key=entry_sort_key, reverse=True)
 entries_index = build_entries_index(entries)
 
 featured = entries[0] if entries else None
