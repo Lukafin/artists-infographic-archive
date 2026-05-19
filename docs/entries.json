@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 124,
+    "total_entries": 125,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,80 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 124
+      "age_6": 125
     },
     "category_counts": {
-      "scientist": 93,
+      "scientist": 94,
       "artist": 28,
       "school_poster": 1,
       "sport": 2
     },
     "language_counts": {
-      "sl": 119,
+      "sl": 120,
       "en": 5
     }
   },
   "entries": [
+    {
+      "date": "2026-05-19",
+      "person": "Günter M. Ziegler",
+      "filename": "GunterMZiegler.png",
+      "image_filename": "GunterMZiegler.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q72382",
+        "https://en.wikipedia.org/wiki/G%C3%BCnter_M._Ziegler",
+        "https://www.mi.fu-berlin.de/en/math/groups/discgeom/ziegler/index.html",
+        "https://www.mfo.de/occasion/1542b/www_view"
+      ],
+      "title": "Günter M. Ziegler — otroška infografika",
+      "summary": "Slovenska otroška infografika o nemškem matematiku Günterju M. Zieglerju, politopih, geometriji, dokazih in približevanju matematike otrokom.",
+      "age_suitability_details": {
+        "age_6": "Günter M. Ziegler raziskuje oblike; otroku lahko pokažemo, da imajo kocke, piramide in druge oblike svoja pravila.",
+        "age_13": "Ziegler je nemški matematik, rojen leta 1963, znan po diskretni geometriji in politopih; njegovo delo kaže, kako iz oblik, povezav in dokazov nastane zanesljivo matematično znanje.",
+        "adult": "Ziegler je raziskovalec diskretne geometrije, kombinatorike in konveksnih politopov ter pomemben popularizator matematike; njegovo delo povezuje strukturo visokorazsežnih geometrijskih objektov z dokazi, algoritmi in matematično komunikacijo."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "sl",
+      "assignment_id": "ece204f9-6437-46f1-b932-73efc04cf004",
+      "_kind": "native",
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "günter m. ziegler scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-18",
       "person": "Bertrand Russell",

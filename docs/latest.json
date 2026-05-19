@@ -1,18 +1,18 @@
 {
-  "date": "2026-05-18",
-  "person": "Bertrand Russell",
-  "image_filename": "BertrandRussell.jpg",
+  "date": "2026-05-19",
+  "person": "Günter M. Ziegler",
+  "image_filename": "GunterMZiegler.png",
   "category": "scientist",
   "category_label": "Znanstvenik",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://en.wikipedia.org/wiki/Bertrand_Russell",
-    "https://www.wikidata.org/wiki/Q33760",
-    "https://www.nobelprize.org/prizes/literature/1950/russell/facts/",
-    "https://plato.stanford.edu/entries/russell/"
+    "https://www.wikidata.org/wiki/Q72382",
+    "https://en.wikipedia.org/wiki/G%C3%BCnter_M._Ziegler",
+    "https://www.mi.fu-berlin.de/en/math/groups/discgeom/ziegler/index.html",
+    "https://www.mfo.de/occasion/1542b/www_view"
   ],
-  "total_entries": 124,
+  "total_entries": 125,
   "total_pages": 13,
   "per_page": 10
 }
