@@ -172,7 +172,7 @@
     <div>
     </div>
   </div>
-  <article class="hero-card surface">
+  <article class="hero-card surface" data-age-suitability="age_6">
     <a class="hero-image-wrap" href="AnatolyKashirov.jpg">
       <img src="AnatolyKashirov.jpg" alt="Infographic: Anatoly Kashirov">
     </a>
@@ -574,8 +574,16 @@
     document.querySelectorAll('[data-category-tag]').forEach((node) => { node.textContent = categoryLabel(node.dataset.categoryTag); });
     document.querySelectorAll('[data-age-tag]').forEach((node) => {
       const parent = node.closest('[data-age-suitability]');
-      const keys = parent ? parent.dataset.ageSuitability.split(/\s+/).filter(Boolean) : [];
-      node.textContent = keys.map(ageLabel).join(', ');
+      const rawKeys = parent ? parent.dataset.ageSuitability : (node.dataset.ageKey || '');
+      const keys = rawKeys.split(/\s+/).filter(Boolean);
+      const label = keys.map(ageLabel).filter(Boolean).join(', ');
+      if (label) {
+        node.textContent = label;
+        node.hidden = false;
+      } else {
+        node.hidden = true;
+        node.textContent = '';
+      }
     });
     document.querySelectorAll('[data-lang-option]').forEach((button) => {
       const active = button.dataset.langOption === uiLang;

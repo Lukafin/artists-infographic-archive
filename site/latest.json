@@ -6,6 +6,15 @@
   "category_label": "Športnik",
   "language": "sl",
   "language_label": "SL",
+  "age_suitability_keys": [
+    "age_6"
+  ],
+  "age_suitability_labels_en": [
+    "Ages 6+"
+  ],
+  "age_suitability_labels_sl": [
+    "6+ let"
+  ],
   "sources": [
     "https://www.wikidata.org/wiki/Q115629"
   ],

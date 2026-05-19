@@ -66,19 +66,25 @@ def normalize_entry_metadata(entry: dict) -> dict:
 
     # The backend can include age_suitability_details for multiple reading levels
     # on the same all-ages image. Those are text variants, not separate image
-    # suitability tags. Unless there is a narrower explicit target, treat archive
-    # images as the current kid-friendly 6+ level.
+    # suitability tags. Unless there is a narrower explicit target, treat entries
+    # that actually supplied age details as the current kid-friendly 6+ level.
     if set(age_keys) == set(AGE_SUITABILITY_LEVELS):
         age_keys = ['age_6']
     if not age_keys:
         target_key = normalized.get('age_suitability_key') or normalized.get('target_age_key')
         if target_key in AGE_SUITABILITY_LEVELS:
             age_keys = [target_key]
-        else:
+        elif details:
+            age_keys = ['age_6']
+        elif normalized.get('_kind') == 'legacy':
             # Legacy archive entries were produced before age-suitability metadata
             # existed in the backend. Those older Slovenian all-ages pages should
             # remain discoverable in the 6+ filter instead of disappearing entirely.
             age_keys = ['age_6']
+        else:
+            # New bridge/native entries with missing metadata should not get a fake
+            # empty/ambiguous pill. Hide the pill and let QA catch the missing data.
+            age_keys = []
 
     age_labels_en = [AGE_SUITABILITY_LEVELS[key]['label_en'] for key in age_keys]
     age_labels_sl = [AGE_SUITABILITY_LEVELS[key]['label_sl'] for key in age_keys]
