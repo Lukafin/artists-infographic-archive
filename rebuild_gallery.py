@@ -447,8 +447,9 @@ def render_client_script():
   }
 
   function ageBadges(keys) {
-    if (!keys || !keys.length) return '';
-    return `<span class="tag age" data-age-tag="1">${escapeHtml(keys.map(ageLabel).join(', '))}</span>`;
+    const labels = (keys || []).map(ageLabel).filter(Boolean);
+    if (!labels.length) return '';
+    return `<span class="tag age" data-age-tag="1">${escapeHtml(labels.join(', '))}</span>`;
   }
 
   function renderSources(sources) {
@@ -502,8 +503,9 @@ def render_client_script():
     document.querySelectorAll('[data-category-tag]').forEach((node) => { node.textContent = categoryLabel(node.dataset.categoryTag); });
     document.querySelectorAll('[data-age-tag]').forEach((node) => {
       const parent = node.closest('[data-age-suitability]');
-      const keys = parent ? parent.dataset.ageSuitability.split(/\\s+/).filter(Boolean) : [];
-      const label = keys.map(ageLabel).join(', ');
+      const rawKeys = parent ? parent.dataset.ageSuitability : (node.dataset.ageKey || '');
+      const keys = rawKeys.split(/\s+/).filter(Boolean);
+      const label = keys.map(ageLabel).filter(Boolean).join(', ');
       if (label) {
         node.textContent = label;
         node.hidden = false;
@@ -886,6 +888,9 @@ if isinstance(featured, dict):
         'language': featured.get('language'),
         'language_label': featured.get('language_label'),
         'sources': featured.get('sources', []),
+        'age_suitability_keys': featured.get('age_suitability_keys', []),
+        'age_suitability_labels_en': featured.get('age_suitability_labels_en', []),
+        'age_suitability_labels_sl': featured.get('age_suitability_labels_sl', []),
         'total_entries': len(entries),
         'total_pages': total_pages,
         'per_page': PER_PAGE,
