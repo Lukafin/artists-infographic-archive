@@ -1,22 +1,13 @@
 {
-  "date": "2026-05-19",
-  "person": "Anatoly Kashirov",
-  "image_filename": "AnatolyKashirov.jpg",
-  "category": "sport",
-  "category_label": "Športnik",
+  "date": "2026-05-20",
+  "person": "Edward B. Lewis",
+  "image_filename": "EdwardBLewis.png",
+  "category": "scientist",
+  "category_label": "Znanstvenik",
   "language": "sl",
   "language_label": "SL",
-  "age_suitability_keys": [
-    "age_6"
-  ],
-  "age_suitability_labels_en": [
-    "Ages 6+"
-  ],
-  "age_suitability_labels_sl": [
-    "6+ let"
-  ],
   "sources": [
-    "https://www.wikidata.org/wiki/Q115629"
+    "https://www.wikidata.org/wiki/Q274123"
   ],
   "total_entries": 127,
   "total_pages": 13,

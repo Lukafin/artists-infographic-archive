@@ -20,17 +20,75 @@
       "age_6": 127
     },
     "category_counts": {
+      "scientist": 95,
       "sport": 3,
-      "artist": 29,
-      "scientist": 94,
+      "artist": 28,
       "school_poster": 1
     },
     "language_counts": {
-      "sl": 121,
-      "en": 6
+      "sl": 122,
+      "en": 5
     }
   },
   "entries": [
+    {
+      "date": "2026-05-20",
+      "person": "Edward B. Lewis",
+      "filename": "EdwardBLewis.png",
+      "image_filename": "EdwardBLewis.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q274123"
+      ],
+      "title": "Edward B. Lewis — znanstvenik, ki je bral skrite načrte telesa",
+      "summary": "Ameriški genetik Edward B. Lewis je s poskusi na mušicah pokazal, kako geni določajo, kje v telesu nastanejo krila, glava in drugi deli.",
+      "age_suitability_details": {
+        "age_6": "Gledal je majhne mušice pod mikroskopom in odkrival, kateri deli telesa zrastejo iz katerih genov.",
+        "age_13": "S poskusi na mušici Drosophila je pokazal, da je vrstni red določenih genov na kromosomu povezan z vrstnim redom delov telesa od glave do repa.",
+        "adult": "Z raziskavami genetskih kompleksov, kot je bithorax, je utemeljil razvojno genetiko in razložil, kako mutacije v genih za telesni načrt lahko premaknejo ali podvojijo dele telesa, kar je vplivalo tudi na razumevanje evolucije in tveganj sevanja."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "sl",
+      "assignment_id": "d937c90d-5465-4f48-b7f6-acb7ec9ee7d5",
+      "_kind": "native",
+      "_source_mtime": 1779254466.192626,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 1,
+      "search_text": "edward b. lewis scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-19",
       "person": "Anatoly Kashirov",
@@ -1302,60 +1360,6 @@
     },
     {
       "date": "2026-05-06",
-      "person": "Vincent van Gogh",
-      "filename": "VincentVanGogh.png",
-      "image_filename": "VincentVanGogh.png",
-      "sources": [
-        "https://example.com/van-gogh-research"
-      ],
-      "title": "Vincent van Gogh — post-impressionist master",
-      "summary": "English entry for the artists lane.",
-      "age_suitability_details": {},
-      "age_suitability_levels": [
-        {
-          "key": "age_6",
-          "label": "Age 6",
-          "target_age": 6,
-          "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
-        },
-        {
-          "key": "age_13",
-          "label": "Age 13",
-          "target_age": 13,
-          "complexity": "intermediate",
-          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
-        },
-        {
-          "key": "adult",
-          "label": "Adults",
-          "target_age": null,
-          "complexity": "advanced",
-          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
-        }
-      ],
-      "category": "artist",
-      "language": "en",
-      "assignment_id": "704a5de7-663e-4077-add6-99467bdd08e3",
-      "_kind": "native",
-      "_source_mtime": 1778070643.6303005,
-      "category_label": "Umetnik",
-      "category_class": "artist",
-      "language_label": "EN",
-      "age_suitability_keys": [
-        "age_6"
-      ],
-      "age_suitability_labels_en": [
-        "Ages 6+"
-      ],
-      "age_suitability_labels_sl": [
-        "6+ let"
-      ],
-      "source_count": 1,
-      "search_text": "vincent van gogh artist umetnik en age_6 ages 6+ 6+ let"
-    },
-    {
-      "date": "2026-05-06",
       "person": "George Clooney",
       "filename": "GeorgeClooney.png",
       "image_filename": "GeorgeClooney.png",
@@ -1659,60 +1663,6 @@
     },
     {
       "date": "2026-05-04",
-      "person": "Vincent van Gogh",
-      "filename": "VincentVanGogh.png",
-      "image_filename": "VincentVanGogh.png",
-      "sources": [
-        "https://example.com/van-gogh-sl-research"
-      ],
-      "title": "Vincent van Gogh — postimpresionistični mojster",
-      "summary": "Slovene translation lane entry.",
-      "age_suitability_details": {},
-      "age_suitability_levels": [
-        {
-          "key": "age_6",
-          "label": "Age 6",
-          "target_age": 6,
-          "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
-        },
-        {
-          "key": "age_13",
-          "label": "Age 13",
-          "target_age": 13,
-          "complexity": "intermediate",
-          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
-        },
-        {
-          "key": "adult",
-          "label": "Adults",
-          "target_age": null,
-          "complexity": "advanced",
-          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
-        }
-      ],
-      "category": "artist",
-      "language": "sl",
-      "assignment_id": "42ace987-f8d7-4f31-9900-70db6c7ae37f",
-      "_kind": "native",
-      "_source_mtime": 1777903100.3589618,
-      "category_label": "Umetnik",
-      "category_class": "artist",
-      "language_label": "SL",
-      "age_suitability_keys": [
-        "age_6"
-      ],
-      "age_suitability_labels_en": [
-        "Ages 6+"
-      ],
-      "age_suitability_labels_sl": [
-        "6+ let"
-      ],
-      "source_count": 1,
-      "search_text": "vincent van gogh artist umetnik sl age_6 ages 6+ 6+ let"
-    },
-    {
-      "date": "2026-05-04",
       "person": "Aaron Sopher",
       "filename": "AaronSopher.png",
       "image_filename": "AaronSopher.png",
@@ -1743,6 +1693,39 @@
       ],
       "source_count": 4,
       "search_text": "aaron sopher scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
+    {
+      "date": "2026-05-04",
+      "person": "Vincent van Gogh",
+      "filename": "VincentVanGogh.png",
+      "image_filename": "VincentVanGogh.png",
+      "sources": [
+        "https://en.wikipedia.org/api/rest_v1/page/summary/Vincent_van_Gogh",
+        "https://www.britannica.com/biography/Vincent-van-Gogh",
+        "https://www.vangoghmuseum.nl/en/art-and-stories/vincents-life-1853-1890",
+        "https://www.wikidata.org/wiki/Special:EntityData/Q5582.json"
+      ],
+      "title": "Vincent van Gogh — slovenska otroška infografika",
+      "summary": "Slovenska otroška infografika o Vincentu van Goghu, njegovih sončnicah, zvezdnem nebu, živih potezah čopiča in pismih bratu Theu.",
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "ca34eeb7-35d9-406d-8798-9dc71efc9aee",
+      "_kind": "native",
+      "_source_mtime": 1777871465.387134,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "vincent van gogh artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-03",

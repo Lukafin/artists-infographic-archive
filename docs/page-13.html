@@ -202,7 +202,37 @@
   </div>
 </div>
 <p id="results-summary" class="results-summary" data-i18n="initial_summary">Showing the initial selection for this page. Use search or filters above to search the full archive.</p>
-      <div class="masonry"><article class="card" data-person="20260113 071226 barvita infografika za otroke 10 let o j" data-category="scientist" data-language="sl" data-age-suitability="age_6">
+      <div class="masonry"><article class="card" data-person="20260117 115711 ustvari ivahno otrokom prijazno infograf" data-category="scientist" data-language="sl" data-age-suitability="age_6">
+  <a class="thumb" href="20260117-115711_ustvari-ivahno-otrokom-prijazno-infograf.png"><img src="20260117-115711_ustvari-ivahno-otrokom-prijazno-infograf.png" alt="Infographic: 20260117 115711 ustvari ivahno otrokom prijazno infograf" loading="lazy"></a>
+  <div class="content">
+    <div class="meta-row">
+      <span class="tag date">2026-01-17</span>
+      <span class="tag science" data-category-tag="scientist">Scientist</span>
+      <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
+      <span class="tag source-count" data-source-count="0">No sources</span>
+    </div>
+    <h3>20260117 115711 ustvari ivahno otrokom prijazno infograf</h3>
+    <p class="direct-link"><a href="20260117-115711_ustvari-ivahno-otrokom-prijazno-infograf.png" data-i18n="open_image">Open image</a></p>
+    
+  </div>
+</article>
+<article class="card" data-person="20260116 075624 ustvari barvit risankasto infografiko za" data-category="scientist" data-language="sl" data-age-suitability="age_6">
+  <a class="thumb" href="20260116-075624_ustvari-barvit-risankasto-infografiko-za.png"><img src="20260116-075624_ustvari-barvit-risankasto-infografiko-za.png" alt="Infographic: 20260116 075624 ustvari barvit risankasto infografiko za" loading="lazy"></a>
+  <div class="content">
+    <div class="meta-row">
+      <span class="tag date">2026-01-16</span>
+      <span class="tag science" data-category-tag="scientist">Scientist</span>
+      <span class="tag language">SL</span>
+      <span class="tag age" data-age-tag="1">Ages 6+</span>
+      <span class="tag source-count" data-source-count="0">No sources</span>
+    </div>
+    <h3>20260116 075624 ustvari barvit risankasto infografiko za</h3>
+    <p class="direct-link"><a href="20260116-075624_ustvari-barvit-risankasto-infografiko-za.png" data-i18n="open_image">Open image</a></p>
+    
+  </div>
+</article>
+<article class="card" data-person="20260113 071226 barvita infografika za otroke 10 let o j" data-category="scientist" data-language="sl" data-age-suitability="age_6">
   <a class="thumb" href="20260113-071226_barvita-infografika-za-otroke-10-let-o-j.png"><img src="20260113-071226_barvita-infografika-za-otroke-10-let-o-j.png" alt="Infographic: 20260113 071226 barvita infografika za otroke 10 let o j" loading="lazy"></a>
   <div class="content">
     <div class="meta-row">
@@ -266,7 +296,7 @@
     </section>
     <footer class="footer surface">
       <div data-i18n="footer_text">Public archive of daily infographics about famous artists, scientists and athletes.</div>
-      <div data-updated="2026-05-19 08:01">Updated: 2026-05-19 08:01</div>
+      <div data-updated="2026-05-20 05:52">Updated: 2026-05-20 05:52</div>
     </footer>
   </main>
   <script>
@@ -459,16 +489,8 @@
     document.querySelectorAll('[data-category-tag]').forEach((node) => { node.textContent = categoryLabel(node.dataset.categoryTag); });
     document.querySelectorAll('[data-age-tag]').forEach((node) => {
       const parent = node.closest('[data-age-suitability]');
-      const rawKeys = parent ? parent.dataset.ageSuitability : (node.dataset.ageKey || '');
-      const keys = rawKeys.split(/\s+/).filter(Boolean);
-      const label = keys.map(ageLabel).filter(Boolean).join(', ');
-      if (label) {
-        node.textContent = label;
-        node.hidden = false;
-      } else {
-        node.hidden = true;
-        node.textContent = '';
-      }
+      const keys = parent ? parent.dataset.ageSuitability.split(/\s+/).filter(Boolean) : [];
+      node.textContent = keys.map(ageLabel).join(', ');
     });
     document.querySelectorAll('[data-lang-option]').forEach((button) => {
       const active = button.dataset.langOption === uiLang;
