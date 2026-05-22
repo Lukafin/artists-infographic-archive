@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 128,
+    "total_entries": 129,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,81 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 128
+      "age_6": 129
     },
     "category_counts": {
-      "artist": 29,
+      "artist": 30,
       "scientist": 95,
       "sport": 3,
       "school_poster": 1
     },
     "language_counts": {
-      "sl": 123,
+      "sl": 124,
       "en": 5
     }
   },
   "entries": [
+    {
+      "date": "2026-05-22",
+      "person": "Hideaki Anno",
+      "filename": "HideakiAnno.png",
+      "image_filename": "HideakiAnno.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q23261",
+        "https://en.wikipedia.org/wiki/Nausica%C3%A4_of_the_Valley_of_the_Wind_(film)",
+        "https://en.wikipedia.org/wiki/Neon_Genesis_Evangelion",
+        "https://en.wikipedia.org/wiki/Shin_Godzilla"
+      ],
+      "title": "Hideaki Anno — slovenska infografika",
+      "summary": "Otrokom prijazna slovenska infografika o osebi Hideaki Anno v kategoriji artist.",
+      "age_suitability_details": {
+        "age_6": "Hideaki Anno je japonski ustvarjalec risanih filmov in filmov. Otrokom ga predstavimo skozi risanje robotov, pošasti in zgodbe o ekipi, ki skupaj naredi film.",
+        "age_13": "Hideaki Anno (rojen 22. 5. 1960) je animator, scenarist in režiser. Njegova dela, kot Neon Genesis Evangelion in Shin Godzilla, pokažejo, kako animacija in film govorita tudi o strahu, odgovornosti, ekipi in izbiranju kadrov.",
+        "adult": "Hideaki Anno je ključna osebnost sodobnega animeja in japonskega žanrskega filma; njegovo delo povezuje avtorsko animacijo, mecha estetiko, psihološke teme, metanaracijo ter poznejše live-action reinterpretacije tokusatsu tradicije, zlasti Shin Godzilla."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "ad565a5c-c501-423a-a2ee-4a056c409a96",
+      "_kind": "native",
+      "_source_mtime": 1779426408.8115811,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "hideaki anno artist umetnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-21",
       "person": "Anton Karas",
