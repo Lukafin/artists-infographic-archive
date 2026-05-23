@@ -1,18 +1,18 @@
 {
-  "date": "2026-05-22",
-  "person": "Hideaki Anno",
-  "image_filename": "HideakiAnno.png",
-  "category": "artist",
-  "category_label": "Umetnik",
+  "date": "2026-05-23",
+  "person": "Carl Linnaeus",
+  "image_filename": "CarlLinnaeus.png",
+  "category": "scientist",
+  "category_label": "Znanstvenik",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://www.wikidata.org/wiki/Q23261",
-    "https://en.wikipedia.org/wiki/Nausica%C3%A4_of_the_Valley_of_the_Wind_(film)",
-    "https://en.wikipedia.org/wiki/Neon_Genesis_Evangelion",
-    "https://en.wikipedia.org/wiki/Shin_Godzilla"
+    "https://www.wikidata.org/wiki/Q1043",
+    "https://en.wikipedia.org/wiki/Carl_Linnaeus",
+    "https://www.linnean.org/learning/who-was-linnaeus",
+    "https://www.britannica.com/biography/Carolus-Linnaeus"
   ],
-  "total_entries": 129,
+  "total_entries": 130,
   "total_pages": 13,
   "per_page": 10
 }
