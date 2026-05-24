@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 130,
+    "total_entries": 131,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,78 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 130
+      "age_6": 131
     },
     "category_counts": {
+      "artist": 31,
       "scientist": 96,
-      "artist": 30,
       "sport": 3,
       "school_poster": 1
     },
     "language_counts": {
-      "sl": 125,
+      "sl": 126,
       "en": 5
     }
   },
   "entries": [
+    {
+      "date": "2026-05-24",
+      "person": "Omar Khayyám",
+      "filename": "OmarKhayyam.png",
+      "image_filename": "OmarKhayyam.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q35900"
+      ],
+      "title": "Omar Khayyám — matematik pod zvezdnim nebom",
+      "summary": "Perzijski učenjak iz Nišapura, ki je združil matematiko, zvezde in štirivrstično poezijo.",
+      "age_suitability_details": {
+        "age_6": "Omar Khayyám je v daljni Perziji gledal zvezde, meril čas s senco in pisal kratke pesmi o življenju.",
+        "age_13": "Omar Khayyám je bil perzijski matematik in astronom, ki je natančno izmeril dolžino leta, razvrstil kubične enačbe in o času ter sreči pisal slavne štirivrstičnice.",
+        "adult": "Omar Khayyám (1048–1131) je kot perzijski učenjak iz Nišapura združil napredno geometrijsko algebro, sooblikovanje izjemno natančnega Džalali koledarja in rubáiyát, kratke pesniške štirivrstičnice o času, minljivosti in veselju."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "38b3163d-56f6-4998-b9ed-85e697af59e2",
+      "_kind": "native",
+      "_source_mtime": 1779599029.6378174,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 1,
+      "search_text": "omar khayyám artist umetnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-23",
       "person": "Carl Linnaeus",
