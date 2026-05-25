@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 131,
+    "total_entries": 132,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,78 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 131
+      "age_6": 132
     },
     "category_counts": {
-      "artist": 31,
+      "artist": 32,
       "scientist": 96,
       "sport": 3,
       "school_poster": 1
     },
     "language_counts": {
-      "sl": 126,
+      "sl": 127,
       "en": 5
     }
   },
   "entries": [
+    {
+      "date": "2026-05-25",
+      "person": "Johann Dientzenhofer",
+      "filename": "JohannDientzenhofer.png",
+      "image_filename": "JohannDientzenhofer.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q77559"
+      ],
+      "title": "Johann Dientzenhofer — baročni graditelj velikih stavb",
+      "summary": "Johann Dientzenhofer je bil nemški baročni arhitekt, ki je gradil velike cerkve, palače in katedrale v Nemčiji.",
+      "age_suitability_details": {
+        "age_6": "Pokaži veliko, zavito stopnišče v prerezu palače z nekaj velikimi oznakami: \"cerkev\", \"palača\", \"velike stopnice\". Besedilo naj bo kratko: \"Johann Dientzenhofer je bil graditelj velikih cerkva in palač v Nemčiji.\" Izogni se letnicam in težkim besedam, poudari velike oboke in svetle prostore.",
+        "age_13": "Dodaj časovno vrstico z letnicama 1663 in 1726, označi kraje Fulda, Banz in Pommersfelden. Razloži v enem kratkem odstavku, da je šlo za baročni slog z ukrivljenimi oblikami, dramatičnimi notranjostmi in velikimi stopnišči. Vključi kratke opise: \"katedrala Fulda\", \"palača Fulda\", \"samostan Banz\", \"palača Pommersfelden\".",
+        "adult": "Vključi več besedilnih ploskev ob prerezu, ki pojasnijo vlogo družine Dientzenhofer, njegovo delo v Fuldi, Bamberg kot dvornega arhitekta in pomen palače v Pommersfeldenu za baročni načrt palač v Srednji Evropi. Uporabi strokovne izraze, kot so \"prostorovna zasnova\", \"dinamično stopnišče\" in \"dramatični baročni interierji\"."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "1e599418-0aec-4987-b6de-0acb4821ae08",
+      "_kind": "native",
+      "_source_mtime": 1779685373.4818592,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 1,
+      "search_text": "johann dientzenhofer artist umetnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-24",
       "person": "Omar Khayyám",

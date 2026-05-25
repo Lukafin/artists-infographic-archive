@@ -1,15 +1,15 @@
 {
-  "date": "2026-05-24",
-  "person": "Omar Khayyám",
-  "image_filename": "OmarKhayyam.png",
+  "date": "2026-05-25",
+  "person": "Johann Dientzenhofer",
+  "image_filename": "JohannDientzenhofer.png",
   "category": "artist",
   "category_label": "Umetnik",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://www.wikidata.org/wiki/Q35900"
+    "https://www.wikidata.org/wiki/Q77559"
   ],
-  "total_entries": 131,
-  "total_pages": 13,
+  "total_entries": 132,
+  "total_pages": 14,
   "per_page": 10
 }
