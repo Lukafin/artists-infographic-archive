@@ -1,15 +1,15 @@
 {
-  "date": "2026-05-26",
-  "person": "Adolf Krischanitz",
-  "image_filename": "AdolfKrischanitz.png",
+  "date": "2026-05-28",
+  "person": "Avril Lavigne",
+  "image_filename": "AvrilLavigne.jpg",
   "category": "artist",
   "category_label": "Umetnik",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://www.wikidata.org/wiki/Q87827"
+    "https://www.wikidata.org/wiki/Q30449"
   ],
-  "total_entries": 133,
+  "total_entries": 134,
   "total_pages": 14,
   "per_page": 10
 }

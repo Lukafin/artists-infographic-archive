@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 133,
+    "total_entries": 134,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,78 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 133
+      "age_6": 134
     },
     "category_counts": {
-      "artist": 33,
+      "artist": 34,
       "scientist": 96,
       "sport": 3,
       "school_poster": 1
     },
     "language_counts": {
-      "sl": 128,
+      "sl": 129,
       "en": 5
     }
   },
   "entries": [
+    {
+      "date": "2026-05-28",
+      "person": "Avril Lavigne",
+      "filename": "AvrilLavigne.jpg",
+      "image_filename": "AvrilLavigne.jpg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q30449"
+      ],
+      "title": "Avril Lavigne — kanadska kraljica pop punka",
+      "summary": "Avril Lavigne je kanadska pevka in avtorica pesmi, ki je kot najstnica s pop punk glasbo osvojila svet.",
+      "age_suitability_details": {
+        "age_6": "Avril Lavigne je predstavljen preprosto: kdo je bil, s čim se je ukvarjal in zakaj si ga zapomnimo. Glavna ideja: Avril Ramona Lavigne se je rodila 27. septembra 1984 v Bellevillu v Kanadi. Odraščala je v mestu Napanee v provinci Ontario. Kot najstnica je z albumom »Let Go«.",
+        "age_13": "Avril Lavigne je umeščen v svoje področje (umetnost, arhitektura ali ustvarjalno delo) z osnovnimi datumi, kraji oziroma deli ter kratko razlago, kako je njegovo delo vplivalo na druge.",
+        "adult": "Opis o Avril Lavigne povzema preverljive biografske podatke in pomen njegovega dela v kontekstu področja umetnost, arhitektura ali ustvarjalno delo; ločuje konkretna dela, časovni okvir in širši strokovni oziroma kulturni vpliv."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "10b3c7d4-fa4e-4c7d-9d43-30c53cb11b84",
+      "_kind": "native",
+      "_source_mtime": 1779944508.854315,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 1,
+      "search_text": "avril lavigne artist umetnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-26",
       "person": "Adolf Krischanitz",
