@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 134,
+    "total_entries": 135,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,82 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 134
+      "age_6": 135
     },
     "category_counts": {
-      "artist": 34,
+      "artist": 35,
       "scientist": 96,
       "sport": 3,
       "school_poster": 1
     },
     "language_counts": {
-      "sl": 129,
+      "sl": 130,
       "en": 5
     }
   },
   "entries": [
+    {
+      "date": "2026-05-29",
+      "person": "Karl Bötticher",
+      "filename": "KarlBotticher.jpg",
+      "image_filename": "KarlBotticher.jpg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q87902",
+        "https://en.wikipedia.org/wiki/Karl_B%C3%B6tticher",
+        "https://it.wikisource.org/wiki/Autore:Karl_B%C3%B6tticher",
+        "https://www.urbipedia.org/hoja/Karl_B%C3%B6tticher",
+        "https://www.andrew.cmu.edu/user/gutschow/publishing_links/10%20Botticher%20Tectonic%20Complete.pdf"
+      ],
+      "title": "Karl Bötticher — slovenska infografika",
+      "summary": "Otrokom prijazna slovenska infografika o osebi Karl Bötticher v kategoriji artist.",
+      "age_suitability_details": {
+        "age_6": "Karl Bötticher je otrokom razumljiv kot radoveden raziskovalec stavb: gledal je, kako so preprosta bivališča, templji in dvorane narejeni in zakaj imajo takšne oblike.",
+        "age_13": "Najstnikom lahko razložimo, da je bil nemški arheolog in zgodovinar arhitekture iz 19. stoletja, ki je preučeval razvoj arhitekturnih oblik, konstrukcije in zgodovino stavb.",
+        "adult": "Odrasli kontekst ga postavi v nemško arhitekturno zgodovinopisje in teorijo tektonike: zanimala ga je povezava med konstrukcijsko logiko, zgodovinskim razvojem stavbnih tipov in razlago arhitekturnih form."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "771e9407-8222-4fec-893f-afd43468d948",
+      "_kind": "native",
+      "_source_mtime": 1780030980.333974,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 5,
+      "search_text": "karl bötticher artist umetnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-28",
       "person": "Avril Lavigne",
