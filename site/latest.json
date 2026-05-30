@@ -1,19 +1,18 @@
 {
-  "date": "2026-05-29",
-  "person": "Karl Bötticher",
-  "image_filename": "KarlBotticher.jpg",
-  "category": "artist",
-  "category_label": "Umetnik",
+  "date": "2026-05-30",
+  "person": "Hartmut Wekerle",
+  "image_filename": "HartmutWekerle.png",
+  "category": "scientist",
+  "category_label": "Znanstvenik",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://www.wikidata.org/wiki/Q87902",
-    "https://en.wikipedia.org/wiki/Karl_B%C3%B6tticher",
-    "https://it.wikisource.org/wiki/Autore:Karl_B%C3%B6tticher",
-    "https://www.urbipedia.org/hoja/Karl_B%C3%B6tticher",
-    "https://www.andrew.cmu.edu/user/gutschow/publishing_links/10%20Botticher%20Tectonic%20Complete.pdf"
+    "https://www.wikidata.org/wiki/Q108467",
+    "https://de.wikipedia.org/wiki/Hartmut_Wekerle",
+    "https://en.wikipedia.org/wiki/Hartmut_Wekerle",
+    "https://www.bi.mpg.de/Wekerle"
   ],
-  "total_entries": 135,
+  "total_entries": 136,
   "total_pages": 14,
   "per_page": 10
 }
