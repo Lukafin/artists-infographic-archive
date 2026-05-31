@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 136,
+    "total_entries": 137,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,80 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 136
+      "age_6": 137
     },
     "category_counts": {
+      "artist": 36,
       "scientist": 97,
-      "artist": 35,
       "sport": 3,
       "school_poster": 1
     },
     "language_counts": {
-      "sl": 131,
+      "sl": 132,
       "en": 5
     }
   },
   "entries": [
+    {
+      "date": "2026-05-31",
+      "person": "Clint Eastwood",
+      "filename": "ClintEastwood.png",
+      "image_filename": "ClintEastwood.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q43203",
+        "https://www.britannica.com/biography/Clint-Eastwood",
+        "https://www.encyclopedia.com/people/literature-and-arts/film-and-television-biographies/clint-eastwood"
+      ],
+      "title": "Clint Eastwood — slovenska infografika",
+      "summary": "Otrokom prijazna slovenska infografika o osebi Clint Eastwood v kategoriji artist.",
+      "age_suitability_details": {
+        "age_6": "Clint Eastwood je igralec in režiser; otrokom ga predstavimo kot ustvarjalca filmov, ki je iz vesternskih junakov prešel tudi za kamero.",
+        "age_13": "Najstniki lahko razumejo njegov prehod od televizijskih in vesternskih vlog do režije ter zakaj sta filma Neoproščeno in Punčka za milijon dolarjev pomembna za njegovo kariero.",
+        "adult": "Odrasla razlaga ga umesti v zgodovino ameriškega filma kot igralca-avtorja in režiserja, povezanega z revizijo vesterna, klasičnim pripovednim slogom in večkrat nagrajenimi filmi."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "fe040c7d-cd19-4b7d-bbd3-90d694b60ce4",
+      "_kind": "native",
+      "_source_mtime": 1780203840.040044,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "clint eastwood artist umetnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-30",
       "person": "Hartmut Wekerle",
