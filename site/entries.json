@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 138,
+    "total_entries": 139,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,80 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 138
+      "age_6": 139
     },
     "category_counts": {
-      "artist": 37,
+      "artist": 38,
       "scientist": 97,
       "sport": 3,
       "school_poster": 1
     },
     "language_counts": {
-      "en": 6,
+      "en": 7,
       "sl": 132
     }
   },
   "entries": [
+    {
+      "date": "2026-06-01",
+      "person": "Graham Bonney",
+      "filename": "GrahamBonney.png",
+      "image_filename": "GrahamBonney.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q33072",
+        "https://en.wikipedia.org/wiki/Graham_Bonney",
+        "https://de.wikipedia.org/wiki/Graham_Bonney"
+      ],
+      "title": "Graham Bonney — British pop singer",
+      "summary": "Kid-friendly infographic about Graham Bonney, a British pop singer whose 1966 hit Super Girl helped launch a long career in Germany.",
+      "age_suitability_details": {
+        "age_6": "Mostly suitable with adult help: bright visuals and short facts, but chart and award context may need explaining.",
+        "age_13": "Suitable: concise career facts, dates, geography, and music-history context are readable for early teenagers.",
+        "adult": "Suitable as a quick visual overview; sources preserve provenance for further checking."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "en",
+      "assignment_id": "f4c85b8a-fae1-46f1-9deb-73db83f8ee8f",
+      "_kind": "native",
+      "_source_mtime": 1780318963.137092,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "graham bonney artist umetnik en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-01",
       "person": "Morgan Freeman",
