@@ -1,17 +1,17 @@
 {
   "date": "2026-06-01",
-  "person": "Graham Bonney",
-  "image_filename": "GrahamBonney.png",
+  "person": "Lalaine Vergara-Paras",
+  "image_filename": "LalaineVergaraParas.png",
   "category": "artist",
   "category_label": "Umetnik",
   "language": "en",
   "language_label": "EN",
   "sources": [
-    "https://www.wikidata.org/wiki/Q33072",
-    "https://en.wikipedia.org/wiki/Graham_Bonney",
-    "https://de.wikipedia.org/wiki/Graham_Bonney"
+    "https://en.wikipedia.org/wiki/Lalaine",
+    "https://www.wikidata.org/wiki/Q30896",
+    "https://www.imdb.com/name/nm0482340/"
   ],
-  "total_entries": 139,
+  "total_entries": 140,
   "total_pages": 14,
   "per_page": 10
 }

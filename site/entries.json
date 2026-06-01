@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 139,
+    "total_entries": 140,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,80 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 139
+      "age_6": 140
     },
     "category_counts": {
-      "artist": 38,
+      "artist": 39,
       "scientist": 97,
       "sport": 3,
       "school_poster": 1
     },
     "language_counts": {
-      "en": 7,
+      "en": 8,
       "sl": 132
     }
   },
   "entries": [
+    {
+      "date": "2026-06-01",
+      "person": "Lalaine Vergara-Paras",
+      "filename": "LalaineVergaraParas.png",
+      "image_filename": "LalaineVergaraParas.png",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lalaine",
+        "https://www.wikidata.org/wiki/Q30896",
+        "https://www.imdb.com/name/nm0482340/"
+      ],
+      "title": "Lalaine Vergara-Paras — Actor, singer, musician",
+      "summary": "High-school-friendly English infographic about Lalaine Vergara-Paras, an American actress, singer-songwriter, and bassist known for playing Miranda Sanchez in Lizzie McGuire and for her 2003 album Inside Story.",
+      "age_suitability_details": {
+        "age_6": "Mostly suitable with help: the visual icons and short facts are simple, but the career context may need adult explanation.",
+        "age_13": "Suitable: concise readable facts about acting, music, dates, and creative range are appropriate for early teenagers.",
+        "adult": "Suitable as a quick visual overview with public source provenance."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "en",
+      "assignment_id": "24054c29-30e0-4e3d-a1df-358a02960cb7",
+      "_kind": "native",
+      "_source_mtime": 1780320502.4624395,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "lalaine vergara-paras artist umetnik en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-01",
       "person": "Graham Bonney",
