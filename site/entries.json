@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 140,
+    "total_entries": 141,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,81 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 140
+      "age_6": 141
     },
     "category_counts": {
+      "school_poster": 2,
       "artist": 39,
       "scientist": 97,
-      "sport": 3,
-      "school_poster": 1
+      "sport": 3
     },
     "language_counts": {
-      "en": 8,
+      "en": 9,
       "sl": 132
     }
   },
   "entries": [
+    {
+      "date": "2026-06-01",
+      "person": "European Union",
+      "filename": "EuropeanUnion.png",
+      "image_filename": "EuropeanUnion.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q458",
+        "https://en.wikipedia.org/wiki/European_Union",
+        "https://european-union.europa.eu/principles-countries-history/principles-and-values_en",
+        "https://european-union.europa.eu/principles-countries-history/eu-countries_en"
+      ],
+      "title": "European Union — 27 Countries, Shared Rules",
+      "summary": "A high-school classroom wall poster explaining the European Union as a political and economic union of 27 countries, with its core values, four single-market freedoms, basic law-making flow, and a misconception note distinguishing Europe, the Eurozone, and Schengen.",
+      "age_suitability_details": {
+        "age_6": "Mostly visual and simple: children can understand that many countries cooperate and share rules, though some terms need adult explanation.",
+        "age_13": "Well suited: concise labels explain cooperation, values, freedoms, and common misconceptions at early secondary-school level.",
+        "adult": "Accurate as a compact overview; it intentionally simplifies institutions and law-making for classroom readability."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "en",
+      "assignment_id": "bc6bb51e-77c8-4b5c-8d28-bf39e3471cd0",
+      "_kind": "native",
+      "_source_mtime": 1780336368.791303,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "european union school_poster šolski plakat en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-01",
       "person": "Lalaine Vergara-Paras",

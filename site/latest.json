@@ -1,17 +1,18 @@
 {
   "date": "2026-06-01",
-  "person": "Lalaine Vergara-Paras",
-  "image_filename": "LalaineVergaraParas.png",
-  "category": "artist",
-  "category_label": "Umetnik",
+  "person": "European Union",
+  "image_filename": "EuropeanUnion.png",
+  "category": "school_poster",
+  "category_label": "Šolski plakat",
   "language": "en",
   "language_label": "EN",
   "sources": [
-    "https://en.wikipedia.org/wiki/Lalaine",
-    "https://www.wikidata.org/wiki/Q30896",
-    "https://www.imdb.com/name/nm0482340/"
+    "https://www.wikidata.org/wiki/Q458",
+    "https://en.wikipedia.org/wiki/European_Union",
+    "https://european-union.europa.eu/principles-countries-history/principles-and-values_en",
+    "https://european-union.europa.eu/principles-countries-history/eu-countries_en"
   ],
-  "total_entries": 140,
+  "total_entries": 141,
   "total_pages": 14,
   "per_page": 10
 }
