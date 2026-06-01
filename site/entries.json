@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 137,
+    "total_entries": 138,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,80 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 137
+      "age_6": 138
     },
     "category_counts": {
-      "artist": 36,
+      "artist": 37,
       "scientist": 97,
       "sport": 3,
       "school_poster": 1
     },
     "language_counts": {
-      "sl": 132,
-      "en": 5
+      "en": 6,
+      "sl": 132
     }
   },
   "entries": [
+    {
+      "date": "2026-06-01",
+      "person": "Morgan Freeman",
+      "filename": "MorganFreeman.png",
+      "image_filename": "MorganFreeman.png",
+      "sources": [
+        "https://www.britannica.com/biography/Morgan-Freeman",
+        "https://www.oscars.org/oscars/ceremonies/2005",
+        "https://www.biography.com/actors/morgan-freeman"
+      ],
+      "title": "Morgan Freeman — voice of cinema",
+      "summary": "English educational infographic about Morgan Freeman as an actor and narrator, highlighting his Academy Award recognition, stage and film career, and distinctive screen presence.",
+      "age_suitability_details": {
+        "age_6": "Morgan Freeman is a famous actor with a calm voice who appears in movies and tells stories clearly.",
+        "age_13": "Morgan Freeman built a long career across stage, film, and narration, becoming known for memorable roles and an authoritative voice.",
+        "adult": "Morgan Freeman represents a durable screen career shaped by theater roots, Oscar-winning film work, narration, and a public persona of calm authority."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "en",
+      "assignment_id": "bec58ab2-cae7-4a87-b039-085ffe347ccb",
+      "_kind": "native",
+      "_source_mtime": 1780312338.1789703,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "morgan freeman artist umetnik en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-05-31",
       "person": "Clint Eastwood",

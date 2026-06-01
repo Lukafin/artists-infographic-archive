@@ -1,17 +1,17 @@
 {
-  "date": "2026-05-31",
-  "person": "Clint Eastwood",
-  "image_filename": "ClintEastwood.png",
+  "date": "2026-06-01",
+  "person": "Morgan Freeman",
+  "image_filename": "MorganFreeman.png",
   "category": "artist",
   "category_label": "Umetnik",
-  "language": "sl",
-  "language_label": "SL",
+  "language": "en",
+  "language_label": "EN",
   "sources": [
-    "https://www.wikidata.org/wiki/Q43203",
-    "https://www.britannica.com/biography/Clint-Eastwood",
-    "https://www.encyclopedia.com/people/literature-and-arts/film-and-television-biographies/clint-eastwood"
+    "https://www.britannica.com/biography/Morgan-Freeman",
+    "https://www.oscars.org/oscars/ceremonies/2005",
+    "https://www.biography.com/actors/morgan-freeman"
   ],
-  "total_entries": 137,
+  "total_entries": 138,
   "total_pages": 14,
   "per_page": 10
 }
