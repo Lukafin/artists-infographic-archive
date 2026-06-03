@@ -1,18 +1,17 @@
 {
-  "date": "2026-06-01",
-  "person": "European Union",
-  "image_filename": "EuropeanUnion.png",
+  "date": "2026-06-03",
+  "person": "Renaissance",
+  "image_filename": "Renaissance.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "en",
   "language_label": "EN",
   "sources": [
-    "https://www.wikidata.org/wiki/Q458",
-    "https://en.wikipedia.org/wiki/European_Union",
-    "https://european-union.europa.eu/principles-countries-history/principles-and-values_en",
-    "https://european-union.europa.eu/principles-countries-history/eu-countries_en"
+    "https://www.wikidata.org/wiki/Q4692",
+    "https://en.wikipedia.org/wiki/Renaissance",
+    "https://www.britannica.com/event/Renaissance"
   ],
-  "total_entries": 141,
-  "total_pages": 14,
+  "total_entries": 143,
+  "total_pages": 15,
   "per_page": 10
 }

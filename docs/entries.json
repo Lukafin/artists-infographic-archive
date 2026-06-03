@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 141,
+    "total_entries": 143,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,94 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 141
+      "age_6": 143
     },
     "category_counts": {
-      "school_poster": 2,
+      "school_poster": 4,
       "artist": 39,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "en": 9,
+      "en": 11,
       "sl": 132
     }
   },
   "entries": [
+    {
+      "date": "2026-06-03",
+      "person": "Renaissance",
+      "filename": "Renaissance.png",
+      "image_filename": "Renaissance.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q4692",
+        "https://en.wikipedia.org/wiki/Renaissance",
+        "https://www.britannica.com/event/Renaissance"
+      ],
+      "source_urls": [
+        "https://www.wikidata.org/wiki/Q4692",
+        "https://en.wikipedia.org/wiki/Renaissance",
+        "https://www.britannica.com/event/Renaissance"
+      ],
+      "category": "school_poster",
+      "language": "en",
+      "artifact_kind": "school_wall_poster",
+      "openrouter_model": "openai/gpt-5.4-image-2",
+      "assignment_id": "356b01e8-2a27-457a-8b0e-63ea44d2ab97",
+      "_kind": "native",
+      "_source_mtime": 1780473381.255354,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "renaissance school_poster šolski plakat en age_6 ages 6+ 6+ let"
+    },
+    {
+      "date": "2026-06-03",
+      "person": "Middle Ages",
+      "filename": "MiddleAges.png",
+      "image_filename": "MiddleAges.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q12554",
+        "https://en.wikipedia.org/wiki/Middle_Ages",
+        "https://www.britannica.com/summary/Middle-Ages"
+      ],
+      "source_urls": [
+        "https://www.wikidata.org/wiki/Q12554",
+        "https://en.wikipedia.org/wiki/Middle_Ages",
+        "https://www.britannica.com/summary/Middle-Ages"
+      ],
+      "category": "school_poster",
+      "language": "en",
+      "artifact_kind": "school_wall_poster",
+      "openrouter_model": "openai/gpt-5.4-image-2",
+      "assignment_id": "0866dc13-4c49-4281-ba34-65f7ec083544",
+      "_kind": "native",
+      "_source_mtime": 1780473381.2433538,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "middle ages school_poster šolski plakat en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-01",
       "person": "European Union",
