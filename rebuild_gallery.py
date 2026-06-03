@@ -858,8 +858,9 @@ entries_index = build_entries_index(entries)
 
 featured = entries[0] if entries else None
 archive_entries = entries[1:] if len(entries) > 1 else []
-if featured and featured.get('date'):
-    archive_entries = [e for e in archive_entries if e.get('date') != featured.get('date')]
+# Multiple valid outputs can be published on the same day (for example a
+# scheduled cron run plus a manual/debug run). Keep same-day non-featured
+# entries in the visible archive grid instead of hiding them behind search.
 
 ENTRIES_INDEX.write_text(json.dumps(entries_index, ensure_ascii=False, indent=2), encoding='utf-8')
 (PUBLIC_ROOT / KOFI_ICON_FILENAME).write_text(KOFI_ICON_SVG + '\n', encoding='utf-8')
