@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 143,
+    "total_entries": 144,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,80 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 143
+      "age_6": 144
     },
     "category_counts": {
+      "artist": 40,
       "school_poster": 4,
-      "artist": 39,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "en": 11,
-      "sl": 132
+      "sl": 133,
+      "en": 11
     }
   },
   "entries": [
+    {
+      "date": "2026-06-03",
+      "person": "Lalaine Vergara-Paras",
+      "filename": "LalaineVergaraParas.png",
+      "image_filename": "LalaineVergaraParas.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q30896",
+        "https://shows.disney.com/lizzie-mcguire/",
+        "https://music.apple.com/us/album/im-not-your-girl-single/50232296"
+      ],
+      "title": "Lalaine Vergara-Paras",
+      "summary": "Slovenski biografski infografik o Lalaine Vergara-Paras, filipinsko-ameriski igralki, pevki in avtorici pesmi.",
+      "age_suitability_details": {
+        "age_6": "Lalaine je ustvarjalka, ki je igrala na televiziji, pela pesmi in pisala svoje ideje.",
+        "age_13": "Lalaine Vergara-Paras je filipinsko-ameriska igralka in glasbenica, znana po vlogi Mirande v seriji Lizzie McGuire ter po glasbenem singlu I'm Not Your Girl.",
+        "adult": "Lalaine Vergara-Paras je primer vecpodrocne ustvarjalke iz generacije Disney Channel iz zgodnjih 2000-ih; njena javna kariera povezuje televizijsko igro, pop glasbo in pisanje ter odpira prostor za vecjo filipinsko-amerisko vidnost v mladinski popularni kulturi."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "02a5cbed-ed11-401b-b712-392755b01194",
+      "_kind": "native",
+      "_source_mtime": 1780478459.9071157,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "lalaine vergara-paras artist umetnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-03",
       "person": "Renaissance",
