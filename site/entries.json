@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 144,
+    "total_entries": 145,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,76 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 144
+      "age_6": 145
     },
     "category_counts": {
+      "school_poster": 5,
       "artist": 40,
-      "school_poster": 4,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "sl": 133,
-      "en": 11
+      "en": 12,
+      "sl": 133
     }
   },
   "entries": [
+    {
+      "date": "2026-06-06",
+      "person": "Roman Empire",
+      "filename": "RomanEmpire.png",
+      "image_filename": "RomanEmpire.png",
+      "sources": [
+        "https://www.britannica.com/place/Roman-Empire",
+        "https://www.metmuseum.org/toah/hd/roem/hd_roem.htm",
+        "https://www.worldhistory.org/Roman_Empire/"
+      ],
+      "title": "Roman Empire",
+      "summary": null,
+      "age_suitability_details": {},
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "en",
+      "assignment_id": "f5aa48e7-fdc5-4e21-ad27-7813d8d94316",
+      "_kind": "native",
+      "_source_mtime": 1780731622.9753032,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "roman empire school_poster šolski plakat en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-03",
       "person": "Lalaine Vergara-Paras",
