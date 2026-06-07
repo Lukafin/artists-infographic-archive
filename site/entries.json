@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 145,
+    "total_entries": 146,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,82 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 145
+      "age_6": 146
     },
     "category_counts": {
-      "school_poster": 5,
+      "school_poster": 6,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "en": 12,
+      "en": 13,
       "sl": 133
     }
   },
   "entries": [
+    {
+      "date": "2026-06-07",
+      "person": "Ancient Egypt",
+      "filename": "AncientEgypt.png",
+      "image_filename": "AncientEgypt.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q11768",
+        "https://en.wikipedia.org/wiki/Ancient_Egypt",
+        "https://www.britannica.com/place/ancient-Egypt",
+        "https://www.metmuseum.org/toah/hd/egold/hd_egold.htm",
+        "https://www.worldhistory.org/egypt/"
+      ],
+      "title": "Ancient Egypt — Nile Civilization",
+      "summary": "A high-school classroom wall poster explaining Ancient Egypt as a long-lasting Nile civilization shaped by flood-supported farming, kingdom periods, pharaohs and scribes, afterlife beliefs, and enduring achievements in writing, mathematics, medicine, calendars, art, and engineering.",
+      "age_suitability_details": {
+        "age_6": "Visually engaging and safe, but some terms such as hieroglyphs, mummification, and irrigation need adult explanation.",
+        "age_13": "Well suited: concise labels connect geography, political organization, writing, beliefs, and legacy at a secondary-school level.",
+        "adult": "Accurate as a compact overview; it simplifies a very long and complex civilization for classroom-wall readability."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "en",
+      "assignment_id": "f81e0be6-ca4a-4021-8be0-3ae1abb588f8",
+      "_kind": "native",
+      "_source_mtime": 1780808713.149604,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 5,
+      "search_text": "ancient egypt school_poster šolski plakat en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-06",
       "person": "Roman Empire",
