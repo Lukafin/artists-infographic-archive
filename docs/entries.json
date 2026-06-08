@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 146,
+    "total_entries": 147,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,74 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 146
+      "age_6": 147
     },
     "category_counts": {
-      "school_poster": 6,
+      "school_poster": 7,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "en": 13,
+      "en": 14,
       "sl": 133
     }
   },
   "entries": [
+    {
+      "date": "2026-06-08",
+      "person": "French Revolution",
+      "filename": "FrenchRevolution.png",
+      "image_filename": "FrenchRevolution.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q6534"
+      ],
+      "title": "French Revolution — 1789–1799",
+      "summary": null,
+      "age_suitability_details": {},
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "en",
+      "assignment_id": "4e91c302-ca5f-4ba9-951d-81bc4d93db2f",
+      "_kind": "native",
+      "_source_mtime": 1780895118.9874063,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 1,
+      "search_text": "french revolution school_poster šolski plakat en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-07",
       "person": "Ancient Egypt",
