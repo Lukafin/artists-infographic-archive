@@ -1,15 +1,17 @@
 {
-  "date": "2026-06-08",
-  "person": "French Revolution",
-  "image_filename": "FrenchRevolution.png",
+  "date": "2026-06-09",
+  "person": "Industrial Revolution",
+  "image_filename": "IndustrialRevolution.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "en",
   "language_label": "EN",
   "sources": [
-    "https://www.wikidata.org/wiki/Q6534"
+    "https://www.wikidata.org/wiki/Q2269",
+    "https://www.britannica.com/event/Industrial-Revolution",
+    "https://www.history.com/articles/industrial-revolution"
   ],
-  "total_entries": 147,
+  "total_entries": 148,
   "total_pages": 15,
   "per_page": 10
 }
