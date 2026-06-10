@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 148,
+    "total_entries": 149,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,81 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 148
+      "age_6": 149
     },
     "category_counts": {
-      "school_poster": 8,
+      "school_poster": 9,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "en": 15,
+      "en": 16,
       "sl": 133
     }
   },
   "entries": [
+    {
+      "date": "2026-06-10",
+      "person": "World War II",
+      "filename": "WorldWarIi.png",
+      "image_filename": "WorldWarIi.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q362",
+        "https://en.wikipedia.org/wiki/World_War_II",
+        "https://www.britannica.com/event/World-War-II",
+        "https://encyclopedia.ushmm.org/content/en/article/world-war-ii-key-dates"
+      ],
+      "title": "World War II — 1939–1945 Global Conflict",
+      "summary": "A high-school classroom wall poster explaining World War II as a 1939–1945 global conflict: alliances, causes, major theatres, turning points, civilian impact, the Holocaust, technology/home fronts, and postwar outcomes.",
+      "age_suitability_details": {
+        "age_6": "Not targeted at small children, but avoids graphic violence and uses clear icons.",
+        "age_13": "Explains causes, alliances, theatres, turning points, civilian impact, Holocaust, technology, and postwar outcomes in concise terms.",
+        "adult": "Presents a compact, source-grounded overview suitable as a reference-card introduction while preserving sober treatment of human cost."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "en",
+      "assignment_id": "29a35f10-6efa-48e2-bbd6-99445a21a8d6",
+      "_kind": "native",
+      "_source_mtime": 1781067978.1781092,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "world war ii school_poster šolski plakat en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-09",
       "person": "Industrial Revolution",
