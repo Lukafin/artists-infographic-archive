@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 149,
+    "total_entries": 150,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,81 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 149
+      "age_6": 150
     },
     "category_counts": {
-      "school_poster": 9,
+      "school_poster": 10,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "en": 16,
+      "en": 17,
       "sl": 133
     }
   },
   "entries": [
+    {
+      "date": "2026-06-11",
+      "person": "cell biology",
+      "filename": "CellBiology.png",
+      "image_filename": "CellBiology.png",
+      "sources": [
+        "https://en.wikipedia.org/api/rest_v1/page/summary/Cell_biology",
+        "https://en.wikipedia.org/api/rest_v1/page/summary/Cell_(biology)",
+        "https://www.genome.gov/genetics-glossary/Cell",
+        "https://www.khanacademy.org/science/biology/structure-of-a-cell/introduction-to-cells/a/intro-to-cells"
+      ],
+      "title": "Cell Biology — Life at Cell Scale",
+      "summary": "A high-school classroom wall poster explaining cell biology through a central eukaryotic cell diagram, key organelles, cell theory, prokaryote/eukaryote comparison, scale, and the structure-function idea.",
+      "age_suitability_details": {
+        "age_6": "Shows cells as tiny building blocks of living things with simple, concrete labels; suitable for supervised younger learners though designed for older students.",
+        "age_13": "Appropriate for middle/high-school students: concise labels explain cell theory, organelles, DNA, protein building, energy release, and prokaryote/eukaryote differences.",
+        "adult": "Accurate overview for adult general readers; simplified by design but scientifically grounded and useful as a quick reference."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "en",
+      "assignment_id": "ce34ee0c-5776-4d9f-aa0c-8b19059a5786",
+      "_kind": "native",
+      "_source_mtime": 1781154353.5150995,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "cell biology school_poster šolski plakat en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-10",
       "person": "World War II",
