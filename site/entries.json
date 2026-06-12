@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 150,
+    "total_entries": 151,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,81 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 150
+      "age_6": 151
     },
     "category_counts": {
-      "school_poster": 10,
+      "school_poster": 11,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "en": 17,
+      "en": 18,
       "sl": 133
     }
   },
   "entries": [
+    {
+      "date": "2026-06-12",
+      "person": "cell division",
+      "filename": "CellDivision.png",
+      "image_filename": "CellDivision.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q188909",
+        "https://en.wikipedia.org/wiki/Cell_division",
+        "https://openstax.org/books/biology-2e/pages/10-introduction",
+        "https://www.khanacademy.org/science/biology/cellular-molecular-biology/mitosis/a/cell-cycle-phases"
+      ],
+      "title": "Cell Division",
+      "summary": "A high-school classroom knowledge card explaining how cell division supports growth, repair, reproduction, and genetic variation through the cell cycle, mitosis, cytokinesis, and meiosis.",
+      "age_suitability_details": {
+        "age_6": "Cells are tiny building blocks of living things. Cell division is how one cell carefully copies itself and splits into two cells, helping bodies grow and heal.",
+        "age_13": "Cell division is the process that makes new cells. In the cell cycle, a cell grows, copies its DNA, prepares, and divides. Mitosis makes matching body cells for growth and repair, while meiosis makes eggs or sperm with half the chromosomes and new genetic mixes.",
+        "adult": "Cell division coordinates DNA replication, chromosome segregation, nuclear division, and cytokinesis to produce new cells. Mitotic division maintains chromosome number and genetic continuity in somatic growth and repair, whereas meiotic division reduces chromosome number and increases variation through specialized reproductive cell formation. Checkpoints help preserve genome integrity by pausing the cycle when damage is detected."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "en",
+      "assignment_id": "bfcaaa15-6ebe-49e2-ad9d-e8727df6c2d3",
+      "_kind": "native",
+      "_source_mtime": 1781240817.8385978,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "cell division school_poster šolski plakat en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-11",
       "person": "cell biology",
