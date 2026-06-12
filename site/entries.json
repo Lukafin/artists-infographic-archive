@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 151,
+    "total_entries": 152,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,78 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 151
+      "age_6": 152
     },
     "category_counts": {
-      "school_poster": 11,
+      "school_poster": 12,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "en": 18,
-      "sl": 133
+      "sl": 134,
+      "en": 18
     }
   },
   "entries": [
+    {
+      "date": "2026-06-12",
+      "person": "Evropska unija",
+      "filename": "EvropskaUnija.png",
+      "image_filename": "EvropskaUnija.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q458",
+        "https://european-union.europa.eu/principles-countries-history/eu-countries_en",
+        "https://european-union.europa.eu/institutions-law-budget/institutions-and-bodies/types-institutions-and-bodies_en",
+        "https://european-union.europa.eu/principles-countries-history/history-eu_en",
+        "https://european-union.europa.eu/principles-countries-history/principles-and-values/aims-and-values_en"
+      ],
+      "title": "Evropska unija",
+      "summary": "Slovenski srednješolski stenski plakat / enciklopedična kartica o Evropski uniji: 27 držav, skupni trg, vrednote, institucije, zakonodajni proces in kratka časovnica.",
+      "age_suitability_details": {},
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "3c6d4185-e873-4112-99f8-fbd343b9c420",
+      "_kind": "native",
+      "_source_mtime": 1781254237.6385026,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 5,
+      "search_text": "evropska unija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-12",
       "person": "cell division",
