@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 152,
+    "total_entries": 153,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,81 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 152
+      "age_6": 153
     },
     "category_counts": {
-      "school_poster": 12,
+      "school_poster": 13,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "sl": 134,
+      "sl": 135,
       "en": 18
     }
   },
   "entries": [
+    {
+      "date": "2026-06-13",
+      "person": "Rimsko cesarstvo",
+      "filename": "RimskoCesarstvo.png",
+      "image_filename": "RimskoCesarstvo.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2277",
+        "https://www.britannica.com/place/Roman-Empire",
+        "https://www.worldhistory.org/Roman_Empire/",
+        "https://en.wikipedia.org/wiki/Roman_Empire"
+      ],
+      "title": "Rimsko cesarstvo",
+      "summary": "Slovenska srednješolska stenska učna karta o Rimskem cesarstvu: časovnica od Avgusta do konca Zahodnega cesarstva, delovanje države, Pax Romana, trgovina, ceste, pravo in dolgoročna zapuščina.",
+      "age_suitability_details": {
+        "age_6": "Rimsko cesarstvo je bila zelo velika stara država s središčem v Rimu. Ljudje so gradili ceste, mesta in akvadukte, zato so lahko potovali, trgovali in prenašali novice.",
+        "age_13": "Rimsko cesarstvo se je začelo z Avgustom leta 27 pr. n. št. in je povezalo Sredozemlje z vojsko, provincami, davki, cestami, pravom in trgovino. Zahodni del se je končal leta 476, vzhodni del pa je nadaljeval do leta 1453.",
+        "adult": "Rimsko cesarstvo je bila večnacionalna imperialna država, ki je od Avgustovega principata razvila trajne oblike vojaške, pravne, fiskalne in provincialne uprave. Njegova dediščina vključuje rimsko pravo, urbanizem, infrastrukturo, arhitekturo, latinščino in romanske jezike; datum 476 se nanaša na politični konec Zahodnega rimskega cesarstva, ne na celotno rimsko državno tradicijo."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "4d22ca35-7ab5-47d6-9e15-857134b0b2f3",
+      "_kind": "native",
+      "_source_mtime": 1781327284.5956094,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "rimsko cesarstvo school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-12",
       "person": "Evropska unija",
