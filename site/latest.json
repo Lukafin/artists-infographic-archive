@@ -1,18 +1,17 @@
 {
-  "date": "2026-06-13",
-  "person": "Rimsko cesarstvo",
-  "image_filename": "RimskoCesarstvo.png",
+  "date": "2026-06-14",
+  "person": "antični Egipt",
+  "image_filename": "AnticniEgipt.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://www.wikidata.org/wiki/Q2277",
-    "https://www.britannica.com/place/Roman-Empire",
-    "https://www.worldhistory.org/Roman_Empire/",
-    "https://en.wikipedia.org/wiki/Roman_Empire"
+    "https://www.wikidata.org/wiki/Q11768",
+    "https://en.wikipedia.org/wiki/Ancient_Egypt",
+    "https://www.britannica.com/place/ancient-Egypt"
   ],
-  "total_entries": 153,
+  "total_entries": 154,
   "total_pages": 16,
   "per_page": 10
 }
