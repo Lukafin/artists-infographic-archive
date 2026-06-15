@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 154,
+    "total_entries": 155,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,80 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 154
+      "age_6": 155
     },
     "category_counts": {
-      "school_poster": 14,
+      "school_poster": 15,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "sl": 136,
+      "sl": 137,
       "en": 18
     }
   },
   "entries": [
+    {
+      "date": "2026-06-15",
+      "person": "celična biologija",
+      "filename": "CelicnaBiologija.png",
+      "image_filename": "CelicnaBiologija.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q7141",
+        "https://sl.wikipedia.org/wiki/Celi%C4%8Dna_biologija",
+        "https://en.wikipedia.org/wiki/Cell_biology"
+      ],
+      "title": "CELIČNA BIOLOGIJA — osnovna enota življenja",
+      "summary": "Slovenski srednješolski stenski poster razloži celično biologijo skozi zgradbo celic, delovanje celic, glavne organele, razliko med evkarionti in prokarionti, raziskovalne metode ter pomen za medicino, genetiko in biotehnologijo.",
+      "age_suitability_details": {
+        "age_6": "Vizualno privlačno, vendar vsebuje pojme, kot so evkarionti, prokarionti in organeli, ki so zahtevnejši; mlajši otrok lahko razume osnovno idejo celice ob pomoči odraslega.",
+        "age_13": "Primerno za zgodnje najstnike in srednjo šolo: jasni paneli, kratke definicije, osnovni deli celice, metode in pomen za biologijo ter medicino.",
+        "adult": "Točen jedrnat pregled osnov celične biologije; namenjen kot učna kartica, ne kot poglobljena univerzitetna razprava."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "142cd54e-48ce-476e-96e5-78dd189ea690",
+      "_kind": "native",
+      "_source_mtime": 1781499892.1943054,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "celična biologija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-14",
       "person": "antični Egipt",
