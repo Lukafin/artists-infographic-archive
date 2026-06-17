@@ -1,18 +1,26 @@
 {
   "date": "2026-06-17",
-  "person": "demokracija",
-  "image_filename": "Demokracija.png",
+  "person": "deoksiribonukleinska kislina",
+  "image_filename": "DeoksiribonukleinskaKislina.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://www.wikidata.org/wiki/Q7174",
-    "https://sl.wikipedia.org/wiki/Demokracija",
-    "https://www.parliament.uk/site-information/glossary/democracy/",
-    "https://www.ohchr.org/en/about-democracy-and-human-rights"
+    "https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid",
+    "https://www.ncbi.nlm.nih.gov/books/NBK26821/",
+    "https://www.wikidata.org/wiki/Q7430"
   ],
-  "total_entries": 157,
+  "age_suitability_keys": [
+    "age_6"
+  ],
+  "age_suitability_labels_en": [
+    "Ages 6+"
+  ],
+  "age_suitability_labels_sl": [
+    "6+ let"
+  ],
+  "total_entries": 158,
   "total_pages": 16,
   "per_page": 10
 }

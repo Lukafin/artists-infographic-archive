@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Daily birthday infographic archive – Archive – page 4</title>
-  <meta name="description" content="Daily Slovenian kid-friendly infographics about famous artists, scientists and athletes.">
+  <meta name="description" content="Daily infographics for all ages about famous artists, scientists and athletes.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -63,7 +63,8 @@
     .lang-icon { width:22px; height:22px; display:grid; place-items:center; font-size:16px; }
     .lang-picker button { border:0; border-radius:999px; background:transparent; color:#51483f; font:inherit; font-size:12px; font-weight:800; padding:7px 9px; cursor:pointer; }
     .lang-picker button.active { background:var(--ink); color:#fff; }
-    .hero { margin-top:24px; display:grid; grid-template-columns:1.1fr .9fr; gap:20px; align-items:stretch; }
+    .hero { margin-top:24px; display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:20px; align-items:stretch; }
+    .hero > * { min-width:0; }
     .hero-copy { padding:34px 34px 30px; display:flex; flex-direction:column; justify-content:space-between; }
     .eyebrow { font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:#8a5c09; display:inline-flex; align-items:center; gap:8px; }
     .eyebrow::before { content:''; width:10px; height:10px; border-radius:999px; background:linear-gradient(135deg,#ff9d00,#ff4d6d); }
@@ -73,34 +74,45 @@
     .stat { background:var(--paper); border:1px solid var(--line); border-radius:22px; padding:18px 16px; }
     .stat strong { display:block; font-size:30px; margin-bottom:4px; }
     .stat span { font-size:14px; color:var(--muted); }
-    .hero-card { padding:18px; background:linear-gradient(180deg,#fff,#fffaf4); }
-    .hero-image-wrap { display:block; padding:12px; background:linear-gradient(135deg,var(--hero2),var(--hero1),var(--hero3)); border-radius:26px; text-decoration:none; }
-    .hero-image-wrap img { width:100%; display:block; border-radius:20px; border:8px solid rgba(255,255,255,.96); }
-    .hero-meta { margin-top:18px; }
-    .hero-card h3 { margin:16px 0 8px; font-size:32px; letter-spacing:-.03em; }
-    .hero-link a, .direct-link a { color:var(--accent); font-weight:700; text-decoration:none; }
-    .hero-link a:hover, .direct-link a:hover, .sources a:hover { text-decoration:underline; }
+    .hero-card { min-height:420px; width:100%; max-width:100%; }
+    .hero-image-wrap { position:absolute; inset:0; display:block; text-decoration:none; background:#fff; }
+    .hero-image-wrap img { width:100%; height:100%; display:block; object-fit:contain; }
+    .hero-title-overlay h3 { font-size:32px; }
+    .sources a:hover { text-decoration:underline; }
     .archive-shell { margin-top:24px; padding:24px; background:rgba(255,255,255,.84); border:1px solid var(--line); border-radius:30px; box-shadow:var(--shadow); }
     .archive-top { display:flex; justify-content:space-between; gap:18px; align-items:end; margin-bottom:22px; }
     .archive-top h2 { margin:0; font-size:34px; letter-spacing:-.04em; }
     .archive-top p { margin:8px 0 0; color:var(--muted); font-size:17px; max-width:60ch; }
-    .masonry { display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:16px; align-items:stretch; }
-    .card {
-      margin:0; background:var(--panel); border:1px solid var(--line);
-      border-radius:22px; overflow:hidden; box-shadow:0 8px 24px rgba(33,25,34,.06);
-      height:100%; display:flex; flex-direction:column;
+    .masonry { display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:18px; align-items:stretch; }
+    .card, .image-card {
+      position:relative; isolation:isolate; margin:0; background:#fff; border:1px solid var(--line);
+      border-radius:22px; overflow:hidden; box-shadow:0 10px 28px rgba(33,25,34,.08);
+      aspect-ratio:16/9;
     }
-    .card.feature { background:linear-gradient(180deg,#fffefb,#fff7ee); }
-    .thumb { display:block; text-decoration:none; }
-    .thumb img { width:100%; display:block; }
-    .content { padding:14px 14px 16px; flex:1; display:flex; flex-direction:column; }
-    .content h3 { margin:8px 0 8px; font-size:22px; line-height:1.08; letter-spacing:-.03em; min-height:2.16em; display:block; }
-    .card.feature .content h3 { font-size:28px; min-height:2.16em; }
+    .card.feature { box-shadow:0 14px 36px rgba(33,25,34,.11); }
+    .thumb { position:absolute; inset:0; display:block; text-decoration:none; background:#fff; }
+    .thumb img { width:100%; height:100%; display:block; object-fit:contain; }
+    .image-title { position:absolute; left:0; right:0; bottom:0; z-index:2; padding:56px 16px 14px; color:#fff; background:linear-gradient(180deg, transparent, rgba(0,0,0,.68)); pointer-events:none; }
+    .image-title h3 { margin:0; font-size:22px; line-height:1.05; letter-spacing:-.03em; text-shadow:0 1px 12px rgba(0,0,0,.38); }
+    .card.feature .image-title h3 { font-size:28px; }
+    .info-popover { position:absolute; top:12px; right:12px; z-index:4; max-width:calc(100% - 24px); }
+    .info-popover[open] { right:12px; bottom:auto; }
+    .info-popover summary { list-style:none; }
+    .info-popover summary::-webkit-details-marker { display:none; }
+    .info-button { width:32px; height:32px; display:grid; place-items:center; margin-left:auto; border-radius:999px; border:1px solid rgba(255,255,255,.5); background:rgba(255,255,255,.58); color:rgba(33,25,34,.72); font-weight:850; font-size:15px; box-shadow:0 6px 16px rgba(0,0,0,.10); backdrop-filter:blur(8px); cursor:pointer; }
+    .info-button:hover, .info-button:focus-visible { background:rgba(33,25,34,.82); color:#fff; outline:0; }
+    .info-panel { position:absolute; top:42px; right:0; margin-top:0; width:min(300px, calc(100vw - 76px)); max-width:calc(100vw - 76px); max-height:min(148px, calc(100vh - 156px)); overflow:auto; overscroll-behavior:contain; padding:10px; border-radius:16px; background:rgba(255,253,249,.95); border:1px solid rgba(255,255,255,.9); box-shadow:0 16px 38px rgba(0,0,0,.2); backdrop-filter:blur(16px); }
+    .info-panel .meta-row { gap:7px; }
+    .info-panel .tag { padding:6px 9px; }
+    .info-panel .sources { margin-top:9px; gap:6px; }
+    .info-panel .sources a { padding:6px 9px; }
     .tag { display:inline-flex; padding:7px 10px; border-radius:999px; background:#f7f2ea; border:1px solid #ece1d4; font-size:12px; color:#564f47; }
+    .tag[hidden] { display:none !important; }
     .tag.artist { background:#ffe9ec; border-color:#ffd4dc; color:#8d2440; }
     .tag.science { background:#eaf5ff; border-color:#d4e7ff; color:#29547f; }
     .tag.sport { background:#fff1d6; border-color:#ffe2a8; color:#8a5c09; }
-    .tag.school-poster { background:#e8f5e9; border-color:#c8e6c9; color:#245d33; }
+    .tag.school-poster { background:#f0f7e8; border-color:#d8ecc7; color:#476c25; }
+    .tag.science-news { background:#e8fbff; border-color:#c9edf5; color:#14606b; }
     .tag.language { background:#f1ecff; border-color:#ddd3ff; color:#55408d; }
     .tag.age { background:#fff7dc; border-color:#ffe7a5; color:#7b5a07; }
     .tag.source-count { background:#eaf8ee; border-color:#d9efd9; color:#2b6a3c; }
@@ -113,15 +125,16 @@
     }
     .results-summary { margin:0 0 14px; color:var(--muted); font-size:14px; }
     .sources { list-style:none; display:flex; flex-wrap:wrap; gap:8px; padding:0; margin:12px 0 0; }
-    .direct-link { margin-top:auto; }
     .sources a { display:inline-flex; padding:7px 10px; border-radius:999px; text-decoration:none; background:#faf7f2; border:1px solid var(--line); color:#594e44; font-size:12px; }
     .pagination { margin-top:22px; justify-content:flex-end; }
     .pagination.is-hidden { display:none; }
 
     .footer { margin-top:20px; padding:18px 22px; display:flex; justify-content:space-between; gap:12px; color:var(--muted); font-size:14px; }
+    .footer a { color:var(--accent); font-weight:800; text-decoration:none; }
+    .footer a:hover { text-decoration:underline; }
     .empty { color:var(--muted); font-size:16px; }
     @media (max-width:1200px) {
-      .masonry { grid-template-columns:repeat(3, minmax(0, 1fr)); }
+      .masonry { grid-template-columns:repeat(2, minmax(0, 1fr)); }
     }
     @media (max-width:1100px) {
       .hero { grid-template-columns:1fr; }
@@ -137,9 +150,15 @@
       .hero-copy { padding:26px; }
       .intro { font-size:18px; }
       .hero-stats { grid-template-columns:1fr; }
+      .hero-card { min-height:0; }
+      .hero-title-overlay h3 { font-size:28px; }
       .wrap { padding:18px 14px 44px; }
       .filter-bar { grid-template-columns:1fr; }
       .masonry { grid-template-columns:1fr; }
+      .info-popover[open] { left:12px; right:12px; bottom:12px; max-width:none; }
+      .info-popover[open] .info-panel { width:min(276px, 100%); max-width:100%; max-height:min(104px, calc(100% - 54px)); }
+      .info-panel .tag { padding:5px 8px; font-size:11px; }
+      .info-panel .sources a { padding:5px 8px; font-size:11px; }
     }
   </style>
 </head>
@@ -150,7 +169,7 @@
         <div class="logo">🖼️</div>
         <div>
           <h1 data-i18n="brand_title">Daily birthday infographic archive</h1>
-          <p data-i18n="brand_subtitle">Daily Slovenian infographics for kids</p>
+          <p data-i18n="brand_subtitle">Daily infographics for all ages</p>
         </div>
       </div>
       <div class="nav-right">
@@ -167,17 +186,17 @@
       <div class="archive-top">
         <div>
           <h2 data-archive-heading="1" data-page="4">Archive – page 4</h2>
-          <p data-archive-intro="1" data-page="4">Browse older daily infographics by page or use search and filters.</p>
+          <p data-archive-intro="1" data-page="4">Browse older infographics and explainers by page or use search and filters.</p>
         </div>
         <div class="archive-filters">
-          <span class="pill" data-total-pill="1" data-total="157">Total: 157</span>
+          <span class="pill" data-total-pill="1" data-total="158">Total: 158</span>
           <span class="pill" data-page-pill="1" data-page="4" data-total="16">Page 4/16</span>
         </div>
       </div>
       <div class="filter-bar">
   <div class="filter-control">
-    <label for="archive-search" data-i18n="search_label">Search by person</label>
-    <input id="archive-search" type="search" placeholder="e.g. Duke Ellington" data-i18n-placeholder="search_placeholder">
+    <label for="archive-search" data-i18n="search_label">Search by person or topic</label>
+    <input id="archive-search" type="search" placeholder="e.g. Duke Ellington or Webb telescope" data-i18n-placeholder="search_placeholder">
   </div>
   <div class="filter-control">
     <label for="archive-category" data-i18n="category_label">Type</label>
@@ -202,161 +221,201 @@
   </div>
 </div>
 <p id="results-summary" class="results-summary" data-i18n="initial_summary">Showing the initial selection for this page. Use search or filters above to search the full archive.</p>
-      <div class="masonry"><article class="card" data-person="Anatoly Kashirov" data-category="sport" data-language="sl" data-age-suitability="age_6">
-  <a class="thumb" href="AnatolyKashirov.jpg"><img src="AnatolyKashirov.jpg" alt="Infographic: Anatoly Kashirov" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
-      <span class="tag date">2026-05-19</span>
-      <span class="tag sport" data-category-tag="sport">Athlete</span>
-      <span class="tag language">SL</span>
-      <span class="tag age" data-age-tag="1">Ages 6+</span>
-      <span class="tag source-count" data-source-count="1">1 source</span>
-    </div>
-    <h3>Anatoly Kashirov</h3>
-    <p class="direct-link"><a href="AnatolyKashirov.jpg" data-i18n="open_image">Open image</a></p>
-    <ul class="sources"><li><a href="https://www.wikidata.org/wiki/Q115629" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
+      <div class="masonry"><article class="card" data-person="Edward B. Lewis" data-category="scientist" data-language="sl" data-age-suitability="age_6">
+  <a class="thumb" href="EdwardBLewis.png" aria-label="Open infographic: Edward B. Lewis"><img src="EdwardBLewis.png" alt="Infographic: Edward B. Lewis" loading="lazy"></a>
+  <div class="image-title">
+    <h3>Edward B. Lewis</h3>
   </div>
+  <details class="info-popover">
+      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <div class="info-panel" id="info-2026-05-20-EdwardBLewis-png">
+        <div class="meta-row">
+          <time class="tag date" datetime="2026-05-20" data-date="2026-05-20">20. 5. 2026</time>
+          <span class="tag science" data-category-tag="scientist">Scientist</span>
+          <span class="tag language">SL</span>
+          <span class="tag age" data-age-tag="1">Ages 6+</span>
+          <span class="tag source-count" data-source-count="1">1 source</span>
+        </div>
+        <ul class="sources"><li><a href="https://www.wikidata.org/wiki/Q274123" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
+      </div>
+    </details>
+</article>
+<article class="card" data-person="Anatoly Kashirov" data-category="sport" data-language="sl" data-age-suitability="age_6">
+  <a class="thumb" href="AnatolyKashirov.jpg" aria-label="Open infographic: Anatoly Kashirov"><img src="AnatolyKashirov.jpg" alt="Infographic: Anatoly Kashirov" loading="lazy"></a>
+  <div class="image-title">
+    <h3>Anatoly Kashirov</h3>
+  </div>
+  <details class="info-popover">
+      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <div class="info-panel" id="info-2026-05-19-AnatolyKashirov-jpg">
+        <div class="meta-row">
+          <time class="tag date" datetime="2026-05-19" data-date="2026-05-19">19. 5. 2026</time>
+          <span class="tag sport" data-category-tag="sport">Athlete</span>
+          <span class="tag language">SL</span>
+          <span class="tag age" data-age-tag="1">Ages 6+</span>
+          <span class="tag source-count" data-source-count="1">1 source</span>
+        </div>
+        <ul class="sources"><li><a href="https://www.wikidata.org/wiki/Q115629" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
+      </div>
+    </details>
 </article>
 <article class="card" data-person="Jean Gabin" data-category="artist" data-language="en" data-age-suitability="age_6">
-  <a class="thumb" href="JeanGabin.png"><img src="JeanGabin.png" alt="Infographic: Jean Gabin" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
-      <span class="tag date">2026-05-19</span>
-      <span class="tag artist" data-category-tag="artist">Artist</span>
-      <span class="tag language">EN</span>
-      <span class="tag age" data-age-tag="1">Ages 6+</span>
-      <span class="tag source-count" data-source-count="3">3 sources</span>
-    </div>
+  <a class="thumb" href="JeanGabin.png" aria-label="Open infographic: Jean Gabin"><img src="JeanGabin.png" alt="Infographic: Jean Gabin" loading="lazy"></a>
+  <div class="image-title">
     <h3>Jean Gabin</h3>
-    <p class="direct-link"><a href="JeanGabin.png" data-i18n="open_image">Open image</a></p>
-    <ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Jean_Gabin" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.wikidata.org/wiki/Q23842" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.britannica.com/biography/Jean-Gabin" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </div>
+  <details class="info-popover">
+      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <div class="info-panel" id="info-2026-05-19-JeanGabin-png">
+        <div class="meta-row">
+          <time class="tag date" datetime="2026-05-19" data-date="2026-05-19">19. 5. 2026</time>
+          <span class="tag artist" data-category-tag="artist">Artist</span>
+          <span class="tag language">EN</span>
+          <span class="tag age" data-age-tag="1">Ages 6+</span>
+          <span class="tag source-count" data-source-count="3">3 sources</span>
+        </div>
+        <ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Jean_Gabin" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.wikidata.org/wiki/Q23842" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.britannica.com/biography/Jean-Gabin" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
+      </div>
+    </details>
 </article>
 <article class="card" data-person="Günter M. Ziegler" data-category="scientist" data-language="sl" data-age-suitability="age_6">
-  <a class="thumb" href="GunterMZiegler.png"><img src="GunterMZiegler.png" alt="Infographic: Günter M. Ziegler" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
-      <span class="tag date">2026-05-19</span>
-      <span class="tag science" data-category-tag="scientist">Scientist</span>
-      <span class="tag language">SL</span>
-      <span class="tag age" data-age-tag="1">Ages 6+</span>
-      <span class="tag source-count" data-source-count="4">4 sources</span>
-    </div>
+  <a class="thumb" href="GunterMZiegler.png" aria-label="Open infographic: Günter M. Ziegler"><img src="GunterMZiegler.png" alt="Infographic: Günter M. Ziegler" loading="lazy"></a>
+  <div class="image-title">
     <h3>Günter M. Ziegler</h3>
-    <p class="direct-link"><a href="GunterMZiegler.png" data-i18n="open_image">Open image</a></p>
-    <ul class="sources"><li><a href="https://www.wikidata.org/wiki/Q72382" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://en.wikipedia.org/wiki/G%C3%BCnter_M._Ziegler" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.mi.fu-berlin.de/en/math/groups/discgeom/ziegler/index.html" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.mfo.de/occasion/1542b/www_view" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </div>
+  <details class="info-popover">
+      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <div class="info-panel" id="info-2026-05-19-GunterMZiegler-png">
+        <div class="meta-row">
+          <time class="tag date" datetime="2026-05-19" data-date="2026-05-19">19. 5. 2026</time>
+          <span class="tag science" data-category-tag="scientist">Scientist</span>
+          <span class="tag language">SL</span>
+          <span class="tag age" data-age-tag="1">Ages 6+</span>
+          <span class="tag source-count" data-source-count="4">4 sources</span>
+        </div>
+        <ul class="sources"><li><a href="https://www.wikidata.org/wiki/Q72382" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://en.wikipedia.org/wiki/G%C3%BCnter_M._Ziegler" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.mi.fu-berlin.de/en/math/groups/discgeom/ziegler/index.html" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.mfo.de/occasion/1542b/www_view" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
+      </div>
+    </details>
 </article>
 <article class="card" data-person="Bertrand Russell" data-category="scientist" data-language="sl" data-age-suitability="age_6">
-  <a class="thumb" href="BertrandRussell.jpg"><img src="BertrandRussell.jpg" alt="Infographic: Bertrand Russell" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
-      <span class="tag date">2026-05-18</span>
-      <span class="tag science" data-category-tag="scientist">Scientist</span>
-      <span class="tag language">SL</span>
-      <span class="tag age" data-age-tag="1">Ages 6+</span>
-      <span class="tag source-count" data-source-count="4">4 sources</span>
-    </div>
+  <a class="thumb" href="BertrandRussell.jpg" aria-label="Open infographic: Bertrand Russell"><img src="BertrandRussell.jpg" alt="Infographic: Bertrand Russell" loading="lazy"></a>
+  <div class="image-title">
     <h3>Bertrand Russell</h3>
-    <p class="direct-link"><a href="BertrandRussell.jpg" data-i18n="open_image">Open image</a></p>
-    <ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Bertrand_Russell" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.wikidata.org/wiki/Q33760" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.nobelprize.org/prizes/literature/1950/russell/facts/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://plato.stanford.edu/entries/russell/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </div>
+  <details class="info-popover">
+      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <div class="info-panel" id="info-2026-05-18-BertrandRussell-jpg">
+        <div class="meta-row">
+          <time class="tag date" datetime="2026-05-18" data-date="2026-05-18">18. 5. 2026</time>
+          <span class="tag science" data-category-tag="scientist">Scientist</span>
+          <span class="tag language">SL</span>
+          <span class="tag age" data-age-tag="1">Ages 6+</span>
+          <span class="tag source-count" data-source-count="4">4 sources</span>
+        </div>
+        <ul class="sources"><li><a href="https://en.wikipedia.org/wiki/Bertrand_Russell" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.wikidata.org/wiki/Q33760" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.nobelprize.org/prizes/literature/1950/russell/facts/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://plato.stanford.edu/entries/russell/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
+      </div>
+    </details>
 </article>
 <article class="card" data-person="Ernst von Bandel" data-category="artist" data-language="en" data-age-suitability="age_6">
-  <a class="thumb" href="ErnstVonBandel.png"><img src="ErnstVonBandel.png" alt="Infographic: Ernst von Bandel" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
-      <span class="tag date">2026-05-17</span>
-      <span class="tag artist" data-category-tag="artist">Artist</span>
-      <span class="tag language">EN</span>
-      <span class="tag age" data-age-tag="1">Ages 6+</span>
-      <span class="tag source-count" data-source-count="4">4 sources</span>
-    </div>
+  <a class="thumb" href="ErnstVonBandel.png" aria-label="Open infographic: Ernst von Bandel"><img src="ErnstVonBandel.png" alt="Infographic: Ernst von Bandel" loading="lazy"></a>
+  <div class="image-title">
     <h3>Ernst von Bandel</h3>
-    <p class="direct-link"><a href="ErnstVonBandel.png" data-i18n="open_image">Open image</a></p>
-    <ul class="sources"><li><a href="https://www.hermannsdenkmal.de/wissenswertes/der-erbauer-ernst-von-bandel/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.hermannsdenkmal.de/wissenswertes/entstehungsgeschichte/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.dhm.de/archiv/ausstellungen/gruenderzeit/biografien/bandel_ernst_von.html" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://sh-kunst.de/kuenstler/von-bandel-ernst/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </div>
+  <details class="info-popover">
+      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <div class="info-panel" id="info-2026-05-17-ErnstVonBandel-png">
+        <div class="meta-row">
+          <time class="tag date" datetime="2026-05-17" data-date="2026-05-17">17. 5. 2026</time>
+          <span class="tag artist" data-category-tag="artist">Artist</span>
+          <span class="tag language">EN</span>
+          <span class="tag age" data-age-tag="1">Ages 6+</span>
+          <span class="tag source-count" data-source-count="4">4 sources</span>
+        </div>
+        <ul class="sources"><li><a href="https://www.hermannsdenkmal.de/wissenswertes/der-erbauer-ernst-von-bandel/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.hermannsdenkmal.de/wissenswertes/entstehungsgeschichte/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.dhm.de/archiv/ausstellungen/gruenderzeit/biografien/bandel_ernst_von.html" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://sh-kunst.de/kuenstler/von-bandel-ernst/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
+      </div>
+    </details>
 </article>
 <article class="card" data-person="Adam Lonitzer" data-category="scientist" data-language="sl" data-age-suitability="age_6">
-  <a class="thumb" href="AdamLonitzer.jpg"><img src="AdamLonitzer.jpg" alt="Infographic: Adam Lonitzer" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
-      <span class="tag date">2026-05-16</span>
-      <span class="tag science" data-category-tag="scientist">Scientist</span>
-      <span class="tag language">SL</span>
-      <span class="tag age" data-age-tag="1">Ages 6+</span>
-      <span class="tag source-count" data-source-count="1">1 source</span>
-    </div>
+  <a class="thumb" href="AdamLonitzer.jpg" aria-label="Open infographic: Adam Lonitzer"><img src="AdamLonitzer.jpg" alt="Infographic: Adam Lonitzer" loading="lazy"></a>
+  <div class="image-title">
     <h3>Adam Lonitzer</h3>
-    <p class="direct-link"><a href="AdamLonitzer.jpg" data-i18n="open_image">Open image</a></p>
-    <ul class="sources"><li><a href="https://www.wikidata.org/wiki/Q65192" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </div>
+  <details class="info-popover">
+      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <div class="info-panel" id="info-2026-05-16-AdamLonitzer-jpg">
+        <div class="meta-row">
+          <time class="tag date" datetime="2026-05-16" data-date="2026-05-16">16. 5. 2026</time>
+          <span class="tag science" data-category-tag="scientist">Scientist</span>
+          <span class="tag language">SL</span>
+          <span class="tag age" data-age-tag="1">Ages 6+</span>
+          <span class="tag source-count" data-source-count="1">1 source</span>
+        </div>
+        <ul class="sources"><li><a href="https://www.wikidata.org/wiki/Q65192" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
+      </div>
+    </details>
 </article>
 <article class="card" data-person="Élie Metchnikoff" data-category="scientist" data-language="en" data-age-suitability="age_6">
-  <a class="thumb" href="ElieMetchnikoff.png"><img src="ElieMetchnikoff.png" alt="Infographic: Élie Metchnikoff" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
-      <span class="tag date">2026-05-15</span>
-      <span class="tag science" data-category-tag="scientist">Scientist</span>
-      <span class="tag language">EN</span>
-      <span class="tag age" data-age-tag="1">Ages 6+</span>
-      <span class="tag source-count" data-source-count="3">3 sources</span>
-    </div>
+  <a class="thumb" href="ElieMetchnikoff.png" aria-label="Open infographic: Élie Metchnikoff"><img src="ElieMetchnikoff.png" alt="Infographic: Élie Metchnikoff" loading="lazy"></a>
+  <div class="image-title">
     <h3>Élie Metchnikoff</h3>
-    <p class="direct-link"><a href="ElieMetchnikoff.png" data-i18n="open_image">Open image</a></p>
-    <ul class="sources"><li><a href="https://www.nobelprize.org/prizes/medicine/1908/mechnikov/biographical/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.nobelprize.org/prizes/medicine/1908/mechnikov/facts/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.britannica.com/biography/Elie-Metchnikoff" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </div>
+  <details class="info-popover">
+      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <div class="info-panel" id="info-2026-05-15-ElieMetchnikoff-png">
+        <div class="meta-row">
+          <time class="tag date" datetime="2026-05-15" data-date="2026-05-15">15. 5. 2026</time>
+          <span class="tag science" data-category-tag="scientist">Scientist</span>
+          <span class="tag language">EN</span>
+          <span class="tag age" data-age-tag="1">Ages 6+</span>
+          <span class="tag source-count" data-source-count="3">3 sources</span>
+        </div>
+        <ul class="sources"><li><a href="https://www.nobelprize.org/prizes/medicine/1908/mechnikov/biographical/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.nobelprize.org/prizes/medicine/1908/mechnikov/facts/" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.britannica.com/biography/Elie-Metchnikoff" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
+      </div>
+    </details>
 </article>
 <article class="card" data-person="Ada Lovelace" data-category="scientist" data-language="en" data-age-suitability="age_6">
-  <a class="thumb" href="AdaLovelace.png"><img src="AdaLovelace.png" alt="Infographic: Ada Lovelace" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
-      <span class="tag date">2026-05-15</span>
-      <span class="tag science" data-category-tag="scientist">Scientist</span>
-      <span class="tag language">EN</span>
-      <span class="tag age" data-age-tag="1">Ages 6+</span>
-      <span class="tag source-count" data-source-count="3">3 sources</span>
-    </div>
+  <a class="thumb" href="AdaLovelace.png" aria-label="Open infographic: Ada Lovelace"><img src="AdaLovelace.png" alt="Infographic: Ada Lovelace" loading="lazy"></a>
+  <div class="image-title">
     <h3>Ada Lovelace</h3>
-    <p class="direct-link"><a href="AdaLovelace.png" data-i18n="open_image">Open image</a></p>
-    <ul class="sources"><li><a href="https://www.britannica.com/biography/Ada-Lovelace" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.britannica.com/technology/Analytical-Engine" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.computerhistory.org/babbage/adalovelace" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </div>
+  <details class="info-popover">
+      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <div class="info-panel" id="info-2026-05-15-AdaLovelace-png">
+        <div class="meta-row">
+          <time class="tag date" datetime="2026-05-15" data-date="2026-05-15">15. 5. 2026</time>
+          <span class="tag science" data-category-tag="scientist">Scientist</span>
+          <span class="tag language">EN</span>
+          <span class="tag age" data-age-tag="1">Ages 6+</span>
+          <span class="tag source-count" data-source-count="3">3 sources</span>
+        </div>
+        <ul class="sources"><li><a href="https://www.britannica.com/biography/Ada-Lovelace" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.britannica.com/technology/Analytical-Engine" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.computerhistory.org/babbage/adalovelace" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
+      </div>
+    </details>
 </article>
 <article class="card" data-person="Fotosinteza" data-category="school_poster" data-language="sl" data-age-suitability="age_6">
-  <a class="thumb" href="Fotosinteza.png"><img src="Fotosinteza.png" alt="Infographic: Fotosinteza" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
-      <span class="tag date">2026-05-15</span>
-      <span class="tag school-poster" data-category-tag="school_poster">School poster</span>
-      <span class="tag language">SL</span>
-      <span class="tag age" data-age-tag="1">Ages 6+</span>
-      <span class="tag source-count" data-source-count="3">3 sources</span>
-    </div>
+  <a class="thumb" href="Fotosinteza.png" aria-label="Open infographic: Fotosinteza"><img src="Fotosinteza.png" alt="Infographic: Fotosinteza" loading="lazy"></a>
+  <div class="image-title">
     <h3>Fotosinteza</h3>
-    <p class="direct-link"><a href="Fotosinteza.png" data-i18n="open_image">Open image</a></p>
-    <ul class="sources"><li><a href="https://www.wikidata.org/wiki/Q11982" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://sl.wikipedia.org/wiki/Fotosinteza" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://en.wikipedia.org/wiki/Photosynthesis" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
   </div>
-</article>
-<article class="card" data-person="Alfred Rethel" data-category="artist" data-language="sl" data-age-suitability="age_6">
-  <a class="thumb" href="AlfredRethel.png"><img src="AlfredRethel.png" alt="Infographic: Alfred Rethel" loading="lazy"></a>
-  <div class="content">
-    <div class="meta-row">
-      <span class="tag date">2026-05-15</span>
-      <span class="tag artist" data-category-tag="artist">Artist</span>
-      <span class="tag language">SL</span>
-      <span class="tag age" data-age-tag="1">Ages 6+</span>
-      <span class="tag source-count" data-source-count="8">8 sources</span>
-    </div>
-    <h3>Alfred Rethel</h3>
-    <p class="direct-link"><a href="AlfredRethel.png" data-i18n="open_image">Open image</a></p>
-    <ul class="sources"><li><a href="https://www.wikidata.org/wiki/Q67036" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://en.wikipedia.org/wiki/Alfred_Rethel" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://www.britannica.com/biography/Alfred-Rethel" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://en.wikipedia.org/wiki/Alfred_Rethel" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
-  </div>
+  <details class="info-popover">
+      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <div class="info-panel" id="info-2026-05-15-Fotosinteza-png">
+        <div class="meta-row">
+          <time class="tag date" datetime="2026-05-15" data-date="2026-05-15">15. 5. 2026</time>
+          <span class="tag school-poster" data-category-tag="school_poster">School poster</span>
+          <span class="tag language">SL</span>
+          <span class="tag age" data-age-tag="1">Ages 6+</span>
+          <span class="tag source-count" data-source-count="3">3 sources</span>
+        </div>
+        <ul class="sources"><li><a href="https://www.wikidata.org/wiki/Q11982" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://sl.wikipedia.org/wiki/Fotosinteza" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li><li><a href="https://en.wikipedia.org/wiki/Photosynthesis" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li></ul>
+      </div>
+    </details>
 </article></div>
       <nav class="pagination"><a class="pill pager" href="page-3.html" data-i18n="pager_previous">← Previous</a><a class="pill pager" href="./">1</a><a class="pill pager" href="page-2.html">2</a><a class="pill pager" href="page-3.html">3</a><a class="pill pager active" href="page-4.html">4</a><a class="pill pager" href="page-5.html">5</a><a class="pill pager" href="page-6.html">6</a><a class="pill pager" href="page-7.html">7</a><a class="pill pager" href="page-8.html">8</a><a class="pill pager" href="page-9.html">9</a><a class="pill pager" href="page-10.html">10</a><a class="pill pager" href="page-11.html">11</a><a class="pill pager" href="page-12.html">12</a><a class="pill pager" href="page-13.html">13</a><a class="pill pager" href="page-14.html">14</a><a class="pill pager" href="page-15.html">15</a><a class="pill pager" href="page-16.html">16</a><a class="pill pager" href="page-5.html" data-i18n="pager_next">Next →</a></nav>
     </section>
     <footer class="footer surface">
-      <div data-i18n="footer_text">Public archive of daily infographics about famous artists, scientists and athletes.</div>
-      <div data-updated="2026-06-17 12:20">Updated: 2026-06-17 12:20</div>
+      <div><span data-i18n="footer_text">Public archive of daily infographics about famous people and science stories.</span> <span data-i18n="footer_generated_by">Generated by the</span> <a href="https://roj.world/swarms/famous-people-infographic" target="_blank" rel="noopener noreferrer" data-i18n="footer_swarm">Roj AI swarm</a>.</div>
+      <div data-updated="2026-06-17 13:31">Updated: 17. 6. 2026, 13:31</div>
     </footer>
   </main>
   <script>
@@ -379,19 +438,19 @@
     en: {
       document_title: 'Daily birthday infographic archive',
       brand_title: 'Daily birthday infographic archive',
-      brand_subtitle: 'Daily Slovenian infographics for kids',
+      brand_subtitle: 'Daily infographics for all ages',
       kofi: 'Support the site author',
       hero_eyebrow: 'Today’s image',
-      hero_title: 'A new daily infographic about famous artists, scientists and athletes.',
-      hero_intro: 'This public archive collects educational infographics for kids. Search, filter and browse older posts as a modern image gallery.',
+      hero_title: 'A new daily infographic about famous people and science stories.',
+      hero_intro: 'This public archive collects educational infographics and science explainers for all ages. Search, filter and browse older posts as a modern image gallery.',
       archive_heading_home: 'Archive as a modern gallery',
       archive_heading_page: 'Archive – page {page}',
-      archive_intro_home: 'Search by person, type, image language and age suitability.',
-      archive_intro_page: 'Browse older daily infographics by page or use search and filters.',
+      archive_intro_home: 'Search by person, topic, type, image language and age suitability.',
+      archive_intro_page: 'Browse older infographics and explainers by page or use search and filters.',
       total_prefix: 'Total:',
       page_prefix: 'Page {page}/{total}',
-      search_label: 'Search by person',
-      search_placeholder: 'e.g. Duke Ellington',
+      search_label: 'Search by person or topic',
+      search_placeholder: 'e.g. Duke Ellington or Webb telescope',
       category_label: 'Type',
       category_all: 'All types',
       image_language_label: 'Image language',
@@ -401,13 +460,13 @@
       initial_summary: 'Showing the initial selection for this page. Use search or filters above to search the full archive.',
       no_results: 'No results for the selected filters.',
       found: 'Results found: {count}',
-      open_image: 'Open image',
-      open_today: 'Open today’s image',
       source: 'source',
       sources_zero: 'No sources',
       sources_one: '1 source',
       sources_many: '{count} sources',
-      footer_text: 'Public archive of daily infographics about famous artists, scientists and athletes.',
+      footer_text: 'Public archive of daily infographics about famous people and science stories.',
+      footer_generated_by: 'Generated by the',
+      footer_swarm: 'Roj AI swarm',
       updated: 'Updated:',
       search_unavailable: 'Search and filters are currently unavailable.',
       pager_previous: '← Previous',
@@ -420,24 +479,25 @@
       category_science_news: 'Science news',
       age_age_6: 'Ages 6+',
       age_age_13: 'Ages 13+',
-      age_adult: 'Adults'
+      age_adult: 'Adults',
+      image_details: 'Show image details'
     },
     sl: {
       document_title: 'Arhiv dnevnih rojstnodnevnih infografik',
       brand_title: 'Arhiv dnevnih rojstnodnevnih infografik',
-      brand_subtitle: 'Dnevno ustvarjene slovenske infografike za otroke',
+      brand_subtitle: 'Dnevno ustvarjene infografike za vse starosti',
       kofi: 'Podpri avtorja strani',
       hero_eyebrow: 'Današnja slika',
-      hero_title: 'Vsak dan nova infografika o znanih umetnikih, znanstvenikih in športnikih.',
-      hero_intro: 'Javni arhiv zbira dnevno ustvarjene izobraževalne infografike za otroke. Spodaj lahko hitro iščeš, filtriraš in prelistaš starejše objave kot moderno galerijo slik.',
+      hero_title: 'Vsak dan nova infografika o znanih ljudeh in znanstvenih zgodbah.',
+      hero_intro: 'Javni arhiv zbira izobraževalne infografike in znanstvene razlagalnike za vse starosti. Spodaj lahko hitro iščeš, filtriraš in prelistaš starejše objave kot moderno galerijo slik.',
       archive_heading_home: 'Arhiv kot moderna galerija',
       archive_heading_page: 'Arhiv – stran {page}',
-      archive_intro_home: 'Išči po osebi ter filtriraj po vrsti, jeziku slike in starostni primernosti.',
-      archive_intro_page: 'Prelistaj starejše dnevne infografike po straneh ali uporabi iskanje in filtre.',
+      archive_intro_home: 'Išči po osebi ali temi ter filtriraj po vrsti, jeziku slike in starostni primernosti.',
+      archive_intro_page: 'Prelistaj starejše infografike in razlagalnike po straneh ali uporabi iskanje in filtre.',
       total_prefix: 'Skupaj:',
       page_prefix: 'Stran {page}/{total}',
-      search_label: 'Išči po osebi',
-      search_placeholder: 'npr. Duke Ellington',
+      search_label: 'Išči po osebi ali temi',
+      search_placeholder: 'npr. Duke Ellington ali teleskop Webb',
       category_label: 'Vrsta',
       category_all: 'Vse vrste',
       image_language_label: 'Jezik slike',
@@ -447,13 +507,13 @@
       initial_summary: 'Prikazan je začetni izbor za to stran. Za iskanje ali filtriranje celotnega arhiva uporabi polja zgoraj.',
       no_results: 'Za izbrane filtre ni zadetkov.',
       found: 'Najdenih zadetkov: {count}',
-      open_image: 'Odpri sliko',
-      open_today: 'Odpri današnjo sliko',
       source: 'vir',
       sources_zero: 'Brez virov',
       sources_one: '1 vir',
       sources_many: '{count} viri',
-      footer_text: 'Javni arhiv dnevnih infografik o znanih umetnikih, znanstvenikih in športnikih.',
+      footer_text: 'Javni arhiv dnevnih infografik o znanih ljudeh in znanstvenih zgodbah.',
+      footer_generated_by: 'Ustvarja jih',
+      footer_swarm: 'Roj AI swarm',
       updated: 'Posodobljeno:',
       search_unavailable: 'Iskanje in filtri trenutno niso na voljo.',
       pager_previous: '← Prejšnja',
@@ -466,7 +526,8 @@
       category_science_news: 'Znanstvena novica',
       age_age_6: '6+ let',
       age_age_13: '13+ let',
-      age_adult: 'Odrasli'
+      age_adult: 'Odrasli',
+      image_details: 'Pokaži podrobnosti slike'
     }
   };
 
@@ -489,6 +550,18 @@
       .replace(/'/g, '&#39;');
   }
 
+  function formatDate(value) {
+    const match = String(value || '').match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if (!match) return value || '';
+    return `${Number(match[3])}. ${Number(match[2])}. ${match[1]}`;
+  }
+
+  function formatUpdated(value) {
+    const match = String(value || '').match(/^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}:\d{2})/);
+    if (!match) return value || '';
+    return `${Number(match[3])}. ${Number(match[2])}. ${match[1]}, ${match[4]}`;
+  }
+
   function categoryLabel(category) {
     return t(`category_${category || 'scientist'}`);
   }
@@ -503,8 +576,9 @@
   }
 
   function ageBadges(keys) {
-    if (!keys || !keys.length) return '';
-    return `<span class="tag age" data-age-tag="1">${escapeHtml(keys.map(ageLabel).join(', '))}</span>`;
+    const labels = (keys || []).map(ageLabel).filter(Boolean);
+    if (!labels.length) return '';
+    return `<span class="tag age" data-age-tag="1">${escapeHtml(labels.join(', '))}</span>`;
   }
 
   function renderSources(sources) {
@@ -512,23 +586,30 @@
     return `<ul class="sources">${sources.slice(0, 4).map((url) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" data-source-link="1">${escapeHtml(t('source'))}</a></li>`).join('')}</ul>`;
   }
 
-  function renderCard(entry, featured) {
-    const featureClass = featured ? ' feature' : '';
+  function renderInfoOverlay(entry) {
     const ageKeys = entry.age_suitability_keys || [];
-    return `<article class="card${featureClass}" data-person="${escapeHtml(entry.person)}" data-category="${escapeHtml(entry.category)}" data-language="${escapeHtml(entry.language)}" data-age-suitability="${escapeHtml(ageKeys.join(' '))}">
-      <a class="thumb" href="${escapeHtml(entry.filename)}"><img src="${escapeHtml(entry.filename)}" alt="Infographic: ${escapeHtml(entry.person)}" loading="lazy"></a>
-      <div class="content">
+    return `<details class="info-popover">
+      <summary class="info-button" aria-label="${escapeHtml(t('image_details'))}" data-info-label="1">i</summary>
+      <div class="info-panel">
         <div class="meta-row">
-          <span class="tag date">${escapeHtml(entry.date)}</span>
+          <time class="tag date" datetime="${escapeHtml(entry.date)}" data-date="${escapeHtml(entry.date)}">${escapeHtml(formatDate(entry.date))}</time>
           <span class="tag ${escapeHtml(entry.category_class)}" data-category-tag="${escapeHtml(entry.category)}">${escapeHtml(categoryLabel(entry.category))}</span>
           <span class="tag language">${escapeHtml(entry.language_label)}</span>
           ${ageBadges(ageKeys)}
           <span class="tag source-count" data-source-count="${Number(entry.source_count || 0)}">${sourceCountLabel(entry.source_count)}</span>
         </div>
-        <h3>${escapeHtml(entry.person)}</h3>
-        <p class="direct-link"><a href="${escapeHtml(entry.filename)}" data-i18n="open_image">${escapeHtml(t('open_image'))}</a></p>
         ${renderSources(entry.sources || [])}
       </div>
+    </details>`;
+  }
+
+  function renderCard(entry, featured) {
+    const featureClass = featured ? ' feature' : '';
+    const ageKeys = entry.age_suitability_keys || [];
+    return `<article class="card${featureClass}" data-person="${escapeHtml(entry.person)}" data-category="${escapeHtml(entry.category)}" data-language="${escapeHtml(entry.language)}" data-age-suitability="${escapeHtml(ageKeys.join(' '))}">
+      <a class="thumb" href="${escapeHtml(entry.filename)}" aria-label="Open infographic: ${escapeHtml(entry.person)}"><img src="${escapeHtml(entry.filename)}" alt="Infographic: ${escapeHtml(entry.person)}" loading="lazy"></a>
+      <div class="image-title"><h3>${escapeHtml(entry.person)}</h3></div>
+      ${renderInfoOverlay(entry)}
     </article>`;
   }
 
@@ -543,14 +624,24 @@
       node.setAttribute('placeholder', t(node.dataset.i18nPlaceholder));
     });
     document.querySelectorAll('[data-source-link]').forEach((node) => { node.textContent = t('source'); });
+    document.querySelectorAll('[data-info-label]').forEach((node) => { node.setAttribute('aria-label', t('image_details')); });
+    document.querySelectorAll('[data-date]').forEach((node) => { node.textContent = formatDate(node.dataset.date); });
     document.querySelectorAll('[data-source-count]').forEach((node) => { node.textContent = sourceCountLabel(Number(node.dataset.sourceCount || 0)); });
     document.querySelectorAll('[data-category-option]').forEach((node) => { node.textContent = categoryLabel(node.dataset.categoryOption); });
     document.querySelectorAll('[data-age-option]').forEach((node) => { node.textContent = ageLabel(node.dataset.ageOption); });
     document.querySelectorAll('[data-category-tag]').forEach((node) => { node.textContent = categoryLabel(node.dataset.categoryTag); });
     document.querySelectorAll('[data-age-tag]').forEach((node) => {
       const parent = node.closest('[data-age-suitability]');
-      const keys = parent ? parent.dataset.ageSuitability.split(/\s+/).filter(Boolean) : [];
-      node.textContent = keys.map(ageLabel).join(', ');
+      const rawKeys = parent ? parent.dataset.ageSuitability : (node.dataset.ageKey || '');
+      const keys = rawKeys.split(/\s+/).filter(Boolean);
+      const label = keys.map(ageLabel).filter(Boolean).join(', ');
+      if (label) {
+        node.textContent = label;
+        node.hidden = false;
+      } else {
+        node.hidden = true;
+        node.textContent = '';
+      }
     });
     document.querySelectorAll('[data-lang-option]').forEach((button) => {
       const active = button.dataset.langOption === uiLang;
@@ -566,7 +657,7 @@
     const archiveIntro = document.querySelector('[data-archive-intro]');
     if (archiveIntro) archiveIntro.textContent = archiveIntro.dataset.page === '1' ? t('archive_intro_home') : t('archive_intro_page');
     const updatedNode = document.querySelector('[data-updated]');
-    if (updatedNode) updatedNode.textContent = `${t('updated')} ${updatedNode.dataset.updated}`;
+    if (updatedNode) updatedNode.textContent = `${t('updated')} ${formatUpdated(updatedNode.dataset.updated)}`;
   }
 
   function applyFilters() {
