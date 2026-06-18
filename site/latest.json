@@ -1,19 +1,19 @@
 {
   "date": "2026-06-18",
-  "person": "druga svetovna vojna",
-  "image_filename": "DrugaSvetovnaVojna.png",
+  "person": "elektrika",
+  "image_filename": "Elektrika.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://www.britannica.com/event/World-War-II",
-    "https://www.iwm.org.uk/history/how-did-world-war-two-start",
-    "https://encyclopedia.ushmm.org/content/en/article/world-war-ii-in-europe",
-    "https://www.nationalww2museum.org/war/articles/world-war-ii-facts",
-    "https://www.wikidata.org/wiki/Q362"
+    "https://www.khanacademy.org/science/physics/circuits-topic/circuits-resistance/a/ee-voltage-and-current",
+    "https://www.wikidata.org/wiki/Q12725",
+    "https://openstax.org/books/university-physics-volume-2/pages/5-introduction",
+    "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+    "https://openstax.org/books/university-physics-volume-2/pages/9-1-electrical-current"
   ],
-  "total_entries": 158,
+  "total_entries": 159,
   "total_pages": 16,
   "per_page": 10
 }

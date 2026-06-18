@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 158,
+    "total_entries": 159,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,82 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 158
+      "age_6": 159
     },
     "category_counts": {
-      "school_poster": 18,
+      "school_poster": 19,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "sl": 140,
+      "sl": 141,
       "en": 18
     }
   },
   "entries": [
+    {
+      "date": "2026-06-18",
+      "person": "elektrika",
+      "filename": "Elektrika.png",
+      "image_filename": "Elektrika.png",
+      "sources": [
+        "https://www.khanacademy.org/science/physics/circuits-topic/circuits-resistance/a/ee-voltage-and-current",
+        "https://www.wikidata.org/wiki/Q12725",
+        "https://openstax.org/books/university-physics-volume-2/pages/5-introduction",
+        "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+        "https://openstax.org/books/university-physics-volume-2/pages/9-1-electrical-current"
+      ],
+      "title": "Elektrika",
+      "summary": "Slovenski srednješolski stenski plakat, ki razloži elektriko skozi sklenjen tokokrog: naboj, tok, napetost, upor, moč, enote, formule in varnost.",
+      "age_suitability_details": {
+        "age_6": "Preprosto: elektrika je energija, ki lahko teče po sklenjeni poti in prižge žarnico; varno ravnamo s suhimi rokami in celimi kabli.",
+        "age_13": "Razloži naboj, električni tok, napetost, upor, moč, enote A/V/Ω/W ter osnovne formule I = Q/t, R = U/I in P = U·I na primeru sklenjenega tokokroga.",
+        "adult": "Jedrnat referenčni plakat poveže mikroskopsko gibanje naboja z merljivimi količinami v vezju, Ohmovim zakonom, močjo in praktičnimi varnostnimi pravili."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "256deb5c-62e8-4d2d-b6c9-c9f11bdd9ca5",
+      "_kind": "native",
+      "_source_mtime": 1781778730.3939872,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 5,
+      "search_text": "elektrika school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-18",
       "person": "druga svetovna vojna",
