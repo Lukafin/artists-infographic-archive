@@ -1,24 +1,17 @@
 {
-  "date": "2026-06-17",
-  "person": "deoksiribonukleinska kislina",
-  "image_filename": "DeoksiribonukleinskaKislina.png",
+  "date": "2026-06-18",
+  "person": "druga svetovna vojna",
+  "image_filename": "DrugaSvetovnaVojna.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid",
-    "https://www.ncbi.nlm.nih.gov/books/NBK26821/",
-    "https://www.wikidata.org/wiki/Q7430"
-  ],
-  "age_suitability_keys": [
-    "age_6"
-  ],
-  "age_suitability_labels_en": [
-    "Ages 6+"
-  ],
-  "age_suitability_labels_sl": [
-    "6+ let"
+    "https://www.britannica.com/event/World-War-II",
+    "https://www.iwm.org.uk/history/how-did-world-war-two-start",
+    "https://encyclopedia.ushmm.org/content/en/article/world-war-ii-in-europe",
+    "https://www.nationalww2museum.org/war/articles/world-war-ii-facts",
+    "https://www.wikidata.org/wiki/Q362"
   ],
   "total_entries": 158,
   "total_pages": 16,
