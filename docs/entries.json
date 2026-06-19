@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 159,
+    "total_entries": 160,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,81 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 159
+      "age_6": 160
     },
     "category_counts": {
-      "school_poster": 19,
+      "school_poster": 20,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "sl": 141,
+      "sl": 142,
       "en": 18
     }
   },
   "entries": [
+    {
+      "date": "2026-06-19",
+      "person": "elektromagnetno sevanje",
+      "filename": "ElektromagnetnoSevanje.png",
+      "image_filename": "ElektromagnetnoSevanje.png",
+      "sources": [
+        "https://science.nasa.gov/ems/",
+        "https://www.khanacademy.org/science/physics/light-waves/introduction-to-light-waves/a/light-and-the-electromagnetic-spectrum",
+        "https://www.britannica.com/science/electromagnetic-radiation",
+        "https://www.wikidata.org/wiki/Q12969754"
+      ],
+      "title": "Elektromagnetno sevanje",
+      "summary": "Slovenski srednješolski stenski plakat, ki razloži elektromagnetno sevanje kot potovanje po spektru: valovna dolžina, frekvenca, energija, hitrost svetlobe, vsakdanje uporabe in varnost.",
+      "age_suitability_details": {
+        "age_6": "Preprosto: svetloba in nevidni valovi prenašajo energijo; nekateri nam pomagajo pri radiu, toploti, gledanju in zdravstvu.",
+        "age_13": "Poveže elektromagnetno sevanje s spektrom, valovno dolžino, frekvenco, energijo in formulo c = f × λ ter razloži uporabo in osnovno varnost.",
+        "adult": "Jedrnat referenčni plakat prikaže EM valovanje kot sklop električnega in magnetnega polja, razpon spektra in energijsko-frekvenčni gradient od radijskih do gama žarkov."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "ab0ab6d9-d726-40db-b7fc-6ec0b6634446",
+      "_kind": "native",
+      "_source_mtime": 1781845504.186278,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "elektromagnetno sevanje school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-18",
       "person": "elektrika",
