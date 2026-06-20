@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 160,
+    "total_entries": 161,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,82 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 160
+      "age_6": 161
     },
     "category_counts": {
-      "school_poster": 20,
+      "school_poster": 21,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "sl": 142,
+      "sl": 143,
       "en": 18
     }
   },
   "entries": [
+    {
+      "date": "2026-06-20",
+      "person": "erozija",
+      "filename": "Erozija.png",
+      "image_filename": "Erozija.png",
+      "sources": [
+        "https://www.britannica.com/science/erosion-geology",
+        "https://education.nationalgeographic.org/resource/erosion/",
+        "https://www.usgs.gov/special-topics/water-science-school/science/erosion-and-sedimentation",
+        "https://www.nrcs.usda.gov/conservation-basics/natural-resource-concerns/soil/erosion",
+        "https://www.wikidata.org/wiki/Q80026"
+      ],
+      "title": "Erozija",
+      "summary": "Slovenski srednješolski stenski plakat, ki razloži erozijo kot pot od preperevanja in odluščenja do prenosa in odlaganja: voda, veter, led, valovi, gravitacija, človeški vplivi in varovanje tal.",
+      "age_suitability_details": {
+        "age_6": "Preprosto: voda, veter in led lahko odnašajo zemljo in kamenčke; korenine pomagajo prst držati na mestu.",
+        "age_13": "Razloži razliko med preperevanjem in erozijo, proces preperevanje–odluščenje–prenos–odlaganje ter vpliv rastlin, pobočij in odtoka.",
+        "adult": "Jedrnat geomorfološki referenčni plakat o naravnih in pospešenih erozijskih procesih, sedimentnem transportu, odlaganju in varovanju tal."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "7eb22221-6a93-4701-a963-262c3f5cf1c2",
+      "_kind": "native",
+      "_source_mtime": 1781934515.4642181,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 5,
+      "search_text": "erozija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-19",
       "person": "elektromagnetno sevanje",
