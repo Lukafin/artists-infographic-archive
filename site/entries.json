@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 162,
+    "total_entries": 163,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,81 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 162
+      "age_6": 163
     },
     "category_counts": {
-      "school_poster": 22,
+      "school_poster": 23,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "sl": 144,
+      "sl": 145,
       "en": 18
     }
   },
   "entries": [
+    {
+      "date": "2026-06-22",
+      "person": "francoska revolucija",
+      "filename": "FrancoskaRevolucija.png",
+      "image_filename": "FrancoskaRevolucija.png",
+      "sources": [
+        "https://www.britannica.com/event/French-Revolution",
+        "https://www.history.com/topics/european-history/french-revolution",
+        "https://www.wikidata.org/wiki/Q6534",
+        "https://www.assemblee-nationale.fr/histoire/dudh/1789.asp"
+      ],
+      "title": "Francoska revolucija (1789–1799)",
+      "summary": "Slovenski srednješolski stenski plakat o francoski revoluciji: vzroki, ključni dogodki 1789–1799, ideje svobode/enakosti/bratstva in glavne politične posledice.",
+      "age_suitability_details": {
+        "age_6": "Ni ciljno za mlajše otroke; slike so nenasilne, vendar tema vključuje revolucijo in politični konflikt. Mlajši potrebujejo razlago odraslega.",
+        "age_13": "Primerno za radovedne učence: kratke oznake, jasna časovnica, osnovni vzroki in posledice brez grafičnega nasilja.",
+        "adult": "Primerno kot hiter učni povzetek; poenostavljeno, a vezano na javne zgodovinske vire."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "0e5e0af0-2e87-455f-ac21-7e34d3c98127",
+      "_kind": "native",
+      "_source_mtime": 1782104919.0886936,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "francoska revolucija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-21",
       "person": "evolucija",
