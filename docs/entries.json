@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 163,
+    "total_entries": 164,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,81 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 163
+      "age_6": 164
     },
     "category_counts": {
-      "school_poster": 23,
+      "school_poster": 24,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "sl": 145,
+      "sl": 146,
       "en": 18
     }
   },
   "entries": [
+    {
+      "date": "2026-06-23",
+      "person": "gibanje",
+      "filename": "Gibanje.png",
+      "image_filename": "Gibanje.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q79782",
+        "https://en.wikipedia.org/wiki/Motion",
+        "https://www.physicsclassroom.com/class/1DKin/Lesson-1/Speed-and-Velocity",
+        "https://openstax.org/books/college-physics-2e/pages/2-introduction-to-one-dimensional-kinematics"
+      ],
+      "title": "Gibanje — šolski plakat",
+      "summary": "Slovenski srednješolski stenski plakat razloži gibanje kot spremembo lege v času: lega, pot, čas, hitrost, pospešek, vrste gibanja in pomen opazovalca.",
+      "age_suitability_details": {
+        "age_6": "Gibanje pomeni, da se nekaj premakne. Če voziček ni več na istem mestu in mine nekaj časa, se giblje.",
+        "age_13": "Gibanje opišemo z lego, časom in potjo. Hitrost pove, koliko poti telo opravi v določenem času, pospešek pa pove, kako se hitrost spreminja.",
+        "adult": "V kinematiki je gibanje sprememba lege telesa v izbranem referenčnem sistemu kot funkcija časa. Osnovne količine so lega, premik oziroma pot, hitrost in pospešek; isti dogodek je lahko opisan različno glede na opazovalca."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "72de7272-e35a-45cd-b925-64d328eb48d0",
+      "_kind": "native",
+      "_source_mtime": 1782191300.76085,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "gibanje school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-22",
       "person": "francoska revolucija",
