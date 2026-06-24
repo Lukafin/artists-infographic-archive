@@ -1,18 +1,18 @@
 {
-  "date": "2026-06-23",
-  "person": "gibanje",
-  "image_filename": "Gibanje.png",
+  "date": "2026-06-24",
+  "person": "globalizacija",
+  "image_filename": "Globalizacija.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://www.wikidata.org/wiki/Q79782",
-    "https://en.wikipedia.org/wiki/Motion",
-    "https://www.physicsclassroom.com/class/1DKin/Lesson-1/Speed-and-Velocity",
-    "https://openstax.org/books/college-physics-2e/pages/2-introduction-to-one-dimensional-kinematics"
+    "https://www.wikidata.org/wiki/Special:EntityData/Q7181.json",
+    "https://www.britannica.com/money/globalization",
+    "https://www.imf.org/external/np/exr/ib/2008/053008.htm",
+    "https://www.who.int/health-topics/globalization"
   ],
-  "total_entries": 164,
+  "total_entries": 165,
   "total_pages": 17,
   "per_page": 10
 }
