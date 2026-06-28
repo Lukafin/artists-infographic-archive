@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 165,
+    "total_entries": 166,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,77 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 165
+      "age_6": 166
     },
     "category_counts": {
-      "school_poster": 25,
+      "school_poster": 26,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "sl": 147,
+      "sl": 148,
       "en": 18
     }
   },
   "entries": [
+    {
+      "date": "2026-06-28",
+      "person": "gora",
+      "filename": "Gora.png",
+      "image_filename": "Gora.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q8502",
+        "https://www.britannica.com/science/mountain-landform",
+        "https://education.nationalgeographic.org/resource/mountains/",
+        "https://www.usgs.gov/faqs/how-are-mountains-formed"
+      ],
+      "title": "Gora — od doline do vrha",
+      "summary": null,
+      "age_suitability_details": {},
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "2931408e-f246-4001-974e-fff8f872d623",
+      "_kind": "native",
+      "_source_mtime": 1782679152.0475872,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "gora school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-24",
       "person": "globalizacija",
