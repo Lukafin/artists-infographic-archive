@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 166,
+    "total_entries": 167,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,77 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 166
+      "age_6": 167
     },
     "category_counts": {
-      "school_poster": 26,
+      "school_poster": 27,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "sl": 148,
+      "sl": 149,
       "en": 18
     }
   },
   "entries": [
+    {
+      "date": "2026-06-29",
+      "person": "gostota prebivalstva",
+      "filename": "GostotaPrebivalstva.png",
+      "image_filename": "GostotaPrebivalstva.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q22856",
+        "https://sl.wikipedia.org/wiki/Gostota_prebivalstva",
+        "https://en.wikipedia.org/wiki/Population_density",
+        "https://api.worldbank.org/v2/indicator/EN.POP.DNST?format=json"
+      ],
+      "title": "Gostota prebivalstva",
+      "summary": "Slovenian high-school classroom wall poster explaining population density as people divided by area, using a choropleth city-map cross-section and concise classroom-readable labels.",
+      "age_suitability_details": {},
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "7618a817-20b9-475c-ba8d-897a02fcf98b",
+      "_kind": "native",
+      "_source_mtime": 1782709511.0067453,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "gostota prebivalstva school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-28",
       "person": "gora",
