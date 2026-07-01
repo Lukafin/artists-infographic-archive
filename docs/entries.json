@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 168,
+    "total_entries": 169,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,82 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 168
+      "age_6": 169
     },
     "category_counts": {
-      "school_poster": 28,
+      "school_poster": 29,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "sl": 150,
+      "sl": 151,
       "en": 18
     }
   },
   "entries": [
+    {
+      "date": "2026-07-01",
+      "person": "industrijska revolucija",
+      "filename": "IndustrijskaRevolucija.png",
+      "image_filename": "IndustrijskaRevolucija.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2269",
+        "https://en.wikipedia.org/wiki/Industrial_Revolution",
+        "https://sl.wikipedia.org/wiki/Industrijska_revolucija",
+        "https://www.britannica.com/event/Industrial-Revolution",
+        "https://www.sciencemuseum.org.uk/objects-and-stories/everyday-wonders/industrial-revolution"
+      ],
+      "title": "Industrijska revolucija — šolski stenski plakat",
+      "summary": null,
+      "age_suitability_details": {
+        "age_6": "Ljudje so začeli uporabljati velike stroje, ki so jih poganjali para, premog in kasneje drugi viri energije. Zato so lahko izdelali več stvari hitreje kot prej.",
+        "age_13": "Industrijska revolucija je spremenila proizvodnjo: delo se je preselilo iz domačih delavnic v tovarne, parni stroji in železnice pa so pospešili proizvodnjo, prevoz in rast mest. Prinesla je več blaga, a tudi težke delovne razmere in onesnaženje.",
+        "adult": "Industrijska revolucija označuje dolg gospodarski in tehnološki prehod od predindustrijske obrtne proizvodnje k mehanizirani proizvodnji, fosilni energiji, tovarniški organizaciji dela in integriranim prometnim/tržnim sistemom. Poleg rasti produktivnosti je povzročila urbanizacijo, razredno preoblikovanje, okoljske stroške in nove politične zahteve po delavskih pravicah."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "72d4c51f-e2c5-47a5-8555-cd002caf4c11",
+      "_kind": "native",
+      "_source_mtime": 1782882373.657796,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 5,
+      "search_text": "industrijska revolucija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-06-30",
       "person": "gravitacija",
