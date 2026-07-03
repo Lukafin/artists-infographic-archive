@@ -1,18 +1,17 @@
 {
-  "date": "2026-07-02",
-  "person": "karta",
-  "image_filename": "Karta.png",
+  "date": "2026-07-03",
+  "person": "kemična reakcija",
+  "image_filename": "KemicnaReakcija.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://education.nationalgeographic.org/resource/map/",
-    "https://www.britannica.com/science/map",
-    "https://en.wikipedia.org/wiki/Map",
-    "https://www.wikidata.org/wiki/Q4006"
+    "https://www.wikidata.org/wiki/Q36534",
+    "https://en.wikipedia.org/wiki/Chemical_reaction",
+    "https://sl.wikipedia.org/wiki/Kemijska_reakcija"
   ],
-  "total_entries": 170,
+  "total_entries": 171,
   "total_pages": 17,
   "per_page": 10
 }

@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 170,
+    "total_entries": 171,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,80 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 170
+      "age_6": 171
     },
     "category_counts": {
-      "school_poster": 30,
+      "school_poster": 31,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "sl": 152,
+      "sl": 153,
       "en": 18
     }
   },
   "entries": [
+    {
+      "date": "2026-07-03",
+      "person": "kemična reakcija",
+      "filename": "KemicnaReakcija.png",
+      "image_filename": "KemicnaReakcija.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q36534",
+        "https://en.wikipedia.org/wiki/Chemical_reaction",
+        "https://sl.wikipedia.org/wiki/Kemijska_reakcija"
+      ],
+      "title": "Kemična reakcija — šolski stenski plakat",
+      "summary": null,
+      "age_suitability_details": {
+        "age_6": "Kemična reakcija je sprememba, pri kateri iz snovi nastanejo nove snovi, na primer mehurčki pri kisu in sodi.",
+        "age_13": "Pri kemični reakciji se atomi prerazporedijo: vezi se pretrgajo in nastanejo nove vezi. Atomi se ohranijo, zato moramo kemijske enačbe uravnotežiti.",
+        "adult": "Kemična reakcija je proces pretvorbe reaktantov v produkte z reorganizacijo elektronskih vezi in atomskih razporeditev; opisujemo jo z uravnoteženimi enačbami, termodinamskimi spremembami, kinetiko in katalizo."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "0a5a86be-7c43-46d5-afae-3d4a578a6eb6",
+      "_kind": "native",
+      "_source_mtime": 1783055219.567526,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "kemična reakcija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-07-02",
       "person": "karta",
