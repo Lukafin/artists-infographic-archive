@@ -1,17 +1,18 @@
 {
-  "date": "2026-07-03",
-  "person": "kemična reakcija",
-  "image_filename": "KemicnaReakcija.png",
+  "date": "2026-07-04",
+  "person": "kroženje vode",
+  "image_filename": "KrozenjeVode.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "sources": [
-    "https://www.wikidata.org/wiki/Q36534",
-    "https://en.wikipedia.org/wiki/Chemical_reaction",
-    "https://sl.wikipedia.org/wiki/Kemijska_reakcija"
+    "https://www.noaa.gov/education/resource-collections/freshwater/water-cycle",
+    "https://www.usgs.gov/special-topics/water-science-school/science/water-cycle",
+    "https://education.nationalgeographic.org/resource/water-cycle/",
+    "https://www.wikidata.org/wiki/Q81041"
   ],
-  "total_entries": 171,
-  "total_pages": 17,
+  "total_entries": 172,
+  "total_pages": 18,
   "per_page": 10
 }
