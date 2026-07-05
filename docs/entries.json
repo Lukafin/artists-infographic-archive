@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 172,
+    "total_entries": 173,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,80 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 172
+      "age_6": 173
     },
     "category_counts": {
-      "school_poster": 32,
+      "school_poster": 33,
       "artist": 40,
       "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "sl": 154,
+      "sl": 155,
       "en": 18
     }
   },
   "entries": [
+    {
+      "date": "2026-07-05",
+      "person": "periodni sistem elementov",
+      "filename": "PeriodniSistemElementov.png",
+      "image_filename": "PeriodniSistemElementov.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q10693",
+        "https://sl.wikipedia.org/wiki/Periodni_sistem_elementov",
+        "https://en.wikipedia.org/wiki/Periodic_table"
+      ],
+      "title": "Periodni sistem elementov — zemljevid kemije",
+      "summary": "Šolski stenski plakat razloži periodni sistem kot zemljevid kemije: atomska števila, periode, skupine in bloke elementov.",
+      "age_suitability_details": {
+        "age_6": "Elemente lahko razvrstimo v pregledno tabelo, kjer ima vsak element svoje mesto in oznako.",
+        "age_13": "Periodni sistem razporeja elemente po atomskem številu; vrstice so periode, stolpci skupine, podobne lastnosti pa se ponavljajo v vzorcih.",
+        "adult": "Periodni sistem povezuje elektronsko zgradbo atomov z opaznimi kemijskimi lastnostmi ter omogoča napovedovanje skupin, blokov in trendov elementov."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "b9c43c3a-b012-4b2e-8b76-16476b4d8913",
+      "_kind": "native",
+      "_source": "roj-cli-publish-repair-2026-07-05",
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "periodni sistem elementov school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-07-04",
       "person": "kroženje vode",
