@@ -1,15 +1,16 @@
 {
-  "date": "2026-07-05",
-  "person": "periodni sistem elementov",
-  "image_filename": "PeriodniSistemElementov.png",
-  "category": "school_poster",
-  "category_label": "Šolski plakat",
-  "language": "sl",
-  "language_label": "SL",
+  "date": "2026-07-06",
+  "person": "Marie Curie",
+  "image_filename": "MarieCurie.png",
+  "category": "scientist",
+  "category_label": "Znanstvenik",
+  "language": "en",
+  "language_label": "EN",
   "sources": [
-    "https://www.wikidata.org/wiki/Q10693",
-    "https://sl.wikipedia.org/wiki/Periodni_sistem_elementov",
-    "https://en.wikipedia.org/wiki/Periodic_table"
+    "https://www.nobelprize.org/prizes/physics/1903/marie-curie/biographical/",
+    "https://www.nobelprize.org/prizes/chemistry/1911/marie-curie/facts/",
+    "https://www.britannica.com/biography/Marie-Curie",
+    "https://ahf.nuclearmuseum.org/ahf/profile/marie-curie/"
   ],
   "total_entries": 173,
   "total_pages": 18,

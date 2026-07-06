@@ -20,33 +20,34 @@
       "age_6": 173
     },
     "category_counts": {
-      "school_poster": 33,
+      "scientist": 98,
+      "school_poster": 32,
       "artist": 40,
-      "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "sl": 155,
-      "en": 18
+      "en": 19,
+      "sl": 154
     }
   },
   "entries": [
     {
-      "date": "2026-07-05",
-      "person": "periodni sistem elementov",
-      "filename": "PeriodniSistemElementov.png",
-      "image_filename": "PeriodniSistemElementov.png",
+      "date": "2026-07-06",
+      "person": "Marie Curie",
+      "filename": "MarieCurie.png",
+      "image_filename": "MarieCurie.png",
       "sources": [
-        "https://www.wikidata.org/wiki/Q10693",
-        "https://sl.wikipedia.org/wiki/Periodni_sistem_elementov",
-        "https://en.wikipedia.org/wiki/Periodic_table"
+        "https://www.nobelprize.org/prizes/physics/1903/marie-curie/biographical/",
+        "https://www.nobelprize.org/prizes/chemistry/1911/marie-curie/facts/",
+        "https://www.britannica.com/biography/Marie-Curie",
+        "https://ahf.nuclearmuseum.org/ahf/profile/marie-curie/"
       ],
-      "title": "Periodni sistem elementov — zemljevid kemije",
-      "summary": "Šolski stenski plakat razloži periodni sistem kot zemljevid kemije: atomska števila, periode, skupine in bloke elementov.",
+      "title": "Marie Curie — Science That Made Invisible Rays Visible",
+      "summary": "A kid-friendly English infographic about Marie Curie, her radioactivity research, polonium and radium, two Nobel Prizes, and World War I mobile X-ray work.",
       "age_suitability_details": {
-        "age_6": "Elemente lahko razvrstimo v pregledno tabelo, kjer ima vsak element svoje mesto in oznako.",
-        "age_13": "Periodni sistem razporeja elemente po atomskem številu; vrstice so periode, stolpci skupine, podobne lastnosti pa se ponavljajo v vzorcih.",
-        "adult": "Periodni sistem povezuje elektronsko zgradbo atomov z opaznimi kemijskimi lastnostmi ter omogoča napovedovanje skupin, blokov in trendov elementov."
+        "age_6": "Readable as a science hero poster: children can understand that Marie Curie studied invisible rays and helped doctors, though Nobel Prize details may need an adult explanation.",
+        "age_13": "Appropriate for middle/high-school students: includes radioactivity, polonium/radium, Nobel dates, and World War I medical X-ray context in concise language.",
+        "adult": "Historically accurate high-level overview of Curie’s scientific significance; simplified for education and not a full biography or radiation-safety history."
       },
       "age_suitability_levels": [
         {
@@ -71,14 +72,14 @@
           "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
         }
       ],
-      "category": "school_poster",
-      "language": "sl",
-      "assignment_id": "b9c43c3a-b012-4b2e-8b76-16476b4d8913",
+      "category": "scientist",
+      "language": "en",
+      "assignment_id": "d2431f11-86d0-4156-8e66-0e1cc963e3b5",
       "_kind": "native",
-      "_source": "roj-cli-publish-repair-2026-07-05",
-      "category_label": "Šolski plakat",
-      "category_class": "school-poster",
-      "language_label": "SL",
+      "_source_mtime": 1783314335.295329,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "EN",
       "age_suitability_keys": [
         "age_6"
       ],
@@ -88,8 +89,8 @@
       "age_suitability_labels_sl": [
         "6+ let"
       ],
-      "source_count": 3,
-      "search_text": "periodni sistem elementov school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "source_count": 4,
+      "search_text": "marie curie scientist znanstvenik en age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-07-04",

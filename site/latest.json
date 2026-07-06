@@ -1,18 +1,18 @@
 {
-  "date": "2026-07-04",
-  "person": "kroženje vode",
-  "image_filename": "KrozenjeVode.png",
-  "category": "school_poster",
-  "category_label": "Šolski plakat",
-  "language": "sl",
-  "language_label": "SL",
+  "date": "2026-07-06",
+  "person": "Marie Curie",
+  "image_filename": "MarieCurie.png",
+  "category": "scientist",
+  "category_label": "Znanstvenik",
+  "language": "en",
+  "language_label": "EN",
   "sources": [
-    "https://www.noaa.gov/education/resource-collections/freshwater/water-cycle",
-    "https://www.usgs.gov/special-topics/water-science-school/science/water-cycle",
-    "https://education.nationalgeographic.org/resource/water-cycle/",
-    "https://www.wikidata.org/wiki/Q81041"
+    "https://www.nobelprize.org/prizes/physics/1903/marie-curie/biographical/",
+    "https://www.nobelprize.org/prizes/chemistry/1911/marie-curie/facts/",
+    "https://www.britannica.com/biography/Marie-Curie",
+    "https://ahf.nuclearmuseum.org/ahf/profile/marie-curie/"
   ],
-  "total_entries": 172,
+  "total_entries": 173,
   "total_pages": 18,
   "per_page": 10
 }

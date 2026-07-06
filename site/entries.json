@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 172,
+    "total_entries": 173,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,81 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 172
+      "age_6": 173
     },
     "category_counts": {
+      "scientist": 98,
       "school_poster": 32,
       "artist": 40,
-      "scientist": 97,
       "sport": 3
     },
     "language_counts": {
-      "sl": 154,
-      "en": 18
+      "en": 19,
+      "sl": 154
     }
   },
   "entries": [
+    {
+      "date": "2026-07-06",
+      "person": "Marie Curie",
+      "filename": "MarieCurie.png",
+      "image_filename": "MarieCurie.png",
+      "sources": [
+        "https://www.nobelprize.org/prizes/physics/1903/marie-curie/biographical/",
+        "https://www.nobelprize.org/prizes/chemistry/1911/marie-curie/facts/",
+        "https://www.britannica.com/biography/Marie-Curie",
+        "https://ahf.nuclearmuseum.org/ahf/profile/marie-curie/"
+      ],
+      "title": "Marie Curie — Science That Made Invisible Rays Visible",
+      "summary": "A kid-friendly English infographic about Marie Curie, her radioactivity research, polonium and radium, two Nobel Prizes, and World War I mobile X-ray work.",
+      "age_suitability_details": {
+        "age_6": "Readable as a science hero poster: children can understand that Marie Curie studied invisible rays and helped doctors, though Nobel Prize details may need an adult explanation.",
+        "age_13": "Appropriate for middle/high-school students: includes radioactivity, polonium/radium, Nobel dates, and World War I medical X-ray context in concise language.",
+        "adult": "Historically accurate high-level overview of Curie’s scientific significance; simplified for education and not a full biography or radiation-safety history."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "en",
+      "assignment_id": "d2431f11-86d0-4156-8e66-0e1cc963e3b5",
+      "_kind": "native",
+      "_source_mtime": 1783314335.295329,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "marie curie scientist znanstvenik en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-07-04",
       "person": "kroženje vode",
