@@ -1,18 +1,18 @@
 {
-  "date": "2026-07-06",
-  "person": "Marie Curie",
-  "image_filename": "MarieCurie.png",
-  "category": "scientist",
-  "category_label": "Znanstvenik",
+  "date": "2026-07-07",
+  "person": "Michael Jordan",
+  "image_filename": "MichaelJordan.png",
+  "category": "sport",
+  "category_label": "Športnik",
   "language": "en",
   "language_label": "EN",
   "sources": [
-    "https://www.nobelprize.org/prizes/physics/1903/marie-curie/biographical/",
-    "https://www.nobelprize.org/prizes/chemistry/1911/marie-curie/facts/",
-    "https://www.britannica.com/biography/Marie-Curie",
-    "https://ahf.nuclearmuseum.org/ahf/profile/marie-curie/"
+    "https://www.britannica.com/biography/Michael-Jordan",
+    "https://www.nba.com/history/legends/profiles/michael-jordan",
+    "https://www.hoophall.com/hall-of-famers/michael-jordan/",
+    "https://olympics.com/en/athletes/michael-jordan"
   ],
-  "total_entries": 173,
+  "total_entries": 174,
   "total_pages": 18,
   "per_page": 10
 }

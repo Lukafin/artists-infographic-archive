@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 173,
+    "total_entries": 174,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,81 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 173
+      "age_6": 174
     },
     "category_counts": {
+      "sport": 4,
       "scientist": 98,
       "school_poster": 32,
-      "artist": 40,
-      "sport": 3
+      "artist": 40
     },
     "language_counts": {
-      "en": 19,
+      "en": 20,
       "sl": 154
     }
   },
   "entries": [
+    {
+      "date": "2026-07-07",
+      "person": "Michael Jordan",
+      "filename": "MichaelJordan.png",
+      "image_filename": "MichaelJordan.png",
+      "sources": [
+        "https://www.britannica.com/biography/Michael-Jordan",
+        "https://www.nba.com/history/legends/profiles/michael-jordan",
+        "https://www.hoophall.com/hall-of-famers/michael-jordan/",
+        "https://olympics.com/en/athletes/michael-jordan"
+      ],
+      "title": "Michael Jordan: Airborne Legend",
+      "summary": "A kid-friendly English sports infographic about Michael Jordan, using an airborne dunk trajectory across a basketball court as a visual timeline for his championships, awards, Olympic gold medals, practice habits, and global basketball impact.",
+      "age_suitability_details": {
+        "age_6": "Suitable with adult guidance: very visual sports poster with simple achievement words; younger children can understand that practice, focus, and courage helped Jordan become a great basketball player.",
+        "age_13": "Suitable: facts are concise and classroom-friendly, with dates and award counts that early teenagers can connect to sports history and perseverance.",
+        "adult": "Suitable: simplified but accurate overview of Jordan's public athletic legacy, major NBA achievements, Olympic success, and global cultural impact."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "sport",
+      "language": "en",
+      "assignment_id": "8936873f-a111-486b-8423-7427a78f4d07",
+      "_kind": "native",
+      "_source_mtime": 1783400899.399692,
+      "category_label": "Športnik",
+      "category_class": "sport",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "michael jordan sport športnik en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-07-06",
       "person": "Marie Curie",
