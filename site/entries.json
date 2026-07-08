@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 174,
+    "total_entries": 175,
     "categories": [
       "artist",
       "school_poster",
@@ -17,20 +17,81 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 174
+      "age_6": 175
     },
     "category_counts": {
+      "artist": 41,
       "sport": 4,
       "scientist": 98,
-      "school_poster": 32,
-      "artist": 40
+      "school_poster": 32
     },
     "language_counts": {
-      "en": 20,
+      "en": 21,
       "sl": 154
     }
   },
   "entries": [
+    {
+      "date": "2026-07-08",
+      "person": "Vincent van Gogh",
+      "filename": "VincentVanGogh.png",
+      "image_filename": "VincentVanGogh.png",
+      "sources": [
+        "https://www.vangoghmuseum.nl/en/art-and-stories/vincents-life-1853-1890",
+        "https://www.nationalgallery.org.uk/artists/vincent-van-gogh",
+        "https://www.getty.edu/art/collection/person/103JQN",
+        "https://en.wikipedia.org/wiki/Vincent_van_Gogh"
+      ],
+      "title": "Vincent van Gogh: Painted Feelings in Color",
+      "summary": "A kid-friendly English infographic that follows Vincent van Gogh's life and artistic legacy through a swirling brushstroke journey map, from early work and Paris color experiments to Arles sunflowers, Saint-Rémy skies, and his worldwide influence.",
+      "age_suitability_details": {
+        "age_6": "Suitable with adult help: the poster uses concrete images like sunflowers, stars, colors, and a painted road. Some place names and the 2,000+ artwork number may need explanation.",
+        "age_13": "Suitable: early teenagers can follow the life journey, place-based timeline, and idea that brushstrokes and color can express emotion and artistic style.",
+        "adult": "Suitable: concise museum-grounded context presents Van Gogh's chronology, Post-Impressionist visual language, and later legacy without overclaiming or sensationalizing his personal struggles."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "en",
+      "assignment_id": "7b546d6b-cde5-43b0-8c8e-4805197aa7ac",
+      "_kind": "native",
+      "_source_mtime": 1783487441.4796915,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "vincent van gogh artist umetnik en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-07-07",
       "person": "Michael Jordan",
