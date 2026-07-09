@@ -1,18 +1,18 @@
 {
-  "date": "2026-07-08",
-  "person": "Vincent van Gogh",
-  "image_filename": "VincentVanGogh.png",
-  "category": "artist",
-  "category_label": "Umetnik",
-  "language": "en",
-  "language_label": "EN",
+  "date": "2026-07-09",
+  "person": "Michael Jordan",
+  "image_filename": "MichaelJordan.png",
+  "category": "sport",
+  "category_label": "Športnik",
+  "language": "de",
+  "language_label": "DE",
   "sources": [
-    "https://www.vangoghmuseum.nl/en/art-and-stories/vincents-life-1853-1890",
-    "https://www.nationalgallery.org.uk/artists/vincent-van-gogh",
-    "https://www.getty.edu/art/collection/person/103JQN",
-    "https://en.wikipedia.org/wiki/Vincent_van_Gogh"
+    "https://www.nba.com/news/history-nba-legend-michael-jordan",
+    "https://www.hoophall.com/hall-of-famers/michael-jordan/",
+    "https://www.britannica.com/biography/Michael-Jordan",
+    "https://www.olympics.com/en/athletes/michael-jordan"
   ],
-  "total_entries": 175,
+  "total_entries": 176,
   "total_pages": 18,
   "per_page": 10
 }

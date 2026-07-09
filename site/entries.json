@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 175,
+    "total_entries": 176,
     "categories": [
       "artist",
       "school_poster",
@@ -8,6 +8,7 @@
       "sport"
     ],
     "languages": [
+      "de",
       "en",
       "sl"
     ],
@@ -17,20 +18,82 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 175
+      "age_6": 176
     },
     "category_counts": {
+      "sport": 5,
       "artist": 41,
-      "sport": 4,
       "scientist": 98,
       "school_poster": 32
     },
     "language_counts": {
+      "de": 1,
       "en": 21,
       "sl": 154
     }
   },
   "entries": [
+    {
+      "date": "2026-07-09",
+      "person": "Michael Jordan",
+      "filename": "MichaelJordan.png",
+      "image_filename": "MichaelJordan.png",
+      "sources": [
+        "https://www.nba.com/news/history-nba-legend-michael-jordan",
+        "https://www.hoophall.com/hall-of-famers/michael-jordan/",
+        "https://www.britannica.com/biography/Michael-Jordan",
+        "https://www.olympics.com/en/athletes/michael-jordan"
+      ],
+      "title": "Michael Jordan — Fliegen auf dem Basketballfeld",
+      "summary": "Ein deutschsprachiges, kindgerechtes Sport-Infografikposter über Michael Jordan: sechs NBA-Titel mit Chicago, fünf NBA-MVP-Auszeichnungen, zwei Olympiasiege, Hall of Fame 2009 und die Botschaft Training, Mut und Teamgeist.",
+      "age_suitability_details": {
+        "age_6": "Geeignet: einfache Botschaft über Basketball, Übung, Mut und Teamgeist; Zahlen und Pokale sind konkret verständlich.",
+        "age_13": "Geeignet: verbindet wichtige Karriereleistungen mit einer visuellen Sport-Timeline; Begriffe wie MVP und Hall of Fame können im Unterricht kurz erklärt werden.",
+        "adult": "Geeignet: faktenbasierte Kurzfassung von Jordans sportlicher Bedeutung und kultureller Wirkung, ohne private oder kontroverse Details."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "sport",
+      "language": "de",
+      "assignment_id": "a2470e8b-5e8a-406b-ac0a-90fb2126f258",
+      "_kind": "native",
+      "_source_mtime": 1783573988.284383,
+      "category_label": "Športnik",
+      "category_class": "sport",
+      "language_label": "DE",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "michael jordan sport športnik de age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-07-08",
       "person": "Vincent van Gogh",
