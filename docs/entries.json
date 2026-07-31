@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 179,
+    "total_entries": 180,
     "categories": [
       "artist",
       "school_poster",
@@ -18,21 +18,82 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 179
+      "age_6": 180
     },
     "category_counts": {
+      "school_poster": 33,
       "artist": 44,
       "sport": 5,
-      "scientist": 98,
-      "school_poster": 32
+      "scientist": 98
     },
     "language_counts": {
+      "sl": 155,
       "de": 3,
-      "en": 22,
-      "sl": 154
+      "en": 22
     }
   },
   "entries": [
+    {
+      "date": "2026-07-31",
+      "person": "podnebna sprememba",
+      "filename": "PodnebnaSprememba.png",
+      "image_filename": "PodnebnaSprememba.png",
+      "sources": [
+        "https://www.ipcc.ch/report/ar6/syr/resources/spm-headline-statements/",
+        "https://science.nasa.gov/climate-change/evidence/",
+        "https://science.nasa.gov/climate-change/causes/",
+        "https://www.wikidata.org/wiki/Q125928"
+      ],
+      "title": "Podnebna sprememba — od ujete toplote do dveh poti",
+      "summary": "Slovenski srednješolski stenski plakat skozi večplastni prerez Zemljinega sistema razloži energijsko ravnovesje, vlogo toplogrednih plinov in fosilnih goriv, ključne dokaze segrevanja ter dopolnjujoči se poti blaženja in prilagajanja.",
+      "age_suitability_details": {
+        "age_6": "S pomočjo odraslega so razumljive puščice Sonca in toplote ter preprosta ideja, da manj izpustov pomeni manj segrevanja; izraza blaženje in prilagajanje potrebujeta razlago.",
+        "age_13": "Neposredno primerno: kratke slovenske oznake, jasna vzročna veriga, merilo 1,1 °C ter vizualna ločitev med blaženjem in prilagajanjem ustrezajo zgodnjemu srednješolskemu učenju.",
+        "adult": "Primerno kot jedrnat sistemski pregled; vključuje fizikalni mehanizem, opazovane kazalnike in razlikovanje dveh dopolnjujočih se odzivov, z viri za nadaljnje preverjanje."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "20b0e2e2-3f6c-4a68-a86a-46dbede16ccd",
+      "_kind": "native",
+      "_source_mtime": 1785488373.67333,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "podnebna sprememba school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-07-31",
       "person": "Aaron Sopher",
