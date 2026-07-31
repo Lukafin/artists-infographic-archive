@@ -115,6 +115,8 @@
     .sources { list-style:none; display:flex; flex-wrap:wrap; gap:8px; padding:0; margin:12px 0 0; }
     .direct-link { margin-top:auto; }
     .sources a { display:inline-flex; padding:7px 10px; border-radius:999px; text-decoration:none; background:#faf7f2; border:1px solid var(--line); color:#594e44; font-size:12px; }
+    .original-article { display:inline-flex; align-items:center; justify-content:center; margin-top:10px; padding:8px 11px; border-radius:11px; background:#e8fbff; border:1px solid #c9edf5; color:#14606b; font-size:12px; font-weight:800; text-decoration:none; }
+    .original-article:hover, .original-article:focus-visible { background:#d7f6fc; text-decoration:underline; outline:0; }
     .pagination { margin-top:22px; justify-content:flex-end; }
     .pagination.is-hidden { display:none; }
 
@@ -215,6 +217,7 @@
     <h3>Robert Millikan</h3>
     <p class="direct-link"><a href="RobertMillikan.png" data-i18n="open_image">Open image</a></p>
     
+    
   </div>
 </article>
 <article class="card" data-person="Modest Mussorgsky" data-category="artist" data-language="sl" data-age-suitability="age_6">
@@ -229,6 +232,7 @@
     </div>
     <h3>Modest Mussorgsky</h3>
     <p class="direct-link"><a href="ModestMussorgsky.png" data-i18n="open_image">Open image</a></p>
+    
     
   </div>
 </article>
@@ -245,6 +249,7 @@
     <h3>Burrhus Frederic Skinner</h3>
     <p class="direct-link"><a href="BurrhusFredericSkinner.png" data-i18n="open_image">Open image</a></p>
     
+    
   </div>
 </article>
 <article class="card" data-person="Frederic Joliot Curie" data-category="scientist" data-language="sl" data-age-suitability="age_6">
@@ -259,6 +264,7 @@
     </div>
     <h3>Frederic Joliot Curie</h3>
     <p class="direct-link"><a href="FredericJoliotCurie.png" data-i18n="open_image">Open image</a></p>
+    
     
   </div>
 </article>
@@ -275,6 +281,7 @@
     <h3>Rudolf Diesel</h3>
     <p class="direct-link"><a href="RudolfDiesel.png" data-i18n="open_image">Open image</a></p>
     
+    
   </div>
 </article>
 <article class="card" data-person="Gottlieb Daimler" data-category="scientist" data-language="sl" data-age-suitability="age_6">
@@ -289,6 +296,7 @@
     </div>
     <h3>Gottlieb Daimler</h3>
     <p class="direct-link"><a href="GottliebDaimler.png" data-i18n="open_image">Open image</a></p>
+    
     
   </div>
 </article>
@@ -305,6 +313,7 @@
     <h3>Georg Ohm</h3>
     <p class="direct-link"><a href="GeorgOhm.png" data-i18n="open_image">Open image</a></p>
     
+    
   </div>
 </article>
 <article class="card" data-person="John Snow" data-category="scientist" data-language="sl" data-age-suitability="age_6">
@@ -319,6 +328,7 @@
     </div>
     <h3>John Snow</h3>
     <p class="direct-link"><a href="JohnSnow.png" data-i18n="open_image">Open image</a></p>
+    
     
   </div>
 </article>
@@ -335,6 +345,7 @@
     <h3>Albert Einstein</h3>
     <p class="direct-link"><a href="AlbertEinstein.png" data-i18n="open_image">Open image</a></p>
     
+    
   </div>
 </article>
 <article class="card" data-person="Percival Lowell" data-category="scientist" data-language="sl" data-age-suitability="age_6">
@@ -350,13 +361,14 @@
     <h3>Percival Lowell</h3>
     <p class="direct-link"><a href="PercivalLowell.png" data-i18n="open_image">Open image</a></p>
     
+    
   </div>
 </article></div>
       <nav class="pagination"><a class="pill pager" href="page-12.html" data-i18n="pager_previous">← Previous</a><a class="pill pager" href="./">1</a><a class="pill pager" href="page-2.html">2</a><a class="pill pager" href="page-3.html">3</a><a class="pill pager" href="page-4.html">4</a><a class="pill pager" href="page-5.html">5</a><a class="pill pager" href="page-6.html">6</a><a class="pill pager" href="page-7.html">7</a><a class="pill pager" href="page-8.html">8</a><a class="pill pager" href="page-9.html">9</a><a class="pill pager" href="page-10.html">10</a><a class="pill pager" href="page-11.html">11</a><a class="pill pager" href="page-12.html">12</a><a class="pill pager active" href="page-13.html">13</a><a class="pill pager" href="page-14.html">14</a><a class="pill pager" href="page-15.html">15</a><a class="pill pager" href="page-16.html">16</a><a class="pill pager" href="page-17.html">17</a><a class="pill pager" href="page-18.html">18</a><a class="pill pager" href="page-14.html" data-i18n="pager_next">Next →</a></nav>
     </section>
     <footer class="footer surface">
       <div data-i18n="footer_text">Public archive of daily infographics about famous artists, scientists and athletes.</div>
-      <div data-updated="2026-07-31 08:59">Updated: 2026-07-31 08:59</div>
+      <div data-updated="2026-07-31 14:00">Updated: 2026-07-31 14:00</div>
     </footer>
   </main>
   <script>
@@ -404,6 +416,7 @@
       open_image: 'Open image',
       open_today: 'Open today’s image',
       source: 'source',
+      original_article: 'Read the original article ↗',
       sources_zero: 'No sources',
       sources_one: '1 source',
       sources_many: '{count} sources',
@@ -450,6 +463,7 @@
       open_image: 'Odpri sliko',
       open_today: 'Odpri današnjo sliko',
       source: 'vir',
+      original_article: 'Preberi izvirni članek ↗',
       sources_zero: 'Brez virov',
       sources_one: '1 vir',
       sources_many: '{count} viri',
@@ -512,6 +526,11 @@
     return `<ul class="sources">${sources.slice(0, 4).map((url) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" data-source-link="1">${escapeHtml(t('source'))}</a></li>`).join('')}</ul>`;
   }
 
+  function renderOriginalArticle(entry) {
+    if (entry.category !== 'science_news' || !entry.original_article_url) return '';
+    return `<a class="original-article" href="${escapeHtml(entry.original_article_url)}" target="_blank" rel="noopener noreferrer" data-original-article-link="1">${escapeHtml(t('original_article'))}</a>`;
+  }
+
   function renderCard(entry, featured) {
     const featureClass = featured ? ' feature' : '';
     const ageKeys = entry.age_suitability_keys || [];
@@ -527,6 +546,7 @@
         </div>
         <h3>${escapeHtml(entry.person)}</h3>
         <p class="direct-link"><a href="${escapeHtml(entry.filename)}" data-i18n="open_image">${escapeHtml(t('open_image'))}</a></p>
+        ${renderOriginalArticle(entry)}
         ${renderSources(entry.sources || [])}
       </div>
     </article>`;
@@ -543,6 +563,7 @@
       node.setAttribute('placeholder', t(node.dataset.i18nPlaceholder));
     });
     document.querySelectorAll('[data-source-link]').forEach((node) => { node.textContent = t('source'); });
+    document.querySelectorAll('[data-original-article-link]').forEach((node) => { node.textContent = t('original_article'); });
     document.querySelectorAll('[data-source-count]').forEach((node) => { node.textContent = sourceCountLabel(Number(node.dataset.sourceCount || 0)); });
     document.querySelectorAll('[data-category-option]').forEach((node) => { node.textContent = categoryLabel(node.dataset.categoryOption); });
     document.querySelectorAll('[data-age-option]').forEach((node) => { node.textContent = ageLabel(node.dataset.ageOption); });
