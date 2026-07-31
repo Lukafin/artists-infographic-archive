@@ -157,6 +157,16 @@ def render_sources(e):
     return f'<ul class="sources">{items}</ul>'
 
 
+def render_original_article(e):
+    url = str(e.get('original_article_url') or '').strip()
+    if e.get('category') != 'science_news' or not url:
+        return ''
+    return (
+        f'<a class="original-article" href="{html.escape(url)}" target="_blank" '
+        'rel="noopener noreferrer" data-original-article-link="1">Read the original article ↗</a>'
+    )
+
+
 def render_info_overlay(e, panel_id, expanded=False):
     raw_date = e.get('date', '')
     date = html.escape(raw_date)
@@ -177,6 +187,7 @@ def render_info_overlay(e, panel_id, expanded=False):
           {age_badge}
           <span class="tag source-count" data-source-count="{e.get('source_count', len(e.get('sources', [])))}">{count_label}</span>
         </div>
+        {render_original_article(e)}
         {render_sources(e)}
       </div>
     </details>'''
@@ -332,6 +343,7 @@ def render_client_script():
       no_results: 'No results for the selected filters.',
       found: 'Results found: {count}',
       source: 'source',
+      original_article: 'Read the original article ↗',
       sources_zero: 'No sources',
       sources_one: '1 source',
       sources_many: '{count} sources',
@@ -379,6 +391,7 @@ def render_client_script():
       no_results: 'Za izbrane filtre ni zadetkov.',
       found: 'Najdenih zadetkov: {count}',
       source: 'vir',
+      original_article: 'Preberi izvirni članek ↗',
       sources_zero: 'Brez virov',
       sources_one: '1 vir',
       sources_many: '{count} viri',
@@ -457,6 +470,11 @@ def render_client_script():
     return `<ul class="sources">${sources.slice(0, 4).map((url) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" data-source-link="1">${escapeHtml(t('source'))}</a></li>`).join('')}</ul>`;
   }
 
+  function renderOriginalArticle(entry) {
+    if (entry.category !== 'science_news' || !entry.original_article_url) return '';
+    return `<a class="original-article" href="${escapeHtml(entry.original_article_url)}" target="_blank" rel="noopener noreferrer" data-original-article-link="1">${escapeHtml(t('original_article'))}</a>`;
+  }
+
   function renderInfoOverlay(entry) {
     const ageKeys = entry.age_suitability_keys || [];
     return `<details class="info-popover">
@@ -469,6 +487,7 @@ def render_client_script():
           ${ageBadges(ageKeys)}
           <span class="tag source-count" data-source-count="${Number(entry.source_count || 0)}">${sourceCountLabel(entry.source_count)}</span>
         </div>
+        ${renderOriginalArticle(entry)}
         ${renderSources(entry.sources || [])}
       </div>
     </details>`;
@@ -495,6 +514,7 @@ def render_client_script():
       node.setAttribute('placeholder', t(node.dataset.i18nPlaceholder));
     });
     document.querySelectorAll('[data-source-link]').forEach((node) => { node.textContent = t('source'); });
+    document.querySelectorAll('[data-original-article-link]').forEach((node) => { node.textContent = t('original_article'); });
     document.querySelectorAll('[data-info-label]').forEach((node) => { node.setAttribute('aria-label', t('image_details')); });
     document.querySelectorAll('[data-date]').forEach((node) => { node.textContent = formatDate(node.dataset.date); });
     document.querySelectorAll('[data-source-count]').forEach((node) => { node.textContent = sourceCountLabel(Number(node.dataset.sourceCount || 0)); });
@@ -718,6 +738,8 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     .info-panel .tag {{ padding:6px 9px; }}
     .info-panel .sources {{ margin-top:9px; gap:6px; }}
     .info-panel .sources a {{ padding:6px 9px; }}
+    .original-article {{ display:flex; align-items:center; justify-content:center; margin-top:9px; padding:8px 10px; border-radius:11px; background:#e8fbff; border:1px solid #c9edf5; color:#14606b; font-size:12px; font-weight:800; text-decoration:none; }}
+    .original-article:hover, .original-article:focus-visible {{ background:#d7f6fc; text-decoration:underline; outline:0; }}
     .tag {{ display:inline-flex; padding:7px 10px; border-radius:999px; background:#f7f2ea; border:1px solid #ece1d4; font-size:12px; color:#564f47; }}
     .tag[hidden] {{ display:none !important; }}
     .tag.artist {{ background:#ffe9ec; border-color:#ffd4dc; color:#8d2440; }}
@@ -888,6 +910,7 @@ if isinstance(featured, dict):
         'category_label': featured.get('category_label'),
         'language': featured.get('language'),
         'language_label': featured.get('language_label'),
+        'original_article_url': featured.get('original_article_url'),
         'sources': featured.get('sources', []),
         'age_suitability_keys': featured.get('age_suitability_keys', []),
         'age_suitability_labels_en': featured.get('age_suitability_labels_en', []),
