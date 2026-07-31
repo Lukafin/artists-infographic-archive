@@ -1,19 +1,18 @@
 {
   "date": "2026-07-31",
-  "person": "podnebna sprememba",
-  "image_filename": "PodnebnaSprememba.png",
-  "category": "school_poster",
-  "category_label": "Šolski plakat",
-  "language": "sl",
-  "language_label": "SL",
-  "original_article_url": null,
+  "person": "Laser mapping suggests a vast precolonial network of up to 30,000 earthworks beneath the southwestern Amazon",
+  "image_filename": "LaserMappingSuggestsAVastPrecolonialNetworkOfUpTo30000EarthworksBeneathTheSouthwesternAmazon.png",
+  "category": "science_news",
+  "category_label": "Znanstvena novica",
+  "language": "en",
+  "language_label": "EN",
+  "original_article_url": "https://www.helsinki.fi/en/news/culture/ancient-civilization-millions-once-flourished-amazon",
   "sources": [
-    "https://www.ipcc.ch/report/ar6/syr/resources/spm-headline-statements/",
-    "https://science.nasa.gov/climate-change/evidence/",
-    "https://science.nasa.gov/climate-change/causes/",
-    "https://www.wikidata.org/wiki/Q125928"
+    "https://doi.org/10.1038/s41586-026-10835-7",
+    "https://www.helsinki.fi/en/news/culture/ancient-civilization-millions-once-flourished-amazon",
+    "https://www.livescience.com/archaeology/americas/lasers-reveal-hundreds-of-geoglyphs-made-by-a-mysterious-civilization-in-the-amazon-rainforest-thousands-of-years-ago"
   ],
-  "total_entries": 180,
+  "total_entries": 181,
   "total_pages": 18,
   "per_page": 10
 }

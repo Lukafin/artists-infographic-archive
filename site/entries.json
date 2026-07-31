@@ -1,9 +1,10 @@
 {
   "summary": {
-    "total_entries": 180,
+    "total_entries": 181,
     "categories": [
       "artist",
       "school_poster",
+      "science_news",
       "scientist",
       "sport"
     ],
@@ -18,21 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 180
+      "age_6": 181
     },
     "category_counts": {
+      "science_news": 1,
       "school_poster": 33,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
+      "en": 23,
       "sl": 155,
-      "de": 3,
-      "en": 22
+      "de": 3
     }
   },
   "entries": [
+    {
+      "date": "2026-07-31",
+      "person": "Laser mapping suggests a vast precolonial network of up to 30,000 earthworks beneath the southwestern Amazon",
+      "filename": "LaserMappingSuggestsAVastPrecolonialNetworkOfUpTo30000EarthworksBeneathTheSouthwesternAmazon.png",
+      "image_filename": "LaserMappingSuggestsAVastPrecolonialNetworkOfUpTo30000EarthworksBeneathTheSouthwesternAmazon.png",
+      "sources": [
+        "https://doi.org/10.1038/s41586-026-10835-7",
+        "https://www.helsinki.fi/en/news/culture/ancient-civilization-millions-once-flourished-amazon",
+        "https://www.livescience.com/archaeology/americas/lasers-reveal-hundreds-of-geoglyphs-made-by-a-mysterious-civilization-in-the-amazon-rainforest-thousands-of-years-ago"
+      ],
+      "original_article_url": "https://www.helsinki.fi/en/news/culture/ancient-civilization-millions-once-flourished-amazon",
+      "title": "LiDAR reveals an extensive precolonial landscape beneath the southwestern Amazon",
+      "summary": "A peer-reviewed Nature study used airborne LiDAR over Acre and Amazonas to directly document 432 precolonial earthworks, only 36 of which were previously known. The study then combines those observations with earlier archaeological and spatial evidence to estimate roughly 24,000–30,000 earthworks across the wider Aquiry cultural area. This explainer clearly separates the measured sample from the modelled regional estimate and explains why the finding changes how Amazonian Indigenous history and long-term forest stewardship are understood.",
+      "age_suitability_details": {
+        "age_6": "A plane used light pulses to reveal old human-made shapes hidden under gaps in the forest canopy; hundreds were mapped directly, while the much larger total is only an estimate.",
+        "age_13": "LiDAR return times let researchers reconstruct ground height beneath forest gaps. The survey documented 432 earthworks, and spatial modelling—not direct observation—produced the regional estimate of 24,000–30,000.",
+        "adult": "The peer-reviewed survey integrates 4,430 km of airborne laser scanning with archaeological, radiocarbon, satellite, and ethnographic evidence. Its regional structure and population totals remain extrapolations sensitive to sampling, canopy penetration, contemporaneity, boundary assumptions, and labour estimates."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "science_news",
+      "language": "en",
+      "assignment_id": "27fd91ee-7c15-4c25-b84e-482d61ee1f04",
+      "_kind": "native",
+      "_source_mtime": 1785510931.4119422,
+      "category_label": "Znanstvena novica",
+      "category_class": "science-news",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "laser mapping suggests a vast precolonial network of up to 30,000 earthworks beneath the southwestern amazon science_news znanstvena novica en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-07-31",
       "person": "podnebna sprememba",
