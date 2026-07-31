@@ -1,18 +1,18 @@
 {
-  "date": "2026-07-30",
+  "date": "2026-07-31",
   "person": "Aaron Sopher",
   "image_filename": "AaronSopher.png",
   "category": "artist",
   "category_label": "Umetnik",
-  "language": "en",
-  "language_label": "EN",
+  "language": "de",
+  "language_label": "DE",
   "sources": [
-    "https://www.wikidata.org/wiki/Q14107",
+    "https://americanart.si.edu/artist/aaron-sopher-4556",
     "https://en.wikipedia.org/wiki/Aaron_Sopher",
-    "https://api.si.edu/openaccess/api/v1.0/search?q=Aaron%20Sopher&api_key=DEMO_KEY",
-    "https://www.getty.edu/vow/ULANFullDisplay?subjectid=500041087"
+    "https://www.wikidata.org/wiki/Q14107",
+    "https://www.philamuseum.org/search/collections?searchNameID=18574"
   ],
-  "total_entries": 178,
+  "total_entries": 179,
   "total_pages": 18,
   "per_page": 10
 }

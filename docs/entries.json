@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 178,
+    "total_entries": 179,
     "categories": [
       "artist",
       "school_poster",
@@ -18,21 +18,82 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 178
+      "age_6": 179
     },
     "category_counts": {
-      "artist": 43,
+      "artist": 44,
       "sport": 5,
       "scientist": 98,
       "school_poster": 32
     },
     "language_counts": {
+      "de": 3,
       "en": 22,
-      "de": 2,
       "sl": 154
     }
   },
   "entries": [
+    {
+      "date": "2026-07-31",
+      "person": "Aaron Sopher",
+      "filename": "AaronSopher.png",
+      "image_filename": "AaronSopher.png",
+      "sources": [
+        "https://americanart.si.edu/artist/aaron-sopher-4556",
+        "https://en.wikipedia.org/wiki/Aaron_Sopher",
+        "https://www.wikidata.org/wiki/Q14107",
+        "https://www.philamuseum.org/search/collections?searchNameID=18574"
+      ],
+      "title": "Aaron Sopher — Baltimore in Tusche",
+      "summary": "Ein deutschsprachiges, quellenbasiertes Bildungsplakat über Aaron Sopher (1905–1972), seine beobachtenden Baltimore-Zeichnungen, seinen Durchbruch mit Hafenillustrationen 1927, seine Zeitungsarbeit sowie seine sozial aufmerksamen Tusche- und Aquarellbilder aus der Zeit der Depression.",
+      "age_suitability_details": {
+        "age_6": "Mit Begleitung verständlich: klare Stadt-, Hafen- und Zeichenmotive; Erwachsene können die Begriffe Tusche, Aquarell und Depression einfach erklären.",
+        "age_13": "Direkt geeignet: kurze deutsche Sätze, klare Chronologie, Medienbegriffe und verständlicher Zusammenhang zwischen Stadtbeobachtung, Pressearbeit und sozialer Geschichte.",
+        "adult": "Geeignet als kompakter Einstieg; die Quellen und Hinweise auf publizistische sowie sozialdokumentarische Arbeit bieten Ansatzpunkte für vertiefende Recherche."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "de",
+      "assignment_id": "2d353711-4fb2-4474-9659-41ec98cf9094",
+      "_kind": "native",
+      "_source_mtime": 1785474366.407493,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "DE",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "aaron sopher artist umetnik de age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-07-30",
       "person": "Aaron Sopher",
