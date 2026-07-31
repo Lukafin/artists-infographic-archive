@@ -51,6 +51,11 @@ def normalize_entry_metadata(entry: dict) -> dict:
     if category not in CATEGORY_LABELS:
         category = classify_person(normalized.get('person', ''))
     category_label, category_class = CATEGORY_LABELS[category]
+    original_article_url = normalized.get('original_article_url')
+    if category == 'science_news' and isinstance(original_article_url, str) and original_article_url.strip():
+        original_article_url = original_article_url.strip()
+    else:
+        original_article_url = None
 
     language = (normalized.get('language') or 'sl').strip().lower() or 'sl'
     language_label = LANGUAGE_LABELS.get(language, language.upper())
@@ -105,6 +110,7 @@ def normalize_entry_metadata(entry: dict) -> dict:
             'category': category,
             'category_label': category_label,
             'category_class': category_class,
+            'original_article_url': original_article_url,
             'language': language,
             'language_label': language_label,
             'age_suitability_keys': age_keys,
