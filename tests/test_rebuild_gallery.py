@@ -109,7 +109,7 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
 
         self.assertIn('Visual Learning Archive', index_html)
         self.assertIn('Kid-friendly infographics about people, school topics and science discoveries', index_html)
-        self.assertIn('Choose what you want to learn', index_html)
+        self.assertIn('Choose a collection', index_html)
         self.assertIn('People', index_html)
         self.assertIn('School posters', index_html)
         self.assertIn('Science news', index_html)
@@ -137,7 +137,8 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         science_page = (public_root / 'science-news.html').read_text(encoding='utf-8')
 
         self.assertIn('Science news explained', science_page)
-        self.assertIn('Current discoveries, made easier to understand.', science_page)
+        self.assertIn('Recent discoveries turned into simple visual summaries for young readers.', science_page)
+        self.assertIn('Archaeology', science_page)
         self.assertIn('A surprising space discovery', science_page)
         self.assertIn('Read the original article ↗', science_page)
 
