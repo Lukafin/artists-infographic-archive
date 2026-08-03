@@ -729,10 +729,16 @@ def render_client_script():
     updateStaticTranslations();
   }
 
+  function setCategoryControlForCollection(collection) {
+    const exactCategory = collection && collection !== 'people' && collection !== 'all' ? collection : '';
+    categorySelect.value = Array.from(categorySelect.options).some((option) => option.value === exactCategory) ? exactCategory : '';
+  }
+
   function applyQueryParams() {
     const params = new URLSearchParams(window.location.search);
     const collection = params.get('collection') || '';
-    if (collection) masonry.dataset.collection = collection;
+    masonry.dataset.collection = collection;
+    setCategoryControlForCollection(collection);
     if (params.get('category')) categorySelect.value = params.get('category');
     if (params.get('language')) languageSelect.value = params.get('language');
     if (params.get('age')) ageSelect.value = params.get('age');
@@ -746,8 +752,14 @@ def render_client_script():
       event.preventDefault();
       const collection = link.dataset.collectionLink || '';
       masonry.dataset.collection = collection === 'all' ? '' : collection;
-      categorySelect.value = '';
+      setCategoryControlForCollection(masonry.dataset.collection);
       searchInput.value = '';
+      const target = new URL(href || './', window.location.href);
+      if (collection === 'all' || !collection) target.searchParams.delete('collection');
+      target.searchParams.delete('category');
+      target.searchParams.delete('q');
+      target.hash = 'archive';
+      history.pushState({}, '', target);
       applyFilters();
       document.getElementById('archive')?.scrollIntoView({behavior: 'smooth', block: 'start'});
     });
