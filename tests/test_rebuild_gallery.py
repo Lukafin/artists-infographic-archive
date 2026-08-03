@@ -95,6 +95,49 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         self.assertNotIn(f'href="{unrelated_url}"', index_html)
         self.assertIsNone(latest['original_article_url'])
 
+    def test_homepage_frames_archive_as_visual_learning_hub(self):
+        public_root, index_html, _, _ = self.run_rebuild(
+            {
+                'date': '2026-07-31',
+                'person': 'Climate change',
+                'filename': 'ClimateChange.png',
+                'category': 'school_poster',
+                'language': 'en',
+                'sources': ['https://science.nasa.gov/climate-change/evidence/'],
+            }
+        )
+
+        self.assertIn('Visual Learning Archive', index_html)
+        self.assertIn('Kid-friendly infographics about people, school topics and science discoveries', index_html)
+        self.assertIn('Choose what you want to learn', index_html)
+        self.assertIn('People', index_html)
+        self.assertIn('School posters', index_html)
+        self.assertIn('Science news', index_html)
+        self.assertIn('All infographics', index_html)
+        self.assertIn('data-i18n="category_label">Collection</label>', index_html)
+        self.assertIn('Made with human supervision and', index_html)
+        self.assertIn('Roj swarm agents', index_html)
+        self.assertTrue((public_root / 'science-news.html').is_file())
+
+    def test_science_news_collection_page_is_generated(self):
+        public_root, _, _, _ = self.run_rebuild(
+            {
+                'date': '2026-07-31',
+                'person': 'A surprising space discovery',
+                'filename': 'SpaceDiscovery.png',
+                'category': 'science_news',
+                'language': 'en',
+                'original_article_url': 'https://science.nasa.gov/example-discovery/',
+                'sources': ['https://science.nasa.gov/example-discovery/'],
+            }
+        )
+        science_page = (public_root / 'science-news.html').read_text(encoding='utf-8')
+
+        self.assertIn('Science news explained', science_page)
+        self.assertIn('Current discoveries, made easier to understand.', science_page)
+        self.assertIn('A surprising space discovery', science_page)
+        self.assertIn('Read the original article ↗', science_page)
+
 
 if __name__ == '__main__':
     unittest.main()
