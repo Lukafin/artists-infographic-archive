@@ -15,6 +15,8 @@ LEGACY_IMPORTED = BASE / 'imported_legacy_entries.json'
 LATEST_META = PUBLIC_ROOT / 'latest.json'
 ENTRIES_INDEX = PUBLIC_ROOT / 'entries.json'
 PER_PAGE = 10
+FAVICON_FILENAME = 'favicon.svg'
+FAVICON_SVG = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="18" fill="#fff7dc"/><path d="M15 17h34v30H15z" fill="#fffdf9" stroke="#211922" stroke-width="3"/><path d="M21 25h22M21 32h16M21 39h20" stroke="#e60023" stroke-width="4" stroke-linecap="round"/><circle cx="47" cy="18" r="8" fill="#d8f1ff" stroke="#211922" stroke-width="3"/></svg>'''
 KOFI_ICON_FILENAME = 'kofi_stroke_cup.svg'
 KOFI_ICON_SVG = '''<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 13.12"><defs><style>.cls-1{fill:#fff;stroke:#323a47;stroke-linecap:round;stroke-linejoin:round;}.cls-2{fill:#ff5e5b;}</style></defs><title>Kofi_logo_RGB_Outline copy</title><g id="layer1"><g id="g40"><g id="g4184"><path id="path38" class="cls-1" d="M15.54,7.29a5.87,5.87,0,0,1-1.33,0V2.82h.9a2,2,0,0,1,2.06,2.09,2.21,2.21,0,0,1-1.63,2.38m3.87-3.15a4.34,4.34,0,0,0-1.78-2.8A4.8,4.8,0,0,0,14.91.5H1.17a.72.72,0,0,0-.67.71s0,.15,0,.15,0,6.08,0,9.33A2,2,0,0,0,2.58,12.6l9.28,0a3,3,0,0,0,.42-.05,2.65,2.65,0,0,0,1.87-2.91c3.44.19,5.87-2.24,5.26-5.47"/><path id="path42" class="cls-2" d="M7.24,10.08a.19.19,0,0,0,.24,0s2.19-2,3.17-3.14a2.1,2.1,0,0,0-.57-3.41,2.57,2.57,0,0,0-2.74.76A2.41,2.41,0,0,0,3.89,4,2.43,2.43,0,0,0,4,6.88C4.49,7.6,6.8,9.66,7.15,10l.09.07"/></g></g></g></svg>'''
 
@@ -323,6 +325,7 @@ def render_science_news_page(science_entries):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Science news explained – Visual Learning Archive</title>
   <meta name="description" content="Source-backed science news explainers for young readers from the Visual Learning Archive.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -806,6 +809,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Visual Learning Archive – {title_suffix}</title>
   <meta name="description" content="Kid-friendly infographics about people, school topics and science discoveries.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -1084,6 +1088,7 @@ archive_entries = entries[1:] if len(entries) > 1 else []
 
 ENTRIES_INDEX.write_text(json.dumps(entries_index, ensure_ascii=False, indent=2), encoding='utf-8')
 (PUBLIC_ROOT / KOFI_ICON_FILENAME).write_text(KOFI_ICON_SVG + '\n', encoding='utf-8')
+(PUBLIC_ROOT / FAVICON_FILENAME).write_text(FAVICON_SVG + '\n', encoding='utf-8')
 
 total_pages = max(1, math.ceil(len(archive_entries) / PER_PAGE))
 
