@@ -27,7 +27,7 @@
     .hero-copy h2 { font-family:'Fraunces',Georgia,serif; font-size:clamp(56px,7vw,98px); line-height:.95; letter-spacing:-.055em; color:var(--forest); margin:18px auto 8px; max-width:13ch; text-wrap:balance; } .ornament { color:#ba790a; display:flex; align-items:center; justify-content:center; gap:16px; margin:12px 0 14px; } .ornament span { width:116px; height:1px; background:#c08a2b; display:block; } .intro { margin:-8px auto 0; color:#2f2b22; font-size:19px; font-weight:500; line-height:1.55; max-width:760px; }
     .hero-chips { justify-content:center; } .hero-chip { min-width:230px; justify-content:space-between; display:inline-flex; align-items:center; gap:14px; margin-top:20px; padding:15px 20px; border-radius:14px; background:rgba(255,248,230,.92); border:1px solid rgba(18,57,31,.22); text-decoration:none; color:#0d331b; box-shadow:0 12px 28px rgba(47,35,15,.14),0 0 0 1px rgba(255,255,255,.65) inset; transition:transform .45s cubic-bezier(.32,.72,0,1),box-shadow .45s cubic-bezier(.32,.72,0,1),background .45s cubic-bezier(.32,.72,0,1); } .hero-chip:hover,.hero-chip:focus-visible { transform:translateY(-3px); background:#fffdf4; box-shadow:0 20px 38px rgba(47,35,15,.22),0 0 0 1px rgba(255,255,255,.85) inset; outline:3px solid rgba(184,116,8,.22); outline-offset:3px; } .hero-chip strong { font-family:'Fraunces',Georgia,serif; font-size:19px; font-weight:900; text-shadow:none; }
     .poster-stage { position:absolute; z-index:1; left:50%; bottom:10px; width:min(1120px,94%); height:350px; transform:translateX(-50%); } .hero-card,.hero-poster { position:absolute; border:1px solid rgba(203,189,164,.75); border-radius:14px; box-shadow:0 24px 40px rgba(42,30,13,.28); overflow:hidden; } .hero-card { left:50%; bottom:30px; width:min(560px,55vw); height:315px; transform:translateX(-50%) rotate(-.5deg); z-index:4; background:#12391f; } .hero-poster { bottom:36px; width:360px; height:260px; padding:0; object-fit:cover; object-position:center; background:transparent; } .poster-1 { left:0; transform:rotate(-5deg); z-index:2; } .poster-2 { right:0; transform:rotate(5deg); z-index:1; }
-    .hero-image-wrap,.thumb { position:absolute; inset:0; display:block; text-decoration:none; background:#fffaf0; } .hero-image-wrap img { width:100%; height:100%; display:block; object-fit:cover; object-position:top center; } .thumb img { width:100%; height:100%; display:block; object-fit:contain; object-position:center; } .hero-title-overlay h3 { font-size:26px; }
+    .hero-image-wrap,.thumb { position:absolute; inset:0; display:block; overflow:hidden; text-decoration:none; background:#fffaf0; } .hero-image-wrap img { width:100%; height:100%; display:block; object-fit:cover; object-position:top center; } .thumb img { position:absolute; inset:0; width:100%; height:100%; display:block; object-position:center; } .thumb-backdrop { object-fit:cover; filter:blur(18px) brightness(.62) saturate(.82); transform:scale(1.12); } .thumb-image { z-index:1; object-fit:contain; } .hero-title-overlay h3 { font-size:26px; }
     .collections-hub,.process-note,.science-hero { margin-top:30px; } .collections-heading-row { display:flex; justify-content:space-between; gap:18px; align-items:end; margin-bottom:22px; } .collections-heading-row h2,.process-note h2,.science-hero h2 { margin:0; font-family:'Fraunces',Georgia,serif; color:var(--forest); font-size:clamp(42px,5vw,76px); line-height:.96; letter-spacing:-.045em; text-wrap:balance; } .collections-heading-row p,.process-note p,.science-hero p { margin:12px 0 0; color:#2f2b22; font-size:18px; line-height:1.55; max-width:64ch; }
     .collection-grid { display:grid; grid-template-columns:1.04fr 1fr; gap:22px; } .collection-card { position:relative; min-height:280px; display:flex; flex-direction:column; justify-content:space-between; gap:16px; padding:30px; border-radius:28px; text-decoration:none; border:1px solid rgba(218,205,180,.9); background:rgba(255,249,235,.72); overflow:hidden; box-shadow:var(--shadow); transition:transform .22s ease,box-shadow .22s ease; } .collection-card:hover,.collection-card:focus-visible { transform:translateY(-4px); box-shadow:0 24px 48px rgba(47,35,15,.22); outline:0; } .collection-card:active { transform:translateY(-1px) scale(.99); } .collection-card.featured-collection { min-height:590px; grid-row:span 2; background:linear-gradient(140deg,#10371e,#1f5130); color:#fff9eb; } .collection-card.school,.collection-card.science-news,.collection-card.all { min-height:280px; } .collection-card.school { background:#fff8e9; } .collection-card.science-news { background:#e5ead9; } .collection-card.all { background:#f8efdc; }
     .collection-copy { position:relative; z-index:2; max-width:310px; } .collection-copy strong { display:block; font-family:'Fraunces',Georgia,serif; color:var(--forest); font-size:clamp(34px,4vw,58px); line-height:.95; letter-spacing:-.04em; } .featured-collection .collection-copy strong,.featured-collection .collection-copy small { color:#fff9eb; } .collection-copy small { display:block; margin-top:14px; color:#2f2b22; font-size:17px; line-height:1.45; } .collection-cta { position:relative; z-index:3; align-self:flex-start; padding:13px 18px; border-radius:10px; background:#fff9eb; color:#12391f; font-weight:900; box-shadow:0 12px 24px rgba(34,24,8,.14); } .school .collection-cta,.science-news .collection-cta,.all .collection-cta { background:var(--forest); color:#fff9eb; }
@@ -316,6 +316,20 @@
   const ageSelect = document.getElementById('archive-age');
   if (!masonry || !summary || !searchInput || !categorySelect || !languageSelect || !ageSelect) return;
 
+  function addCardBackdrops(root) {
+    root.querySelectorAll('.thumb').forEach((thumb) => {
+      const image = thumb.querySelector('img:not(.thumb-backdrop)');
+      if (!image || thumb.querySelector('.thumb-backdrop')) return;
+      const backdrop = image.cloneNode(false);
+      backdrop.className = 'thumb-backdrop';
+      backdrop.alt = '';
+      backdrop.setAttribute('aria-hidden', 'true');
+      image.classList.add('thumb-image');
+      thumb.prepend(backdrop);
+    });
+  }
+
+  addCardBackdrops(masonry);
   const initialMarkup = masonry.innerHTML;
   const defaultLang = 'en';
   let uiLang = localStorage.getItem('archive-ui-lang') || defaultLang;
@@ -614,6 +628,7 @@
     masonry.innerHTML = filtered.length
       ? filtered.map((entry, index) => renderCard(entry, index % 4 === 0)).join('')
       : `<p class="empty">${escapeHtml(t('no_results'))}</p>`;
+    addCardBackdrops(masonry);
     summary.dataset.dynamic = 'true';
     summary.textContent = t('found', {count: filtered.length});
     if (pagination) pagination.classList.add('is-hidden');

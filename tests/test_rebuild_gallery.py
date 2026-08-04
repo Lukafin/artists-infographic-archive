@@ -121,8 +121,23 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         self.assertIn('class="science-preview-image"', index_html)
         self.assertIn('All infographics', index_html)
         self.assertIn('data-i18n="category_label">Collection</label>', index_html)
+        self.assertIn(
+            '<option value="people" data-category-option="people">Famous people</option>',
+            index_html,
+        )
         self.assertIn('history.pushState', index_html)
         self.assertIn('setCategoryControlForCollection', index_html)
+        self.assertIn(
+            "const exactCategory = collection && collection !== 'all' ? collection : '';",
+            index_html,
+        )
+        self.assertIn(
+            "if (category === 'people' && !['artist', 'scientist', 'sport'].includes(entry.category)) return false;",
+            index_html,
+        )
+        self.assertIn('function addCardBackdrops(root)', index_html)
+        self.assertIn("backdrop.className = 'thumb-backdrop'", index_html)
+        self.assertIn('.thumb-image { z-index:1; object-fit:contain; }', index_html)
         self.assertIn('target.hash = \'archive\'', index_html)
         self.assertIn('Made with human supervision and', index_html)
         self.assertIn('Roj swarm agents', index_html)
