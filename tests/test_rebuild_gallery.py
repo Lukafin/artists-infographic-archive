@@ -214,6 +214,23 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         self.assertIn('Archaeology', science_page)
         self.assertIn('A surprising space discovery', science_page)
         self.assertIn('Read the original article ↗', science_page)
+        self.assertNotIn('Search archive', science_page)
+        self.assertNotIn('science-trust', science_page)
+        self.assertNotIn('science-open', science_page)
+        self.assertNotIn('<details class="science-sources">', science_page)
+        self.assertIn('<section class="science-sources"', science_page)
+        self.assertIn(
+            '>Source 1 (https://science.nasa.gov/example-discovery/)</a>',
+            science_page,
+        )
+        self.assertNotIn('>Source 1</a>', science_page)
+        self.assertNotIn('← Home', science_page)
+        self.assertNotIn('<span class="pill">1 explainers</span>', science_page)
+        self.assertIn('data-lang-option="en"', science_page)
+        self.assertIn('data-lang-option="sl"', science_page)
+        self.assertIn("localStorage.getItem('archive-ui-lang')", science_page)
+        self.assertIn("science_title: 'Razložene znanstvene novice'", science_page)
+        self.assertIn("source: 'Vir'", science_page)
 
 
 if __name__ == '__main__':

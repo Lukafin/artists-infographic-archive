@@ -104,6 +104,11 @@ def source_count_label(e):
     return f'{count} sources' if count else 'No sources'
 
 
+def source_link_label(url, index, url_limit=44):
+    display_url = url if len(url) <= url_limit else url[:url_limit - 1] + '…'
+    return f'Source {index} ({display_url})'
+
+
 def age_suitability_badge(e):
     keys = e.get('age_suitability_keys') or []
     if not keys:
@@ -153,8 +158,10 @@ def render_sources(e):
     if not sources:
         return ''
     items = ''.join(
-        f'<li><a href="{html.escape(url)}" target="_blank" rel="noopener noreferrer" data-source-link="1">source</a></li>'
-        for url in sources[:4]
+        f'<li><a href="{html.escape(url)}" title="{html.escape(url)}" target="_blank" rel="noopener noreferrer" '
+        f'data-source-index="{index}" data-source-url="{html.escape(url)}">'
+        f'{html.escape(source_link_label(url, index))}</a></li>'
+        for index, url in enumerate(sources[:4], 1)
     )
     return f'<ul class="sources">{items}</ul>'
 
@@ -388,12 +395,20 @@ def render_science_news_page(science_entries):
     featured = science_entries[0] if science_entries else None
     featured_img = preview_img(featured, 'science-hero-image', 'Latest science explainer')
     featured_title = html.escape(display_title(featured.get('person', 'Latest science explainer'))) if featured else 'Latest science explainer'
-    featured_file = html.escape(featured.get('filename', '')) if featured else './?collection=science_news#archive'
     featured_sources = (featured or {}).get('sources') or []
-    source_count = len(featured_sources)
     source_links = ''.join(
-        f'<li><a href="{html.escape(url)}" target="_blank" rel="noopener noreferrer">Source {idx}</a></li>'
-        for idx, url in enumerate(featured_sources[:6], 1)
+        f'<li><a href="{html.escape(url)}" title="{html.escape(url)}" target="_blank" rel="noopener noreferrer" '
+        f'data-source-index="{index}" data-source-url="{html.escape(url)}">'
+        f'{html.escape(source_link_label(url, index))}</a></li>'
+        for index, url in enumerate(featured_sources[:6], 1)
+    )
+    source_list = (
+        f'<section class="science-sources" aria-labelledby="featured-sources-heading">'
+        f'<h3 id="featured-sources-heading" data-i18n="sources_heading">Sources</h3><ul>{source_links}</ul></section>'
+        if source_links else
+        '<section class="science-sources" aria-labelledby="featured-sources-heading">'
+        '<h3 id="featured-sources-heading" data-i18n="sources_heading">Sources</h3>'
+        '<p data-i18n="sources_empty">No sources listed.</p></section>'
     )
     return f'''<!doctype html>
 <html lang="en">
@@ -414,45 +429,199 @@ def render_science_news_page(science_entries):
       <a class="brand brand-link" href="./">
         <div class="logo"><img src="favicon.svg" alt=""></div>
         <div>
-          <h1>Visual Learning Archive</h1>
-          <p>Accessible infographics about people, school topics and science discoveries.</p>
+          <h1 data-i18n="brand_title">Visual Learning Archive</h1>
+          <p data-i18n="brand_subtitle">Accessible infographics about people, school topics and science discoveries.</p>
         </div>
       </a>
-      <div class="nav-right"><a class="pill" href="./">← Home</a><a class="pill primary" href="./?collection=science_news#archive">Search archive</a></div>
+      <div class="nav-right">
+        <div class="lang-picker" role="group" aria-label="Site language" data-i18n-aria-label="lang_picker_label">
+          <span class="lang-icon" aria-hidden="true">🌐</span>
+          <button type="button" class="active" data-lang-option="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang-option="sl" aria-pressed="false">SL</button>
+        </div>
+      </div>
     </header>
     <section class="science-hero editorial-science-simple">
       <div class="science-hero-art">
         {featured_img}
-        <div class="science-hero-caption"><span>Latest explainer</span></div>
+        <div class="science-hero-caption"><span data-i18n="latest_explainer">Latest explainer</span></div>
       </div>
       <div class="science-hero-copy surface">
-        <div class="section-kicker">Science news explained</div>
-        <h2>Science news explained</h2>
-        <p>Recent discoveries turned into simple visual summaries for young readers. Source details stay visible, but quiet.</p>
-        <div class="topic-pills"><span>⌂ Archaeology</span><span>◌ Space</span><span>⌁ Biology</span><span>☼ Climate</span></div>
-        <div class="science-trust"><span>{source_count} sources</span><span>Human reviewed</span><span>Source-backed</span></div>
-        <a class="science-open" href="{featured_file}">Open latest explainer <span aria-hidden="true">→</span></a>
-        <details class="science-sources"><summary>View sources</summary><ul>{source_links}</ul></details>
+        <div class="section-kicker" data-i18n="science_eyebrow">Science news explained</div>
+        <h2 data-i18n="science_title">Science news explained</h2>
+        <p data-i18n="science_intro">Recent discoveries turned into simple visual summaries for young readers. Source details stay visible, but quiet.</p>
+        <div class="topic-pills"><span data-i18n="topic_archaeology">⌂ Archaeology</span><span data-i18n="topic_space">◌ Space</span><span data-i18n="topic_biology">⌁ Biology</span><span data-i18n="topic_climate">☼ Climate</span></div>
+        {source_list}
       </div>
     </section>
     <section class="archive-shell" id="science-news">
       <div class="archive-top">
         <div>
-          <h2>Latest science explainers</h2>
-          <p>Browse the science news collection separately from biographies and school posters.</p>
+          <h2 data-i18n="archive_title">Latest science explainers</h2>
+          <p data-i18n="archive_intro">Browse the science news collection separately from biographies and school posters.</p>
         </div>
-        <span class="pill">{len(science_entries)} explainers</span>
       </div>
       <div class="masonry science-list">{cards}</div>
     </section>
     {render_process_note()}
     <footer class="footer surface">
-      <div>Made with human supervision and <a href="https://roj.world/swarms/famous-people-infographic" target="_blank" rel="noopener noreferrer">Roj swarm agents</a>.</div>
-      <div>Updated: {updated_display}</div>
+      <div><span data-i18n="footer_generated_by">Made with human supervision and</span> <a href="https://roj.world/swarms/famous-people-infographic" target="_blank" rel="noopener noreferrer" data-i18n="footer_swarm">Roj swarm agents</a>.</div>
+      <div data-updated="{html.escape(updated)}">Updated: {updated_display}</div>
     </footer>
   </main>
+  {render_science_client_script()}
 </body>
 </html>'''
+
+
+def render_science_client_script():
+    return r'''<script>
+(function () {
+  const defaultLang = 'en';
+  let uiLang = localStorage.getItem('archive-ui-lang') || defaultLang;
+  const dict = {
+    en: {
+      document_title: 'Science news explained - Visual Learning Archive',
+      brand_title: 'Visual Learning Archive',
+      brand_subtitle: 'Accessible infographics about people, school topics and science discoveries.',
+      lang_picker_label: 'Site language',
+      latest_explainer: 'Latest explainer',
+      science_eyebrow: 'Science news explained',
+      science_title: 'Science news explained',
+      science_intro: 'Recent discoveries turned into simple visual summaries for young readers. Source details stay visible, but quiet.',
+      topic_archaeology: '⌂ Archaeology',
+      topic_space: '◌ Space',
+      topic_biology: '⌁ Biology',
+      topic_climate: '☼ Climate',
+      sources_heading: 'Sources',
+      sources_empty: 'No sources listed.',
+      source: 'Source',
+      archive_title: 'Latest science explainers',
+      archive_intro: 'Browse the science news collection separately from biographies and school posters.',
+      process_eyebrow: 'How these infographics are made',
+      process_title: 'Human-supervised visual learning',
+      process_body: 'This archive is created with help from Roj swarm agents - small AI assistants that help gather sources, summarize topics, draft clear explanations and prepare visual material. Human review keeps the archive focused, reliable and useful for learning.',
+      footer_generated_by: 'Made with human supervision and',
+      footer_swarm: 'Roj swarm agents',
+      updated: 'Updated:',
+      original_article: 'Read the original article ↗',
+      image_details: 'Show image details',
+      category_science_news: 'Science news',
+      age_age_6: 'Ages 6+',
+      age_age_13: 'Ages 13+',
+      age_adult: 'Adults',
+      sources_zero: 'No sources',
+      sources_one: '1 source',
+      sources_many: '{count} sources'
+    },
+    sl: {
+      document_title: 'Razložene znanstvene novice - Arhiv vizualnega učenja',
+      brand_title: 'Arhiv vizualnega učenja',
+      brand_subtitle: 'Dostopne infografike o ljudeh, šolskih temah in znanstvenih odkritjih.',
+      lang_picker_label: 'Jezik strani',
+      latest_explainer: 'Najnovejša razlaga',
+      science_eyebrow: 'Razložene znanstvene novice',
+      science_title: 'Razložene znanstvene novice',
+      science_intro: 'Najnovejša odkritja v preprostih vizualnih povzetkih za mlade bralce. Viri ostanejo vedno vidni.',
+      topic_archaeology: '⌂ Arheologija',
+      topic_space: '◌ Vesolje',
+      topic_biology: '⌁ Biologija',
+      topic_climate: '☼ Podnebje',
+      sources_heading: 'Viri',
+      sources_empty: 'Viri niso navedeni.',
+      source: 'Vir',
+      archive_title: 'Najnovejše znanstvene razlage',
+      archive_intro: 'Prebrskaj zbirko znanstvenih novic ločeno od biografij in šolskih plakatov.',
+      process_eyebrow: 'Kako nastajajo infografike',
+      process_title: 'Vizualno učenje s človeškim pregledom',
+      process_body: 'Arhiv nastaja s pomočjo Roj swarm agentov - majhnih AI pomočnikov, ki pomagajo zbrati vire, povzeti teme, pripraviti jasne razlage in vizualno gradivo. Človeški pregled skrbi, da je arhiv osredotočen, zanesljiv in uporaben za učenje.',
+      footer_generated_by: 'Ustvarjeno s človeškim pregledom in pomočjo',
+      footer_swarm: 'Roj swarm agentov',
+      updated: 'Posodobljeno:',
+      original_article: 'Preberi izvirni članek ↗',
+      image_details: 'Pokaži podrobnosti slike',
+      category_science_news: 'Znanstvena novica',
+      age_age_6: '6+ let',
+      age_age_13: '13+ let',
+      age_adult: 'Odrasli',
+      sources_zero: 'Brez virov',
+      sources_one: '1 vir',
+      sources_many: '{count} viri'
+    }
+  };
+
+  function t(key, params) {
+    let value = (dict[uiLang] && dict[uiLang][key]) || dict.en[key] || key;
+    Object.entries(params || {}).forEach(([name, replacement]) => {
+      value = value.replace(`{${name}}`, replacement);
+    });
+    return value;
+  }
+
+  function compactSourceUrl(url) {
+    return url.length <= 44 ? url : `${url.slice(0, 43)}…`;
+  }
+
+  function sourceCountLabel(count) {
+    if (count === 1) return t('sources_one');
+    return count ? t('sources_many', {count}) : t('sources_zero');
+  }
+
+  function formatUpdated(value) {
+    const match = String(value || '').match(/^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}:\d{2})/);
+    if (!match) return value || '';
+    return `${Number(match[3])}. ${Number(match[2])}. ${match[1]}, ${match[4]}`;
+  }
+
+  function updateTranslations() {
+    document.documentElement.lang = uiLang;
+    document.title = t('document_title');
+    document.querySelectorAll('[data-i18n]').forEach((node) => {
+      node.textContent = t(node.dataset.i18n);
+    });
+    document.querySelectorAll('[data-i18n-aria-label]').forEach((node) => {
+      node.setAttribute('aria-label', t(node.dataset.i18nAriaLabel));
+    });
+    document.querySelectorAll('[data-source-index][data-source-url]').forEach((node) => {
+      node.textContent = `${t('source')} ${node.dataset.sourceIndex} (${compactSourceUrl(node.dataset.sourceUrl)})`;
+    });
+    document.querySelectorAll('[data-original-article-link]').forEach((node) => {
+      node.textContent = t('original_article');
+    });
+    document.querySelectorAll('[data-info-label]').forEach((node) => {
+      node.setAttribute('aria-label', t('image_details'));
+    });
+    document.querySelectorAll('[data-category-tag="science_news"]').forEach((node) => {
+      node.textContent = t('category_science_news');
+    });
+    document.querySelectorAll('[data-source-count]').forEach((node) => {
+      node.textContent = sourceCountLabel(Number(node.dataset.sourceCount || 0));
+    });
+    document.querySelectorAll('[data-age-tag]').forEach((node) => {
+      const parent = node.closest('[data-age-suitability]');
+      const keys = (parent?.dataset.ageSuitability || '').split(/\s+/).filter(Boolean);
+      node.textContent = keys.map((key) => t(`age_${key}`)).join(', ');
+    });
+    const updatedNode = document.querySelector('[data-updated]');
+    if (updatedNode) updatedNode.textContent = `${t('updated')} ${formatUpdated(updatedNode.dataset.updated)}`;
+    document.querySelectorAll('[data-lang-option]').forEach((button) => {
+      const active = button.dataset.langOption === uiLang;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+  }
+
+  document.querySelectorAll('[data-lang-option]').forEach((button) => {
+    button.addEventListener('click', () => {
+      uiLang = button.dataset.langOption;
+      localStorage.setItem('archive-ui-lang', uiLang);
+      updateTranslations();
+    });
+  });
+
+  updateTranslations();
+})();
+</script>'''
 
 
 def render_filter_bar(index_summary):
@@ -685,6 +854,10 @@ def render_client_script():
     return count ? t('sources_many', {count}) : t('sources_zero');
   }
 
+  function compactSourceUrl(url) {
+    return url.length <= 44 ? url : `${url.slice(0, 43)}…`;
+  }
+
   function ageLabel(key) {
     return t(`age_${key}`);
   }
@@ -697,7 +870,7 @@ def render_client_script():
 
   function renderSources(sources) {
     if (!sources || !sources.length) return '';
-    return `<ul class="sources">${sources.slice(0, 4).map((url) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" data-source-link="1">${escapeHtml(t('source'))}</a></li>`).join('')}</ul>`;
+    return `<ul class="sources">${sources.slice(0, 4).map((url, index) => `<li><a href="${escapeHtml(url)}" title="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" data-source-index="${index + 1}" data-source-url="${escapeHtml(url)}">${escapeHtml(t('source'))} ${index + 1} (${escapeHtml(compactSourceUrl(url))})</a></li>`).join('')}</ul>`;
   }
 
   function renderOriginalArticle(entry) {
@@ -744,7 +917,9 @@ def render_client_script():
     document.querySelectorAll('[data-i18n-placeholder]').forEach((node) => {
       node.setAttribute('placeholder', t(node.dataset.i18nPlaceholder));
     });
-    document.querySelectorAll('[data-source-link]').forEach((node) => { node.textContent = t('source'); });
+    document.querySelectorAll('[data-source-index][data-source-url]').forEach((node) => {
+      node.textContent = `${t('source')} ${node.dataset.sourceIndex} (${compactSourceUrl(node.dataset.sourceUrl)})`;
+    });
     document.querySelectorAll('[data-original-article-link]').forEach((node) => { node.textContent = t('original_article'); });
     document.querySelectorAll('[data-info-label]').forEach((node) => { node.setAttribute('aria-label', t('image_details')); });
     document.querySelectorAll('[data-date]').forEach((node) => { node.textContent = formatDate(node.dataset.date); });
@@ -902,12 +1077,12 @@ BASE_CSS = """
     .collection-grid {{ display:grid; grid-template-columns:1.04fr 1fr; gap:22px; }} .collection-card {{ position:relative; min-height:280px; display:flex; flex-direction:column; justify-content:space-between; gap:16px; padding:30px; border-radius:28px; text-decoration:none; border:1px solid rgba(218,205,180,.9); background:rgba(255,249,235,.72); overflow:hidden; box-shadow:var(--shadow); transition:transform .22s ease,box-shadow .22s ease; }} .collection-card:hover,.collection-card:focus-visible {{ transform:translateY(-4px); box-shadow:0 24px 48px rgba(47,35,15,.22); outline:0; }} .collection-card:active {{ transform:translateY(-1px) scale(.99); }} .collection-card.featured-collection {{ min-height:590px; grid-row:span 2; background:linear-gradient(140deg,#10371e,#1f5130); color:#fff9eb; }} .collection-card.school,.collection-card.science-news,.collection-card.all {{ min-height:280px; }} .collection-card.school {{ background:#fff8e9; }} .collection-card.science-news {{ background:#e5ead9; }} .collection-card.all {{ background:#f8efdc; }}
     .collection-copy {{ position:relative; z-index:2; max-width:310px; }} .collection-copy strong {{ display:block; font-family:'Fraunces',Georgia,serif; color:var(--forest); font-size:clamp(34px,4vw,58px); line-height:.95; letter-spacing:-.04em; }} .featured-collection .collection-copy strong,.featured-collection .collection-copy small {{ color:#fff9eb; }} .collection-copy small {{ display:block; margin-top:14px; color:#2f2b22; font-size:17px; line-height:1.45; }} .collection-cta {{ position:relative; z-index:3; align-self:flex-start; padding:13px 18px; border-radius:10px; background:#fff9eb; color:#12391f; font-weight:900; box-shadow:0 12px 24px rgba(34,24,8,.14); }} .school .collection-cta,.science-news .collection-cta,.all .collection-cta {{ background:var(--forest); color:#fff9eb; }}
     .collection-art {{ position:absolute; inset:auto 0 0 auto; z-index:1; pointer-events:none; }} .science-art {{ inset:0; }} .people-art {{ width:78%; height:70%; right:-2%; bottom:42px; }} .people-sheet {{ position:absolute; object-fit:cover; background:#fffaf0; border:1px solid #cebfa4; border-radius:8px; box-shadow:0 18px 32px rgba(11,25,11,.36); }} .sheet-main {{ width:52%; height:78%; right:5%; bottom:10%; transform:rotate(3deg); }} .sheet-left {{ width:42%; height:62%; left:2%; bottom:0; transform:rotate(-6deg); }} .sheet-right {{ width:40%; height:58%; right:-4%; bottom:0; transform:rotate(6deg); }} .mini-poster {{ position:absolute; object-fit:cover; width:210px; height:190px; right:28px; bottom:32px; border:1px solid #cbbda4; border-radius:8px; background:#fffaf0; box-shadow:0 16px 26px rgba(47,35,15,.18); }} .school-two {{ right:160px; bottom:42px; transform:rotate(-7deg); }} .school-one {{ transform:rotate(5deg); }} .science-preview-image,.all-preview-image {{ position:absolute; right:24px; bottom:24px; width:45%; height:70%; object-fit:cover; border-radius:12px; border:1px solid #cbbda4; box-shadow:0 16px 26px rgba(47,35,15,.18); }}
-    .process-note {{ padding:32px; background:linear-gradient(135deg,rgba(255,249,235,.88),rgba(229,234,217,.82)); }} .editorial-science-simple {{ display:grid; grid-template-columns:minmax(0,1.4fr) minmax(390px,.7fr); gap:34px; align-items:stretch; background:transparent; }} .science-hero-copy {{ padding:42px; box-shadow:none; display:flex; flex-direction:column; justify-content:center; }} .science-hero-copy h2 {{ font-size:clamp(50px,4vw,64px); }} .science-hero-art {{ position:relative; min-height:600px; overflow:hidden; border-radius:26px; background:#0d2d19; box-shadow:var(--shadow); }} .science-hero-art::after {{ content:''; position:absolute; inset:0; background:linear-gradient(180deg,transparent 62%,rgba(6,32,17,.78)); pointer-events:none; }} .science-hero-image {{ position:absolute; inset:0; width:100%; height:100%; object-fit:contain; object-position:center; background:#0b2c19; filter:saturate(.94) contrast(1.04); }} .science-hero-caption {{ position:absolute; z-index:2; left:28px; right:28px; bottom:24px; display:flex; align-items:center; justify-content:space-between; gap:20px; color:#fff9eb; font-size:13px; letter-spacing:.08em; text-transform:uppercase; }} .science-hero-caption strong {{ max-width:62%; text-align:right; font-family:'Fraunces',Georgia,serif; font-size:18px; line-height:1.15; letter-spacing:0; text-transform:none; }} .topic-pills {{ margin-top:22px; display:grid; grid-template-columns:1fr 1fr; }} .topic-pills span {{ display:inline-flex; justify-content:flex-start; gap:8px; padding:14px 16px; border-radius:999px; background:#eee4d0; color:#403829; }} .science-trust {{ display:flex; flex-wrap:wrap; gap:8px 16px; margin-top:24px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:13px; }} .science-trust span::before {{ content:'•'; color:var(--accent); margin-right:7px; }} .science-open {{ display:flex; align-items:center; justify-content:space-between; margin-top:22px; padding:18px 22px; border-radius:14px; color:#fffaf0; background:linear-gradient(135deg,#ca820d,#a95f05); font-family:'Fraunces',Georgia,serif; font-size:22px; text-decoration:none; box-shadow:0 16px 28px rgba(184,116,8,.20); transition:transform .45s cubic-bezier(.32,.72,0,1); }} .science-open:hover {{ transform:translateY(-2px); }} .science-sources {{ margin-top:14px; color:var(--muted); font-size:14px; }} .science-sources summary {{ cursor:pointer; font-weight:750; }} .science-sources ul {{ margin:10px 0 0; padding-left:18px; }}
+    .process-note {{ padding:32px; background:linear-gradient(135deg,rgba(255,249,235,.88),rgba(229,234,217,.82)); }} .editorial-science-simple {{ display:grid; grid-template-columns:minmax(0,1.4fr) minmax(390px,.7fr); gap:34px; align-items:stretch; background:transparent; }} .science-hero-copy {{ padding:42px; box-shadow:none; display:flex; flex-direction:column; justify-content:center; }} .science-hero-copy h2 {{ font-size:clamp(50px,4vw,64px); }} .science-hero-art {{ position:relative; min-height:600px; overflow:hidden; border-radius:26px; background:#0d2d19; box-shadow:var(--shadow); }} .science-hero-art::after {{ content:''; position:absolute; inset:0; background:linear-gradient(180deg,transparent 62%,rgba(6,32,17,.78)); pointer-events:none; }} .science-hero-image {{ position:absolute; inset:0; width:100%; height:100%; object-fit:contain; object-position:center; background:#0b2c19; filter:saturate(.94) contrast(1.04); }} .science-hero-caption {{ position:absolute; z-index:2; left:28px; right:28px; bottom:24px; display:flex; align-items:center; justify-content:space-between; gap:20px; color:#fff9eb; font-size:13px; letter-spacing:.08em; text-transform:uppercase; }} .science-hero-caption strong {{ max-width:62%; text-align:right; font-family:'Fraunces',Georgia,serif; font-size:18px; line-height:1.15; letter-spacing:0; text-transform:none; }} .topic-pills {{ margin-top:22px; display:grid; grid-template-columns:1fr 1fr; }} .topic-pills span {{ display:inline-flex; justify-content:flex-start; gap:8px; padding:14px 16px; border-radius:999px; background:#eee4d0; color:#403829; }} .science-sources {{ margin-top:24px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }} .science-sources h3 {{ margin:0; color:var(--forest); font-size:15px; }} .science-sources ul {{ display:grid; gap:8px; margin:10px 0 0; padding:0; list-style:none; }} .science-sources a {{ display:block; overflow-wrap:anywhere; color:var(--forest); text-decoration:underline; text-underline-offset:2px; }}
     .archive-shell {{ margin-top:30px; padding:28px; background:rgba(255,249,235,.74); border:1px solid var(--line); border-radius:30px; box-shadow:var(--shadow); }} .archive-top {{ display:flex; justify-content:space-between; gap:18px; align-items:end; margin-bottom:22px; }} .archive-top h2 {{ margin:0; font-family:'Fraunces',Georgia,serif; color:var(--forest); font-size:42px; letter-spacing:-.04em; }} .archive-top p {{ margin:8px 0 0; color:var(--muted); font-size:17px; max-width:60ch; }}
     .masonry {{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; align-items:stretch; }} .card,.image-card {{ position:relative; isolation:isolate; margin:0; background:#fffaf0; border:1px solid var(--line); border-radius:18px; overflow:hidden; box-shadow:0 14px 28px rgba(47,35,15,.12); aspect-ratio:16/9; }} .card.feature {{ box-shadow:0 18px 36px rgba(47,35,15,.18); }} .image-title {{ position:absolute; left:0; right:0; bottom:0; z-index:2; padding:58px 16px 14px; color:#fff; background:linear-gradient(180deg,transparent,rgba(18,57,31,.74)); pointer-events:none; }} .image-title h3 {{ margin:0; font-family:'Fraunces',Georgia,serif; font-size:22px; line-height:1.05; letter-spacing:-.03em; text-shadow:0 1px 12px rgba(0,0,0,.38); }} .card.feature .image-title h3 {{ font-size:28px; }}
     .info-popover {{ position:absolute; top:12px; right:12px; z-index:4; max-width:calc(100% - 24px); }} .info-popover[open] {{ right:12px; bottom:auto; }} .info-popover summary {{ list-style:none; }} .info-popover summary::-webkit-details-marker {{ display:none; }} .info-button {{ width:32px; height:32px; display:grid; place-items:center; margin-left:auto; border-radius:999px; border:1px solid rgba(255,255,255,.5); background:rgba(255,249,235,.64); color:rgba(18,57,31,.82); font-weight:850; font-size:15px; box-shadow:0 6px 16px rgba(0,0,0,.10); backdrop-filter:blur(8px); cursor:pointer; }} .info-button:hover,.info-button:focus-visible {{ background:var(--forest); color:#fff; outline:0; }} .info-panel {{ position:absolute; top:42px; right:0; width:min(300px,calc(100vw - 76px)); max-height:min(148px,calc(100vh - 156px)); overflow:auto; padding:10px; border-radius:16px; background:rgba(255,253,249,.95); border:1px solid rgba(255,255,255,.9); box-shadow:0 16px 38px rgba(0,0,0,.2); backdrop-filter:blur(16px); }} .info-panel .meta-row {{ gap:7px; }} .info-panel .tag {{ padding:6px 9px; }} .info-panel .sources {{ margin-top:9px; gap:6px; }} .info-panel .sources a {{ padding:6px 9px; }}
     .original-article {{ display:flex; align-items:center; justify-content:center; margin-top:9px; padding:8px 10px; border-radius:11px; background:#edf3e4; border:1px solid #d5dfc5; color:#12391f; font-size:12px; font-weight:800; text-decoration:none; }} .original-article:hover,.original-article:focus-visible {{ background:#e2edd6; text-decoration:underline; outline:0; }} .tag {{ display:inline-flex; padding:7px 10px; border-radius:999px; background:#f1e8d6; border:1px solid #e1d1b4; font-size:12px; color:#564f47; }} .tag[hidden] {{ display:none!important; }} .tag.artist {{ background:#f3d7d1; border-color:#e8c4bc; color:#7d2a22; }} .tag.science,.tag.school-poster,.tag.science-news,.tag.source-count {{ background:#e5ead9; border-color:#ccd8bd; color:#285c33; }} .tag.sport,.tag.age {{ background:#fff4cf; border-color:#ead694; color:#6d5208; }} .tag.language {{ background:#eee3cc; border-color:#dccaa9; color:#554327; }}
-    .filter-bar {{ display:grid; grid-template-columns:minmax(220px,1.6fr) repeat(3,minmax(150px,.8fr)); gap:12px; margin:0 0 18px; }} .filter-control {{ display:flex; flex-direction:column; gap:6px; }} .filter-control label {{ font-size:13px; color:var(--muted); font-weight:800; }} .filter-control input,.filter-control select {{ width:100%; padding:13px 14px; border-radius:14px; border:1px solid var(--line); background:#fffaf0; color:var(--body); font:inherit; }} .results-summary {{ margin:0 0 14px; color:var(--muted); font-size:14px; }} .sources {{ list-style:none; display:flex; flex-wrap:wrap; gap:8px; padding:0; margin:12px 0 0; }} .sources a {{ display:inline-flex; padding:7px 10px; border-radius:999px; text-decoration:none; background:#faf7f2; border:1px solid var(--line); color:#594e44; font-size:12px; }} .sources a:hover {{ text-decoration:underline; }} .pagination {{ margin-top:22px; justify-content:flex-end; }} .pagination.is-hidden {{ display:none; }} .footer {{ margin-top:24px; padding:18px 22px; display:flex; justify-content:space-between; gap:12px; color:var(--muted); font-size:14px; }} .empty {{ color:var(--muted); font-size:16px; }}
+    .filter-bar {{ display:grid; grid-template-columns:minmax(220px,1.6fr) repeat(3,minmax(150px,.8fr)); gap:12px; margin:0 0 18px; }} .filter-control {{ display:flex; flex-direction:column; gap:6px; }} .filter-control label {{ font-size:13px; color:var(--muted); font-weight:800; }} .filter-control input,.filter-control select {{ width:100%; padding:13px 14px; border-radius:14px; border:1px solid var(--line); background:#fffaf0; color:var(--body); font:inherit; }} .results-summary {{ margin:0 0 14px; color:var(--muted); font-size:14px; }} .sources {{ list-style:none; display:grid; gap:8px; padding:0; margin:12px 0 0; }} .sources a {{ display:block; overflow-wrap:anywhere; padding:7px 10px; border-radius:10px; text-decoration:none; background:#faf7f2; border:1px solid var(--line); color:#594e44; font-size:12px; }} .sources a:hover {{ text-decoration:underline; }} .pagination {{ margin-top:22px; justify-content:flex-end; }} .pagination.is-hidden {{ display:none; }} .footer {{ margin-top:24px; padding:18px 22px; display:flex; justify-content:space-between; gap:12px; color:var(--muted); font-size:14px; }} .empty {{ color:var(--muted); font-size:16px; }}
     @media (max-width:1200px) {{ .masonry {{ grid-template-columns:repeat(2,minmax(0,1fr)); }} }} @media (max-width:1000px) {{ .collection-grid {{ grid-template-columns:1fr; }} .collection-card.featured-collection {{ min-height:480px; }} .poster-stage {{ position:relative; left:auto; bottom:auto; transform:none; width:100%; margin-top:32px; }} .hero-desk {{ min-height:auto; padding-bottom:30px; }} .hero-desk::after {{ display:none; }} .editorial-science-simple {{ grid-template-columns:1fr; }} .science-hero-art {{ min-height:520px; }} }} @media (max-width:700px) {{ .nav {{ position:static; flex-direction:column; align-items:stretch; }} .brand {{ align-items:flex-start; }} .brand h1,.brand p {{ overflow-wrap:anywhere; }} .nav-right {{ justify-content:flex-start; }} .support-note {{ max-width:none; text-align:left; }} .archive-top,.footer,.collections-heading-row {{ flex-direction:column; align-items:flex-start; }} .pagination {{ justify-content:flex-start; }} .intro {{ font-size:17px; }} .hero-desk {{ padding:40px 10px 24px; }} .hero-copy {{ width:100%; min-width:0; }} .hero-copy h2 {{ width:100%; max-width:100%; font-size:clamp(38px,11.5vw,46px); line-height:.98; letter-spacing:-.06em; overflow-wrap:normal; }} .ornament span {{ width:72px; }} .wrap {{ width:100%; max-width:100%; overflow:hidden; padding:18px 14px 44px; }} .filter-bar {{ grid-template-columns:1fr; }} .masonry {{ grid-template-columns:1fr; }} .hero-chips {{ width:100%; }} .hero-chip {{ width:100%; min-width:0; margin-top:8px; }} .poster-stage {{ height:310px; }} .hero-card {{ width:78%; height:220px; }} .hero-poster {{ width:210px; height:160px; }} .poster-2 {{ display:none; }} .collection-card {{ padding:24px; min-height:330px; }} .mini-poster {{ width:155px; height:140px; }} .science-preview-image,.all-preview-image {{ width:52%; height:54%; }} .science-hero-art {{ min-height:390px; }} .science-hero-copy {{ padding:28px; }} .science-hero-caption {{ left:18px; right:18px; bottom:16px; align-items:flex-start; flex-direction:column; gap:4px; }} .science-hero-caption strong {{ max-width:100%; text-align:left; }} .topic-pills {{ grid-template-columns:1fr 1fr; }} .info-popover[open] {{ left:12px; right:12px; bottom:12px; max-width:none; }} .info-popover[open] .info-panel {{ width:min(276px,100%); max-width:100%; max-height:min(104px,calc(100% - 54px)); }} .info-panel .tag,.info-panel .sources a {{ padding:5px 8px; font-size:11px; }} }}
   """
 
