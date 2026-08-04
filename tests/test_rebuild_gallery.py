@@ -121,8 +121,23 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         self.assertIn('class="science-preview-image"', index_html)
         self.assertIn('All infographics', index_html)
         self.assertIn('data-i18n="category_label">Collection</label>', index_html)
+        self.assertIn(
+            '<option value="people" data-category-option="people">Famous people</option>',
+            index_html,
+        )
         self.assertIn('history.pushState', index_html)
         self.assertIn('setCategoryControlForCollection', index_html)
+        self.assertIn(
+            "const exactCategory = collection && collection !== 'all' ? collection : '';",
+            index_html,
+        )
+        self.assertIn(
+            "if (category === 'people' && !['artist', 'scientist', 'sport'].includes(entry.category)) return false;",
+            index_html,
+        )
+        self.assertIn('function addCardBackdrops(root)', index_html)
+        self.assertIn("backdrop.className = 'thumb-backdrop'", index_html)
+        self.assertIn('.thumb-image { z-index:1; object-fit:contain; }', index_html)
         self.assertIn('target.hash = \'archive\'', index_html)
         self.assertIn('Made with human supervision and', index_html)
         self.assertIn('Roj swarm agents', index_html)
@@ -214,6 +229,23 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         self.assertIn('Archaeology', science_page)
         self.assertIn('A surprising space discovery', science_page)
         self.assertIn('Read the original article ↗', science_page)
+        self.assertNotIn('Search archive', science_page)
+        self.assertNotIn('science-trust', science_page)
+        self.assertNotIn('science-open', science_page)
+        self.assertNotIn('<details class="science-sources">', science_page)
+        self.assertIn('<section class="science-sources"', science_page)
+        self.assertIn(
+            '>Source 1 (https://science.nasa.gov/example-discovery/)</a>',
+            science_page,
+        )
+        self.assertNotIn('>Source 1</a>', science_page)
+        self.assertNotIn('← Home', science_page)
+        self.assertNotIn('<span class="pill">1 explainers</span>', science_page)
+        self.assertIn('data-lang-option="en"', science_page)
+        self.assertIn('data-lang-option="sl"', science_page)
+        self.assertIn("localStorage.getItem('archive-ui-lang')", science_page)
+        self.assertIn("science_title: 'Razložene znanstvene novice'", science_page)
+        self.assertIn("source: 'Vir'", science_page)
 
 
 if __name__ == '__main__':
