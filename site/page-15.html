@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Daily birthday infographic archive – Archive – page 15</title>
-  <meta name="description" content="Daily Slovenian kid-friendly infographics about famous artists, scientists and athletes.">
+  <meta name="description" content="Daily Slovenian infographics about famous artists, scientists and athletes for everyone.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -49,7 +49,7 @@
     .logo { width:46px; height:46px; border-radius:16px; background:linear-gradient(135deg,var(--hero1),var(--hero3)); display:grid; place-items:center; font-size:23px; }
     .brand h1 { margin:0; font-size:18px; line-height:1.1; }
     .brand p { margin:4px 0 0; color:var(--muted); font-size:13px; }
-    .nav-actions, .hero-chips, .archive-filters, .meta-row, .pagination { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+    .nav-actions, .hero-chips, .meta-row, .pagination { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
     .pill { display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:999px; background:var(--chip); border:1px solid #e4dbce; font-size:14px; color:#3f3933; text-decoration:none; }
     .pill.primary { background:var(--accent); border-color:var(--accent); color:#fff; font-weight:700; }
     .pill.soft { background:rgba(255,255,255,.72); }
@@ -170,10 +170,6 @@
         <div>
           <h2 data-archive-heading="1" data-page="15">Archive – page 15</h2>
           <p data-archive-intro="1" data-page="15">Browse older daily infographics by page or use search and filters.</p>
-        </div>
-        <div class="archive-filters">
-          <span class="pill" data-total-pill="1" data-total="181">Total: 181</span>
-          <span class="pill" data-page-pill="1" data-page="15" data-total="18">Page 15/18</span>
         </div>
       </div>
       <div class="filter-bar">
@@ -400,8 +396,6 @@
       archive_heading_page: 'Archive – page {page}',
       archive_intro_home: 'Search by person, type, image language and age suitability.',
       archive_intro_page: 'Browse older daily infographics by page or use search and filters.',
-      total_prefix: 'Total:',
-      page_prefix: 'Page {page}/{total}',
       search_label: 'Search by person',
       search_placeholder: 'e.g. Duke Ellington',
       category_label: 'Type',
@@ -447,8 +441,6 @@
       archive_heading_page: 'Arhiv – stran {page}',
       archive_intro_home: 'Išči po osebi ter filtriraj po vrsti, jeziku slike in starostni primernosti.',
       archive_intro_page: 'Prelistaj starejše dnevne infografike po straneh ali uporabi iskanje in filtre.',
-      total_prefix: 'Skupaj:',
-      page_prefix: 'Stran {page}/{total}',
       search_label: 'Išči po osebi',
       search_placeholder: 'npr. Duke Ellington',
       category_label: 'Vrsta',
@@ -578,10 +570,6 @@
       button.classList.toggle('active', active);
       button.setAttribute('aria-pressed', active ? 'true' : 'false');
     });
-    const totalPill = document.querySelector('[data-total-pill]');
-    if (totalPill) totalPill.textContent = `${t('total_prefix')} ${totalPill.dataset.total}`;
-    const pagePill = document.querySelector('[data-page-pill]');
-    if (pagePill) pagePill.textContent = t('page_prefix', {page: pagePill.dataset.page, total: pagePill.dataset.total});
     const archiveHeading = document.querySelector('[data-archive-heading]');
     if (archiveHeading) archiveHeading.textContent = archiveHeading.dataset.page === '1' ? t('archive_heading_home') : t('archive_heading_page', {page: archiveHeading.dataset.page});
     const archiveIntro = document.querySelector('[data-archive-intro]');

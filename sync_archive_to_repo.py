@@ -25,7 +25,7 @@ for name in ['rebuild_gallery.py', 'sync_archive_to_repo.py', 'gallery_index.py'
 readme = REPO_ROOT / 'README.md'
 readme.write_text(
     '# Artists Infographic Archive\n\n'
-    'Daily generated Slovenian kid-friendly artist/scientist birthday infographics.\n\n'
+    'Daily generated Slovenian artist/scientist birthday infographics for everyone.\n\n'
     'Contents:\n'
     '- `docs/` canonical GitHub-pushed static site (images + HTML + metadata)\n'
     '- `site/` in-repo mirror backup of the generated static site\n'
