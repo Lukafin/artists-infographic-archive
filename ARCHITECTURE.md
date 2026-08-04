@@ -1,6 +1,6 @@
 # Artists Infographic Archive architecture
 
-This repo is the GitHub Pages archive for generated kid-friendly infographics. It is also the publish target used by the People Infographic Network bridge mode.
+This repo is the GitHub Pages archive for generated accessible infographics for everyone. It is also the publish target used by the People Infographic Network bridge mode.
 
 ## System map
 

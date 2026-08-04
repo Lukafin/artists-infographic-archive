@@ -1,6 +1,6 @@
 # Artists Infographic Archive
 
-Daily generated Slovenian kid-friendly artist/scientist birthday infographics.
+Daily generated Slovenian artist/scientist birthday infographics for everyone.
 
 Contents:
 - `docs/` canonical GitHub-pushed static site (images + HTML + metadata)

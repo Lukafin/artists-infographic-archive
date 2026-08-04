@@ -11,17 +11,19 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class RebuildGalleryOriginalArticleTests(unittest.TestCase):
-    def run_rebuild(self, entry: dict) -> tuple[Path, str, dict, dict]:
+    def run_rebuild(self, entry) -> tuple[Path, str, dict, dict]:
         temp_dir = Path(tempfile.mkdtemp(prefix='artists-gallery-test-'))
         self.addCleanup(shutil.rmtree, temp_dir, ignore_errors=True)
         workspace = temp_dir / 'workspace'
-        runs_dir = workspace / 'runs' / 'test-entry'
         public_root = temp_dir / 'public'
-        runs_dir.mkdir(parents=True)
         public_root.mkdir(parents=True)
 
-        (runs_dir / 'entry.json').write_text(json.dumps(entry), encoding='utf-8')
-        (public_root / entry['filename']).write_bytes(b'not-a-real-image-but-present')
+        test_entries = entry if isinstance(entry, list) else [entry]
+        for index, test_entry in enumerate(test_entries):
+            runs_dir = workspace / 'runs' / f'test-entry-{index}'
+            runs_dir.mkdir(parents=True)
+            (runs_dir / 'entry.json').write_text(json.dumps(test_entry), encoding='utf-8')
+            (public_root / test_entry['filename']).write_bytes(b'not-a-real-image-but-present')
 
         script = (ROOT / 'rebuild_gallery.py').read_text(encoding='utf-8')
         script = script.replace(
@@ -51,7 +53,7 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
 
     def test_science_news_entry_links_to_original_article(self):
         original_article = 'https://science.nasa.gov/example-discovery/'
-        _, index_html, latest, entries = self.run_rebuild(
+        public_root, index_html, latest, entries = self.run_rebuild(
             {
                 'date': '2026-07-31',
                 'person': 'A surprising space discovery',
@@ -71,9 +73,11 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
             }
         )
 
-        self.assertIn(f'href="{original_article}"', index_html)
-        self.assertIn('data-original-article-link="1"', index_html)
-        self.assertIn('Read the original article ↗', index_html)
+        science_news_html = (public_root / 'science-news.html').read_text(encoding='utf-8')
+        self.assertNotIn('id="featured-info"', index_html)
+        self.assertIn(f'href="{original_article}"', science_news_html)
+        self.assertIn('data-original-article-link="1"', science_news_html)
+        self.assertIn('Read the original article ↗', science_news_html)
         self.assertIn("original_article: 'Preberi izvirni članek ↗'", index_html)
         self.assertEqual(latest['original_article_url'], original_article)
         self.assertEqual(entries['entries'][0]['original_article_url'], original_article)
@@ -108,11 +112,13 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         )
 
         self.assertIn('Visual Learning Archive', index_html)
-        self.assertIn('Kid-friendly infographics about people, school topics and science discoveries', index_html)
+        self.assertIn('Accessible infographics about people, school topics and science discoveries', index_html)
         self.assertIn('Choose a collection', index_html)
         self.assertIn('People', index_html)
         self.assertIn('School posters', index_html)
         self.assertIn('Science news', index_html)
+        self.assertIn('.science-art { inset:0; }', index_html)
+        self.assertIn('class="science-preview-image"', index_html)
         self.assertIn('All infographics', index_html)
         self.assertIn('data-i18n="category_label">Collection</label>', index_html)
         self.assertIn('history.pushState', index_html)
@@ -121,6 +127,73 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         self.assertIn('Made with human supervision and', index_html)
         self.assertIn('Roj swarm agents', index_html)
         self.assertTrue((public_root / 'science-news.html').is_file())
+
+    def test_people_collection_uses_three_distinct_previews(self):
+        _, index_html, _, _ = self.run_rebuild(
+            [
+                {
+                    'date': f'2026-07-{31 - index:02d}',
+                    'person': person,
+                    'filename': filename,
+                    'category': category,
+                    'language': 'en',
+                    'sources': ['https://example.org/source'],
+                }
+                for index, (person, filename, category) in enumerate(
+                    [
+                        ('Ada Lovelace', 'AdaLovelace.png', 'scientist'),
+                        ('Frida Kahlo', 'FridaKahlo.png', 'artist'),
+                        ('Michael Jordan', 'MichaelJordan.png', 'sport'),
+                    ]
+                )
+            ]
+        )
+
+        people_art = index_html.split(
+            '<span class="collection-art people-art" aria-hidden="true">', 1
+        )[1].split('</span>', 1)[0]
+        self.assertEqual(people_art.count('class="people-sheet'), 3)
+        self.assertEqual(
+            {
+                'AdaLovelace.png',
+                'FridaKahlo.png',
+                'MichaelJordan.png',
+            },
+            {
+                filename
+                for filename in (
+                    'AdaLovelace.png',
+                    'FridaKahlo.png',
+                    'MichaelJordan.png',
+                )
+                if f'src="{filename}"' in people_art
+            },
+        )
+
+    def test_card_titles_start_with_an_uppercase_letter(self):
+        _, index_html, _, _ = self.run_rebuild(
+            [
+                {
+                    'date': '2026-07-31',
+                    'person': 'Featured topic',
+                    'filename': 'FeaturedTopic.png',
+                    'category': 'school_poster',
+                    'language': 'en',
+                    'sources': ['https://example.org/featured'],
+                },
+                {
+                    'date': '2026-07-30',
+                    'person': 'kemična reakcija',
+                    'filename': 'KemicnaReakcija.png',
+                    'category': 'school_poster',
+                    'language': 'sl',
+                    'sources': ['https://example.org/chemistry'],
+                },
+            ]
+        )
+
+        self.assertIn('<h3>Kemična reakcija</h3>', index_html)
+        self.assertIn('function displayTitle(value)', index_html)
 
     def test_science_news_collection_page_is_generated(self):
         public_root, _, _, _ = self.run_rebuild(

@@ -226,21 +226,39 @@ def pick_preview(entries, categories, fallback_index=0):
     return None
 
 
+def display_title(value):
+    title = str(value or '')
+    return title[:1].upper() + title[1:] if title else ''
+
+
 def preview_img(entry, class_name, alt_prefix='Archive preview'):
     if not entry:
         return ''
     filename = html.escape(entry.get('filename', ''))
-    title = html.escape(entry.get('person', 'infographic'))
+    title = html.escape(display_title(entry.get('person', 'infographic')))
     return f'<img class="{class_name}" src="{filename}" alt="{alt_prefix}: {title}" loading="lazy">'
 
 
 def collection_preview_set(entries):
-    first_person = pick_preview(entries, {'artist', 'scientist'})
+    people_previews = []
+    seen_people_files = set()
+    for entry in entries:
+        filename = entry.get('filename')
+        if (
+            entry.get('category') in {'artist', 'scientist', 'sport'}
+            and filename
+            and filename not in seen_people_files
+        ):
+            people_previews.append(entry)
+            seen_people_files.add(filename)
+            if len(people_previews) == 3:
+                break
+
     first_school = pick_preview(entries, {'school_poster'})
     return {
-        'people_a': first_person,
-        'people_b': pick_preview([e for e in entries if e.get('person') != (first_person or {}).get('person')], {'artist', 'sport', 'scientist'}),
-        'people_c': pick_preview(entries, {'sport', 'artist', 'scientist'}),
+        'people_a': people_previews[0] if len(people_previews) > 0 else None,
+        'people_b': people_previews[1] if len(people_previews) > 1 else None,
+        'people_c': people_previews[2] if len(people_previews) > 2 else None,
         'school_a': first_school,
         'school_b': pick_preview([e for e in entries if e.get('filename') != (first_school or {}).get('filename')], {'school_poster'}),
         'science_a': pick_preview(entries, {'science_news'}),
@@ -248,7 +266,7 @@ def collection_preview_set(entries):
     }
 
 def render_masonry_card(e, featured=False):
-    person = html.escape(e.get('person', ''))
+    person = html.escape(display_title(e.get('person', '')))
     filename = html.escape(e.get('filename', ''))
     age_data = html.escape(age_suitability_data(e))
     feature_cls = ' feature' if featured else ''
@@ -265,10 +283,9 @@ def render_masonry_card(e, featured=False):
 def render_featured(featured):
     if not featured:
         return ''
-    person = html.escape(featured.get('person', ''))
-    age_data = html.escape(age_suitability_data(featured))
+    person = html.escape(display_title(featured.get('person', '')))
     featured_file = html.escape(featured.get('filename', ''))
-    previews = [entry for entry in entries if entry.get('filename') and entry.get('filename') != featured.get('filename')][:3]
+    previews = [entry for entry in entries if entry.get('filename') and entry.get('filename') != featured.get('filename')][:2]
     poster_stack = ''.join(
         preview_img(entry, f'hero-poster poster-{idx + 1}', 'Overlapping archive poster')
         for idx, entry in enumerate(previews)
@@ -278,7 +295,7 @@ def render_featured(featured):
     <div class="eyebrow" data-i18n="hero_eyebrow">Visual learning archive</div>
     <h2 id="hero-title" data-i18n="hero_title">Visual explanations for curious learners</h2>
     <div class="ornament" aria-hidden="true"><span></span>✦<span></span></div>
-    <p class="intro" data-i18n="hero_intro">Kid-friendly infographics about people, school topics and science discoveries. Browse the latest image, choose a collection, or search the full archive.</p>
+    <p class="intro" data-i18n="hero_intro">Accessible infographics about people, school topics and science discoveries. Browse the latest image, choose a collection, or search the full archive.</p>
     <div class="hero-chips" aria-label="Featured collections">
       <a class="hero-chip" href="./?collection=people#archive" data-collection-link="people"><span aria-hidden="true">♙</span><strong data-i18n="collection_people_title">People</strong> →</a>
       <a class="hero-chip" href="./?collection=school_poster#archive" data-collection-link="school_poster"><span aria-hidden="true">▤</span><strong data-i18n="collection_school_title">School posters</strong> →</a>
@@ -287,11 +304,10 @@ def render_featured(featured):
   </div>
   <div class="poster-stage" aria-label="Latest and recent archive posters">
     {poster_stack}
-    <article class="hero-card image-card main-poster" aria-label="Visual Learning Archive preview image">
-      <div class="hero-image-wrap decorative-hero-image">
-        <img src="hero-learning-desk.png" alt="Warm visual learning archive desk with posters, plants and science objects">
-      </div>
-      {render_info_overlay(featured, 'featured-info')}
+    <article class="hero-card image-card main-poster" aria-label="Latest infographic: {person}">
+      <a class="hero-image-wrap" href="{featured_file}" aria-label="Open latest infographic: {person}">
+        <img src="{featured_file}" alt="Infographic: {person}">
+      </a>
     </article>
   </div>
 </section>'''
@@ -328,7 +344,7 @@ def render_collection_hub(stats, previews=None):
     <div>
       <div class="section-kicker" data-i18n="collections_eyebrow">Start with a collection</div>
       <h2 id="collections-heading" data-i18n="collections_title">Choose a collection</h2>
-      <p data-i18n="collections_intro">Carefully curated infographics and explainers made for curious kids and grown-ups.</p>
+      <p data-i18n="collections_intro">Carefully curated infographics and explainers for curious minds.</p>
     </div>
     <a class="text-link" href="#archive" data-i18n="collections_all_link">Browse all infographics ↓</a>
   </div>
@@ -336,22 +352,22 @@ def render_collection_hub(stats, previews=None):
     <a class="collection-card people featured-collection" href="./?collection=people#archive" data-collection-link="people">
       <span class="collection-copy"><strong data-i18n="collection_people_title">Famous people</strong><small data-i18n="collection_people_desc">Discover the lives and big ideas of amazing people who changed our world.</small></span>
       <span class="collection-art people-art" aria-hidden="true">{people_imgs}</span>
-      <span class="collection-cta">Browse people →</span><span class="collection-count">{stats['people']}</span>
+      <span class="collection-cta">Browse people →</span>
     </a>
     <a class="collection-card school" href="./?collection=school_poster#archive" data-collection-link="school_poster">
       <span class="collection-copy"><strong data-i18n="collection_school_title">School posters</strong><small data-i18n="collection_school_desc">Bright, clear posters that make big topics easy to understand.</small></span>
       <span class="collection-art school-art" aria-hidden="true">{school_imgs}</span>
-      <span class="collection-cta">Browse posters →</span><span class="collection-count">{stats['school_poster']}</span>
+      <span class="collection-cta">Browse posters →</span>
     </a>
     <a class="collection-card science-news" href="science-news.html">
       <span class="collection-copy"><strong data-i18n="collection_science_title">Science news explained</strong><small data-i18n="collection_science_desc">Short, visual stories about the latest discoveries and what they mean.</small></span>
-      <span class="collection-art science-art" aria-hidden="true">{science_img}<span class="science-note">source-backed</span></span>
-      <span class="collection-cta">Read explainers →</span><span class="collection-count">{stats['science_news']}</span>
+      <span class="collection-art science-art" aria-hidden="true">{science_img}</span>
+      <span class="collection-cta">Read explainers →</span>
     </a>
     <a class="collection-card all" href="#archive" data-collection-link="all">
       <span class="collection-copy"><strong data-i18n="collection_all_title">All infographics</strong><small data-i18n="collection_all_desc">Search the complete archive by topic, collection, language and age level.</small></span>
       <span class="collection-art all-art" aria-hidden="true">{all_img}</span>
-      <span class="collection-cta">Search archive ↓</span><span class="collection-count">{stats['all']}</span>
+      <span class="collection-cta">Search archive ↓</span>
     </a>
   </div>
 </section>'''
@@ -361,7 +377,7 @@ def render_process_note():
     return '''<section class="process-note surface" aria-labelledby="process-heading">
   <div class="section-kicker" data-i18n="process_eyebrow">How these infographics are made</div>
   <h2 id="process-heading" data-i18n="process_title">Human-supervised visual learning</h2>
-  <p data-i18n="process_body">This archive is created with help from Roj swarm agents — small AI assistants that help gather sources, summarize topics, draft kid-friendly explanations and prepare visual material. Human review keeps the archive focused, safe and useful for learning.</p>
+  <p data-i18n="process_body">This archive is created with help from Roj swarm agents — small AI assistants that help gather sources, summarize topics, draft clear explanations and prepare visual material. Human review keeps the archive focused, reliable and useful for learning.</p>
 </section>'''
 
 
@@ -371,7 +387,7 @@ def render_science_news_page(science_entries):
     cards = '\n'.join(render_masonry_card(e, featured=(idx == 0)) for idx, e in enumerate(science_entries)) or '<p class="empty">No science news explainers have been published yet.</p>'
     featured = science_entries[0] if science_entries else None
     featured_img = preview_img(featured, 'science-hero-image', 'Latest science explainer')
-    featured_title = html.escape(featured.get('person', 'Latest science explainer')) if featured else 'Latest science explainer'
+    featured_title = html.escape(display_title(featured.get('person', 'Latest science explainer'))) if featured else 'Latest science explainer'
     featured_file = html.escape(featured.get('filename', '')) if featured else './?collection=science_news#archive'
     featured_sources = (featured or {}).get('sources') or []
     source_count = len(featured_sources)
@@ -399,7 +415,7 @@ def render_science_news_page(science_entries):
         <div class="logo"><img src="favicon.svg" alt=""></div>
         <div>
           <h1>Visual Learning Archive</h1>
-          <p>Kid-friendly infographics about people, school topics and science discoveries.</p>
+          <p>Accessible infographics about people, school topics and science discoveries.</p>
         </div>
       </a>
       <div class="nav-right"><a class="pill" href="./">← Home</a><a class="pill primary" href="./?collection=science_news#archive">Search archive</a></div>
@@ -503,17 +519,15 @@ def render_client_script():
     en: {
       document_title: 'Visual Learning Archive',
       brand_title: 'Visual Learning Archive',
-      brand_subtitle: 'Kid-friendly infographics about people, school topics and science discoveries',
+      brand_subtitle: 'Accessible infographics about people, school topics and science discoveries',
       kofi: 'Support the site author',
       hero_eyebrow: 'Visual learning archive',
       hero_title: 'Visual explanations for curious learners',
-      hero_intro: 'Kid-friendly infographics about people, school topics and science discoveries. Browse the latest image, choose a collection, or search the full archive.',
+      hero_intro: 'Accessible infographics about people, school topics and science discoveries. Browse the latest image, choose a collection, or search the full archive.',
       archive_heading_home: 'Search the full archive',
       archive_heading_page: 'Archive – page {page}',
       archive_intro_home: 'Search by person, topic, collection, image language and age suitability.',
       archive_intro_page: 'Browse older infographics and explainers by page or use search and filters.',
-      total_prefix: 'Total:',
-      page_prefix: 'Page {page}/{total}',
       search_label: 'Search by person or topic',
       search_placeholder: 'e.g. Duke Ellington or Webb telescope',
       category_label: 'Collection',
@@ -530,7 +544,7 @@ def render_client_script():
       sources_zero: 'No sources',
       sources_one: '1 source',
       sources_many: '{count} sources',
-      footer_text: 'Visual Learning Archive: kid-friendly infographics about people, school topics and science discoveries.',
+      footer_text: 'Visual Learning Archive: accessible infographics about people, school topics and science discoveries.',
       footer_generated_by: 'Made with human supervision and',
       footer_swarm: 'Roj swarm agents',
       updated: 'Updated:',
@@ -549,7 +563,7 @@ def render_client_script():
       image_details: 'Show image details',
       collections_eyebrow: 'Start with a collection',
       collections_title: 'Choose a collection',
-      collections_intro: 'Carefully curated infographics and explainers made for curious kids and grown-ups.',
+      collections_intro: 'Carefully curated infographics and explainers for curious minds.',
       collections_all_link: 'Browse all infographics ↓',
       collection_people_title: 'Famous people',
       collection_people_desc: 'Discover lives and big ideas',
@@ -561,22 +575,20 @@ def render_client_script():
       collection_all_desc: 'Search the complete archive by topic, collection, language and age level',
       process_eyebrow: 'How these infographics are made',
       process_title: 'Human-supervised visual learning',
-      process_body: 'This archive is created with help from Roj swarm agents — small AI assistants that help gather sources, summarize topics, draft kid-friendly explanations and prepare visual material. Human review keeps the archive focused, safe and useful for learning.'
+      process_body: 'This archive is created with help from Roj swarm agents — small AI assistants that help gather sources, summarize topics, draft clear explanations and prepare visual material. Human review keeps the archive focused, reliable and useful for learning.'
     },
     sl: {
       document_title: 'Arhiv vizualnega učenja',
       brand_title: 'Arhiv vizualnega učenja',
-      brand_subtitle: 'Otrokom prijazne infografike o ljudeh, šolskih temah in znanstvenih odkritjih',
+      brand_subtitle: 'Dostopne infografike o ljudeh, šolskih temah in znanstvenih odkritjih',
       kofi: 'Podpri avtorja strani',
       hero_eyebrow: 'Arhiv vizualnega učenja',
-      hero_title: 'Vizualne razlage za radovedne učence',
-      hero_intro: 'Otrokom prijazne infografike o ljudeh, šolskih temah in znanstvenih odkritjih. Oglej si najnovejšo sliko, izberi zbirko ali preišči celoten arhiv.',
+      hero_title: 'Vizualne razlage za radovedneže',
+      hero_intro: 'Dostopne infografike o ljudeh, šolskih temah in znanstvenih odkritjih. Oglej si najnovejšo sliko, izberi zbirko ali preišči celoten arhiv.',
       archive_heading_home: 'Preišči celoten arhiv',
       archive_heading_page: 'Arhiv – stran {page}',
       archive_intro_home: 'Išči po osebi ali temi ter filtriraj po zbirki, jeziku slike in starostni primernosti.',
       archive_intro_page: 'Prelistaj starejše infografike in razlagalnike po straneh ali uporabi iskanje in filtre.',
-      total_prefix: 'Skupaj:',
-      page_prefix: 'Stran {page}/{total}',
       search_label: 'Išči po osebi ali temi',
       search_placeholder: 'npr. Duke Ellington ali teleskop Webb',
       category_label: 'Zbirka',
@@ -593,7 +605,7 @@ def render_client_script():
       sources_zero: 'Brez virov',
       sources_one: '1 vir',
       sources_many: '{count} viri',
-      footer_text: 'Arhiv vizualnega učenja: otrokom prijazne infografike o ljudeh, šolskih temah in znanstvenih odkritjih.',
+      footer_text: 'Arhiv vizualnega učenja: dostopne infografike o ljudeh, šolskih temah in znanstvenih odkritjih.',
       footer_generated_by: 'Ustvarjeno s človeškim pregledom in pomočjo',
       footer_swarm: 'Roj swarm agentov',
       updated: 'Posodobljeno:',
@@ -612,7 +624,7 @@ def render_client_script():
       image_details: 'Pokaži podrobnosti slike',
       collections_eyebrow: 'Začni z zbirko',
       collections_title: 'Izberi zbirko',
-      collections_intro: 'Skrbno zbrane infografike in razlage za radovedne otroke in odrasle.',
+      collections_intro: 'Skrbno zbrane infografike in razlage za vse radovedneže.',
       collections_all_link: 'Poglej vse infografike ↓',
       collection_people_title: 'Znani ljudje',
       collection_people_desc: 'Življenja in velike ideje zanimivih ljudi',
@@ -624,7 +636,7 @@ def render_client_script():
       collection_all_desc: 'Preišči celoten arhiv po temi, zbirki, jeziku in starosti',
       process_eyebrow: 'Kako nastajajo infografike',
       process_title: 'Vizualno učenje s človeškim pregledom',
-      process_body: 'Arhiv nastaja s pomočjo Roj swarm agentov — majhnih AI pomočnikov, ki pomagajo zbrati vire, povzeti teme, pripraviti otrokom prijazne razlage in vizualno gradivo. Človeški pregled skrbi, da je arhiv osredotočen, varen in uporaben za učenje.'
+      process_body: 'Arhiv nastaja s pomočjo Roj swarm agentov — majhnih AI pomočnikov, ki pomagajo zbrati vire, povzeti teme, pripraviti jasne razlage in vizualno gradivo. Človeški pregled skrbi, da je arhiv osredotočen, zanesljiv in uporaben za učenje.'
     }
   };
 
@@ -645,6 +657,11 @@ def render_client_script():
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;')
       .replace(/'/g, '&#39;');
+  }
+
+  function displayTitle(value) {
+    const title = String(value ?? '');
+    return title ? title.charAt(0).toLocaleUpperCase() + title.slice(1) : '';
   }
 
   function formatDate(value) {
@@ -709,9 +726,10 @@ def render_client_script():
   function renderCard(entry, featured) {
     const featureClass = featured ? ' feature' : '';
     const ageKeys = entry.age_suitability_keys || [];
+    const person = displayTitle(entry.person);
     return `<article class="card${featureClass}" data-person="${escapeHtml(entry.person)}" data-category="${escapeHtml(entry.category)}" data-language="${escapeHtml(entry.language)}" data-age-suitability="${escapeHtml(ageKeys.join(' '))}">
-      <a class="thumb" href="${escapeHtml(entry.filename)}" aria-label="Open infographic: ${escapeHtml(entry.person)}"><img src="${escapeHtml(entry.filename)}" alt="Infographic: ${escapeHtml(entry.person)}" loading="lazy"></a>
-      <div class="image-title"><h3>${escapeHtml(entry.person)}</h3></div>
+      <a class="thumb" href="${escapeHtml(entry.filename)}" aria-label="Open infographic: ${escapeHtml(person)}"><img src="${escapeHtml(entry.filename)}" alt="Infographic: ${escapeHtml(person)}" loading="lazy"></a>
+      <div class="image-title"><h3>${escapeHtml(person)}</h3></div>
       ${renderInfoOverlay(entry)}
     </article>`;
   }
@@ -752,10 +770,6 @@ def render_client_script():
       button.classList.toggle('active', active);
       button.setAttribute('aria-pressed', active ? 'true' : 'false');
     });
-    const totalPill = document.querySelector('[data-total-pill]');
-    if (totalPill) totalPill.textContent = `${t('total_prefix')} ${totalPill.dataset.total}`;
-    const pagePill = document.querySelector('[data-page-pill]');
-    if (pagePill) pagePill.textContent = t('page_prefix', {page: pagePill.dataset.page, total: pagePill.dataset.total});
     const archiveHeading = document.querySelector('[data-archive-heading]');
     if (archiveHeading) archiveHeading.textContent = archiveHeading.dataset.page === '1' ? t('archive_heading_home') : t('archive_heading_page', {page: archiveHeading.dataset.page});
     const archiveIntro = document.querySelector('[data-archive-intro]');
@@ -872,7 +886,7 @@ BASE_CSS = """
     body::before {{ content:''; position:fixed; inset:0; pointer-events:none; opacity:.34; z-index:-1; background-image:radial-gradient(rgba(80,57,23,.16) .7px,transparent .7px); background-size:5px 5px; mix-blend-mode:multiply; }}
     a {{ color:inherit; }} .wrap {{ max-width:1480px; margin:0 auto; padding:28px 26px 64px; }} .surface {{ background:rgba(255,249,235,.78); border:1px solid rgba(218,205,180,.86); border-radius:30px; box-shadow:var(--shadow); }}
     .nav {{ position:sticky; top:18px; z-index:10; display:flex; justify-content:space-between; align-items:center; gap:20px; padding:16px 20px; background:rgba(251,245,229,.82); backdrop-filter:blur(14px); border:1px solid rgba(218,205,180,.7); border-radius:24px; }}
-    .brand,.nav-actions,.hero-chips,.archive-filters,.meta-row,.pagination,.topic-pills {{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }} .brand {{ gap:14px; }} .brand-link {{ text-decoration:none; }}
+    .brand,.nav-actions,.hero-chips,.meta-row,.pagination,.topic-pills {{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }} .brand {{ gap:14px; }} .brand-link {{ text-decoration:none; }}
     .logo {{ width:52px; height:52px; flex:0 0 52px; border-radius:15px; display:grid; place-items:center; color:var(--forest); border:1px solid rgba(18,57,31,.28); background:#fff9eb; }} .logo img {{ width:46px; height:46px; display:block; }} .brand > div:last-child {{ min-width:0; }}
     .brand h1 {{ margin:0; font-family:'Fraunces',Georgia,serif; color:var(--forest); font-size:25px; line-height:1.05; letter-spacing:-.02em; }} .brand p {{ margin:4px 0 0; color:var(--muted); font-size:13px; }}
     .pill {{ display:inline-flex; align-items:center; gap:8px; padding:10px 15px; border-radius:999px; background:var(--chip); border:1px solid #d8c8aa; font-size:14px; color:#453b29; text-decoration:none; }} .pill.primary {{ background:linear-gradient(135deg,#ca820d,#a95f05); border-color:#b66d06; color:#fff; font-weight:800; box-shadow:0 14px 26px rgba(184,116,8,.22); }} .pill.soft {{ background:rgba(255,249,235,.72); }}
@@ -880,14 +894,14 @@ BASE_CSS = """
     .lang-picker {{ display:inline-flex; align-items:center; gap:6px; padding:6px; border-radius:999px; background:#fff9eb; border:1px solid var(--line); }} .lang-icon {{ width:22px; height:22px; display:grid; place-items:center; font-size:16px; }} .lang-picker button {{ border:0; border-radius:999px; background:transparent; color:#51483f; font:inherit; font-size:12px; font-weight:800; padding:7px 9px; cursor:pointer; }} .lang-picker button.active {{ background:var(--forest); color:#fff; }}
     .hero {{ margin-top:26px; }} .hero-desk {{ position:relative; min-height:760px; padding:52px 24px 0; overflow:hidden; }} .hero-desk::after {{ content:''; position:absolute; left:-4%; right:-4%; bottom:0; height:108px; background:linear-gradient(180deg,#7a5229,#513216); border-radius:50% 50% 0 0 / 42% 42% 0 0; box-shadow:0 -18px 42px rgba(55,33,12,.18); }}
     .hero-copy {{ position:relative; z-index:2; max-width:960px; margin:0 auto; text-align:center; }} .eyebrow,.section-kicker {{ font-size:12px; font-weight:900; letter-spacing:.18em; text-transform:uppercase; color:#b87408; }}
-    .hero-copy h2 {{ font-family:'Fraunces',Georgia,serif; font-size:clamp(56px,7vw,98px); line-height:.95; letter-spacing:-.055em; color:var(--forest); margin:18px auto 8px; max-width:13ch; text-wrap:balance; }} .ornament {{ color:#ba790a; display:flex; align-items:center; justify-content:center; gap:16px; margin:12px 0 14px; }} .ornament span {{ width:116px; height:1px; background:#c08a2b; display:block; }} .intro {{ margin:0 auto; color:#2f2b22; font-size:19px; font-weight:500; line-height:1.55; max-width:760px; }}
+    .hero-copy h2 {{ font-family:'Fraunces',Georgia,serif; font-size:clamp(56px,7vw,98px); line-height:.95; letter-spacing:-.055em; color:var(--forest); margin:18px auto 8px; max-width:13ch; text-wrap:balance; }} .ornament {{ color:#ba790a; display:flex; align-items:center; justify-content:center; gap:16px; margin:12px 0 14px; }} .ornament span {{ width:116px; height:1px; background:#c08a2b; display:block; }} .intro {{ margin:-8px auto 0; color:#2f2b22; font-size:19px; font-weight:500; line-height:1.55; max-width:760px; }}
     .hero-chips {{ justify-content:center; }} .hero-chip {{ min-width:230px; justify-content:space-between; display:inline-flex; align-items:center; gap:14px; margin-top:20px; padding:15px 20px; border-radius:14px; background:rgba(255,248,230,.92); border:1px solid rgba(18,57,31,.22); text-decoration:none; color:#0d331b; box-shadow:0 12px 28px rgba(47,35,15,.14),0 0 0 1px rgba(255,255,255,.65) inset; transition:transform .45s cubic-bezier(.32,.72,0,1),box-shadow .45s cubic-bezier(.32,.72,0,1),background .45s cubic-bezier(.32,.72,0,1); }} .hero-chip:hover,.hero-chip:focus-visible {{ transform:translateY(-3px); background:#fffdf4; box-shadow:0 20px 38px rgba(47,35,15,.22),0 0 0 1px rgba(255,255,255,.85) inset; outline:3px solid rgba(184,116,8,.22); outline-offset:3px; }} .hero-chip strong {{ font-family:'Fraunces',Georgia,serif; font-size:19px; font-weight:900; text-shadow:none; }}
-    .poster-stage {{ position:absolute; z-index:1; left:50%; bottom:10px; width:min(1120px,94%); height:350px; transform:translateX(-50%); }} .hero-card,.hero-poster {{ position:absolute; border:1px solid rgba(203,189,164,.75); border-radius:14px; box-shadow:0 24px 40px rgba(42,30,13,.28); overflow:hidden; }} .hero-card {{ left:50%; bottom:30px; width:min(560px,55vw); height:315px; transform:translateX(-50%) rotate(-.5deg); z-index:4; background:#12391f; }} .hero-poster {{ bottom:36px; width:360px; height:260px; padding:0; object-fit:cover; object-position:center; background:transparent; }} .poster-1 {{ left:0; transform:rotate(-5deg); z-index:2; }} .poster-2 {{ right:0; transform:rotate(5deg); z-index:1; }} .poster-3 {{ left:14%; bottom:10px; transform:rotate(3deg); z-index:0; opacity:.92; }}
+    .poster-stage {{ position:absolute; z-index:1; left:50%; bottom:10px; width:min(1120px,94%); height:350px; transform:translateX(-50%); }} .hero-card,.hero-poster {{ position:absolute; border:1px solid rgba(203,189,164,.75); border-radius:14px; box-shadow:0 24px 40px rgba(42,30,13,.28); overflow:hidden; }} .hero-card {{ left:50%; bottom:30px; width:min(560px,55vw); height:315px; transform:translateX(-50%) rotate(-.5deg); z-index:4; background:#12391f; }} .hero-poster {{ bottom:36px; width:360px; height:260px; padding:0; object-fit:cover; object-position:center; background:transparent; }} .poster-1 {{ left:0; transform:rotate(-5deg); z-index:2; }} .poster-2 {{ right:0; transform:rotate(5deg); z-index:1; }}
     .hero-image-wrap,.thumb {{ position:absolute; inset:0; display:block; text-decoration:none; background:#fffaf0; }} .hero-image-wrap img {{ width:100%; height:100%; display:block; object-fit:cover; object-position:top center; }} .thumb img {{ width:100%; height:100%; display:block; object-fit:contain; object-position:center; }} .hero-title-overlay h3 {{ font-size:26px; }}
     .collections-hub,.process-note,.science-hero {{ margin-top:30px; }} .collections-heading-row {{ display:flex; justify-content:space-between; gap:18px; align-items:end; margin-bottom:22px; }} .collections-heading-row h2,.process-note h2,.science-hero h2 {{ margin:0; font-family:'Fraunces',Georgia,serif; color:var(--forest); font-size:clamp(42px,5vw,76px); line-height:.96; letter-spacing:-.045em; text-wrap:balance; }} .collections-heading-row p,.process-note p,.science-hero p {{ margin:12px 0 0; color:#2f2b22; font-size:18px; line-height:1.55; max-width:64ch; }}
     .collection-grid {{ display:grid; grid-template-columns:1.04fr 1fr; gap:22px; }} .collection-card {{ position:relative; min-height:280px; display:flex; flex-direction:column; justify-content:space-between; gap:16px; padding:30px; border-radius:28px; text-decoration:none; border:1px solid rgba(218,205,180,.9); background:rgba(255,249,235,.72); overflow:hidden; box-shadow:var(--shadow); transition:transform .22s ease,box-shadow .22s ease; }} .collection-card:hover,.collection-card:focus-visible {{ transform:translateY(-4px); box-shadow:0 24px 48px rgba(47,35,15,.22); outline:0; }} .collection-card:active {{ transform:translateY(-1px) scale(.99); }} .collection-card.featured-collection {{ min-height:590px; grid-row:span 2; background:linear-gradient(140deg,#10371e,#1f5130); color:#fff9eb; }} .collection-card.school,.collection-card.science-news,.collection-card.all {{ min-height:280px; }} .collection-card.school {{ background:#fff8e9; }} .collection-card.science-news {{ background:#e5ead9; }} .collection-card.all {{ background:#f8efdc; }}
-    .collection-copy {{ position:relative; z-index:2; max-width:310px; }} .collection-copy strong {{ display:block; font-family:'Fraunces',Georgia,serif; color:var(--forest); font-size:clamp(34px,4vw,58px); line-height:.95; letter-spacing:-.04em; }} .featured-collection .collection-copy strong,.featured-collection .collection-copy small {{ color:#fff9eb; }} .collection-copy small {{ display:block; margin-top:14px; color:#2f2b22; font-size:17px; line-height:1.45; }} .collection-cta {{ position:relative; z-index:3; align-self:flex-start; padding:13px 18px; border-radius:10px; background:#fff9eb; color:#12391f; font-weight:900; box-shadow:0 12px 24px rgba(34,24,8,.14); }} .school .collection-cta,.science-news .collection-cta,.all .collection-cta {{ background:var(--forest); color:#fff9eb; }} .collection-count {{ position:absolute; right:18px; bottom:18px; z-index:3; border-radius:999px; padding:7px 10px; background:rgba(255,249,235,.74); border:1px solid rgba(218,205,180,.9); color:#4b4238; font-size:13px; font-weight:850; font-variant-numeric:tabular-nums; }}
-    .collection-art {{ position:absolute; inset:auto 0 0 auto; z-index:1; pointer-events:none; }} .people-art {{ width:78%; height:70%; right:-2%; bottom:42px; }} .people-sheet {{ position:absolute; object-fit:cover; background:#fffaf0; border:1px solid #cebfa4; border-radius:8px; box-shadow:0 18px 32px rgba(11,25,11,.36); }} .sheet-main {{ width:52%; height:78%; right:5%; bottom:10%; transform:rotate(3deg); }} .sheet-left {{ width:42%; height:62%; left:2%; bottom:0; transform:rotate(-6deg); }} .sheet-right {{ width:40%; height:58%; right:-4%; bottom:0; transform:rotate(6deg); }} .mini-poster {{ position:absolute; object-fit:cover; width:210px; height:190px; right:28px; bottom:32px; border:1px solid #cbbda4; border-radius:8px; background:#fffaf0; box-shadow:0 16px 26px rgba(47,35,15,.18); }} .school-two {{ right:160px; bottom:42px; transform:rotate(-7deg); }} .school-one {{ transform:rotate(5deg); }} .science-preview-image,.all-preview-image {{ position:absolute; right:24px; bottom:24px; width:45%; height:70%; object-fit:cover; border-radius:12px; border:1px solid #cbbda4; box-shadow:0 16px 26px rgba(47,35,15,.18); }} .science-note {{ position:absolute; right:34px; bottom:34px; background:#fff9eb; border-radius:10px; padding:8px 10px; font-size:12px; font-weight:900; color:#12391f; }}
+    .collection-copy {{ position:relative; z-index:2; max-width:310px; }} .collection-copy strong {{ display:block; font-family:'Fraunces',Georgia,serif; color:var(--forest); font-size:clamp(34px,4vw,58px); line-height:.95; letter-spacing:-.04em; }} .featured-collection .collection-copy strong,.featured-collection .collection-copy small {{ color:#fff9eb; }} .collection-copy small {{ display:block; margin-top:14px; color:#2f2b22; font-size:17px; line-height:1.45; }} .collection-cta {{ position:relative; z-index:3; align-self:flex-start; padding:13px 18px; border-radius:10px; background:#fff9eb; color:#12391f; font-weight:900; box-shadow:0 12px 24px rgba(34,24,8,.14); }} .school .collection-cta,.science-news .collection-cta,.all .collection-cta {{ background:var(--forest); color:#fff9eb; }}
+    .collection-art {{ position:absolute; inset:auto 0 0 auto; z-index:1; pointer-events:none; }} .science-art {{ inset:0; }} .people-art {{ width:78%; height:70%; right:-2%; bottom:42px; }} .people-sheet {{ position:absolute; object-fit:cover; background:#fffaf0; border:1px solid #cebfa4; border-radius:8px; box-shadow:0 18px 32px rgba(11,25,11,.36); }} .sheet-main {{ width:52%; height:78%; right:5%; bottom:10%; transform:rotate(3deg); }} .sheet-left {{ width:42%; height:62%; left:2%; bottom:0; transform:rotate(-6deg); }} .sheet-right {{ width:40%; height:58%; right:-4%; bottom:0; transform:rotate(6deg); }} .mini-poster {{ position:absolute; object-fit:cover; width:210px; height:190px; right:28px; bottom:32px; border:1px solid #cbbda4; border-radius:8px; background:#fffaf0; box-shadow:0 16px 26px rgba(47,35,15,.18); }} .school-two {{ right:160px; bottom:42px; transform:rotate(-7deg); }} .school-one {{ transform:rotate(5deg); }} .science-preview-image,.all-preview-image {{ position:absolute; right:24px; bottom:24px; width:45%; height:70%; object-fit:cover; border-radius:12px; border:1px solid #cbbda4; box-shadow:0 16px 26px rgba(47,35,15,.18); }}
     .process-note {{ padding:32px; background:linear-gradient(135deg,rgba(255,249,235,.88),rgba(229,234,217,.82)); }} .editorial-science-simple {{ display:grid; grid-template-columns:minmax(0,1.4fr) minmax(390px,.7fr); gap:34px; align-items:stretch; background:transparent; }} .science-hero-copy {{ padding:42px; box-shadow:none; display:flex; flex-direction:column; justify-content:center; }} .science-hero-copy h2 {{ font-size:clamp(50px,4vw,64px); }} .science-hero-art {{ position:relative; min-height:600px; overflow:hidden; border-radius:26px; background:#0d2d19; box-shadow:var(--shadow); }} .science-hero-art::after {{ content:''; position:absolute; inset:0; background:linear-gradient(180deg,transparent 62%,rgba(6,32,17,.78)); pointer-events:none; }} .science-hero-image {{ position:absolute; inset:0; width:100%; height:100%; object-fit:contain; object-position:center; background:#0b2c19; filter:saturate(.94) contrast(1.04); }} .science-hero-caption {{ position:absolute; z-index:2; left:28px; right:28px; bottom:24px; display:flex; align-items:center; justify-content:space-between; gap:20px; color:#fff9eb; font-size:13px; letter-spacing:.08em; text-transform:uppercase; }} .science-hero-caption strong {{ max-width:62%; text-align:right; font-family:'Fraunces',Georgia,serif; font-size:18px; line-height:1.15; letter-spacing:0; text-transform:none; }} .topic-pills {{ margin-top:22px; display:grid; grid-template-columns:1fr 1fr; }} .topic-pills span {{ display:inline-flex; justify-content:flex-start; gap:8px; padding:14px 16px; border-radius:999px; background:#eee4d0; color:#403829; }} .science-trust {{ display:flex; flex-wrap:wrap; gap:8px 16px; margin-top:24px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:13px; }} .science-trust span::before {{ content:'•'; color:var(--accent); margin-right:7px; }} .science-open {{ display:flex; align-items:center; justify-content:space-between; margin-top:22px; padding:18px 22px; border-radius:14px; color:#fffaf0; background:linear-gradient(135deg,#ca820d,#a95f05); font-family:'Fraunces',Georgia,serif; font-size:22px; text-decoration:none; box-shadow:0 16px 28px rgba(184,116,8,.20); transition:transform .45s cubic-bezier(.32,.72,0,1); }} .science-open:hover {{ transform:translateY(-2px); }} .science-sources {{ margin-top:14px; color:var(--muted); font-size:14px; }} .science-sources summary {{ cursor:pointer; font-weight:750; }} .science-sources ul {{ margin:10px 0 0; padding-left:18px; }}
     .archive-shell {{ margin-top:30px; padding:28px; background:rgba(255,249,235,.74); border:1px solid var(--line); border-radius:30px; box-shadow:var(--shadow); }} .archive-top {{ display:flex; justify-content:space-between; gap:18px; align-items:end; margin-bottom:22px; }} .archive-top h2 {{ margin:0; font-family:'Fraunces',Georgia,serif; color:var(--forest); font-size:42px; letter-spacing:-.04em; }} .archive-top p {{ margin:8px 0 0; color:var(--muted); font-size:17px; max-width:60ch; }}
     .masonry {{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; align-items:stretch; }} .card,.image-card {{ position:relative; isolation:isolate; margin:0; background:#fffaf0; border:1px solid var(--line); border-radius:18px; overflow:hidden; box-shadow:0 14px 28px rgba(47,35,15,.12); aspect-ratio:16/9; }} .card.feature {{ box-shadow:0 18px 36px rgba(47,35,15,.18); }} .image-title {{ position:absolute; left:0; right:0; bottom:0; z-index:2; padding:58px 16px 14px; color:#fff; background:linear-gradient(180deg,transparent,rgba(18,57,31,.74)); pointer-events:none; }} .image-title h3 {{ margin:0; font-family:'Fraunces',Georgia,serif; font-size:22px; line-height:1.05; letter-spacing:-.03em; text-shadow:0 1px 12px rgba(0,0,0,.38); }} .card.feature .image-title h3 {{ font-size:28px; }}
@@ -922,7 +936,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Visual Learning Archive – {title_suffix}</title>
-  <meta name="description" content="Kid-friendly infographics about people, school topics and science discoveries.">
+  <meta name="description" content="Accessible infographics about people, school topics and science discoveries.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -936,7 +950,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
         <div class="logo"><img src="favicon.svg" alt=""></div>
         <div>
           <h1 data-i18n="brand_title">Visual Learning Archive</h1>
-          <p data-i18n="brand_subtitle">Kid-friendly infographics about people, school topics and science discoveries</p>
+          <p data-i18n="brand_subtitle">Accessible infographics about people, school topics and science discoveries</p>
         </div>
       </div>
       <div class="nav-right">
@@ -956,10 +970,6 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
           <h2 data-archive-heading="1" data-page="{page_num}">{page_heading}</h2>
           <p data-archive-intro="1" data-page="{page_num}">{page_intro}</p>
         </div>
-        <div class="archive-filters">
-          <span class="pill" data-total-pill="1" data-total="{len(entries)}">Total: {len(entries)}</span>
-          <span class="pill" data-page-pill="1" data-page="{page_num}" data-total="{total_pages}">Page {page_num}/{total_pages}</span>
-        </div>
       </div>
       {filters_html}
       <div class="masonry">{cards}</div>
@@ -967,7 +977,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     </section>
     {render_process_note() if page_num == 1 else ''}
     <footer class="footer surface">
-      <div><span data-i18n="footer_text">Visual Learning Archive: kid-friendly infographics about people, school topics and science discoveries.</span> <span data-i18n="footer_generated_by">Made with human supervision and</span> <a href="https://roj.world/swarms/famous-people-infographic" target="_blank" rel="noopener noreferrer" data-i18n="footer_swarm">Roj swarm agents</a>.</div>
+      <div><span data-i18n="footer_text">Visual Learning Archive: accessible infographics about people, school topics and science discoveries.</span> <span data-i18n="footer_generated_by">Made with human supervision and</span> <a href="https://roj.world/swarms/famous-people-infographic" target="_blank" rel="noopener noreferrer" data-i18n="footer_swarm">Roj swarm agents</a>.</div>
       <div data-updated="{html.escape(updated)}">Updated: {updated_display}</div>
     </footer>
   </main>
