@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 181,
+    "total_entries": 182,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,84 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 181
+      "age_6": 182
     },
     "category_counts": {
-      "science_news": 1,
+      "science_news": 2,
       "school_poster": 33,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "en": 23,
+      "en": 24,
       "sl": 155,
       "de": 3
     }
   },
   "entries": [
+    {
+      "date": "2026-08-10",
+      "person": "Tiny plasma vortices reveal a hidden mixing process on the Sun",
+      "filename": "TinyPlasmaVorticesRevealAHiddenMixingProcessOnTheSun.png",
+      "image_filename": "TinyPlasmaVorticesRevealAHiddenMixingProcessOnTheSun.png",
+      "sources": [
+        "https://www.nature.com/articles/s41586-026-10871-3",
+        "https://pubmed.ncbi.nlm.nih.gov/42557319/",
+        "https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares",
+        "https://www.sciencedaily.com/releases/2026/08/260807035142.htm"
+      ],
+      "original_article_url": "https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares",
+      "title": "Tiny whirlpools mix the Sun's surface",
+      "summary": "High-resolution observations from the Daniel K. Inouye Solar Telescope directly reveal widespread magnetized Kelvin–Helmholtz vortices at boundaries between differently moving plasma streams in the solar photosphere. The vortices mix plasma and bend magnetic fields, exposing a previously unresolved route for transporting and transforming mass, momentum, energy, and magnetic flux. Numerical simulations support the interpretation. Possible links to flares, coronal heating, and space weather remain open questions rather than demonstrated consequences.",
+      "age_suitability_details": {
+        "age_6": "The Sun has streams of hot glowing material. When one stream moves faster than another, their edge can curl into a tiny whirlpool that mixes them together.",
+        "age_13": "Different-speed streams of electrically charged solar plasma can make their shared boundary roll into a Kelvin–Helmholtz vortex. Scientists have now observed this small-scale mixing directly on the Sun's visible surface.",
+        "adult": "Peer-reviewed high-resolution photospheric observations and numerical simulations identify widespread magnetized Kelvin–Helmholtz instabilities as a small-scale plasma-mixing and magnetic-flux-transport mechanism. Their quantitative contribution to flares, coronal heating, and space weather remains unestablished."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "science_news",
+      "language": "en",
+      "assignment_id": "31f8c0fc-6403-4210-9be0-a1386751c039",
+      "_kind": "native",
+      "_source_mtime": 1786346727.248541,
+      "category_label": "Znanstvena novica",
+      "category_class": "science-news",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "tiny plasma vortices reveal a hidden mixing process on the sun science_news znanstvena novica en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-07-31",
       "person": "Laser mapping suggests a vast precolonial network of up to 30,000 earthworks beneath the southwestern Amazon",

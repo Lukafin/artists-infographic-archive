@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 181,
+    "total_entries": 182,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,84 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 181
+      "age_6": 182
     },
     "category_counts": {
-      "science_news": 1,
+      "science_news": 2,
       "school_poster": 33,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "en": 23,
+      "en": 24,
       "sl": 155,
       "de": 3
     }
   },
   "entries": [
+    {
+      "date": "2026-08-10",
+      "person": "Tiny plasma vortices reveal a hidden mixing process on the Sun",
+      "filename": "TinyPlasmaVorticesRevealAHiddenMixingProcessOnTheSun.png",
+      "image_filename": "TinyPlasmaVorticesRevealAHiddenMixingProcessOnTheSun.png",
+      "sources": [
+        "https://www.nature.com/articles/s41586-026-10871-3",
+        "https://pubmed.ncbi.nlm.nih.gov/42557319/",
+        "https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares",
+        "https://www.sciencedaily.com/releases/2026/08/260807035142.htm"
+      ],
+      "original_article_url": "https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares",
+      "title": "Tiny whirlpools mix the Sun's surface",
+      "summary": "High-resolution observations from the Daniel K. Inouye Solar Telescope directly reveal widespread magnetized Kelvin–Helmholtz vortices at boundaries between differently moving plasma streams in the solar photosphere. The vortices mix plasma and bend magnetic fields, exposing a previously unresolved route for transporting and transforming mass, momentum, energy, and magnetic flux. Numerical simulations support the interpretation. Possible links to flares, coronal heating, and space weather remain open questions rather than demonstrated consequences.",
+      "age_suitability_details": {
+        "age_6": "The Sun has streams of hot glowing material. When one stream moves faster than another, their edge can curl into a tiny whirlpool that mixes them together.",
+        "age_13": "Different-speed streams of electrically charged solar plasma can make their shared boundary roll into a Kelvin–Helmholtz vortex. Scientists have now observed this small-scale mixing directly on the Sun's visible surface.",
+        "adult": "Peer-reviewed high-resolution photospheric observations and numerical simulations identify widespread magnetized Kelvin–Helmholtz instabilities as a small-scale plasma-mixing and magnetic-flux-transport mechanism. Their quantitative contribution to flares, coronal heating, and space weather remains unestablished."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "science_news",
+      "language": "en",
+      "assignment_id": "31f8c0fc-6403-4210-9be0-a1386751c039",
+      "_kind": "native",
+      "_source_mtime": 1786346727.248541,
+      "category_label": "Znanstvena novica",
+      "category_class": "science-news",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "tiny plasma vortices reveal a hidden mixing process on the sun science_news znanstvena novica en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-07-31",
       "person": "Laser mapping suggests a vast precolonial network of up to 30,000 earthworks beneath the southwestern Amazon",
@@ -5802,34 +5864,6 @@
     },
     {
       "date": "2026-04-09",
-      "person": "Thomas Johann Seebeck",
-      "filename": "ThomasJohannSeebeck.png",
-      "sources": [],
-      "legacy_run_id": "eb95c490",
-      "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/eb95c490/ThomasJohannSeebeck.png",
-      "status": "success",
-      "_kind": "native",
-      "category": "scientist",
-      "category_label": "Znanstvenik",
-      "category_class": "science",
-      "original_article_url": null,
-      "language": "sl",
-      "language_label": "SL",
-      "age_suitability_keys": [
-        "age_6"
-      ],
-      "age_suitability_labels_en": [
-        "Ages 6+"
-      ],
-      "age_suitability_labels_sl": [
-        "6+ let"
-      ],
-      "source_count": 0,
-      "_source_mtime": 1780000106.0,
-      "search_text": "thomas johann seebeck scientist znanstvenik sl age_6 ages 6+ 6+ let"
-    },
-    {
-      "date": "2026-04-09",
       "person": "Eadweard Muybridge",
       "filename": "EadweardMuybridge.png",
       "sources": [
@@ -5859,14 +5893,14 @@
       "search_text": "eadweard muybridge artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
-      "date": "2026-04-08",
-      "person": "Melvin Calvin",
-      "filename": "MelvinCalvin.png",
+      "date": "2026-04-09",
+      "person": "Thomas Johann Seebeck",
+      "filename": "ThomasJohannSeebeck.png",
       "sources": [],
-      "legacy_run_id": "e0a2a402",
-      "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/e0a2a402/MelvinCalvin.png",
+      "legacy_run_id": "eb95c490",
+      "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/eb95c490/ThomasJohannSeebeck.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -5883,7 +5917,33 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000107.0,
+      "search_text": "thomas johann seebeck scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
+    {
+      "date": "2026-04-08",
+      "person": "Melvin Calvin",
+      "filename": "MelvinCalvin.png",
+      "sources": [],
+      "legacy_run_id": "e0a2a402",
+      "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/e0a2a402/MelvinCalvin.png",
+      "status": "success",
+      "_kind": "legacy",
+      "category": "scientist",
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "original_article_url": null,
+      "language": "sl",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 0,
       "search_text": "melvin calvin scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -5894,7 +5954,7 @@
       "legacy_run_id": "1dd245b7",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/1dd245b7/JackieChan.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "artist",
       "category_label": "Umetnik",
       "category_class": "artist",
@@ -5911,7 +5971,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000108.0,
       "search_text": "jackie chan artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -5922,7 +5981,7 @@
       "legacy_run_id": "237b988c",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/237b988c/RaffaelloSanzio.png",
       "status": "needs_input",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "artist",
       "category_label": "Umetnik",
       "category_class": "artist",
@@ -5939,7 +5998,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000109.0,
       "search_text": "raffaello sanzio artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -5950,7 +6008,7 @@
       "legacy_run_id": "69c672b2",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/69c672b2/JosephLister.png",
       "status": "needs_input",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -5967,7 +6025,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000110.0,
       "search_text": "joseph lister scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -5978,7 +6035,7 @@
       "legacy_run_id": "07ef7559",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/07ef7559/ShingTungYau.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -5995,7 +6052,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000111.0,
       "search_text": "shing tung yau scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6006,7 +6062,7 @@
       "legacy_run_id": "33658386",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/33658386/JaneGoodall.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6023,7 +6079,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000112.0,
       "search_text": "jane goodall scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6034,7 +6089,7 @@
       "legacy_run_id": "61a4df38",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/61a4df38/MariaSibyllaMerian.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "artist",
       "category_label": "Umetnik",
       "category_class": "artist",
@@ -6051,7 +6106,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000113.0,
       "search_text": "maria sibylla merian artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6062,7 +6116,7 @@
       "legacy_run_id": "103f941d",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/103f941d/SophieGermain.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6079,7 +6133,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000114.0,
       "search_text": "sophie germain scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6090,7 +6143,7 @@
       "legacy_run_id": "7b73f847",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/7b73f847/WilliamLawrenceBragg.png",
       "status": "needs_input",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6107,7 +6160,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000115.0,
       "search_text": "william lawrence bragg scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6118,7 +6170,7 @@
       "legacy_run_id": "a5fb6b7d",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/a5fb6b7d/VincentVanGogh.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "artist",
       "category_label": "Umetnik",
       "category_class": "artist",
@@ -6135,7 +6187,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000116.0,
       "search_text": "vincent van gogh artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6146,7 +6197,7 @@
       "legacy_run_id": "4627269f",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/4627269f/RichardLewontin.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6163,7 +6214,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000117.0,
       "search_text": "richard lewontin scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6174,7 +6224,7 @@
       "legacy_run_id": "f5f3afbd",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/f5f3afbd/LadyGaga.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "artist",
       "category_label": "Umetnik",
       "category_class": "artist",
@@ -6191,7 +6241,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000118.0,
       "search_text": "lady gaga artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6202,7 +6251,7 @@
       "legacy_run_id": "ae6a759e",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/ae6a759e/WilhelmRontgen.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6219,7 +6268,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000119.0,
       "search_text": "wilhelm rontgen scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6230,7 +6278,7 @@
       "legacy_run_id": "fab6783f",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/fab6783f/NormanBorlaug.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6247,7 +6295,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000120.0,
       "search_text": "norman borlaug scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6258,7 +6305,7 @@
       "legacy_run_id": "4dcfa2c4",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/4dcfa2c4/generatedDesigns/PeterJosephWilliamDebye.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6275,7 +6322,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000121.0,
       "search_text": "peter joseph william debye scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6286,7 +6332,7 @@
       "legacy_run_id": "074a9770",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/074a9770/generatedDesigns/AkiraKurosawa.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "artist",
       "category_label": "Umetnik",
       "category_class": "artist",
@@ -6303,7 +6349,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000122.0,
       "search_text": "akira kurosawa artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6314,7 +6359,7 @@
       "legacy_run_id": "ebed85ca",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/ebed85ca/generatedDesigns/RobertMillikan.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6331,7 +6376,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000123.0,
       "search_text": "robert millikan scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6342,7 +6386,7 @@
       "legacy_run_id": "22f497be",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/22f497be/generatedDesigns/ModestMussorgsky.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "artist",
       "category_label": "Umetnik",
       "category_class": "artist",
@@ -6359,7 +6403,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000124.0,
       "search_text": "modest mussorgsky artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6370,7 +6413,7 @@
       "legacy_run_id": "c14b4fef",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/c14b4fef/generatedDesigns/BurrhusFredericSkinner.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6387,7 +6430,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000125.0,
       "search_text": "burrhus frederic skinner scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6398,7 +6440,7 @@
       "legacy_run_id": "fdb2dfdc",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/fdb2dfdc/generatedDesigns/FredericJoliotCurie.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6415,7 +6457,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000126.0,
       "search_text": "frederic joliot curie scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6426,7 +6467,7 @@
       "legacy_run_id": "e8215ff6",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/e8215ff6/generatedDesigns/RudolfDiesel.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6443,7 +6484,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000127.0,
       "search_text": "rudolf diesel scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6454,7 +6494,7 @@
       "legacy_run_id": "4ce9806c",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/4ce9806c/generatedDesigns/GottliebDaimler.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6471,7 +6511,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000128.0,
       "search_text": "gottlieb daimler scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6482,7 +6521,7 @@
       "legacy_run_id": "907ab46a",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/907ab46a/generatedDesigns/GeorgOhm.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6499,7 +6538,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000129.0,
       "search_text": "georg ohm scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6510,7 +6548,7 @@
       "legacy_run_id": "b7bcebfd",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/b7bcebfd/generatedDesigns/JohnSnow.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6527,7 +6565,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000130.0,
       "search_text": "john snow scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6538,7 +6575,7 @@
       "legacy_run_id": "4865c3d3",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/4865c3d3/generatedDesigns/AlbertEinstein.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6555,7 +6592,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000131.0,
       "search_text": "albert einstein scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6566,7 +6602,7 @@
       "legacy_run_id": "4adcaac1",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/4adcaac1/generatedDesigns/PercivalLowell.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6583,7 +6619,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000132.0,
       "search_text": "percival lowell scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6594,7 +6629,7 @@
       "legacy_run_id": "e55d7e11",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/e55d7e11/generatedDesigns/WilliamHenryPerkin.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6611,7 +6646,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000133.0,
       "search_text": "william henry perkin scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6622,7 +6656,7 @@
       "legacy_run_id": "b75f709e",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/b75f709e/generatedDesigns/JCRLicklider.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6639,7 +6673,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000134.0,
       "search_text": "jcr licklider scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6650,7 +6683,7 @@
       "legacy_run_id": "fb63e89b",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/fb63e89b/generatedDesigns/MarcelloMalpighi.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6667,7 +6700,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000135.0,
       "search_text": "marcello malpighi scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6678,7 +6710,7 @@
       "legacy_run_id": "6d111aa3",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/6d111aa3/generatedDesigns/WalterKohn.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6695,7 +6727,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000136.0,
       "search_text": "walter kohn scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6706,7 +6737,7 @@
       "legacy_run_id": "ee23be6d",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/ee23be6d/generatedDesigns/OttoHahn.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6723,7 +6754,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000137.0,
       "search_text": "otto hahn scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6734,7 +6764,7 @@
       "legacy_run_id": "d7c9dd52",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/d7c9dd52/generatedDesigns/PietMondrian.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6751,7 +6781,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000138.0,
       "search_text": "piet mondrian scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6762,7 +6791,7 @@
       "legacy_run_id": "d15e17a3",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/d15e17a3/generatedDesigns/MichelangeloBuonarroti.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "artist",
       "category_label": "Umetnik",
       "category_class": "artist",
@@ -6779,7 +6808,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000139.0,
       "search_text": "michelangelo buonarroti artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6790,7 +6818,7 @@
       "legacy_run_id": "97274f03",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/97274f03/generatedDesigns/LynnMargulis.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6807,7 +6835,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000140.0,
       "search_text": "lynn margulis scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6818,7 +6845,7 @@
       "legacy_run_id": "5949bf4f",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/5949bf4f/generatedDesigns/AntonioVivaldi.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "artist",
       "category_label": "Umetnik",
       "category_class": "artist",
@@ -6835,7 +6862,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000141.0,
       "search_text": "antonio vivaldi artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6846,7 +6872,7 @@
       "legacy_run_id": "d002e022",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/d002e022/generatedDesigns/AlexanderGrahamBell.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6863,7 +6889,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000142.0,
       "search_text": "alexander graham bell scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6874,7 +6899,7 @@
       "legacy_run_id": "2413340e",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/2413340e/generatedDesigns/TheodorGeisel.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6891,7 +6916,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000143.0,
       "search_text": "theodor geisel scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6902,7 +6926,7 @@
       "legacy_run_id": "df31e31d",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/df31e31d/generatedDesigns/FredericChopin.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6919,7 +6943,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000144.0,
       "search_text": "frederic chopin scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6930,7 +6953,7 @@
       "legacy_run_id": "88047085",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/88047085/generatedDesigns/LinusPauling.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6947,7 +6970,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000145.0,
       "search_text": "linus pauling scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6958,7 +6980,7 @@
       "legacy_run_id": "86f39514",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/86f39514/generatedDesigns/CharlesBest.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -6975,7 +6997,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000146.0,
       "search_text": "charles best scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -6986,7 +7007,7 @@
       "legacy_run_id": "15e43f71",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/15e43f71/generatedDesigns/AhmedZewail.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7003,7 +7024,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000147.0,
       "search_text": "ahmed zewail scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7014,7 +7034,7 @@
       "legacy_run_id": "a43f7e72",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/a43f7e72/generatedDesigns/GeorgeHarrison.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7031,7 +7051,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000148.0,
       "search_text": "george harrison scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7042,7 +7061,7 @@
       "legacy_run_id": "77cfc6d7",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/77cfc6d7/generatedDesigns/BrianSchmidt.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7059,7 +7078,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000149.0,
       "search_text": "brian schmidt scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7070,7 +7088,7 @@
       "legacy_run_id": "3f1e3c86",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/3f1e3c86/generatedDesigns/CasimirFunk.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7087,7 +7105,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000150.0,
       "search_text": "casimir funk scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7098,7 +7115,7 @@
       "legacy_run_id": "15f83baf",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/15f83baf/generatedDesigns/AnselAdams.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7115,7 +7132,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000151.0,
       "search_text": "ansel adams scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7126,7 +7142,7 @@
       "legacy_run_id": "f0673cae",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/f0673cae/generatedDesigns/NicolausCopernicus.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7143,7 +7159,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000152.0,
       "search_text": "nicolaus copernicus scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7154,7 +7169,7 @@
       "legacy_run_id": "1d1b400d",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/1d1b400d/generatedDesigns/AlessandroVolta.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7171,7 +7186,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000153.0,
       "search_text": "alessandro volta scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7182,7 +7196,7 @@
       "legacy_run_id": "e27f3dd2",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/e27f3dd2/generatedDesigns/OttoStern.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7199,7 +7213,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000154.0,
       "search_text": "otto stern scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7210,7 +7223,7 @@
       "legacy_run_id": "a3219ece",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/a3219ece/generatedDesigns/ArmandGuillaumin.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7227,7 +7240,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000155.0,
       "search_text": "armand guillaumin scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7238,7 +7250,7 @@
       "legacy_run_id": "5bc7bedc",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/5bc7bedc/generatedDesigns/20260210-165742_ustvari-barvito-risankasto-infografiko-z.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7255,7 +7267,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000156.0,
       "search_text": "20260210 165742 ustvari barvito risankasto infografiko z scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7266,7 +7277,7 @@
       "legacy_run_id": "abf66fe8",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/abf66fe8/generatedDesigns/20260209-170025_ustvari-jasno-barvito-infografiko-za-10.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7283,7 +7294,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000157.0,
       "search_text": "20260209 170025 ustvari jasno barvito infografiko za 10 scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7294,7 +7304,7 @@
       "legacy_run_id": "0ea8dcb8",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/0ea8dcb8/generatedDesigns/20260207-134709_otrokom-prijazen-infografski-plakat-v-ra.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7311,7 +7321,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000158.0,
       "search_text": "20260207 134709 otrokom prijazen infografski plakat v ra scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7322,7 +7331,7 @@
       "legacy_run_id": "3066f2a0",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/3066f2a0/generatedDesigns/20260206-104245_svetel-otrokom-prijazen-infografi-ni-pla.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7339,7 +7348,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000159.0,
       "search_text": "20260206 104245 svetel otrokom prijazen infografi ni pla scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7350,7 +7358,7 @@
       "legacy_run_id": "8b3f80c6",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/8b3f80c6/generatedDesigns/20260205-194011_ustvari-ivahno-otrokom-prijazno-infograf.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7367,7 +7375,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000160.0,
       "search_text": "20260205 194011 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7378,7 +7385,7 @@
       "legacy_run_id": "a17e1b81",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/a17e1b81/generatedDesigns/20260204-193923_ustvari-zelo-podroben-infografik-v-razme.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7395,7 +7402,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000161.0,
       "search_text": "20260204 193923 ustvari zelo podroben infografik v razme scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7406,7 +7412,7 @@
       "legacy_run_id": "d6862407",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/d6862407/generatedDesigns/20260203-193940_ustvari-otrokom-prijazno-infografiko-v-r.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7423,7 +7429,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000162.0,
       "search_text": "20260203 193940 ustvari otrokom prijazno infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7434,7 +7439,7 @@
       "legacy_run_id": "4ee2679c",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/4ee2679c/generatedDesigns/20260202-193945_ustvari-barvit-otrokom-prijazen-infograf.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7451,7 +7456,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000163.0,
       "search_text": "20260202 193945 ustvari barvit otrokom prijazen infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7462,7 +7466,7 @@
       "legacy_run_id": "b5b52089",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/b5b52089/generatedDesigns/20260201-193903_ustvari-otrokom-prijazno-infografiko-v-r.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7479,7 +7483,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000164.0,
       "search_text": "20260201 193903 ustvari otrokom prijazno infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7490,7 +7493,7 @@
       "legacy_run_id": "5364ba9f",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/5364ba9f/generatedDesigns/20260129-111309_ustvari-prijazno-otro-ko-infografiko-v-r.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7507,7 +7510,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000165.0,
       "search_text": "20260129 111309 ustvari prijazno otro ko infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7518,7 +7520,7 @@
       "legacy_run_id": "5199604a",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/5199604a/generatedDesigns/20260128-111258_ustvari-zivahno-otrokom-prijazno-izobraz.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7535,7 +7537,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000166.0,
       "search_text": "20260128 111258 ustvari zivahno otrokom prijazno izobraz scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7546,7 +7547,7 @@
       "legacy_run_id": "6fd41c18",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/6fd41c18/generatedDesigns/20260127-111144_ustvari-ivahno-prijazno-infografiko-v-ra.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7563,7 +7564,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000167.0,
       "search_text": "20260127 111144 ustvari ivahno prijazno infografiko v ra scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7574,7 +7574,7 @@
       "legacy_run_id": "38e69964",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/38e69964/generatedDesigns/20260125-111136_ustvari-ivahno-otrokom-prijazno-infograf.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7591,7 +7591,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000168.0,
       "search_text": "20260125 111136 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7602,7 +7601,7 @@
       "legacy_run_id": "3a0fb77a",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/3a0fb77a/generatedDesigns/20260124-111132_svetla-otrokom-prijazna-infografika-o-fi.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7619,7 +7618,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000169.0,
       "search_text": "20260124 111132 svetla otrokom prijazna infografika o fi scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7630,7 +7628,7 @@
       "legacy_run_id": "690d7fdb",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/690d7fdb/generatedDesigns/20260123-111113_ustvari-ivahno-otrokom-prijazno-infograf.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7647,7 +7645,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000170.0,
       "search_text": "20260123 111113 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7658,7 +7655,7 @@
       "legacy_run_id": "32b7c5ed",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/32b7c5ed/generatedDesigns/20260122-111101_ustvari-barvit-otrokom-prijazen-infograf.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7675,7 +7672,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000171.0,
       "search_text": "20260122 111101 ustvari barvit otrokom prijazen infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7686,7 +7682,7 @@
       "legacy_run_id": "4110f2ba",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/4110f2ba/generatedDesigns/20260121-112025_ustvari-zelo-podrobno-ivahno-infografiko.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7703,7 +7699,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000172.0,
       "search_text": "20260121 112025 ustvari zelo podrobno ivahno infografiko scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7714,7 +7709,7 @@
       "legacy_run_id": "86f7236d",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/86f7236d/generatedDesigns/20260120-111248_barvit-prijazen-16-9-infografik-2k-1920x.png",
       "status": "success",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7731,7 +7726,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000173.0,
       "search_text": "20260120 111248 barvit prijazen 16 9 infografik 2k 1920x scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7742,7 +7736,7 @@
       "legacy_run_id": "5cfd98e6",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/5cfd98e6/generatedDesigns/20260118-115810_ustvari-svetel-prijazen-infografi-ni-pla.png",
       "status": "needs_input",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7759,7 +7753,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000174.0,
       "search_text": "20260118 115810 ustvari svetel prijazen infografi ni pla scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7770,7 +7763,7 @@
       "legacy_run_id": "aeffdd79",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/aeffdd79/generatedDesigns/20260117-115711_ustvari-ivahno-otrokom-prijazno-infograf.png",
       "status": "needs_input",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7787,7 +7780,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000175.0,
       "search_text": "20260117 115711 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7798,7 +7790,7 @@
       "legacy_run_id": "841ca860",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/841ca860/generatedDesigns/20260116-075624_ustvari-barvit-risankasto-infografiko-za.png",
       "status": "needs_input",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7815,7 +7807,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000176.0,
       "search_text": "20260116 075624 ustvari barvit risankasto infografiko za scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7826,7 +7817,7 @@
       "legacy_run_id": "b3b1a8d4",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/b3b1a8d4/generatedDesigns/20260113-071226_barvita-infografika-za-otroke-10-let-o-j.png",
       "status": "needs_input",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7843,7 +7834,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000177.0,
       "search_text": "20260113 071226 barvita infografika za otroke 10 let o j scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7854,7 +7844,7 @@
       "legacy_run_id": "260a1431",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/260a1431/generatedDesigns/20260112-071135_ustvari-barvito-otrokom-prijazno-infogra.png",
       "status": "needs_input",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7871,7 +7861,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000178.0,
       "search_text": "20260112 071135 ustvari barvito otrokom prijazno infogra scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7882,7 +7871,7 @@
       "legacy_run_id": "872d014a",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/872d014a/generatedDesigns/20260111-071228_barvita-otro-ka-infografika-o-nicolausu.png",
       "status": "needs_input",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7899,7 +7888,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000179.0,
       "search_text": "20260111 071228 barvita otro ka infografika o nicolausu scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
@@ -7910,7 +7898,7 @@
       "legacy_run_id": "753b99d7",
       "legacy_source_path": "/home/lukafinzgar/projects/.caller_tasks/a32dcf00/runs/753b99d7/generatedDesigns/20260110-211323_barvit-otro-ki-infografi-ni-plakat-o-roc.png",
       "status": "needs_input",
-      "_kind": "native",
+      "_kind": "legacy",
       "category": "scientist",
       "category_label": "Znanstvenik",
       "category_class": "science",
@@ -7927,7 +7915,6 @@
         "6+ let"
       ],
       "source_count": 0,
-      "_source_mtime": 1780000180.0,
       "search_text": "20260110 211323 barvit otro ki infografi ni plakat o roc scientist znanstvenik sl age_6 ages 6+ 6+ let"
     }
   ]
