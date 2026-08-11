@@ -1,4 +1,5 @@
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -25,23 +26,23 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
             (runs_dir / 'entry.json').write_text(json.dumps(test_entry), encoding='utf-8')
             (public_root / test_entry['filename']).write_bytes(b'not-a-real-image-but-present')
 
-        script = (ROOT / 'rebuild_gallery.py').read_text(encoding='utf-8')
-        script = script.replace(
-            "BASE = Path('/home/lukafinzgar/projects/.caller_tasks/artists')",
-            f'BASE = Path({str(workspace)!r})',
-        ).replace(
-            "PUBLIC_ROOT = Path('/home/lukafinzgar/projects/.caller_tasks/artists-infographic-archive/docs')",
-            f'PUBLIC_ROOT = Path({str(public_root)!r})',
-        )
-        (temp_dir / 'rebuild_gallery.py').write_text(script, encoding='utf-8')
+        shutil.copy2(ROOT / 'rebuild_gallery.py', temp_dir / 'rebuild_gallery.py')
         (temp_dir / 'gallery_index.py').write_text(
             (ROOT / 'gallery_index.py').read_text(encoding='utf-8'),
             encoding='utf-8',
         )
 
+        env = os.environ.copy()
+        env.update({
+            'ARTISTS_ARCHIVE_BASE': str(workspace),
+            'ARTISTS_ARCHIVE_RUNS_DIR': str(workspace / 'runs'),
+            'ARTISTS_ARCHIVE_PUBLIC_ROOT': str(public_root),
+            'ARTISTS_ARCHIVE_LEGACY_IMPORTED': str(workspace / 'imported_legacy_entries.json'),
+        })
         subprocess.run(
             [sys.executable, str(temp_dir / 'rebuild_gallery.py')],
             cwd=temp_dir,
+            env=env,
             check=True,
             capture_output=True,
             text=True,

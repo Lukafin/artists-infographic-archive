@@ -18,8 +18,10 @@ flowchart TD
     end
 
     subgraph Builder["Archive builder scripts"]
-        Rebuild["rebuild_gallery.py"]
+        Rebuild["rebuild_gallery.py\ncanonical local + production generator"]
         Index["gallery_index.py\nmetadata normalization"]
+        Bridge["bridge/rebuild_gallery.sh\nproduction path adapter"]
+        Publish["bridge/update_repo_after_run.sh\nreset + rebuild + design guard + push"]
         Sync["sync_archive_to_repo.py"]
     end
 
@@ -42,6 +44,10 @@ flowchart TD
     Manual --> Runs
     Legacy --> Rebuild
     Runs --> Rebuild
+    PeopleNet --> Bridge
+    Bridge -->|exports production paths and invokes tracked code| Rebuild
+    PeopleNet --> Publish
+    Publish -->|invokes the repo's canonical generator| Rebuild
     Rebuild --> Index
     Index --> Metadata
     Rebuild --> Pages
@@ -57,11 +63,12 @@ flowchart TD
 ## Main data flow
 
 1. A producer creates a run directory containing the generated image and metadata such as person/topic, date, sources, category, language, age-suitability details, and prompt/provenance files.
-2. `rebuild_gallery.py` reads run metadata and legacy imported entries, validates that image references exist and that sources are not placeholder `example.com` URLs, then rebuilds the static gallery under `docs/`.
+2. `rebuild_gallery.py` reads run metadata and legacy imported entries, validates that image references exist and that sources are not placeholder `example.com` URLs, then rebuilds the static gallery under `docs/`. Its input/output paths are configurable with `ARTISTS_ARCHIVE_BASE`, `ARTISTS_ARCHIVE_RUNS_DIR`, `ARTISTS_ARCHIVE_PUBLIC_ROOT`, and `ARTISTS_ARCHIVE_LEGACY_IMPORTED`, so local and production publishing use the same tracked generator.
 3. `gallery_index.py` normalizes category, language, search text, source counts, and age-suitability metadata for the generated `entries.json` index.
-4. `docs/` is the canonical GitHub Pages output: image assets, paginated HTML, `latest.json`, and `entries.json`.
-5. `sync_archive_to_repo.py` mirrors `docs/` into `site/` as an in-repo backup and preserves the builder/support scripts.
-6. The public GitHub Pages site serves the static gallery to readers and to other workflows that need stable archive image URLs.
+4. In production, `bridge/update_repo_after_run.sh` resets to current `origin/main`, invokes that canonical generator, verifies the visual-learning-hub design contract, mirrors `docs/` to `site/`, and only then commits and pushes. A stale external generator cannot silently replace the design.
+5. `docs/` is the canonical GitHub Pages output: image assets, paginated HTML, `latest.json`, and `entries.json`.
+6. `sync_archive_to_repo.py` mirrors `docs/` into `site/` as an in-repo backup and preserves the builder/support scripts.
+7. The public GitHub Pages site serves the static gallery to readers and to other workflows that need stable archive image URLs.
 
 ## Boundaries
 

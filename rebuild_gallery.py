@@ -1,17 +1,33 @@
 #!/usr/bin/env python3
+import html
 import json
 import math
-import html
+import os
 import re
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
 
 from gallery_index import AGE_SUITABILITY_LEVELS, CATEGORY_LABELS, build_entries_index, normalize_entry_metadata
 
-BASE = Path('/home/lukafinzgar/projects/.caller_tasks/artists')
-RUNS_DIR = BASE / 'runs'
-PUBLIC_ROOT = Path('/home/lukafinzgar/projects/.caller_tasks/artists-infographic-archive/docs')
-LEGACY_IMPORTED = BASE / 'imported_legacy_entries.json'
+
+def configured_path(variable: str, default: str) -> Path:
+    """Resolve a local or production archive path without forking the generator."""
+    return Path(os.environ.get(variable, default)).expanduser().resolve()
+
+
+BASE = configured_path(
+    'ARTISTS_ARCHIVE_BASE',
+    '/home/lukafinzgar/projects/.caller_tasks/artists',
+)
+RUNS_DIR = configured_path('ARTISTS_ARCHIVE_RUNS_DIR', str(BASE / 'runs'))
+PUBLIC_ROOT = configured_path(
+    'ARTISTS_ARCHIVE_PUBLIC_ROOT',
+    '/home/lukafinzgar/projects/.caller_tasks/artists-infographic-archive/docs',
+)
+LEGACY_IMPORTED = configured_path(
+    'ARTISTS_ARCHIVE_LEGACY_IMPORTED',
+    str(BASE / 'imported_legacy_entries.json'),
+)
 LATEST_META = PUBLIC_ROOT / 'latest.json'
 ENTRIES_INDEX = PUBLIC_ROOT / 'entries.json'
 PER_PAGE = 10
