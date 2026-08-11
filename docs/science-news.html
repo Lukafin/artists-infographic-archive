@@ -38,6 +38,7 @@
     .info-popover { position:absolute; top:12px; right:12px; z-index:4; max-width:calc(100% - 24px); } .info-popover[open] { right:12px; bottom:auto; } .info-popover summary { list-style:none; } .info-popover summary::-webkit-details-marker { display:none; } .info-button { width:32px; height:32px; display:grid; place-items:center; margin-left:auto; border-radius:999px; border:1px solid rgba(255,255,255,.5); background:rgba(255,249,235,.64); color:rgba(18,57,31,.82); font-weight:850; font-size:15px; box-shadow:0 6px 16px rgba(0,0,0,.10); backdrop-filter:blur(8px); cursor:pointer; } .info-button:hover,.info-button:focus-visible { background:var(--forest); color:#fff; outline:0; } .info-panel { position:absolute; top:42px; right:0; width:min(300px,calc(100vw - 76px)); max-height:min(148px,calc(100vh - 156px)); overflow:auto; padding:10px; border-radius:16px; background:rgba(255,253,249,.95); border:1px solid rgba(255,255,255,.9); box-shadow:0 16px 38px rgba(0,0,0,.2); backdrop-filter:blur(16px); } .info-panel .meta-row { gap:7px; } .info-panel .tag { padding:6px 9px; } .info-panel .sources { margin-top:9px; gap:6px; } .info-panel .sources a { padding:6px 9px; }
     .original-article { display:flex; align-items:center; justify-content:center; margin-top:9px; padding:8px 10px; border-radius:11px; background:#edf3e4; border:1px solid #d5dfc5; color:#12391f; font-size:12px; font-weight:800; text-decoration:none; } .original-article:hover,.original-article:focus-visible { background:#e2edd6; text-decoration:underline; outline:0; } .tag { display:inline-flex; padding:7px 10px; border-radius:999px; background:#f1e8d6; border:1px solid #e1d1b4; font-size:12px; color:#564f47; } .tag[hidden] { display:none!important; } .tag.artist { background:#f3d7d1; border-color:#e8c4bc; color:#7d2a22; } .tag.science,.tag.school-poster,.tag.science-news,.tag.source-count { background:#e5ead9; border-color:#ccd8bd; color:#285c33; } .tag.sport,.tag.age { background:#fff4cf; border-color:#ead694; color:#6d5208; } .tag.language { background:#eee3cc; border-color:#dccaa9; color:#554327; }
     .filter-bar { display:grid; grid-template-columns:minmax(220px,1.6fr) repeat(3,minmax(150px,.8fr)); gap:12px; margin:0 0 18px; } .filter-control { display:flex; flex-direction:column; gap:6px; } .filter-control label { font-size:13px; color:var(--muted); font-weight:800; } .filter-control input,.filter-control select { width:100%; padding:13px 14px; border-radius:14px; border:1px solid var(--line); background:#fffaf0; color:var(--body); font:inherit; } .results-summary { margin:0 0 14px; color:var(--muted); font-size:14px; } .sources { list-style:none; display:grid; gap:8px; padding:0; margin:12px 0 0; } .sources a { display:block; overflow-wrap:anywhere; padding:7px 10px; border-radius:10px; text-decoration:none; background:#faf7f2; border:1px solid var(--line); color:#594e44; font-size:12px; } .sources a:hover { text-decoration:underline; } .pagination { margin-top:22px; justify-content:flex-end; } .pagination.is-hidden { display:none; } .footer { margin-top:24px; padding:18px 22px; display:flex; justify-content:space-between; gap:12px; color:var(--muted); font-size:14px; } .empty { color:var(--muted); font-size:16px; }
+    @media (max-width:700px) { .science-copy,.archive-shell,.science-list,.science-list .card { min-width:0; width:100%; } .science-copy h2,.archive-top h2 { font-size:clamp(38px,12vw,56px); overflow-wrap:anywhere; } .science-list .image-title { padding:72px 14px 13px; background:linear-gradient(180deg,transparent,rgba(12,43,24,.9)); } .science-list .image-title h3,.science-list .card.feature .image-title h3 { max-width:100%; font-size:clamp(16px,5vw,20px); line-height:1.12; letter-spacing:-.02em; overflow-wrap:anywhere; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:4; overflow:hidden; } }
     @media (max-width:1200px) { .masonry { grid-template-columns:repeat(2,minmax(0,1fr)); } } @media (max-width:1000px) { .collection-grid { grid-template-columns:1fr; } .collection-card.featured-collection { min-height:480px; } .poster-stage { position:relative; left:auto; bottom:auto; transform:none; width:100%; margin-top:32px; } .hero-desk { min-height:auto; padding-bottom:30px; } .hero-desk::after { display:none; } .editorial-science-simple { grid-template-columns:1fr; } .science-hero-art { min-height:520px; } } @media (max-width:700px) { .nav { position:static; flex-direction:column; align-items:stretch; } .brand { align-items:flex-start; } .brand h1,.brand p { overflow-wrap:anywhere; } .nav-right { justify-content:flex-start; } .support-note { max-width:none; text-align:left; } .archive-top,.footer,.collections-heading-row { flex-direction:column; align-items:flex-start; } .pagination { justify-content:flex-start; } .intro { font-size:17px; } .hero-desk { padding:40px 10px 24px; } .hero-copy { width:100%; min-width:0; } .hero-copy h2 { width:100%; max-width:100%; font-size:clamp(38px,11.5vw,46px); line-height:.98; letter-spacing:-.06em; overflow-wrap:normal; } .ornament span { width:72px; } .wrap { width:100%; max-width:100%; overflow:hidden; padding:18px 14px 44px; } .filter-bar { grid-template-columns:1fr; } .masonry { grid-template-columns:1fr; } .hero-chips { width:100%; } .hero-chip { width:100%; min-width:0; margin-top:8px; } .poster-stage { height:310px; } .hero-card { width:78%; height:220px; } .hero-poster { width:210px; height:160px; } .poster-2 { display:none; } .collection-card { padding:24px; min-height:330px; } .mini-poster { width:155px; height:140px; } .science-preview-image,.all-preview-image { width:52%; height:54%; } .science-hero-art { min-height:390px; } .science-hero-copy { padding:28px; } .science-hero-caption { left:18px; right:18px; bottom:16px; align-items:flex-start; flex-direction:column; gap:4px; } .science-hero-caption strong { max-width:100%; text-align:left; } .topic-pills { grid-template-columns:1fr 1fr; } .info-popover[open] { left:12px; right:12px; bottom:12px; max-width:none; } .info-popover[open] .info-panel { width:min(276px,100%); max-width:100%; max-height:min(104px,calc(100% - 54px)); } .info-panel .tag,.info-panel .sources a { padding:5px 8px; font-size:11px; } }
   </style>
 </head>
@@ -68,8 +69,8 @@
         <div class="section-kicker" data-i18n="science_eyebrow">Science news explained</div>
         <h2 data-i18n="science_title">Science news explained</h2>
         <p data-i18n="science_intro">Recent discoveries turned into simple visual summaries for young readers. Source details stay visible, but quiet.</p>
-        <div class="topic-pills"><span data-i18n="topic_archaeology">⌂ Archaeology</span><span data-i18n="topic_space">◌ Space</span><span data-i18n="topic_biology">⌁ Biology</span><span data-i18n="topic_climate">☼ Climate</span></div>
-        <section class="science-sources" aria-labelledby="featured-sources-heading"><h3 id="featured-sources-heading" data-i18n="sources_heading">Sources</h3><ul><li><a href="https://www.nature.com/articles/s41586-026-10871-3" title="https://www.nature.com/articles/s41586-026-10871-3" target="_blank" rel="noopener noreferrer" data-source-index="1" data-source-url="https://www.nature.com/articles/s41586-026-10871-3">Source 1 (https://www.nature.com/articles/s41586-026-…)</a></li><li><a href="https://pubmed.ncbi.nlm.nih.gov/42557319/" title="https://pubmed.ncbi.nlm.nih.gov/42557319/" target="_blank" rel="noopener noreferrer" data-source-index="2" data-source-url="https://pubmed.ncbi.nlm.nih.gov/42557319/">Source 2 (https://pubmed.ncbi.nlm.nih.gov/42557319/)</a></li><li><a href="https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares" title="https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares" target="_blank" rel="noopener noreferrer" data-source-index="3" data-source-url="https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares">Source 3 (https://www.sciencenews.org/article/tiny-sw…)</a></li><li><a href="https://www.sciencedaily.com/releases/2026/08/260807035142.htm" title="https://www.sciencedaily.com/releases/2026/08/260807035142.htm" target="_blank" rel="noopener noreferrer" data-source-index="4" data-source-url="https://www.sciencedaily.com/releases/2026/08/260807035142.htm">Source 4 (https://www.sciencedaily.com/releases/2026/…)</a></li></ul></section>
+        <div class="topic-pills" aria-label="Topics represented by the published explainers" data-i18n-aria-label="topics_label"><span data-topic="sun"><span aria-hidden="true">☀</span> <span data-topic-label="1" data-label-en="Sun" data-label-sl="Sonce">Sun</span></span><span data-topic="plasma_physics"><span aria-hidden="true">≈</span> <span data-topic-label="1" data-label-en="Plasma physics" data-label-sl="Fizika plazme">Plasma physics</span></span><span data-topic="archaeology"><span aria-hidden="true">⌂</span> <span data-topic-label="1" data-label-en="Archaeology" data-label-sl="Arheologija">Archaeology</span></span><span data-topic="amazonia"><span aria-hidden="true">♧</span> <span data-topic-label="1" data-label-en="Amazonia" data-label-sl="Amazonija">Amazonia</span></span></div>
+        <section class="science-sources" aria-labelledby="featured-sources-heading"><h3 id="featured-sources-heading" data-i18n="sources_heading">Sources</h3><ul><li><a href="https://www.nature.com/articles/s41586-026-10871-3" title="https://www.nature.com/articles/s41586-026-10871-3" target="_blank" rel="noopener noreferrer" data-source-index="1" data-source-url="https://www.nature.com/articles/s41586-026-10871-3" data-source-name="Nature" data-source-kind="research_paper">Nature — Research paper</a></li><li><a href="https://pubmed.ncbi.nlm.nih.gov/42557319/" title="https://pubmed.ncbi.nlm.nih.gov/42557319/" target="_blank" rel="noopener noreferrer" data-source-index="2" data-source-url="https://pubmed.ncbi.nlm.nih.gov/42557319/" data-source-name="PubMed" data-source-kind="research_record">PubMed — Research record</a></li><li><a href="https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares" title="https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares" target="_blank" rel="noopener noreferrer" data-source-index="3" data-source-url="https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares" data-source-name="Science News" data-source-kind="news_explainer">Science News — News explainer</a></li><li><a href="https://www.sciencedaily.com/releases/2026/08/260807035142.htm" title="https://www.sciencedaily.com/releases/2026/08/260807035142.htm" target="_blank" rel="noopener noreferrer" data-source-index="4" data-source-url="https://www.sciencedaily.com/releases/2026/08/260807035142.htm" data-source-name="ScienceDaily" data-source-kind="news_article">ScienceDaily — News article</a></li></ul></section>
       </div>
     </section>
     <section class="archive-shell" id="science-news">
@@ -80,9 +81,9 @@
         </div>
       </div>
       <div class="masonry science-list"><article class="card feature" data-person="Tiny plasma vortices reveal a hidden mixing process on the Sun" data-category="science_news" data-language="en" data-age-suitability="age_6">
-  <a class="thumb" href="TinyPlasmaVorticesRevealAHiddenMixingProcessOnTheSun.png" aria-label="Open infographic: Tiny plasma vortices reveal a hidden mixing process on the Sun"><img src="TinyPlasmaVorticesRevealAHiddenMixingProcessOnTheSun.png" alt="Infographic: Tiny plasma vortices reveal a hidden mixing process on the Sun" loading="lazy"></a>
+  <a class="thumb" href="TinyPlasmaVorticesRevealAHiddenMixingProcessOnTheSun.png" aria-label="Open infographic: Tiny whirlpools mix the Sun&#x27;s surface" data-infographic-link="1" data-title-en="Tiny whirlpools mix the Sun&#x27;s surface" data-title-sl="Drobni vrtinci mešajo površje Sonca"><img src="TinyPlasmaVorticesRevealAHiddenMixingProcessOnTheSun.png" alt="Infographic: Tiny whirlpools mix the Sun&#x27;s surface" loading="lazy"></a>
   <div class="image-title">
-    <h3>Tiny plasma vortices reveal a hidden mixing process on the Sun</h3>
+    <h3 data-localized-title="1" data-title-en="Tiny whirlpools mix the Sun&#x27;s surface" data-title-sl="Drobni vrtinci mešajo površje Sonca">Tiny whirlpools mix the Sun&#x27;s surface</h3>
   </div>
   <details class="info-popover">
       <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
@@ -95,14 +96,14 @@
           <span class="tag source-count" data-source-count="4">4 sources</span>
         </div>
         <a class="original-article" href="https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares" target="_blank" rel="noopener noreferrer" data-original-article-link="1">Read the original article ↗</a>
-        <ul class="sources"><li><a href="https://www.nature.com/articles/s41586-026-10871-3" title="https://www.nature.com/articles/s41586-026-10871-3" target="_blank" rel="noopener noreferrer" data-source-index="1" data-source-url="https://www.nature.com/articles/s41586-026-10871-3">Source 1 (https://www.nature.com/articles/s41586-026-…)</a></li><li><a href="https://pubmed.ncbi.nlm.nih.gov/42557319/" title="https://pubmed.ncbi.nlm.nih.gov/42557319/" target="_blank" rel="noopener noreferrer" data-source-index="2" data-source-url="https://pubmed.ncbi.nlm.nih.gov/42557319/">Source 2 (https://pubmed.ncbi.nlm.nih.gov/42557319/)</a></li><li><a href="https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares" title="https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares" target="_blank" rel="noopener noreferrer" data-source-index="3" data-source-url="https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares">Source 3 (https://www.sciencenews.org/article/tiny-sw…)</a></li><li><a href="https://www.sciencedaily.com/releases/2026/08/260807035142.htm" title="https://www.sciencedaily.com/releases/2026/08/260807035142.htm" target="_blank" rel="noopener noreferrer" data-source-index="4" data-source-url="https://www.sciencedaily.com/releases/2026/08/260807035142.htm">Source 4 (https://www.sciencedaily.com/releases/2026/…)</a></li></ul>
+        <ul class="sources"><li><a href="https://www.nature.com/articles/s41586-026-10871-3" title="https://www.nature.com/articles/s41586-026-10871-3" target="_blank" rel="noopener noreferrer" data-source-index="1" data-source-url="https://www.nature.com/articles/s41586-026-10871-3" data-source-name="Nature" data-source-kind="research_paper">Nature — Research paper</a></li><li><a href="https://pubmed.ncbi.nlm.nih.gov/42557319/" title="https://pubmed.ncbi.nlm.nih.gov/42557319/" target="_blank" rel="noopener noreferrer" data-source-index="2" data-source-url="https://pubmed.ncbi.nlm.nih.gov/42557319/" data-source-name="PubMed" data-source-kind="research_record">PubMed — Research record</a></li><li><a href="https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares" title="https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares" target="_blank" rel="noopener noreferrer" data-source-index="3" data-source-url="https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares" data-source-name="Science News" data-source-kind="news_explainer">Science News — News explainer</a></li><li><a href="https://www.sciencedaily.com/releases/2026/08/260807035142.htm" title="https://www.sciencedaily.com/releases/2026/08/260807035142.htm" target="_blank" rel="noopener noreferrer" data-source-index="4" data-source-url="https://www.sciencedaily.com/releases/2026/08/260807035142.htm" data-source-name="ScienceDaily" data-source-kind="news_article">ScienceDaily — News article</a></li></ul>
       </div>
     </details>
 </article>
 <article class="card" data-person="Laser mapping suggests a vast precolonial network of up to 30,000 earthworks beneath the southwestern Amazon" data-category="science_news" data-language="en" data-age-suitability="age_6">
-  <a class="thumb" href="LaserMappingSuggestsAVastPrecolonialNetworkOfUpTo30000EarthworksBeneathTheSouthwesternAmazon.png" aria-label="Open infographic: Laser mapping suggests a vast precolonial network of up to 30,000 earthworks beneath the southwestern Amazon"><img src="LaserMappingSuggestsAVastPrecolonialNetworkOfUpTo30000EarthworksBeneathTheSouthwesternAmazon.png" alt="Infographic: Laser mapping suggests a vast precolonial network of up to 30,000 earthworks beneath the southwestern Amazon" loading="lazy"></a>
+  <a class="thumb" href="LaserMappingSuggestsAVastPrecolonialNetworkOfUpTo30000EarthworksBeneathTheSouthwesternAmazon.png" aria-label="Open infographic: LiDAR reveals an extensive precolonial landscape beneath the southwestern Amazon" data-infographic-link="1" data-title-en="LiDAR reveals an extensive precolonial landscape beneath the southwestern Amazon" data-title-sl="LiDAR razkriva obsežno predkolonialno pokrajino pod jugozahodno Amazonijo"><img src="LaserMappingSuggestsAVastPrecolonialNetworkOfUpTo30000EarthworksBeneathTheSouthwesternAmazon.png" alt="Infographic: LiDAR reveals an extensive precolonial landscape beneath the southwestern Amazon" loading="lazy"></a>
   <div class="image-title">
-    <h3>Laser mapping suggests a vast precolonial network of up to 30,000 earthworks beneath the southwestern Amazon</h3>
+    <h3 data-localized-title="1" data-title-en="LiDAR reveals an extensive precolonial landscape beneath the southwestern Amazon" data-title-sl="LiDAR razkriva obsežno predkolonialno pokrajino pod jugozahodno Amazonijo">LiDAR reveals an extensive precolonial landscape beneath the southwestern Amazon</h3>
   </div>
   <details class="info-popover">
       <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
@@ -115,7 +116,7 @@
           <span class="tag source-count" data-source-count="3">3 sources</span>
         </div>
         <a class="original-article" href="https://www.helsinki.fi/en/news/culture/ancient-civilization-millions-once-flourished-amazon" target="_blank" rel="noopener noreferrer" data-original-article-link="1">Read the original article ↗</a>
-        <ul class="sources"><li><a href="https://doi.org/10.1038/s41586-026-10835-7" title="https://doi.org/10.1038/s41586-026-10835-7" target="_blank" rel="noopener noreferrer" data-source-index="1" data-source-url="https://doi.org/10.1038/s41586-026-10835-7">Source 1 (https://doi.org/10.1038/s41586-026-10835-7)</a></li><li><a href="https://www.helsinki.fi/en/news/culture/ancient-civilization-millions-once-flourished-amazon" title="https://www.helsinki.fi/en/news/culture/ancient-civilization-millions-once-flourished-amazon" target="_blank" rel="noopener noreferrer" data-source-index="2" data-source-url="https://www.helsinki.fi/en/news/culture/ancient-civilization-millions-once-flourished-amazon">Source 2 (https://www.helsinki.fi/en/news/culture/anc…)</a></li><li><a href="https://www.livescience.com/archaeology/americas/lasers-reveal-hundreds-of-geoglyphs-made-by-a-mysterious-civilization-in-the-amazon-rainforest-thousands-of-years-ago" title="https://www.livescience.com/archaeology/americas/lasers-reveal-hundreds-of-geoglyphs-made-by-a-mysterious-civilization-in-the-amazon-rainforest-thousands-of-years-ago" target="_blank" rel="noopener noreferrer" data-source-index="3" data-source-url="https://www.livescience.com/archaeology/americas/lasers-reveal-hundreds-of-geoglyphs-made-by-a-mysterious-civilization-in-the-amazon-rainforest-thousands-of-years-ago">Source 3 (https://www.livescience.com/archaeology/ame…)</a></li></ul>
+        <ul class="sources"><li><a href="https://doi.org/10.1038/s41586-026-10835-7" title="https://doi.org/10.1038/s41586-026-10835-7" target="_blank" rel="noopener noreferrer" data-source-index="1" data-source-url="https://doi.org/10.1038/s41586-026-10835-7" data-source-name="Nature" data-source-kind="research_paper">Nature — Research paper</a></li><li><a href="https://www.helsinki.fi/en/news/culture/ancient-civilization-millions-once-flourished-amazon" title="https://www.helsinki.fi/en/news/culture/ancient-civilization-millions-once-flourished-amazon" target="_blank" rel="noopener noreferrer" data-source-index="2" data-source-url="https://www.helsinki.fi/en/news/culture/ancient-civilization-millions-once-flourished-amazon" data-source-name="University of Helsinki" data-source-kind="research_news">University of Helsinki — Research news</a></li><li><a href="https://www.livescience.com/archaeology/americas/lasers-reveal-hundreds-of-geoglyphs-made-by-a-mysterious-civilization-in-the-amazon-rainforest-thousands-of-years-ago" title="https://www.livescience.com/archaeology/americas/lasers-reveal-hundreds-of-geoglyphs-made-by-a-mysterious-civilization-in-the-amazon-rainforest-thousands-of-years-ago" target="_blank" rel="noopener noreferrer" data-source-index="3" data-source-url="https://www.livescience.com/archaeology/americas/lasers-reveal-hundreds-of-geoglyphs-made-by-a-mysterious-civilization-in-the-amazon-rainforest-thousands-of-years-ago" data-source-name="Live Science" data-source-kind="news_article">Live Science — News article</a></li></ul>
       </div>
     </details>
 </article></div>
@@ -144,13 +145,16 @@
       science_eyebrow: 'Science news explained',
       science_title: 'Science news explained',
       science_intro: 'Recent discoveries turned into simple visual summaries for young readers. Source details stay visible, but quiet.',
-      topic_archaeology: '⌂ Archaeology',
-      topic_space: '◌ Space',
-      topic_biology: '⌁ Biology',
-      topic_climate: '☼ Climate',
+      topics_label: 'Topics represented by the published explainers',
       sources_heading: 'Sources',
       sources_empty: 'No sources listed.',
       source: 'Source',
+      source_kind_research_paper: 'Research paper',
+      source_kind_research_record: 'Research record',
+      source_kind_news_explainer: 'News explainer',
+      source_kind_news_article: 'News article',
+      source_kind_research_news: 'Research news',
+      source_kind_website: 'Website',
       archive_title: 'Latest science explainers',
       archive_intro: 'Browse the science news collection separately from biographies and school posters.',
       process_eyebrow: 'How these infographics are made',
@@ -161,6 +165,8 @@
       updated: 'Updated:',
       original_article: 'Read the original article ↗',
       image_details: 'Show image details',
+      open_infographic: 'Open infographic:',
+      infographic: 'Infographic:',
       category_science_news: 'Science news',
       age_age_6: 'Ages 6+',
       age_age_13: 'Ages 13+',
@@ -178,13 +184,16 @@
       science_eyebrow: 'Razložene znanstvene novice',
       science_title: 'Razložene znanstvene novice',
       science_intro: 'Najnovejša odkritja v preprostih vizualnih povzetkih za mlade bralce. Viri ostanejo vedno vidni.',
-      topic_archaeology: '⌂ Arheologija',
-      topic_space: '◌ Vesolje',
-      topic_biology: '⌁ Biologija',
-      topic_climate: '☼ Podnebje',
+      topics_label: 'Teme, ki jih obravnavajo objavljene infografike',
       sources_heading: 'Viri',
       sources_empty: 'Viri niso navedeni.',
       source: 'Vir',
+      source_kind_research_paper: 'Raziskovalni članek',
+      source_kind_research_record: 'Zapis raziskave',
+      source_kind_news_explainer: 'Poljudna razlaga',
+      source_kind_news_article: 'Novinarski članek',
+      source_kind_research_news: 'Novica o raziskavi',
+      source_kind_website: 'Spletna stran',
       archive_title: 'Najnovejše znanstvene razlage',
       archive_intro: 'Prebrskaj zbirko znanstvenih novic ločeno od biografij in šolskih plakatov.',
       process_eyebrow: 'Kako nastajajo infografike',
@@ -195,6 +204,8 @@
       updated: 'Posodobljeno:',
       original_article: 'Preberi izvirni članek ↗',
       image_details: 'Pokaži podrobnosti slike',
+      open_infographic: 'Odpri infografiko:',
+      infographic: 'Infografika:',
       category_science_news: 'Znanstvena novica',
       age_age_6: '6+ let',
       age_age_13: '13+ let',
@@ -238,7 +249,20 @@
       node.setAttribute('aria-label', t(node.dataset.i18nAriaLabel));
     });
     document.querySelectorAll('[data-source-index][data-source-url]').forEach((node) => {
-      node.textContent = `${t('source')} ${node.dataset.sourceIndex} (${compactSourceUrl(node.dataset.sourceUrl)})`;
+      const name = node.dataset.sourceName || `${t('source')} ${node.dataset.sourceIndex}`;
+      node.textContent = `${name} — ${t(`source_kind_${node.dataset.sourceKind || 'website'}`)}`;
+    });
+    document.querySelectorAll('[data-topic-label]').forEach((node) => {
+      node.textContent = uiLang === 'sl' ? node.dataset.labelSl : node.dataset.labelEn;
+    });
+    document.querySelectorAll('[data-localized-title]').forEach((node) => {
+      node.textContent = uiLang === 'sl' ? node.dataset.titleSl : node.dataset.titleEn;
+    });
+    document.querySelectorAll('[data-infographic-link]').forEach((node) => {
+      const title = uiLang === 'sl' ? node.dataset.titleSl : node.dataset.titleEn;
+      node.setAttribute('aria-label', `${t('open_infographic')} ${title}`);
+      const image = node.querySelector('img');
+      if (image) image.alt = `${t('infographic')} ${title}`;
     });
     document.querySelectorAll('[data-original-article-link]').forEach((node) => {
       node.textContent = t('original_article');

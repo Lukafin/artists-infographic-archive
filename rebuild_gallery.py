@@ -6,6 +6,7 @@ import os
 import re
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import urlparse
 
 from gallery_index import AGE_SUITABILITY_LEVELS, CATEGORY_LABELS, build_entries_index, normalize_entry_metadata
 
@@ -120,9 +121,108 @@ def source_count_label(e):
     return f'{count} sources' if count else 'No sources'
 
 
+SCIENCE_TITLE_SL = {
+    '31f8c0fc-6403-4210-9be0-a1386751c039': 'Drobni vrtinci mešajo površje Sonca',
+    '27fd91ee-7c15-4c25-b84e-482d61ee1f04': 'LiDAR razkriva obsežno predkolonialno pokrajino pod jugozahodno Amazonijo',
+}
+
+SCIENCE_TOPICS = {
+    'sun': ('☀', 'Sun', 'Sonce', ('sun', 'solar', 'photosphere', 'plasma')),
+    'plasma_physics': ('≈', 'Plasma physics', 'Fizika plazme', ('plasma', 'kelvin–helmholtz', 'magnetic flux')),
+    'archaeology': ('⌂', 'Archaeology', 'Arheologija', ('archaeolog', 'precolonial', 'earthwork', 'geoglyph')),
+    'amazonia': ('♧', 'Amazonia', 'Amazonija', ('amazon', 'aquiry', 'rainforest')),
+    'space': ('◌', 'Space', 'Vesolje', ('space', 'planet', 'galaxy', 'star', 'asteroid', 'comet')),
+    'biology': ('⌁', 'Biology', 'Biologija', ('biology', 'species', 'genome', 'cell', 'animal', 'plant')),
+    'climate': ('☼', 'Climate', 'Podnebje', ('climate', 'warming', 'emission', 'temperature')),
+    'health': ('+', 'Health', 'Zdravje', ('health', 'medical', 'disease', 'patient', 'vaccine')),
+    'earth': ('◇', 'Earth science', 'Vede o Zemlji', ('earthquake', 'volcano', 'geology', 'ocean')),
+    'technology': ('▦', 'Technology', 'Tehnologija', ('technology', 'computer', 'robot', 'artificial intelligence')),
+}
+
+
+def science_titles(e):
+    english = display_title(e.get('title') or e.get('person', ''))
+    localized = e.get('localized_titles') if isinstance(e.get('localized_titles'), dict) else {}
+    slovenian = (
+        e.get('title_sl')
+        or localized.get('sl')
+        or SCIENCE_TITLE_SL.get(str(e.get('assignment_id') or ''))
+        or english
+    )
+    return english, display_title(slovenian)
+
+
+def science_topic_keys(entries, limit=4):
+    found = []
+    for entry in entries:
+        explicit = entry.get('science_topics') or entry.get('topics') or []
+        if isinstance(explicit, str):
+            explicit = [explicit]
+        text = ' '.join(str(entry.get(key) or '') for key in ('person', 'title', 'summary')).lower()
+        candidates = [str(key).strip().lower() for key in explicit]
+        candidates.extend(
+            key for key, (_, _, _, terms) in SCIENCE_TOPICS.items()
+            if any(term in text for term in terms)
+        )
+        for key in candidates:
+            if key in SCIENCE_TOPICS and key not in found:
+                found.append(key)
+                if len(found) >= limit:
+                    return found
+    return found
+
+
+def source_details(url):
+    host = urlparse(str(url)).netloc.lower().removeprefix('www.')
+    if host == 'doi.org':
+        return 'Nature', 'research_paper'
+    known = {
+        'nature.com': ('Nature', 'research_paper'),
+        'pubmed.ncbi.nlm.nih.gov': ('PubMed', 'research_record'),
+        'sciencenews.org': ('Science News', 'news_explainer'),
+        'sciencedaily.com': ('ScienceDaily', 'news_article'),
+        'helsinki.fi': ('University of Helsinki', 'research_news'),
+        'livescience.com': ('Live Science', 'news_article'),
+        'nasa.gov': ('NASA', 'website'),
+    }
+    for domain, details in known.items():
+        if host == domain or host.endswith('.' + domain):
+            return details
+    name = host.split('.')[0].replace('-', ' ').title() if host else 'Source'
+    return name, 'website'
+
+
 def source_link_label(url, index, url_limit=44):
-    display_url = url if len(url) <= url_limit else url[:url_limit - 1] + '…'
-    return f'Source {index} ({display_url})'
+    clean = str(url)
+    short_url = clean if len(clean) <= url_limit else clean[:url_limit - 1] + '…'
+    return f'Source {index} ({short_url})'
+
+
+def friendly_source_label(url):
+    name, kind = source_details(url)
+    labels = {
+        'research_paper': 'Research paper',
+        'research_record': 'Research record',
+        'news_explainer': 'News explainer',
+        'news_article': 'News article',
+        'research_news': 'Research news',
+        'website': 'Website',
+    }
+    return f'{name} — {labels[kind]}'
+
+
+def render_source_link(url, index, friendly=False):
+    name, kind = source_details(url)
+    friendly_data = (
+        f' data-source-name="{html.escape(name)}" data-source-kind="{html.escape(kind)}"'
+        if friendly else ''
+    )
+    label = friendly_source_label(url) if friendly else source_link_label(url, index)
+    return (
+        f'<li><a href="{html.escape(url)}" title="{html.escape(url)}" target="_blank" rel="noopener noreferrer" '
+        f'data-source-index="{index}" data-source-url="{html.escape(url)}"{friendly_data}>'
+        f'{html.escape(label)}</a></li>'
+    )
 
 
 def age_suitability_badge(e):
@@ -169,16 +269,11 @@ def render_pagination(current: int, total: int) -> str:
     return '<nav class="pagination">' + ''.join(links) + '</nav>'
 
 
-def render_sources(e):
+def render_sources(e, friendly=False):
     sources = e.get('sources', [])
     if not sources:
         return ''
-    items = ''.join(
-        f'<li><a href="{html.escape(url)}" title="{html.escape(url)}" target="_blank" rel="noopener noreferrer" '
-        f'data-source-index="{index}" data-source-url="{html.escape(url)}">'
-        f'{html.escape(source_link_label(url, index))}</a></li>'
-        for index, url in enumerate(sources[:4], 1)
-    )
+    items = ''.join(render_source_link(url, index, friendly=friendly) for index, url in enumerate(sources[:4], 1))
     return f'<ul class="sources">{items}</ul>'
 
 
@@ -192,7 +287,7 @@ def render_original_article(e):
     )
 
 
-def render_info_overlay(e, panel_id, expanded=False):
+def render_info_overlay(e, panel_id, expanded=False, friendly_sources=False):
     raw_date = e.get('date', '')
     date = html.escape(raw_date)
     display_date = html.escape(format_display_date(raw_date))
@@ -213,7 +308,7 @@ def render_info_overlay(e, panel_id, expanded=False):
           <span class="tag source-count" data-source-count="{e.get('source_count', len(e.get('sources', [])))}">{count_label}</span>
         </div>
         {render_original_article(e)}
-        {render_sources(e)}
+        {render_sources(e, friendly=friendly_sources)}
       </div>
     </details>'''
 
@@ -288,18 +383,23 @@ def collection_preview_set(entries):
         'all_a': pick_preview(entries, {'artist', 'scientist', 'sport', 'school_poster', 'science_news'}),
     }
 
-def render_masonry_card(e, featured=False):
-    person = html.escape(display_title(e.get('person', '')))
+def render_masonry_card(e, featured=False, friendly_sources=False):
+    if e.get('category') == 'science_news':
+        title_en, title_sl = science_titles(e)
+    else:
+        title_en = title_sl = display_title(e.get('person', ''))
+    person = html.escape(title_en)
+    title_sl_attr = html.escape(title_sl)
     filename = html.escape(e.get('filename', ''))
     age_data = html.escape(age_suitability_data(e))
     feature_cls = ' feature' if featured else ''
     panel_id = 'info-' + re.sub(r'[^a-zA-Z0-9_-]+', '-', f"{e.get('date', '')}-{e.get('filename', '')}").strip('-')
     return f'''<article class="card{feature_cls}" data-person="{html.escape(e.get('person', ''))}" data-category="{html.escape(e.get('category', ''))}" data-language="{html.escape(e.get('language', 'sl'))}" data-age-suitability="{age_data}">
-  <a class="thumb" href="{filename}" aria-label="Open infographic: {person}"><img src="{filename}" alt="Infographic: {person}" loading="lazy"></a>
+  <a class="thumb" href="{filename}" aria-label="Open infographic: {person}" data-infographic-link="1" data-title-en="{person}" data-title-sl="{title_sl_attr}"><img src="{filename}" alt="Infographic: {person}" loading="lazy"></a>
   <div class="image-title">
-    <h3>{person}</h3>
+    <h3 data-localized-title="1" data-title-en="{person}" data-title-sl="{title_sl_attr}">{person}</h3>
   </div>
-  {render_info_overlay(e, panel_id)}
+  {render_info_overlay(e, panel_id, friendly_sources=friendly_sources)}
 </article>'''
 
 
@@ -407,16 +507,21 @@ def render_process_note():
 def render_science_news_page(science_entries):
     updated = datetime.now().strftime('%Y-%m-%d %H:%M')
     updated_display = html.escape(format_display_datetime(updated))
-    cards = '\n'.join(render_masonry_card(e, featured=(idx == 0)) for idx, e in enumerate(science_entries)) or '<p class="empty">No science news explainers have been published yet.</p>'
+    cards = '\n'.join(
+        render_masonry_card(e, featured=(idx == 0), friendly_sources=True)
+        for idx, e in enumerate(science_entries)
+    ) or '<p class="empty">No science news explainers have been published yet.</p>'
     featured = science_entries[0] if science_entries else None
     featured_img = preview_img(featured, 'science-hero-image', 'Latest science explainer')
     featured_title = html.escape(display_title(featured.get('person', 'Latest science explainer'))) if featured else 'Latest science explainer'
     featured_sources = (featured or {}).get('sources') or []
-    source_links = ''.join(
-        f'<li><a href="{html.escape(url)}" title="{html.escape(url)}" target="_blank" rel="noopener noreferrer" '
-        f'data-source-index="{index}" data-source-url="{html.escape(url)}">'
-        f'{html.escape(source_link_label(url, index))}</a></li>'
-        for index, url in enumerate(featured_sources[:6], 1)
+    source_links = ''.join(render_source_link(url, index, friendly=True) for index, url in enumerate(featured_sources[:6], 1))
+    topic_keys = science_topic_keys(science_entries)
+    topic_pills = ''.join(
+        f'<span data-topic="{html.escape(key)}"><span aria-hidden="true">{html.escape(SCIENCE_TOPICS[key][0])}</span> '
+        f'<span data-topic-label="1" data-label-en="{html.escape(SCIENCE_TOPICS[key][1])}" '
+        f'data-label-sl="{html.escape(SCIENCE_TOPICS[key][2])}">{html.escape(SCIENCE_TOPICS[key][1])}</span></span>'
+        for key in topic_keys
     )
     source_list = (
         f'<section class="science-sources" aria-labelledby="featured-sources-heading">'
@@ -466,7 +571,7 @@ def render_science_news_page(science_entries):
         <div class="section-kicker" data-i18n="science_eyebrow">Science news explained</div>
         <h2 data-i18n="science_title">Science news explained</h2>
         <p data-i18n="science_intro">Recent discoveries turned into simple visual summaries for young readers. Source details stay visible, but quiet.</p>
-        <div class="topic-pills"><span data-i18n="topic_archaeology">⌂ Archaeology</span><span data-i18n="topic_space">◌ Space</span><span data-i18n="topic_biology">⌁ Biology</span><span data-i18n="topic_climate">☼ Climate</span></div>
+        <div class="topic-pills" aria-label="Topics represented by the published explainers" data-i18n-aria-label="topics_label">{topic_pills}</div>
         {source_list}
       </div>
     </section>
@@ -505,13 +610,16 @@ def render_science_client_script():
       science_eyebrow: 'Science news explained',
       science_title: 'Science news explained',
       science_intro: 'Recent discoveries turned into simple visual summaries for young readers. Source details stay visible, but quiet.',
-      topic_archaeology: '⌂ Archaeology',
-      topic_space: '◌ Space',
-      topic_biology: '⌁ Biology',
-      topic_climate: '☼ Climate',
+      topics_label: 'Topics represented by the published explainers',
       sources_heading: 'Sources',
       sources_empty: 'No sources listed.',
       source: 'Source',
+      source_kind_research_paper: 'Research paper',
+      source_kind_research_record: 'Research record',
+      source_kind_news_explainer: 'News explainer',
+      source_kind_news_article: 'News article',
+      source_kind_research_news: 'Research news',
+      source_kind_website: 'Website',
       archive_title: 'Latest science explainers',
       archive_intro: 'Browse the science news collection separately from biographies and school posters.',
       process_eyebrow: 'How these infographics are made',
@@ -522,6 +630,8 @@ def render_science_client_script():
       updated: 'Updated:',
       original_article: 'Read the original article ↗',
       image_details: 'Show image details',
+      open_infographic: 'Open infographic:',
+      infographic: 'Infographic:',
       category_science_news: 'Science news',
       age_age_6: 'Ages 6+',
       age_age_13: 'Ages 13+',
@@ -539,13 +649,16 @@ def render_science_client_script():
       science_eyebrow: 'Razložene znanstvene novice',
       science_title: 'Razložene znanstvene novice',
       science_intro: 'Najnovejša odkritja v preprostih vizualnih povzetkih za mlade bralce. Viri ostanejo vedno vidni.',
-      topic_archaeology: '⌂ Arheologija',
-      topic_space: '◌ Vesolje',
-      topic_biology: '⌁ Biologija',
-      topic_climate: '☼ Podnebje',
+      topics_label: 'Teme, ki jih obravnavajo objavljene infografike',
       sources_heading: 'Viri',
       sources_empty: 'Viri niso navedeni.',
       source: 'Vir',
+      source_kind_research_paper: 'Raziskovalni članek',
+      source_kind_research_record: 'Zapis raziskave',
+      source_kind_news_explainer: 'Poljudna razlaga',
+      source_kind_news_article: 'Novinarski članek',
+      source_kind_research_news: 'Novica o raziskavi',
+      source_kind_website: 'Spletna stran',
       archive_title: 'Najnovejše znanstvene razlage',
       archive_intro: 'Prebrskaj zbirko znanstvenih novic ločeno od biografij in šolskih plakatov.',
       process_eyebrow: 'Kako nastajajo infografike',
@@ -556,6 +669,8 @@ def render_science_client_script():
       updated: 'Posodobljeno:',
       original_article: 'Preberi izvirni članek ↗',
       image_details: 'Pokaži podrobnosti slike',
+      open_infographic: 'Odpri infografiko:',
+      infographic: 'Infografika:',
       category_science_news: 'Znanstvena novica',
       age_age_6: '6+ let',
       age_age_13: '13+ let',
@@ -599,7 +714,20 @@ def render_science_client_script():
       node.setAttribute('aria-label', t(node.dataset.i18nAriaLabel));
     });
     document.querySelectorAll('[data-source-index][data-source-url]').forEach((node) => {
-      node.textContent = `${t('source')} ${node.dataset.sourceIndex} (${compactSourceUrl(node.dataset.sourceUrl)})`;
+      const name = node.dataset.sourceName || `${t('source')} ${node.dataset.sourceIndex}`;
+      node.textContent = `${name} — ${t(`source_kind_${node.dataset.sourceKind || 'website'}`)}`;
+    });
+    document.querySelectorAll('[data-topic-label]').forEach((node) => {
+      node.textContent = uiLang === 'sl' ? node.dataset.labelSl : node.dataset.labelEn;
+    });
+    document.querySelectorAll('[data-localized-title]').forEach((node) => {
+      node.textContent = uiLang === 'sl' ? node.dataset.titleSl : node.dataset.titleEn;
+    });
+    document.querySelectorAll('[data-infographic-link]').forEach((node) => {
+      const title = uiLang === 'sl' ? node.dataset.titleSl : node.dataset.titleEn;
+      node.setAttribute('aria-label', `${t('open_infographic')} ${title}`);
+      const image = node.querySelector('img');
+      if (image) image.alt = `${t('infographic')} ${title}`;
     });
     document.querySelectorAll('[data-original-article-link]').forEach((node) => {
       node.textContent = t('original_article');
@@ -1118,6 +1246,7 @@ BASE_CSS = """
     .info-popover {{ position:absolute; top:12px; right:12px; z-index:4; max-width:calc(100% - 24px); }} .info-popover[open] {{ right:12px; bottom:auto; }} .info-popover summary {{ list-style:none; }} .info-popover summary::-webkit-details-marker {{ display:none; }} .info-button {{ width:32px; height:32px; display:grid; place-items:center; margin-left:auto; border-radius:999px; border:1px solid rgba(255,255,255,.5); background:rgba(255,249,235,.64); color:rgba(18,57,31,.82); font-weight:850; font-size:15px; box-shadow:0 6px 16px rgba(0,0,0,.10); backdrop-filter:blur(8px); cursor:pointer; }} .info-button:hover,.info-button:focus-visible {{ background:var(--forest); color:#fff; outline:0; }} .info-panel {{ position:absolute; top:42px; right:0; width:min(300px,calc(100vw - 76px)); max-height:min(148px,calc(100vh - 156px)); overflow:auto; padding:10px; border-radius:16px; background:rgba(255,253,249,.95); border:1px solid rgba(255,255,255,.9); box-shadow:0 16px 38px rgba(0,0,0,.2); backdrop-filter:blur(16px); }} .info-panel .meta-row {{ gap:7px; }} .info-panel .tag {{ padding:6px 9px; }} .info-panel .sources {{ margin-top:9px; gap:6px; }} .info-panel .sources a {{ padding:6px 9px; }}
     .original-article {{ display:flex; align-items:center; justify-content:center; margin-top:9px; padding:8px 10px; border-radius:11px; background:#edf3e4; border:1px solid #d5dfc5; color:#12391f; font-size:12px; font-weight:800; text-decoration:none; }} .original-article:hover,.original-article:focus-visible {{ background:#e2edd6; text-decoration:underline; outline:0; }} .tag {{ display:inline-flex; padding:7px 10px; border-radius:999px; background:#f1e8d6; border:1px solid #e1d1b4; font-size:12px; color:#564f47; }} .tag[hidden] {{ display:none!important; }} .tag.artist {{ background:#f3d7d1; border-color:#e8c4bc; color:#7d2a22; }} .tag.science,.tag.school-poster,.tag.science-news,.tag.source-count {{ background:#e5ead9; border-color:#ccd8bd; color:#285c33; }} .tag.sport,.tag.age {{ background:#fff4cf; border-color:#ead694; color:#6d5208; }} .tag.language {{ background:#eee3cc; border-color:#dccaa9; color:#554327; }}
     .filter-bar {{ display:grid; grid-template-columns:minmax(220px,1.6fr) repeat(3,minmax(150px,.8fr)); gap:12px; margin:0 0 18px; }} .filter-control {{ display:flex; flex-direction:column; gap:6px; }} .filter-control label {{ font-size:13px; color:var(--muted); font-weight:800; }} .filter-control input,.filter-control select {{ width:100%; padding:13px 14px; border-radius:14px; border:1px solid var(--line); background:#fffaf0; color:var(--body); font:inherit; }} .results-summary {{ margin:0 0 14px; color:var(--muted); font-size:14px; }} .sources {{ list-style:none; display:grid; gap:8px; padding:0; margin:12px 0 0; }} .sources a {{ display:block; overflow-wrap:anywhere; padding:7px 10px; border-radius:10px; text-decoration:none; background:#faf7f2; border:1px solid var(--line); color:#594e44; font-size:12px; }} .sources a:hover {{ text-decoration:underline; }} .pagination {{ margin-top:22px; justify-content:flex-end; }} .pagination.is-hidden {{ display:none; }} .footer {{ margin-top:24px; padding:18px 22px; display:flex; justify-content:space-between; gap:12px; color:var(--muted); font-size:14px; }} .empty {{ color:var(--muted); font-size:16px; }}
+    @media (max-width:700px) {{ .science-copy,.archive-shell,.science-list,.science-list .card {{ min-width:0; width:100%; }} .science-copy h2,.archive-top h2 {{ font-size:clamp(38px,12vw,56px); overflow-wrap:anywhere; }} .science-list .image-title {{ padding:72px 14px 13px; background:linear-gradient(180deg,transparent,rgba(12,43,24,.9)); }} .science-list .image-title h3,.science-list .card.feature .image-title h3 {{ max-width:100%; font-size:clamp(16px,5vw,20px); line-height:1.12; letter-spacing:-.02em; overflow-wrap:anywhere; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:4; overflow:hidden; }} }}
     @media (max-width:1200px) {{ .masonry {{ grid-template-columns:repeat(2,minmax(0,1fr)); }} }} @media (max-width:1000px) {{ .collection-grid {{ grid-template-columns:1fr; }} .collection-card.featured-collection {{ min-height:480px; }} .poster-stage {{ position:relative; left:auto; bottom:auto; transform:none; width:100%; margin-top:32px; }} .hero-desk {{ min-height:auto; padding-bottom:30px; }} .hero-desk::after {{ display:none; }} .editorial-science-simple {{ grid-template-columns:1fr; }} .science-hero-art {{ min-height:520px; }} }} @media (max-width:700px) {{ .nav {{ position:static; flex-direction:column; align-items:stretch; }} .brand {{ align-items:flex-start; }} .brand h1,.brand p {{ overflow-wrap:anywhere; }} .nav-right {{ justify-content:flex-start; }} .support-note {{ max-width:none; text-align:left; }} .archive-top,.footer,.collections-heading-row {{ flex-direction:column; align-items:flex-start; }} .pagination {{ justify-content:flex-start; }} .intro {{ font-size:17px; }} .hero-desk {{ padding:40px 10px 24px; }} .hero-copy {{ width:100%; min-width:0; }} .hero-copy h2 {{ width:100%; max-width:100%; font-size:clamp(38px,11.5vw,46px); line-height:.98; letter-spacing:-.06em; overflow-wrap:normal; }} .ornament span {{ width:72px; }} .wrap {{ width:100%; max-width:100%; overflow:hidden; padding:18px 14px 44px; }} .filter-bar {{ grid-template-columns:1fr; }} .masonry {{ grid-template-columns:1fr; }} .hero-chips {{ width:100%; }} .hero-chip {{ width:100%; min-width:0; margin-top:8px; }} .poster-stage {{ height:310px; }} .hero-card {{ width:78%; height:220px; }} .hero-poster {{ width:210px; height:160px; }} .poster-2 {{ display:none; }} .collection-card {{ padding:24px; min-height:330px; }} .mini-poster {{ width:155px; height:140px; }} .science-preview-image,.all-preview-image {{ width:52%; height:54%; }} .science-hero-art {{ min-height:390px; }} .science-hero-copy {{ padding:28px; }} .science-hero-caption {{ left:18px; right:18px; bottom:16px; align-items:flex-start; flex-direction:column; gap:4px; }} .science-hero-caption strong {{ max-width:100%; text-align:left; }} .topic-pills {{ grid-template-columns:1fr 1fr; }} .info-popover[open] {{ left:12px; right:12px; bottom:12px; max-width:none; }} .info-popover[open] .info-panel {{ width:min(276px,100%); max-width:100%; max-height:min(104px,calc(100% - 54px)); }} .info-panel .tag,.info-panel .sources a {{ padding:5px 8px; font-size:11px; }} }}
   """
 

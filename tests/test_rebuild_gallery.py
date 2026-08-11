@@ -209,7 +209,7 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
             ]
         )
 
-        self.assertIn('<h3>Kemična reakcija</h3>', index_html)
+        self.assertIn('>Kemična reakcija</h3>', index_html)
         self.assertIn('function displayTitle(value)', index_html)
 
     def test_science_news_collection_page_is_generated(self):
@@ -217,6 +217,8 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
             {
                 'date': '2026-07-31',
                 'person': 'A surprising space discovery',
+                'title': 'A short space discovery',
+                'title_sl': 'Kratko vesoljsko odkritje',
                 'filename': 'SpaceDiscovery.png',
                 'category': 'science_news',
                 'language': 'en',
@@ -228,8 +230,12 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
 
         self.assertIn('Science news explained', science_page)
         self.assertIn('Recent discoveries turned into simple visual summaries for young readers.', science_page)
-        self.assertIn('Archaeology', science_page)
-        self.assertIn('A surprising space discovery', science_page)
+        self.assertIn('data-topic="space"', science_page)
+        self.assertIn('data-label-en="Space"', science_page)
+        self.assertNotIn('data-topic="archaeology"', science_page)
+        self.assertIn('data-title-en="A short space discovery"', science_page)
+        self.assertIn('data-title-sl="Kratko vesoljsko odkritje"', science_page)
+        self.assertIn('data-localized-title="1"', science_page)
         self.assertIn('Read the original article ↗', science_page)
         self.assertNotIn('Search archive', science_page)
         self.assertNotIn('science-trust', science_page)
@@ -237,10 +243,11 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         self.assertNotIn('<details class="science-sources">', science_page)
         self.assertIn('<section class="science-sources"', science_page)
         self.assertIn(
-            '>Source 1 (https://science.nasa.gov/example-discovery/)</a>',
+            '>NASA — Website</a>',
             science_page,
         )
-        self.assertNotIn('>Source 1</a>', science_page)
+        self.assertIn('data-source-name="NASA" data-source-kind="website"', science_page)
+        self.assertNotIn('Source 1 (https://', science_page)
         self.assertNotIn('← Home', science_page)
         self.assertNotIn('<span class="pill">1 explainers</span>', science_page)
         self.assertIn('data-lang-option="en"', science_page)
@@ -248,6 +255,11 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         self.assertIn("localStorage.getItem('archive-ui-lang')", science_page)
         self.assertIn("science_title: 'Razložene znanstvene novice'", science_page)
         self.assertIn("source: 'Vir'", science_page)
+        self.assertIn("source_kind_website: 'Spletna stran'", science_page)
+        self.assertIn("open_infographic: 'Odpri infografiko:'", science_page)
+        self.assertIn('.science-list .card.feature .image-title h3', science_page)
+        self.assertIn('-webkit-line-clamp:4', science_page)
+        self.assertIn('.science-copy,.archive-shell,.science-list,.science-list .card { min-width:0; width:100%; }', science_page)
 
 
 if __name__ == '__main__':
