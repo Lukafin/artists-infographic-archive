@@ -138,6 +138,7 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         )
         self.assertIn('function addCardBackdrops(root)', index_html)
         self.assertIn("backdrop.className = 'thumb-backdrop'", index_html)
+        self.assertIn('.thumb img { position:absolute; inset:0; width:100%; height:100%; display:block; object-fit:contain;', index_html)
         self.assertIn('.thumb-image { z-index:1; object-fit:contain; }', index_html)
         self.assertIn('target.hash = \'archive\'', index_html)
         self.assertIn('Made with human supervision and', index_html)
