@@ -260,6 +260,7 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         self.assertIn('.science-list .card.feature .image-title h3', science_page)
         self.assertIn('-webkit-line-clamp:4', science_page)
         self.assertIn('.editorial-science-simple,.science-hero-copy,.archive-shell,.science-list,.science-list .card { min-width:0; width:100%; }', science_page)
+        self.assertIn('.topic-pills { grid-template-columns:repeat(2,minmax(0,1fr)); }', science_page)
 
 
 if __name__ == '__main__':
