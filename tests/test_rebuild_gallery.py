@@ -263,6 +263,8 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         self.assertIn('.topic-pills { grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }', science_page)
         self.assertIn('min-height:52px; padding:9px 10px; border-radius:18px; font-size:14px', science_page)
         self.assertIn('.science-hero-copy .topic-pills { grid-template-columns:repeat(2,minmax(0,220px)); justify-content:start; }', science_page)
+        self.assertIn('.topic-pills > span { display:inline-flex;', science_page)
+        self.assertNotIn('.topic-pills span { display:inline-flex;', science_page)
 
 
 if __name__ == '__main__':
