@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 182,
+    "total_entries": 183,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 148
+      "age_6": 183
     },
     "category_counts": {
+      "school_poster": 34,
       "science_news": 2,
-      "school_poster": 33,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
+      "sl": 156,
       "en": 24,
-      "sl": 155,
       "de": 3
     }
   },
   "entries": [
+    {
+      "date": "2026-08-13",
+      "person": "potres",
+      "filename": "Potres.png",
+      "image_filename": "Potres.png",
+      "sources": [
+        "https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes",
+        "https://sl.wikipedia.org/wiki/Potres",
+        "https://www.wikidata.org/wiki/Q7944"
+      ],
+      "original_article_url": null,
+      "title": "Potres — ko se sprosti napetost v Zemljini skorji",
+      "summary": "Slovenski srednješolski stenski poster z neprekinjenim geološkim prerezom pojasni kopičenje napetosti, nenaden zdrs ob prelomu, širjenje seizmičnih valov ter razliko med hipocentrom in epicentrom. Zaključi se z jedrnatim navodilom za varno ravnanje med potresom in opozorilom na popotresne sunke.",
+      "age_suitability_details": {
+        "age_6": "Otrok lahko razume, da se tla stresejo, ko kamnine globoko pod površjem nenadoma zdrsnejo, ter si zapomni osnovno zaščitno ravnanje.",
+        "age_13": "Učenec razume vzročno verigo od napetosti in preloma do seizmičnih valov, loči hipocenter od epicentra ter magnitudo od krajevne intenzitete.",
+        "adult": "Poster povzema tektonski mehanizem potresa, prostorsko razmerje med žariščem in epicentrom, razlikovanje mer potresa ter osnovno vedenje neposredno med in po tresenju."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "5875ec36-6835-4d4e-8793-2f9628dbe49a",
+      "_kind": "native",
+      "_source_mtime": 1786597522.898209,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "potres school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-08-10",
       "person": "Tiny plasma vortices reveal a hidden mixing process on the Sun",
@@ -1010,11 +1071,17 @@
       "category_class": "school-poster",
       "original_article_url": null,
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 4,
-      "search_text": "gostota prebivalstva school_poster šolski plakat sl"
+      "search_text": "gostota prebivalstva school_poster šolski plakat sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-06-28",
@@ -1062,11 +1129,17 @@
       "category_class": "school-poster",
       "original_article_url": null,
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 4,
-      "search_text": "gora school_poster šolski plakat sl"
+      "search_text": "gora school_poster šolski plakat sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-06-24",
@@ -1114,11 +1187,17 @@
       "category_class": "school-poster",
       "original_article_url": null,
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 4,
-      "search_text": "globalizacija school_poster šolski plakat sl"
+      "search_text": "globalizacija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-06-23",
@@ -1604,11 +1683,17 @@
       "category_class": "school-poster",
       "original_article_url": null,
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 4,
-      "search_text": "demokracija school_poster šolski plakat sl"
+      "search_text": "demokracija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-06-16",
@@ -1902,11 +1987,17 @@
       "category_class": "school-poster",
       "original_article_url": null,
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 5,
-      "search_text": "evropska unija school_poster šolski plakat sl"
+      "search_text": "evropska unija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-06-12",
@@ -2198,11 +2289,17 @@
       "category_class": "school-poster",
       "original_article_url": null,
       "language_label": "EN",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 1,
-      "search_text": "french revolution school_poster šolski plakat en"
+      "search_text": "french revolution school_poster šolski plakat en age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-06-07",
@@ -2312,11 +2409,17 @@
       "category_class": "school-poster",
       "original_article_url": null,
       "language_label": "EN",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 3,
-      "search_text": "roman empire school_poster šolski plakat en"
+      "search_text": "roman empire school_poster šolski plakat en age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-06-03",
@@ -2405,11 +2508,17 @@
       "category_class": "school-poster",
       "original_article_url": null,
       "language_label": "EN",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 3,
-      "search_text": "renaissance school_poster šolski plakat en"
+      "search_text": "renaissance school_poster šolski plakat en age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-06-03",
@@ -2437,11 +2546,17 @@
       "category_class": "school-poster",
       "original_article_url": null,
       "language_label": "EN",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 3,
-      "search_text": "middle ages school_poster šolski plakat en"
+      "search_text": "middle ages school_poster šolski plakat en age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-06-01",
@@ -4973,11 +5088,17 @@
       "category_class": "science",
       "original_article_url": null,
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 4,
-      "search_text": "aaron sopher scientist znanstvenik sl"
+      "search_text": "aaron sopher scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-04",
@@ -5001,11 +5122,17 @@
       "category_class": "artist",
       "original_article_url": null,
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 4,
-      "search_text": "vincent van gogh artist umetnik sl"
+      "search_text": "vincent van gogh artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-03",
@@ -5028,11 +5155,17 @@
       "category_class": "science",
       "original_article_url": null,
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 3,
-      "search_text": "max volmer scientist znanstvenik sl"
+      "search_text": "max volmer scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-05-01",
@@ -5055,11 +5188,17 @@
       "category_class": "science",
       "original_article_url": null,
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 3,
-      "search_text": "santiago ramón y cajal scientist znanstvenik sl"
+      "search_text": "santiago ramón y cajal scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-30",
@@ -5082,11 +5221,17 @@
       "category_class": "science",
       "original_article_url": null,
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 3,
-      "search_text": "marie curie scientist znanstvenik sl"
+      "search_text": "marie curie scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-30",
@@ -5108,11 +5253,17 @@
       "category_class": "artist",
       "original_article_url": null,
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 2,
-      "search_text": "jaroslav hašek artist umetnik sl"
+      "search_text": "jaroslav hašek artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-28",
@@ -5142,11 +5293,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 3,
-      "search_text": "jan oort scientist znanstvenik sl"
+      "search_text": "jan oort scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-27",
@@ -5175,11 +5332,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 3,
-      "search_text": "samuel morse scientist znanstvenik sl"
+      "search_text": "samuel morse scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-26",
@@ -5207,11 +5370,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 3,
-      "search_text": "john james audubon artist umetnik sl"
+      "search_text": "john james audubon artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-25",
@@ -5239,11 +5408,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 3,
-      "search_text": "guglielmo marconi scientist znanstvenik sl"
+      "search_text": "guglielmo marconi scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-24",
@@ -5273,11 +5448,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 4,
-      "search_text": "david blackwell scientist znanstvenik sl"
+      "search_text": "david blackwell scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-23",
@@ -5306,11 +5487,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 4,
-      "search_text": "max planck scientist znanstvenik sl"
+      "search_text": "max planck scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-22",
@@ -5337,11 +5524,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 3,
-      "search_text": "sidney nolan artist umetnik sl"
+      "search_text": "sidney nolan artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-21",
@@ -5368,11 +5561,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 3,
-      "search_text": "jean-baptiste biot scientist znanstvenik sl"
+      "search_text": "jean-baptiste biot scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-20",
@@ -5399,11 +5598,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 3,
-      "search_text": "joan miró artist umetnik sl"
+      "search_text": "joan miró artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-19",
@@ -5430,11 +5635,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 3,
-      "search_text": "fernando botero artist umetnik sl"
+      "search_text": "fernando botero artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-18",
@@ -5463,11 +5674,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 4,
-      "search_text": "leopold stokowski artist umetnik sl"
+      "search_text": "leopold stokowski artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-17",
@@ -5496,11 +5713,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 4,
-      "search_text": "giovanni battista riccioli scientist znanstvenik sl"
+      "search_text": "giovanni battista riccioli scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-16",
@@ -5527,11 +5750,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 3,
-      "search_text": "wilbur wright scientist znanstvenik sl"
+      "search_text": "wilbur wright scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-15",
@@ -5558,11 +5787,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 3,
-      "search_text": "leonardo da vinci artist umetnik sl"
+      "search_text": "leonardo da vinci artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-14",
@@ -5583,11 +5818,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 4,
-      "search_text": "christiaan huygens scientist znanstvenik sl"
+      "search_text": "christiaan huygens scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-13",
@@ -5609,11 +5850,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 5,
-      "search_text": "robert watson-watt scientist znanstvenik sl"
+      "search_text": "robert watson-watt scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-12",
@@ -5634,11 +5881,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 4,
-      "search_text": "evelyn berezin scientist znanstvenik sl"
+      "search_text": "evelyn berezin scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-11",
@@ -5658,11 +5911,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 4,
-      "search_text": "percy julian scientist znanstvenik sl"
+      "search_text": "percy julian scientist znanstvenik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-09",
@@ -5682,11 +5941,17 @@
       "original_article_url": null,
       "language": "sl",
       "language_label": "SL",
-      "age_suitability_keys": [],
-      "age_suitability_labels_en": [],
-      "age_suitability_labels_sl": [],
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
       "source_count": 4,
-      "search_text": "eadweard muybridge artist umetnik sl"
+      "search_text": "eadweard muybridge artist umetnik sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-04-09",
