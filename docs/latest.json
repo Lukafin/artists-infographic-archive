@@ -1,16 +1,16 @@
 {
-  "date": "2026-08-13",
-  "person": "potres",
-  "image_filename": "Potres.png",
+  "date": "2026-08-14",
+  "person": "reka",
+  "image_filename": "Reka.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes",
-    "https://sl.wikipedia.org/wiki/Potres",
-    "https://www.wikidata.org/wiki/Q7944"
+    "https://www.usgs.gov/special-topics/water-science-school/science/rivers-streams-and-creeks",
+    "https://education.nationalgeographic.org/resource/river/",
+    "https://www.wikidata.org/wiki/Q4022"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -21,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 183,
+  "total_entries": 184,
   "total_pages": 19,
   "per_page": 10
 }

@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 183,
+    "total_entries": 184,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 149
+      "age_6": 150
     },
     "category_counts": {
-      "school_poster": 34,
+      "school_poster": 35,
       "science_news": 2,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "sl": 156,
+      "sl": 157,
       "en": 24,
       "de": 3
     }
   },
   "entries": [
+    {
+      "date": "2026-08-14",
+      "person": "reka",
+      "filename": "Reka.png",
+      "image_filename": "Reka.png",
+      "sources": [
+        "https://www.usgs.gov/special-topics/water-science-school/science/rivers-streams-and-creeks",
+        "https://education.nationalgeographic.org/resource/river/",
+        "https://www.wikidata.org/wiki/Q4022"
+      ],
+      "original_article_url": null,
+      "title": "Reka — pot vode skozi pokrajino",
+      "summary": "Slovenski srednješolski stenski poster sledi eni neprekinjeni rečni poti od gorskega izvira prek pritoka, sotočja in meandra do poplavne ravnice ter ustja. V pokrajino vključi porečje in geomorfološko zaporedje erozija–prenos–odlaganje ter jasno pokaže erozijo zunanjega in odlaganje na notranjem bregu zavoja.",
+      "age_suitability_details": {
+        "age_6": "Otrok lahko sledi vodi od izvira do ustja ter razume, da se manjši pritoki pridružijo večji reki.",
+        "age_13": "Učenec poveže porečje, sotočje, meander in poplavno ravnico ter razloži zaporedje erozija–prenos–odlaganje.",
+        "adult": "Poster povzema rečno mrežo in osnovno fluvialno geomorfologijo, vključno z neenakomerno erozijo in odlaganjem sedimenta v meandru ter naravno vlogo poplavne ravnice."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "5f0a7c7d-3c8a-4f89-83e9-e3e1a7279474",
+      "_kind": "native",
+      "_source_mtime": 1786683927.1203465,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "reka school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-08-13",
       "person": "potres",
