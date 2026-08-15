@@ -1,16 +1,16 @@
 {
-  "date": "2026-08-14",
-  "person": "reka",
-  "image_filename": "Reka.png",
+  "date": "2026-08-15",
+  "person": "renesansa",
+  "image_filename": "Renesansa.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.usgs.gov/special-topics/water-science-school/science/rivers-streams-and-creeks",
-    "https://education.nationalgeographic.org/resource/river/",
-    "https://www.wikidata.org/wiki/Q4022"
+    "https://sl.wikipedia.org/wiki/Renesansa",
+    "https://www.wikidata.org/wiki/Q4692",
+    "https://www.worldhistory.org/Renaissance/"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -21,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 184,
+  "total_entries": 185,
   "total_pages": 19,
   "per_page": 10
 }
