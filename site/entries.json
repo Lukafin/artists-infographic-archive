@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 185,
+    "total_entries": 186,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,84 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 151
+      "age_6": 152
     },
     "category_counts": {
-      "school_poster": 36,
+      "school_poster": 37,
       "science_news": 2,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "sl": 158,
+      "sl": 159,
       "en": 24,
       "de": 3
     }
   },
   "entries": [
+    {
+      "date": "2026-08-16",
+      "person": "sila",
+      "filename": "Sila.png",
+      "image_filename": "Sila.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q11402",
+        "https://openstax.org/books/physics/pages/4-1-force",
+        "https://openstax.org/books/physics/pages/4-3-newtons-second-law-of-motion",
+        "https://physics.nist.gov/cuu/Units/units.html"
+      ],
+      "original_article_url": null,
+      "title": "Sila — od vektorjev do pospeška",
+      "summary": "Slovenski srednješolski stenski poster razloži silo kot usmerjen potisk ali vlek. Po diagonalnem laboratorijskem poligonu poveže vektorsko seštevanje sil, rezultanto, Newtonov drugi zakon F = m · a, enoto newton, težo, par sil med dvema telesoma in primer uravnoteženih sil brez pospeška.",
+      "age_suitability_details": {
+        "age_6": "Otrok lahko razume silo kot potisk ali vlek, ki predmet požene, ustavi ali mu spremeni smer.",
+        "age_13": "Učenec poveže smerne puščice, rezultanto sil, maso in pospešek ter prepozna težo, trenje in podporo podlage.",
+        "adult": "Poster povzema klasično vektorsko obravnavo sil: rezultanto, Newtonov drugi zakon, izpeljano enoto newton, težo, uravnotežene sile in razliko med silami na enem telesu ter interakcijskim parom na dveh telesih."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "c199696a-1cdf-4eef-8493-7faddc51731b",
+      "_kind": "native",
+      "_source_mtime": 1786856854.6614187,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "sila school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-08-15",
       "person": "renesansa",
