@@ -1,17 +1,15 @@
 {
-  "date": "2026-08-16",
-  "person": "sila",
-  "image_filename": "Sila.png",
+  "date": "2026-08-17",
+  "person": "srednji vek",
+  "image_filename": "SrednjiVek.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.wikidata.org/wiki/Q11402",
-    "https://openstax.org/books/physics/pages/4-1-force",
-    "https://openstax.org/books/physics/pages/4-3-newtons-second-law-of-motion",
-    "https://physics.nist.gov/cuu/Units/units.html"
+    "https://www.wikidata.org/wiki/Q12554",
+    "https://www.britannica.com/event/Middle-Ages"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -22,7 +20,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 186,
+  "total_entries": 187,
   "total_pages": 19,
   "per_page": 10
 }

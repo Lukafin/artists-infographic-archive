@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 186,
+    "total_entries": 187,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,82 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 152
+      "age_6": 153
     },
     "category_counts": {
-      "school_poster": 37,
+      "school_poster": 38,
       "science_news": 2,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "sl": 159,
+      "sl": 160,
       "en": 24,
       "de": 3
     }
   },
   "entries": [
+    {
+      "date": "2026-08-17",
+      "person": "srednji vek",
+      "filename": "SrednjiVek.png",
+      "image_filename": "SrednjiVek.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q12554",
+        "https://www.britannica.com/event/Middle-Ages"
+      ],
+      "original_article_url": null,
+      "title": "Srednji vek — tisočletje sprememb",
+      "summary": "Slovenski srednješolski stenski plakat predstavi srednji vek kot približno tisočletno evropsko obdobje med antiko in novim vekom. Skozi neprekinjeno iluminirano pot poveže zgodnji, visoki in pozni srednji vek ter pokaže raznolik svet kraljestev, gospostev, mest, vasi, samostanov, šol, univerz in trgovskih poti. Opozori tudi na vojne, lakote in epidemije ter zavrne poenostavljeno predstavo o enem samem 'temnem obdobju'.",
+      "age_suitability_details": {
+        "age_6": "Otrok spozna, da so ljudje med antiko in novim vekom živeli v gradovih, vaseh in rastočih mestih ter ohranjali in širili znanje.",
+        "age_13": "Učenec razume tri široka obdobja srednjega veka, rast mest, trgovine, šol in univerz ter vpliv vojn, lakot in epidemij.",
+        "adult": "Odrasli bralec dobi zgoščen pogled na regionalno raznoliko evropsko tisočletje, spremenljivo periodizacijo in omejitve mita o enotnem 'temnem obdobju'."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "3bb7570d-e396-469a-aba3-e142ad9fcf95",
+      "_kind": "native",
+      "_source_mtime": 1786943314.759487,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 2,
+      "search_text": "srednji vek school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-08-16",
       "person": "sila",
