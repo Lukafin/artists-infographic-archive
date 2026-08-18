@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 187,
+    "total_entries": 188,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 153
+      "age_6": 154
     },
     "category_counts": {
-      "school_poster": 38,
+      "school_poster": 39,
       "science_news": 2,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "sl": 160,
+      "sl": 161,
       "en": 24,
       "de": 3
     }
   },
   "entries": [
+    {
+      "date": "2026-08-18",
+      "person": "trajnostni razvoj",
+      "filename": "TrajnostniRazvoj.png",
+      "image_filename": "TrajnostniRazvoj.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q131201",
+        "https://sdgs.un.org/goals",
+        "https://www.un.org/sustainabledevelopment/development-goals/"
+      ],
+      "original_article_url": null,
+      "title": "Trajnostni razvoj: tri povezane poti",
+      "summary": "Slovenski srednješolski stenski plakat razloži trajnostni razvoj kot skupno pot okolja, družbe in gospodarstva. Porečje odločitev poveže današnje potrebe s kakovostjo življenja prihodnjih generacij ter umesti 17 ciljev v Agendo 2030.",
+      "age_suitability_details": {
+        "age_6": "Trajnostni razvoj pomeni, da skrbimo za naravo in ljudi tako, da bo dobro živeti tudi otrokom v prihodnosti.",
+        "age_13": "Tema povezuje varovanje okolja, pravične možnosti za ljudi in gospodarstvo ter pokaže, kako današnje odločitve vplivajo na prihodnje generacije.",
+        "adult": "Vsebina umesti medgeneracijsko pravičnost in tri povezane razsežnosti trajnostnega razvoja v okvir Agende 2030 ter njenih 17 ciljev."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "16613947-444f-483f-b96e-52876acdfb00",
+      "_kind": "native",
+      "_source_mtime": 1787029555.381317,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "trajnostni razvoj school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-08-17",
       "person": "srednji vek",
