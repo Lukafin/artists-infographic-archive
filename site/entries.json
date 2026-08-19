@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 188,
+    "total_entries": 189,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 154
+      "age_6": 155
     },
     "category_counts": {
-      "school_poster": 39,
+      "school_poster": 40,
       "science_news": 2,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "sl": 161,
+      "sl": 162,
       "en": 24,
       "de": 3
     }
   },
   "entries": [
+    {
+      "date": "2026-08-19",
+      "person": "ustava",
+      "filename": "Ustava.png",
+      "image_filename": "Ustava.png",
+      "sources": [
+        "https://www.us-rs.si/sl/pravna-podlaga/ustava-republike-slovenije",
+        "https://sl.wikipedia.org/wiki/Ustava_Republike_Slovenije",
+        "https://www.wikidata.org/wiki/Q7755"
+      ],
+      "original_article_url": null,
+      "title": "Ustava: temeljni načrt države",
+      "summary": "Slovenski srednješolski stenski plakat predstavi ustavo kot nosilni načrt demokratične države: oblast izhaja iz ljudstva, tri veje oblasti so ločene, človekove pravice tvorijo zaščitni okvir, Ustavno sodišče pa presoja skladnost zakonov z ustavo.",
+      "age_suitability_details": {
+        "age_6": "Ustava so najpomembnejša pravila države: povedo, kdo odloča in katere pravice morajo biti varovane.",
+        "age_13": "Ustava določa temeljna pravila demokratične države, ločuje zakonodajno, izvršilno in sodno oblast ter varuje človekove pravice.",
+        "adult": "Vsebina predstavi ustavno nadrejenost zakonodaji, ljudsko suverenost, delitev oblasti in vlogo Ustavnega sodišča pri presoji skladnosti predpisov."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "9c9109a0-9ea9-48c7-8b18-2bb5a88fac5c",
+      "_kind": "native",
+      "_source_mtime": 1787115975.1660466,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "ustava school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-08-18",
       "person": "trajnostni razvoj",
