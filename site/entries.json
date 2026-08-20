@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 189,
+    "total_entries": 190,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 155
+      "age_6": 156
     },
     "category_counts": {
-      "school_poster": 40,
+      "school_poster": 41,
       "science_news": 2,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "sl": 162,
+      "sl": 163,
       "en": 24,
       "de": 3
     }
   },
   "entries": [
+    {
+      "date": "2026-08-20",
+      "person": "vulkan",
+      "filename": "Vulkan.png",
+      "image_filename": "Vulkan.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q8072",
+        "https://www.usgs.gov/programs/VHP/about-volcanoes",
+        "https://www.bgs.ac.uk/discovering-geology/earth-hazards/volcanoes/"
+      ],
+      "original_article_url": null,
+      "title": "Vulkan: ko se notranjost Zemlje odpre",
+      "summary": "Slovenski srednješolski stenski plakat razloži pot magme od globine do izbruha, razliko med magmo in lavo, glavne vulkanske nevarnosti ter osnovne načine spremljanja vulkanskega nemira.",
+      "age_suitability_details": {
+        "age_6": "Vulkan je odprtina v Zemljini skorji, skozi katero lahko pridejo na površje lava, pepel in plini.",
+        "age_13": "Plakat poveže dvig magme in plinski tlak z izbruhom ter predstavi piroklastične tokove, pepel in laharje.",
+        "adult": "Vsebina umešča vulkanizem ob stike tektonskih plošč in vroče točke ter nakaže spremljanje potresov, plinov in deformacij tal."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "f033c7f0-30b5-4cb4-ace3-fb61106967d2",
+      "_kind": "native",
+      "_source_mtime": 1787202377.1970448,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "vulkan school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-08-19",
       "person": "ustava",

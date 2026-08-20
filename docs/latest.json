@@ -1,16 +1,16 @@
 {
-  "date": "2026-08-19",
-  "person": "ustava",
-  "image_filename": "Ustava.png",
+  "date": "2026-08-20",
+  "person": "vulkan",
+  "image_filename": "Vulkan.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.us-rs.si/sl/pravna-podlaga/ustava-republike-slovenije",
-    "https://sl.wikipedia.org/wiki/Ustava_Republike_Slovenije",
-    "https://www.wikidata.org/wiki/Q7755"
+    "https://www.wikidata.org/wiki/Q8072",
+    "https://www.usgs.gov/programs/VHP/about-volcanoes",
+    "https://www.bgs.ac.uk/discovering-geology/earth-hazards/volcanoes/"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -21,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 189,
+  "total_entries": 190,
   "total_pages": 19,
   "per_page": 10
 }
