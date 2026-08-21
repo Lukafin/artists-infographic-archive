@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 191,
+    "total_entries": 190,
     "categories": [
       "artist",
       "school_poster",
@@ -19,83 +19,22 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 157
+      "age_6": 156
     },
     "category_counts": {
-      "school_poster": 42,
+      "school_poster": 41,
       "science_news": 2,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "sl": 164,
+      "sl": 163,
       "en": 24,
       "de": 3
     }
   },
   "entries": [
-    {
-      "date": "2026-08-21",
-      "person": "zemljepisna dolžina",
-      "filename": "ZemljepisnaDolzina.png",
-      "image_filename": "ZemljepisnaDolzina.png",
-      "sources": [
-        "https://www.wikidata.org/wiki/Q36477",
-        "https://sl.wikipedia.org/wiki/Zemljepisna_dol%C5%BEina",
-        "https://oceanservice.noaa.gov/education/tutorial_geodesy/geo02_hist.html"
-      ],
-      "original_article_url": null,
-      "title": "Zemljepisna dolžina — od Greenwicha proti vzhodu in zahodu",
-      "summary": "Slovenski šolski stenski plakat razloži, da zemljepisna dolžina meri kotni položaj vzhodno ali zahodno od greenwiškega ničelnega poldnevnika. Poldnevniki povezujejo oba pola, vrednosti pa segajo do 180° vzhodno oziroma zahodno; skupaj z zemljepisno širino določajo lego na Zemlji.",
-      "age_suitability_details": {
-        "age_6": "Otrok spozna, da navidezne črte od severnega do južnega pola pomagajo povedati, kako daleč vzhodno ali zahodno je kraj.",
-        "age_13": "Učenec razume ničelni poldnevnik v Greenwichu, oznako λ ter merjenje zemljepisne dolžine od 0° do 180° vzhodno ali zahodno.",
-        "adult": "Bralec poveže zemljepisno dolžino s kotnim koordinatnim sistemom, poldnevniki in skupno določitvijo položaja z zemljepisno širino."
-      },
-      "age_suitability_levels": [
-        {
-          "key": "age_6",
-          "label": "Age 6",
-          "target_age": 6,
-          "complexity": "simple",
-          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
-        },
-        {
-          "key": "age_13",
-          "label": "Age 13",
-          "target_age": 13,
-          "complexity": "intermediate",
-          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
-        },
-        {
-          "key": "adult",
-          "label": "Adults",
-          "target_age": null,
-          "complexity": "advanced",
-          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
-        }
-      ],
-      "category": "school_poster",
-      "language": "sl",
-      "assignment_id": "6bc5d855-e58a-4d8b-b7ab-66d2ede626df",
-      "_kind": "native",
-      "_source_mtime": 1787288933.9794066,
-      "category_label": "Šolski plakat",
-      "category_class": "school-poster",
-      "language_label": "SL",
-      "age_suitability_keys": [
-        "age_6"
-      ],
-      "age_suitability_labels_en": [
-        "Ages 6+"
-      ],
-      "age_suitability_labels_sl": [
-        "6+ let"
-      ],
-      "source_count": 3,
-      "search_text": "zemljepisna dolžina school_poster šolski plakat sl age_6 ages 6+ 6+ let"
-    },
     {
       "date": "2026-08-20",
       "person": "vulkan",
