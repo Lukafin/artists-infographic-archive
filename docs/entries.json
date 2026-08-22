@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 190,
+    "total_entries": 191,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 156
+      "age_6": 157
     },
     "category_counts": {
-      "school_poster": 41,
+      "school_poster": 42,
       "science_news": 2,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "sl": 163,
+      "sl": 164,
       "en": 24,
       "de": 3
     }
   },
   "entries": [
+    {
+      "date": "2026-08-22",
+      "person": "zemljepisna širina",
+      "filename": "ZemljepisnaSirina.png",
+      "image_filename": "ZemljepisnaSirina.png",
+      "sources": [
+        "https://sl.wikipedia.org/wiki/Zemljepisna_%C5%A1irina",
+        "https://www.britannica.com/science/latitude",
+        "https://www.wikidata.org/wiki/Q34027"
+      ],
+      "original_article_url": null,
+      "title": "Zemljepisna širina — kako beremo položaj na Zemlji",
+      "summary": "Slovenski šolski plakat razloži zemljepisno širino kot kotno razdaljo severno ali južno od ekvatorja, vlogo vzporednikov, razpon od 0° do 90° ter približne lege povratnikov in tečajnikov.",
+      "age_suitability_details": {
+        "age_6": "Ekvator je črta okoli sredine Zemlje; širina pove, kako daleč proti severu ali jugu je kraj.",
+        "age_13": "Širina je kotna razdalja od ekvatorja, zapisana od 0° do 90° severno ali južno; kraje z enako širino povezujejo vzporedniki.",
+        "adult": "Plakat povzema geografsko mrežo, ključne zemljepisne vzporednike in približno razdaljo ene stopinje širine ob upoštevanju, da Zemlja ni popolna krogla."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "80bc72c9-4459-4599-aaab-54bfd54108ea",
+      "_kind": "native",
+      "_source_mtime": 1787375320.8011773,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "zemljepisna širina school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-08-20",
       "person": "vulkan",
