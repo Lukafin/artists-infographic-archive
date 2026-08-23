@@ -1,16 +1,16 @@
 {
-  "date": "2026-08-22",
-  "person": "zemljepisna širina",
-  "image_filename": "ZemljepisnaSirina.png",
+  "date": "2026-08-23",
+  "person": "človekove pravice",
+  "image_filename": "ClovekovePravice.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://sl.wikipedia.org/wiki/Zemljepisna_%C5%A1irina",
-    "https://www.britannica.com/science/latitude",
-    "https://www.wikidata.org/wiki/Q34027"
+    "https://www.un.org/en/about-us/universal-declaration-of-human-rights",
+    "https://eur-lex.europa.eu/legal-content/SL/TXT/?uri=CELEX:12012P/TXT",
+    "https://www.amnesty.org/en/what-we-do/universal-declaration-of-human-rights/"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -21,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 191,
-  "total_pages": 19,
+  "total_entries": 192,
+  "total_pages": 20,
   "per_page": 10
 }

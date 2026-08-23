@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 191,
+    "total_entries": 192,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 157
+      "age_6": 158
     },
     "category_counts": {
-      "school_poster": 42,
+      "school_poster": 43,
       "science_news": 2,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "sl": 164,
+      "sl": 165,
       "en": 24,
       "de": 3
     }
   },
   "entries": [
+    {
+      "date": "2026-08-23",
+      "person": "človekove pravice",
+      "filename": "ClovekovePravice.png",
+      "image_filename": "ClovekovePravice.png",
+      "sources": [
+        "https://www.un.org/en/about-us/universal-declaration-of-human-rights",
+        "https://eur-lex.europa.eu/legal-content/SL/TXT/?uri=CELEX:12012P/TXT",
+        "https://www.amnesty.org/en/what-we-do/universal-declaration-of-human-rights/"
+      ],
+      "original_article_url": null,
+      "title": "Človekove pravice — most dostojanstva",
+      "summary": "Slovenski srednješolski stenski plakat razloži, da človekove pravice pripadajo vsem. Skozi metaforo skupnega mostu poveže dostojanstvo, enakost, svobodo in varnost z osebnimi, miselnimi, izobraževalnimi, delovnimi in skupnostnimi pravicami. Izpostavi Splošno deklaracijo iz leta 1948, njenih 30 členov, načelo nediskriminacije ter spoštovanje pravic drugih.",
+      "age_suitability_details": {
+        "age_6": "Vsak človek je pomemben ter ima pravico do varnosti, učenja in poštene obravnave brez izključevanja.",
+        "age_13": "Človekove pravice varujejo dostojanstvo, svobodo, enakost in sodelovanje; Splošna deklaracija iz leta 1948 jih povzame v 30 členih.",
+        "adult": "Plakat poveže univerzalnost in nedeljivost pravic z načelom nediskriminacije, pravnim varstvom ter odgovornostjo spoštovati enake pravice drugih."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "60bcf5ed-ce30-4785-9ef3-1478329c3147",
+      "_kind": "native",
+      "_source_mtime": 1787461792.536468,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "človekove pravice school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-08-22",
       "person": "zemljepisna širina",
