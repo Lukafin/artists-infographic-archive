@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 192,
+    "total_entries": 193,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,84 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 158
+      "age_6": 159
     },
     "category_counts": {
-      "school_poster": 43,
+      "school_poster": 44,
       "science_news": 2,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "sl": 165,
+      "sl": 166,
       "en": 24,
       "de": 3
     }
   },
   "entries": [
+    {
+      "date": "2026-08-24",
+      "person": "človeška migracija",
+      "filename": "CloveskaMigracija.png",
+      "image_filename": "CloveskaMigracija.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q177626",
+        "https://www.un.org/en/global-issues/migration",
+        "https://www.un.org/development/desa/pd/content/international-migrant-stock",
+        "https://www.europarl.europa.eu/topics/en/article/20200624STO81906/exploring-migration-causes-why-people-migrate"
+      ],
+      "original_article_url": null,
+      "title": "Človeška migracija — pot človeka med kraji",
+      "summary": "Slovenski srednješolski stenski plakat razloži človeško migracijo kot pot od odhoda prek potovanja in prihoda do vključevanja. Razlikuje notranjo migracijo znotraj države od mednarodne migracije čez državno mejo, predstavi prepletene razloge za selitev ter jasno poudari, da ni vsak migrant begunec. Zaključi z vplivi na ljudi in kraje, kot so nove veščine, kulturne vezi, denar domov ter izzivi varnosti, šol, stanovanj in vključevanja.",
+      "age_suitability_details": {
+        "age_6": "Ljudje se preselijo v drug kraj zaradi družine, dela, šole ali varnosti; ob prihodu spoznajo nov dom in nove ljudi.",
+        "age_13": "Migracija je selitev znotraj države ali čez mejo, ki jo lahko sprožijo priložnosti, družinske vezi, konflikt, preganjanje ali okoljske spremembe.",
+        "adult": "Človeška migracija povezuje prostorske premike z mešanimi družbenimi, gospodarskimi, političnimi in okoljskimi vzroki; pravni status begunca je ožji od splošnega pojma migrant."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "sl",
+      "assignment_id": "e200d54a-a7b4-4766-bed1-a5d474f4cf58",
+      "_kind": "native",
+      "_source_mtime": 1787548055.3935788,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "človeška migracija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-08-23",
       "person": "človekove pravice",
