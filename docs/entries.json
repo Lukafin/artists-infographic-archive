@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 192,
+    "total_entries": 193,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 158
+      "age_6": 159
     },
     "category_counts": {
-      "school_poster": 43,
+      "school_poster": 44,
       "science_news": 2,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
+      "de": 4,
       "sl": 165,
-      "en": 24,
-      "de": 3
+      "en": 24
     }
   },
   "entries": [
+    {
+      "date": "2026-08-25",
+      "person": "Altes Ägypten",
+      "filename": "AltesAgypten.png",
+      "image_filename": "AltesAgypten.png",
+      "sources": [
+        "https://de.wikipedia.org/wiki/Altes_%C3%84gypten",
+        "https://www.ucl.ac.uk/museums-static/digitalegypt/chronology/index.html",
+        "https://www.wikidata.org/wiki/Q11768"
+      ],
+      "original_article_url": null,
+      "title": "Altes Ägypten — eine Kultur am Nil",
+      "summary": "Ein deutschsprachiges Schulwandplakat erklärt das Alte Ägypten als vom Nil geprägte Hochkultur. Der Fluss bildet zugleich Lebensader und Zeitachse: Hochwasser, fruchtbarer Schlamm und Ernte führen durch eine zusammenhängende Landschaft zu Schrift und Wissen, Macht und Glauben sowie monumentalem Bauen. Die drei großen Reichsphasen werden mit einer vorsichtig vereinfachten, quellenbasierten Chronologie eingeordnet.",
+      "age_suitability_details": {
+        "age_6": "Am Nil konnten Menschen Felder bestellen, schreiben lernen und große Bauwerke errichten; der Fluss brachte Wasser und fruchtbaren Schlamm.",
+        "age_13": "Das Alte Ägypten entwickelte sich über Jahrtausende am Nil; Landwirtschaft, Verwaltung, Hieroglyphen, Religion und monumentale Architektur waren eng miteinander verbunden.",
+        "adult": "Die ägyptische Hochkultur verband die Ökologie des Niltals mit dynastischer Herrschaft, Schriftverwaltung, Tempelwirtschaft und Jenseitsvorstellungen; die Reichsdatierungen sind konventionelle Näherungen."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "de",
+      "assignment_id": "63e1a5af-5dda-4688-af62-9d4718a5837c",
+      "_kind": "native",
+      "_source_mtime": 1787634655.4994955,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "DE",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "altes ägypten school_poster šolski plakat de age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-08-24",
       "person": "človeška migracija",

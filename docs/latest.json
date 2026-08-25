@@ -1,17 +1,16 @@
 {
-  "date": "2026-08-24",
-  "person": "človeška migracija",
-  "image_filename": "CloveskaMigracija.png",
+  "date": "2026-08-25",
+  "person": "Altes Ägypten",
+  "image_filename": "AltesAgypten.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
-  "language": "sl",
-  "language_label": "SL",
+  "language": "de",
+  "language_label": "DE",
   "original_article_url": null,
   "sources": [
-    "https://www.wikidata.org/wiki/Q177626",
-    "https://www.un.org/en/global-issues/migration",
-    "https://www.un.org/development/desa/pd/content/international-migrant-stock",
-    "https://www.europarl.europa.eu/topics/en/article/20200624STO81906/exploring-migration-causes-why-people-migrate"
+    "https://de.wikipedia.org/wiki/Altes_%C3%84gypten",
+    "https://www.ucl.ac.uk/museums-static/digitalegypt/chronology/index.html",
+    "https://www.wikidata.org/wiki/Q11768"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -22,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 192,
+  "total_entries": 193,
   "total_pages": 20,
   "per_page": 10
 }
