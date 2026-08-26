@@ -1,16 +1,16 @@
 {
-  "date": "2026-08-25",
-  "person": "Altes Ägypten",
-  "image_filename": "AltesAgypten.png",
+  "date": "2026-08-26",
+  "person": "Berg",
+  "image_filename": "Berg.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "de",
   "language_label": "DE",
   "original_article_url": null,
   "sources": [
-    "https://de.wikipedia.org/wiki/Altes_%C3%84gypten",
-    "https://www.ucl.ac.uk/museums-static/digitalegypt/chronology/index.html",
-    "https://www.wikidata.org/wiki/Q11768"
+    "https://www.wikidata.org/wiki/Q8502",
+    "https://de.wikipedia.org/wiki/Berg",
+    "https://www.nps.gov/subjects/geology/tectonic-landforms.htm"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -21,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 193,
+  "total_entries": 194,
   "total_pages": 20,
   "per_page": 10
 }

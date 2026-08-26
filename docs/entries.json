@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 193,
+    "total_entries": 194,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 159
+      "age_6": 160
     },
     "category_counts": {
-      "school_poster": 44,
+      "school_poster": 45,
       "science_news": 2,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "de": 4,
+      "de": 5,
       "sl": 165,
       "en": 24
     }
   },
   "entries": [
+    {
+      "date": "2026-08-26",
+      "person": "Berg",
+      "filename": "Berg.png",
+      "image_filename": "Berg.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q8502",
+        "https://de.wikipedia.org/wiki/Berg",
+        "https://www.nps.gov/subjects/geology/tectonic-landforms.htm"
+      ],
+      "original_article_url": null,
+      "title": "Berg — wie die Erde Höhe gewinnt",
+      "summary": "Ein deutschsprachiges Schulwandposter, das einen Berg als durchgehenden geologischen Querschnitt zeigt: Faltung, Bruchhebung und Vulkanismus bauen Relief auf; Verwitterung und Erosion formen es weiter. Die Hangdarstellung verbindet Gestein, Höhenstufen, Baumgrenze und Schartenhöhe zu einer zusammenhängenden Lerngeschichte.",
+      "age_suitability_details": {
+        "age_6": "Ein Berg ist eine große natürliche Erhebung. Regen, Eis und Wind verändern seine Hänge langsam.",
+        "age_13": "Plattenbewegungen, Brüche und Vulkanismus können Berge aufbauen; Verwitterung und Erosion zerlegen und transportieren danach Gestein. Mit der Höhe ändern sich Luft, Temperatur und Vegetation.",
+        "adult": "Das Poster unterscheidet tektonischen beziehungsweise vulkanischen Reliefaufbau von exogener Abtragung und ergänzt die absolute Höhe um Schartenhöhe als Maß topografischer Eigenständigkeit. Die geologische Schnittdarstellung ist bewusst schematisch."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "de",
+      "assignment_id": "c854a74b-c636-4409-bd98-bda2e1a33f49",
+      "_kind": "native",
+      "_source_mtime": 1787720778.2300594,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "DE",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "berg school_poster šolski plakat de age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-08-25",
       "person": "Altes Ägypten",
