@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 194,
+    "total_entries": 195,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,86 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 160
+      "age_6": 161
     },
     "category_counts": {
+      "science_news": 3,
       "school_poster": 45,
-      "science_news": 2,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
+      "en": 25,
       "de": 5,
-      "sl": 165,
-      "en": 24
+      "sl": 165
     }
   },
   "entries": [
+    {
+      "date": "2026-08-30",
+      "person": "AI-designed bacteriophages work in the lab, opening a new route toward programmable antibacterial tools",
+      "filename": "AiDesignedBacteriophagesWorkInTheLabOpeningANewRouteTowardProgrammableAntibacterialTools.png",
+      "image_filename": "AiDesignedBacteriophagesWorkInTheLabOpeningANewRouteTowardProgrammableAntibacterialTools.png",
+      "sources": [
+        "https://doi.org/10.1126/science.aec2657",
+        "https://www.biorxiv.org/content/10.1101/2025.09.12.675911v1",
+        "https://cen.acs.org/biological-chemistry/genomics/ai-program-designs-new-bacteriophages/104/web/2026/08",
+        "https://news.stanford.edu/stories/2026/08/evo-2-ai-tool-e-coli-killer-bacteriophages",
+        "https://www.bmj.com/content/394/bmj-2026-100572",
+        "https://www.science.org/doi/10.1126/science.aej8512"
+      ],
+      "original_article_url": "https://doi.org/10.1126/science.aec2657",
+      "title": "AI-designed bacteriophages work in the lab: a whole-genome design milestone",
+      "summary": "A peer-reviewed Science study used the Evo 1 and Evo 2 genome language models to generate complete bacteriophage genomes from a PhiX174-based design framework. Researchers chemically synthesized and tested nearly 300 selected candidates and recovered 16 viable phages. Several exceeded the natural template in laboratory growth or lysis tests, while a cocktail overcame PhiX174 resistance in three E. coli strains. This is a bacterial-culture proof of concept, not an animal study, human trial, or clinical treatment, and it raises important biosafety and governance questions alongside its potential for antibacterial discovery.",
+      "age_suitability_details": {
+        "age_6": "Scientists asked a computer to draft instruction books for tiny viruses that attack bacteria. They built selected drafts, and 16 worked in a laboratory—but this is not a medicine for people.",
+        "age_13": "Genome language models proposed complete DNA sequences for bacteriophages. Of nearly 300 selected designs built and tested, 16 functioned in E. coli cultures; the result suggests a new research tool but has not been tested in animals or patients.",
+        "adult": "The peer-reviewed proof of concept used PhiX174 as a small-genome template, computationally filtered thousands of model outputs, synthesized nearly 300 candidates, and recovered 16 viable phages. Generalization, clinical utility, independent replication, synthesis screening, model access, and dual-use governance remain open issues."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "science_news",
+      "language": "en",
+      "assignment_id": "a1bec4bc-b5ff-4d04-a263-dc3c32b1edf6",
+      "_kind": "native",
+      "_source_mtime": 1788086099.0799026,
+      "category_label": "Znanstvena novica",
+      "category_class": "science-news",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 6,
+      "search_text": "ai-designed bacteriophages work in the lab, opening a new route toward programmable antibacterial tools science_news znanstvena novica en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-08-26",
       "person": "Berg",
