@@ -1,17 +1,16 @@
 {
   "date": "2026-09-10",
-  "person": "Personalizirano cepivo mRNA je v fazi III podaljšalo čas brez ponovitve melanoma",
-  "image_filename": "PersonaliziranoCepivoMrnaJeVFaziIiiPodaljsaloCasBrezPonovitveMelanoma.png",
+  "person": "Podnebne spremembe že dodajajo nevarno vlažno vročino življenju stotin milijonov otrok",
+  "image_filename": "PodnebneSpremembeZeDodajajoNevarnoVlaznoVrocinoZivljenjuStotinMilijonovOtrok.png",
   "category": "science_news",
   "category_label": "Znanstvena novica",
   "language": "sl",
   "language_label": "SL",
-  "original_article_url": "https://www.reuters.com/legal/litigation/success-after-century-failures-inside-moderna-mercks-cancer-vaccine-breakthrough-2026-08-28/",
+  "original_article_url": "https://www.carbonbrief.org/climate-change-exposes-580-million-children-to-20-extra-heat-stress-days-every-year",
   "sources": [
-    "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
-    "https://clinicaltrials.gov/study/NCT05933577",
-    "https://www.nature.com/articles/d41586-026-02612-3",
-    "https://www.reuters.com/legal/litigation/success-after-century-failures-inside-moderna-mercks-cancer-vaccine-breakthrough-2026-08-28/"
+    "https://www.science.org/doi/10.1126/sciadv.aeb3232",
+    "https://www.carbonbrief.org/climate-change-exposes-580-million-children-to-20-extra-heat-stress-days-every-year",
+    "https://press.vub.ac.be/climate-change-exposes-up-to-560-million-children-worldwide-to-extreme-heat-for-at-least-one-month-longer-each-year"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -22,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 196,
+  "total_entries": 197,
   "total_pages": 20,
   "per_page": 10
 }

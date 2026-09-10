@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 196,
+    "total_entries": 197,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 162
+      "age_6": 163
     },
     "category_counts": {
-      "science_news": 4,
+      "science_news": 5,
       "school_poster": 45,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "sl": 166,
+      "sl": 167,
       "en": 25,
       "de": 5
     }
   },
   "entries": [
+    {
+      "date": "2026-09-10",
+      "person": "Podnebne spremembe že dodajajo nevarno vlažno vročino življenju stotin milijonov otrok",
+      "filename": "PodnebneSpremembeZeDodajajoNevarnoVlaznoVrocinoZivljenjuStotinMilijonovOtrok.png",
+      "image_filename": "PodnebneSpremembeZeDodajajoNevarnoVlaznoVrocinoZivljenjuStotinMilijonovOtrok.png",
+      "sources": [
+        "https://www.science.org/doi/10.1126/sciadv.aeb3232",
+        "https://www.carbonbrief.org/climate-change-exposes-580-million-children-to-20-extra-heat-stress-days-every-year",
+        "https://press.vub.ac.be/climate-change-exposes-up-to-560-million-children-worldwide-to-extreme-heat-for-at-least-one-month-longer-each-year"
+      ],
+      "original_article_url": "https://www.carbonbrief.org/climate-change-exposes-580-million-children-to-20-extra-heat-stress-days-every-year",
+      "title": "Vlažna vročina: ko znoj težje hladi",
+      "summary": "Recenzirana globalna atribucijska študija ocenjuje, da 583 milijonov otrok, starih 0–9 let, zaradi človekovega segrevanja že doživlja najmanj 20 dodatnih dni vlažnega toplotnega stresa na leto. Topel in vlažen zrak upočasni izhlapevanje znoja, zato se telo težje hladi. Študija združuje podnebne modele, reanalize in demografske podatke ter meri izpostavljenost, ne dejanskega števila bolezni ali smrti. Globalna ločljivost slabo zajame mestne toplotne otoke, prag WBGT nad 28 °C v senci pa ni posebej umerjen za zdravstvene posledice pri otrocih. Rezultati lahko usmerjajo vročinske načrte, prilagoditve šol, javno zdravstvo in zmanjševanje emisij.",
+      "age_suitability_details": {
+        "age_6": "Ko je zrak vroč in zelo vlažen, znoj težje izhlapeva, zato se telo težje ohladi. Otrokom pomagajo senca, voda, počitek in skrb odraslih.",
+        "age_13": "Segrevanje podnebja dodaja dneve, ko kombinacija toplote in vlage ovira hlajenje z izhlapevanjem znoja. Študija ocenjuje izpostavljenost otrok in pokaže, kje so potrebni vročinski načrti, ne meri pa števila bolezni.",
+        "adult": "Globalna atribucijska analiza primerja današnje podnebje s simuliranim svetom brez človekovega segrevanja ter poveže dodatne dneve senčnega WBGT nad 28 °C z demografskimi podatki. Ocena 583 milijonov otrok velja za najmanj 20 dodatnih dni letno; negotovosti vključujejo prostorsko ločljivost, mestne toplotne otoke, otrokovo zdravstveno občutljivost in lokalno prilagojenost."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "science_news",
+      "language": "sl",
+      "assignment_id": "75c028ee-046f-494a-8f74-eaf21db30173",
+      "_kind": "native",
+      "_source_mtime": 1789020678.730921,
+      "category_label": "Znanstvena novica",
+      "category_class": "science-news",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "podnebne spremembe že dodajajo nevarno vlažno vročino življenju stotin milijonov otrok science_news znanstvena novica sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-10",
       "person": "Personalizirano cepivo mRNA je v fazi III podaljšalo čas brez ponovitve melanoma",
