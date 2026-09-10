@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 197,
+    "total_entries": 198,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 163
+      "age_6": 164
     },
     "category_counts": {
-      "science_news": 5,
+      "science_news": 6,
       "school_poster": 45,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
+      "en": 26,
       "sl": 167,
-      "en": 25,
       "de": 5
     }
   },
   "entries": [
+    {
+      "date": "2026-09-10",
+      "person": "Satellite data show record-breaking July wildfires in France and Spain",
+      "filename": "SatelliteDataShowRecordBreakingJulyWildfiresInFranceAndSpain.png",
+      "image_filename": "SatelliteDataShowRecordBreakingJulyWildfiresInFranceAndSpain.png",
+      "sources": [
+        "https://science.nasa.gov/earth/earth-observatory/destructive-fires-char-western-europe/",
+        "https://forest-fire.emergency.copernicus.eu/apps/effis.statistics/",
+        "https://www.nature.com/articles/d41586-026-02361-3"
+      ],
+      "original_article_url": "https://www.nature.com/articles/d41586-026-02361-3",
+      "title": "Satellites map extreme July fires in France and Spain",
+      "summary": "A source-grounded visual explainer of what NASA Landsat imagery and EFFIS burned-area monitoring showed during the exceptional July 2026 wildfire season in France and Spain. It explains the sequence from wet winter growth through heat, drought, dry fuel and strong winds, while clearly separating measured burn scars from questions satellites cannot answer alone.",
+      "age_suitability_details": {
+        "age_6": "Satellites can see the dark marks left by very large fires and help people understand where the land changed.",
+        "age_13": "The explainer links vegetation growth, heat, drought, dry fuel and wind to fire spread, while distinguishing observed burned area from the cause of an ignition.",
+        "adult": "The visual presents dated EFFIS and Landsat observations with explicit uncertainty: mapped burned area can be revised, and remote sensing alone cannot attribute ignition or quantify every causal contribution."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "science_news",
+      "language": "en",
+      "assignment_id": "06c50d5e-9e25-4e6d-a029-a35e53718c17",
+      "_kind": "native",
+      "_source_mtime": 1789020842.3182592,
+      "category_label": "Znanstvena novica",
+      "category_class": "science-news",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "satellite data show record-breaking july wildfires in france and spain science_news znanstvena novica en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-10",
       "person": "Podnebne spremembe že dodajajo nevarno vlažno vročino življenju stotin milijonov otrok",

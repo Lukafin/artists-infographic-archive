@@ -1,16 +1,16 @@
 {
   "date": "2026-09-10",
-  "person": "Podnebne spremembe že dodajajo nevarno vlažno vročino življenju stotin milijonov otrok",
-  "image_filename": "PodnebneSpremembeZeDodajajoNevarnoVlaznoVrocinoZivljenjuStotinMilijonovOtrok.png",
+  "person": "Satellite data show record-breaking July wildfires in France and Spain",
+  "image_filename": "SatelliteDataShowRecordBreakingJulyWildfiresInFranceAndSpain.png",
   "category": "science_news",
   "category_label": "Znanstvena novica",
-  "language": "sl",
-  "language_label": "SL",
-  "original_article_url": "https://www.carbonbrief.org/climate-change-exposes-580-million-children-to-20-extra-heat-stress-days-every-year",
+  "language": "en",
+  "language_label": "EN",
+  "original_article_url": "https://www.nature.com/articles/d41586-026-02361-3",
   "sources": [
-    "https://www.science.org/doi/10.1126/sciadv.aeb3232",
-    "https://www.carbonbrief.org/climate-change-exposes-580-million-children-to-20-extra-heat-stress-days-every-year",
-    "https://press.vub.ac.be/climate-change-exposes-up-to-560-million-children-worldwide-to-extreme-heat-for-at-least-one-month-longer-each-year"
+    "https://science.nasa.gov/earth/earth-observatory/destructive-fires-char-western-europe/",
+    "https://forest-fire.emergency.copernicus.eu/apps/effis.statistics/",
+    "https://www.nature.com/articles/d41586-026-02361-3"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -21,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 197,
+  "total_entries": 198,
   "total_pages": 20,
   "per_page": 10
 }
