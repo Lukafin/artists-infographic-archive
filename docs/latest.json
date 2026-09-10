@@ -1,19 +1,17 @@
 {
-  "date": "2026-08-30",
-  "person": "AI-designed bacteriophages work in the lab, opening a new route toward programmable antibacterial tools",
-  "image_filename": "AiDesignedBacteriophagesWorkInTheLabOpeningANewRouteTowardProgrammableAntibacterialTools.png",
+  "date": "2026-09-10",
+  "person": "Personalizirano cepivo mRNA je v fazi III podaljšalo čas brez ponovitve melanoma",
+  "image_filename": "PersonaliziranoCepivoMrnaJeVFaziIiiPodaljsaloCasBrezPonovitveMelanoma.png",
   "category": "science_news",
   "category_label": "Znanstvena novica",
-  "language": "en",
-  "language_label": "EN",
-  "original_article_url": "https://doi.org/10.1126/science.aec2657",
+  "language": "sl",
+  "language_label": "SL",
+  "original_article_url": "https://www.reuters.com/legal/litigation/success-after-century-failures-inside-moderna-mercks-cancer-vaccine-breakthrough-2026-08-28/",
   "sources": [
-    "https://doi.org/10.1126/science.aec2657",
-    "https://www.biorxiv.org/content/10.1101/2025.09.12.675911v1",
-    "https://cen.acs.org/biological-chemistry/genomics/ai-program-designs-new-bacteriophages/104/web/2026/08",
-    "https://news.stanford.edu/stories/2026/08/evo-2-ai-tool-e-coli-killer-bacteriophages",
-    "https://www.bmj.com/content/394/bmj-2026-100572",
-    "https://www.science.org/doi/10.1126/science.aej8512"
+    "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
+    "https://clinicaltrials.gov/study/NCT05933577",
+    "https://www.nature.com/articles/d41586-026-02612-3",
+    "https://www.reuters.com/legal/litigation/success-after-century-failures-inside-moderna-mercks-cancer-vaccine-breakthrough-2026-08-28/"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -24,7 +22,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 195,
+  "total_entries": 196,
   "total_pages": 20,
   "per_page": 10
 }

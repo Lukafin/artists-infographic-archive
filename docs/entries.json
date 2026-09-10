@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 195,
+    "total_entries": 196,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,84 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 161
+      "age_6": 162
     },
     "category_counts": {
-      "science_news": 3,
+      "science_news": 4,
       "school_poster": 45,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
+      "sl": 166,
       "en": 25,
-      "de": 5,
-      "sl": 165
+      "de": 5
     }
   },
   "entries": [
+    {
+      "date": "2026-09-10",
+      "person": "Personalizirano cepivo mRNA je v fazi III podaljšalo čas brez ponovitve melanoma",
+      "filename": "PersonaliziranoCepivoMrnaJeVFaziIiiPodaljsaloCasBrezPonovitveMelanoma.png",
+      "image_filename": "PersonaliziranoCepivoMrnaJeVFaziIiiPodaljsaloCasBrezPonovitveMelanoma.png",
+      "sources": [
+        "https://www.merck.com/news/merck-and-moderna-announce-phase-3-interpath-001-trial-of-intismeran-autogene-plus-keytruda-met-endpoints-of-recurrence-free-survival-rfs-and-distant-metastasis-free-survival-dmfs-in-patient/",
+        "https://clinicaltrials.gov/study/NCT05933577",
+        "https://www.nature.com/articles/d41586-026-02612-3",
+        "https://www.reuters.com/legal/litigation/success-after-century-failures-inside-moderna-mercks-cancer-vaccine-breakthrough-2026-08-28/"
+      ],
+      "original_article_url": "https://www.reuters.com/legal/litigation/success-after-century-failures-inside-moderna-mercks-cancer-vaccine-breakthrough-2026-08-28/",
+      "title": "Osebno cepivo mRNA je v fazi III podaljšalo čas brez ponovitve melanoma",
+      "summary": "V randomiziranem, dvojno slepem preskušanju INTerpath-001 je 1.137 ljudi po popolni kirurški odstranitvi melanoma stadija IIB-IV prejelo individualizirano zdravljenje mRNA intismeran skupaj s pembrolizumabom ali pembrolizumab sam. Vnaprej določena vmesna analiza je dosegla cilj časa brez ponovitve bolezni in cilj časa brez oddaljenih metastaz. Osebno mRNA-navodilo kodira do 34 neoantigenov, izbranih iz mutacij posameznikovega tumorja, da T-celice lažje prepoznajo preostale rakave celice. Objavljeni so le vrhnji rezultati sponzorjev: absolutne razlike, razmerja tveganj, intervali zaupanja, celoten varnostni nabor in vpliv na skupno preživetje še niso javni. To ni preventivno cepivo in ni dokazano zdravilo za vse vrste raka.",
+      "age_suitability_details": {
+        "age_6": "Zdravniki po operaciji iz posebnih oznak tumorja izdelajo osebno navodilo, ki imunskim celicam pomaga iskati preostale bolne celice. Veliko preskušanje je spodbudno, vendar to ni cepivo, ki bi preprečilo nastanek raka.",
+        "age_13": "Iz mutacij odstranjenega melanoma izberejo do 34 neoantigenov in jih zapišejo v osebno mRNA-navodilo. Skupaj s pembrolizumabom je zdravljenje v fazi III podaljšalo čas brez ponovitve in oddaljenih metastaz, vendar podrobne številke še niso objavljene.",
+        "adult": "INTerpath-001 je randomizirano, dvojno slepo preskušanje faze III pri 1.137 ljudeh z odstranjenim melanomom stadija IIB-IV. Vmesna analiza je dosegla RFS in DMFS za intismeran plus pembrolizumab proti pembrolizumabu; velikost učinka, celoten varnostni profil, skupno preživetje, proizvodni čas, stroški in dostop ostajajo odprta vprašanja."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "science_news",
+      "language": "sl",
+      "assignment_id": "aaeefd84-ec3c-4cb4-aa05-3dc088a00f98",
+      "_kind": "native",
+      "_source_mtime": 1789020657.6400063,
+      "category_label": "Znanstvena novica",
+      "category_class": "science-news",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "personalizirano cepivo mrna je v fazi iii podaljšalo čas brez ponovitve melanoma science_news znanstvena novica sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-08-30",
       "person": "AI-designed bacteriophages work in the lab, opening a new route toward programmable antibacterial tools",
