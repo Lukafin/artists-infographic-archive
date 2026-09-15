@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 198,
+    "total_entries": 199,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,85 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 164
+      "age_6": 165
     },
     "category_counts": {
-      "science_news": 6,
+      "science_news": 7,
       "school_poster": 45,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
+      "sl": 168,
       "en": 26,
-      "sl": 167,
       "de": 5
     }
   },
   "entries": [
+    {
+      "date": "2026-09-15",
+      "person": "AlphaGenome Atlas je napovedal učinke devetih milijard sprememb DNK — zemljevid za raziskave, ne diagnoza",
+      "filename": "AlphagenomeAtlasJeNapovedalUcinkeDevetihMilijardSpremembDnkZemljevidZaRaziskaveNeDiagnoza.png",
+      "image_filename": "AlphagenomeAtlasJeNapovedalUcinkeDevetihMilijardSpremembDnkZemljevidZaRaziskaveNeDiagnoza.png",
+      "sources": [
+        "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome",
+        "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/alphagenome-atlas.pdf",
+        "https://www.nature.com/articles/s41586-025-10014-0",
+        "https://www.nature.com/articles/d41586-026-02835-4",
+        "https://www.ebi.ac.uk/about/news/updates-from-data-resources/ensembl-vep-integrates-alphagenome-variant-impact-score/"
+      ],
+      "original_article_url": "https://www.nature.com/articles/d41586-026-02835-4",
+      "title": "AlphaGenome Atlas: zemljevid za naslednji poskus, ne diagnoza",
+      "summary": "AlphaGenome Atlas vsebuje vnaprej izračunane napovedi molekularnih učinkov približno devetih milijard možnih enojnih zamenjav črk v referenčnem človeškem genomu. Raziskovalcem lahko pomaga prednostno razvrstiti različice za nadaljnje preverjanje, zlasti v nekodirajočih delih genoma. Atlas je raziskovalno orodje: napoved ni dokaz vzročnosti, klinična diagnoza ali nadomestilo za laboratorijski poskus in presojo konkretnega primera.",
+      "age_suitability_details": {
+        "age_6": "DNK je kot zelo dolga knjiga s štirimi črkami. Atlas označi spremembe, ki jih morajo znanstveniki še preveriti.",
+        "age_13": "Model vnaprej oceni, kako bi enojne spremembe DNK lahko vplivale na delovanje genov, nato AVI pomaga izbrati kandidate za laboratorijski preizkus.",
+        "adult": "Atlas združuje napovedi AlphaGenome in AlphaMissense za prednostno razvrščanje kodirajočih in nekodirajočih različic. Rezultati so odvisni od tkiva, učnih podatkov in genomskega konteksta ter niso samostojen dokaz patogenosti ali vzročnosti."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "science_news",
+      "language": "sl",
+      "assignment_id": "27ac31e6-17a2-4fd8-a8fe-5f612b3ae933",
+      "_kind": "native",
+      "_source_mtime": 1789472204.4423153,
+      "category_label": "Znanstvena novica",
+      "category_class": "science-news",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 5,
+      "search_text": "alphagenome atlas je napovedal učinke devetih milijard sprememb dnk — zemljevid za raziskave, ne diagnoza science_news znanstvena novica sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-10",
       "person": "Satellite data show record-breaking July wildfires in France and Spain",
