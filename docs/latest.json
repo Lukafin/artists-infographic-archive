@@ -1,18 +1,20 @@
 {
   "date": "2026-09-15",
-  "person": "AlphaGenome Atlas je napovedal učinke devetih milijard sprememb DNK — zemljevid za raziskave, ne diagnoza",
-  "image_filename": "AlphagenomeAtlasJeNapovedalUcinkeDevetihMilijardSpremembDnkZemljevidZaRaziskaveNeDiagnoza.png",
+  "person": "OpenAI trdi, da je umetna inteligenca rešila problem Navier–Stokes — dokaz še čaka neodvisno presojo",
+  "image_filename": "OpenaiTrdiDaJeUmetnaInteligencaResilaProblemNavierstokesDokazSeCakaNeodvisnoPresojo.png",
   "category": "science_news",
   "category_label": "Znanstvena novica",
   "language": "sl",
   "language_label": "SL",
-  "original_article_url": "https://www.nature.com/articles/d41586-026-02835-4",
+  "original_article_url": "https://www.nytimes.com/2026/09/08/science/openai-proof-millennium-problem.html",
   "sources": [
-    "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome",
-    "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/alphagenome-atlas.pdf",
-    "https://www.nature.com/articles/s41586-025-10014-0",
-    "https://www.nature.com/articles/d41586-026-02835-4",
-    "https://www.ebi.ac.uk/about/news/updates-from-data-resources/ensembl-vep-integrates-alphagenome-variant-impact-score/"
+    "https://openai.com/index/navier-stokes-solution/",
+    "https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf",
+    "https://github.com/openai/NavierStokesAndEuler",
+    "https://claymath.org/millennium/navier-stokes-equation",
+    "https://claymath.org/wp-content/uploads/2022/03/millennium_prize_rules_0.pdf",
+    "https://www.scientificamerican.com/article/ai-may-have-just-solved-a-million-dollar-math-problem-the-field-will-never-be-the-same/",
+    "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -23,7 +25,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 199,
+  "total_entries": 200,
   "total_pages": 20,
   "per_page": 10
 }

@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 199,
+    "total_entries": 200,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,87 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 165
+      "age_6": 166
     },
     "category_counts": {
-      "science_news": 7,
+      "science_news": 8,
       "school_poster": 45,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "sl": 168,
+      "sl": 169,
       "en": 26,
       "de": 5
     }
   },
   "entries": [
+    {
+      "date": "2026-09-15",
+      "person": "OpenAI trdi, da je umetna inteligenca rešila problem Navier–Stokes — dokaz še čaka neodvisno presojo",
+      "filename": "OpenaiTrdiDaJeUmetnaInteligencaResilaProblemNavierstokesDokazSeCakaNeodvisnoPresojo.png",
+      "image_filename": "OpenaiTrdiDaJeUmetnaInteligencaResilaProblemNavierstokesDokazSeCakaNeodvisnoPresojo.png",
+      "sources": [
+        "https://openai.com/index/navier-stokes-solution/",
+        "https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf",
+        "https://github.com/openai/NavierStokesAndEuler",
+        "https://claymath.org/millennium/navier-stokes-equation",
+        "https://claymath.org/wp-content/uploads/2022/03/millennium_prize_rules_0.pdf",
+        "https://www.scientificamerican.com/article/ai-may-have-just-solved-a-million-dollar-math-problem-the-field-will-never-be-the-same/",
+        "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math"
+      ],
+      "original_article_url": "https://www.nytimes.com/2026/09/08/science/openai-proof-millennium-problem.html",
+      "title": "Navier–Stokes: velik kandidat za dokaz, ki še čaka presojo",
+      "summary": "OpenAI je objavil analitični dokaz in formalizacijo Lean, po katerih lahko gladko prisiljen tridimenzionalni tok iz mirovanja v končnem času razvije singularnost, čeprav energija ostane končna. Konstrukcija opisuje vse ožji in hitrejši vrtinec ter natančno izničevanje velikih členov enačb, tako da zunanja sila ostane gladka. Rezultat bi lahko ustrezal možnostma C in D uradne formulacije, vendar še ni neodvisno matematično potrjen, objavljen v kvalificirani recenzirani publikaciji ali splošno sprejet; CMI problem ob preverjanju še vedno vodi kot nerešen.",
+      "age_suitability_details": {
+        "age_6": "Matematiki opisujejo vodo z enačbami. Umetna inteligenca je predlagala, da se lahko v posebnem primeru vrtinec v teh enačbah vrti vedno hitreje, vendar morajo ljudje dokaz še skrbno preveriti.",
+        "age_13": "OpenAI trdi, da gladko gnan tridimenzionalni vrtinec v Navier–Stokesovih enačbah lahko v končnem času razvije singularnost, čeprav energija ostane končna. To je objavljen kandidat za dokaz, ne že potrjen rezultat.",
+        "adult": "Objavljena konstrukcija naj bi za gladko prisiljene tridimenzionalne Navier–Stokesove enačbe vzpostavila možnosti C/D z natančnim izničevanjem velikih členov ob končni energiji in neomejeni hitrosti. Lean formalizacija izboljša preverljivost, vendar ne nadomesti neodvisne presoje definicij, uradne skladnosti, atribucije in splošnega strokovnega sprejetja."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "science_news",
+      "language": "sl",
+      "assignment_id": "b93205cd-0d51-4bb7-9e60-1a48ae517427",
+      "_kind": "native",
+      "_source_mtime": 1789472221.4412448,
+      "category_label": "Znanstvena novica",
+      "category_class": "science-news",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 7,
+      "search_text": "openai trdi, da je umetna inteligenca rešila problem navier–stokes — dokaz še čaka neodvisno presojo science_news znanstvena novica sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-15",
       "person": "AlphaGenome Atlas je napovedal učinke devetih milijard sprememb DNK — zemljevid za raziskave, ne diagnoza",
