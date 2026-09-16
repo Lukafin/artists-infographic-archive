@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 200,
+    "total_entries": 201,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,85 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 166
+      "age_6": 167
     },
     "category_counts": {
+      "school_poster": 46,
       "science_news": 8,
-      "school_poster": 45,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
+      "de": 6,
       "sl": 169,
-      "en": 26,
-      "de": 5
+      "en": 26
     }
   },
   "entries": [
+    {
+      "date": "2026-09-16",
+      "person": "Bevölkerungsdichte",
+      "filename": "Bevolkerungsdichte.png",
+      "image_filename": "Bevolkerungsdichte.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q22856",
+        "https://data.worldbank.org/indicator/EN.POP.DNST",
+        "https://population.un.org/wpp/",
+        "https://de.wikipedia.org/wiki/Bev%C3%B6lkerungsdichte",
+        "https://www.bpb.de/kurz-knapp/zahlen-und-fakten/globalisierung/52699/bevoelkerungsentwicklung-und-struktur/"
+      ],
+      "original_article_url": null,
+      "title": "Bevölkerungsdichte — Menschen pro Fläche verstehen",
+      "summary": "Ein deutschsprachiges Schulwandposter erklärt Bevölkerungsdichte als Verhältnis von Einwohnerzahl und Fläche. Eine durchgehende Kartenlandschaft vom dichten Stadtkern bis zum dünn besiedelten Land und mehrere gleich große Quadratkilometer-Fenster machen hohe und niedrige Dichte anschaulich. Formel, Rechenbeispiel und Warnhinweis zeigen zugleich, dass die Kennzahl ein Durchschnitt ist und die tatsächliche Verteilung innerhalb eines Gebiets verdecken kann.",
+      "age_suitability_details": {
+        "age_6": "Viele Menschen auf einem kleinen Gebiet bedeuten hohe Dichte; wenige Menschen auf einem großen Gebiet bedeuten niedrige Dichte.",
+        "age_13": "Bevölkerungsdichte entsteht, wenn man die Einwohnerzahl durch die Fläche in Quadratkilometern teilt. Sie erleichtert Vergleiche, bleibt aber ein Durchschnitt.",
+        "adult": "Die Kennzahl misst die mittlere Bevölkerung je Flächeneinheit; administrative Grenzen und unbewohnte Teilflächen können Vergleiche verzerren, weshalb räumliche Verteilung und Siedlungsdichte ergänzend betrachtet werden sollten."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "de",
+      "assignment_id": "10c40bc1-ec55-49f0-8ef7-9b6a26fdee47",
+      "_kind": "native",
+      "_source_mtime": 1789535147.1998377,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "DE",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 5,
+      "search_text": "bevölkerungsdichte school_poster šolski plakat de age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-15",
       "person": "OpenAI trdi, da je umetna inteligenca rešila problem Navier–Stokes — dokaz še čaka neodvisno presojo",
