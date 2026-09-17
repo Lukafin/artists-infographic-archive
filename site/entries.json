@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 201,
+    "total_entries": 202,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,85 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 167
+      "age_6": 168
     },
     "category_counts": {
-      "school_poster": 46,
+      "school_poster": 47,
       "science_news": 8,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "de": 6,
+      "de": 7,
       "sl": 169,
       "en": 26
     }
   },
   "entries": [
+    {
+      "date": "2026-09-17",
+      "person": "Bewegung",
+      "filename": "Bewegung.png",
+      "image_filename": "Bewegung.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q79782",
+        "https://de.wikipedia.org/wiki/Bewegung_(Physik)",
+        "https://www.leifiphysik.de/mechanik/gleichfoermige-bewegung",
+        "https://www.leifiphysik.de/mechanik/beschleunigte-bewegung",
+        "https://www.britannica.com/science/motion-mechanics"
+      ],
+      "original_article_url": null,
+      "title": "Bewegung — Raum, Zeit und Geschwindigkeit",
+      "summary": "Ein deutschsprachiges Schulposter, das Bewegung als Ortsänderung mit der Zeit erklärt. Eine zusammenhängende Bewegungsbahn verknüpft Bezugssystem, gleichförmige Bewegung, Geschwindigkeit und Beschleunigung mit korrekten Formeln und anschaulichen Abständen.",
+      "age_suitability_details": {
+        "age_6": "Bewegung bedeutet: Etwas ist später an einem anderen Ort. Bilder mit gleichen Zeitabständen zeigen, ob es gleich schnell oder immer schneller wird.",
+        "age_13": "Das Poster verbindet Ort und Zeit mit Geschwindigkeit und Beschleunigung. Es zeigt außerdem, warum Bewegung immer von einem Bezugssystem abhängt.",
+        "adult": "Die Darstellung fasst die kinematischen Grundgrößen Ort, Zeit, Geschwindigkeit und Beschleunigung zusammen und unterscheidet gleichförmige Bewegung von Änderungen des Geschwindigkeitsvektors."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "de",
+      "assignment_id": "4d447354-4d53-472b-a6cf-d0d3d0404509",
+      "_kind": "native",
+      "_source_mtime": 1789621631.3992112,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "DE",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 5,
+      "search_text": "bewegung school_poster šolski plakat de age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-16",
       "person": "Bevölkerungsdichte",
