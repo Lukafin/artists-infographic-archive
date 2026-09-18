@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 202,
+    "total_entries": 203,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,84 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 168
+      "age_6": 169
     },
     "category_counts": {
-      "school_poster": 47,
+      "school_poster": 48,
       "science_news": 8,
       "artist": 44,
       "sport": 5,
       "scientist": 98
     },
     "language_counts": {
-      "de": 7,
+      "de": 8,
       "sl": 169,
       "en": 26
     }
   },
   "entries": [
+    {
+      "date": "2026-09-18",
+      "person": "Demokratie",
+      "filename": "Demokratie.png",
+      "image_filename": "Demokratie.png",
+      "sources": [
+        "https://www.bpb.de/kurz-knapp/lexika/politiklexikon/17321/demokratie/",
+        "https://www.bundestag.de/services/glossar/glossar/D/demokratie-245374",
+        "https://www.bundestag.de/parlament/aufgaben/rechtsgrundlagen/grundgesetz",
+        "https://www.wikidata.org/wiki/Q7174"
+      ],
+      "original_article_url": null,
+      "title": "Demokratie — Macht beginnt beim Volk",
+      "summary": "Ein deutschsprachiges Schulwandplakat erklärt Demokratie als zusammenhängendes System: Staatsgewalt wird durch das Volk legitimiert, Wahlen führen zu parlamentarischer Vertretung und Gesetzen, die Gewaltenteilung begrenzt Macht, und Grundrechte schützen alle einschließlich Minderheiten. Die transparente Hausmetapher verbindet Legislative, Exekutive, Judikative, freie Medien und gesellschaftliche Beteiligung in einer lesbaren Szene.",
+      "age_suitability_details": {
+        "age_6": "Demokratie bedeutet: Menschen dürfen mitbestimmen, wer regiert, und gemeinsame Regeln sollen alle schützen.",
+        "age_13": "Wahlen legitimieren Parlamente; Grundrechte, Gewaltenteilung und unabhängige Gerichte begrenzen Macht und schützen auch Minderheiten.",
+        "adult": "Demokratie verbindet Volkssouveränität mit repräsentativen Institutionen, Rechtsstaat, einklagbaren Grundrechten, pluralistischer Öffentlichkeit und fortlaufender politischer Beteiligung."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "language": "de",
+      "assignment_id": "b5fb9bff-710b-4a1a-b270-50380572887c",
+      "_kind": "native",
+      "_source_mtime": 1789708132.543137,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "DE",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "demokratie school_poster šolski plakat de age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-17",
       "person": "Bewegung",
