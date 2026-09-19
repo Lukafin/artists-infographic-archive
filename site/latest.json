@@ -1,17 +1,17 @@
 {
-  "date": "2026-09-18",
-  "person": "Demokratie",
-  "image_filename": "Demokratie.png",
-  "category": "school_poster",
-  "category_label": "Šolski plakat",
-  "language": "de",
-  "language_label": "DE",
+  "date": "2026-09-19",
+  "person": "Abdus Salam",
+  "image_filename": "AbdusSalam.png",
+  "category": "scientist",
+  "category_label": "Znanstvenik",
+  "language": "en",
+  "language_label": "EN",
   "original_article_url": null,
   "sources": [
-    "https://www.bpb.de/kurz-knapp/lexika/politiklexikon/17321/demokratie/",
-    "https://www.bundestag.de/services/glossar/glossar/D/demokratie-245374",
-    "https://www.bundestag.de/parlament/aufgaben/rechtsgrundlagen/grundgesetz",
-    "https://www.wikidata.org/wiki/Q7174"
+    "https://www.nobelprize.org/prizes/physics/1979/salam/facts/",
+    "https://www.nobelprize.org/prizes/physics/1979/press-release",
+    "https://ictp.it/home/our-history",
+    "https://www.britannica.com/biography/Abdus-Salam"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -22,7 +22,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 203,
+  "total_entries": 204,
   "total_pages": 21,
   "per_page": 10
 }

@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 203,
+    "total_entries": 204,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,84 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 169
+      "age_6": 170
     },
     "category_counts": {
+      "scientist": 99,
       "school_poster": 48,
       "science_news": 8,
       "artist": 44,
-      "sport": 5,
-      "scientist": 98
+      "sport": 5
     },
     "language_counts": {
+      "en": 27,
       "de": 8,
-      "sl": 169,
-      "en": 26
+      "sl": 169
     }
   },
   "entries": [
+    {
+      "date": "2026-09-19",
+      "person": "Abdus Salam",
+      "filename": "AbdusSalam.png",
+      "image_filename": "AbdusSalam.png",
+      "sources": [
+        "https://www.nobelprize.org/prizes/physics/1979/salam/facts/",
+        "https://www.nobelprize.org/prizes/physics/1979/press-release",
+        "https://ictp.it/home/our-history",
+        "https://www.britannica.com/biography/Abdus-Salam"
+      ],
+      "original_article_url": null,
+      "title": "Abdus Salam — Two Forces, One Theory",
+      "summary": "An English educational infographic follows Abdus Salam's central scientific and humanitarian legacy: electromagnetic and weak interactions converge into electroweak theory, the work recognized by the 1979 Nobel Prize in Physics, and the scientific path opens into ICTP, which Salam founded in 1964 to connect researchers across countries and reduce scientific isolation.",
+      "age_suitability_details": {
+        "age_6": "Abdus Salam was a scientist who helped show that two forces in nature are connected, and he helped scientists from many countries learn together.",
+        "age_13": "Salam helped unite electromagnetism and the weak nuclear interaction in electroweak theory, earning a share of the 1979 Nobel Prize, and founded ICTP to widen access to advanced science.",
+        "adult": "Salam's contributions to gauge-based electroweak unification, including the weak neutral-current prediction, became foundational to the Standard Model; his creation of ICTP also addressed scientific isolation in developing countries."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "en",
+      "assignment_id": "687c3dc8-36dc-4b79-a820-56357d0aebcb",
+      "_kind": "native",
+      "_source_mtime": 1789794469.1882758,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "abdus salam scientist znanstvenik en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-18",
       "person": "Demokratie",
