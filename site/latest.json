@@ -1,17 +1,17 @@
 {
-  "date": "2026-09-19",
+  "date": "2026-09-20",
   "person": "Abdus Salam",
   "image_filename": "AbdusSalam.png",
   "category": "scientist",
   "category_label": "Znanstvenik",
-  "language": "en",
-  "language_label": "EN",
+  "language": "de",
+  "language_label": "DE",
   "original_article_url": null,
   "sources": [
-    "https://www.nobelprize.org/prizes/physics/1979/salam/facts/",
-    "https://www.nobelprize.org/prizes/physics/1979/press-release",
-    "https://ictp.it/home/our-history",
-    "https://www.britannica.com/biography/Abdus-Salam"
+    "https://www.nobelprize.org/prizes/physics/1979/salam/biographical/",
+    "https://www.nobelprize.org/prizes/physics/1979/summary/",
+    "https://www.ictp.it/home/our-history",
+    "https://www.wikidata.org/wiki/Q28189"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -22,7 +22,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 204,
+  "total_entries": 205,
   "total_pages": 21,
   "per_page": 10
 }
