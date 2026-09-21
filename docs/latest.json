@@ -1,17 +1,18 @@
 {
-  "date": "2026-09-20",
-  "person": "Abdus Salam",
-  "image_filename": "AbdusSalam.png",
-  "category": "scientist",
-  "category_label": "Znanstvenik",
-  "language": "de",
-  "language_label": "DE",
+  "date": "2026-09-21",
+  "person": "Abraham Lincoln",
+  "image_filename": "AbrahamLincoln.jpg",
+  "category": "artist",
+  "category_label": "Umetnik",
+  "language": "en",
+  "language_label": "EN",
   "original_article_url": null,
   "sources": [
-    "https://www.nobelprize.org/prizes/physics/1979/salam/biographical/",
-    "https://www.nobelprize.org/prizes/physics/1979/summary/",
-    "https://www.ictp.it/home/our-history",
-    "https://www.wikidata.org/wiki/Q28189"
+    "https://www.wikidata.org/wiki/Q91",
+    "https://www.loc.gov/classroom-materials/united-states-history-primary-source-timeline/civil-war-and-reconstruction-1861-1877/lincoln/",
+    "https://guides.loc.gov/emancipation-proclamation",
+    "https://www.loc.gov/item/today-in-history/november-19/",
+    "https://www.nps.gov/linc/learn/historyculture/gettysburgaddress.htm"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -22,7 +23,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 205,
+  "total_entries": 206,
   "total_pages": 21,
   "per_page": 10
 }

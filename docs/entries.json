@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 205,
+    "total_entries": 206,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,85 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 171
+      "age_6": 172
     },
     "category_counts": {
+      "artist": 45,
       "scientist": 100,
       "school_poster": 48,
       "science_news": 8,
-      "artist": 44,
       "sport": 5
     },
     "language_counts": {
+      "en": 28,
       "de": 9,
-      "en": 27,
       "sl": 169
     }
   },
   "entries": [
+    {
+      "date": "2026-09-21",
+      "person": "Abraham Lincoln",
+      "filename": "AbrahamLincoln.jpg",
+      "image_filename": "AbrahamLincoln.jpg",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q91",
+        "https://www.loc.gov/classroom-materials/united-states-history-primary-source-timeline/civil-war-and-reconstruction-1861-1877/lincoln/",
+        "https://guides.loc.gov/emancipation-proclamation",
+        "https://www.loc.gov/item/today-in-history/november-19/",
+        "https://www.nps.gov/linc/learn/historyculture/gettysburgaddress.htm"
+      ],
+      "original_article_url": null,
+      "title": "Abraham Lincoln — A Nation Tested",
+      "summary": "An English educational infographic follows Abraham Lincoln's presidency through the U.S. Civil War, the limited but transformative Emancipation Proclamation of 1 January 1863, and the Gettysburg Address. It emphasizes that emancipation and equality were broader collective struggles and remained unfinished.",
+      "age_suitability_details": {
+        "age_6": "Abraham Lincoln was a U.S. president during a civil war. His words and decisions helped move the country toward freedom, but many people worked together and equality was not finished.",
+        "age_13": "Lincoln led the Union during the Civil War. The 1863 Emancipation Proclamation changed the war's purpose and declared freedom in areas in rebellion, but it did not abolish slavery everywhere.",
+        "adult": "The infographic places Lincoln's wartime leadership, the legally limited Emancipation Proclamation, and the Gettysburg Address within the broader agency of enslaved people, Black soldiers, abolitionists, and constitutional change."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "en",
+      "assignment_id": "c9506c7f-a8f4-4c7e-9780-d610870554c6",
+      "_kind": "native",
+      "_source_mtime": 1789967239.5702314,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 5,
+      "search_text": "abraham lincoln artist umetnik en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-20",
       "person": "Abdus Salam",
