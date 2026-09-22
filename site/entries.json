@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 206,
+    "total_entries": 207,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,84 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 172
+      "age_6": 173
     },
     "category_counts": {
-      "artist": 45,
+      "artist": 46,
       "scientist": 100,
       "school_poster": 48,
       "science_news": 8,
       "sport": 5
     },
     "language_counts": {
+      "sl": 170,
       "en": 28,
-      "de": 9,
-      "sl": 169
+      "de": 9
     }
   },
   "entries": [
+    {
+      "date": "2026-09-22",
+      "person": "Abraham Lincoln",
+      "filename": "AbrahamLincoln.png",
+      "image_filename": "AbrahamLincoln.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q91",
+        "https://www.loc.gov/item/2021669449/",
+        "https://www.archives.gov/milestone-documents/emancipation-proclamation",
+        "https://obamawhitehouse.archives.gov/1600/presidents/abrahamlincoln"
+      ],
+      "original_article_url": null,
+      "title": "Abraham Lincoln — od razdeljene države do novega rojstva svobode",
+      "summary": "Slovenska izobraževalna infografika o Abrahamu Lincolnu (1809–1865), 16. predsedniku ZDA. Prikazuje njegovo pot samouka in odvetnika, vodenje Unije skozi ameriško državljansko vojno ter pomen Razglasa o osvoboditvi z dne 1. 1. 1863, ki je vojno za ohranitev Unije preoblikoval tudi v boj za svobodo, čeprav sam ni odpravil suženjstva povsod po državi.",
+      "age_suitability_details": {
+        "age_6": "Abraham Lincoln je bil ameriški predsednik, ki je med veliko vojno pomagal ohraniti državo skupaj in svobodo postavil v središče njenega cilja.",
+        "age_13": "Lincoln je vodil Unijo med državljansko vojno; Razglas o osvoboditvi je zasužnjene ljudi v uporniških območjih razglasil za svobodne in omogočil vključevanje temnopoltih vojakov v vojsko Unije.",
+        "adult": "Infografika razlikuje med simbolnim in dejanskim dosegom Razglasa o osvoboditvi: bil je vojni ukrep z ozemeljskimi omejitvami, ki je preoblikoval namen vojne, medtem ko je splošna odprava suženjstva zahtevala nadaljnji ustavni korak."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "15c387d0-416b-49c7-adb8-d45f2092ea38",
+      "_kind": "native",
+      "_source_mtime": 1790053681.085955,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "abraham lincoln artist umetnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-21",
       "person": "Abraham Lincoln",
