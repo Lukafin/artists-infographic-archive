@@ -1,17 +1,16 @@
 {
-  "date": "2026-09-22",
+  "date": "2026-09-23",
   "person": "Abraham Lincoln",
   "image_filename": "AbrahamLincoln.png",
   "category": "artist",
   "category_label": "Umetnik",
-  "language": "sl",
-  "language_label": "SL",
+  "language": "de",
+  "language_label": "DE",
   "original_article_url": null,
   "sources": [
     "https://www.wikidata.org/wiki/Q91",
-    "https://www.loc.gov/item/2021669449/",
-    "https://www.archives.gov/milestone-documents/emancipation-proclamation",
-    "https://obamawhitehouse.archives.gov/1600/presidents/abrahamlincoln"
+    "https://www.britannica.com/biography/Abraham-Lincoln",
+    "https://www.loc.gov/collections/abraham-lincoln-papers/articles-and-essays/abraham-lincoln-and-emancipation"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -22,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 207,
+  "total_entries": 208,
   "total_pages": 21,
   "per_page": 10
 }

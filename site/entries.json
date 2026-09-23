@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 207,
+    "total_entries": 208,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 173
+      "age_6": 174
     },
     "category_counts": {
-      "artist": 46,
+      "artist": 47,
       "scientist": 100,
       "school_poster": 48,
       "science_news": 8,
       "sport": 5
     },
     "language_counts": {
+      "de": 10,
       "sl": 170,
-      "en": 28,
-      "de": 9
+      "en": 28
     }
   },
   "entries": [
+    {
+      "date": "2026-09-23",
+      "person": "Abraham Lincoln",
+      "filename": "AbrahamLincoln.png",
+      "image_filename": "AbrahamLincoln.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q91",
+        "https://www.britannica.com/biography/Abraham-Lincoln",
+        "https://www.loc.gov/collections/abraham-lincoln-papers/articles-and-essays/abraham-lincoln-and-emancipation"
+      ],
+      "original_article_url": null,
+      "title": "Abraham Lincoln — Union, Emanzipation und Abschaffung der Sklaverei",
+      "summary": "Abraham Lincoln (1809–1865) war der 16. Präsident der Vereinigten Staaten. Er führte die Union durch den Amerikanischen Bürgerkrieg, erließ 1863 die Emanzipationserklärung und unterstützte den 13. Verfassungszusatz, der die Sklaverei in den Vereinigten Staaten abschaffte.",
+      "age_suitability_details": {
+        "age_6": "Abraham Lincoln war Präsident der USA, als das Land im Krieg gespalten war, und setzte sich dafür ein, dass versklavte Menschen frei werden.",
+        "age_13": "Lincoln führte die Union durch den Bürgerkrieg, erließ 1863 die Emanzipationserklärung und unterstützte den Verfassungszusatz zur Abschaffung der Sklaverei.",
+        "adult": "Die Emanzipationserklärung galt zunächst für die rebellierenden Gebiete; die landesweite rechtliche Abschaffung der Sklaverei erfolgte durch den 13. Verfassungszusatz, dessen Verabschiedung Lincoln unterstützte."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "de",
+      "assignment_id": "38b5a1f5-9eb6-49b8-9a80-ec5bbd2683b5",
+      "_kind": "native",
+      "_source_mtime": 1790139960.225168,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "DE",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "abraham lincoln artist umetnik de age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-22",
       "person": "Abraham Lincoln",
