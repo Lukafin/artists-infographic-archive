@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 208,
+    "total_entries": 209,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,84 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 174
+      "age_6": 175
     },
     "category_counts": {
+      "sport": 6,
       "artist": 47,
       "scientist": 100,
       "school_poster": 48,
-      "science_news": 8,
-      "sport": 5
+      "science_news": 8
     },
     "language_counts": {
+      "en": 29,
       "de": 10,
-      "sl": 170,
-      "en": 28
+      "sl": 170
     }
   },
   "entries": [
+    {
+      "date": "2026-09-24",
+      "person": "Abraham Minero",
+      "filename": "AbrahamMinero.png",
+      "image_filename": "AbrahamMinero.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q27741",
+        "https://en.wikipedia.org/wiki/Abraham_Minero",
+        "https://www.bdfutbol.com/en/j/j300035.html",
+        "https://www.realzaragoza.com/noticias/abraham-la-palabra-clave-es-la-union"
+      ],
+      "original_article_url": null,
+      "title": "Abraham Minero — From amateur football to La Liga",
+      "summary": "Abraham Minero Fernández, born in Granollers in 1986, was a Spanish left-back whose career took him from amateur football and Sant Andreu to Barcelona B, Real Zaragoza and La Liga. He made 102 league appearances for Zaragoza, scored a memorable 93rd-minute winner against Villarreal in 2012, and was part of Levante's 2016–17 Segunda División championship team.",
+      "age_suitability_details": {
+        "age_6": "Abraham Minero was a Spanish football defender who worked his way from small clubs to teams in La Liga.",
+        "age_13": "Minero played at left-back, progressed through Sant Andreu and Barcelona B, and became a regular for Real Zaragoza, where he once scored a 93rd-minute winner.",
+        "adult": "Minero's career illustrates a late route into elite football: he remained in the amateur game until 22, then built a long professional career across Spain's top three levels, including 102 league appearances for Zaragoza and a Segunda title with Levante."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "sport",
+      "language": "en",
+      "assignment_id": "70d55b27-6841-47df-810b-4b1d2d6fa4c0",
+      "_kind": "native",
+      "_source_mtime": 1790226332.2977242,
+      "category_label": "Športnik",
+      "category_class": "sport",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "abraham minero sport športnik en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-23",
       "person": "Abraham Lincoln",
