@@ -1,17 +1,16 @@
 {
-  "date": "2026-09-24",
+  "date": "2026-09-25",
   "person": "Abraham Minero",
   "image_filename": "AbrahamMinero.png",
   "category": "sport",
   "category_label": "Športnik",
-  "language": "en",
-  "language_label": "EN",
+  "language": "sl",
+  "language_label": "SL",
   "original_article_url": null,
   "sources": [
     "https://www.wikidata.org/wiki/Q27741",
-    "https://en.wikipedia.org/wiki/Abraham_Minero",
     "https://www.bdfutbol.com/en/j/j300035.html",
-    "https://www.realzaragoza.com/noticias/abraham-la-palabra-clave-es-la-union"
+    "https://en.wikipedia.org/wiki/Abraham_Minero"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -22,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 209,
+  "total_entries": 210,
   "total_pages": 21,
   "per_page": 10
 }
