@@ -1,15 +1,17 @@
 {
-  "date": "2026-09-25",
+  "date": "2026-09-26",
   "person": "Abraham Minero",
   "image_filename": "AbrahamMinero.png",
   "category": "sport",
   "category_label": "Športnik",
-  "language": "sl",
-  "language_label": "SL",
+  "language": "de",
+  "language_label": "DE",
   "original_article_url": null,
   "sources": [
     "https://www.wikidata.org/wiki/Q27741",
+    "https://www.realzaragoza.com/noticias/abraham-y-edu-oriol-nuevos-jugadores-del-real-zaragoza",
     "https://www.bdfutbol.com/en/j/j300035.html",
+    "https://fbref.com/en/players/ce2c56fc/Abraham-Minero",
     "https://en.wikipedia.org/wiki/Abraham_Minero"
   ],
   "age_suitability_keys": [
@@ -21,7 +23,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 210,
+  "total_entries": 211,
   "total_pages": 21,
   "per_page": 10
 }

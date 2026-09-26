@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 210,
+    "total_entries": 211,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,85 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 176
+      "age_6": 177
     },
     "category_counts": {
-      "sport": 7,
+      "sport": 8,
       "artist": 47,
       "scientist": 100,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
+      "de": 11,
       "sl": 171,
-      "en": 29,
-      "de": 10
+      "en": 29
     }
   },
   "entries": [
+    {
+      "date": "2026-09-26",
+      "person": "Abraham Minero",
+      "filename": "AbrahamMinero.png",
+      "image_filename": "AbrahamMinero.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q27741",
+        "https://www.realzaragoza.com/noticias/abraham-y-edu-oriol-nuevos-jugadores-del-real-zaragoza",
+        "https://www.bdfutbol.com/en/j/j300035.html",
+        "https://fbref.com/en/players/ce2c56fc/Abraham-Minero",
+        "https://en.wikipedia.org/wiki/Abraham_Minero"
+      ],
+      "original_article_url": null,
+      "title": "Abraham Minero – Der Weg über die linke Linie",
+      "summary": "Eine deutschsprachige Bildungsinfografik über Abraham Minero Fernández, einen spanischen Linksverteidiger aus Granollers. Die linke Seitenlinie wird zur Laufbahnroute von Sant Andreu über Barcelona B und Real Zaragoza bis zum Zweitligatitel mit Levante; hervorgehoben werden zudem 102 Ligaspiele für Zaragoza und 22 La-Liga-Spiele für Eibar.",
+      "age_suitability_details": {
+        "age_6": "Abraham Minero war Fußballspieler und verteidigte meist die linke Seite des Spielfelds.",
+        "age_13": "Sein Weg führte aus kleineren Vereinen über Barcelona B in die La Liga; für Zaragoza bestritt er 102 Ligaspiele und war später mit Levante Zweitligameister.",
+        "adult": "Mineros Laufbahn zeigt den schrittweisen Aufstieg eines Linksverteidigers vom Amateurbereich in den spanischen Profifußball, einschließlich La-Liga-Stationen bei Zaragoza und Eibar sowie des Zweitligatitels 2016/17 mit Levante."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "sport",
+      "language": "de",
+      "assignment_id": "39efa394-32c4-4ccf-a5d5-68956123dcba",
+      "_kind": "native",
+      "_source_mtime": 1790399048.550363,
+      "category_label": "Športnik",
+      "category_class": "sport",
+      "language_label": "DE",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 5,
+      "search_text": "abraham minero sport športnik de age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-25",
       "person": "Abraham Minero",
