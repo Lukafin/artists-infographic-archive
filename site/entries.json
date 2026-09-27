@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 211,
+    "total_entries": 212,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,84 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 177
+      "age_6": 178
     },
     "category_counts": {
+      "artist": 48,
       "sport": 8,
-      "artist": 47,
       "scientist": 100,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
+      "en": 30,
       "de": 11,
-      "sl": 171,
-      "en": 29
+      "sl": 171
     }
   },
   "entries": [
+    {
+      "date": "2026-09-27",
+      "person": "Abraham van den Blocke",
+      "filename": "AbrahamVanDenBlocke-en.png",
+      "image_filename": "AbrahamVanDenBlocke-en.png",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q73334",
+        "https://www.deutsche-biographie.de/132702355.html?language=en",
+        "https://en.wikipedia.org/wiki/Abraham_van_den_Blocke",
+        "https://en.wikipedia.org/wiki/Golden_Gate_(Gda%C5%84sk)"
+      ],
+      "original_article_url": null,
+      "title": "Abraham van den Blocke: From Stone to City",
+      "summary": "An English educational infographic tracing how architect and stonecutter Abraham van den Blocke helped shape early-17th-century Gdańsk through the stonework of Neptune's Fountain, the Golden Gate, and the Artus Court façade.",
+      "age_suitability_details": {
+        "age_6": "Abraham helped turn stone into famous gates, fountains, and building fronts in the city of Gdańsk.",
+        "age_13": "Abraham van den Blocke combined skilled stonework with architectural design to shape several major public landmarks in early-17th-century Gdańsk.",
+        "adult": "Van den Blocke's civic commissions show how Netherlandish and Flemish Mannerist ideas were adapted to the architecture and public identity of Baltic Gdańsk."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "en",
+      "assignment_id": "195e07b2-dffd-4ea2-8d14-f5ab62a1130a",
+      "_kind": "native",
+      "_source_mtime": 1790485575.765242,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "abraham van den blocke artist umetnik en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-26",
       "person": "Abraham Minero",
