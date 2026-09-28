@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 212,
+    "total_entries": 213,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,84 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 178
+      "age_6": 179
     },
     "category_counts": {
-      "artist": 48,
+      "artist": 49,
       "sport": 8,
       "scientist": 100,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
+      "sl": 172,
       "en": 30,
-      "de": 11,
-      "sl": 171
+      "de": 11
     }
   },
   "entries": [
+    {
+      "date": "2026-09-28",
+      "person": "Abraham van den Blocke",
+      "filename": "AbrahamVanDenBlocke-sl.png",
+      "image_filename": "AbrahamVanDenBlocke-sl.png",
+      "sources": [
+        "https://gdansk.gedanopedia.pl/gdansk/?title=BLOCK_ABRAHAM_van_den,_rze%C5%BAbiarz",
+        "https://culture.pl/pl/tworca/abraham-van-den-blocke",
+        "https://www.wikidata.org/wiki/Q73334",
+        "https://en.wikipedia.org/wiki/Golden_Gate_(Gda%C5%84sk)"
+      ],
+      "original_article_url": null,
+      "title": "Abraham van den Blocke — kamen, ki je oblikoval Gdansk",
+      "summary": "Slovenska izobraževalna infografika predstavi Abrahama van den Blockeja (1572–1628), arhitekta in kiparja, ki je v začetku 17. stoletja pomembno oblikoval javni prostor Gdanska. Neprekinjena kompozicija poveže kamnoseško orodje in arhitekturni načrt z Zlati vrati, Neptunovim vodnjakom ter bogato oblikovano mestno arhitekturo.",
+      "age_suitability_details": {
+        "age_6": "Abraham van den Blocke je bil arhitekt in kipar, ki je iz kamna pomagal ustvariti znamenite stavbe in vodnjak v Gdansku.",
+        "age_13": "Van den Blocke je združil arhitekturo in kiparstvo ter kot mestni gradbenik soustvaril Zlata vrata in druge pomembne javne spomenike Gdanska.",
+        "adult": "Njegovo delo predstavlja pomemben izraz nizozemskega manierizma v Gdansku zgodnjega 17. stoletja, kjer so se mestna arhitektura, kamnoseštvo in kiparska dekoracija povezali v reprezentativno javno podobo mesta."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "529eaae2-962d-4301-9a5e-d702520bb29c",
+      "_kind": "native",
+      "_source_mtime": 1790583167.372585,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "abraham van den blocke artist umetnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-27",
       "person": "Abraham van den Blocke",

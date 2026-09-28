@@ -1,16 +1,16 @@
 {
-  "date": "2026-09-27",
+  "date": "2026-09-28",
   "person": "Abraham van den Blocke",
-  "image_filename": "AbrahamVanDenBlocke-en.png",
+  "image_filename": "AbrahamVanDenBlocke-sl.png",
   "category": "artist",
   "category_label": "Umetnik",
-  "language": "en",
-  "language_label": "EN",
+  "language": "sl",
+  "language_label": "SL",
   "original_article_url": null,
   "sources": [
+    "https://gdansk.gedanopedia.pl/gdansk/?title=BLOCK_ABRAHAM_van_den,_rze%C5%BAbiarz",
+    "https://culture.pl/pl/tworca/abraham-van-den-blocke",
     "https://www.wikidata.org/wiki/Q73334",
-    "https://www.deutsche-biographie.de/132702355.html?language=en",
-    "https://en.wikipedia.org/wiki/Abraham_van_den_Blocke",
     "https://en.wikipedia.org/wiki/Golden_Gate_(Gda%C5%84sk)"
   ],
   "age_suitability_keys": [
@@ -22,7 +22,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 212,
+  "total_entries": 213,
   "total_pages": 22,
   "per_page": 10
 }
