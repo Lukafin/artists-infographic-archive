@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 213,
+    "total_entries": 214,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,85 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 179
+      "age_6": 180
     },
     "category_counts": {
-      "artist": 49,
+      "artist": 50,
       "sport": 8,
       "scientist": 100,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
+      "de": 12,
       "sl": 172,
-      "en": 30,
-      "de": 11
+      "en": 30
     }
   },
   "entries": [
+    {
+      "date": "2026-09-29",
+      "person": "Abraham van den Blocke",
+      "filename": "AbrahamVanDenBlocke-de.png",
+      "image_filename": "AbrahamVanDenBlocke-de.png",
+      "sources": [
+        "https://culture.pl/pl/tworca/abraham-van-den-blocke",
+        "https://www.wikidata.org/wiki/Q73334",
+        "https://www.deutsche-biographie.de/gnd132702355.html",
+        "https://zabytek.pl/en/obiekty/gdansk-fontanna-neptuna",
+        "https://zabytek.pl/en/obiekty/gdansk-dwor-artusa"
+      ],
+      "original_article_url": null,
+      "title": "Abraham van den Blocke — Danzig aus Stein geformt",
+      "summary": "Eine deutsche Bildungsinfografik über Abraham van den Blocke (1572–1628), den Architekten und Bildhauer, dessen Entwürfe und Steinmetzarbeiten das repräsentative Danzig des frühen 17. Jahrhunderts prägten. Die durchgehende Stadtszene verbindet das Goldene Tor, die Fassade des Artushofs und die Steinarbeiten am Neptunbrunnen mit seiner Werkstattpraxis und dem späten niederländischen Manierismus.",
+      "age_suitability_details": {
+        "age_6": "Abraham van den Blocke war Architekt und Bildhauer. Er half, berühmte Tore, Fassaden und einen Brunnen in Danzig aus Stein zu gestalten.",
+        "age_13": "Van den Blocke verband Architektur und Bildhauerei. Seine Entwürfe für das Goldene Tor, den Artushof und Teile des Neptunbrunnens prägen bis heute das historische Stadtbild von Danzig.",
+        "adult": "Sein Werk ist ein wichtiger Ausdruck des späten niederländischen Manierismus im Danzig des frühen 17. Jahrhunderts, in dem Architektur, Steinmetzkunst und städtische Repräsentation zu reich gegliederten öffentlichen Ensembles verschmolzen."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "de",
+      "assignment_id": "8614d74f-adfc-46d5-9689-5b2136d54680",
+      "_kind": "native",
+      "_source_mtime": 1790660249.500247,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "DE",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 5,
+      "search_text": "abraham van den blocke artist umetnik de age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-28",
       "person": "Abraham van den Blocke",
