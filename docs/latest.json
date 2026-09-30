@@ -1,18 +1,16 @@
 {
-  "date": "2026-09-29",
-  "person": "Abraham van den Blocke",
-  "image_filename": "AbrahamVanDenBlocke-de.png",
-  "category": "artist",
-  "category_label": "Umetnik",
-  "language": "de",
-  "language_label": "DE",
+  "date": "2026-09-30",
+  "person": "Adam Lonitzer",
+  "image_filename": "AdamLonitzer-en.png",
+  "category": "scientist",
+  "category_label": "Znanstvenik",
+  "language": "en",
+  "language_label": "EN",
   "original_article_url": null,
   "sources": [
-    "https://culture.pl/pl/tworca/abraham-van-den-blocke",
-    "https://www.wikidata.org/wiki/Q73334",
-    "https://www.deutsche-biographie.de/gnd132702355.html",
-    "https://zabytek.pl/en/obiekty/gdansk-fontanna-neptuna",
-    "https://zabytek.pl/en/obiekty/gdansk-dwor-artusa"
+    "https://www.deutsche-biographie.de/sfz54156.html",
+    "https://www.biodiversitylibrary.org/item/263332",
+    "https://library.si.edu/donate/adopt-a-book/kreuterbuch"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -23,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 214,
+  "total_entries": 215,
   "total_pages": 22,
   "per_page": 10
 }

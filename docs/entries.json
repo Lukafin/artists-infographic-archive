@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 214,
+    "total_entries": 215,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 180
+      "age_6": 181
     },
     "category_counts": {
+      "scientist": 101,
       "artist": 50,
       "sport": 8,
-      "scientist": 100,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
+      "en": 31,
       "de": 12,
-      "sl": 172,
-      "en": 30
+      "sl": 172
     }
   },
   "entries": [
+    {
+      "date": "2026-09-30",
+      "person": "Adam Lonitzer",
+      "filename": "AdamLonitzer-en.png",
+      "image_filename": "AdamLonitzer-en.png",
+      "sources": [
+        "https://www.deutsche-biographie.de/sfz54156.html",
+        "https://www.biodiversitylibrary.org/item/263332",
+        "https://library.si.edu/donate/adopt-a-book/kreuterbuch"
+      ],
+      "original_article_url": null,
+      "title": "Adam Lonitzer — From Nature to the Printed Page",
+      "summary": "An English educational infographic about Adam Lonitzer (1528–1586), the German physician and botanist whose 1557 Kreuterbuch brought together practical knowledge about plants, remedies, distillation, gardening, animals, and minerals. The visual follows a herbal from observed nature through study and printing, while noting that the popular compilation was reprinted for centuries.",
+      "age_suitability_details": {
+        "age_6": "Adam Lonitzer made a famous old book about plants and how people studied nature.",
+        "age_13": "Lonitzer was a sixteenth-century physician and botanist whose illustrated herbal gathered practical knowledge about plants and distillation and spread through many printed editions.",
+        "adult": "Lonitzer's 1557 German Kreuterbuch was a widely circulated compilation rooted in earlier herbals; it is important for the history of practical natural knowledge and print culture rather than as a foundation of modern taxonomy."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "en",
+      "assignment_id": "b6a8fae5-79ba-48e0-a281-531803dbe00b",
+      "_kind": "native",
+      "_source_mtime": 1790744760.6917107,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "adam lonitzer scientist znanstvenik en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-29",
       "person": "Abraham van den Blocke",
