@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 215,
+    "total_entries": 216,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,84 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 181
+      "age_6": 182
     },
     "category_counts": {
-      "scientist": 101,
+      "scientist": 102,
       "artist": 50,
       "sport": 8,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
+      "de": 13,
       "en": 31,
-      "de": 12,
       "sl": 172
     }
   },
   "entries": [
+    {
+      "date": "2026-10-01",
+      "person": "Adam Lonitzer",
+      "filename": "AdamLonitzer-de.png",
+      "image_filename": "AdamLonitzer-de.png",
+      "sources": [
+        "https://www.deutsche-biographie.de/sfz54156.html",
+        "https://alt.frankfurter-personenlexikon.de/node/3111",
+        "https://www.wikidata.org/wiki/Q65192",
+        "https://www.botanic.cam.ac.uk/the-garden/plant-list/lonicera-elisae/"
+      ],
+      "original_article_url": null,
+      "title": "Adam Lonitzer: Von der Pflanze zum gedruckten Wissen",
+      "summary": "Adam Lonitzer (1528–1586) war Arzt, Botaniker und ab 1554 Stadtphysikus in Frankfurt am Main. Sein erstmals 1557 veröffentlichtes Kreuterbuch machte Wissen über Heilpflanzen und Naturkunde über viele Generationen zugänglich. Die Pflanzengattung Lonicera trägt seinen Namen.",
+      "age_suitability_details": {
+        "age_6": "Ein Arzt beobachtete Pflanzen und half dabei, Wissen über Heilkräuter in einem Buch zu sammeln.",
+        "age_13": "Lonitzer verband ärztliche Praxis, Pflanzenkunde und die Druckkunst des 16. Jahrhunderts; sein Kreuterbuch wurde über viele Generationen neu aufgelegt.",
+        "adult": "Die Darstellung ordnet Lonitzers volkstümliches, kompilatorisches Kreuterbuch in die frühneuzeitliche Wissens- und Druckkultur ein und nennt seine Tätigkeit als Frankfurter Stadtphysikus sowie das botanische Eponym Lonicera."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "de",
+      "assignment_id": "d72d891a-fea7-416b-97dd-1ed0a2bb49e2",
+      "_kind": "native",
+      "_source_mtime": 1790831089.2566338,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "DE",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "adam lonitzer scientist znanstvenik de age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-09-30",
       "person": "Adam Lonitzer",
