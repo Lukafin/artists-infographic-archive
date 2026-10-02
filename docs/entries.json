@@ -94,7 +94,16 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "adelheid popp scientist znanstvenik en age_6 ages 6+ 6+ let"
+      "search_text": "adelheid popp scientist znanstvenik en age_6 ages 6+ 6+ let",
+      "podcast": {
+        "url": "audio/9daa44caedf25f065a9aded2df35da08468c578a841af772028c4c3fae23d58d.m4a",
+        "title": "Adelheid Popp",
+        "language": "en",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 343.801,
+        "source": "NotebookLM",
+        "companion_id": "0d6fe9d02591f695a8cfa867fdbcdb2d86ddef3d19ec0681262e7d0fb6ee374d"
+      }
     },
     {
       "date": "2026-10-01",
