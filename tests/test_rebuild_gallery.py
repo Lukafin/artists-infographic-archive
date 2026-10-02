@@ -27,6 +27,8 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
             (public_root / test_entry['filename']).write_bytes(b'not-a-real-image-but-present')
 
         shutil.copy2(ROOT / 'rebuild_gallery.py', temp_dir / 'rebuild_gallery.py')
+        shutil.copy2(ROOT / 'podcasts.py', temp_dir / 'podcasts.py')
+        shutil.copytree(ROOT / 'assets', temp_dir / 'assets')
         (temp_dir / 'gallery_index.py').write_text(
             (ROOT / 'gallery_index.py').read_text(encoding='utf-8'),
             encoding='utf-8',

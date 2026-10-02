@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from collections import Counter
+from podcasts import normalize_podcast
 
 CATEGORY_LABELS = {
     'artist': ('Umetnik', 'artist'),
@@ -120,6 +121,9 @@ def normalize_entry_metadata(entry: dict) -> dict:
             'search_text': ' '.join(part for part in search_parts if part).strip(),
         }
     )
+    podcast = normalize_podcast(normalized.pop('podcast', None), normalized)
+    if podcast:
+        normalized['podcast'] = podcast
     return normalized
 
 

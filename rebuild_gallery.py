@@ -4,11 +4,13 @@ import json
 import math
 import os
 import re
+import shutil
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
 from gallery_index import AGE_SUITABILITY_LEVELS, CATEGORY_LABELS, build_entries_index, normalize_entry_metadata
+from podcasts import attach_companions
 
 
 def configured_path(variable: str, default: str) -> Path:
@@ -31,6 +33,7 @@ LEGACY_IMPORTED = configured_path(
 )
 LATEST_META = PUBLIC_ROOT / 'latest.json'
 ENTRIES_INDEX = PUBLIC_ROOT / 'entries.json'
+PODCAST_STORE = configured_path('ARTISTS_ARCHIVE_PODCAST_STORE', str(BASE / 'podcasts'))
 PER_PAGE = 10
 FAVICON_FILENAME = 'favicon.svg'
 FAVICON_SVG = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="17" fill="#fff8e8"/><path d="M12 18c8-2 15 0 20 5v29c-5-5-12-7-20-5V18Zm40 0c-8-2-15 0-20 5v29c5-5 12-7 20-5V18Z" fill="none" stroke="#12391f" stroke-width="3" stroke-linejoin="round"/><path d="M32 23v29M32 20c0-5 3-9 8-11M32 17c-3-4-6-5-10-5M37 13l4 1-1-4M25 13l-4 2 1-5" fill="none" stroke="#b87408" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'''
@@ -383,6 +386,15 @@ def collection_preview_set(entries):
         'all_a': pick_preview(entries, {'artist', 'scientist', 'sport', 'school_poster', 'science_news'}),
     }
 
+def render_podcast_listen(entry):
+    if not entry.get('podcast'):
+        return ''
+    payload = dict(entry['podcast'], thumbnail=entry['filename'])
+    return ('<button type="button" class="podcast-listen" data-podcast-listen="'
+            + html.escape(json.dumps(payload, ensure_ascii=False), quote=True)
+            + '">Listen</button>')
+
+
 def render_masonry_card(e, featured=False, friendly_sources=False):
     if e.get('category') == 'science_news':
         title_en, title_sl = science_titles(e)
@@ -400,6 +412,7 @@ def render_masonry_card(e, featured=False, friendly_sources=False):
     <h3 data-localized-title="1" data-title-en="{person}" data-title-sl="{title_sl_attr}">{person}</h3>
   </div>
   {render_info_overlay(e, panel_id, friendly_sources=friendly_sources)}
+  {render_podcast_listen(e)}
 </article>'''
 
 
@@ -431,6 +444,7 @@ def render_featured(featured):
       <a class="hero-image-wrap" href="{featured_file}" aria-label="Open latest infographic: {person}">
         <img src="{featured_file}" alt="Infographic: {person}">
       </a>
+      {render_podcast_listen(featured)}
     </article>
   </div>
 </section>'''
@@ -838,10 +852,54 @@ def render_client_script():
   }
 
   addCardBackdrops(masonry);
-  const initialMarkup = masonry.innerHTML;
+  let initialMarkup = masonry.innerHTML;
   const defaultLang = 'en';
   let uiLang = localStorage.getItem('archive-ui-lang') || defaultLang;
   let entries = [];
+  let pageRequest = 0;
+
+  async function browsePage(target, push = true) {
+    const request = ++pageRequest;
+    try {
+      const response = await fetch(target, {cache: 'no-store'});
+      if (!response.ok) throw new Error('Page unavailable');
+      const doc = new DOMParser().parseFromString(await response.text(), 'text/html');
+      const nextGrid = doc.querySelector('#archive .masonry');
+      const nextPagination = doc.querySelector('.pagination');
+      if (!nextGrid || !nextPagination) throw new Error('Not an archive page');
+      if (request !== pageRequest) return;
+      masonry.innerHTML = nextGrid.innerHTML;
+      addCardBackdrops(masonry);
+      initialMarkup = masonry.innerHTML;
+      pagination.innerHTML = nextPagination.innerHTML;
+      for (const selector of ['[data-archive-heading]', '[data-archive-intro]']) {
+        const current = document.querySelector(selector);
+        const next = doc.querySelector(selector);
+        if (current && next) current.dataset.page = next.dataset.page;
+      }
+      // Keep the player outside the replaced archive content. No audio is recreated.
+      searchInput.value = categorySelect.value = languageSelect.value = ageSelect.value = '';
+      masonry.dataset.collection = '';
+      if (push) history.pushState({}, '', target);
+      applyQueryParams();
+      applyFilters();
+      document.getElementById('archive').scrollIntoView({block: 'start'});
+    } catch (_) {
+      // Do not silently navigate away and stop an active episode on a network failure.
+      summary.textContent = uiLang === 'sl' ? 'Stran ni na voljo. Poskusi znova.' : 'Page unavailable. Please try again.';
+    }
+  }
+
+  pagination?.addEventListener('click', event => {
+    const link = event.target.closest('a');
+    if (!link || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    const target = new URL(link.href);
+    if (target.origin !== location.origin) return;
+    event.preventDefault();
+    target.hash = 'archive';
+    browsePage(target.href);
+  });
+  window.addEventListener('popstate', () => browsePage(location.href, false));
 
   const dict = {
     en: {
@@ -1065,6 +1123,7 @@ def render_client_script():
       <a class="thumb" href="${escapeHtml(entry.filename)}" aria-label="Open infographic: ${escapeHtml(person)}"><img src="${escapeHtml(entry.filename)}" alt="Infographic: ${escapeHtml(person)}" loading="lazy"></a>
       <div class="image-title"><h3>${escapeHtml(person)}</h3></div>
       ${renderInfoOverlay(entry)}
+      ${entry.podcast ? `<button type="button" class="podcast-listen" data-podcast-listen="${escapeHtml(JSON.stringify({...entry.podcast, thumbnail: entry.filename}))}">${uiLang === 'sl' ? 'Poslušaj' : 'Listen'}</button>` : ''}
     </article>`;
   }
 
@@ -1327,6 +1386,15 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
 
 
 def clean_html_document(value: str) -> str:
+    value = value.replace('</head>', '<link rel="stylesheet" href="podcast-player.css">\n</head>')
+    value = value.replace('</body>', '''<section id="podcast-player" class="podcast-player" aria-label="Companion podcast" hidden>
+    <img class="podcast-thumbnail" alt="">
+    <div class="podcast-context"><strong class="podcast-title"></strong><small class="podcast-language"></small><small class="podcast-note" role="status"></small></div>
+    <audio controls preload="none" tabindex="0" aria-label="Companion podcast"></audio>
+    <button type="button" class="podcast-dismiss" aria-label="Dismiss and stop audio">×</button>
+  </section>
+  <script src="podcast-player.js"></script>
+</body>''')
     return '\n'.join(line.rstrip() for line in value.splitlines()) + '\n'
 
 
@@ -1348,6 +1416,7 @@ for entry_path in sorted(RUNS_DIR.glob('*/entry.json')):
 entries = [normalize_entry_metadata(entry) for entry in dedupe_entries(entries)]
 entries = validate_entry_provenance(entries)
 entries = validate_entry_assets(entries)
+entries = attach_companions(entries, PODCAST_STORE, PUBLIC_ROOT)
 
 def entry_sort_key(entry):
     published_hint = (
@@ -1374,6 +1443,8 @@ archive_entries = entries[1:] if len(entries) > 1 else []
 # entries in the visible archive grid instead of hiding them behind search.
 
 ENTRIES_INDEX.write_text(json.dumps(entries_index, ensure_ascii=False, indent=2), encoding='utf-8')
+for asset in ('podcast-player.css', 'podcast-player.js'):
+    shutil.copyfile(Path(__file__).resolve().parent / 'assets' / asset, PUBLIC_ROOT / asset)
 (PUBLIC_ROOT / KOFI_ICON_FILENAME).write_text(KOFI_ICON_SVG + '\n', encoding='utf-8')
 (PUBLIC_ROOT / FAVICON_FILENAME).write_text(FAVICON_SVG + '\n', encoding='utf-8')
 
@@ -1396,6 +1467,7 @@ for stale in PUBLIC_ROOT.glob('page-*.html'):
 
 if isinstance(featured, dict):
     LATEST_META.write_text(json.dumps({
+        **({'podcast': featured['podcast']} if featured.get('podcast') else {}),
         'date': featured.get('date'),
         'person': featured.get('person'),
         'image_filename': featured.get('filename'),
