@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 216,
+    "total_entries": 217,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 182
+      "age_6": 183
     },
     "category_counts": {
-      "scientist": 102,
+      "scientist": 103,
       "artist": 50,
       "sport": 8,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
+      "en": 32,
       "de": 13,
-      "en": 31,
       "sl": 172
     }
   },
   "entries": [
+    {
+      "date": "2026-10-02",
+      "person": "Adelheid Popp",
+      "filename": "AdelheidPopp-en.png",
+      "image_filename": "AdelheidPopp-en.png",
+      "sources": [
+        "https://www.parlament.gv.at/verstehen/demokratie-wahlen/frauen-im-parlament/pionierinnen/adelheid-popp",
+        "https://www.wien.gv.at/spezial/pionierinnen/pionierinnen-zwischen-1860-und-1879-geboren/adelheid-popp/",
+        "https://www.wikidata.org/wiki/Q34391"
+      ],
+      "original_article_url": null,
+      "title": "Adelheid Popp: From Factory Floor to Parliament",
+      "summary": "Adelheid Popp (1869–1939) rose from child labor and factory work to become an influential Austrian journalist, organizer, writer, and campaigner for women workers. She co-founded the Arbeiterinnen-Zeitung, advocated education, equality and suffrage, and in 1919 became one of Austria's first women parliamentarians and the first woman to speak in the Austrian parliament.",
+      "age_suitability_details": {
+        "age_6": "Adelheid Popp worked hard from childhood, learned to speak up, and helped women ask for fair treatment and a voice in public life.",
+        "age_13": "Popp moved from factory work into journalism and political organizing, using the Arbeiterinnen-Zeitung to advocate education, voting rights, equality, and protections for women workers.",
+        "adult": "The infographic connects Popp's working-class formation, socialist-feminist journalism, labor organizing, autobiographical writing, and pioneering parliamentary service in the transformation of Austrian women's political participation."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "en",
+      "assignment_id": "59cfff7a-2c64-4440-b9b6-263cdb7cc68b",
+      "_kind": "native",
+      "_source_mtime": 1790917442.1080298,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "adelheid popp scientist znanstvenik en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-10-01",
       "person": "Adam Lonitzer",
