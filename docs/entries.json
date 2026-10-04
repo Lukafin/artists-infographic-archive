@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 218,
+    "total_entries": 219,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,82 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 184
+      "age_6": 185
     },
     "category_counts": {
-      "scientist": 104,
+      "scientist": 105,
       "artist": 50,
       "sport": 8,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
+      "de": 14,
       "sl": 173,
-      "en": 32,
-      "de": 13
+      "en": 32
     }
   },
   "entries": [
+    {
+      "date": "2026-10-04",
+      "person": "Adelheid Popp",
+      "filename": "AdelheidPopp-de.png",
+      "image_filename": "AdelheidPopp-de.png",
+      "sources": [
+        "https://www.parlament.gv.at/verstehen/demokratie-wahlen/frauen-im-parlament/pionierinnen/adelheid-popp",
+        "https://www.wien.gv.at/spezial/pionierinnen/pionierinnen-zwischen-1860-und-1879-geboren/adelheid-popp/"
+      ],
+      "original_article_url": null,
+      "title": "Adelheid Popp: von der Fabrik ins Parlament",
+      "summary": "Adelheid Popp (1869–1939) war eine österreichische Journalistin und Politikerin. 1892 gründete sie die Arbeiterinnen-Zeitung mit. Sie setzte sich für Bildung, Frauenrechte und bessere Arbeitsbedingungen ein. 1919 gehörte sie zu den ersten acht Frauen im österreichischen Parlament und hielt dort als erste Frau eine Rede.",
+      "age_suitability_details": {
+        "age_6": "Adelheid Popp lernte viel und half Frauen, ihre Stimme zu finden und fair behandelt zu werden.",
+        "age_13": "Ihre Arbeit in Zeitung und Parlament zeigt, wie Bildung, Organisation und politische Vertretung Frauenrechte stärken konnten.",
+        "adult": "Ihre Biografie verbindet proletarische Herkunft, sozialdemokratische Frauenbewegung, Journalismus und frühe parlamentarische Vertretung von Frauen in Österreich."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "de",
+      "assignment_id": "ad181a37-c488-43f1-8c44-e21eae30c0d2",
+      "_kind": "native",
+      "_source_mtime": 1791090295.788301,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "DE",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 2,
+      "search_text": "adelheid popp scientist znanstvenik de age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-10-03",
       "person": "Adelheid Popp",

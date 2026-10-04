@@ -1,20 +1,11 @@
 {
-  "podcast": {
-    "url": "audio/b508b040d9f41308460dee5752182699c225f3d5782d7396f73e768bdb8e9b39.m4a",
-    "title": "Adelheid Popp",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 295.688,
-    "source": "NotebookLM",
-    "companion_id": "a8ece97a2ff1c3bbbed816cbb33f67e01830578c5eb0c3741e544b7750f0f2e5"
-  },
-  "date": "2026-10-03",
+  "date": "2026-10-04",
   "person": "Adelheid Popp",
-  "image_filename": "AdelheidPopp-sl.png",
+  "image_filename": "AdelheidPopp-de.png",
   "category": "scientist",
   "category_label": "Znanstvenik",
-  "language": "sl",
-  "language_label": "SL",
+  "language": "de",
+  "language_label": "DE",
   "original_article_url": null,
   "sources": [
     "https://www.parlament.gv.at/verstehen/demokratie-wahlen/frauen-im-parlament/pionierinnen/adelheid-popp",
@@ -29,7 +20,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 218,
+  "total_entries": 219,
   "total_pages": 22,
   "per_page": 10
 }
