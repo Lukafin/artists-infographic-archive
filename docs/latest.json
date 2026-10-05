@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/d570701abc717f3c91985ee3d08e58266677491af558aa5e198f7c5140d235d6.m4a",
+    "title": "Adolf Krischanitz",
+    "language": "en",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 309.29,
+    "source": "NotebookLM",
+    "companion_id": "07a23cf2f145ac15e982199322980d575fb4c928058dcf6456ff81181254c502"
+  },
   "date": "2026-10-05",
   "person": "Adolf Krischanitz",
   "image_filename": "AdolfKrischanitz-en.png",
