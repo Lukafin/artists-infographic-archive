@@ -1,15 +1,16 @@
 {
-  "date": "2026-10-04",
-  "person": "Adelheid Popp",
-  "image_filename": "AdelheidPopp-de.png",
-  "category": "scientist",
-  "category_label": "Znanstvenik",
-  "language": "de",
-  "language_label": "DE",
+  "date": "2026-10-05",
+  "person": "Adolf Krischanitz",
+  "image_filename": "AdolfKrischanitz-en.png",
+  "category": "artist",
+  "category_label": "Umetnik",
+  "language": "en",
+  "language_label": "EN",
   "original_article_url": null,
   "sources": [
-    "https://www.parlament.gv.at/verstehen/demokratie-wahlen/frauen-im-parlament/pionierinnen/adelheid-popp",
-    "https://www.wien.gv.at/spezial/pionierinnen/pionierinnen-zwischen-1860-und-1879-geboren/adelheid-popp/"
+    "https://krischanitz.at/index.php?id=971&inc=page",
+    "https://kunsthallewien.at/en/about/history",
+    "https://krischanitz.at/index.php?id=1527%3A&inc=projectType"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -20,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 219,
+  "total_entries": 220,
   "total_pages": 22,
   "per_page": 10
 }

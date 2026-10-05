@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 219,
+    "total_entries": 220,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 185
+      "age_6": 186
     },
     "category_counts": {
+      "artist": 51,
       "scientist": 105,
-      "artist": 50,
       "sport": 8,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
+      "en": 33,
       "de": 14,
-      "sl": 173,
-      "en": 32
+      "sl": 173
     }
   },
   "entries": [
+    {
+      "date": "2026-10-05",
+      "person": "Adolf Krischanitz",
+      "filename": "AdolfKrischanitz-en.png",
+      "image_filename": "AdolfKrischanitz-en.png",
+      "sources": [
+        "https://krischanitz.at/index.php?id=971&inc=page",
+        "https://kunsthallewien.at/en/about/history",
+        "https://krischanitz.at/index.php?id=1527%3A&inc=projectType"
+      ],
+      "original_article_url": null,
+      "title": "Adolf Krischanitz — Drawing Spaces for Art",
+      "summary": "Austrian architect Adolf Krischanitz connects experimental architecture, temporary exhibition spaces and teaching. His yellow Kunsthalle Wien pavilion opened in 1992; the successor glass pavilion at Karlsplatz was realized in 2001–2002. He co-founded Missing Link in 1970 and taught design and urban renewal in Berlin from 1992 to 2011.",
+      "age_suitability_details": {
+        "age_6": "An architect draws buildings where people can see art. Krischanitz designed a yellow art hall and a glass pavilion.",
+        "age_13": "Explore how temporary art buildings can change a public place, with two Vienna designs and a short career timeline.",
+        "adult": "Situates the Karlsplatz pavilions within Krischanitz’s experimental practice and teaching, distinguishing the 2001 institutional transition from 2001–2002 realization."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "en",
+      "assignment_id": "231bcddb-680f-404b-b897-90c531a1c375",
+      "_kind": "native",
+      "_source_mtime": 1791176879.4036071,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "adolf krischanitz artist umetnik en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-10-04",
       "person": "Adelheid Popp",
