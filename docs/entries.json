@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 220,
+    "total_entries": 221,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 186
+      "age_6": 187
     },
     "category_counts": {
+      "scientist": 106,
       "artist": 51,
-      "scientist": 105,
       "sport": 8,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
+      "sl": 174,
       "en": 33,
-      "de": 14,
-      "sl": 173
+      "de": 14
     }
   },
   "entries": [
+    {
+      "date": "2026-10-06",
+      "person": "Adolf Mayer",
+      "filename": "AdolfMayer-sl.png",
+      "image_filename": "AdolfMayer-sl.png",
+      "sources": [
+        "https://exhibitions.wur.nl/fascinating-viruses/mayer-the-tobacco-mosaic-disease/",
+        "https://research.wur.nl/en/publications/beijerincks-contribution-to-the-virus-concept-an-introduction/",
+        "https://research.wur.nl/en/publications/adolf-mayer-1843-1942-en-zijn-betekenis-voor-de-virologie-als-wet/"
+      ],
+      "original_article_url": null,
+      "title": "Adolf Mayer — po sledi rastlinskega soka",
+      "summary": "Adolf Mayer (1843–1942) je s prenosom soka bolnih rastlin na zdrave pokazal nalezljivost tobačne mozaične bolezni. Raziskovanje v Wageningenu je vodilo do poročila leta 1882 in podrobnejše nemške objave leta 1886. Povzročitelja še ni prepoznal; njegovo delo je bilo pomemben korak k poznejšemu odkritju virusov.",
+      "age_suitability_details": {
+        "age_6": "Adolf Mayer je raziskoval bolne rastline in pokazal, da se bolezen lahko prenese z njihovim sokom.",
+        "age_13": "Prenos tobačne mozaične bolezni je pokazal nalezljivost, čeprav Mayer povzročitelja še ni poznal.",
+        "adult": "Zgodovina rastlinske virologije razlikuje dokaz nalezljivosti v Mayerjevih objavah iz let 1882 in 1886 od poznejšega filtriranja in oblikovanja virusnega koncepta."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "sl",
+      "assignment_id": "99989bb6-9b22-410c-ac76-a67daa9f369b",
+      "_kind": "native",
+      "_source_mtime": 1791263080.7891724,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "adolf mayer scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-10-05",
       "person": "Adolf Krischanitz",
