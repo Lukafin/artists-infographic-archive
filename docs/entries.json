@@ -94,7 +94,16 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "adolphe thiers artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "adolphe thiers artist umetnik sl age_6 ages 6+ 6+ let",
+      "podcast": {
+        "url": "audio/329c57ba6902610bd1b89e3a92717897f5c4ba3c09d4fc747191229170e3afd0.m4a",
+        "title": "Adolphe Thiers",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 405.002,
+        "source": "NotebookLM",
+        "companion_id": "65bc8bf7b729e32e9a4cf20ec478395f5f64d0c136fb16bb6baaa86f24f5af8b"
+      }
     },
     {
       "date": "2026-10-06",
