@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 221,
+    "total_entries": 222,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 187
+      "age_6": 188
     },
     "category_counts": {
+      "artist": 52,
       "scientist": 106,
-      "artist": 51,
       "sport": 8,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
-      "sl": 174,
+      "sl": 175,
       "en": 33,
       "de": 14
     }
   },
   "entries": [
+    {
+      "date": "2026-10-07",
+      "person": "Adolphe Thiers",
+      "filename": "AdolpheThiers-sl.png",
+      "image_filename": "AdolpheThiers-sl.png",
+      "sources": [
+        "https://www.elysee.fr/en/adolphe-thiers",
+        "https://www.academie-francaise.fr/les-immortels/adolphe-thiers",
+        "https://archives.paris.fr/offre-pedagogique/ressources-pedagogiques/la-commune-de-paris/la-fin-de-lexperience-et-le-souvenir-de-la-commune"
+      ],
+      "original_article_url": null,
+      "title": "Adolphe Thiers — od peresa do oblasti",
+      "summary": "Adolphe Thiers (1797–1877) je bil francoski novinar, zgodovinar in državnik. Leta 1823 je začel izdajati zgodovino francoske revolucije, v letih 1871–1873 pa je bil predsednik Francije. Njegova vlada je maja 1871 krvavo zatrla Pariško komuno; biografija zato vključuje tudi nasilje in človeško ceno politične oblasti.",
+      "age_suitability_details": {
+        "age_6": "Thiers je pisal o zgodovini in vodil Francijo. Njegova vlada je s silo končala upor v Parizu; razlaga nasilja potrebuje spremstvo odraslega.",
+        "age_13": "Od novinarstva in zgodovinopisja je prešel v državno oblast. Njegovo predsedovanje in zatrtje Pariške komune kažeta napetost med redom, političnim sporom in človeškimi posledicami.",
+        "adult": "Thiersova pot skozi monarhijo, cesarstvo in konservativno republiko vključuje zgodovinopisje, predsedovanje 1871–1873 ter odgovornost vlade za krvavo zatrtje Pariške komune."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "sl",
+      "assignment_id": "9a03853c-2bea-4b63-a996-a59b55487730",
+      "_kind": "native",
+      "_source_mtime": 1791349584.1175687,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "adolphe thiers artist umetnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-10-06",
       "person": "Adolf Mayer",
