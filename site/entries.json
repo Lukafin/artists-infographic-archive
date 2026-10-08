@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 222,
+    "total_entries": 223,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,83 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 188
+      "age_6": 189
     },
     "category_counts": {
+      "scientist": 107,
       "artist": 52,
-      "scientist": 106,
       "sport": 8,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
-      "sl": 175,
+      "sl": 176,
       "en": 33,
       "de": 14
     }
   },
   "entries": [
+    {
+      "date": "2026-10-08",
+      "person": "Adolf Zsigmondy",
+      "filename": "AdolfZsigmondy-sl.png",
+      "image_filename": "AdolfZsigmondy-sl.png",
+      "sources": [
+        "https://www.deutsche-biographie.de/sfz147906.html",
+        "https://pubmed.ncbi.nlm.nih.gov/2689240/",
+        "https://journal.dentalanthropology.org/index.php/jda/article/download/132/116/416"
+      ],
+      "original_article_url": null,
+      "title": "Adolf Zsigmondy — vsak zob ima svoj naslov",
+      "summary": "Adolf Zsigmondy (1816–1880) je bil zobozdravnik madžarskega rodu, ki je deloval na Dunaju. Leta 1861 je predstavil zapis položajev zob s štirimi deli zobovja in številkami od 1 do 8, štetimi od sredine navzven. Preučeval je stik in obrabo sosednjih zob ter izpopolnjeval zlate zalivke. Njegov zapis je predhodnik poznejših sistemov, ne današnji dvomestni sistem FDI.",
+      "age_suitability_details": {
+        "age_6": "Zsigmondy je bil zobozdravnik. Zobe je označil tako, da je vsak dobil svoje mesto na zemljevidu ust.",
+        "age_13": "Štirje deli zobovja in številke od sredine navzven omogočajo natančen zapis posameznega zoba. Zsigmondy je raziskoval tudi obrabo zob in zlate zalivke.",
+        "adult": "Zsigmondyjev zapis iz leta 1861 je del zgodovine standardizacije zobozdravniških evidenc. Treba ga je razlikovati od poznejšega dvomestnega sistema FDI in dosežkov njegovega sina Otta."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "language": "sl",
+      "assignment_id": "fc7c7cfd-af7f-48f6-b5a5-c5ff2b543958",
+      "_kind": "native",
+      "_source_mtime": 1791435949.7795246,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "adolf zsigmondy scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-10-07",
       "person": "Adolphe Thiers",

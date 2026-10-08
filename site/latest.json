@@ -1,25 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/329c57ba6902610bd1b89e3a92717897f5c4ba3c09d4fc747191229170e3afd0.m4a",
-    "title": "Adolphe Thiers",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 405.002,
-    "source": "NotebookLM",
-    "companion_id": "65bc8bf7b729e32e9a4cf20ec478395f5f64d0c136fb16bb6baaa86f24f5af8b"
-  },
-  "date": "2026-10-07",
-  "person": "Adolphe Thiers",
-  "image_filename": "AdolpheThiers-sl.png",
-  "category": "artist",
-  "category_label": "Umetnik",
+  "date": "2026-10-08",
+  "person": "Adolf Zsigmondy",
+  "image_filename": "AdolfZsigmondy-sl.png",
+  "category": "scientist",
+  "category_label": "Znanstvenik",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.elysee.fr/en/adolphe-thiers",
-    "https://www.academie-francaise.fr/les-immortels/adolphe-thiers",
-    "https://archives.paris.fr/offre-pedagogique/ressources-pedagogiques/la-commune-de-paris/la-fin-de-lexperience-et-le-souvenir-de-la-commune"
+    "https://www.deutsche-biographie.de/sfz147906.html",
+    "https://pubmed.ncbi.nlm.nih.gov/2689240/",
+    "https://journal.dentalanthropology.org/index.php/jda/article/download/132/116/416"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -30,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 222,
+  "total_entries": 223,
   "total_pages": 23,
   "per_page": 10
 }
