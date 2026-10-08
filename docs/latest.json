@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/f6af15572ce84e8b982ec3e23ee720ca88f7ba0ab2a50016dd4d0aecaa11416f.m4a",
+    "title": "Adolf Zsigmondy",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 379.6,
+    "source": "NotebookLM",
+    "companion_id": "1135948ee8dbfe5e8d458e2f63f70290b33d8fcec0eb7eb68a75cccafce18449"
+  },
   "date": "2026-10-08",
   "person": "Adolf Zsigmondy",
   "image_filename": "AdolfZsigmondy-sl.png",
