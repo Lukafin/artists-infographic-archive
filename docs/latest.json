@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/320c9972a9342906a68c4b8b1187400e9265734d79d401ed82924b36d1e1ebbd.m4a",
+    "title": "Adriaen van der Cabel",
+    "language": "en",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 342.239,
+    "source": "NotebookLM",
+    "companion_id": "031d8dc44feabc268dfae49b0fe6284439cc9229461f35e54952cc61202d040b"
+  },
   "date": "2026-10-10",
   "person": "Adriaen van der Cabel",
   "image_filename": "AdriaenVanDerCabel-en.png",
