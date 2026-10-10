@@ -96,11 +96,20 @@ def normalize_entry_metadata(entry: dict) -> dict:
     age_labels_en = [AGE_SUITABILITY_LEVELS[key]['label_en'] for key in age_keys]
     age_labels_sl = [AGE_SUITABILITY_LEVELS[key]['label_sl'] for key in age_keys]
 
+    if category == 'nobel_prize':
+        field = normalized.get('award_field')
+        if field is not None and field not in ('physics', 'chemistry', 'medicine', 'literature', 'peace', 'economics'):
+            raise ValueError('Invalid Nobel award_field; refusing to silently relabel the archive')
+        normalized['award_scope'] = 'single_field' if field else 'legacy_overview'
+
     person = (normalized.get('person') or '').strip()
     search_parts = [
         person.lower(),
         category,
         category_label.lower(),
+        str(normalized.get('award_year') or ''),
+        normalized.get('award_field') or '',
+        normalized.get('award_scope') or '',
         language,
         *age_keys,
         *(label.lower() for label in age_labels_en),

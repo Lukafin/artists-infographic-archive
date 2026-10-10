@@ -1477,6 +1477,7 @@ if isinstance(featured, dict):
         'person': featured.get('person'),
         'image_filename': featured.get('filename'),
         'category': featured.get('category'),
+        **({key: featured.get(key) for key in ('award_year', 'award_field', 'award_scope')} if featured.get('category') == 'nobel_prize' else {}),
         'category_label': featured.get('category_label'),
         'language': featured.get('language'),
         'language_label': featured.get('language_label'),

@@ -70,6 +70,32 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         self.assertIn('value="nobel_prize"', index_html)
         self.assertIn("category_nobel_prize: 'Nobelovi nagrajenci'", index_html)
 
+    def test_nobel_fields_and_legacy_overview_survive_isolated_rebuild(self):
+        entries = [
+            {'date': '2025-12-09', 'person': 'Nobel Prize winners 2025', 'filename': 'NobelOverview.png',
+             'category': 'nobel_prize', 'award_year': 2025, 'language': 'en',
+             'sources': ['https://www.nobelprize.org/all-nobel-prizes-2025/']},
+            *[{'date': '2025-12-10', 'person': f'Nobel Prize {field} 2025', 'filename': f'Nobel{field}.png',
+               'category': 'nobel_prize', 'award_year': 2025, 'award_field': field, 'language': 'en',
+               'sources': [f'https://www.nobelprize.org/prizes/{field}/2025/summary/']}
+              for field in ('physics', 'chemistry')],
+        ]
+        _, html, latest, index = self.run_rebuild(entries)
+        self.assertEqual(len(index['entries']), 3)
+        by_name = {entry['person']: entry for entry in index['entries']}
+        self.assertEqual(by_name['Nobel Prize winners 2025']['award_scope'], 'legacy_overview')
+        self.assertIsNone(by_name['Nobel Prize winners 2025'].get('award_field'))
+        for field in ('physics', 'chemistry'):
+            row = by_name[f'Nobel Prize {field} 2025']
+            self.assertEqual(row['award_field'], field)
+            self.assertEqual(row['award_year'], 2025)
+            self.assertEqual(row['award_scope'], 'single_field')
+            self.assertIn(field, row['search_text'])
+            self.assertIn(f'Nobel Prize {field} 2025', html)
+        self.assertEqual(latest['award_year'], 2025)
+        self.assertEqual(latest['award_scope'], 'single_field')
+        self.assertIn(latest['award_field'], ('physics', 'chemistry'))
+
     def test_science_news_entry_links_to_original_article(self):
         original_article = 'https://science.nasa.gov/example-discovery/'
         public_root, index_html, latest, entries = self.run_rebuild(
