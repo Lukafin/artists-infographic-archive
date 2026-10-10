@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 225,
+    "total_entries": 226,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 191
+      "age_6": 192
     },
     "category_counts": {
-      "nobel_prize": 1,
+      "nobel_prize": 2,
       "artist": 53,
       "scientist": 107,
       "sport": 8,
@@ -31,12 +31,77 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 177,
+      "sl": 178,
       "en": 34,
       "de": 14
     }
   },
   "entries": [
+    {
+      "date": "2026-10-10",
+      "person": "Nobel Prize physics 2026",
+      "filename": "NobelPrizePhysics2026-sl.png",
+      "image_filename": "NobelPrizePhysics2026-sl.png",
+      "sources": [
+        "https://www.nobelprize.org/prizes/physics/2026/summary/",
+        "https://www.nobelprize.org/prizes/physics/2026/press-release/",
+        "https://www.nobelprize.org/prizes/physics/2026/popular-information/",
+        "https://www.nobelprize.org/prizes/physics/2026/halzen/facts/"
+      ],
+      "original_article_url": null,
+      "title": "Nobelova nagrada za fiziko 2026 — Francis Halzen in IceCube",
+      "summary": "Francis Halzen je Nobelovo nagrado za fiziko 2026 prejel za odločilne prispevke k observatoriju IceCube in odkritju visokoenergijskih nevtrinov astrofizikalnega izvora. Infografika pojasnjuje zaznavanje svetlobe v antarktičnem ledu, preboj mednarodne ekipe in pomen nevtrinov za raziskovanje vesolja.",
+      "age_suitability_details": {
+        "age_6": "Drobni delci iz vesolja lahko v ledu sprožijo blisk, ki ga opazijo posebna tipala.",
+        "age_13": "Nevtrini redko trčijo v snov. Svetloba nastalih nabitih delcev pomaga raziskovati oddaljene vesoljske procese; odkritje je starejše od nagrade.",
+        "adult": "Pojasnilo Halzenove vloge pri IceCube, zaznavanja Čerenkovove svetlobe in astrofizikalnih visokoenergijskih nevtrinov ter pomena njihove električne nevtralnosti za astronomijo."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "nobel_prize",
+      "award_year": 2026,
+      "award_field": "physics",
+      "language": "sl",
+      "assignment_id": "ebd98d74-cf63-4a1c-b427-88eb3490c4ca",
+      "_kind": "native",
+      "_source_mtime": 1791652472.663549,
+      "award_scope": "single_field",
+      "category_label": "Nobelovi nagrajenci",
+      "category_class": "nobel-prize",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "nobel prize physics 2026 nobel_prize nobelovi nagrajenci 2026 physics single_field sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-10-10",
       "person": "Nobel Prize winners 2026",
@@ -88,6 +153,7 @@
       "assignment_id": "ee24f5d0-241f-4274-8bd4-b8bfe30a5576",
       "_kind": "native",
       "_source_mtime": 1791648829.0950437,
+      "award_scope": "legacy_overview",
       "category_label": "Nobelovi nagrajenci",
       "category_class": "nobel-prize",
       "language_label": "SL",
@@ -101,7 +167,7 @@
         "6+ let"
       ],
       "source_count": 7,
-      "search_text": "nobel prize winners 2026 nobel_prize nobelovi nagrajenci sl age_6 ages 6+ 6+ let"
+      "search_text": "nobel prize winners 2026 nobel_prize nobelovi nagrajenci 2026 legacy_overview sl age_6 ages 6+ 6+ let"
     },
     {
       "date": "2026-10-10",
