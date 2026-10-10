@@ -54,6 +54,22 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         entries = json.loads((public_root / 'entries.json').read_text(encoding='utf-8'))
         return public_root, index_html, latest, entries
 
+    def test_nobel_prize_category_survives_gallery_rebuild(self):
+        _, index_html, latest, entries = self.run_rebuild({
+            'date': '2025-12-10',
+            'person': 'Nobel Prize winners 2025',
+            'filename': 'NobelPrize2025.png',
+            'category': 'nobel_prize',
+            'language': 'en',
+            'summary': 'Why the laureates won and what their work changed.',
+            'sources': ['https://www.nobelprize.org/all-nobel-prizes-2025/'],
+        })
+        self.assertEqual(latest['category'], 'nobel_prize')
+        self.assertEqual(entries['entries'][0]['category'], 'nobel_prize')
+        self.assertIn('Nobel Prize winners', index_html)
+        self.assertIn('value="nobel_prize"', index_html)
+        self.assertIn("category_nobel_prize: 'Nobelovi nagrajenci'", index_html)
+
     def test_science_news_entry_links_to_original_article(self):
         original_article = 'https://science.nasa.gov/example-discovery/'
         public_root, index_html, latest, entries = self.run_rebuild(
