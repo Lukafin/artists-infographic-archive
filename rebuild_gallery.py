@@ -247,6 +247,7 @@ def category_label_en(category: str) -> str:
         'sport': 'Athlete',
         'school_poster': 'School poster',
         'science_news': 'Science news',
+        'nobel_prize': 'Nobel Prize winners',
     }.get(category, category.title() if category else 'Scientist')
 
 
@@ -647,6 +648,7 @@ def render_science_client_script():
       open_infographic: 'Open infographic:',
       infographic: 'Infographic:',
       category_science_news: 'Science news',
+      category_nobel_prize: 'Nobel Prize winners',
       age_age_6: 'Ages 6+',
       age_age_13: 'Ages 13+',
       age_adult: 'Adults',
@@ -686,6 +688,7 @@ def render_science_client_script():
       open_infographic: 'Odpri infografiko:',
       infographic: 'Infografika:',
       category_science_news: 'Znanstvena novica',
+      category_nobel_prize: 'Nobelovi nagrajenci',
       age_age_6: '6+ let',
       age_age_13: '13+ let',
       age_adult: 'Odrasli',
@@ -944,6 +947,7 @@ def render_client_script():
       category_sport: 'Athlete',
       category_school_poster: 'School poster',
       category_science_news: 'Science news',
+      category_nobel_prize: 'Nobel Prize winners',
       age_age_6: 'Ages 6+',
       age_age_13: 'Ages 13+',
       age_adult: 'Adults',
@@ -1006,6 +1010,7 @@ def render_client_script():
       category_sport: 'Športnik',
       category_school_poster: 'Šolski plakat',
       category_science_news: 'Znanstvena novica',
+      category_nobel_prize: 'Nobelovi nagrajenci',
       age_age_6: '6+ let',
       age_age_13: '13+ let',
       age_adult: 'Odrasli',
