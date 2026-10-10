@@ -1,8 +1,9 @@
 {
   "summary": {
-    "total_entries": 224,
+    "total_entries": 225,
     "categories": [
       "artist",
+      "nobel_prize",
       "school_poster",
       "science_news",
       "scientist",
@@ -19,9 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 190
+      "age_6": 191
     },
     "category_counts": {
+      "nobel_prize": 1,
       "artist": 53,
       "scientist": 107,
       "sport": 8,
@@ -29,12 +31,78 @@
       "science_news": 8
     },
     "language_counts": {
+      "sl": 177,
       "en": 34,
-      "sl": 176,
       "de": 14
     }
   },
   "entries": [
+    {
+      "date": "2026-10-10",
+      "person": "Nobel Prize winners 2026",
+      "filename": "NobelPrizeWinners2026-sl.png",
+      "image_filename": "NobelPrizeWinners2026-sl.png",
+      "sources": [
+        "https://www.nobelprize.org/all-nobel-prizes-2026/",
+        "https://www.nobelprize.org/prizes/medicine/2026/press-release/",
+        "https://www.nobelprize.org/prizes/physics/2026/press-release/",
+        "https://www.nobelprize.org/prizes/chemistry/2026/press-release/",
+        "https://www.nobelprize.org/prizes/literature/2026/press-release/",
+        "https://www.nobelprize.org/prizes/peace/2026/press-release/",
+        "https://www.nobelprize.org/prizes/lists/all-prizes-in-economic-sciences/"
+      ],
+      "original_article_url": null,
+      "title": "Nobelove nagrade 2026 — zakaj so jih prejeli?",
+      "summary": "Pregled Nobelovih nagrad 2026: zakaj so nagrajenci prejeli nagrado, kateri preboj oziroma prispevek so naredili in zakaj je pomemben. Stanje 10. 10. 2026; ekonomske vede še niso razglašene.",
+      "age_suitability_details": {
+        "age_6": "Nagrade počastijo ljudi, ki nam pomagajo razumeti svet, pisati zgodbe ter varovati mir in pravičnost.",
+        "age_13": "Nevtrini razkrivajo vesolje, svetloba pomaga preučevati živčne celice, zrcalne molekule pa pojasnjujejo kemijo življenja. Literatura in mednarodno pravo prispevata k družbi.",
+        "adult": "Pregled motivacij nagrad, pomena optogenetike, astrofizikalnih nevtrinov in asimetrične sinteze ter literarnih in pravnih prispevkov; jasno razlikuje leto nagrade od časa odkritja in potrjene rezultate od še nerazglašene nagrade."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "nobel_prize",
+      "award_year": 2026,
+      "language": "sl",
+      "assignment_id": "ee24f5d0-241f-4274-8bd4-b8bfe30a5576",
+      "_kind": "native",
+      "_source_mtime": 1791648829.0950437,
+      "category_label": "Nobelovi nagrajenci",
+      "category_class": "nobel-prize",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 7,
+      "search_text": "nobel prize winners 2026 nobel_prize nobelovi nagrajenci sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-10-10",
       "person": "Adriaen van der Cabel",

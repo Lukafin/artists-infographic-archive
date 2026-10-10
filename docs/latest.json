@@ -1,24 +1,20 @@
 {
-  "podcast": {
-    "url": "audio/320c9972a9342906a68c4b8b1187400e9265734d79d401ed82924b36d1e1ebbd.m4a",
-    "title": "Adriaen van der Cabel",
-    "language": "en",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 342.239,
-    "source": "NotebookLM",
-    "companion_id": "031d8dc44feabc268dfae49b0fe6284439cc9229461f35e54952cc61202d040b"
-  },
   "date": "2026-10-10",
-  "person": "Adriaen van der Cabel",
-  "image_filename": "AdriaenVanDerCabel-en.png",
-  "category": "artist",
-  "category_label": "Umetnik",
-  "language": "en",
-  "language_label": "EN",
+  "person": "Nobel Prize winners 2026",
+  "image_filename": "NobelPrizeWinners2026-sl.png",
+  "category": "nobel_prize",
+  "category_label": "Nobelovi nagrajenci",
+  "language": "sl",
+  "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.rijksmuseum.nl/en/collection/object/Italianate-Landscape--85f5ef6793909720e8e6bf35b72aef88",
-    "https://sammlung.staedelmuseum.de/en/person/cabel-adriaen-van-der"
+    "https://www.nobelprize.org/all-nobel-prizes-2026/",
+    "https://www.nobelprize.org/prizes/medicine/2026/press-release/",
+    "https://www.nobelprize.org/prizes/physics/2026/press-release/",
+    "https://www.nobelprize.org/prizes/chemistry/2026/press-release/",
+    "https://www.nobelprize.org/prizes/literature/2026/press-release/",
+    "https://www.nobelprize.org/prizes/peace/2026/press-release/",
+    "https://www.nobelprize.org/prizes/lists/all-prizes-in-economic-sciences/"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -29,7 +25,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 224,
+  "total_entries": 225,
   "total_pages": 23,
   "per_page": 10
 }
