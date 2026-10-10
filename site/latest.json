@@ -1,25 +1,15 @@
 {
-  "podcast": {
-    "url": "audio/f6af15572ce84e8b982ec3e23ee720ca88f7ba0ab2a50016dd4d0aecaa11416f.m4a",
-    "title": "Adolf Zsigmondy",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 379.6,
-    "source": "NotebookLM",
-    "companion_id": "1135948ee8dbfe5e8d458e2f63f70290b33d8fcec0eb7eb68a75cccafce18449"
-  },
-  "date": "2026-10-08",
-  "person": "Adolf Zsigmondy",
-  "image_filename": "AdolfZsigmondy-sl.png",
-  "category": "scientist",
-  "category_label": "Znanstvenik",
-  "language": "sl",
-  "language_label": "SL",
+  "date": "2026-10-10",
+  "person": "Adriaen van der Cabel",
+  "image_filename": "AdriaenVanDerCabel-en.png",
+  "category": "artist",
+  "category_label": "Umetnik",
+  "language": "en",
+  "language_label": "EN",
   "original_article_url": null,
   "sources": [
-    "https://www.deutsche-biographie.de/sfz147906.html",
-    "https://pubmed.ncbi.nlm.nih.gov/2689240/",
-    "https://journal.dentalanthropology.org/index.php/jda/article/download/132/116/416"
+    "https://www.rijksmuseum.nl/en/collection/object/Italianate-Landscape--85f5ef6793909720e8e6bf35b72aef88",
+    "https://sammlung.staedelmuseum.de/en/person/cabel-adriaen-van-der"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -30,7 +20,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 223,
+  "total_entries": 224,
   "total_pages": 23,
   "per_page": 10
 }

@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 223,
+    "total_entries": 224,
     "categories": [
       "artist",
       "school_poster",
@@ -19,22 +19,82 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 189
+      "age_6": 190
     },
     "category_counts": {
+      "artist": 53,
       "scientist": 107,
-      "artist": 52,
       "sport": 8,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
+      "en": 34,
       "sl": 176,
-      "en": 33,
       "de": 14
     }
   },
   "entries": [
+    {
+      "date": "2026-10-10",
+      "person": "Adriaen van der Cabel",
+      "filename": "AdriaenVanDerCabel-en.png",
+      "image_filename": "AdriaenVanDerCabel-en.png",
+      "sources": [
+        "https://www.rijksmuseum.nl/en/collection/object/Italianate-Landscape--85f5ef6793909720e8e6bf35b72aef88",
+        "https://sammlung.staedelmuseum.de/en/person/cabel-adriaen-van-der"
+      ],
+      "original_article_url": null,
+      "title": "Adriaen van der Cabel — Imagining a Landscape",
+      "summary": "Adriaen van der Cabel, also known as van der Kabel (c. 1630/31–1705), was a Dutch landscape painter, draftsman and etcher. His 1654 Italianate Landscape was made in The Hague before his journey south, using other artists’ images to imagine places he had not yet seen. He later worked in Rome and settled in Lyon. The infographic connects drawing, painting and etching through one imagined river landscape.",
+      "age_suitability_details": {
+        "age_6": "An artist can draw places from imagination as well as from what they see. Cabel made pictures with pens, brushes and prints.",
+        "age_13": "Explore how a Dutch artist imagined Italy from other artists’ images before travelling there, and worked across drawing, painting and etching.",
+        "adult": "Situates the 1654 drawing within Dutch Italianate landscape practice, distinguishes visual borrowing from first-hand observation, and follows Cabel’s later work in Rome and settlement in Lyon while retaining uncertain birth dating."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "language": "en",
+      "assignment_id": "b1d59ecf-02b0-45e2-a7e7-832062aa3271",
+      "_kind": "native",
+      "_source_mtime": 1791608806.154879,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "EN",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 2,
+      "search_text": "adriaen van der cabel artist umetnik en age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-10-08",
       "person": "Adolf Zsigmondy",
