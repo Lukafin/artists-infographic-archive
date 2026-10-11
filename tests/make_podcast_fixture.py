@@ -1,6 +1,7 @@
 """Build a LOCAL-ONLY browser fixture with generated sine-wave AAC, never publish it."""
 import argparse
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -23,8 +24,14 @@ def main():
     public.mkdir()
     snapshot = json.loads((ROOT / 'docs/entries.json').read_text())
     for name in ['index.html', 'page-2.html', 'science-news.html', 'podcast-player.js',
-                 'podcast-player.css', 'entries.json', 'latest.json', 'favicon.svg', 'kofi_stroke_cup.svg']:
+                 'podcast-player.css', 'companion-player.js', 'companion-player.css',
+                 'entries.json', 'latest.json', 'favicon.svg', 'kofi_stroke_cup.svg']:
         shutil.copyfile(ROOT / 'docs' / name, public / name)
+        if name.endswith('.html'):
+            # The production hero may already have real approved audio. Keep all
+            # fixture controls tied to the disposable JSON/store, not missing real assets.
+            page = public / name
+            page.write_text(re.sub(r'<button\b[^>]*data-podcast-listen="(?!\$)[^"]*"[^>]*>.*?</button>', '', page.read_text()))
     for entry in snapshot['entries']:
         image = public / entry['filename']
         if not image.exists():

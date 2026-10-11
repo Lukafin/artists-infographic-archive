@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from collections import Counter
 from podcasts import normalize_podcast
+from companions import normalize_media
 
 CATEGORY_LABELS = {
     'artist': ('Umetnik', 'artist'),
@@ -134,6 +135,11 @@ def normalize_entry_metadata(entry: dict) -> dict:
     podcast = normalize_podcast(normalized.pop('podcast', None), normalized)
     if podcast:
         normalized['podcast'] = podcast
+    companions = normalized.pop('companions', None)
+    if isinstance(companions, list):
+        approved = [media for item in companions if (media := normalize_media(item, normalized))]
+        if approved:
+            normalized['companions'] = approved
     return normalized
 
 
