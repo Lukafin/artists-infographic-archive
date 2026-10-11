@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 226,
+    "total_entries": 227,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,23 +20,87 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 192
+      "age_6": 193
     },
     "category_counts": {
+      "sport": 9,
       "nobel_prize": 2,
       "artist": 53,
       "scientist": 107,
-      "sport": 8,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
-      "sl": 178,
+      "sl": 179,
       "en": 34,
       "de": 14
     }
   },
   "entries": [
+    {
+      "date": "2026-10-11",
+      "person": "Agustín Sauto Arana",
+      "filename": "AgustinSautoArana-sl.png",
+      "image_filename": "AgustinSautoArana-sl.png",
+      "sources": [
+        "https://www.athletic-club.eus/jugadores/agustin-sauto-arana/",
+        "https://www.athletic-club.eus/noticias/2020/03/17/bata-el-hombre-del-gol-por-partido/",
+        "https://www.athletic-club.eus/noticias/2021/02/08/athletic-12-1-barcelona-90-anos-de-la-mayor-goleada-de-laliga/",
+        "https://www.athletic-club.eus/en/news/2020/04/06/regaining-laliga-title-in-1931/"
+      ],
+      "original_article_url": null,
+      "title": "Bata — napadalec z golom na tekmo",
+      "summary": "Agustín Sauto Arana, znan kot Bata (1908–1986), je bil nogometni napadalec Athletic Cluba. Med letoma 1929 in 1936 je za klub na 208 uradnih tekmah dosegel 208 golov: v povprečju en gol na tekmo, ne nujno na vsaki tekmi. V ligi 1930/31 je v 17 nastopih dosegel 27 golov. Ob zmagi proti Barceloni z 12 : 1 dne 8. 2. 1931 jih je dosegel sedem. Z Athleticom je osvojil štiri ligaške in štiri pokalne naslove.",
+      "age_suitability_details": {
+        "age_6": "Bata je igral nogomet in pomagal ekipi dosegati gole. Skupno je imel za Athletic toliko golov kot nastopov.",
+        "age_13": "Primerjaj klubsko kariero, eno ligaško sezono in eno tekmo ter razlikuj povprečje od zadetka na prav vsaki tekmi.",
+        "adult": "Zgodovinski profil napadalca Athletica z razmejitvijo uradnih klubskih statistik, ligaške sezone 1930/31 ter sedmih zadetkov proti Barceloni 8. 2. 1931."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "sport",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "33927da0-2336-4dc1-a7c2-04496fce6a12",
+      "_kind": "native",
+      "_source_mtime": 1791695225.3575988,
+      "category_label": "Športnik",
+      "category_class": "sport",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "agustín sauto arana sport športnik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-10-10",
       "person": "Nobel Prize physics 2026",
