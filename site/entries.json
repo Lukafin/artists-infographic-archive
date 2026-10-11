@@ -99,7 +99,16 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "agustín sauto arana sport športnik sl age_6 ages 6+ 6+ let"
+      "search_text": "agustín sauto arana sport športnik sl age_6 ages 6+ 6+ let",
+      "podcast": {
+        "url": "audio/90f3f12c01be12d50a8e88553b0c6353032e0a0428bf50d0c72cf7330b825bb5.m4a",
+        "title": "Agustín Sauto Arana",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 308.895,
+        "source": "NotebookLM",
+        "companion_id": "f6aa14ea5dad18b29e57f4637350564cdbd37b82b783b4386f38e02b7beba050"
+      }
     },
     {
       "date": "2026-10-10",
