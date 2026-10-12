@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class RebuildGalleryOriginalArticleTests(unittest.TestCase):
-    def run_rebuild(self, entry) -> tuple[Path, str, dict, dict]:
+    def run_rebuild(self, entry, companion=None) -> tuple[Path, str, dict, dict]:
         temp_dir = Path(tempfile.mkdtemp(prefix='artists-gallery-test-'))
         self.addCleanup(shutil.rmtree, temp_dir, ignore_errors=True)
         workspace = temp_dir / 'workspace'
@@ -25,9 +25,14 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
             runs_dir.mkdir(parents=True)
             (runs_dir / 'entry.json').write_text(json.dumps(test_entry), encoding='utf-8')
             (public_root / test_entry['filename']).write_bytes(b'not-a-real-image-but-present')
+        if companion:
+            from companions import import_media
+            (public_root / 'entries.json').write_text(json.dumps({'entries': test_entries}))
+            import_media(companion, public_root, workspace / 'reviewed-media', approve=True)
 
         shutil.copy2(ROOT / 'rebuild_gallery.py', temp_dir / 'rebuild_gallery.py')
         shutil.copy2(ROOT / 'podcasts.py', temp_dir / 'podcasts.py')
+        shutil.copy2(ROOT / 'companions.py', temp_dir / 'companions.py')
         shutil.copytree(ROOT / 'assets', temp_dir / 'assets')
         (temp_dir / 'gallery_index.py').write_text(
             (ROOT / 'gallery_index.py').read_text(encoding='utf-8'),
@@ -69,6 +74,24 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         self.assertIn('Nobel Prize winners', index_html)
         self.assertIn('value="nobel_prize"', index_html)
         self.assertIn("category_nobel_prize: 'Nobelovi nagrajenci'", index_html)
+
+    def test_reviewed_media_survives_canonical_rebuild_and_is_escaped(self):
+        entry = dict(date='2026-10-11', filename='Reviewed.png', language='en', assignment_id='image-assignment',
+                     person='Exact Subject', sources=['https://science.nasa.gov/'])
+        manifest = dict(schema='artists-reviewed-media-v1', identity={k:entry[k] for k in ('date','filename','language','assignment_id','person')},
+            media=dict(title='</script><script>unsafe</script>', language='en', url='https://example.org/reviewed.webm',
+                       artifact_kind='video', presentation_mode='native_video', mime_type='video/webm'),
+            media_assignment_id='media-assignment', archive_entry_id='reviewed', topic_id='topic', topic_revision=1,
+            metadata_sha256='a'*64, media_approved=True, image_approved=True, association_approved=True,
+            topic_published=True, embed_approved=True)
+        public, page, latest, index = self.run_rebuild(entry, companion=manifest)
+        self.assertEqual(index['entries'][0]['companions'][0]['presentation_mode'], 'native_video')
+        self.assertIn('data-companion=', page)
+        self.assertIn('&lt;/script&gt;', page)
+        self.assertNotIn('<script>unsafe', page)
+        self.assertNotIn('metadata_sha256', json.dumps(index))
+        self.assertEqual(latest['image_filename'], entry['filename'])
+        self.assertTrue((public/'companion-player.js').exists())
 
     def test_nobel_fields_and_legacy_overview_survive_isolated_rebuild(self):
         entries = [

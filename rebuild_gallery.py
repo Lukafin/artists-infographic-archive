@@ -11,6 +11,7 @@ from urllib.parse import urlparse
 
 from gallery_index import AGE_SUITABILITY_LEVELS, CATEGORY_LABELS, build_entries_index, normalize_entry_metadata
 from podcasts import attach_companions
+from companions import attach_media
 
 
 def configured_path(variable: str, default: str) -> Path:
@@ -34,6 +35,7 @@ LEGACY_IMPORTED = configured_path(
 LATEST_META = PUBLIC_ROOT / 'latest.json'
 ENTRIES_INDEX = PUBLIC_ROOT / 'entries.json'
 PODCAST_STORE = configured_path('ARTISTS_ARCHIVE_PODCAST_STORE', str(BASE / 'podcasts'))
+MEDIA_STORE = configured_path('ARTISTS_ARCHIVE_MEDIA_STORE', str(BASE / 'reviewed-media'))
 PER_PAGE = 10
 FAVICON_FILENAME = 'favicon.svg'
 FAVICON_SVG = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="17" fill="#fff8e8"/><path d="M12 18c8-2 15 0 20 5v29c-5-5-12-7-20-5V18Zm40 0c-8-2-15 0-20 5v29c5-5 12-7 20-5V18Z" fill="none" stroke="#12391f" stroke-width="3" stroke-linejoin="round"/><path d="M32 23v29M32 20c0-5 3-9 8-11M32 17c-3-4-6-5-10-5M37 13l4 1-1-4M25 13l-4 2 1-5" fill="none" stroke="#b87408" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'''
@@ -387,6 +389,14 @@ def collection_preview_set(entries):
         'all_a': pick_preview(entries, {'artist', 'scientist', 'sport', 'school_poster', 'science_news'}),
     }
 
+def render_media_actions(entry):
+    buttons = []
+    for media in entry.get('companions', []):
+        label = 'Watch' if media['artifact_kind'] == 'video' else 'Explore'
+        buttons.append('<button type="button" class="companion-action" data-companion="' + html.escape(json.dumps(media, ensure_ascii=False), quote=True) + '">' + label + '</button>')
+    return '<div class="companion-actions">' + ''.join(buttons) + '</div>' if buttons else ''
+
+
 def render_podcast_listen(entry):
     if not entry.get('podcast'):
         return ''
@@ -414,6 +424,7 @@ def render_masonry_card(e, featured=False, friendly_sources=False):
   </div>
   {render_info_overlay(e, panel_id, friendly_sources=friendly_sources)}
   {render_podcast_listen(e)}
+  {render_media_actions(e)}
 </article>'''
 
 
@@ -446,6 +457,7 @@ def render_featured(featured):
         <img src="{featured_file}" alt="Infographic: {person}">
       </a>
       {render_podcast_listen(featured)}
+      {render_media_actions(featured)}
     </article>
   </div>
 </section>'''
@@ -1129,6 +1141,7 @@ def render_client_script():
       <div class="image-title"><h3>${escapeHtml(person)}</h3></div>
       ${renderInfoOverlay(entry)}
       ${entry.podcast ? `<button type="button" class="podcast-listen" data-podcast-listen="${escapeHtml(JSON.stringify({...entry.podcast, thumbnail: entry.filename}))}">${uiLang === 'sl' ? 'Poslušaj' : 'Listen'}</button>` : ''}
+      ${entry.companions?.length ? `<div class="companion-actions">${entry.companions.map(media => `<button type="button" class="companion-action" data-companion="${escapeHtml(JSON.stringify(media))}">${media.artifact_kind === 'video' ? 'Watch' : 'Explore'}</button>`).join('')}</div>` : ''}
     </article>`;
   }
 
@@ -1391,6 +1404,14 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
 
 
 def clean_html_document(value: str) -> str:
+    value = value.replace('</head>', '<link rel="stylesheet" href="companion-player.css">\n</head>')
+    value = value.replace('</body>', '''<section id="companion-player" class="companion-player" role="region" aria-label="Reviewed explanation" hidden>
+    <header><h2></h2><button type="button" class="companion-fullscreen">Fullscreen</button><button type="button" class="companion-dismiss" aria-label="Close and stop">×</button></header>
+    <div class="companion-stage"></div><p role="status"></p>
+    <a class="companion-fallback" target="_blank" rel="noopener noreferrer">Open external link</a>
+  </section>
+  <script src="companion-player.js"></script>
+</body>''')
     value = value.replace('</head>', '<link rel="stylesheet" href="podcast-player.css">\n</head>')
     value = value.replace('</body>', '''<section id="podcast-player" class="podcast-player" aria-label="Companion podcast" hidden>
     <img class="podcast-thumbnail" alt="">
@@ -1422,6 +1443,7 @@ entries = [normalize_entry_metadata(entry) for entry in dedupe_entries(entries)]
 entries = validate_entry_provenance(entries)
 entries = validate_entry_assets(entries)
 entries = attach_companions(entries, PODCAST_STORE, PUBLIC_ROOT)
+entries = attach_media(entries, MEDIA_STORE)
 
 def entry_sort_key(entry):
     published_hint = (
@@ -1448,7 +1470,7 @@ archive_entries = entries[1:] if len(entries) > 1 else []
 # entries in the visible archive grid instead of hiding them behind search.
 
 ENTRIES_INDEX.write_text(json.dumps(entries_index, ensure_ascii=False, indent=2), encoding='utf-8')
-for asset in ('podcast-player.css', 'podcast-player.js'):
+for asset in ('podcast-player.css', 'podcast-player.js', 'companion-player.css', 'companion-player.js'):
     shutil.copyfile(Path(__file__).resolve().parent / 'assets' / asset, PUBLIC_ROOT / asset)
 (PUBLIC_ROOT / KOFI_ICON_FILENAME).write_text(KOFI_ICON_SVG + '\n', encoding='utf-8')
 (PUBLIC_ROOT / FAVICON_FILENAME).write_text(FAVICON_SVG + '\n', encoding='utf-8')

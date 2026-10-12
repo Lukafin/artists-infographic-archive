@@ -43,6 +43,7 @@
     @media (max-width:1200px) { .masonry { grid-template-columns:repeat(2,minmax(0,1fr)); } } @media (max-width:1000px) { .collection-grid { grid-template-columns:1fr; } .collection-card.featured-collection { min-height:480px; } .poster-stage { position:relative; left:auto; bottom:auto; transform:none; width:100%; margin-top:32px; } .hero-desk { min-height:auto; padding-bottom:30px; } .hero-desk::after { display:none; } .editorial-science-simple { grid-template-columns:1fr; } .science-hero-art { min-height:520px; } } @media (max-width:700px) { .nav { position:static; flex-direction:column; align-items:stretch; } .brand { align-items:flex-start; } .brand h1,.brand p { overflow-wrap:anywhere; } .nav-right { justify-content:flex-start; } .support-note { max-width:none; text-align:left; } .archive-top,.footer,.collections-heading-row { flex-direction:column; align-items:flex-start; } .pagination { justify-content:flex-start; } .intro { font-size:17px; } .hero-desk { padding:40px 10px 24px; } .hero-copy { width:100%; min-width:0; } .hero-copy h2 { width:100%; max-width:100%; font-size:clamp(38px,11.5vw,46px); line-height:.98; letter-spacing:-.06em; overflow-wrap:normal; } .ornament span { width:72px; } .wrap { width:100%; max-width:100%; overflow:hidden; padding:18px 14px 44px; } .filter-bar { grid-template-columns:1fr; } .masonry { grid-template-columns:1fr; } .hero-chips { width:100%; } .hero-chip { width:100%; min-width:0; margin-top:8px; } .poster-stage { height:310px; } .hero-card { width:78%; height:220px; } .hero-poster { width:210px; height:160px; } .poster-2 { display:none; } .collection-card { padding:24px; min-height:330px; } .mini-poster { width:155px; height:140px; } .science-preview-image,.all-preview-image { width:52%; height:54%; } .science-hero-art { min-height:390px; } .science-hero-copy { padding:28px; } .science-hero-caption { left:18px; right:18px; bottom:16px; align-items:flex-start; flex-direction:column; gap:4px; } .science-hero-caption strong { max-width:100%; text-align:left; } .topic-pills { grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; } .topic-pills > span { min-width:0; min-height:52px; padding:9px 10px; border-radius:18px; font-size:14px; line-height:1.2; text-align:center; overflow-wrap:anywhere; } .info-popover[open] { left:12px; right:12px; bottom:12px; max-width:none; } .info-popover[open] .info-panel { width:min(276px,100%); max-width:100%; max-height:min(104px,calc(100% - 54px)); } .info-panel .tag,.info-panel .sources a { padding:5px 8px; font-size:11px; } }
   </style>
 <link rel="stylesheet" href="podcast-player.css">
+<link rel="stylesheet" href="companion-player.css">
 </head>
 <body>
   <main class="wrap">
@@ -440,5 +441,11 @@
     <button type="button" class="podcast-dismiss" aria-label="Dismiss and stop audio">×</button>
   </section>
   <script src="podcast-player.js"></script>
+<section id="companion-player" class="companion-player" role="region" aria-label="Reviewed explanation" hidden>
+    <header><h2></h2><button type="button" class="companion-fullscreen">Fullscreen</button><button type="button" class="companion-dismiss" aria-label="Close and stop">×</button></header>
+    <div class="companion-stage"></div><p role="status"></p>
+    <a class="companion-fallback" target="_blank" rel="noopener noreferrer">Open external link</a>
+  </section>
+  <script src="companion-player.js"></script>
 </body>
 </html>
