@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 227,
+    "total_entries": 228,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,23 +20,86 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 193
+      "age_6": 194
     },
     "category_counts": {
+      "scientist": 108,
       "sport": 9,
       "nobel_prize": 2,
       "artist": 53,
-      "scientist": 107,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
-      "sl": 179,
+      "sl": 180,
       "en": 34,
       "de": 14
     }
   },
   "entries": [
+    {
+      "date": "2026-10-12",
+      "person": "Alan Ashton",
+      "filename": "AlanAshton-sl.png",
+      "image_filename": "AlanAshton-sl.png",
+      "sources": [
+        "https://www.lib.utah.edu/info/gould-lecture/ashton.php",
+        "https://magazine.byu.edu/article/mary-lou-supercomputer/",
+        "https://computerhistory.org/press-releases/ms-source-code/"
+      ],
+      "original_article_url": null,
+      "title": "Alan Ashton — računalništvo za pisanje",
+      "summary": "Alan Ashton je računalniški znanstvenik in soustanovitelj podjetja WordPerfect. Leta 1970 je doktoriral iz računalništva, leta 1972 pa začel poučevati na univerzi Brigham Young. Z Bruceom Bastianom je razvijal WordPerfect, pomemben urejevalnik besedila v obdobju DOS. Infografika pojasni razliko med popravljenim ročnim osnutkom, urejanjem in shranjevanjem na računalniku ter tiskanjem; ne trdi, da je Ashton izumil urejanje besedil.",
+      "age_suitability_details": {
+        "age_6": "Alan Ashton je z Bruceom Bastianom razvijal program za pisanje. Besedilo na računalniku lahko popravimo in shranimo, preden ga natisnemo.",
+        "age_13": "Njegova pot od doktorata in poučevanja do WordPerfecta pokaže, kako programska oprema olajša urejanje dokumentov in kako so takšne rešitve rezultat sodelovanja.",
+        "adult": "Institucionalna zgodovina povezuje Ashtonovo akademsko delo s skupnim razvojem WordPerfecta in njegovo vlogo v obdobju DOS, brez pripisovanja izuma celotnega urejanja besedil ali uporabe sporne letnice ustanovitve SSI."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "60aae577-1d51-48b7-b82a-3c99058117b9",
+      "_kind": "native",
+      "_source_mtime": 1791781709.781272,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "alan ashton scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-10-11",
       "person": "Agustín Sauto Arana",

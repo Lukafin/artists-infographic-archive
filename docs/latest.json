@@ -1,26 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/90f3f12c01be12d50a8e88553b0c6353032e0a0428bf50d0c72cf7330b825bb5.m4a",
-    "title": "Agustín Sauto Arana",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 308.895,
-    "source": "NotebookLM",
-    "companion_id": "f6aa14ea5dad18b29e57f4637350564cdbd37b82b783b4386f38e02b7beba050"
-  },
-  "date": "2026-10-11",
-  "person": "Agustín Sauto Arana",
-  "image_filename": "AgustinSautoArana-sl.png",
-  "category": "sport",
-  "category_label": "Športnik",
+  "date": "2026-10-12",
+  "person": "Alan Ashton",
+  "image_filename": "AlanAshton-sl.png",
+  "category": "scientist",
+  "category_label": "Znanstvenik",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.athletic-club.eus/jugadores/agustin-sauto-arana/",
-    "https://www.athletic-club.eus/noticias/2020/03/17/bata-el-hombre-del-gol-por-partido/",
-    "https://www.athletic-club.eus/noticias/2021/02/08/athletic-12-1-barcelona-90-anos-de-la-mayor-goleada-de-laliga/",
-    "https://www.athletic-club.eus/en/news/2020/04/06/regaining-laliga-title-in-1931/"
+    "https://www.lib.utah.edu/info/gould-lecture/ashton.php",
+    "https://magazine.byu.edu/article/mary-lou-supercomputer/",
+    "https://computerhistory.org/press-releases/ms-source-code/"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -31,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 227,
+  "total_entries": 228,
   "total_pages": 23,
   "per_page": 10
 }
