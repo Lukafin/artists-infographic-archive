@@ -2771,7 +2771,17 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "sila school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "sila school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "companions": [
+        {
+          "url": "https://lukafin.github.io/artists-infographic-archive/interactive/sila/v1/index.html",
+          "artifact_kind": "interactive_site",
+          "presentation_mode": "sandboxed_iframe",
+          "title": "Sila — interaktivni laboratorij Anatomy",
+          "language": "sl",
+          "companion_id": "045d3040a2b6e36275ebd07e5d0a2af07b4f1a0efe25f22ccd81298d3d2d4c3d"
+        }
+      ]
     },
     {
       "date": "2026-08-15",
