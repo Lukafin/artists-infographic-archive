@@ -98,7 +98,16 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "alan ashton scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "alan ashton scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "podcast": {
+        "url": "audio/e3d8e29de59b3cc77b82da2e7a9dec08bb0ab8861cebb575d48b0b52fb54becb.m4a",
+        "title": "Alan Ashton",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 264.011,
+        "source": "NotebookLM",
+        "companion_id": "b8efdbb998a7f4ee7fd6a8a77b6707065eb82b0e2a43e37ba0b5997fcb29d52d"
+      }
     },
     {
       "date": "2026-10-11",
