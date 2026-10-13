@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/0f45cb23a9feb1432c4773b14c2fcf09acc1ba37f59115ac6f12980e1646c698.m4a",
+    "title": "Albert Camus",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 363.207,
+    "source": "NotebookLM",
+    "companion_id": "99733bffc652f7e263e496320bdbc61b0c4e81c789ae1b745001542df1aa2b08"
+  },
   "date": "2026-10-13",
   "person": "Albert Camus",
   "image_filename": "AlbertCamus-sl.png",
