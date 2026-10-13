@@ -3,13 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Science news explained – Visual Learning Archive</title>
-  <meta name="description" content="Source-backed science news explainers for young readers from the Visual Learning Archive.">
+  <title>Science news explained – Learning Archive</title>
+  <meta name="description" content="Source-backed science news explainers for young readers from the Learning Archive.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..900&family=Fraunces:opsz,wght,SOFT,WONK@9..144,600..900,50..100,1&display=swap" rel="stylesheet">
   <style>
+    .format-filters { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:22px; }
+    .format-button { display:inline-flex; align-items:center; justify-content:center; gap:9px; min-height:44px; padding:10px 16px; border:1px solid var(--line); border-radius:999px; background:var(--paper); color:var(--forest); font:inherit; font-size:14px; font-weight:700; cursor:pointer; transition:background .18s ease,border-color .18s ease; }
+    .format-button[aria-pressed="true"] { background:var(--forest); border-color:var(--forest); color:var(--paper); }
+    .format-button:hover:not(:disabled) { border-color:var(--forest); }
+    .format-button:focus-visible { outline:3px solid var(--forest); outline-offset:3px; }
+    .format-button:disabled { cursor:wait; opacity:.65; }
+    .format-count { display:inline-flex; align-items:center; justify-content:center; min-width:24px; padding:2px 6px; border-radius:999px; background:rgba(18,57,31,.08); font-size:12px; font-variant-numeric:tabular-nums; }
+    .format-button[aria-pressed="true"] .format-count { background:rgba(255,249,235,.16); }
+    .masonry .card { aspect-ratio:auto; } .card-visual { position:relative; isolation:isolate; aspect-ratio:16/9; overflow:hidden; }
+    .format-labels { display:flex; flex-wrap:wrap; align-items:center; gap:6px 12px; padding:12px 16px; color:var(--forest); font-size:12px; font-weight:700; background:var(--paper); }
+    .format-labels span + span { padding-left:12px; border-left:1px solid var(--line); }
+    @media (max-width:1000px) { .filter-bar { grid-template-columns:repeat(2,minmax(0,1fr)); } .filter-control { min-width:0; } }
+    @media (max-width:700px) { .archive-shell { padding:22px 16px; scroll-margin-top:24px; } .format-button { padding:10px 13px; } .filter-bar { grid-template-columns:1fr; } .filter-control input,.filter-control select { font-size:16px; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .format-button { transition:none; } }
+
     :root { color-scheme:light; --bg:#f4ecd9; --paper:#fff9eb; --panel:#fffdf6; --ink:#12391f; --body:#25231d; --muted:#6f674f; --line:#dacdb4; --accent:#b87408; --forest:#12391f; --chip:#eee3cc; --shadow:0 18px 42px rgba(47,35,15,.16); --radius:28px; }
     * { box-sizing:border-box; } html { scroll-behavior:smooth; }
     body { margin:0; background:radial-gradient(circle at 8% 18%, rgba(184,116,8,.12), transparent 24rem),radial-gradient(circle at 88% 4%, rgba(18,57,31,.10), transparent 22rem),linear-gradient(180deg,#fbf5e5,var(--bg)); color:var(--body); font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; }
@@ -33,7 +48,7 @@
     .collection-copy { position:relative; z-index:2; max-width:310px; } .collection-copy strong { display:block; font-family:'Fraunces',Georgia,serif; color:var(--forest); font-size:clamp(34px,4vw,58px); line-height:.95; letter-spacing:-.04em; } .featured-collection .collection-copy strong,.featured-collection .collection-copy small { color:#fff9eb; } .collection-copy small { display:block; margin-top:14px; color:#2f2b22; font-size:17px; line-height:1.45; } .collection-cta { position:relative; z-index:3; align-self:flex-start; padding:13px 18px; border-radius:10px; background:#fff9eb; color:#12391f; font-weight:900; box-shadow:0 12px 24px rgba(34,24,8,.14); } .school .collection-cta,.science-news .collection-cta,.all .collection-cta { background:var(--forest); color:#fff9eb; }
     .collection-art { position:absolute; inset:auto 0 0 auto; z-index:1; pointer-events:none; } .science-art { inset:0; } .people-art { width:78%; height:70%; right:-2%; bottom:42px; } .people-sheet { position:absolute; object-fit:cover; background:#fffaf0; border:1px solid #cebfa4; border-radius:8px; box-shadow:0 18px 32px rgba(11,25,11,.36); } .sheet-main { width:52%; height:78%; right:5%; bottom:10%; transform:rotate(3deg); } .sheet-left { width:42%; height:62%; left:2%; bottom:0; transform:rotate(-6deg); } .sheet-right { width:40%; height:58%; right:-4%; bottom:0; transform:rotate(6deg); } .mini-poster { position:absolute; object-fit:cover; width:210px; height:190px; right:28px; bottom:32px; border:1px solid #cbbda4; border-radius:8px; background:#fffaf0; box-shadow:0 16px 26px rgba(47,35,15,.18); } .school-two { right:160px; bottom:42px; transform:rotate(-7deg); } .school-one { transform:rotate(5deg); } .science-preview-image,.all-preview-image { position:absolute; right:24px; bottom:24px; width:45%; height:70%; object-fit:cover; border-radius:12px; border:1px solid #cbbda4; box-shadow:0 16px 26px rgba(47,35,15,.18); }
     .process-note { padding:32px; background:linear-gradient(135deg,rgba(255,249,235,.88),rgba(229,234,217,.82)); } .editorial-science-simple { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(390px,.7fr); gap:34px; align-items:stretch; background:transparent; } .science-hero-copy { padding:42px; box-shadow:none; display:flex; flex-direction:column; justify-content:center; } .science-hero-copy h2 { font-size:clamp(50px,4vw,64px); } .science-hero-art { position:relative; min-height:600px; overflow:hidden; border-radius:26px; background:#0d2d19; box-shadow:var(--shadow); } .science-hero-art::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg,transparent 62%,rgba(6,32,17,.78)); pointer-events:none; } .science-hero-image { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; object-position:center; background:#0b2c19; filter:saturate(.94) contrast(1.04); } .science-hero-caption { position:absolute; z-index:2; left:28px; right:28px; bottom:24px; display:flex; align-items:center; justify-content:space-between; gap:20px; color:#fff9eb; font-size:13px; letter-spacing:.08em; text-transform:uppercase; } .science-hero-caption strong { max-width:62%; text-align:right; font-family:'Fraunces',Georgia,serif; font-size:18px; line-height:1.15; letter-spacing:0; text-transform:none; } .topic-pills { margin-top:22px; display:grid; grid-template-columns:1fr 1fr; } .topic-pills > span { display:inline-flex; justify-content:flex-start; gap:8px; padding:14px 16px; border-radius:999px; background:#eee4d0; color:#403829; } .science-sources { margin-top:24px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; } .science-sources h3 { margin:0; color:var(--forest); font-size:15px; } .science-sources ul { display:grid; gap:8px; margin:10px 0 0; padding:0; list-style:none; } .science-sources a { display:block; overflow-wrap:anywhere; color:var(--forest); text-decoration:underline; text-underline-offset:2px; }
-    .archive-shell { margin-top:30px; padding:28px; background:rgba(255,249,235,.74); border:1px solid var(--line); border-radius:30px; box-shadow:var(--shadow); } .archive-top { display:flex; justify-content:space-between; gap:18px; align-items:end; margin-bottom:22px; } .archive-top h2 { margin:0; font-family:'Fraunces',Georgia,serif; color:var(--forest); font-size:42px; letter-spacing:-.04em; } .archive-top p { margin:8px 0 0; color:var(--muted); font-size:17px; max-width:60ch; }
+    .archive-shell { scroll-margin-top:130px; margin-top:30px; padding:28px; background:rgba(255,249,235,.74); border:1px solid var(--line); border-radius:30px; box-shadow:var(--shadow); } .archive-top { display:flex; justify-content:space-between; gap:18px; align-items:end; margin-bottom:22px; } .archive-top h2 { margin:0; font-family:'Fraunces',Georgia,serif; color:var(--forest); font-size:42px; letter-spacing:-.04em; } .archive-top p { margin:8px 0 0; color:var(--muted); font-size:17px; max-width:60ch; }
     .masonry { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; align-items:stretch; } .card,.image-card { position:relative; isolation:isolate; margin:0; background:#fffaf0; border:1px solid var(--line); border-radius:18px; overflow:hidden; box-shadow:0 14px 28px rgba(47,35,15,.12); aspect-ratio:16/9; } .card.feature { box-shadow:0 18px 36px rgba(47,35,15,.18); } .image-title { position:absolute; left:0; right:0; bottom:0; z-index:2; padding:58px 16px 14px; color:#fff; background:linear-gradient(180deg,transparent,rgba(18,57,31,.74)); pointer-events:none; } .image-title h3 { margin:0; font-family:'Fraunces',Georgia,serif; font-size:22px; line-height:1.05; letter-spacing:-.03em; text-shadow:0 1px 12px rgba(0,0,0,.38); } .card.feature .image-title h3 { font-size:28px; }
     .info-popover { position:absolute; top:12px; right:12px; z-index:4; max-width:calc(100% - 24px); } .info-popover[open] { right:12px; bottom:auto; } .info-popover summary { list-style:none; } .info-popover summary::-webkit-details-marker { display:none; } .info-button { width:32px; height:32px; display:grid; place-items:center; margin-left:auto; border-radius:999px; border:1px solid rgba(255,255,255,.5); background:rgba(255,249,235,.64); color:rgba(18,57,31,.82); font-weight:850; font-size:15px; box-shadow:0 6px 16px rgba(0,0,0,.10); backdrop-filter:blur(8px); cursor:pointer; } .info-button:hover,.info-button:focus-visible { background:var(--forest); color:#fff; outline:0; } .info-panel { position:absolute; top:42px; right:0; width:min(300px,calc(100vw - 76px)); max-height:min(148px,calc(100vh - 156px)); overflow:auto; padding:10px; border-radius:16px; background:rgba(255,253,249,.95); border:1px solid rgba(255,255,255,.9); box-shadow:0 16px 38px rgba(0,0,0,.2); backdrop-filter:blur(16px); } .info-panel .meta-row { gap:7px; } .info-panel .tag { padding:6px 9px; } .info-panel .sources { margin-top:9px; gap:6px; } .info-panel .sources a { padding:6px 9px; }
     .original-article { display:flex; align-items:center; justify-content:center; margin-top:9px; padding:8px 10px; border-radius:11px; background:#edf3e4; border:1px solid #d5dfc5; color:#12391f; font-size:12px; font-weight:800; text-decoration:none; } .original-article:hover,.original-article:focus-visible { background:#e2edd6; text-decoration:underline; outline:0; } .tag { display:inline-flex; padding:7px 10px; border-radius:999px; background:#f1e8d6; border:1px solid #e1d1b4; font-size:12px; color:#564f47; } .tag[hidden] { display:none!important; } .tag.artist { background:#f3d7d1; border-color:#e8c4bc; color:#7d2a22; } .tag.science,.tag.school-poster,.tag.science-news,.tag.source-count { background:#e5ead9; border-color:#ccd8bd; color:#285c33; } .tag.sport,.tag.age { background:#fff4cf; border-color:#ead694; color:#6d5208; } .tag.language { background:#eee3cc; border-color:#dccaa9; color:#554327; }
@@ -51,8 +66,8 @@
       <a class="brand brand-link" href="./">
         <div class="logo"><img src="favicon.svg" alt=""></div>
         <div>
-          <h1 data-i18n="brand_title">Visual Learning Archive</h1>
-          <p data-i18n="brand_subtitle">Accessible infographics about people, school topics and science discoveries.</p>
+          <h1 data-i18n="brand_title">Learning Archive</h1>
+          <p data-i18n="brand_subtitle">Infographics, podcasts and interactive sites about people, school topics and science discoveries.</p>
         </div>
       </a>
       <div class="nav-right">
@@ -84,12 +99,13 @@
         </div>
       </div>
       <div class="masonry science-list"><article class="card feature" data-person="OpenAI trdi, da je umetna inteligenca rešila problem Navier–Stokes — dokaz še čaka neodvisno presojo" data-category="science_news" data-language="sl" data-age-suitability="age_6">
+  <div class="card-visual">
   <a class="thumb" href="OpenaiTrdiDaJeUmetnaInteligencaResilaProblemNavierstokesDokazSeCakaNeodvisnoPresojo.png" aria-label="Open infographic: Navier–Stokes: velik kandidat za dokaz, ki še čaka presojo" data-infographic-link="1" data-title-en="Navier–Stokes: velik kandidat za dokaz, ki še čaka presojo" data-title-sl="Navier–Stokes: velik kandidat za dokaz, ki še čaka presojo"><img src="OpenaiTrdiDaJeUmetnaInteligencaResilaProblemNavierstokesDokazSeCakaNeodvisnoPresojo.png" alt="Infographic: Navier–Stokes: velik kandidat za dokaz, ki še čaka presojo" loading="lazy"></a>
   <div class="image-title">
     <h3 data-localized-title="1" data-title-en="Navier–Stokes: velik kandidat za dokaz, ki še čaka presojo" data-title-sl="Navier–Stokes: velik kandidat za dokaz, ki še čaka presojo">Navier–Stokes: velik kandidat za dokaz, ki še čaka presojo</h3>
   </div>
   <details class="info-popover">
-      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <summary class="info-button" aria-label="Show resource details" data-info-label="1">i</summary>
       <div class="info-panel" id="info-2026-09-15-OpenaiTrdiDaJeUmetnaInteligencaResilaProblemNavierstokesDokazSeCakaNeodvisnoPresojo-png">
         <div class="meta-row">
           <time class="tag date" datetime="2026-09-15" data-date="2026-09-15">15. 9. 2026</time>
@@ -104,14 +120,17 @@
     </details>
 
 
+  </div>
+  <div class="format-labels"><span data-i18n="format_label_infographic">Infographic</span></div>
 </article>
 <article class="card" data-person="AlphaGenome Atlas je napovedal učinke devetih milijard sprememb DNK — zemljevid za raziskave, ne diagnoza" data-category="science_news" data-language="sl" data-age-suitability="age_6">
+  <div class="card-visual">
   <a class="thumb" href="AlphagenomeAtlasJeNapovedalUcinkeDevetihMilijardSpremembDnkZemljevidZaRaziskaveNeDiagnoza.png" aria-label="Open infographic: AlphaGenome Atlas: zemljevid za naslednji poskus, ne diagnoza" data-infographic-link="1" data-title-en="AlphaGenome Atlas: zemljevid za naslednji poskus, ne diagnoza" data-title-sl="AlphaGenome Atlas: zemljevid za naslednji poskus, ne diagnoza"><img src="AlphagenomeAtlasJeNapovedalUcinkeDevetihMilijardSpremembDnkZemljevidZaRaziskaveNeDiagnoza.png" alt="Infographic: AlphaGenome Atlas: zemljevid za naslednji poskus, ne diagnoza" loading="lazy"></a>
   <div class="image-title">
     <h3 data-localized-title="1" data-title-en="AlphaGenome Atlas: zemljevid za naslednji poskus, ne diagnoza" data-title-sl="AlphaGenome Atlas: zemljevid za naslednji poskus, ne diagnoza">AlphaGenome Atlas: zemljevid za naslednji poskus, ne diagnoza</h3>
   </div>
   <details class="info-popover">
-      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <summary class="info-button" aria-label="Show resource details" data-info-label="1">i</summary>
       <div class="info-panel" id="info-2026-09-15-AlphagenomeAtlasJeNapovedalUcinkeDevetihMilijardSpremembDnkZemljevidZaRaziskaveNeDiagnoza-png">
         <div class="meta-row">
           <time class="tag date" datetime="2026-09-15" data-date="2026-09-15">15. 9. 2026</time>
@@ -126,14 +145,17 @@
     </details>
 
 
+  </div>
+  <div class="format-labels"><span data-i18n="format_label_infographic">Infographic</span></div>
 </article>
 <article class="card" data-person="Satellite data show record-breaking July wildfires in France and Spain" data-category="science_news" data-language="en" data-age-suitability="age_6">
+  <div class="card-visual">
   <a class="thumb" href="SatelliteDataShowRecordBreakingJulyWildfiresInFranceAndSpain.png" aria-label="Open infographic: Satellites map extreme July fires in France and Spain" data-infographic-link="1" data-title-en="Satellites map extreme July fires in France and Spain" data-title-sl="Satellites map extreme July fires in France and Spain"><img src="SatelliteDataShowRecordBreakingJulyWildfiresInFranceAndSpain.png" alt="Infographic: Satellites map extreme July fires in France and Spain" loading="lazy"></a>
   <div class="image-title">
     <h3 data-localized-title="1" data-title-en="Satellites map extreme July fires in France and Spain" data-title-sl="Satellites map extreme July fires in France and Spain">Satellites map extreme July fires in France and Spain</h3>
   </div>
   <details class="info-popover">
-      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <summary class="info-button" aria-label="Show resource details" data-info-label="1">i</summary>
       <div class="info-panel" id="info-2026-09-10-SatelliteDataShowRecordBreakingJulyWildfiresInFranceAndSpain-png">
         <div class="meta-row">
           <time class="tag date" datetime="2026-09-10" data-date="2026-09-10">10. 9. 2026</time>
@@ -148,14 +170,17 @@
     </details>
 
 
+  </div>
+  <div class="format-labels"><span data-i18n="format_label_infographic">Infographic</span></div>
 </article>
 <article class="card" data-person="Podnebne spremembe že dodajajo nevarno vlažno vročino življenju stotin milijonov otrok" data-category="science_news" data-language="sl" data-age-suitability="age_6">
+  <div class="card-visual">
   <a class="thumb" href="PodnebneSpremembeZeDodajajoNevarnoVlaznoVrocinoZivljenjuStotinMilijonovOtrok.png" aria-label="Open infographic: Vlažna vročina: ko znoj težje hladi" data-infographic-link="1" data-title-en="Vlažna vročina: ko znoj težje hladi" data-title-sl="Vlažna vročina: ko znoj težje hladi"><img src="PodnebneSpremembeZeDodajajoNevarnoVlaznoVrocinoZivljenjuStotinMilijonovOtrok.png" alt="Infographic: Vlažna vročina: ko znoj težje hladi" loading="lazy"></a>
   <div class="image-title">
     <h3 data-localized-title="1" data-title-en="Vlažna vročina: ko znoj težje hladi" data-title-sl="Vlažna vročina: ko znoj težje hladi">Vlažna vročina: ko znoj težje hladi</h3>
   </div>
   <details class="info-popover">
-      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <summary class="info-button" aria-label="Show resource details" data-info-label="1">i</summary>
       <div class="info-panel" id="info-2026-09-10-PodnebneSpremembeZeDodajajoNevarnoVlaznoVrocinoZivljenjuStotinMilijonovOtrok-png">
         <div class="meta-row">
           <time class="tag date" datetime="2026-09-10" data-date="2026-09-10">10. 9. 2026</time>
@@ -170,14 +195,17 @@
     </details>
 
 
+  </div>
+  <div class="format-labels"><span data-i18n="format_label_infographic">Infographic</span></div>
 </article>
 <article class="card" data-person="Personalizirano cepivo mRNA je v fazi III podaljšalo čas brez ponovitve melanoma" data-category="science_news" data-language="sl" data-age-suitability="age_6">
+  <div class="card-visual">
   <a class="thumb" href="PersonaliziranoCepivoMrnaJeVFaziIiiPodaljsaloCasBrezPonovitveMelanoma.png" aria-label="Open infographic: Osebno cepivo mRNA je v fazi III podaljšalo čas brez ponovitve melanoma" data-infographic-link="1" data-title-en="Osebno cepivo mRNA je v fazi III podaljšalo čas brez ponovitve melanoma" data-title-sl="Osebno cepivo mRNA je v fazi III podaljšalo čas brez ponovitve melanoma"><img src="PersonaliziranoCepivoMrnaJeVFaziIiiPodaljsaloCasBrezPonovitveMelanoma.png" alt="Infographic: Osebno cepivo mRNA je v fazi III podaljšalo čas brez ponovitve melanoma" loading="lazy"></a>
   <div class="image-title">
     <h3 data-localized-title="1" data-title-en="Osebno cepivo mRNA je v fazi III podaljšalo čas brez ponovitve melanoma" data-title-sl="Osebno cepivo mRNA je v fazi III podaljšalo čas brez ponovitve melanoma">Osebno cepivo mRNA je v fazi III podaljšalo čas brez ponovitve melanoma</h3>
   </div>
   <details class="info-popover">
-      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <summary class="info-button" aria-label="Show resource details" data-info-label="1">i</summary>
       <div class="info-panel" id="info-2026-09-10-PersonaliziranoCepivoMrnaJeVFaziIiiPodaljsaloCasBrezPonovitveMelanoma-png">
         <div class="meta-row">
           <time class="tag date" datetime="2026-09-10" data-date="2026-09-10">10. 9. 2026</time>
@@ -192,14 +220,17 @@
     </details>
 
 
+  </div>
+  <div class="format-labels"><span data-i18n="format_label_infographic">Infographic</span></div>
 </article>
 <article class="card" data-person="AI-designed bacteriophages work in the lab, opening a new route toward programmable antibacterial tools" data-category="science_news" data-language="en" data-age-suitability="age_6">
+  <div class="card-visual">
   <a class="thumb" href="AiDesignedBacteriophagesWorkInTheLabOpeningANewRouteTowardProgrammableAntibacterialTools.png" aria-label="Open infographic: AI-designed bacteriophages work in the lab: a whole-genome design milestone" data-infographic-link="1" data-title-en="AI-designed bacteriophages work in the lab: a whole-genome design milestone" data-title-sl="AI-designed bacteriophages work in the lab: a whole-genome design milestone"><img src="AiDesignedBacteriophagesWorkInTheLabOpeningANewRouteTowardProgrammableAntibacterialTools.png" alt="Infographic: AI-designed bacteriophages work in the lab: a whole-genome design milestone" loading="lazy"></a>
   <div class="image-title">
     <h3 data-localized-title="1" data-title-en="AI-designed bacteriophages work in the lab: a whole-genome design milestone" data-title-sl="AI-designed bacteriophages work in the lab: a whole-genome design milestone">AI-designed bacteriophages work in the lab: a whole-genome design milestone</h3>
   </div>
   <details class="info-popover">
-      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <summary class="info-button" aria-label="Show resource details" data-info-label="1">i</summary>
       <div class="info-panel" id="info-2026-08-30-AiDesignedBacteriophagesWorkInTheLabOpeningANewRouteTowardProgrammableAntibacterialTools-png">
         <div class="meta-row">
           <time class="tag date" datetime="2026-08-30" data-date="2026-08-30">30. 8. 2026</time>
@@ -214,14 +245,17 @@
     </details>
 
 
+  </div>
+  <div class="format-labels"><span data-i18n="format_label_infographic">Infographic</span></div>
 </article>
 <article class="card" data-person="Tiny plasma vortices reveal a hidden mixing process on the Sun" data-category="science_news" data-language="en" data-age-suitability="age_6">
+  <div class="card-visual">
   <a class="thumb" href="TinyPlasmaVorticesRevealAHiddenMixingProcessOnTheSun.png" aria-label="Open infographic: Tiny whirlpools mix the Sun&#x27;s surface" data-infographic-link="1" data-title-en="Tiny whirlpools mix the Sun&#x27;s surface" data-title-sl="Drobni vrtinci mešajo površje Sonca"><img src="TinyPlasmaVorticesRevealAHiddenMixingProcessOnTheSun.png" alt="Infographic: Tiny whirlpools mix the Sun&#x27;s surface" loading="lazy"></a>
   <div class="image-title">
     <h3 data-localized-title="1" data-title-en="Tiny whirlpools mix the Sun&#x27;s surface" data-title-sl="Drobni vrtinci mešajo površje Sonca">Tiny whirlpools mix the Sun&#x27;s surface</h3>
   </div>
   <details class="info-popover">
-      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <summary class="info-button" aria-label="Show resource details" data-info-label="1">i</summary>
       <div class="info-panel" id="info-2026-08-10-TinyPlasmaVorticesRevealAHiddenMixingProcessOnTheSun-png">
         <div class="meta-row">
           <time class="tag date" datetime="2026-08-10" data-date="2026-08-10">10. 8. 2026</time>
@@ -236,14 +270,17 @@
     </details>
 
 
+  </div>
+  <div class="format-labels"><span data-i18n="format_label_infographic">Infographic</span></div>
 </article>
 <article class="card" data-person="Laser mapping suggests a vast precolonial network of up to 30,000 earthworks beneath the southwestern Amazon" data-category="science_news" data-language="en" data-age-suitability="age_6">
+  <div class="card-visual">
   <a class="thumb" href="LaserMappingSuggestsAVastPrecolonialNetworkOfUpTo30000EarthworksBeneathTheSouthwesternAmazon.png" aria-label="Open infographic: LiDAR reveals an extensive precolonial landscape beneath the southwestern Amazon" data-infographic-link="1" data-title-en="LiDAR reveals an extensive precolonial landscape beneath the southwestern Amazon" data-title-sl="LiDAR razkriva obsežno predkolonialno pokrajino pod jugozahodno Amazonijo"><img src="LaserMappingSuggestsAVastPrecolonialNetworkOfUpTo30000EarthworksBeneathTheSouthwesternAmazon.png" alt="Infographic: LiDAR reveals an extensive precolonial landscape beneath the southwestern Amazon" loading="lazy"></a>
   <div class="image-title">
     <h3 data-localized-title="1" data-title-en="LiDAR reveals an extensive precolonial landscape beneath the southwestern Amazon" data-title-sl="LiDAR razkriva obsežno predkolonialno pokrajino pod jugozahodno Amazonijo">LiDAR reveals an extensive precolonial landscape beneath the southwestern Amazon</h3>
   </div>
   <details class="info-popover">
-      <summary class="info-button" aria-label="Show image details" data-info-label="1">i</summary>
+      <summary class="info-button" aria-label="Show resource details" data-info-label="1">i</summary>
       <div class="info-panel" id="info-2026-07-31-LaserMappingSuggestsAVastPrecolonialNetworkOfUpTo30000EarthworksBeneathTheSouthwesternAmazon-png">
         <div class="meta-row">
           <time class="tag date" datetime="2026-07-31" data-date="2026-07-31">31. 7. 2026</time>
@@ -258,16 +295,18 @@
     </details>
 
 
+  </div>
+  <div class="format-labels"><span data-i18n="format_label_infographic">Infographic</span></div>
 </article></div>
     </section>
     <section class="process-note surface" aria-labelledby="process-heading">
-  <div class="section-kicker" data-i18n="process_eyebrow">How these infographics are made</div>
-  <h2 id="process-heading" data-i18n="process_title">Human-supervised visual learning</h2>
-  <p data-i18n="process_body">This archive is created with help from Roj swarm agents — small AI assistants that help gather sources, summarize topics, draft clear explanations and prepare visual material. Human review keeps the archive focused, reliable and useful for learning.</p>
+  <div class="section-kicker" data-i18n="process_eyebrow">How these resources are made</div>
+  <h2 id="process-heading" data-i18n="process_title">Created with AI, reviewed by people</h2>
+  <p data-i18n="process_body">This archive is created with help from Roj swarm agents - small AI assistants that help gather sources, summarize topics, draft clear explanations and prepare learning resources. Human review keeps the archive focused, reliable and useful for learning.</p>
 </section>
     <footer class="footer surface">
       <div><span data-i18n="footer_generated_by">Made with human supervision and</span> <a href="https://roj.world/swarms/famous-people-infographic" target="_blank" rel="noopener noreferrer" data-i18n="footer_swarm">Roj swarm agents</a>.</div>
-      <div data-updated="2026-10-13 05:16">Updated: 13. 10. 2026, 05:16</div>
+      <div data-updated="2026-10-13 10:09">Updated: 13. 10. 2026, 10:09</div>
     </footer>
   </main>
   <script>
@@ -276,9 +315,13 @@
   let uiLang = localStorage.getItem('archive-ui-lang') || defaultLang;
   const dict = {
     en: {
-      document_title: 'Science news explained - Visual Learning Archive',
-      brand_title: 'Visual Learning Archive',
-      brand_subtitle: 'Accessible infographics about people, school topics and science discoveries.',
+      document_title: 'Science news explained - Learning Archive',
+      format_label_infographic: 'Infographic',
+      format_label_podcast: 'Podcast',
+      format_label_interactive_site: 'Interactive site',
+      format_label_video: 'Video',
+      brand_title: 'Learning Archive',
+      brand_subtitle: 'Infographics, podcasts and interactive sites about people, school topics and science discoveries.',
       lang_picker_label: 'Site language',
       latest_explainer: 'Latest explainer',
       science_eyebrow: 'Science news explained',
@@ -296,14 +339,14 @@
       source_kind_website: 'Website',
       archive_title: 'Latest science explainers',
       archive_intro: 'Browse the science news collection separately from biographies and school posters.',
-      process_eyebrow: 'How these infographics are made',
-      process_title: 'Human-supervised visual learning',
-      process_body: 'This archive is created with help from Roj swarm agents - small AI assistants that help gather sources, summarize topics, draft clear explanations and prepare visual material. Human review keeps the archive focused, reliable and useful for learning.',
+      process_eyebrow: 'How these resources are made',
+      process_title: 'Created with AI, reviewed by people',
+      process_body: 'This archive is created with help from Roj swarm agents - small AI assistants that help gather sources, summarize topics, draft clear explanations and prepare learning resources. Human review keeps the archive focused, reliable and useful for learning.',
       footer_generated_by: 'Made with human supervision and',
       footer_swarm: 'Roj swarm agents',
       updated: 'Updated:',
       original_article: 'Read the original article ↗',
-      image_details: 'Show image details',
+      image_details: 'Show resource details',
       open_infographic: 'Open infographic:',
       infographic: 'Infographic:',
       category_science_news: 'Science news',
@@ -316,9 +359,13 @@
       sources_many: '{count} sources'
     },
     sl: {
-      document_title: 'Razložene znanstvene novice - Arhiv vizualnega učenja',
-      brand_title: 'Arhiv vizualnega učenja',
-      brand_subtitle: 'Dostopne infografike o ljudeh, šolskih temah in znanstvenih odkritjih.',
+      document_title: 'Razložene znanstvene novice - Učna knjižnica',
+      format_label_infographic: 'Infografika',
+      format_label_podcast: 'Podkast',
+      format_label_interactive_site: 'Interaktivna stran',
+      format_label_video: 'Video',
+      brand_title: 'Učna knjižnica',
+      brand_subtitle: 'Infografike, podkasti in interaktivne strani o ljudeh, šolskih temah in znanstvenih odkritjih.',
       lang_picker_label: 'Jezik strani',
       latest_explainer: 'Najnovejša razlaga',
       science_eyebrow: 'Razložene znanstvene novice',
@@ -336,14 +383,14 @@
       source_kind_website: 'Spletna stran',
       archive_title: 'Najnovejše znanstvene razlage',
       archive_intro: 'Prebrskaj zbirko znanstvenih novic ločeno od biografij in šolskih plakatov.',
-      process_eyebrow: 'Kako nastajajo infografike',
-      process_title: 'Vizualno učenje s človeškim pregledom',
-      process_body: 'Arhiv nastaja s pomočjo Roj swarm agentov - majhnih AI pomočnikov, ki pomagajo zbrati vire, povzeti teme, pripraviti jasne razlage in vizualno gradivo. Človeški pregled skrbi, da je arhiv osredotočen, zanesljiv in uporaben za učenje.',
+      process_eyebrow: 'Kako nastajajo gradiva',
+      process_title: 'Ustvarjeno z AI, pregledano s strani ljudi',
+      process_body: 'Arhiv nastaja s pomočjo Roj swarm agentov - majhnih AI pomočnikov, ki pomagajo zbrati vire, povzeti teme, pripraviti jasne razlage in učna gradiva. Človeški pregled skrbi, da je arhiv osredotočen, zanesljiv in uporaben za učenje.',
       footer_generated_by: 'Ustvarjeno s človeškim pregledom in pomočjo',
       footer_swarm: 'Roj swarm agentov',
       updated: 'Posodobljeno:',
       original_article: 'Preberi izvirni članek ↗',
-      image_details: 'Pokaži podrobnosti slike',
+      image_details: 'Pokaži podrobnosti gradiva',
       open_infographic: 'Odpri infografiko:',
       infographic: 'Infografika:',
       category_science_news: 'Znanstvena novica',

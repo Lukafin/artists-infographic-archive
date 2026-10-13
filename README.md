@@ -1,6 +1,24 @@
-# Artists Infographic Archive
+# Learning Archive
 
-Daily generated Slovenian artist/scientist birthday infographics for everyone.
+Infographics, podcasts and interactive sites about people, school topics and science discoveries.
+The English site is Learning Archive; the Slovenian site is Učna knjižnica.
+
+Rounded format buttons search the full archive by Infographics, With podcast or
+Interactive sites, alongside collection, content language and age filters. Counts
+reflect the other active filters. Each topic card lists all available formats; media
+companions remain attached to their existing image. Filter URLs use `format=podcast`
+or `format=interactive_site` and restore selections on reload and browser history.
+
+For a presentation-only update from a checkout without the private producer stores:
+
+```sh
+ARTISTS_ARCHIVE_PUBLIC_ROOT="$PWD/docs" python3 rebuild_gallery.py --refresh-public-pages
+rsync -a docs/ site/
+```
+
+This reuses already-published entries in their existing order, preserves `latest.json`
+and media associations, and derives format availability from normalized metadata.
+Normal production rebuilds still read the private stores for admission and revocation.
 
 Contents:
 - `docs/` canonical GitHub-pushed static site (images + HTML + metadata)

@@ -167,7 +167,7 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         self.assertNotIn(f'href="{unrelated_url}"', index_html)
         self.assertIsNone(latest['original_article_url'])
 
-    def test_homepage_frames_archive_as_visual_learning_hub(self):
+    def test_homepage_frames_archive_as_multiformat_learning_archive(self):
         public_root, index_html, _, _ = self.run_rebuild(
             {
                 'date': '2026-07-31',
@@ -179,15 +179,15 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
             }
         )
 
-        self.assertIn('Visual Learning Archive', index_html)
-        self.assertIn('Accessible infographics about people, school topics and science discoveries', index_html)
+        self.assertIn('Learning Archive', index_html)
+        self.assertIn('Infographics, podcasts and interactive sites about people, school topics and science discoveries', index_html)
         self.assertIn('Choose a collection', index_html)
         self.assertIn('People', index_html)
         self.assertIn('School posters', index_html)
         self.assertIn('Science news', index_html)
         self.assertIn('.science-art { inset:0; }', index_html)
         self.assertIn('class="science-preview-image"', index_html)
-        self.assertIn('All infographics', index_html)
+        self.assertIn('All resources', index_html)
         self.assertIn('data-i18n="category_label">Collection</label>', index_html)
         self.assertIn(
             '<option value="people" data-category-option="people">Famous people</option>',
