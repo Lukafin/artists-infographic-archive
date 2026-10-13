@@ -1,6 +1,29 @@
-# Artists Infographic Archive
+# Learning Archive
 
-Daily generated Slovenian artist/scientist birthday infographics for everyone.
+Infographics, podcasts and interactive sites about people, school topics and science discoveries.
+The English site is Learning Archive; the Slovenian site is Učna knjižnica.
+
+Rounded format buttons search the full archive by Infographics, With podcast or
+Interactive sites, alongside collection, content language and age filters. Counts
+reflect the other active filters. Each topic card lists all available formats; media
+companions remain attached to their existing image. Filter URLs use `format=podcast`
+or `format=interactive_site` and restore selections on reload and browser history.
+
+For a presentation-only update from a checkout without the private producer stores:
+
+```sh
+ARTISTS_ARCHIVE_PUBLIC_ROOT="$PWD/docs" python3 rebuild_gallery.py --refresh-public-pages
+rsync -a docs/ site/
+```
+
+This reuses already-published entries in their existing order, preserves `latest.json`
+and media associations, and derives format availability from normalized metadata.
+Normal production rebuilds still read the private stores for admission and revocation.
+
+Explore opens approved embedded interactive sites in fullscreen immediately. Browsers
+without native fullscreen use a full-window layout with a visible close button.
+Closing unloads the iframe and returns focus to Explore. Link-only media retains its
+external-link presentation; videos keep their existing manual fullscreen control.
 
 Contents:
 - `docs/` canonical GitHub-pushed static site (images + HTML + metadata)
@@ -86,9 +109,10 @@ Run metadata and private companion manifests remain outside the public tree.
 
 The selected **persistent bottom mini-player** appears only after Listen / Poslušaj
 activation. Selection does not autoplay: press the native play control to start.
-One native `audio controls preload="none"` element provides play/pause, seeking and
-time. Selecting another episode stops/replaces the old one; selecting the same one
-preserves its position. Dismiss stops playback, releases the source and returns
+The page starts with `preload="none"`. After Listen is selected, the same native
+`audio controls` element loads metadata so its duration and seekable timeline appear
+before Play, without autoplay. Selecting another episode stops/replaces the old one;
+selecting the same one preserves its position. Dismiss stops playback, releases the source and returns
 focus. The thumbnail, title and actual spoken language stay visible independently
 of UI language. Responsive padding includes the mobile safe area.
 
@@ -100,11 +124,21 @@ instead of navigating away. While selected, opening an infographic uses a new ta
 site stop playback; the player states this limitation. There is no background
 cross-document playback or saved autoplay session.
 
+### Local preview
+
+```sh
+python3 preview_server.py --port 8768
+```
+
+Open `http://127.0.0.1:8768/index.html#archive`. Use this preview server for audio/video
+seeking; Python's basic `http.server` does not implement the required byte ranges.
+
 ### Verification
 
 ```sh
 python3 -m unittest discover -s tests -v
 node --check assets/podcast-player.js
+node --test tests/test_companion_fullscreen.mjs
 git diff --check
 ```
 
@@ -113,18 +147,20 @@ Optional real Chromium smoke test (Node with built-in WebSocket, Chromium, ffmpe
 ```sh
 # Choose a fresh path under your scratch directory, never under docs/site.
 python3 tests/make_podcast_fixture.py "$TMPDIR/podcast-browser-fixture"
-python3 -m http.server 8764 --bind 127.0.0.1 \
+python3 preview_server.py --port 8764 \
   --directory "$TMPDIR/podcast-browser-fixture/public"
 # In another terminal; stop the local HTTP server afterward.
 node tests/browser_podcasts.mjs http://127.0.0.1:8764/index.html "$TMPDIR"
 ```
 
-The smoke test runs one headless Chromium process, checks zero initial/selection
-audio requests, native playback/seek, same-element pagination/back, actual language
-after UI switching, episode replacement, dismiss/focus, responsive padding and
+The smoke test runs one headless Chromium process and checks zero page-load audio
+requests, duration and seeking before Play, native playback/seek, same-element
+pagination/back, actual language after UI switching, episode replacement,
+dismiss/focus, responsive padding and
 desktop/mobile screenshots. The fixture is local-only generated sine audio and
-must never be copied into the production site. Python's basic HTTP server is not
-a certification of production byte-range support.
+must never be copied into the production site. The local preview server returns
+HTTP 206 byte ranges and `audio/mp4` for M4A files, enabling native seeking. Production
+range support must still be verified separately.
 
 Tests generate disposable sine-wave AAC fixtures, never real/private episodes.
 After an authorized production deployment, verify the exact public `entries.json`

@@ -52,10 +52,13 @@ verify_design_contract() {
   local science="$DOCS_DIR/science-news.html"
   test -s "$index"
   test -s "$science"
-  grep -Fq '<title>Visual Learning Archive' "$index"
+  grep -Fq '<title>Learning Archive' "$index"
   grep -Fq 'class="hero hero-desk"' "$index"
   grep -Fq 'class="collection-grid illustrated-collections"' "$index"
   grep -Fq 'class="info-popover"' "$index"
+  grep -Fq 'class="format-filters"' "$index"
+  grep -Fq 'data-format="podcast"' "$index"
+  grep -Fq 'data-format="interactive_site"' "$index"
   grep -Fq 'href="science-news.html"' "$index"
   grep -Fq 'Science news explained' "$science"
   python3 - "$DOCS_DIR/entries.json" "$DOCS_DIR/latest.json" <<'PY'
@@ -70,7 +73,7 @@ if not items:
 if latest.get('image_filename') != items[0].get('filename'):
     raise SystemExit('latest.json does not match the newest entries.json item')
 print(json.dumps({
-    'design_contract': 'visual-learning-hub-v1',
+    'design_contract': 'learning-archive-v2',
     'entries': len(items),
     'latest': latest.get('person'),
     'latest_image': latest.get('image_filename'),

@@ -140,6 +140,13 @@ def normalize_entry_metadata(entry: dict) -> dict:
         approved = [media for item in companions if (media := normalize_media(item, normalized))]
         if approved:
             normalized['companions'] = approved
+    # Derive availability from normalized public media, never producer-supplied tags.
+    normalized['formats'] = ['infographic']
+    if podcast:
+        normalized['formats'].append('podcast')
+    for media in normalized.get('companions', []):
+        if media['artifact_kind'] not in normalized['formats']:
+            normalized['formats'].append(media['artifact_kind'])
     return normalized
 
 
@@ -149,6 +156,7 @@ def build_entries_index(entries: list[dict]) -> dict:
     languages = sorted({entry['language'] for entry in normalized_entries})
     category_counts = Counter(entry['category'] for entry in normalized_entries)
     language_counts = Counter(entry['language'] for entry in normalized_entries)
+    format_counts = Counter(kind for entry in normalized_entries for kind in entry['formats'])
     age_suitability_counts = Counter(
         key
         for entry in normalized_entries
@@ -163,6 +171,7 @@ def build_entries_index(entries: list[dict]) -> dict:
             'age_suitability_counts': dict(age_suitability_counts),
             'category_counts': dict(category_counts),
             'language_counts': dict(language_counts),
+            'format_counts': dict(format_counts),
         },
         'entries': normalized_entries,
     }

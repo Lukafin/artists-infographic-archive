@@ -34,6 +34,11 @@
       "sl": 181,
       "en": 34,
       "de": 14
+    },
+    "format_counts": {
+      "infographic": 229,
+      "podcast": 9,
+      "interactive_site": 1
     }
   },
   "entries": [
@@ -99,6 +104,10 @@
       ],
       "source_count": 3,
       "search_text": "albert camus scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic",
+        "podcast"
+      ],
       "podcast": {
         "url": "audio/0f45cb23a9feb1432c4773b14c2fcf09acc1ba37f59115ac6f12980e1646c698.m4a",
         "title": "Albert Camus",
@@ -171,6 +180,10 @@
       ],
       "source_count": 3,
       "search_text": "alan ashton scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic",
+        "podcast"
+      ],
       "podcast": {
         "url": "audio/e3d8e29de59b3cc77b82da2e7a9dec08bb0ab8861cebb575d48b0b52fb54becb.m4a",
         "title": "Alan Ashton",
@@ -244,6 +257,10 @@
       ],
       "source_count": 4,
       "search_text": "agustín sauto arana sport športnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic",
+        "podcast"
+      ],
       "podcast": {
         "url": "audio/90f3f12c01be12d50a8e88553b0c6353032e0a0428bf50d0c72cf7330b825bb5.m4a",
         "title": "Agustín Sauto Arana",
@@ -317,7 +334,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "nobel prize physics 2026 nobel_prize nobelovi nagrajenci 2026 physics single_field sl age_6 ages 6+ 6+ let"
+      "search_text": "nobel prize physics 2026 nobel_prize nobelovi nagrajenci 2026 physics single_field sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-10-10",
@@ -384,7 +404,10 @@
         "6+ let"
       ],
       "source_count": 7,
-      "search_text": "nobel prize winners 2026 nobel_prize nobelovi nagrajenci 2026 legacy_overview sl age_6 ages 6+ 6+ let"
+      "search_text": "nobel prize winners 2026 nobel_prize nobelovi nagrajenci 2026 legacy_overview sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-10-10",
@@ -445,6 +468,10 @@
       ],
       "source_count": 2,
       "search_text": "adriaen van der cabel artist umetnik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic",
+        "podcast"
+      ],
       "podcast": {
         "url": "audio/320c9972a9342906a68c4b8b1187400e9265734d79d401ed82924b36d1e1ebbd.m4a",
         "title": "Adriaen van der Cabel",
@@ -515,6 +542,10 @@
       ],
       "source_count": 3,
       "search_text": "adolf zsigmondy scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic",
+        "podcast"
+      ],
       "podcast": {
         "url": "audio/f6af15572ce84e8b982ec3e23ee720ca88f7ba0ab2a50016dd4d0aecaa11416f.m4a",
         "title": "Adolf Zsigmondy",
@@ -585,6 +616,10 @@
       ],
       "source_count": 3,
       "search_text": "adolphe thiers artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic",
+        "podcast"
+      ],
       "podcast": {
         "url": "audio/329c57ba6902610bd1b89e3a92717897f5c4ba3c09d4fc747191229170e3afd0.m4a",
         "title": "Adolphe Thiers",
@@ -654,7 +689,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "adolf mayer scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "adolf mayer scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-10-05",
@@ -716,6 +754,10 @@
       ],
       "source_count": 3,
       "search_text": "adolf krischanitz artist umetnik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic",
+        "podcast"
+      ],
       "podcast": {
         "url": "audio/d570701abc717f3c91985ee3d08e58266677491af558aa5e198f7c5140d235d6.m4a",
         "title": "Adolf Krischanitz",
@@ -784,7 +826,10 @@
         "6+ let"
       ],
       "source_count": 2,
-      "search_text": "adelheid popp scientist znanstvenik de age_6 ages 6+ 6+ let"
+      "search_text": "adelheid popp scientist znanstvenik de age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-10-03",
@@ -845,6 +890,10 @@
       ],
       "source_count": 2,
       "search_text": "adelheid popp scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic",
+        "podcast"
+      ],
       "podcast": {
         "url": "audio/b508b040d9f41308460dee5752182699c225f3d5782d7396f73e768bdb8e9b39.m4a",
         "title": "Adelheid Popp",
@@ -915,6 +964,10 @@
       ],
       "source_count": 3,
       "search_text": "adelheid popp scientist znanstvenik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic",
+        "podcast"
+      ],
       "podcast": {
         "url": "audio/9daa44caedf25f065a9aded2df35da08468c578a841af772028c4c3fae23d58d.m4a",
         "title": "Adelheid Popp",
@@ -985,7 +1038,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "adam lonitzer scientist znanstvenik de age_6 ages 6+ 6+ let"
+      "search_text": "adam lonitzer scientist znanstvenik de age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-30",
@@ -1046,7 +1102,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "adam lonitzer scientist znanstvenik en age_6 ages 6+ 6+ let"
+      "search_text": "adam lonitzer scientist znanstvenik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-29",
@@ -1109,7 +1168,10 @@
         "6+ let"
       ],
       "source_count": 5,
-      "search_text": "abraham van den blocke artist umetnik de age_6 ages 6+ 6+ let"
+      "search_text": "abraham van den blocke artist umetnik de age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-28",
@@ -1171,7 +1233,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "abraham van den blocke artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "abraham van den blocke artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-27",
@@ -1233,7 +1298,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "abraham van den blocke artist umetnik en age_6 ages 6+ 6+ let"
+      "search_text": "abraham van den blocke artist umetnik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-26",
@@ -1296,7 +1364,10 @@
         "6+ let"
       ],
       "source_count": 5,
-      "search_text": "abraham minero sport športnik de age_6 ages 6+ 6+ let"
+      "search_text": "abraham minero sport športnik de age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-25",
@@ -1357,7 +1428,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "abraham minero sport športnik sl age_6 ages 6+ 6+ let"
+      "search_text": "abraham minero sport športnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-24",
@@ -1419,7 +1493,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "abraham minero sport športnik en age_6 ages 6+ 6+ let"
+      "search_text": "abraham minero sport športnik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-23",
@@ -1480,7 +1557,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "abraham lincoln artist umetnik de age_6 ages 6+ 6+ let"
+      "search_text": "abraham lincoln artist umetnik de age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-22",
@@ -1542,7 +1622,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "abraham lincoln artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "abraham lincoln artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-21",
@@ -1605,7 +1688,10 @@
         "6+ let"
       ],
       "source_count": 5,
-      "search_text": "abraham lincoln artist umetnik en age_6 ages 6+ 6+ let"
+      "search_text": "abraham lincoln artist umetnik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-20",
@@ -1667,7 +1753,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "abdus salam scientist znanstvenik de age_6 ages 6+ 6+ let"
+      "search_text": "abdus salam scientist znanstvenik de age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-19",
@@ -1729,7 +1818,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "abdus salam scientist znanstvenik en age_6 ages 6+ 6+ let"
+      "search_text": "abdus salam scientist znanstvenik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-18",
@@ -1791,7 +1883,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "demokratie school_poster šolski plakat de age_6 ages 6+ 6+ let"
+      "search_text": "demokratie school_poster šolski plakat de age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-17",
@@ -1854,7 +1949,10 @@
         "6+ let"
       ],
       "source_count": 5,
-      "search_text": "bewegung school_poster šolski plakat de age_6 ages 6+ 6+ let"
+      "search_text": "bewegung school_poster šolski plakat de age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-16",
@@ -1917,7 +2015,10 @@
         "6+ let"
       ],
       "source_count": 5,
-      "search_text": "bevölkerungsdichte school_poster šolski plakat de age_6 ages 6+ 6+ let"
+      "search_text": "bevölkerungsdichte school_poster šolski plakat de age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-15",
@@ -1982,7 +2083,10 @@
         "6+ let"
       ],
       "source_count": 7,
-      "search_text": "openai trdi, da je umetna inteligenca rešila problem navier–stokes — dokaz še čaka neodvisno presojo science_news znanstvena novica sl age_6 ages 6+ 6+ let"
+      "search_text": "openai trdi, da je umetna inteligenca rešila problem navier–stokes — dokaz še čaka neodvisno presojo science_news znanstvena novica sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-15",
@@ -2045,7 +2149,10 @@
         "6+ let"
       ],
       "source_count": 5,
-      "search_text": "alphagenome atlas je napovedal učinke devetih milijard sprememb dnk — zemljevid za raziskave, ne diagnoza science_news znanstvena novica sl age_6 ages 6+ 6+ let"
+      "search_text": "alphagenome atlas je napovedal učinke devetih milijard sprememb dnk — zemljevid za raziskave, ne diagnoza science_news znanstvena novica sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-10",
@@ -2106,7 +2213,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "satellite data show record-breaking july wildfires in france and spain science_news znanstvena novica en age_6 ages 6+ 6+ let"
+      "search_text": "satellite data show record-breaking july wildfires in france and spain science_news znanstvena novica en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-10",
@@ -2167,7 +2277,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "podnebne spremembe že dodajajo nevarno vlažno vročino življenju stotin milijonov otrok science_news znanstvena novica sl age_6 ages 6+ 6+ let"
+      "search_text": "podnebne spremembe že dodajajo nevarno vlažno vročino življenju stotin milijonov otrok science_news znanstvena novica sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-09-10",
@@ -2229,7 +2342,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "personalizirano cepivo mrna je v fazi iii podaljšalo čas brez ponovitve melanoma science_news znanstvena novica sl age_6 ages 6+ 6+ let"
+      "search_text": "personalizirano cepivo mrna je v fazi iii podaljšalo čas brez ponovitve melanoma science_news znanstvena novica sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-08-30",
@@ -2293,7 +2409,10 @@
         "6+ let"
       ],
       "source_count": 6,
-      "search_text": "ai-designed bacteriophages work in the lab, opening a new route toward programmable antibacterial tools science_news znanstvena novica en age_6 ages 6+ 6+ let"
+      "search_text": "ai-designed bacteriophages work in the lab, opening a new route toward programmable antibacterial tools science_news znanstvena novica en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-08-26",
@@ -2354,7 +2473,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "berg school_poster šolski plakat de age_6 ages 6+ 6+ let"
+      "search_text": "berg school_poster šolski plakat de age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-08-25",
@@ -2415,7 +2537,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "altes ägypten school_poster šolski plakat de age_6 ages 6+ 6+ let"
+      "search_text": "altes ägypten school_poster šolski plakat de age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-08-24",
@@ -2477,7 +2602,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "človeška migracija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "človeška migracija school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-08-23",
@@ -2538,7 +2666,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "človekove pravice school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "človekove pravice school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-08-20",
@@ -2599,7 +2730,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "vulkan school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "vulkan school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-08-19",
@@ -2660,7 +2794,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "ustava school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "ustava school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-08-18",
@@ -2721,7 +2858,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "trajnostni razvoj school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "trajnostni razvoj school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-08-17",
@@ -2781,7 +2921,10 @@
         "6+ let"
       ],
       "source_count": 2,
-      "search_text": "srednji vek school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "srednji vek school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-08-16",
@@ -2844,6 +2987,10 @@
       ],
       "source_count": 4,
       "search_text": "sila school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic",
+        "interactive_site"
+      ],
       "companions": [
         {
           "url": "https://lukafin.github.io/artists-infographic-archive/interactive/sila/v1/index.html",
@@ -2914,7 +3061,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "renesansa school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "renesansa school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-08-14",
@@ -2975,7 +3125,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "reka school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "reka school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-08-13",
@@ -3036,7 +3189,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "potres school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "potres school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-08-10",
@@ -3098,7 +3254,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "tiny plasma vortices reveal a hidden mixing process on the sun science_news znanstvena novica en age_6 ages 6+ 6+ let"
+      "search_text": "tiny plasma vortices reveal a hidden mixing process on the sun science_news znanstvena novica en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-07-31",
@@ -3159,7 +3318,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "laser mapping suggests a vast precolonial network of up to 30,000 earthworks beneath the southwestern amazon science_news znanstvena novica en age_6 ages 6+ 6+ let"
+      "search_text": "laser mapping suggests a vast precolonial network of up to 30,000 earthworks beneath the southwestern amazon science_news znanstvena novica en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-07-31",
@@ -3221,7 +3383,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "podnebna sprememba school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "podnebna sprememba school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-07-31",
@@ -3283,7 +3448,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "aaron sopher artist umetnik de age_6 ages 6+ 6+ let"
+      "search_text": "aaron sopher artist umetnik de age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-07-30",
@@ -3345,7 +3513,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "aaron sopher artist umetnik en age_6 ages 6+ 6+ let"
+      "search_text": "aaron sopher artist umetnik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-07-29",
@@ -3407,7 +3578,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "frida kahlo artist umetnik de age_6 ages 6+ 6+ let"
+      "search_text": "frida kahlo artist umetnik de age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-07-09",
@@ -3469,7 +3643,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "michael jordan sport športnik de age_6 ages 6+ 6+ let"
+      "search_text": "michael jordan sport športnik de age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-07-08",
@@ -3531,7 +3708,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "vincent van gogh artist umetnik en age_6 ages 6+ 6+ let"
+      "search_text": "vincent van gogh artist umetnik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-07-07",
@@ -3593,7 +3773,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "michael jordan sport športnik en age_6 ages 6+ 6+ let"
+      "search_text": "michael jordan sport športnik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-07-06",
@@ -3655,7 +3838,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "marie curie scientist znanstvenik en age_6 ages 6+ 6+ let"
+      "search_text": "marie curie scientist znanstvenik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-07-04",
@@ -3717,7 +3903,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "kroženje vode school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "kroženje vode school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-07-03",
@@ -3778,7 +3967,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "kemična reakcija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "kemična reakcija school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-07-02",
@@ -3840,7 +4032,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "karta school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "karta school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-07-01",
@@ -3903,7 +4098,10 @@
         "6+ let"
       ],
       "source_count": 5,
-      "search_text": "industrijska revolucija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "industrijska revolucija school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-30",
@@ -3965,7 +4163,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "gravitacija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "gravitacija school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-29",
@@ -4017,7 +4218,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 4,
-      "search_text": "gostota prebivalstva school_poster šolski plakat sl"
+      "search_text": "gostota prebivalstva school_poster šolski plakat sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-28",
@@ -4069,7 +4273,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 4,
-      "search_text": "gora school_poster šolski plakat sl"
+      "search_text": "gora school_poster šolski plakat sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-24",
@@ -4121,7 +4328,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 4,
-      "search_text": "globalizacija school_poster šolski plakat sl"
+      "search_text": "globalizacija school_poster šolski plakat sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-23",
@@ -4183,7 +4393,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "gibanje school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "gibanje school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-22",
@@ -4245,7 +4458,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "francoska revolucija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "francoska revolucija school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-21",
@@ -4308,7 +4524,10 @@
         "6+ let"
       ],
       "source_count": 5,
-      "search_text": "evolucija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "evolucija school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-20",
@@ -4371,7 +4590,10 @@
         "6+ let"
       ],
       "source_count": 5,
-      "search_text": "erozija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "erozija school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-19",
@@ -4433,7 +4655,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "elektromagnetno sevanje school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "elektromagnetno sevanje school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-18",
@@ -4496,7 +4721,10 @@
         "6+ let"
       ],
       "source_count": 5,
-      "search_text": "elektrika school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "elektrika school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-18",
@@ -4559,7 +4787,10 @@
         "6+ let"
       ],
       "source_count": 5,
-      "search_text": "druga svetovna vojna school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "druga svetovna vojna school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-17",
@@ -4611,7 +4842,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 4,
-      "search_text": "demokracija school_poster šolski plakat sl"
+      "search_text": "demokracija school_poster šolski plakat sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-16",
@@ -4672,7 +4906,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "celična delitev school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "celična delitev school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-15",
@@ -4733,7 +4970,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "celična biologija school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "celična biologija school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-14",
@@ -4794,7 +5034,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "antični egipt school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "antični egipt school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-13",
@@ -4856,7 +5099,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "rimsko cesarstvo school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "rimsko cesarstvo school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-12",
@@ -4909,7 +5155,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 5,
-      "search_text": "evropska unija school_poster šolski plakat sl"
+      "search_text": "evropska unija school_poster šolski plakat sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-12",
@@ -4971,7 +5220,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "cell division school_poster šolski plakat en age_6 ages 6+ 6+ let"
+      "search_text": "cell division school_poster šolski plakat en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-11",
@@ -5033,7 +5285,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "cell biology school_poster šolski plakat en age_6 ages 6+ 6+ let"
+      "search_text": "cell biology school_poster šolski plakat en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-10",
@@ -5095,7 +5350,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "world war ii school_poster šolski plakat en age_6 ages 6+ 6+ let"
+      "search_text": "world war ii school_poster šolski plakat en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-09",
@@ -5156,7 +5414,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "industrial revolution school_poster šolski plakat en age_6 ages 6+ 6+ let"
+      "search_text": "industrial revolution school_poster šolski plakat en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-08",
@@ -5205,7 +5466,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 1,
-      "search_text": "french revolution school_poster šolski plakat en"
+      "search_text": "french revolution school_poster šolski plakat en",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-07",
@@ -5268,7 +5532,10 @@
         "6+ let"
       ],
       "source_count": 5,
-      "search_text": "ancient egypt school_poster šolski plakat en age_6 ages 6+ 6+ let"
+      "search_text": "ancient egypt school_poster šolski plakat en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-06",
@@ -5319,7 +5586,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 3,
-      "search_text": "roman empire school_poster šolski plakat en"
+      "search_text": "roman empire school_poster šolski plakat en",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-03",
@@ -5380,7 +5650,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "lalaine vergara-paras artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "lalaine vergara-paras artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-03",
@@ -5412,7 +5685,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 3,
-      "search_text": "renaissance school_poster šolski plakat en"
+      "search_text": "renaissance school_poster šolski plakat en",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-03",
@@ -5444,7 +5720,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 3,
-      "search_text": "middle ages school_poster šolski plakat en"
+      "search_text": "middle ages school_poster šolski plakat en",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-01",
@@ -5506,7 +5785,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "european union school_poster šolski plakat en age_6 ages 6+ 6+ let"
+      "search_text": "european union school_poster šolski plakat en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-01",
@@ -5567,7 +5849,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "lalaine vergara-paras artist umetnik en age_6 ages 6+ 6+ let"
+      "search_text": "lalaine vergara-paras artist umetnik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-01",
@@ -5628,7 +5913,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "graham bonney artist umetnik en age_6 ages 6+ 6+ let"
+      "search_text": "graham bonney artist umetnik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-06-01",
@@ -5689,7 +5977,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "morgan freeman artist umetnik en age_6 ages 6+ 6+ let"
+      "search_text": "morgan freeman artist umetnik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-31",
@@ -5750,7 +6041,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "clint eastwood artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "clint eastwood artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-30",
@@ -5812,7 +6106,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "hartmut wekerle scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "hartmut wekerle scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-29",
@@ -5875,7 +6172,10 @@
         "6+ let"
       ],
       "source_count": 5,
-      "search_text": "karl bötticher artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "karl bötticher artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-28",
@@ -5934,7 +6234,10 @@
         "6+ let"
       ],
       "source_count": 1,
-      "search_text": "avril lavigne artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "avril lavigne artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-26",
@@ -5993,7 +6296,10 @@
         "6+ let"
       ],
       "source_count": 1,
-      "search_text": "adolf krischanitz artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "adolf krischanitz artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-25",
@@ -6052,7 +6358,10 @@
         "6+ let"
       ],
       "source_count": 1,
-      "search_text": "johann dientzenhofer artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "johann dientzenhofer artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-24",
@@ -6111,7 +6420,10 @@
         "6+ let"
       ],
       "source_count": 1,
-      "search_text": "omar khayyám artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "omar khayyám artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-23",
@@ -6173,7 +6485,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "carl linnaeus scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "carl linnaeus scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-22",
@@ -6235,7 +6550,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "hideaki anno artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "hideaki anno artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-21",
@@ -6295,7 +6613,10 @@
         "6+ let"
       ],
       "source_count": 2,
-      "search_text": "anton karas artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "anton karas artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-20",
@@ -6354,7 +6675,10 @@
         "6+ let"
       ],
       "source_count": 1,
-      "search_text": "edward b. lewis scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "edward b. lewis scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-19",
@@ -6413,7 +6737,10 @@
         "6+ let"
       ],
       "source_count": 1,
-      "search_text": "anatoly kashirov sport športnik sl age_6 ages 6+ 6+ let"
+      "search_text": "anatoly kashirov sport športnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-19",
@@ -6474,7 +6801,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "jean gabin artist umetnik en age_6 ages 6+ 6+ let"
+      "search_text": "jean gabin artist umetnik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-19",
@@ -6536,7 +6866,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "günter m. ziegler scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "günter m. ziegler scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-18",
@@ -6598,7 +6931,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "bertrand russell scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "bertrand russell scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-17",
@@ -6660,7 +6996,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "ernst von bandel artist umetnik en age_6 ages 6+ 6+ let"
+      "search_text": "ernst von bandel artist umetnik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-16",
@@ -6719,7 +7058,10 @@
         "6+ let"
       ],
       "source_count": 1,
-      "search_text": "adam lonitzer scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "adam lonitzer scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -6780,7 +7122,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "élie metchnikoff scientist znanstvenik en age_6 ages 6+ 6+ let"
+      "search_text": "élie metchnikoff scientist znanstvenik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -6841,7 +7186,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "ada lovelace scientist znanstvenik en age_6 ages 6+ 6+ let"
+      "search_text": "ada lovelace scientist znanstvenik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -6902,7 +7250,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "fotosinteza school_poster šolski plakat sl age_6 ages 6+ 6+ let"
+      "search_text": "fotosinteza school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-15",
@@ -6968,7 +7319,10 @@
         "6+ let"
       ],
       "source_count": 8,
-      "search_text": "alfred rethel artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "alfred rethel artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-14",
@@ -7028,7 +7382,10 @@
         "6+ let"
       ],
       "source_count": 2,
-      "search_text": "davy commeyne sport športnik sl age_6 ages 6+ 6+ let"
+      "search_text": "davy commeyne sport športnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -7091,7 +7448,10 @@
         "6+ let"
       ],
       "source_count": 5,
-      "search_text": "stevie wonder artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "stevie wonder artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-12",
@@ -7152,7 +7512,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "johann heinrich schulze scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "johann heinrich schulze scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-11",
@@ -7213,7 +7576,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "christina mchale sport športnik sl age_6 ages 6+ 6+ let"
+      "search_text": "christina mchale sport športnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-10",
@@ -7275,7 +7641,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "bob dylan artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "bob dylan artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-09",
@@ -7337,7 +7706,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "alexis clairaut scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "alexis clairaut scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -7398,7 +7770,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "antoine de saint-exupéry artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "antoine de saint-exupéry artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -7459,7 +7834,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "serena williams artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "serena williams artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-08",
@@ -7521,7 +7899,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "simon ungers artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "simon ungers artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-07",
@@ -7582,7 +7963,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "oskar perron scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "oskar perron scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -7644,7 +8028,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "bernhard nebel scientist znanstvenik en age_6 ages 6+ 6+ let"
+      "search_text": "bernhard nebel scientist znanstvenik en age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-06",
@@ -7706,7 +8093,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "george clooney artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "george clooney artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-05",
@@ -7767,7 +8157,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "johann faulhaber scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "johann faulhaber scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-05",
@@ -7828,7 +8221,10 @@
         "6+ let"
       ],
       "source_count": 3,
-      "search_text": "delia derbyshire artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "delia derbyshire artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -7890,7 +8286,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "abdus salam scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "abdus salam scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -7952,7 +8351,10 @@
         "6+ let"
       ],
       "source_count": 4,
-      "search_text": "louis pasteur scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "louis pasteur scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -7980,7 +8382,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 4,
-      "search_text": "aaron sopher scientist znanstvenik sl"
+      "search_text": "aaron sopher scientist znanstvenik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-04",
@@ -8008,7 +8413,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 4,
-      "search_text": "vincent van gogh artist umetnik sl"
+      "search_text": "vincent van gogh artist umetnik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-03",
@@ -8035,7 +8443,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 3,
-      "search_text": "max volmer scientist znanstvenik sl"
+      "search_text": "max volmer scientist znanstvenik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-05-01",
@@ -8062,7 +8473,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 3,
-      "search_text": "santiago ramón y cajal scientist znanstvenik sl"
+      "search_text": "santiago ramón y cajal scientist znanstvenik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -8089,7 +8503,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 3,
-      "search_text": "marie curie scientist znanstvenik sl"
+      "search_text": "marie curie scientist znanstvenik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-30",
@@ -8115,7 +8532,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 2,
-      "search_text": "jaroslav hašek artist umetnik sl"
+      "search_text": "jaroslav hašek artist umetnik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -8149,7 +8569,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 3,
-      "search_text": "jan oort scientist znanstvenik sl"
+      "search_text": "jan oort scientist znanstvenik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-27",
@@ -8182,7 +8605,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 3,
-      "search_text": "samuel morse scientist znanstvenik sl"
+      "search_text": "samuel morse scientist znanstvenik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-26",
@@ -8214,7 +8640,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 3,
-      "search_text": "john james audubon artist umetnik sl"
+      "search_text": "john james audubon artist umetnik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-25",
@@ -8246,7 +8675,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 3,
-      "search_text": "guglielmo marconi scientist znanstvenik sl"
+      "search_text": "guglielmo marconi scientist znanstvenik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-24",
@@ -8280,7 +8712,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 4,
-      "search_text": "david blackwell scientist znanstvenik sl"
+      "search_text": "david blackwell scientist znanstvenik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-23",
@@ -8313,7 +8748,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 4,
-      "search_text": "max planck scientist znanstvenik sl"
+      "search_text": "max planck scientist znanstvenik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-22",
@@ -8344,7 +8782,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 3,
-      "search_text": "sidney nolan artist umetnik sl"
+      "search_text": "sidney nolan artist umetnik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-21",
@@ -8375,7 +8816,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 3,
-      "search_text": "jean-baptiste biot scientist znanstvenik sl"
+      "search_text": "jean-baptiste biot scientist znanstvenik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-20",
@@ -8406,7 +8850,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 3,
-      "search_text": "joan miró artist umetnik sl"
+      "search_text": "joan miró artist umetnik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-19",
@@ -8437,7 +8884,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 3,
-      "search_text": "fernando botero artist umetnik sl"
+      "search_text": "fernando botero artist umetnik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-18",
@@ -8470,7 +8920,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 4,
-      "search_text": "leopold stokowski artist umetnik sl"
+      "search_text": "leopold stokowski artist umetnik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-17",
@@ -8503,7 +8956,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 4,
-      "search_text": "giovanni battista riccioli scientist znanstvenik sl"
+      "search_text": "giovanni battista riccioli scientist znanstvenik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-16",
@@ -8534,7 +8990,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 3,
-      "search_text": "wilbur wright scientist znanstvenik sl"
+      "search_text": "wilbur wright scientist znanstvenik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-15",
@@ -8565,7 +9024,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 3,
-      "search_text": "leonardo da vinci artist umetnik sl"
+      "search_text": "leonardo da vinci artist umetnik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-14",
@@ -8590,7 +9052,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 4,
-      "search_text": "christiaan huygens scientist znanstvenik sl"
+      "search_text": "christiaan huygens scientist znanstvenik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-13",
@@ -8616,7 +9081,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 5,
-      "search_text": "robert watson-watt scientist znanstvenik sl"
+      "search_text": "robert watson-watt scientist znanstvenik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-12",
@@ -8641,7 +9109,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 4,
-      "search_text": "evelyn berezin scientist znanstvenik sl"
+      "search_text": "evelyn berezin scientist znanstvenik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-11",
@@ -8665,7 +9136,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 4,
-      "search_text": "percy julian scientist znanstvenik sl"
+      "search_text": "percy julian scientist znanstvenik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-09",
@@ -8689,7 +9163,10 @@
       "age_suitability_labels_en": [],
       "age_suitability_labels_sl": [],
       "source_count": 4,
-      "search_text": "eadweard muybridge artist umetnik sl"
+      "search_text": "eadweard muybridge artist umetnik sl",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-09",
@@ -8716,7 +9193,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "thomas johann seebeck scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "thomas johann seebeck scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-08",
@@ -8743,7 +9223,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "melvin calvin scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "melvin calvin scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-07",
@@ -8770,7 +9253,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "jackie chan artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "jackie chan artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-06",
@@ -8797,7 +9283,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "raffaello sanzio artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "raffaello sanzio artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-05",
@@ -8824,7 +9313,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "joseph lister scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "joseph lister scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-04",
@@ -8851,7 +9343,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "shing tung yau scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "shing tung yau scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-03",
@@ -8878,7 +9373,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "jane goodall scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "jane goodall scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-02",
@@ -8905,7 +9403,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "maria sibylla merian artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "maria sibylla merian artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-04-01",
@@ -8932,7 +9433,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "sophie germain scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "sophie germain scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-31",
@@ -8959,7 +9463,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "william lawrence bragg scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "william lawrence bragg scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-30",
@@ -8986,7 +9493,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "vincent van gogh artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "vincent van gogh artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-29",
@@ -9013,7 +9523,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "richard lewontin scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "richard lewontin scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-28",
@@ -9040,7 +9553,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "lady gaga artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "lady gaga artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-27",
@@ -9067,7 +9583,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "wilhelm rontgen scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "wilhelm rontgen scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-25",
@@ -9094,7 +9613,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "norman borlaug scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "norman borlaug scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-24",
@@ -9121,7 +9643,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "peter joseph william debye scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "peter joseph william debye scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-23",
@@ -9148,7 +9673,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "akira kurosawa artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "akira kurosawa artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-22",
@@ -9175,7 +9703,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "robert millikan scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "robert millikan scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-21",
@@ -9202,7 +9733,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "modest mussorgsky artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "modest mussorgsky artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-20",
@@ -9229,7 +9763,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "burrhus frederic skinner scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "burrhus frederic skinner scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-19",
@@ -9256,7 +9793,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "frederic joliot curie scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "frederic joliot curie scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-18",
@@ -9283,7 +9823,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "rudolf diesel scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "rudolf diesel scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-17",
@@ -9310,7 +9853,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "gottlieb daimler scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "gottlieb daimler scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-16",
@@ -9337,7 +9883,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "georg ohm scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "georg ohm scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-15",
@@ -9364,7 +9913,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "john snow scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "john snow scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-14",
@@ -9391,7 +9943,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "albert einstein scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "albert einstein scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-13",
@@ -9418,7 +9973,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "percival lowell scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "percival lowell scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-12",
@@ -9445,7 +10003,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "william henry perkin scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "william henry perkin scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-11",
@@ -9472,7 +10033,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "jcr licklider scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "jcr licklider scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-10",
@@ -9499,7 +10063,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "marcello malpighi scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "marcello malpighi scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-09",
@@ -9526,7 +10093,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "walter kohn scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "walter kohn scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-08",
@@ -9553,7 +10123,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "otto hahn scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "otto hahn scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-07",
@@ -9580,7 +10153,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "piet mondrian scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "piet mondrian scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-06",
@@ -9607,7 +10183,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "michelangelo buonarroti artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "michelangelo buonarroti artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-05",
@@ -9634,7 +10213,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "lynn margulis scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "lynn margulis scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-04",
@@ -9661,7 +10243,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "antonio vivaldi artist umetnik sl age_6 ages 6+ 6+ let"
+      "search_text": "antonio vivaldi artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-03",
@@ -9688,7 +10273,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "alexander graham bell scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "alexander graham bell scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-02",
@@ -9715,7 +10303,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "theodor geisel scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "theodor geisel scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-03-01",
@@ -9742,7 +10333,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "frederic chopin scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "frederic chopin scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-28",
@@ -9769,7 +10363,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "linus pauling scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "linus pauling scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-27",
@@ -9796,7 +10393,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "charles best scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "charles best scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-26",
@@ -9823,7 +10423,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "ahmed zewail scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "ahmed zewail scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-25",
@@ -9850,7 +10453,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "george harrison scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "george harrison scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-24",
@@ -9877,7 +10483,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "brian schmidt scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "brian schmidt scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-23",
@@ -9904,7 +10513,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "casimir funk scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "casimir funk scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-20",
@@ -9931,7 +10543,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "ansel adams scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "ansel adams scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-19",
@@ -9958,7 +10573,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "nicolaus copernicus scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "nicolaus copernicus scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-18",
@@ -9985,7 +10603,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "alessandro volta scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "alessandro volta scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-17",
@@ -10012,7 +10633,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "otto stern scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "otto stern scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-16",
@@ -10039,7 +10663,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "armand guillaumin scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "armand guillaumin scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-10",
@@ -10066,7 +10693,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260210 165742 ustvari barvito risankasto infografiko z scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260210 165742 ustvari barvito risankasto infografiko z scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-09",
@@ -10093,7 +10723,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260209 170025 ustvari jasno barvito infografiko za 10 scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260209 170025 ustvari jasno barvito infografiko za 10 scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-07",
@@ -10120,7 +10753,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260207 134709 otrokom prijazen infografski plakat v ra scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260207 134709 otrokom prijazen infografski plakat v ra scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-06",
@@ -10147,7 +10783,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260206 104245 svetel otrokom prijazen infografi ni pla scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260206 104245 svetel otrokom prijazen infografi ni pla scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-05",
@@ -10174,7 +10813,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260205 194011 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260205 194011 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-04",
@@ -10201,7 +10843,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260204 193923 ustvari zelo podroben infografik v razme scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260204 193923 ustvari zelo podroben infografik v razme scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-03",
@@ -10228,7 +10873,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260203 193940 ustvari otrokom prijazno infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260203 193940 ustvari otrokom prijazno infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-02",
@@ -10255,7 +10903,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260202 193945 ustvari barvit otrokom prijazen infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260202 193945 ustvari barvit otrokom prijazen infograf scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-02-01",
@@ -10282,7 +10933,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260201 193903 ustvari otrokom prijazno infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260201 193903 ustvari otrokom prijazno infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-01-29",
@@ -10309,7 +10963,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260129 111309 ustvari prijazno otro ko infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260129 111309 ustvari prijazno otro ko infografiko v r scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-01-28",
@@ -10336,7 +10993,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260128 111258 ustvari zivahno otrokom prijazno izobraz scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260128 111258 ustvari zivahno otrokom prijazno izobraz scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-01-27",
@@ -10363,7 +11023,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260127 111144 ustvari ivahno prijazno infografiko v ra scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260127 111144 ustvari ivahno prijazno infografiko v ra scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-01-25",
@@ -10390,7 +11053,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260125 111136 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260125 111136 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-01-24",
@@ -10417,7 +11083,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260124 111132 svetla otrokom prijazna infografika o fi scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260124 111132 svetla otrokom prijazna infografika o fi scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-01-23",
@@ -10444,7 +11113,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260123 111113 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260123 111113 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-01-22",
@@ -10471,7 +11143,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260122 111101 ustvari barvit otrokom prijazen infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260122 111101 ustvari barvit otrokom prijazen infograf scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-01-21",
@@ -10498,7 +11173,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260121 112025 ustvari zelo podrobno ivahno infografiko scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260121 112025 ustvari zelo podrobno ivahno infografiko scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-01-20",
@@ -10525,7 +11203,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260120 111248 barvit prijazen 16 9 infografik 2k 1920x scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260120 111248 barvit prijazen 16 9 infografik 2k 1920x scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-01-18",
@@ -10552,7 +11233,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260118 115810 ustvari svetel prijazen infografi ni pla scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260118 115810 ustvari svetel prijazen infografi ni pla scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-01-17",
@@ -10579,7 +11263,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260117 115711 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260117 115711 ustvari ivahno otrokom prijazno infograf scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-01-16",
@@ -10606,7 +11293,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260116 075624 ustvari barvit risankasto infografiko za scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260116 075624 ustvari barvit risankasto infografiko za scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-01-13",
@@ -10633,7 +11323,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260113 071226 barvita infografika za otroke 10 let o j scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260113 071226 barvita infografika za otroke 10 let o j scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-01-12",
@@ -10660,7 +11353,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260112 071135 ustvari barvito otrokom prijazno infogra scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260112 071135 ustvari barvito otrokom prijazno infogra scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-01-11",
@@ -10687,7 +11383,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260111 071228 barvita otro ka infografika o nicolausu scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260111 071228 barvita otro ka infografika o nicolausu scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     },
     {
       "date": "2026-01-10",
@@ -10714,7 +11413,10 @@
         "6+ let"
       ],
       "source_count": 0,
-      "search_text": "20260110 211323 barvit otro ki infografi ni plakat o roc scientist znanstvenik sl age_6 ages 6+ 6+ let"
+      "search_text": "20260110 211323 barvit otro ki infografi ni plakat o roc scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
     }
   ]
 }
