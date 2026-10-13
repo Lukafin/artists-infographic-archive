@@ -40,6 +40,7 @@
   }
   function stop() {
     audio.pause();
+    audio.preload = 'none';
     audio.removeAttribute('src');
     audio.load();
     activeId = '';
@@ -69,7 +70,10 @@
       title.textContent = data.title;
       image.src = data.thumbnail;
       image.alt = ''; // Adjacent title supplies the image context.
-      audio.src = data.url; // preload=none; native Play loads it on demand.
+      // Listen is deliberate activation: metadata enables duration and the timeline
+      // before Play, while the page itself still makes no audio requests.
+      audio.preload = 'metadata';
+      audio.src = data.url;
     }
     player.hidden = false;
     document.body.classList.add('podcast-active');

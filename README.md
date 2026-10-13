@@ -109,9 +109,10 @@ Run metadata and private companion manifests remain outside the public tree.
 
 The selected **persistent bottom mini-player** appears only after Listen / Poslušaj
 activation. Selection does not autoplay: press the native play control to start.
-One native `audio controls preload="none"` element provides play/pause, seeking and
-time. Selecting another episode stops/replaces the old one; selecting the same one
-preserves its position. Dismiss stops playback, releases the source and returns
+The page starts with `preload="none"`. After Listen is selected, the same native
+`audio controls` element loads metadata so its duration and seekable timeline appear
+before Play, without autoplay. Selecting another episode stops/replaces the old one;
+selecting the same one preserves its position. Dismiss stops playback, releases the source and returns
 focus. The thumbnail, title and actual spoken language stay visible independently
 of UI language. Responsive padding includes the mobile safe area.
 
@@ -122,6 +123,15 @@ instead of navigating away. While selected, opening an infographic uses a new ta
 **Separate HTML documents** (such as the Science news page), reloads and leaving the
 site stop playback; the player states this limitation. There is no background
 cross-document playback or saved autoplay session.
+
+### Local preview
+
+```sh
+python3 preview_server.py --port 8768
+```
+
+Open `http://127.0.0.1:8768/index.html#archive`. Use this preview server for audio/video
+seeking; Python's basic `http.server` does not implement the required byte ranges.
 
 ### Verification
 
@@ -137,18 +147,20 @@ Optional real Chromium smoke test (Node with built-in WebSocket, Chromium, ffmpe
 ```sh
 # Choose a fresh path under your scratch directory, never under docs/site.
 python3 tests/make_podcast_fixture.py "$TMPDIR/podcast-browser-fixture"
-python3 -m http.server 8764 --bind 127.0.0.1 \
+python3 preview_server.py --port 8764 \
   --directory "$TMPDIR/podcast-browser-fixture/public"
 # In another terminal; stop the local HTTP server afterward.
 node tests/browser_podcasts.mjs http://127.0.0.1:8764/index.html "$TMPDIR"
 ```
 
-The smoke test runs one headless Chromium process, checks zero initial/selection
-audio requests, native playback/seek, same-element pagination/back, actual language
-after UI switching, episode replacement, dismiss/focus, responsive padding and
+The smoke test runs one headless Chromium process and checks zero page-load audio
+requests, duration and seeking before Play, native playback/seek, same-element
+pagination/back, actual language after UI switching, episode replacement,
+dismiss/focus, responsive padding and
 desktop/mobile screenshots. The fixture is local-only generated sine audio and
-must never be copied into the production site. Python's basic HTTP server is not
-a certification of production byte-range support.
+must never be copied into the production site. The local preview server returns
+HTTP 206 byte ranges and `audio/mp4` for M4A files, enabling native seeking. Production
+range support must still be verified separately.
 
 Tests generate disposable sine-wave AAC fixtures, never real/private episodes.
 After an authorized production deployment, verify the exact public `entries.json`

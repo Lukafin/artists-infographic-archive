@@ -74,10 +74,12 @@ try {
   await search(episodes[0].person);
   await until(() => evaluate('!!document.querySelector("[data-podcast-listen]")'), 'Listen action');
   await evaluate("document.querySelector('[data-podcast-listen]').click(); window.testAudio=document.querySelector('audio')");
-  assert.equal(await evaluate('testAudio.paused && testAudio.preload === "none"'), true);
+  assert.equal(await evaluate('testAudio.paused && testAudio.preload === "metadata"'), true);
   assert.equal(await evaluate('document.getElementById("podcast-player").hidden'), false);
-  await wait(200);
-  assert.equal(audioRequests.length, 0, 'Selecting Listen does not preload/play');
+  await until(() => evaluate('testAudio.duration > 0 && testAudio.seekable.length > 0 && testAudio.seekable.end(0) > 3'), 'duration and seekable timeline before Play');
+  assert.equal(await evaluate('testAudio.paused && testAudio.currentTime === 0'), true, 'Metadata loading never autoplays');
+  await evaluate('testAudio.currentTime=3');
+  await until(() => evaluate('testAudio.currentTime >= 3 && testAudio.paused'), 'seek before Play');
   await evaluate('testAudio.play()');
   await until(() => evaluate('testAudio.currentTime > 0.1 && !testAudio.paused && testAudio.duration > 0'), 'native audio playback');
   await evaluate('testAudio.currentTime=3');
@@ -114,6 +116,8 @@ try {
   const http = await evaluate(`(async()=>{const data=await(await fetch('entries.json')).json();const u=data.entries.find(e=>e.podcast).podcast.url;const h=await fetch(u,{method:'HEAD'});const r=await fetch(u,{headers:{Range:'bytes=0-1023'}});return {status:h.status,mime:h.headers.get('content-type'),rangeStatus:r.status,contentRange:r.headers.get('content-range')};})()`);
   assert.equal(http.status, 200);
   assert.equal(http.mime, 'audio/mp4');
+  assert.equal(http.rangeStatus, 206);
+  assert.match(http.contentRange, /^bytes 0-1023\//);
   assert.deepEqual(errors, [], 'No JavaScript errors');
   console.log(JSON.stringify({desktop:'passed', mobile:'passed', playback:'passed', seek:'passed', autoplay:false,
     initialAudioRequests:0, pagination:'same media element, playback retained, back works', episodeSwitch:'paused', dismiss:'stops and restores focus', http, screenshots:scratch}));
