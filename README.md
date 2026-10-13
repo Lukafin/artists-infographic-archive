@@ -20,6 +20,11 @@ This reuses already-published entries in their existing order, preserves `latest
 and media associations, and derives format availability from normalized metadata.
 Normal production rebuilds still read the private stores for admission and revocation.
 
+Explore opens approved embedded interactive sites in fullscreen immediately. Browsers
+without native fullscreen use a full-window layout with a visible close button.
+Closing unloads the iframe and returns focus to Explore. Link-only media retains its
+external-link presentation; videos keep their existing manual fullscreen control.
+
 Contents:
 - `docs/` canonical GitHub-pushed static site (images + HTML + metadata)
 - `site/` in-repo mirror backup of the generated static site
@@ -123,6 +128,7 @@ cross-document playback or saved autoplay session.
 ```sh
 python3 -m unittest discover -s tests -v
 node --check assets/podcast-player.js
+node --test tests/test_companion_fullscreen.mjs
 git diff --check
 ```
 
