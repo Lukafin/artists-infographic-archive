@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 228,
+    "total_entries": 229,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 194
+      "age_6": 195
     },
     "category_counts": {
-      "scientist": 108,
+      "scientist": 109,
       "sport": 9,
       "nobel_prize": 2,
       "artist": 53,
@@ -31,12 +31,75 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 180,
+      "sl": 181,
       "en": 34,
       "de": 14
     }
   },
   "entries": [
+    {
+      "date": "2026-10-13",
+      "person": "Albert Camus",
+      "filename": "AlbertCamus-sl.png",
+      "image_filename": "AlbertCamus-sl.png",
+      "sources": [
+        "https://www.nobelprize.org/prizes/literature/1957/camus/facts/",
+        "https://www.nobelprize.org/prizes/literature/1957/camus/biographical/",
+        "https://www.nobelprize.org/prizes/literature/1957/camus/speech/"
+      ],
+      "original_article_url": null,
+      "title": "Albert Camus — od absurda do solidarnosti",
+      "summary": "Albert Camus (1913–1960) je bil francosko pišoči pisatelj, novinar in mislec, rojen v Alžiriji. V Mitu o Sizifu (1942) je razmišljal o napetosti med našim iskanjem smisla in svetom brez zagotovljenih odgovorov. Roman Kuga (1947) skozi delo zdravnika Rieuxa v Oranu pokaže pomoč drugim in skupni odpor do trpljenja. Leta 1957 je prejel Nobelovo nagrado za književnost. Infografika poveže ti deli z razlago solidarnosti; zaključna poved je izobraževalna parafraza, ne Camusov citat.",
+      "age_suitability_details": {
+        "age_6": "Camus je pisal zgodbe o težkih vprašanjih in o tem, kako lahko ljudje pomagajo drug drugemu.",
+        "age_13": "Mit o Sizifu povezuje iskanje smisla z neodgovorjenimi vprašanji, Kuga pa pokaže solidarnost in odgovornost do ljudi v stiski.",
+        "adult": "Camusov pojem absurda označuje napetost med človekovo potrebo po smislu in molkom sveta. Književni prizori omogočajo razmislek o uporu, skupnem delovanju in etični odgovornosti, ne da bi ju skrčili na nihilizem ali dobesedno biografijo."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "aa8e9790-bca5-49e2-bd52-2d36aeec27e7",
+      "_kind": "native",
+      "_source_mtime": 1791868151.03144,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "albert camus scientist znanstvenik sl age_6 ages 6+ 6+ let"
+    },
     {
       "date": "2026-10-12",
       "person": "Alan Ashton",

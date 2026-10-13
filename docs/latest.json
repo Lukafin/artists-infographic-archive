@@ -1,25 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/e3d8e29de59b3cc77b82da2e7a9dec08bb0ab8861cebb575d48b0b52fb54becb.m4a",
-    "title": "Alan Ashton",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 264.011,
-    "source": "NotebookLM",
-    "companion_id": "b8efdbb998a7f4ee7fd6a8a77b6707065eb82b0e2a43e37ba0b5997fcb29d52d"
-  },
-  "date": "2026-10-12",
-  "person": "Alan Ashton",
-  "image_filename": "AlanAshton-sl.png",
+  "date": "2026-10-13",
+  "person": "Albert Camus",
+  "image_filename": "AlbertCamus-sl.png",
   "category": "scientist",
   "category_label": "Znanstvenik",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.lib.utah.edu/info/gould-lecture/ashton.php",
-    "https://magazine.byu.edu/article/mary-lou-supercomputer/",
-    "https://computerhistory.org/press-releases/ms-source-code/"
+    "https://www.nobelprize.org/prizes/literature/1957/camus/facts/",
+    "https://www.nobelprize.org/prizes/literature/1957/camus/biographical/",
+    "https://www.nobelprize.org/prizes/literature/1957/camus/speech/"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -30,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 228,
+  "total_entries": 229,
   "total_pages": 23,
   "per_page": 10
 }
