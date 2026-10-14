@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/d099231de153b2378b36dc59406d4d952125c2dcb76743178bd1aa9b3cd4a696.m4a",
+    "title": "Albert Betz",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 271.697,
+    "source": "NotebookLM",
+    "companion_id": "dd6ad265a6a4b0307f19823123aba628c157e7eec0e0af5f8955671d8399b45e"
+  },
   "date": "2026-10-14",
   "person": "Albert Betz",
   "image_filename": "AlbertBetz-sl.png",
