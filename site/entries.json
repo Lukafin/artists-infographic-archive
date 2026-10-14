@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 229,
+    "total_entries": 230,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 195
+      "age_6": 196
     },
     "category_counts": {
-      "scientist": 109,
+      "scientist": 110,
       "sport": 9,
       "nobel_prize": 2,
       "artist": 53,
@@ -31,17 +31,83 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 181,
+      "sl": 182,
       "en": 34,
       "de": 14
     },
     "format_counts": {
-      "infographic": 229,
+      "infographic": 230,
       "podcast": 9,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-10-14",
+      "person": "Albert Betz",
+      "filename": "AlbertBetz-sl.png",
+      "image_filename": "AlbertBetz-sl.png",
+      "sources": [
+        "https://www.deutsche-biographie.de/dbo011694.html",
+        "https://www.energy.gov/cmei/systems/windexchange/small-wind-guidebook",
+        "https://www.mpg.de/25054879/100-years-max-planck-institute-for-dynamics-and-self-organization?c=19150566"
+      ],
+      "original_article_url": null,
+      "title": "Albert Betz — koliko moči lahko vzamemo vetru?",
+      "summary": "Albert Betz (1885–1968) je bil fizik in raziskovalec zračnih tokov. Betzova meja pojasni, da idealni nezakriti rotor iz vetra ne more odvzeti vse razpoložljive moči: zrak mora še naprej teči in prinašati energijo. Največji delež mehanske moči v idealnem modelu znaša 16/27 oziroma približno 59,3 %. Za rotorjem zrak teče počasneje, tok pa se razširi. Prave turbine imajo dodatne izgube. Prikaz je konceptualna razlaga aerodinamike, ne univerzalna trditev o električnem izkoristku vseh naprav.",
+      "age_suitability_details": {
+        "age_6": "Veter lahko vrti lopatice. Nekaj njegove energije dobimo, zrak pa mora teči naprej.",
+        "age_13": "Betzova meja poveže hitrost vetra, prenos energije na rotor in počasnejši zrak za turbino. Idealni model postavi mejo 59,3 %, prave naprave pa imajo še dodatne izgube.",
+        "adult": "Teorija idealnega nezakritega rotorja v enakomernem nestisljivem toku določa največji koeficient moči 16/27. Referenca je kinetični energijski tok skozi površino rotorja pred upočasnitvijo. Omejitve modela ločimo od električnega izkoristka, posebnih geometrij in obnašanja celotnih vetrnih parkov."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "f080c6d6-de51-4def-99bf-8eeeb3de6a23",
+      "_kind": "native",
+      "_source_mtime": 1791954442.1231537,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "albert betz scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-13",
       "person": "Albert Camus",

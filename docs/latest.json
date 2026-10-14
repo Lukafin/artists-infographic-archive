@@ -1,25 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/0f45cb23a9feb1432c4773b14c2fcf09acc1ba37f59115ac6f12980e1646c698.m4a",
-    "title": "Albert Camus",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 363.207,
-    "source": "NotebookLM",
-    "companion_id": "99733bffc652f7e263e496320bdbc61b0c4e81c789ae1b745001542df1aa2b08"
-  },
-  "date": "2026-10-13",
-  "person": "Albert Camus",
-  "image_filename": "AlbertCamus-sl.png",
+  "date": "2026-10-14",
+  "person": "Albert Betz",
+  "image_filename": "AlbertBetz-sl.png",
   "category": "scientist",
   "category_label": "Znanstvenik",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.nobelprize.org/prizes/literature/1957/camus/facts/",
-    "https://www.nobelprize.org/prizes/literature/1957/camus/biographical/",
-    "https://www.nobelprize.org/prizes/literature/1957/camus/speech/"
+    "https://www.deutsche-biographie.de/dbo011694.html",
+    "https://www.energy.gov/cmei/systems/windexchange/small-wind-guidebook",
+    "https://www.mpg.de/25054879/100-years-max-planck-institute-for-dynamics-and-self-organization?c=19150566"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -30,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 229,
+  "total_entries": 230,
   "total_pages": 23,
   "per_page": 10
 }
