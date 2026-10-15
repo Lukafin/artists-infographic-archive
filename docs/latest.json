@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/881e49bec50d72f7fc22c64e95ae85160d42b563f5a6c54808b27aaf39dbf0ee.m4a",
+    "title": "Albert Zweifel",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 409.136,
+    "source": "NotebookLM",
+    "companion_id": "b89d43cc694593bf4bccdf3d4d9e3b4eceb20d381b256a90e05bc551d225feaa"
+  },
   "date": "2026-10-15",
   "person": "Albert Zweifel",
   "image_filename": "AlbertZweifel-sl.png",

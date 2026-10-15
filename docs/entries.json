@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 231,
-      "podcast": 10,
+      "podcast": 11,
       "interactive_site": 1
     }
   },
@@ -106,8 +106,18 @@
       "source_count": 4,
       "search_text": "albert zweifel sport športnik sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/881e49bec50d72f7fc22c64e95ae85160d42b563f5a6c54808b27aaf39dbf0ee.m4a",
+        "title": "Albert Zweifel",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 409.136,
+        "source": "NotebookLM",
+        "companion_id": "b89d43cc694593bf4bccdf3d4d9e3b4eceb20d381b256a90e05bc551d225feaa"
+      }
     },
     {
       "date": "2026-10-14",
