@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 230,
+    "total_entries": 231,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,28 +20,95 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 196
+      "age_6": 197
     },
     "category_counts": {
+      "sport": 10,
       "scientist": 110,
-      "sport": 9,
       "nobel_prize": 2,
       "artist": 53,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
-      "sl": 182,
+      "sl": 183,
       "en": 34,
       "de": 14
     },
     "format_counts": {
-      "infographic": 230,
+      "infographic": 231,
       "podcast": 10,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-10-15",
+      "person": "Albert Zweifel",
+      "filename": "AlbertZweifel-sl.png",
+      "image_filename": "AlbertZweifel-sl.png",
+      "sources": [
+        "https://www.munzinger.de/register/portrait/biographien/Albert%2BZweifel/01/52716",
+        "https://www.uci.org/article/uci-cyclo-cross-world-championships-belgian-stories-and-more/5jHiza1oB6J1Rsp8D0XhXp",
+        "https://www.uci.org/article/about-cyclo-cross/CI8sJ5b2dPCpHZ2pjDK4d",
+        "https://d3g42de5vbfx19.cloudfront.net/races/roadbooks/2025_CX_WorldChampionships.pdf"
+      ],
+      "original_article_url": null,
+      "title": "Albert Zweifel — mojster ciklokrosa",
+      "summary": "Švicarski kolesar Albert Zweifel, rojen 7. 6. 1949 v Rütiju, je v ciklokrosu petkrat osvojil naslov svetovnega prvaka: leta 1976, 1977, 1978, 1979 in 1986. Bil je tudi devetkratni švicarski prvak. Ciklokros združuje vožnjo po travi, blatu in poteh z odseki, na katerih tekmovalci sestopijo ter kolo nesejo čez ovire. Njegova kariera pokaže pomen vzdržljivosti, spretnosti in hitrega prehajanja med vožnjo in tekom. Prikazana proga je učna ilustracija, ne zemljevid posamezne dirke.",
+      "age_suitability_details": {
+        "age_6": "Albert je tekmoval s kolesom. Po blatu je vozil, čez nekatere ovire pa je kolo nesel.",
+        "age_13": "Albert Zweifel je petkrat postal svetovni prvak v ciklokrosu. Ta šport združuje vožnjo po različnih podlagah, tek s kolesom in hitro premagovanje ovir.",
+        "adult": "Zweiflovih pet profesionalnih naslovov svetovnega prvaka (1976–1979 in 1986) sodi v obdobje velike priljubljenosti ciklokrosa v Švici. Disciplina zahteva vzdržljivost, obvladovanje oprijema in učinkovite prehode med vožnjo ter nošenjem kolesa; ni enaka gorskemu ali cestnemu kolesarstvu."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "sport",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "ea159612-6686-4c17-90f6-0106636d85a5",
+      "_kind": "native",
+      "_source_mtime": 1792040778.5238037,
+      "category_label": "Športnik",
+      "category_class": "sport",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "albert zweifel sport športnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-14",
       "person": "Albert Betz",

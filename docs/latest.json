@@ -1,25 +1,17 @@
 {
-  "podcast": {
-    "url": "audio/d099231de153b2378b36dc59406d4d952125c2dcb76743178bd1aa9b3cd4a696.m4a",
-    "title": "Albert Betz",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 271.697,
-    "source": "NotebookLM",
-    "companion_id": "dd6ad265a6a4b0307f19823123aba628c157e7eec0e0af5f8955671d8399b45e"
-  },
-  "date": "2026-10-14",
-  "person": "Albert Betz",
-  "image_filename": "AlbertBetz-sl.png",
-  "category": "scientist",
-  "category_label": "Znanstvenik",
+  "date": "2026-10-15",
+  "person": "Albert Zweifel",
+  "image_filename": "AlbertZweifel-sl.png",
+  "category": "sport",
+  "category_label": "Športnik",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.deutsche-biographie.de/dbo011694.html",
-    "https://www.energy.gov/cmei/systems/windexchange/small-wind-guidebook",
-    "https://www.mpg.de/25054879/100-years-max-planck-institute-for-dynamics-and-self-organization?c=19150566"
+    "https://www.munzinger.de/register/portrait/biographien/Albert%2BZweifel/01/52716",
+    "https://www.uci.org/article/uci-cyclo-cross-world-championships-belgian-stories-and-more/5jHiza1oB6J1Rsp8D0XhXp",
+    "https://www.uci.org/article/about-cyclo-cross/CI8sJ5b2dPCpHZ2pjDK4d",
+    "https://d3g42de5vbfx19.cloudfront.net/races/roadbooks/2025_CX_WorldChampionships.pdf"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -30,7 +22,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 230,
+  "total_entries": 231,
   "total_pages": 23,
   "per_page": 10
 }
