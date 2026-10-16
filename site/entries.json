@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 232,
-      "podcast": 11,
+      "podcast": 12,
       "interactive_site": 1
     }
   },
@@ -105,8 +105,18 @@
       "source_count": 3,
       "search_text": "alberto bayo artist umetnik sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/7516ab5c823b6c685d790a5336ab45049e65e1708d0b4198e8448240099282d1.m4a",
+        "title": "Alberto Bayo",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 306.364,
+        "source": "NotebookLM",
+        "companion_id": "65ce88deb45a9b008f14322bcb632c4859904ae8b44e4d2d0efc9bcf6b543ded"
+      }
     },
     {
       "date": "2026-10-15",
