@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 231,
+    "total_entries": 232,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,28 +20,94 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 197
+      "age_6": 198
     },
     "category_counts": {
+      "artist": 54,
       "sport": 10,
       "scientist": 110,
       "nobel_prize": 2,
-      "artist": 53,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
-      "sl": 183,
+      "sl": 184,
       "en": 34,
       "de": 14
     },
     "format_counts": {
-      "infographic": 231,
+      "infographic": 232,
       "podcast": 11,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-10-16",
+      "person": "Alberto Bayo",
+      "filename": "AlbertoBayo-sl.png",
+      "image_filename": "AlbertoBayo-sl.png",
+      "sources": [
+        "https://www.enciclopedia.cat/gran-enciclopedia-catalana/alberto-bayo-piraud",
+        "https://rilzea.cialc.unam.mx/jspui/handle/CIALC-UNAM/CL638",
+        "https://academiadominicanahistoria.org.do/wp-content/uploads/2017/07/176-1.pdf"
+      ],
+      "original_article_url": null,
+      "title": "Alberto Bayo — letalec, vojak in pisec",
+      "summary": "Alberto Bayo (1892–1967) je bil špansko-kubanski vojaški letalec in pisec. Leta 1936 je vodil republikansko odpravo na Mallorco; po neuspehu so se njegove sile umaknile. Po španski državljanski vojni je odšel v izgnanstvo. V Mehiki je leta 1955 spoznal Fidela Castra in postal inštruktor kubanskih revolucionarjev. Pisal je tudi spomine, med njimi knjigo o izkrcanju na Mallorci. Njegova pot povezuje špansko državljansko vojno, izgnanstvo in kubansko revolucijo; gre za zgodovinsko razlago, ne poveličevanje nasilja.",
+      "age_suitability_details": {
+        "age_6": "Alberto je pilotiral letala in pisal knjige. Zaradi vojne je moral zapustiti dom ter živeti v drugi državi.",
+        "age_13": "Bayo je sodeloval v španski državljanski vojni, vodil neuspešno odpravo na Mallorco in pozneje v Mehiki učil kubanske upornike. Njegovo življenje ponazarja povezave med vojno, izgnanstvom in revolucijo.",
+        "adult": "Bayo povezuje republikansko vojaško izkušnjo iz leta 1936, povojno izgnanstvo ter priprave kubanskih revolucionarjev v Mehiki. Njegove spomine je treba brati kot pričevanje udeleženca, jih primerjati z zgodovinopisjem in ločiti opis njegove vloge od vrednotenja političnega nasilja."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "52a693f7-ba03-4061-b1c4-66ada32de6dc",
+      "_kind": "native",
+      "_source_mtime": 1792127251.415836,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "alberto bayo artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-15",
       "person": "Albert Zweifel",

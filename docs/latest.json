@@ -1,26 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/881e49bec50d72f7fc22c64e95ae85160d42b563f5a6c54808b27aaf39dbf0ee.m4a",
-    "title": "Albert Zweifel",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 409.136,
-    "source": "NotebookLM",
-    "companion_id": "b89d43cc694593bf4bccdf3d4d9e3b4eceb20d381b256a90e05bc551d225feaa"
-  },
-  "date": "2026-10-15",
-  "person": "Albert Zweifel",
-  "image_filename": "AlbertZweifel-sl.png",
-  "category": "sport",
-  "category_label": "Športnik",
+  "date": "2026-10-16",
+  "person": "Alberto Bayo",
+  "image_filename": "AlbertoBayo-sl.png",
+  "category": "artist",
+  "category_label": "Umetnik",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.munzinger.de/register/portrait/biographien/Albert%2BZweifel/01/52716",
-    "https://www.uci.org/article/uci-cyclo-cross-world-championships-belgian-stories-and-more/5jHiza1oB6J1Rsp8D0XhXp",
-    "https://www.uci.org/article/about-cyclo-cross/CI8sJ5b2dPCpHZ2pjDK4d",
-    "https://d3g42de5vbfx19.cloudfront.net/races/roadbooks/2025_CX_WorldChampionships.pdf"
+    "https://www.enciclopedia.cat/gran-enciclopedia-catalana/alberto-bayo-piraud",
+    "https://rilzea.cialc.unam.mx/jspui/handle/CIALC-UNAM/CL638",
+    "https://academiadominicanahistoria.org.do/wp-content/uploads/2017/07/176-1.pdf"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -31,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 231,
-  "total_pages": 23,
+  "total_entries": 232,
+  "total_pages": 24,
   "per_page": 10
 }
