@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/c1c9eeeecf10704bfa031a485e1e027014a87dd1bc3d0245a467a77b014ff1ec.m4a",
+    "title": "Albrecht Wilhelm Roth",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 325.497,
+    "source": "NotebookLM",
+    "companion_id": "e64c83058d111f9010cc88c1077b603b0261ff6daa8592e23228584e9746d427"
+  },
   "date": "2026-10-17",
   "person": "Albrecht Wilhelm Roth",
   "image_filename": "AlbrechtWilhelmRoth-sl.png",
