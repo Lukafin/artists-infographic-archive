@@ -1,25 +1,15 @@
 {
-  "podcast": {
-    "url": "audio/7516ab5c823b6c685d790a5336ab45049e65e1708d0b4198e8448240099282d1.m4a",
-    "title": "Alberto Bayo",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 306.364,
-    "source": "NotebookLM",
-    "companion_id": "65ce88deb45a9b008f14322bcb632c4859904ae8b44e4d2d0efc9bcf6b543ded"
-  },
-  "date": "2026-10-16",
-  "person": "Alberto Bayo",
-  "image_filename": "AlbertoBayo-sl.png",
-  "category": "artist",
-  "category_label": "Umetnik",
+  "date": "2026-10-17",
+  "person": "Albrecht Wilhelm Roth",
+  "image_filename": "AlbrechtWilhelmRoth-sl.png",
+  "category": "scientist",
+  "category_label": "Znanstvenik",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.enciclopedia.cat/gran-enciclopedia-catalana/alberto-bayo-piraud",
-    "https://rilzea.cialc.unam.mx/jspui/handle/CIALC-UNAM/CL638",
-    "https://academiadominicanahistoria.org.do/wp-content/uploads/2017/07/176-1.pdf"
+    "https://www.nybg.org/poetic-botany/drosera/",
+    "https://en.wikipedia.org/wiki/Albrecht_Wilhelm_Roth"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -30,7 +20,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 232,
+  "total_entries": 233,
   "total_pages": 24,
   "per_page": 10
 }

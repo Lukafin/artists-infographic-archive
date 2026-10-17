@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 232,
+    "total_entries": 233,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,28 +20,93 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 198
+      "age_6": 199
     },
     "category_counts": {
+      "scientist": 111,
       "artist": 54,
       "sport": 10,
-      "scientist": 110,
       "nobel_prize": 2,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
-      "sl": 184,
+      "sl": 185,
       "en": 34,
       "de": 14
     },
     "format_counts": {
-      "infographic": 232,
+      "infographic": 233,
       "podcast": 12,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-10-17",
+      "person": "Albrecht Wilhelm Roth",
+      "filename": "AlbrechtWilhelmRoth-sl.png",
+      "image_filename": "AlbrechtWilhelmRoth-sl.png",
+      "sources": [
+        "https://www.nybg.org/poetic-botany/drosera/",
+        "https://en.wikipedia.org/wiki/Albrecht_Wilhelm_Roth"
+      ],
+      "original_article_url": null,
+      "title": "Albrecht Wilhelm Roth — kako se odzove list?",
+      "summary": "Albrecht Wilhelm Roth (1757–1834) je bil zdravnik in botanik v Vegesacku pri Bremnu. V delu Beiträge zur Botanik (1782) je opisal poskuse z rosiko in odzivanje njenih listov. Lepljive kapljice ujamejo drobne žuželke, listne dlačice pa se počasi upognejo navznoter. Opazovanje ujetja ni enako dokazu prebave; Rothu zato ne pripisujemo dokončnega odkritja mesojedosti. Z delom Tentamen florae Germanicae (1788–1800) je dokumentiral rastline Nemčije. Njegov zgled povezuje zbiranje rastlin, natančno opazovanje in preverjanje razlag.",
+      "age_suitability_details": {
+        "age_6": "Roth je opazoval rastline. Rosika ima lepljive kapljice, na katere se ujamejo majhne žuželke.",
+        "age_13": "Zdravnik in botanik Roth je opisoval rastline in poskuse z rosiko. Njene dlačice se počasi odzovejo na ujet plen; opažanje in razlaga nista isto.",
+        "adult": "Rothovo delo združuje floristično sistematiko in zgodnje eksperimentalno preučevanje rastlinske odzivnosti. Zgodovinski opis ujetja žuželk je treba ločiti od poznejših dokazov prebave in pridobivanja hranil."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "scientist",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "aca14c90-b089-410e-9fe2-9a01ad30f0c9",
+      "_kind": "native",
+      "_source_mtime": 1792213705.1048524,
+      "category_label": "Znanstvenik",
+      "category_class": "science",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 2,
+      "search_text": "albrecht wilhelm roth scientist znanstvenik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-16",
       "person": "Alberto Bayo",
