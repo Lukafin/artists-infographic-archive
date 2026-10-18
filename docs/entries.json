@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 233,
+    "total_entries": 234,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,28 +20,95 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 199
+      "age_6": 200
     },
     "category_counts": {
+      "artist": 55,
       "scientist": 111,
-      "artist": 54,
       "sport": 10,
       "nobel_prize": 2,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
-      "sl": 185,
+      "sl": 186,
       "en": 34,
       "de": 14
     },
     "format_counts": {
-      "infographic": 233,
+      "infographic": 234,
       "podcast": 13,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-10-18",
+      "person": "Alejandro González Iñárritu",
+      "filename": "AlejandroGonzalezInarritu-sl.png",
+      "image_filename": "AlejandroGonzalezInarritu-sl.png",
+      "sources": [
+        "https://www.festival-cannes.com/en/p/alejandro-gonzalez-inarritu/",
+        "https://www.festival-cannes.com/en/press/press-releases/alejandro-gonzalez-inarritu-pushing-the-boundaries-of-film/",
+        "https://www.oscars.org/oscars/ceremonies/2015",
+        "https://www.oscars.org/oscars/ceremonies/2016"
+      ],
+      "original_article_url": null,
+      "title": "Alejandro González Iñárritu — prepletene usode in pot kamere",
+      "summary": "Mehiški režiser Alejandro González Iñárritu povezuje oddaljena življenja v prepletene filmske zgodbe. Amores perros in Babel kažeta njegovo pripovedno montažo, Birdman pa ustvarja občutek enega neprekinjenega posnetka. Za režijo je prejel oskarja leta 2015 za Birdman in leta 2016 za The Revenant.",
+      "age_suitability_details": {
+        "age_6": "Režiser poveže igralce, prizore in kamero, da gledalcem pove zgodbo. To je preprosta razlaga filmskega dela, ne priporočilo njegovih filmov otrokom.",
+        "age_13": "Iñárritu povezuje zgodbe različnih ljudi; Birdman s premiki kamere in skritimi rezi ustvarja občutek neprekinjenega dogajanja.",
+        "adult": "Razlaga primerja prepleteno pripoved zgodnjih filmov z navidezno neprekinjenim posnetkom v Birdmanu ter loči leti filmov od podelitev režijskih oskarjev."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "d3dc25ac-2897-48ea-b1a1-695d3d2aa1ab",
+      "_kind": "native",
+      "_source_mtime": 1792300096.95802,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "alejandro gonzález iñárritu artist umetnik sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-17",
       "person": "Albrecht Wilhelm Roth",
