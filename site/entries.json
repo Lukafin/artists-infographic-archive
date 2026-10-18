@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 234,
-      "podcast": 13,
+      "podcast": 14,
       "interactive_site": 1
     }
   },
@@ -106,8 +106,18 @@
       "source_count": 4,
       "search_text": "alejandro gonzález iñárritu artist umetnik sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/c4eaf29ea6c776594ea1d8701b7a7f64ac9308458b7568259b14a85bca2e18b8.m4a",
+        "title": "Alejandro González Iñárritu",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 268.214,
+        "source": "NotebookLM",
+        "companion_id": "2934d1dbc0d28967b1c96827c0aefcb9ce90ca80d27b4a10fcb0cf73594e08dc"
+      }
     },
     {
       "date": "2026-10-17",
