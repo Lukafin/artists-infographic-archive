@@ -1,26 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/c4eaf29ea6c776594ea1d8701b7a7f64ac9308458b7568259b14a85bca2e18b8.m4a",
-    "title": "Alejandro González Iñárritu",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 268.214,
-    "source": "NotebookLM",
-    "companion_id": "2934d1dbc0d28967b1c96827c0aefcb9ce90ca80d27b4a10fcb0cf73594e08dc"
-  },
-  "date": "2026-10-18",
-  "person": "Alejandro González Iñárritu",
-  "image_filename": "AlejandroGonzalezInarritu-sl.png",
-  "category": "artist",
-  "category_label": "Umetnik",
+  "date": "2026-10-19",
+  "person": "Alexander Ostrowski",
+  "image_filename": "AlexanderOstrowski-sl.png",
+  "category": "scientist",
+  "category_label": "Znanstvenik",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.festival-cannes.com/en/p/alejandro-gonzalez-inarritu/",
-    "https://www.festival-cannes.com/en/press/press-releases/alejandro-gonzalez-inarritu-pushing-the-boundaries-of-film/",
-    "https://www.oscars.org/oscars/ceremonies/2015",
-    "https://www.oscars.org/oscars/ceremonies/2016"
+    "https://www.cs.purdue.edu/homes/wxg/AMOengl.pdf",
+    "https://www.ostrowski.ch/index_e.php?ifile=ostrowski",
+    "https://www.ostrowski.ch/index_e.php?ifile=publikation"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -31,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 234,
+  "total_entries": 235,
   "total_pages": 24,
   "per_page": 10
 }
