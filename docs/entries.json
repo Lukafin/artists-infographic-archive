@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 235,
-      "podcast": 14,
+      "podcast": 15,
       "interactive_site": 1
     }
   },
@@ -105,8 +105,18 @@
       "source_count": 3,
       "search_text": "alexander ostrowski scientist znanstvenik sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/957e07a14b0663b2ac402cb6635e0041fae443f75cebf580c8fa66cdd4ebf6de.m4a",
+        "title": "Alexander Ostrowski",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 325.776,
+        "source": "NotebookLM",
+        "companion_id": "cc4816aec9cbe6167e8de1d3c52942dff54c922b10310693a189143089d2bcf3"
+      }
     },
     {
       "date": "2026-10-18",
