@@ -1,25 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/957e07a14b0663b2ac402cb6635e0041fae443f75cebf580c8fa66cdd4ebf6de.m4a",
-    "title": "Alexander Ostrowski",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 325.776,
-    "source": "NotebookLM",
-    "companion_id": "cc4816aec9cbe6167e8de1d3c52942dff54c922b10310693a189143089d2bcf3"
-  },
-  "date": "2026-10-19",
-  "person": "Alexander Ostrowski",
-  "image_filename": "AlexanderOstrowski-sl.png",
-  "category": "scientist",
-  "category_label": "Znanstvenik",
-  "language": "sl",
-  "language_label": "SL",
+  "date": "2026-10-20",
+  "person": "Adolf Krischanitz",
+  "image_filename": "AdolfKrischanitz-de.png",
+  "category": "artist",
+  "category_label": "Umetnik",
+  "language": "de",
+  "language_label": "DE",
   "original_article_url": null,
   "sources": [
-    "https://www.cs.purdue.edu/homes/wxg/AMOengl.pdf",
-    "https://www.ostrowski.ch/index_e.php?ifile=ostrowski",
-    "https://www.ostrowski.ch/index_e.php?ifile=publikation"
+    "https://krischanitz.at/index.php?id=971&inc=page",
+    "https://kunsthallewien.at/ueber-uns/geschichte",
+    "https://www.berlin.de/aktuell/ausgaben/2008/juni/ereignisse/artikel.223386.php"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -30,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 235,
+  "total_entries": 236,
   "total_pages": 24,
   "per_page": 10
 }

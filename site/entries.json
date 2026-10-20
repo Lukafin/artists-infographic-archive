@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 235,
+    "total_entries": 236,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,28 +20,94 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 201
+      "age_6": 202
     },
     "category_counts": {
+      "artist": 56,
       "scientist": 112,
-      "artist": 55,
       "sport": 10,
       "nobel_prize": 2,
       "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
+      "de": 15,
       "sl": 187,
-      "en": 34,
-      "de": 14
+      "en": 34
     },
     "format_counts": {
-      "infographic": 235,
+      "infographic": 236,
       "podcast": 15,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-10-20",
+      "person": "Adolf Krischanitz",
+      "filename": "AdolfKrischanitz-de.png",
+      "image_filename": "AdolfKrischanitz-de.png",
+      "sources": [
+        "https://krischanitz.at/index.php?id=971&inc=page",
+        "https://kunsthallewien.at/ueber-uns/geschichte",
+        "https://www.berlin.de/aktuell/ausgaben/2008/juni/ereignisse/artikel.223386.php"
+      ],
+      "original_article_url": null,
+      "title": "Adolf Krischanitz — Räume für Kunst und Menschen",
+      "summary": "Adolf Krischanitz ist ein österreichischer Architekt. Er entwarf 1992 den gelben temporären Bau der Kunsthalle Wien und 2001 den kleineren Glaspavillon am Karlsplatz. Für die Temporäre Kunsthalle Berlin von 2008 plante er eine einfache Hülle, deren Fassade auch als Kunstfläche diente. 1970 gründete er mit Angela Hareiter und Otto Kapfinger die Gruppe Missing Link.",
+      "age_suitability_details": {
+        "age_6": "Ein Architekt entwirft Räume, in denen Menschen Kunst anschauen und sich begegnen.",
+        "age_13": "Die Kunsthallen in Wien und Berlin zeigen, wie auch zeitlich begrenzte Gebäude Kunst und Stadtleben verbinden können.",
+        "adult": "Krischanitz verbindet architektonische Klarheit mit kultureller Nutzung; die Wiener Baufolge und die Berliner Kunstfassade verdeutlichen unterschiedliche Beziehungen zwischen Raum und Öffentlichkeit."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "artist",
+      "award_year": null,
+      "award_field": null,
+      "language": "de",
+      "assignment_id": "1f398019-f051-4e01-823b-e31318b261dd",
+      "_kind": "native",
+      "_source_mtime": 1792472727.7098033,
+      "category_label": "Umetnik",
+      "category_class": "artist",
+      "language_label": "DE",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "adolf krischanitz artist umetnik de age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-19",
       "person": "Alexander Ostrowski",
