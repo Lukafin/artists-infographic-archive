@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 236,
-      "podcast": 15,
+      "podcast": 16,
       "interactive_site": 1
     }
   },
@@ -105,8 +105,18 @@
       "source_count": 3,
       "search_text": "adolf krischanitz artist umetnik de age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/ffcb5ea6d0f58e9ce29c17d5c8cfb45b6a1c0b6fd105c765ced791bf89b4e619.m4a",
+        "title": "Adolf Krischanitz",
+        "language": "de",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 292.525,
+        "source": "NotebookLM",
+        "companion_id": "49eececa0f08d52839e1c249f5ac76c5388608cdd3ed6cf0a69f2e3a41fc69d7"
+      }
     },
     {
       "date": "2026-10-19",
