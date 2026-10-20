@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 236,
+    "total_entries": 237,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,28 +20,93 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 202
+      "age_6": 203
     },
     "category_counts": {
+      "school_poster": 49,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
       "nobel_prize": 2,
-      "school_poster": 48,
       "science_news": 8
     },
     "language_counts": {
+      "sl": 188,
       "de": 15,
-      "sl": 187,
       "en": 34
     },
     "format_counts": {
-      "infographic": 236,
+      "infographic": 237,
       "podcast": 16,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-10-20",
+      "person": "Geslo kot skrivni ključ",
+      "filename": "GesloKotSkrivniKljuc-sl.png",
+      "image_filename": "GesloKotSkrivniKljuc-sl.png",
+      "sources": [
+        "https://safe.si/nasveti/moja-identiteta-in-zasebnost/varna-gesla",
+        "https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/three-random-words"
+      ],
+      "original_article_url": null,
+      "title": "Geslo kot skrivni ključ",
+      "summary": "Otroški slovenski plakat o dolgih in različnih geslih, varovanju osebnih podatkov in pomoči zaupanja vrednega odraslega. Pokončna ilustracija drevesne hišice s tremi ključavnicami in različnimi ključi.",
+      "age_suitability_details": {
+        "age_6": "Geslo je predstavljeno kot ključ, ki varuje spletni račun. Otrok spozna, da gesla ne pošiljamo drugim in pri njem poiščemo pomoč odraslega. Prispodoba s ključavnicami ne zahteva tehničnega predznanja.",
+        "age_13": "Razlikuje dolžino gesla, izbiro nepredvidljivih besed, izogibanje osebnim podatkom in uporabo različnega gesla za vsak račun. Različni ključi ponazarjajo omejitev škode ob razkritju enega gesla.",
+        "adult": "Uvod v dolga in enkratna gesla ter zmanjševanje tveganja ponovne uporabe. Plakat ne pokriva upravljalnikov gesel, večfaktorske prijave, dostopnih ključev ali vseh groženj; ni celovit varnostni priročnik."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "fea0a61a-4c89-47d1-afd7-48da4d7fed29",
+      "_kind": "native",
+      "_source_mtime": 1792499762.2686613,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 2,
+      "search_text": "geslo kot skrivni ključ school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-20",
       "person": "Adolf Krischanitz",
