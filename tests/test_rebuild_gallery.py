@@ -59,6 +59,23 @@ class RebuildGalleryOriginalArticleTests(unittest.TestCase):
         entries = json.loads((public_root / 'entries.json').read_text(encoding='utf-8'))
         return public_root, index_html, latest, entries
 
+    def test_roj_signature_survives_rebuild_on_every_archive_page(self):
+        entries = [dict(date='2026-07-31', person=f'Signature resource {i}', filename=f'Signature{i}.png',
+                        category='science_news' if i == 0 else 'school_poster', language='en',
+                        sources=['https://science.nasa.gov/']) for i in range(12)]
+        public, _, _, _ = self.run_rebuild(entries)
+        self.assertTrue((public / 'roj-signature.css').is_file())
+        for name in ('index.html', 'page-2.html', 'science-news.html'):
+            page = (public / name).read_text()
+            self.assertEqual(page.count('class="roj-signature"'), 1, name)
+            self.assertEqual(page.count('href="https://roj.world/use/famous-people-infographic"'), 1, name)
+            self.assertIn('class="roj-signature__mark"', page)
+            self.assertIn('href="roj-signature.css"', page)
+            self.assertIn("roj_cta: 'Uporabi s svojim AI agentom'", page)
+            self.assertIn("roj_cta: 'Use with your AI agent'", page)
+            if name != 'page-2.html':
+                self.assertIn('data-i18n="process_body"', page)
+
     def test_nobel_prize_category_survives_gallery_rebuild(self):
         _, index_html, latest, entries = self.run_rebuild({
             'date': '2025-12-10',
