@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 237,
+    "total_entries": 238,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 203
+      "age_6": 204
     },
     "category_counts": {
-      "school_poster": 49,
+      "school_poster": 50,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,82 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 188,
+      "sl": 189,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 237,
+      "infographic": 238,
       "podcast": 16,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-10-21",
+      "person": "Kaj je osebni podatek?",
+      "filename": "KajJeOsebniPodatek-sl.png",
+      "image_filename": "KajJeOsebniPodatek-sl.png",
+      "sources": [
+        "https://www.ip-rs.si/mnenja-zvop-2/pomembnost-varovanja-osebnih-podatkov-in-delovanje-ip-1770023874",
+        "https://safe.si/sites/default/files/prirocnik_safe_e-objava.pdf"
+      ],
+      "original_article_url": null,
+      "title": "Kaj je osebni podatek?",
+      "summary": "Otroški plakat z izmišljenimi primeri pojasni, kako podatek povežemo s človekom. Ime, prepoznavna fotografija in podatek o bivališču so lahko osebni podatki. Primer številke čevljev pokaže vlogo konteksta; sklep spodbuja premišljeno deljenje in posvet z zaupanja vredno odraslo osebo.",
+      "age_suitability_details": {
+        "age_6": "Ime in fotografija lahko povesta, kdo smo. Pred deljenjem vprašamo odraslo osebo, ki ji zaupamo.",
+        "age_13": "Osebni podatek se nanaša na prepoznavno osebo. Kontekst in povezovanje informacij določata, kaj lahko izvemo o posamezniku.",
+        "adult": "Prepoznavnost posameznika je odvisna tudi od povezovanja informacij. Premišljeno deljenje upošteva prejemnika, namen in potrebnost, ne pa prepovedi vsakršnega razkrivanja."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "77db9da3-76ed-4c5e-8e0a-d62ccef71cde",
+      "_kind": "native",
+      "_source_mtime": 1792559139.820973,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 2,
+      "search_text": "kaj je osebni podatek? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-20",
       "person": "Geslo kot skrivni ključ",
