@@ -35,6 +35,8 @@
     .logo { width:52px; height:52px; flex:0 0 52px; border-radius:15px; display:grid; place-items:center; color:var(--forest); border:1px solid rgba(18,57,31,.28); background:#fff9eb; } .logo img { width:46px; height:46px; display:block; } .brand > div:last-child { min-width:0; }
     .brand h1 { margin:0; font-family:'Fraunces',Georgia,serif; color:var(--forest); font-size:25px; line-height:1.05; letter-spacing:-.02em; } .brand p { margin:4px 0 0; color:var(--muted); font-size:13px; }
     .pill { display:inline-flex; align-items:center; gap:8px; padding:10px 15px; border-radius:999px; background:var(--chip); border:1px solid #d8c8aa; font-size:14px; color:#453b29; text-decoration:none; } .pill.primary { background:linear-gradient(135deg,#ca820d,#a95f05); border-color:#b66d06; color:#fff; font-weight:800; box-shadow:0 14px 26px rgba(184,116,8,.22); } .pill.soft { background:rgba(255,249,235,.72); }
+    .footer.surface { display:block; --roj-ink:var(--forest); --roj-muted:var(--muted); --roj-accent:var(--forest); --roj-on-accent:#fff9eb; }
+    .footer [data-updated] { margin-top:0; padding-bottom:6px; font-size:12px; color:var(--muted); }
     .support-note { max-width:360px; text-align:right; color:var(--muted); font-size:13px; line-height:1.35; } .support-note a,.footer a,.text-link { color:var(--forest); font-weight:850; text-decoration:none; } .support-note a:hover,.footer a:hover,.text-link:hover { text-decoration:underline; } .kofi-link { display:inline-flex; align-items:center; gap:5px; } .kofi-icon { width:22px; height:auto; display:inline-block; } .nav-right { display:flex; align-items:center; justify-content:flex-end; gap:14px; flex-wrap:wrap; }
     .lang-picker { display:inline-flex; align-items:center; gap:6px; padding:6px; border-radius:999px; background:#fff9eb; border:1px solid var(--line); } .lang-icon { width:22px; height:22px; display:grid; place-items:center; font-size:16px; } .lang-picker button { border:0; border-radius:999px; background:transparent; color:#51483f; font:inherit; font-size:12px; font-weight:800; padding:7px 9px; cursor:pointer; } .lang-picker button.active { background:var(--forest); color:#fff; }
     .hero { margin-top:26px; } .hero-desk { position:relative; min-height:760px; padding:52px 24px 0; overflow:hidden; } .hero-desk::after { content:''; position:absolute; left:-4%; right:-4%; bottom:0; height:108px; background:linear-gradient(180deg,#7a5229,#513216); border-radius:50% 50% 0 0 / 42% 42% 0 0; box-shadow:0 -18px 42px rgba(55,33,12,.18); }
@@ -57,6 +59,7 @@
     @media (max-width:700px) { .editorial-science-simple,.science-hero-copy,.archive-shell,.science-list,.science-list .card { min-width:0; width:100%; } .science-hero-copy h2,.archive-top h2 { font-size:clamp(38px,12vw,56px); overflow-wrap:anywhere; } .science-list .image-title { padding:72px 14px 13px; background:linear-gradient(180deg,transparent,rgba(12,43,24,.9)); } .science-list .image-title h3,.science-list .card.feature .image-title h3 { max-width:100%; font-size:clamp(16px,5vw,20px); line-height:1.12; letter-spacing:-.02em; overflow-wrap:anywhere; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:4; overflow:hidden; } }
     @media (max-width:1200px) { .masonry { grid-template-columns:repeat(2,minmax(0,1fr)); } } @media (max-width:1000px) { .collection-grid { grid-template-columns:1fr; } .collection-card.featured-collection { min-height:480px; } .poster-stage { position:relative; left:auto; bottom:auto; transform:none; width:100%; margin-top:32px; } .hero-desk { min-height:auto; padding-bottom:30px; } .hero-desk::after { display:none; } .editorial-science-simple { grid-template-columns:1fr; } .science-hero-art { min-height:520px; } } @media (max-width:700px) { .nav { position:static; flex-direction:column; align-items:stretch; } .brand { align-items:flex-start; } .brand h1,.brand p { overflow-wrap:anywhere; } .nav-right { justify-content:flex-start; } .support-note { max-width:none; text-align:left; } .archive-top,.footer,.collections-heading-row { flex-direction:column; align-items:flex-start; } .pagination { justify-content:flex-start; } .intro { font-size:17px; } .hero-desk { padding:40px 10px 24px; } .hero-copy { width:100%; min-width:0; } .hero-copy h2 { width:100%; max-width:100%; font-size:clamp(38px,11.5vw,46px); line-height:.98; letter-spacing:-.06em; overflow-wrap:normal; } .ornament span { width:72px; } .wrap { width:100%; max-width:100%; overflow:hidden; padding:18px 14px 44px; } .filter-bar { grid-template-columns:1fr; } .masonry { grid-template-columns:1fr; } .hero-chips { width:100%; } .hero-chip { width:100%; min-width:0; margin-top:8px; } .poster-stage { height:310px; } .hero-card { width:78%; height:220px; } .hero-poster { width:210px; height:160px; } .poster-2 { display:none; } .collection-card { padding:24px; min-height:330px; } .mini-poster { width:155px; height:140px; } .science-preview-image,.all-preview-image { width:52%; height:54%; } .science-hero-art { min-height:390px; } .science-hero-copy { padding:28px; } .science-hero-caption { left:18px; right:18px; bottom:16px; align-items:flex-start; flex-direction:column; gap:4px; } .science-hero-caption strong { max-width:100%; text-align:left; } .topic-pills { grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; } .topic-pills > span { min-width:0; min-height:52px; padding:9px 10px; border-radius:18px; font-size:14px; line-height:1.2; text-align:center; overflow-wrap:anywhere; } .info-popover[open] { left:12px; right:12px; bottom:12px; max-width:none; } .info-popover[open] .info-panel { width:min(276px,100%); max-width:100%; max-height:min(104px,calc(100% - 54px)); } .info-panel .tag,.info-panel .sources a { padding:5px 8px; font-size:11px; } }
   </style>
+<link rel="stylesheet" href="roj-signature.css">
 <link rel="stylesheet" href="companion-player.css">
 <link rel="stylesheet" href="podcast-player.css">
 </head>
@@ -429,8 +432,25 @@
   <p data-i18n="process_body">This archive is created with help from Roj swarm agents - small AI assistants that help gather sources, summarize topics, draft clear explanations and prepare learning resources. Human review keeps the archive focused, reliable and useful for learning.</p>
 </section>
     <footer class="footer surface">
-      <div><span data-i18n="footer_text">Learning Archive: infographics, podcasts and interactive sites about people, school topics and science discoveries.</span> <span data-i18n="footer_generated_by">Made with human supervision and</span> <a href="https://roj.world/swarms/famous-people-infographic" target="_blank" rel="noopener noreferrer" data-i18n="footer_swarm">Roj swarm agents</a>.</div>
-      <div data-updated="2026-10-21 05:13">Updated: 21. 10. 2026, 05:13</div>
+      <section class="roj-signature" aria-label="Roj">
+  <div class="roj-signature__identity">
+    <svg class="roj-signature__mark" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+            <path d="M17 4.5c3.1-3.1 8.4-.9 8.4 3.5 0 5.5-8.4 9-8.4 9s-8.4-3.5-8.4-9c0-4.4 5.3-6.6 8.4-3.5Z" fill="#126f65"/>
+            <path d="M29.5 17c3.1 3.1.9 8.4-3.5 8.4-5.5 0-9-8.4-9-8.4s3.5-8.4 9-8.4c4.4 0 6.6 5.3 3.5 8.4Z" fill="#52a89d"/>
+            <path d="M17 29.5c-3.1 3.1-8.4.9-8.4-3.5 0-5.5 8.4-9 8.4-9s8.4 3.5 8.4 9c0 4.4-5.3 6.6-8.4 3.5Z" fill="#c5d832"/>
+            <path d="M4.5 17c-3.1-3.1-.9-8.4 3.5-8.4 5.5 0 9 8.4 9 8.4s-3.5 8.4-9 8.4c-4.4 0-6.6-5.3-3.5-8.4Z" fill="#86a91d"/>
+          </svg>
+    <div class="roj-signature__copy">
+      <h2 class="roj-signature__title" data-i18n="roj_title">Created with an AI agent swarm.</h2>
+      <p class="roj-signature__description" data-i18n="roj_description">Roj connects agents working on shared tasks. Give your agent the instructions for this swarm.</p>
+    </div>
+  </div>
+  <div class="roj-signature__actions">
+    <a class="roj-signature__cta" href="https://roj.world/use/famous-people-infographic"><span data-i18n="roj_cta">Use with your AI agent</span><span aria-hidden="true">↗</span></a>
+    <a class="roj-signature__home" href="https://roj.world/">roj.world</a>
+  </div>
+</section>
+      <div data-updated="2026-10-21 10:19">Updated: 21. 10. 2026, 10:19</div>
     </footer>
   </main>
   <script>
@@ -549,6 +569,9 @@
       sources_one: '1 source',
       sources_many: '{count} sources',
       footer_text: 'Learning Archive: infographics, podcasts and interactive sites about people, school topics and science discoveries.',
+      roj_title: 'Created with an AI agent swarm.',
+      roj_description: 'Roj connects agents working on shared tasks. Give your agent the instructions for this swarm.',
+      roj_cta: 'Use with your AI agent',
       footer_generated_by: 'Made with human supervision and',
       footer_swarm: 'Roj swarm agents',
       updated: 'Updated:',
@@ -625,6 +648,9 @@
       sources_one: '1 vir',
       sources_many: '{count} viri',
       footer_text: 'Učna knjižnica: infografike, podkasti in interaktivne strani o ljudeh, šolskih temah in znanstvenih odkritjih.',
+      roj_title: 'Vsebina nastaja s pomočjo roja AI agentov.',
+      roj_description: 'Roj povezuje agente pri skupnih nalogah. Navodila za ta roj lahko predaš tudi svojemu agentu.',
+      roj_cta: 'Uporabi s svojim AI agentom',
       footer_generated_by: 'Ustvarjeno s človeškim pregledom in pomočjo',
       footer_swarm: 'Roj swarm agentov',
       updated: 'Posodobljeno:',

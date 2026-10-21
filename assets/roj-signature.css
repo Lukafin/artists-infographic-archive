@@ -1,0 +1,19 @@
+/* Roj signature v1: shared structure, host-owned colors and typography. */
+.roj-signature { display:flex; align-items:center; justify-content:space-between; gap:28px; padding:32px 0; color:var(--roj-ink, inherit); }
+.roj-signature__identity { display:flex; align-items:flex-start; gap:14px; min-width:0; flex:1 1 420px; }
+.roj-signature__mark { display:block; width:34px; height:34px; flex:0 0 34px; margin-top:2px; }
+.roj-signature__copy { min-width:0; }
+.roj-signature__title { margin:0 0 8px; color:inherit; font-family:inherit; font-size:18px; font-weight:650; line-height:1.35; letter-spacing:-.02em; }
+.roj-signature__description { margin:0; max-width:60ch; color:var(--roj-muted, inherit); font-size:14px; line-height:1.6; }
+.roj-signature__actions { display:flex; flex:0 1 auto; flex-direction:column; align-items:center; gap:12px; min-width:0; }
+.roj-signature a.roj-signature__cta { display:inline-flex; align-items:center; justify-content:center; gap:12px; min-height:44px; max-width:100%; padding:12px 18px; border-radius:6px; background:var(--roj-accent); color:var(--roj-on-accent); font-family:inherit; font-size:14px; font-weight:700; line-height:1.4; text-align:center; text-decoration:none; }
+.roj-signature a.roj-signature__cta:hover { text-decoration:underline; text-underline-offset:3px; }
+.roj-signature__cta > span[aria-hidden] { flex:none; }
+.roj-signature a.roj-signature__home { color:var(--roj-muted, inherit); font-size:13px; font-weight:500; text-decoration:underline; text-underline-offset:4px; }
+.roj-signature a:focus-visible { outline:3px solid var(--roj-focus, currentColor); outline-offset:4px; }
+@media (max-width:700px) {
+  .roj-signature { flex-direction:column; align-items:stretch; gap:24px; padding:28px 0; }
+  .roj-signature__identity { flex-basis:auto; gap:12px; }
+  .roj-signature__actions { flex-basis:auto; align-items:stretch; }
+  .roj-signature a.roj-signature__home { align-self:center; }
+}

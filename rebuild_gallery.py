@@ -541,6 +541,27 @@ def render_collection_hub(stats, previews=None):
 </section>'''
 
 
+def render_roj_signature():
+    return '''<section class="roj-signature" aria-label="Roj">
+  <div class="roj-signature__identity">
+    <svg class="roj-signature__mark" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+            <path d="M17 4.5c3.1-3.1 8.4-.9 8.4 3.5 0 5.5-8.4 9-8.4 9s-8.4-3.5-8.4-9c0-4.4 5.3-6.6 8.4-3.5Z" fill="#126f65"/>
+            <path d="M29.5 17c3.1 3.1.9 8.4-3.5 8.4-5.5 0-9-8.4-9-8.4s3.5-8.4 9-8.4c4.4 0 6.6 5.3 3.5 8.4Z" fill="#52a89d"/>
+            <path d="M17 29.5c-3.1 3.1-8.4.9-8.4-3.5 0-5.5 8.4-9 8.4-9s8.4 3.5 8.4 9c0 4.4-5.3 6.6-8.4 3.5Z" fill="#c5d832"/>
+            <path d="M4.5 17c-3.1-3.1-.9-8.4 3.5-8.4 5.5 0 9 8.4 9 8.4s-3.5 8.4-9 8.4c-4.4 0-6.6-5.3-3.5-8.4Z" fill="#86a91d"/>
+          </svg>
+    <div class="roj-signature__copy">
+      <h2 class="roj-signature__title" data-i18n="roj_title">Created with an AI agent swarm.</h2>
+      <p class="roj-signature__description" data-i18n="roj_description">Roj connects agents working on shared tasks. Give your agent the instructions for this swarm.</p>
+    </div>
+  </div>
+  <div class="roj-signature__actions">
+    <a class="roj-signature__cta" href="https://roj.world/use/famous-people-infographic"><span data-i18n="roj_cta">Use with your AI agent</span><span aria-hidden="true">↗</span></a>
+    <a class="roj-signature__home" href="https://roj.world/">roj.world</a>
+  </div>
+</section>'''
+
+
 def render_process_note():
     return '''<section class="process-note surface" aria-labelledby="process-heading">
   <div class="section-kicker" data-i18n="process_eyebrow">How these resources are made</div>
@@ -631,7 +652,7 @@ def render_science_news_page(science_entries):
     </section>
     {render_process_note()}
     <footer class="footer surface">
-      <div><span data-i18n="footer_generated_by">Made with human supervision and</span> <a href="https://roj.world/swarms/famous-people-infographic" target="_blank" rel="noopener noreferrer" data-i18n="footer_swarm">Roj swarm agents</a>.</div>
+      {render_roj_signature()}
       <div data-updated="{html.escape(updated)}">Updated: {updated_display}</div>
     </footer>
   </main>
@@ -674,6 +695,9 @@ def render_science_client_script():
       process_eyebrow: 'How these resources are made',
       process_title: 'Created with AI, reviewed by people',
       process_body: 'This archive is created with help from Roj swarm agents - small AI assistants that help gather sources, summarize topics, draft clear explanations and prepare learning resources. Human review keeps the archive focused, reliable and useful for learning.',
+      roj_title: 'Created with an AI agent swarm.',
+      roj_description: 'Roj connects agents working on shared tasks. Give your agent the instructions for this swarm.',
+      roj_cta: 'Use with your AI agent',
       footer_generated_by: 'Made with human supervision and',
       footer_swarm: 'Roj swarm agents',
       updated: 'Updated:',
@@ -718,6 +742,9 @@ def render_science_client_script():
       process_eyebrow: 'Kako nastajajo gradiva',
       process_title: 'Ustvarjeno z AI, pregledano s strani ljudi',
       process_body: 'Arhiv nastaja s pomočjo Roj swarm agentov - majhnih AI pomočnikov, ki pomagajo zbrati vire, povzeti teme, pripraviti jasne razlage in učna gradiva. Človeški pregled skrbi, da je arhiv osredotočen, zanesljiv in uporaben za učenje.',
+      roj_title: 'Vsebina nastaja s pomočjo roja AI agentov.',
+      roj_description: 'Roj povezuje agente pri skupnih nalogah. Navodila za ta roj lahko predaš tudi svojemu agentu.',
+      roj_cta: 'Uporabi s svojim AI agentom',
       footer_generated_by: 'Ustvarjeno s človeškim pregledom in pomočjo',
       footer_swarm: 'Roj swarm agentov',
       updated: 'Posodobljeno:',
@@ -994,6 +1021,9 @@ def render_client_script():
       sources_one: '1 source',
       sources_many: '{count} sources',
       footer_text: 'Learning Archive: infographics, podcasts and interactive sites about people, school topics and science discoveries.',
+      roj_title: 'Created with an AI agent swarm.',
+      roj_description: 'Roj connects agents working on shared tasks. Give your agent the instructions for this swarm.',
+      roj_cta: 'Use with your AI agent',
       footer_generated_by: 'Made with human supervision and',
       footer_swarm: 'Roj swarm agents',
       updated: 'Updated:',
@@ -1070,6 +1100,9 @@ def render_client_script():
       sources_one: '1 vir',
       sources_many: '{count} viri',
       footer_text: 'Učna knjižnica: infografike, podkasti in interaktivne strani o ljudeh, šolskih temah in znanstvenih odkritjih.',
+      roj_title: 'Vsebina nastaja s pomočjo roja AI agentov.',
+      roj_description: 'Roj povezuje agente pri skupnih nalogah. Navodila za ta roj lahko predaš tudi svojemu agentu.',
+      roj_cta: 'Uporabi s svojim AI agentom',
       footer_generated_by: 'Ustvarjeno s človeškim pregledom in pomočjo',
       footer_swarm: 'Roj swarm agentov',
       updated: 'Posodobljeno:',
@@ -1430,6 +1463,8 @@ BASE_CSS = """
     .logo {{ width:52px; height:52px; flex:0 0 52px; border-radius:15px; display:grid; place-items:center; color:var(--forest); border:1px solid rgba(18,57,31,.28); background:#fff9eb; }} .logo img {{ width:46px; height:46px; display:block; }} .brand > div:last-child {{ min-width:0; }}
     .brand h1 {{ margin:0; font-family:'Fraunces',Georgia,serif; color:var(--forest); font-size:25px; line-height:1.05; letter-spacing:-.02em; }} .brand p {{ margin:4px 0 0; color:var(--muted); font-size:13px; }}
     .pill {{ display:inline-flex; align-items:center; gap:8px; padding:10px 15px; border-radius:999px; background:var(--chip); border:1px solid #d8c8aa; font-size:14px; color:#453b29; text-decoration:none; }} .pill.primary {{ background:linear-gradient(135deg,#ca820d,#a95f05); border-color:#b66d06; color:#fff; font-weight:800; box-shadow:0 14px 26px rgba(184,116,8,.22); }} .pill.soft {{ background:rgba(255,249,235,.72); }}
+    .footer.surface {{ display:block; --roj-ink:var(--forest); --roj-muted:var(--muted); --roj-accent:var(--forest); --roj-on-accent:#fff9eb; }}
+    .footer [data-updated] {{ margin-top:0; padding-bottom:6px; font-size:12px; color:var(--muted); }}
     .support-note {{ max-width:360px; text-align:right; color:var(--muted); font-size:13px; line-height:1.35; }} .support-note a,.footer a,.text-link {{ color:var(--forest); font-weight:850; text-decoration:none; }} .support-note a:hover,.footer a:hover,.text-link:hover {{ text-decoration:underline; }} .kofi-link {{ display:inline-flex; align-items:center; gap:5px; }} .kofi-icon {{ width:22px; height:auto; display:inline-block; }} .nav-right {{ display:flex; align-items:center; justify-content:flex-end; gap:14px; flex-wrap:wrap; }}
     .lang-picker {{ display:inline-flex; align-items:center; gap:6px; padding:6px; border-radius:999px; background:#fff9eb; border:1px solid var(--line); }} .lang-icon {{ width:22px; height:22px; display:grid; place-items:center; font-size:16px; }} .lang-picker button {{ border:0; border-radius:999px; background:transparent; color:#51483f; font:inherit; font-size:12px; font-weight:800; padding:7px 9px; cursor:pointer; }} .lang-picker button.active {{ background:var(--forest); color:#fff; }}
     .hero {{ margin-top:26px; }} .hero-desk {{ position:relative; min-height:760px; padding:52px 24px 0; overflow:hidden; }} .hero-desk::after {{ content:''; position:absolute; left:-4%; right:-4%; bottom:0; height:108px; background:linear-gradient(180deg,#7a5229,#513216); border-radius:50% 50% 0 0 / 42% 42% 0 0; box-shadow:0 -18px 42px rgba(55,33,12,.18); }}
@@ -1519,7 +1554,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
     </section>
     {render_process_note() if page_num == 1 else ''}
     <footer class="footer surface">
-      <div><span data-i18n="footer_text">Learning Archive: infographics, podcasts and interactive sites about people, school topics and science discoveries.</span> <span data-i18n="footer_generated_by">Made with human supervision and</span> <a href="https://roj.world/swarms/famous-people-infographic" target="_blank" rel="noopener noreferrer" data-i18n="footer_swarm">Roj swarm agents</a>.</div>
+      {render_roj_signature()}
       <div data-updated="{html.escape(updated)}">Updated: {updated_display}</div>
     </footer>
   </main>
@@ -1529,6 +1564,7 @@ def render_page(page_num: int, total_pages: int, chunk, featured=None):
 
 
 def clean_html_document(value: str) -> str:
+    value = value.replace('</head>', '<link rel="stylesheet" href="roj-signature.css">\n</head>')
     value = value.replace('</head>', '<link rel="stylesheet" href="companion-player.css">\n</head>')
     value = value.replace('</body>', '''<section id="companion-player" class="companion-player" role="region" aria-label="Reviewed explanation" hidden>
     <header><h2></h2><button type="button" class="companion-fullscreen">Fullscreen</button><button type="button" class="companion-dismiss" aria-label="Close and stop">×</button></header>
@@ -1605,7 +1641,7 @@ archive_entries = entries[1:] if len(entries) > 1 else []
 # entries in the visible archive grid instead of hiding them behind search.
 
 ENTRIES_INDEX.write_text(json.dumps(entries_index, ensure_ascii=False, indent=2), encoding='utf-8')
-for asset in ('podcast-player.css', 'podcast-player.js', 'companion-player.css', 'companion-player.js'):
+for asset in ('roj-signature.css', 'podcast-player.css', 'podcast-player.js', 'companion-player.css', 'companion-player.js'):
     shutil.copyfile(Path(__file__).resolve().parent / 'assets' / asset, PUBLIC_ROOT / asset)
 (PUBLIC_ROOT / KOFI_ICON_FILENAME).write_text(KOFI_ICON_SVG + '\n', encoding='utf-8')
 (PUBLIC_ROOT / FAVICON_FILENAME).write_text(FAVICON_SVG + '\n', encoding='utf-8')
