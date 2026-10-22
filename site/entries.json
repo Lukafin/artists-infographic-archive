@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 238,
+    "total_entries": 239,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 204
+      "age_6": 205
     },
     "category_counts": {
-      "school_poster": 50,
+      "school_poster": 51,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,84 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 189,
+      "sl": 190,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 238,
+      "infographic": 239,
       "podcast": 17,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-10-22",
+      "person": "Kako astronavti živijo na vesoljski postaji?",
+      "filename": "KakoAstronavtiZivijoNaVesoljskiPostaji-sl.png",
+      "image_filename": "KakoAstronavtiZivijoNaVesoljskiPostaji-sl.png",
+      "sources": [
+        "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/",
+        "https://humans-in-space.jaxa.jp/en/life/health-in-space/life/",
+        "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Blue_dot/Working_in_space",
+        "https://www.asc-csa.gc.ca/eng/astronauts/living-in-space/eating-in-space.asp"
+      ],
+      "original_article_url": null,
+      "title": "Kako astronavti živijo na vesoljski postaji?",
+      "summary": "Otroški plakat pokaže vsakdanje življenje v vesoljskem domu in laboratoriju: pritrjeno spalno vrečo, hrano v embalaži, pitje po slamici, vsakodnevno vadbo ter raziskovanje in vzdrževanje. Razloži, da postaja, ljudje in predmeti skupaj prosto padajo okoli Zemlje, ne da bi gravitacija izginila.",
+      "age_suitability_details": {
+        "age_6": "Astronavti na postaji spijo, jedo, telovadijo in raziskujejo. Spalno vrečo pritrdijo, da ne odplavajo.",
+        "age_13": "Lebdenje nastane, ker postaja in vse v njej skupaj prosto pada okoli Zemlje. Gravitacija ostaja prisotna; vsakdanja opravila zahtevajo prilagoditve.",
+        "adult": "Orbitalno gibanje pojasni navidezno breztežnost brez zanikanja gravitacijskega polja. Bivanje vključuje omejevanje gibanja predmetov, varovanje mišic in kosti ter raziskovalne in vzdrževalne naloge."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "c0529981-4910-4096-ac92-190a371988e3",
+      "_kind": "native",
+      "_source_mtime": 1792645650.8921084,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "kako astronavti živijo na vesoljski postaji? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-21",
       "person": "Kaj je osebni podatek?",

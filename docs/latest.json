@@ -1,24 +1,17 @@
 {
-  "podcast": {
-    "url": "audio/3be53a07919b9f6ed267013eccf8f9bd7570d29d25b5cc028db86b1fb451665d.m4a",
-    "title": "Kaj je osebni podatek?",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 505.498,
-    "source": "NotebookLM",
-    "companion_id": "1ee1a91d486aa0f6aabe0ed2401a92baa74f15ede3928cf7a33ac85a9faa9734"
-  },
-  "date": "2026-10-21",
-  "person": "Kaj je osebni podatek?",
-  "image_filename": "KajJeOsebniPodatek-sl.png",
+  "date": "2026-10-22",
+  "person": "Kako astronavti živijo na vesoljski postaji?",
+  "image_filename": "KakoAstronavtiZivijoNaVesoljskiPostaji-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.ip-rs.si/mnenja-zvop-2/pomembnost-varovanja-osebnih-podatkov-in-delovanje-ip-1770023874",
-    "https://safe.si/sites/default/files/prirocnik_safe_e-objava.pdf"
+    "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/",
+    "https://humans-in-space.jaxa.jp/en/life/health-in-space/life/",
+    "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Blue_dot/Working_in_space",
+    "https://www.asc-csa.gc.ca/eng/astronauts/living-in-space/eating-in-space.asp"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -29,7 +22,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 238,
+  "total_entries": 239,
   "total_pages": 24,
   "per_page": 10
 }
