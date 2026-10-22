@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/07dc6a6bd5048b02eb69ced15ab96da332dcbf7e0bc3c89ae8528151dcbe1d80.m4a",
+    "title": "Kako astronavti živijo na vesoljski postaji?",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 385.8,
+    "source": "NotebookLM",
+    "companion_id": "2491e287c4173fcb0c0dc97dd91da22c7d598754ba07405883757276f1c0d7a2"
+  },
   "date": "2026-10-22",
   "person": "Kako astronavti živijo na vesoljski postaji?",
   "image_filename": "KakoAstronavtiZivijoNaVesoljskiPostaji-sl.png",
