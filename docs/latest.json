@@ -1,26 +1,15 @@
 {
-  "podcast": {
-    "url": "audio/07dc6a6bd5048b02eb69ced15ab96da332dcbf7e0bc3c89ae8528151dcbe1d80.m4a",
-    "title": "Kako astronavti živijo na vesoljski postaji?",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 385.8,
-    "source": "NotebookLM",
-    "companion_id": "2491e287c4173fcb0c0dc97dd91da22c7d598754ba07405883757276f1c0d7a2"
-  },
-  "date": "2026-10-22",
-  "person": "Kako astronavti živijo na vesoljski postaji?",
-  "image_filename": "KakoAstronavtiZivijoNaVesoljskiPostaji-sl.png",
+  "date": "2026-10-23",
+  "person": "Kako nastane mavrica?",
+  "image_filename": "KakoNastaneMavrica-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/",
-    "https://humans-in-space.jaxa.jp/en/life/health-in-space/life/",
-    "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Blue_dot/Working_in_space",
-    "https://www.asc-csa.gc.ca/eng/astronauts/living-in-space/eating-in-space.asp"
+    "https://weather.metoffice.gov.uk/learn-about/weather/optical-effects/rainbows",
+    "https://www.nesdis.noaa.gov/about/k-12-education/optical-phenomena/what-causes-rainbow"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -31,7 +20,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 239,
+  "total_entries": 240,
   "total_pages": 24,
   "per_page": 10
 }

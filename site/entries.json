@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 239,
+    "total_entries": 240,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 205
+      "age_6": 206
     },
     "category_counts": {
-      "school_poster": 51,
+      "school_poster": 52,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,82 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 190,
+      "sl": 191,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 239,
+      "infographic": 240,
       "podcast": 18,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-10-23",
+      "person": "Kako nastane mavrica?",
+      "filename": "KakoNastaneMavrica-sl.png",
+      "image_filename": "KakoNastaneMavrica-sl.png",
+      "sources": [
+        "https://weather.metoffice.gov.uk/learn-about/weather/optical-effects/rainbows",
+        "https://www.nesdis.noaa.gov/about/k-12-education/optical-phenomena/what-causes-rainbow"
+      ],
+      "original_article_url": null,
+      "title": "Kako nastane mavrica?",
+      "summary": "Otroški plakat poveže Sonce za opazovalcem in kapljice pred njim z razlago poti svetlobe v vodni kapljici. Svetloba se ob vstopu lomi in razkloni v barve, del se v notranjosti odbije, ob izstopu pa se znova lomi. Pri glavni mavrici je rdeča na zunanji in vijolična na notranji strani; barve prehajajo zvezno.",
+      "age_suitability_details": {
+        "age_6": "Mavrico opazujemo s Soncem za hrbtom in kapljicami pred seboj. Sončna svetloba vsebuje različne barve.",
+        "age_13": "V kapljici se svetloba lomi, razkloni in delno odbije. Pri glavni mavrici je rdeča zunaj in vijolična znotraj, barve pa tvorijo zvezen spekter.",
+        "adult": "Optični pojav je odvisen od geometrije Sonca, opazovalca in kapljic. Glavno mavrico sestavljajo žarki z enim notranjim odbojem ter lomom ob vstopu in izstopu, pri čemer se barve različno odklonijo."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "26060af3-2d1c-4fdc-a274-2b1bfdb32502",
+      "_kind": "native",
+      "_source_mtime": 1792731994.4381196,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 2,
+      "search_text": "kako nastane mavrica? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-22",
       "person": "Kako astronavti živijo na vesoljski postaji?",
