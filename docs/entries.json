@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 240,
-      "podcast": 18,
+      "podcast": 19,
       "interactive_site": 1
     }
   },
@@ -104,8 +104,18 @@
       "source_count": 2,
       "search_text": "kako nastane mavrica? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/8f101b7660cc2d91c5f2f737e99a1454f050226d3c3025bde47ba8bb5ee2398c.m4a",
+        "title": "Kako nastane mavrica?",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 376.372,
+        "source": "NotebookLM",
+        "companion_id": "3d81424e6b7d104843c01686f609b2dd8690fd772e205193b1b6508007345e59"
+      }
     },
     {
       "date": "2026-10-22",

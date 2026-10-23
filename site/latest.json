@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/8f101b7660cc2d91c5f2f737e99a1454f050226d3c3025bde47ba8bb5ee2398c.m4a",
+    "title": "Kako nastane mavrica?",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 376.372,
+    "source": "NotebookLM",
+    "companion_id": "3d81424e6b7d104843c01686f609b2dd8690fd772e205193b1b6508007345e59"
+  },
   "date": "2026-10-23",
   "person": "Kako nastane mavrica?",
   "image_filename": "KakoNastaneMavrica-sl.png",
