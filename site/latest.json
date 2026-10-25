@@ -1,24 +1,15 @@
 {
-  "podcast": {
-    "url": "audio/8f101b7660cc2d91c5f2f737e99a1454f050226d3c3025bde47ba8bb5ee2398c.m4a",
-    "title": "Kako nastane mavrica?",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 376.372,
-    "source": "NotebookLM",
-    "companion_id": "3d81424e6b7d104843c01686f609b2dd8690fd772e205193b1b6508007345e59"
-  },
-  "date": "2026-10-23",
-  "person": "Kako nastane mavrica?",
-  "image_filename": "KakoNastaneMavrica-sl.png",
+  "date": "2026-10-25",
+  "person": "Kako nastanejo sence?",
+  "image_filename": "KakoNastanejoSence-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://weather.metoffice.gov.uk/learn-about/weather/optical-effects/rainbows",
-    "https://www.nesdis.noaa.gov/about/k-12-education/optical-phenomena/what-causes-rainbow"
+    "https://www.sciencebuddies.org/teacher-resources/lesson-plans/shadow-play",
+    "https://www.sciencelearn.org.nz/resources/2771-light-and-shadows"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -29,7 +20,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 240,
+  "total_entries": 241,
   "total_pages": 24,
   "per_page": 10
 }
