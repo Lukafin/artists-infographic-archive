@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/e654b2a9949e0f56c9bc2c06b8371b46065fbec6c8ab6dc0afa52d7db2d8472f.m4a",
+    "title": "Kako nastanejo sence?",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 379.019,
+    "source": "NotebookLM",
+    "companion_id": "9173edda1fc06ae0f1531574ebbf63e318fb2031c44712bc54d6c6722f6c7c10"
+  },
   "date": "2026-10-25",
   "person": "Kako nastanejo sence?",
   "image_filename": "KakoNastanejoSence-sl.png",

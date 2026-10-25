@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 241,
-      "podcast": 19,
+      "podcast": 20,
       "interactive_site": 1
     }
   },
@@ -104,8 +104,18 @@
       "source_count": 2,
       "search_text": "kako nastanejo sence? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/e654b2a9949e0f56c9bc2c06b8371b46065fbec6c8ab6dc0afa52d7db2d8472f.m4a",
+        "title": "Kako nastanejo sence?",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 379.019,
+        "source": "NotebookLM",
+        "companion_id": "9173edda1fc06ae0f1531574ebbf63e318fb2031c44712bc54d6c6722f6c7c10"
+      }
     },
     {
       "date": "2026-10-23",
