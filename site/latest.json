@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/5139fff72e169990f8981e23228e0175fef822c3c42c1ec2c674b797e5366f05.m4a",
+    "title": "Kako netopir najde pot v temi?",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 262.757,
+    "source": "NotebookLM",
+    "companion_id": "881a20cdf6b116eeec71cd58dd62650368aa449c3915664d8ffc7a6f29b01ba7"
+  },
   "date": "2026-10-26",
   "person": "Kako netopir najde pot v temi?",
   "image_filename": "KakoNetopirNajdePotVTemi-sl.png",
