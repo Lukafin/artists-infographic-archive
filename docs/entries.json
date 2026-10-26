@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 241,
+    "total_entries": 242,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 207
+      "age_6": 208
     },
     "category_counts": {
-      "school_poster": 53,
+      "school_poster": 54,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,84 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 192,
+      "sl": 193,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 241,
+      "infographic": 242,
       "podcast": 20,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-10-26",
+      "person": "Kako netopir najde pot v temi?",
+      "filename": "KakoNetopirNajdePotVTemi-sl.png",
+      "image_filename": "KakoNetopirNajdePotVTemi-sl.png",
+      "sources": [
+        "https://www.nps.gov/subjects/bats/echolocation.htm",
+        "https://askabiologist.asu.edu/echolocation",
+        "https://www.bats.org.uk/about-bats/flight-food-and-echolocation-2",
+        "https://dwr.virginia.gov/wildlife/bats/bat-biology-and-ecology/"
+      ],
+      "original_article_url": null,
+      "title": "Kako netopir najde pot v temi?",
+      "summary": "Otroški plakat razloži eholokacijo kot pot klica od netopirja do žuželke ali ovire in odmeva nazaj do ušes. Krajši čas vrnitve pomeni bližnji predmet. Jasno pove, da netopirji niso slepi in da so barvne zvočne poti le shema.",
+      "age_suitability_details": {
+        "age_6": "Netopir odda zvok in posluša odmev. Tako najde žuželko in se izogne oviri. Netopirji tudi vidijo.",
+        "age_13": "Pri eholokaciji se zvok odbije od predmeta in vrne do ušes. Čas do vrnitve odmeva pomaga oceniti oddaljenost, drugi podatki v odmevu pa položaj in lastnosti predmeta.",
+        "adult": "Aktivno akustično zaznavanje temelji na oddanih klicih ter časovnih in spektralnih lastnostih odmevov. Mnoge vrste uporabljajo ultrazvok, eholokacija in vid pa se dopolnjujeta; sposobnosti se med vrstami razlikujejo."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "211422bc-1632-40dd-840c-dff148ba8e0e",
+      "_kind": "native",
+      "_source_mtime": 1792994793.9202793,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "kako netopir najde pot v temi? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-25",
       "person": "Kako nastanejo sence?",
