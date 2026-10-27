@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 243,
-      "podcast": 21,
+      "podcast": 22,
       "interactive_site": 1
     }
   },
@@ -106,8 +106,18 @@
       "source_count": 4,
       "search_text": "lov na simetrijo v naravi school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/52f69dfac5a6003e38153da70b919f8048328a69fdfc686cbfb27dfd824f400b.m4a",
+        "title": "Lov na simetrijo v naravi",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 395.645,
+        "source": "NotebookLM",
+        "companion_id": "d95e395024690ffb820e888533ad1f58fa264a6faa842b0dab423a427782caef"
+      }
     },
     {
       "date": "2026-10-26",
