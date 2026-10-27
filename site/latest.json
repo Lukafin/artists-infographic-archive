@@ -1,26 +1,17 @@
 {
-  "podcast": {
-    "url": "audio/5139fff72e169990f8981e23228e0175fef822c3c42c1ec2c674b797e5366f05.m4a",
-    "title": "Kako netopir najde pot v temi?",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 262.757,
-    "source": "NotebookLM",
-    "companion_id": "881a20cdf6b116eeec71cd58dd62650368aa449c3915664d8ffc7a6f29b01ba7"
-  },
-  "date": "2026-10-26",
-  "person": "Kako netopir najde pot v temi?",
-  "image_filename": "KakoNetopirNajdePotVTemi-sl.png",
+  "date": "2026-10-27",
+  "person": "Lov na simetrijo v naravi",
+  "image_filename": "LovNaSimetrijoVNaravi-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.nps.gov/subjects/bats/echolocation.htm",
-    "https://askabiologist.asu.edu/echolocation",
-    "https://www.bats.org.uk/about-bats/flight-food-and-echolocation-2",
-    "https://dwr.virginia.gov/wildlife/bats/bat-biology-and-ecology/"
+    "https://en.wikipedia.org/wiki/Symmetry_in_biology",
+    "https://medienportal.siemens-stiftung.org/en/crafts-with-reflection-symmetry-106272",
+    "https://nrich.maths.org/problems/let-us-reflect",
+    "https://www.mathsisfun.com/geometry/symmetry-reflection.html"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -31,7 +22,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 242,
+  "total_entries": 243,
   "total_pages": 25,
   "per_page": 10
 }

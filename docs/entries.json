@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 242,
+    "total_entries": 243,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 208
+      "age_6": 209
     },
     "category_counts": {
-      "school_poster": 54,
+      "school_poster": 55,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,84 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 193,
+      "sl": 194,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 242,
+      "infographic": 243,
       "podcast": 21,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-10-27",
+      "person": "Lov na simetrijo v naravi",
+      "filename": "LovNaSimetrijoVNaravi-sl.png",
+      "image_filename": "LovNaSimetrijoVNaravi-sl.png",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Symmetry_in_biology",
+        "https://medienportal.siemens-stiftung.org/en/crafts-with-reflection-symmetry-106272",
+        "https://nrich.maths.org/problems/let-us-reflect",
+        "https://www.mathsisfun.com/geometry/symmetry-reflection.html"
+      ],
+      "original_article_url": null,
+      "title": "Lov na simetrijo v naravi",
+      "summary": "Zrcalno simetrijo preverimo tako, da narisano obliko prepognemo po osi in primerjamo polovici. Metulj in preprost list sta izhodišči za opazovanje podobnosti leve in desne strani. Naravne oblike imajo drobne razlike, zato jih ne enačimo s popolnimi matematičnimi modeli; nekatere oblike nimajo osi simetrije.",
+      "age_suitability_details": {
+        "age_6": "Otrok primerja levo in desno stran metulja ter na papirju preveri, ali se polovici ob prepogibu prekrijeta.",
+        "age_13": "Os simetrije določa zrcaljenje idealne ravninske oblike; naravni primeri so približni in jih preverjamo z opazovanjem.",
+        "adult": "Razlikovanje matematične zrcalne simetrije od biološke bilateralne organizacije preprečuje posploševanje popolne simetrije na naravne oblike."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "b277c3eb-aa12-4dab-80cf-c903b25ad83a",
+      "_kind": "native",
+      "_source_mtime": 1793081322.6999233,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "lov na simetrijo v naravi school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-26",
       "person": "Kako netopir najde pot v temi?",
