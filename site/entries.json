@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 243,
+    "total_entries": 244,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 209
+      "age_6": 210
     },
     "category_counts": {
-      "school_poster": 55,
+      "school_poster": 56,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,83 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 194,
+      "sl": 195,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 243,
+      "infographic": 244,
       "podcast": 22,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-10-28",
+      "person": "Oblaki kot vremenske zgodbe",
+      "filename": "OblakiKotVremenskeZgodbe-sl.png",
+      "image_filename": "OblakiKotVremenskeZgodbe-sl.png",
+      "sources": [
+        "https://www.noaa.gov/jetstream/clouds/ten-basic-clouds",
+        "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/clouds",
+        "https://weather.metoffice.gov.uk/learn-about/met-office-for-schools/other-content/other-resources/what-are-clouds"
+      ],
+      "original_article_url": null,
+      "title": "Oblaki kot vremenske zgodbe",
+      "summary": "Oblaki imajo različne oblike: visoki cirusi so nežni in vlaknati, kumulusi so kopasti z ravnim spodnjim robom, stratusi tvorijo nizko sivo plast, kumulonimbus pa je visok nevihtni oblak. Oblaki vsebujejo vodne kapljice ali ledene kristalčke. Njihova oblika je vremenski namig, ne zanesljiva samostojna napoved.",
+      "age_suitability_details": {
+        "age_6": "Otrok prepozna oblačna peresa, kopice in sivo odejo ter ve, da je ob grmenju varneje v stavbi.",
+        "age_13": "Primerja ciruse, kumuluse, stratuse in kumulonimbus ter poveže obliko in sestavo z možnimi vremenskimi pojavi.",
+        "adult": "Izbrani rodovi pokažejo razlike med plastovitimi, kopastimi in vlaknatimi oblaki. Morfološki namigi ne nadomestijo celovite meteorološke napovedi."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "0dcc247a-a30e-410c-a613-0b98a17c0716",
+      "_kind": "native",
+      "_source_mtime": 1793167629.7470717,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "oblaki kot vremenske zgodbe school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-27",
       "person": "Lov na simetrijo v naravi",

@@ -1,26 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/52f69dfac5a6003e38153da70b919f8048328a69fdfc686cbfb27dfd824f400b.m4a",
-    "title": "Lov na simetrijo v naravi",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 395.645,
-    "source": "NotebookLM",
-    "companion_id": "d95e395024690ffb820e888533ad1f58fa264a6faa842b0dab423a427782caef"
-  },
-  "date": "2026-10-27",
-  "person": "Lov na simetrijo v naravi",
-  "image_filename": "LovNaSimetrijoVNaravi-sl.png",
+  "date": "2026-10-28",
+  "person": "Oblaki kot vremenske zgodbe",
+  "image_filename": "OblakiKotVremenskeZgodbe-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://en.wikipedia.org/wiki/Symmetry_in_biology",
-    "https://medienportal.siemens-stiftung.org/en/crafts-with-reflection-symmetry-106272",
-    "https://nrich.maths.org/problems/let-us-reflect",
-    "https://www.mathsisfun.com/geometry/symmetry-reflection.html"
+    "https://www.noaa.gov/jetstream/clouds/ten-basic-clouds",
+    "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/clouds",
+    "https://weather.metoffice.gov.uk/learn-about/met-office-for-schools/other-content/other-resources/what-are-clouds"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -31,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 243,
+  "total_entries": 244,
   "total_pages": 25,
   "per_page": 10
 }
