@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 244,
+    "total_entries": 245,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 210
+      "age_6": 211
     },
     "category_counts": {
-      "school_poster": 56,
+      "school_poster": 57,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,83 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 195,
+      "sl": 196,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 244,
+      "infographic": 245,
       "podcast": 23,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-10-29",
+      "person": "Od doline do vrha: naravni pasovi Julijskih Alp",
+      "filename": "OdDolineDoVrhaNaravniPasoviJulijskihAlp-sl.png",
+      "image_filename": "OdDolineDoVrhaNaravniPasoviJulijskihAlp-sl.png",
+      "sources": [
+        "https://www.tnp.si/sl/park/narava-in-kultura/ekosistemi/",
+        "https://www.tnp.si/sl/park/narava-in-kultura/zivalstvo/",
+        "https://www.tnp.si/sl/park/narava-in-kultura/rastlinstvo/"
+      ],
+      "original_article_url": null,
+      "title": "Od doline do vrha: naravni pasovi Julijskih Alp",
+      "summary": "Poenostavljen poletni prerez Julijskih Alp povezuje gozd z bukvijo, smreko in macesnom, nizko ruševje ter visokogorske trate in skalovje. Zgornja gozdna meja je v parku približno med 1600 in 1800 metri, odvisno od lege. Gams, belka, planika in veverica so primeri življenja v teh okoljih, ne strogo omejeni prebivalci ene višine.",
+      "age_suitability_details": {
+        "age_6": "Otrok razlikuje gozd, nizko ruševje in skalnati svet ter spozna veverico, gamsa, belko in planiko.",
+        "age_13": "Poveže nadmorsko višino z menjavanjem življenjskih prostorov ter razume, da se gozdna meja in gibanje živali ne ravnata po eni ravni črti.",
+        "adult": "Primerjava višinskih življenjskih prostorov upošteva razlike med soško stranjo in notranjostjo parka ter prekrivanje habitatov in sezonsko gibanje živali."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "54cf0713-6363-460d-9029-f412ee0f71fd",
+      "_kind": "native",
+      "_source_mtime": 1793254161.5828633,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "od doline do vrha: naravni pasovi julijskih alp school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-28",
       "person": "Oblaki kot vremenske zgodbe",

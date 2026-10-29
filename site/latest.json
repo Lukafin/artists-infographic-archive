@@ -1,25 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/fed7b5fff99054aac370923206ff2814c6cfefd2871bcede2e60032467826deb.m4a",
-    "title": "Oblaki kot vremenske zgodbe",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 328.771,
-    "source": "NotebookLM",
-    "companion_id": "5cdb2a413ba1f3747bcde8964cb061384e3dc9a90fec162a904ba0e1bd4b7164"
-  },
-  "date": "2026-10-28",
-  "person": "Oblaki kot vremenske zgodbe",
-  "image_filename": "OblakiKotVremenskeZgodbe-sl.png",
+  "date": "2026-10-29",
+  "person": "Od doline do vrha: naravni pasovi Julijskih Alp",
+  "image_filename": "OdDolineDoVrhaNaravniPasoviJulijskihAlp-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.noaa.gov/jetstream/clouds/ten-basic-clouds",
-    "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/clouds",
-    "https://weather.metoffice.gov.uk/learn-about/met-office-for-schools/other-content/other-resources/what-are-clouds"
+    "https://www.tnp.si/sl/park/narava-in-kultura/ekosistemi/",
+    "https://www.tnp.si/sl/park/narava-in-kultura/zivalstvo/",
+    "https://www.tnp.si/sl/park/narava-in-kultura/rastlinstvo/"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -30,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 244,
+  "total_entries": 245,
   "total_pages": 25,
   "per_page": 10
 }
