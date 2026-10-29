@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/edf6d3169c9c26c6a5dda49d71a6143a43c2c072c19be8f0345c7a9419ad5a72.m4a",
+    "title": "Od doline do vrha: naravni pasovi Julijskih Alp",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 305.528,
+    "source": "NotebookLM",
+    "companion_id": "c0ffc764d7528a6f50bbbea8666e5dab2c8ffe902a51e9a7aa7bd2452bb5d97d"
+  },
   "date": "2026-10-29",
   "person": "Od doline do vrha: naravni pasovi Julijskih Alp",
   "image_filename": "OdDolineDoVrhaNaravniPasoviJulijskihAlp-sl.png",
