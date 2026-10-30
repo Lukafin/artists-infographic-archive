@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 245,
+    "total_entries": 246,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 211
+      "age_6": 212
     },
     "category_counts": {
-      "school_poster": 57,
+      "school_poster": 58,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,83 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 196,
+      "sl": 197,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 245,
+      "infographic": 246,
       "podcast": 24,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-10-30",
+      "person": "Od gosenice do metulja",
+      "filename": "OdGoseniceDoMetulja-sl.png",
+      "image_filename": "OdGoseniceDoMetulja-sl.png",
+      "sources": [
+        "https://www.floridamuseum.ufl.edu/discover-butterflies/faq/",
+        "https://kozjanski-park.si/strokovni-del/narava/biotska-pestrost/",
+        "https://butterfly-conservation.org/butterflies/peacock"
+      ],
+      "original_article_url": null,
+      "title": "Od gosenice do metulja",
+      "summary": "Življenjski krog metulja ima štiri razvojne stopnje: jajčece, gosenico, bubo in odraslega metulja. Dnevni pavlinček je konkreten primer: samica odlaga jajčeca na koprive, gosenice jedo liste in se levijo, v bubi se telo preoblikuje, odrasli metulj pa po razprtju in utrditvi kril poleti. Po parjenju samica odloži jajčeca naslednje generacije.",
+      "age_suitability_details": {
+        "age_6": "Otrok spozna jajčece, gosenico, bubo in metulja ter sledi razvoju ob koprivi.",
+        "age_13": "Razlikuje rast in levitve gosenice od preobrazbe v bubi ter poveže parjenje in jajčeca z naslednjo generacijo.",
+        "adult": "Razlaga popolne preobrazbe na primeru dnevnega pavlinčka loči življenjske stopnje, hranilno rastlino in generacijski krog brez posploševanja trajanja razvoja."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "4a5eebb8-080c-441d-a701-070872f04db4",
+      "_kind": "native",
+      "_source_mtime": 1793340428.4783628,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "od gosenice do metulja school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-29",
       "person": "Od doline do vrha: naravni pasovi Julijskih Alp",
