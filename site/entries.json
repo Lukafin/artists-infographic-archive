@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 246,
-      "podcast": 24,
+      "podcast": 25,
       "interactive_site": 1
     }
   },
@@ -105,8 +105,18 @@
       "source_count": 3,
       "search_text": "od gosenice do metulja school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/1cf49c607134012c7734e343cd48d3bd4616ca7f709d044154ad567059c59e68.m4a",
+        "title": "Od gosenice do metulja",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 274.831,
+        "source": "NotebookLM",
+        "companion_id": "5adaf0dabbae549060fb67e2fc9a94bf77bc7639c309d56be6982bdf6c728559"
+      }
     },
     {
       "date": "2026-10-29",
