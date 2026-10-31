@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 246,
+    "total_entries": 247,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 212
+      "age_6": 213
     },
     "category_counts": {
-      "school_poster": 58,
+      "school_poster": 59,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,83 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 197,
+      "sl": 198,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 246,
+      "infographic": 247,
       "podcast": 25,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-10-31",
+      "person": "Od semena do mlade rastline",
+      "filename": "OdSemenaDoMladeRastline-sl.png",
+      "image_filename": "OdSemenaDoMladeRastline-sl.png",
+      "sources": [
+        "https://www.rhs.org.uk/propagation/seed-indoors",
+        "https://www.rhs.org.uk/advice/understanding-plants/how-plants-breathe",
+        "https://www.rhs.org.uk/advice/understanding-plants/how-plants-absorb-water"
+      ],
+      "original_article_url": null,
+      "title": "Od semena do mlade rastline",
+      "summary": "Na primeru navadnega fižola plakat sledi od nabreklega semena prek prve korenine in poganjka do mladih zelenih listov. Za kalitev potrebuje seme vodo, kisik in primerno temperaturo. Začetno rast podpira zaloga hrane v semenu; pozneje zeleni listi s svetlobno energijo iz vode in ogljikovega dioksida izdelujejo sladkorje. Korenine dovajajo vodo in mineralne snovi, ne gotove hrane iz prsti.",
+      "age_suitability_details": {
+        "age_6": "Otrok sledi fižolovemu semenu, prvi korenini, poganjku in zelenim listom ter spozna, da je v semenu začetna zaloga hrane.",
+        "age_13": "Razlikuje pogoje za kalitev od fotosinteze in poveže semensko zalogo, klična lista, korenine ter nastanek sladkorjev v zelenih listih.",
+        "adult": "Razlaga razlikuje uporabo rezervnih snovi pri kalitvi od poznejše fotosinteze ter mineralno prehrano in oskrbo z vodo od nastajanja organskih snovi."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "37357db2-9523-4570-bd22-48cd3a85d4f7",
+      "_kind": "native",
+      "_source_mtime": 1793427009.9883816,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "od semena do mlade rastline school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-30",
       "person": "Od gosenice do metulja",

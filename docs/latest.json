@@ -1,25 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/1cf49c607134012c7734e343cd48d3bd4616ca7f709d044154ad567059c59e68.m4a",
-    "title": "Od gosenice do metulja",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 274.831,
-    "source": "NotebookLM",
-    "companion_id": "5adaf0dabbae549060fb67e2fc9a94bf77bc7639c309d56be6982bdf6c728559"
-  },
-  "date": "2026-10-30",
-  "person": "Od gosenice do metulja",
-  "image_filename": "OdGoseniceDoMetulja-sl.png",
+  "date": "2026-10-31",
+  "person": "Od semena do mlade rastline",
+  "image_filename": "OdSemenaDoMladeRastline-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.floridamuseum.ufl.edu/discover-butterflies/faq/",
-    "https://kozjanski-park.si/strokovni-del/narava/biotska-pestrost/",
-    "https://butterfly-conservation.org/butterflies/peacock"
+    "https://www.rhs.org.uk/propagation/seed-indoors",
+    "https://www.rhs.org.uk/advice/understanding-plants/how-plants-breathe",
+    "https://www.rhs.org.uk/advice/understanding-plants/how-plants-absorb-water"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -30,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 246,
+  "total_entries": 247,
   "total_pages": 25,
   "per_page": 10
 }
