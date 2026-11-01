@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 247,
+    "total_entries": 248,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 213
+      "age_6": 214
     },
     "category_counts": {
-      "school_poster": 59,
+      "school_poster": 60,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,84 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 198,
+      "sl": 199,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 247,
+      "infographic": 248,
       "podcast": 25,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-01",
+      "person": "Soča od izvira do morja",
+      "filename": "SocaOdIzviraDoMorja-sl.png",
+      "image_filename": "SocaOdIzviraDoMorja-sl.png",
+      "sources": [
+        "https://obcina.bovec.si/objava/59717",
+        "https://obcina.bovec.si/objava/59823",
+        "https://www.parks.it/riserva.foce.isonzo/Epar.php",
+        "https://www.arpa.fvg.it/temi/temi/acqua/ultimi-pubblicati/il-territorio-acque-marino-costiere/"
+      ],
+      "original_article_url": null,
+      "title": "Soča od izvira do morja",
+      "summary": "Shematski zemljevid sledi Soči od kraškega izvira v Zadnji Trenti mimo Bovca, Kobarida, Tolmina, Mosta na Soči, Kanala, Solkana in Gorice do izliva pri Punta Sdobba v Tržaški zaliv Jadranskega morja. Pokaže prehod od alpskih korit prek doline do obalnih mokrišč ter pojasni, da sta Soča in Isonzo imeni iste reke.",
+      "age_suitability_details": {
+        "age_6": "Otrok sledi isti reki od gorske jame skozi dolino do morja in spozna, da ima reka v Italiji ime Isonzo.",
+        "age_13": "Poveže zaporedje krajev ob Soči, sotočje z Idrijco in razliko med izvirom, rečnim tokom ter izlivnim mokriščem.",
+        "adult": "Prikaz povezuje kraški izvir, alpsko in dolinsko strugo ter severnojadranski estuarij; loči shematično zaporedje od natančnega kartografskega merila."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "45080338-e3d4-4e05-835f-447230952dd4",
+      "_kind": "native",
+      "_source_mtime": 1793513491.9063408,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "soča od izvira do morja school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-10-31",
       "person": "Od semena do mlade rastline",
