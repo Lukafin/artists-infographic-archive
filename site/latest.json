@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/341c6351db81a25f71c214468e7940b224e319e8df0a065caafaa6e6ce95aa21.m4a",
+    "title": "Soča od izvira do morja",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 301.441,
+    "source": "NotebookLM",
+    "companion_id": "b302dc8b27bce3e25040d0e1218cf0d01c91b6664646bc3f65e45ca6262be749"
+  },
   "date": "2026-11-01",
   "person": "Soča od izvira do morja",
   "image_filename": "SocaOdIzviraDoMorja-sl.png",

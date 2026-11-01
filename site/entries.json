@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 248,
-      "podcast": 25,
+      "podcast": 27,
       "interactive_site": 1
     }
   },
@@ -106,8 +106,18 @@
       "source_count": 4,
       "search_text": "soča od izvira do morja school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/341c6351db81a25f71c214468e7940b224e319e8df0a065caafaa6e6ce95aa21.m4a",
+        "title": "Soča od izvira do morja",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 301.441,
+        "source": "NotebookLM",
+        "companion_id": "b302dc8b27bce3e25040d0e1218cf0d01c91b6664646bc3f65e45ca6262be749"
+      }
     },
     {
       "date": "2026-10-31",
@@ -172,8 +182,18 @@
       "source_count": 3,
       "search_text": "od semena do mlade rastline school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/3fd1d7c6ad5ff48212cbcd65c4e72e788769f27294537fc0b53e39f32d764e63.m4a",
+        "title": "Od semena do mlade rastline",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 284.653,
+        "source": "NotebookLM",
+        "companion_id": "fcd57a1de18ca3e64c9f9eed9b12b516da8d0edbbbb41119092c999eb39fab07"
+      }
     },
     {
       "date": "2026-10-30",
