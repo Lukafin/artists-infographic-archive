@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 248,
+    "total_entries": 249,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 214
+      "age_6": 215
     },
     "category_counts": {
-      "school_poster": 60,
+      "school_poster": 61,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,83 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 199,
+      "sl": 200,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 248,
+      "infographic": 249,
       "podcast": 27,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-03",
+      "person": "Zakaj Luna spreminja obliko?",
+      "filename": "ZakajLunaSpreminjaObliko-sl.png",
+      "image_filename": "ZakajLunaSpreminjaObliko-sl.png",
+      "sources": [
+        "https://spaceplace.nasa.gov/moon-phases/en/",
+        "https://science.nasa.gov/moon/moon-phases/",
+        "https://science.nasa.gov/moon/eclipses/"
+      ],
+      "original_article_url": null,
+      "title": "Zakaj Luna spreminja obliko?",
+      "summary": "Luna ostaja krogla in odbija Sončevo svetlobo. Plakat poveže štiri položaje na Lunini tirnici s pogledom z Zemlje: mlaj, prvi krajec, ščip in zadnji krajec. Pojasni približno 29,5-dnevni cikel in razlikuje običajne mene od Luninega mrka.",
+      "age_suitability_details": {
+        "age_6": "Luna je vedno krogla. Otrok poveže Sončevo svetlobo z različnim videzom Lune in spozna štiri značilne mene.",
+        "age_13": "Poveže položaj Lune glede na Sonce in Zemljo z vidnim deležem osvetljene polovice ter razlikuje mene od mrka.",
+        "adult": "Loči prostorsko osvetlitev od opazovalne projekcije, sinodski cikel od obhodne dobe in navidezno poravnavo sheme od nagnjene Lunine tirnice."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "4ef9b8a1-4f48-4b70-9c8e-cda07df485eb",
+      "_kind": "native",
+      "_source_mtime": 1793686000.0220294,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "zakaj luna spreminja obliko? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-01",
       "person": "Soča od izvira do morja",

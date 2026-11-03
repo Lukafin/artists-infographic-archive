@@ -1,26 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/341c6351db81a25f71c214468e7940b224e319e8df0a065caafaa6e6ce95aa21.m4a",
-    "title": "Soča od izvira do morja",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 301.441,
-    "source": "NotebookLM",
-    "companion_id": "b302dc8b27bce3e25040d0e1218cf0d01c91b6664646bc3f65e45ca6262be749"
-  },
-  "date": "2026-11-01",
-  "person": "Soča od izvira do morja",
-  "image_filename": "SocaOdIzviraDoMorja-sl.png",
+  "date": "2026-11-03",
+  "person": "Zakaj Luna spreminja obliko?",
+  "image_filename": "ZakajLunaSpreminjaObliko-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://obcina.bovec.si/objava/59717",
-    "https://obcina.bovec.si/objava/59823",
-    "https://www.parks.it/riserva.foce.isonzo/Epar.php",
-    "https://www.arpa.fvg.it/temi/temi/acqua/ultimi-pubblicati/il-territorio-acque-marino-costiere/"
+    "https://spaceplace.nasa.gov/moon-phases/en/",
+    "https://science.nasa.gov/moon/moon-phases/",
+    "https://science.nasa.gov/moon/eclipses/"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -31,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 248,
+  "total_entries": 249,
   "total_pages": 25,
   "per_page": 10
 }
