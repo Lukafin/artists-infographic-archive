@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/dd901cd5d2dcb62e854fda0b22cc03a1a0ecbcfe38e5c7449d65166429d8d1e7.m4a",
+    "title": "Zakaj Luna spreminja obliko?",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 469.6,
+    "source": "NotebookLM",
+    "companion_id": "7a63cbb606110b22497da7c52bfe1f1dde3ecb7870bcea441529ef2572ab0bcc"
+  },
   "date": "2026-11-03",
   "person": "Zakaj Luna spreminja obliko?",
   "image_filename": "ZakajLunaSpreminjaObliko-sl.png",
