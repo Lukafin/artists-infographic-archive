@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/0a8e3e78d7fa0eeec5d03da4eede42d65a3354d14e209787daf132d2ce3c6c41.m4a",
+    "title": "Tangram: sedem kosov, veliko podob",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 344.05,
+    "source": "NotebookLM",
+    "companion_id": "6620c014dded4fc5af467b2ffc0888c827501fca2676121deb980ff1ff554eda"
+  },
   "date": "2026-11-04",
   "person": "Tangram: sedem kosov, veliko podob",
   "image_filename": "TangramSedemKosovVelikoPodob-sl.png",
