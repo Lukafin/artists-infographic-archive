@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 249,
+    "total_entries": 250,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 215
+      "age_6": 216
     },
     "category_counts": {
-      "school_poster": 61,
+      "school_poster": 62,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,83 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 200,
+      "sl": 201,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 249,
+      "infographic": 250,
       "podcast": 28,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-04",
+      "person": "Tangram: sedem kosov, veliko podob",
+      "filename": "TangramSedemKosovVelikoPodob-sl.png",
+      "image_filename": "TangramSedemKosovVelikoPodob-sl.png",
+      "sources": [
+        "https://nrich.maths.org/interactive-environments/tangram-browser",
+        "https://pressbooks.oer.hawaii.edu/mathforelementaryteachers/chapter/tangrams/",
+        "https://nrich.maths.org/problems/tangram-area"
+      ],
+      "original_article_url": null,
+      "title": "Tangram: sedem kosov, veliko podob",
+      "summary": "Tangram sestavlja sedem kosov enega kvadrata: dva velika, en srednji in dva mala trikotnika, kvadrat ter paralelogram. Plakat predstavi pravilni razrez, pravila sestavljanja ter dve geometrijsko preverjeni silhueti: pravokotni enakokraki trikotnik in pravokotnik. Pri preurejanju vseh kosov se skupna ploščina ohrani.",
+      "age_suitability_details": {
+        "age_6": "Otrok spozna trikotnike, kvadrat in paralelogram ter iz sedmih kosov sestavlja nove oblike brez prekrivanja.",
+        "age_13": "Razlikuje velikosti pravokotnih enakokrakih trikotnikov in razume ohranitev ploščine pri preurejanju vseh kosov.",
+        "adult": "Tangram poveže skladnost, premike, zasuke in zrcaljenje z geometrijskim razčlenjevanjem; obe silhueti imata preverjeni konstruktivni rešitvi."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "d078b8fd-8d41-4b17-a680-008821fa9da9",
+      "_kind": "native",
+      "_source_mtime": 1793772335.0745585,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "tangram: sedem kosov, veliko podob school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-03",
       "person": "Zakaj Luna spreminja obliko?",
