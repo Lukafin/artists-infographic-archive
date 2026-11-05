@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/22573d725b4e78ce794dfecd3aec13d51890f287856818932b3c2f11fcc80020.m4a",
+    "title": "Zakaj listi jeseni spremenijo barvo?",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 393.927,
+    "source": "NotebookLM",
+    "companion_id": "ee5665d7122c57a46cd95e7be666575427bd98e4c34e7c7574cbde1149af23e4"
+  },
   "date": "2026-11-05",
   "person": "Zakaj listi jeseni spremenijo barvo?",
   "image_filename": "ZakajListiJeseniSpremenijoBarvo-sl.png",
