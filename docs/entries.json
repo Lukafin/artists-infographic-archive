@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 252,
-      "podcast": 30,
+      "podcast": 31,
       "interactive_site": 1
     }
   },
@@ -105,8 +105,18 @@
       "source_count": 3,
       "search_text": "zakaj milni mehurček kaže mavrične barve? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/beeca7d4521187398acc91345c15f05eb5709613c9d5de2e5a037fc3f46440da.m4a",
+        "title": "Zakaj milni mehurček kaže mavrične barve?",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 312.216,
+        "source": "NotebookLM",
+        "companion_id": "5f915c41371e8d9b76273c416144dfe16c3266bb8f69275a82d51224ec69402a"
+      }
     },
     {
       "date": "2026-11-05",
