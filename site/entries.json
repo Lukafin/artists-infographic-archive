@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 251,
+    "total_entries": 252,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 217
+      "age_6": 218
     },
     "category_counts": {
-      "school_poster": 63,
+      "school_poster": 64,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,83 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 202,
+      "sl": 203,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 251,
+      "infographic": 252,
       "podcast": 30,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-06",
+      "person": "Zakaj milni mehurček kaže mavrične barve?",
+      "filename": "ZakajMilniMehurcekKazeMavricneBarve-sl.png",
+      "image_filename": "ZakajMilniMehurcekKazeMavricneBarve-sl.png",
+      "sources": [
+        "https://physicslabs.colorado.edu/demos/optics/interference/thin-films/interference-in-a-soap-film/",
+        "https://www.rigb.org/explore-science/explore/collection/exploring-colours-soap-films-motion",
+        "https://annex.exploratorium.edu/texnet/exhibits/weather/soap_bubbles/media/soap_s.pdf"
+      ],
+      "original_article_url": null,
+      "title": "Zakaj milni mehurček kaže mavrične barve?",
+      "summary": "Mavrične barve milnega mehurčka nastanejo zaradi interference svetlobe, odbite na obeh površinah tanke tekoče kožice. Prekrivanje odbitih svetlobnih valov nekatere barve okrepi, druge oslabi. Videz je odvisen od debeline kožice in kota gledanja; ko tekočina odteka, se barvni vzorci spreminjajo. Barve niso barvilo v milnici.",
+      "age_suitability_details": {
+        "age_6": "Otrok opazuje premikajoče se barvne lise in spozna, da nastanejo zaradi svetlobe, ne zaradi barvila.",
+        "age_13": "Razume dva odboja svetlobe na tanki plasti, prekrivanje valov in vpliv debeline ter kota gledanja.",
+        "adult": "Poveže interferenco v tanki tekoči plasti s selektivnim ojačevanjem in slabljenjem valovnih dolžin ter spreminjanjem debeline med odtekanjem tekočine."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "25c771cf-e1f1-418d-92b3-8fd917e5b4ee",
+      "_kind": "native",
+      "_source_mtime": 1793945163.7387536,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "zakaj milni mehurček kaže mavrične barve? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-05",
       "person": "Zakaj listi jeseni spremenijo barvo?",
