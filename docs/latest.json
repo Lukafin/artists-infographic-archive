@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/581fdd9db883660af76769a04d8a7e8d5fe4fd7e393525dd4b6f762b3c71c17c.m4a",
+    "title": "Cvet in opraševalec: mala izmenjava",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 356.775,
+    "source": "NotebookLM",
+    "companion_id": "86e3ba247a92731c9cd566b4fda6206a51d45fac66b25238aa8d32c59d87015b"
+  },
   "date": "2026-11-07",
   "person": "Cvet in opraševalec: mala izmenjava",
   "image_filename": "CvetInOprasevalecMalaIzmenjava-sl.png",

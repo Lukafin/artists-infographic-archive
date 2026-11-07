@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 253,
-      "podcast": 31,
+      "podcast": 32,
       "interactive_site": 1
     }
   },
@@ -104,8 +104,18 @@
       "source_count": 2,
       "search_text": "cvet in opraševalec: mala izmenjava school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/581fdd9db883660af76769a04d8a7e8d5fe4fd7e393525dd4b6f762b3c71c17c.m4a",
+        "title": "Cvet in opraševalec: mala izmenjava",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 356.775,
+        "source": "NotebookLM",
+        "companion_id": "86e3ba247a92731c9cd566b4fda6206a51d45fac66b25238aa8d32c59d87015b"
+      }
     },
     {
       "date": "2026-11-06",
