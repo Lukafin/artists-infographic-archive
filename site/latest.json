@@ -1,25 +1,15 @@
 {
-  "podcast": {
-    "url": "audio/beeca7d4521187398acc91345c15f05eb5709613c9d5de2e5a037fc3f46440da.m4a",
-    "title": "Zakaj milni mehurček kaže mavrične barve?",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 312.216,
-    "source": "NotebookLM",
-    "companion_id": "5f915c41371e8d9b76273c416144dfe16c3266bb8f69275a82d51224ec69402a"
-  },
-  "date": "2026-11-06",
-  "person": "Zakaj milni mehurček kaže mavrične barve?",
-  "image_filename": "ZakajMilniMehurcekKazeMavricneBarve-sl.png",
+  "date": "2026-11-07",
+  "person": "Cvet in opraševalec: mala izmenjava",
+  "image_filename": "CvetInOprasevalecMalaIzmenjava-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://physicslabs.colorado.edu/demos/optics/interference/thin-films/interference-in-a-soap-film/",
-    "https://www.rigb.org/explore-science/explore/collection/exploring-colours-soap-films-motion",
-    "https://annex.exploratorium.edu/texnet/exhibits/weather/soap_bubbles/media/soap_s.pdf"
+    "https://www.floridamuseum.ufl.edu/discover/story/celebrating-pollinators/",
+    "https://extension.wsu.edu/pnw-gardeners-handbook/basic-botany/"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -30,7 +20,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 252,
+  "total_entries": 253,
   "total_pages": 26,
   "per_page": 10
 }
