@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 254,
-      "podcast": 32,
+      "podcast": 33,
       "interactive_site": 1
     }
   },
@@ -105,8 +105,18 @@
       "source_count": 3,
       "search_text": "fotografija pred objavo: štiri vprašanja school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/fca8c50e870746facfd6c6760f7621f89a4486a706967b7edeff765eab26842c.m4a",
+        "title": "Fotografija pred objavo: štiri vprašanja",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 413.571,
+        "source": "NotebookLM",
+        "companion_id": "a9506e98245636cef8fbfd2d0aaff9d1a157522af4a79621d74c148eca4c662b"
+      }
     },
     {
       "date": "2026-11-07",

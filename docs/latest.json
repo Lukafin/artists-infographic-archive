@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/fca8c50e870746facfd6c6760f7621f89a4486a706967b7edeff765eab26842c.m4a",
+    "title": "Fotografija pred objavo: štiri vprašanja",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 413.571,
+    "source": "NotebookLM",
+    "companion_id": "a9506e98245636cef8fbfd2d0aaff9d1a157522af4a79621d74c148eca4c662b"
+  },
   "date": "2026-11-08",
   "person": "Fotografija pred objavo: štiri vprašanja",
   "image_filename": "FotografijaPredObjavoStiriVprasanja-sl.png",
