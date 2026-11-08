@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 253,
+    "total_entries": 254,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 219
+      "age_6": 220
     },
     "category_counts": {
-      "school_poster": 65,
+      "school_poster": 66,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,83 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 204,
+      "sl": 205,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 253,
+      "infographic": 254,
       "podcast": 32,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-08",
+      "person": "Fotografija pred objavo: štiri vprašanja",
+      "filename": "FotografijaPredObjavoStiriVprasanja-sl.png",
+      "image_filename": "FotografijaPredObjavoStiriVprasanja-sl.png",
+      "sources": [
+        "https://safe.si/nasveti/moja-identiteta-in-zasebnost/zascita-zasebnosti-nasveti",
+        "https://safe.si/nasveti/moja-identiteta-in-zasebnost/zasebnost-druzabnih-omrezjih",
+        "https://www.unicef.org/parenting/child-care/online-privacy"
+      ],
+      "original_article_url": null,
+      "title": "Fotografija pred objavo: štiri vprašanja",
+      "summary": "Pred objavo fotografije preverimo dovoljenje vseh na sliki, zasebne podatke v ozadju, izbrane prejemnike in možnost prihodnjega širjenja. Dovoljenje za fotografiranje ni dovoljenje za objavo. Tudi zasebna sporočila se lahko kopirajo, izbris izvirne objave pa ne zagotovi izbrisa vseh kopij. Če smo v dvomu, slike ne objavimo in vprašamo odraslega, ki mu zaupamo.",
+      "age_suitability_details": {
+        "age_6": "Pred deljenjem slike vprašamo ljudi na njej in odraslega, ki mu zaupamo. Ko kdo reče ne, tega spoštujemo.",
+        "age_13": "Fotografija lahko razkrije osebne podatke v ozadju. Izbrani prejemniki lahko naredijo kopijo ali jo posredujejo, zato zasebni pogovor ni jamstvo nadzora.",
+        "adult": "Soglasje za fotografiranje ločimo od soglasja za določeno objavo. Odločitev vključuje kontekst, občinstvo, podatke v ozadju in omejitve poznejšega umika digitalnih kopij."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "0fe26232-7d95-4312-b793-cb368383b636",
+      "_kind": "native",
+      "_source_mtime": 1794118117.6864712,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "fotografija pred objavo: štiri vprašanja school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-07",
       "person": "Cvet in opraševalec: mala izmenjava",

@@ -1,24 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/581fdd9db883660af76769a04d8a7e8d5fe4fd7e393525dd4b6f762b3c71c17c.m4a",
-    "title": "Cvet in opraševalec: mala izmenjava",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 356.775,
-    "source": "NotebookLM",
-    "companion_id": "86e3ba247a92731c9cd566b4fda6206a51d45fac66b25238aa8d32c59d87015b"
-  },
-  "date": "2026-11-07",
-  "person": "Cvet in opraševalec: mala izmenjava",
-  "image_filename": "CvetInOprasevalecMalaIzmenjava-sl.png",
+  "date": "2026-11-08",
+  "person": "Fotografija pred objavo: štiri vprašanja",
+  "image_filename": "FotografijaPredObjavoStiriVprasanja-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.floridamuseum.ufl.edu/discover/story/celebrating-pollinators/",
-    "https://extension.wsu.edu/pnw-gardeners-handbook/basic-botany/"
+    "https://safe.si/nasveti/moja-identiteta-in-zasebnost/zascita-zasebnosti-nasveti",
+    "https://safe.si/nasveti/moja-identiteta-in-zasebnost/zasebnost-druzabnih-omrezjih",
+    "https://www.unicef.org/parenting/child-care/online-privacy"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -29,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 253,
+  "total_entries": 254,
   "total_pages": 26,
   "per_page": 10
 }
