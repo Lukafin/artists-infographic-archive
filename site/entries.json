@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 254,
+    "total_entries": 255,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 220
+      "age_6": 221
     },
     "category_counts": {
-      "school_poster": 66,
+      "school_poster": 67,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,83 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 205,
+      "sl": 206,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 254,
+      "infographic": 255,
       "podcast": 33,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-09",
+      "person": "Hobotnica: osem rok in neverjetne spretnosti",
+      "filename": "HobotnicaOsemRokInNeverjetneSpretnosti-sl.png",
+      "image_filename": "HobotnicaOsemRokInNeverjetneSpretnosti-sl.png",
+      "sources": [
+        "https://www.waikikiaquarium.org/experience/animal-guide/invertebrates/molluscs/octopus/",
+        "https://www.waikikiaquarium.org/experience/exhibits/jet-set/",
+        "https://www.mcsuk.org/ocean-learning/wildlife-a-z/common-octopus/"
+      ],
+      "original_article_url": null,
+      "title": "Hobotnica: osem rok in neverjetne spretnosti",
+      "summary": "Navadna hobotnica ima osem rok s priseski, s katerimi raziskuje dno in drži predmete. Po dnu se premika z rokami, pri vodnem pogonu pa iztisne vodo skozi sifon in se premakne v nasprotno smer. S spreminjanjem barve in površine kože se lahko zlije z okolico; kamuflaža ni nevidnost. Žival opazujemo brez dotikanja in vznemirjanja.",
+      "age_suitability_details": {
+        "age_6": "Hobotnica z osmimi rokami raziskuje morsko dno. Priseski ji pomagajo držati skalo ali hrano.",
+        "age_13": "Navadna hobotnica se premika z rokami ali z iztiskanjem vode skozi sifon. Pri vodnem pogonu se voda in telo premikata v nasprotnih smereh.",
+        "adult": "Kamuflažo navadne hobotnice omogočajo pigmentne celice in spreminjanje površine kože. Primer ne pomeni, da imajo vse vrste hobotnic enake prilagoditve."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "40cee4a2-e36b-46cc-8bd0-e8d625b76e79",
+      "_kind": "native",
+      "_source_mtime": 1794204470.5225306,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "hobotnica: osem rok in neverjetne spretnosti school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-08",
       "person": "Fotografija pred objavo: štiri vprašanja",
