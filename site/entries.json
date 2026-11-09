@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 255,
-      "podcast": 33,
+      "podcast": 34,
       "interactive_site": 1
     }
   },
@@ -105,8 +105,18 @@
       "source_count": 3,
       "search_text": "hobotnica: osem rok in neverjetne spretnosti school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/dcd864901dcb784b06b6d7ef5ee5586c03e28e9463a6dd47dab1da0d14954735.m4a",
+        "title": "Hobotnica: osem rok in neverjetne spretnosti",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 321.643,
+        "source": "NotebookLM",
+        "companion_id": "7fc1b281f4a80636218ed63402ae29a82662fd5b5c4b58d471029fc9768b7358"
+      }
     },
     {
       "date": "2026-11-08",
