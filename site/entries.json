@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 255,
+    "total_entries": 256,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 221
+      "age_6": 222
     },
     "category_counts": {
-      "school_poster": 67,
+      "school_poster": 68,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,83 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 206,
+      "sl": 207,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 255,
+      "infographic": 256,
       "podcast": 34,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-10",
+      "person": "Kaj magnet privlači in česa ne?",
+      "filename": "KajMagnetPrivlaciInCesaNe-sl.png",
+      "image_filename": "KajMagnetPrivlaciInCesaNe-sl.png",
+      "sources": [
+        "https://www.sciencelearn.org.nz/resources/2562-introducing-magnetism",
+        "https://www.sciencelearn.org.nz/resources/2563-investigating-magnetism",
+        "https://www.canada.ca/en/health-canada/services/toy-safety/magnets.html"
+      ],
+      "original_article_url": null,
+      "title": "Kaj magnet privlači in česa ne?",
+      "summary": "Običajen šolski magnet dobro privlači železo in veliko vrst jekla, vendar ne privlači vseh kovin. Jeklena sponka se prime, aluminijasta folija, les in plastika pa se pri običajnem šolskem poskusu ne primejo. Magnet lahko privlači sponko skozi tanek papir, čeprav se papir sam ne prime. Raziskovanje poveže napoved, preizkus in opazovanje ob nadzoru odraslega.",
+      "age_suitability_details": {
+        "age_6": "Magnet privlači jekleno sponko, ne pa vseh predmetov. S primerjanjem lesa, plastike in folije otrok spoznava različne materiale.",
+        "age_13": "Železo in veliko vrst jekla močno privlači običajen magnet. Kovinski videz ni zanesljiv napovednik; sestava materiala vpliva na rezultat.",
+        "adult": "Primer razlikuje opazen feromagnetni privlak od splošnih šibkih odzivov snovi na magnetno polje. Privlak skozi tanek papir pokaže delovanje brez neposrednega stika, ne neomejenega dosega sile."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "c8f8d056-dda5-41d6-8175-6e1bef93b2ed",
+      "_kind": "native",
+      "_source_mtime": 1794291050.366437,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "kaj magnet privlači in česa ne? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-09",
       "person": "Hobotnica: osem rok in neverjetne spretnosti",
