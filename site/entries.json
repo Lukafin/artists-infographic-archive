@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 256,
+    "total_entries": 257,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 222
+      "age_6": 223
     },
     "category_counts": {
-      "school_poster": 68,
+      "school_poster": 69,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,82 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 207,
+      "sl": 208,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 256,
+      "infographic": 257,
       "podcast": 34,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-11",
+      "person": "Kaj pride naslednje? Skrivnosti vzorcev",
+      "filename": "KajPrideNaslednjeSkrivnostiVzorcev-sl.png",
+      "image_filename": "KajPrideNaslednjeSkrivnostiVzorcev-sl.png",
+      "sources": [
+        "https://nrich.maths.org/eyfs-activities/pattern-making",
+        "https://prek-math-te.stanford.edu/patterns-algebra/mathematics-patterns-and-algebra"
+      ],
+      "original_article_url": null,
+      "title": "Kaj pride naslednje? Skrivnosti vzorcev",
+      "summary": "Vzorec lahko ponavlja skupino oblik ali raste po določenem pravilu. Ogrlica iz krogov in kvadratov ponavlja par, stolpi pa vsakič pridobijo eno kocko. Isti začetek 2, 4, 6 omogoča različni nadaljevanji: 8 pri prištevanju 2 ali 2 pri ponavljanju trojice. Za nadaljevanje je zato pomembno povedati pravilo.",
+      "age_suitability_details": {
+        "age_6": "Otrok prepozna izmenjavanje krogov in kvadratov ter prešteje kocke v vedno višjih stolpih.",
+        "age_13": "Ponavljajočo enoto razlikuje od rasti za stalni prirastek. Isti začetni členi lahko ustrezajo različnim pravilom nadaljevanja.",
+        "adult": "Končen začetni del zaporedja ne določa enolične neskončne razširitve. Eksplicitni pravili prištevanja 2 in periodičnega ponavljanja trojice dajeta isti začetek ter različen četrti člen."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "7ca51cf3-d9d8-41ca-b4fe-b639bdcd3bcd",
+      "_kind": "native",
+      "_source_mtime": 1794377160.0689452,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 2,
+      "search_text": "kaj pride naslednje? skrivnosti vzorcev school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-10",
       "person": "Kaj magnet privlači in česa ne?",

@@ -1,16 +1,15 @@
 {
-  "date": "2026-11-10",
-  "person": "Kaj magnet privlači in česa ne?",
-  "image_filename": "KajMagnetPrivlaciInCesaNe-sl.png",
+  "date": "2026-11-11",
+  "person": "Kaj pride naslednje? Skrivnosti vzorcev",
+  "image_filename": "KajPrideNaslednjeSkrivnostiVzorcev-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.sciencelearn.org.nz/resources/2562-introducing-magnetism",
-    "https://www.sciencelearn.org.nz/resources/2563-investigating-magnetism",
-    "https://www.canada.ca/en/health-canada/services/toy-safety/magnets.html"
+    "https://nrich.maths.org/eyfs-activities/pattern-making",
+    "https://prek-math-te.stanford.edu/patterns-algebra/mathematics-patterns-and-algebra"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -21,7 +20,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 256,
+  "total_entries": 257,
   "total_pages": 26,
   "per_page": 10
 }
