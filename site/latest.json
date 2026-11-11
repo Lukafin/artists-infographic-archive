@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/ff965b2fb921ce1b106cefa8637fad1707dd30e4db10034267568322caf478cb.m4a",
+    "title": "Kaj pride naslednje? Skrivnosti vzorcev",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 389.886,
+    "source": "NotebookLM",
+    "companion_id": "29217c6b487c9c8ba00ba3f6a845bbb91a5ec8f54f5f21cc8ca36ad200ecd857"
+  },
   "date": "2026-11-11",
   "person": "Kaj pride naslednje? Skrivnosti vzorcev",
   "image_filename": "KajPrideNaslednjeSkrivnostiVzorcev-sl.png",
