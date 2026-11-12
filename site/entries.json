@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 257,
+    "total_entries": 258,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 223
+      "age_6": 224
     },
     "category_counts": {
-      "school_poster": 69,
+      "school_poster": 70,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,82 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 208,
+      "sl": 209,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 257,
+      "infographic": 258,
       "podcast": 36,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-12",
+      "person": "Kaj se skriva pod gozdnimi tlemi?",
+      "filename": "KajSeSkrivaPodGozdnimiTlemi-sl.png",
+      "image_filename": "KajSeSkrivaPodGozdnimiTlemi-sl.png",
+      "sources": [
+        "https://www.rhs.org.uk/biodiversity/mycorrhizal-fungi",
+        "https://www.nrcs.usda.gov/state-offices/illinois/soil-tech-note-11a-biological-underground-community"
+      ],
+      "original_article_url": null,
+      "title": "Kaj se skriva pod gozdnimi tlemi?",
+      "summary": "Pod gozdnimi tlemi živijo korenine, glive, bakterije in drobne živali. Živali drobijo odmrle liste, glive in bakterije pa razgrajujejo ostanke ter pomagajo vračati mineralne snovi v tla. Številne rastline z mikoriznimi glivami izmenjujejo snovi: rastlina prispeva sladkorje, gliva pa pomaga pri dostopu do vode in mineralnih snovi. Goba nad tlemi je le del glive.",
+      "age_suitability_details": {
+        "age_6": "Pod listjem najde korenine, glivne niti in drobne živali ter spozna, da odpadle liste razgradijo živa bitja.",
+        "age_13": "Razlikuje drobljenje opada od mikrobne razgradnje in mikoriznega partnerstva. Razume izmenjavo sladkorjev za vodo in mineralne snovi.",
+        "adult": "Gozdna tla združujejo detritno prehranjevalno mrežo, mineralizacijo in mikorizno simbiozo. Glive imajo različne ekološke vloge; izmenjava snovi ne dokazuje namernega sporazumevanja med drevesi."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "902d7079-9f47-4f42-8691-35f0d5d579f4",
+      "_kind": "native",
+      "_source_mtime": 1794463658.6382492,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 2,
+      "search_text": "kaj se skriva pod gozdnimi tlemi? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-11",
       "person": "Kaj pride naslednje? Skrivnosti vzorcev",
