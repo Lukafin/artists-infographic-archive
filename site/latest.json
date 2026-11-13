@@ -1,24 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/50746da3777d053d72f6e950579450eeeb117c47b1ffa74321880b75233f12ea.m4a",
-    "title": "Kaj se skriva pod gozdnimi tlemi?",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 371.357,
-    "source": "NotebookLM",
-    "companion_id": "a2f829c078554bd98e8390089ea0d8f9fe11e002d5eabca5af234a2545cad266"
-  },
-  "date": "2026-11-12",
-  "person": "Kaj se skriva pod gozdnimi tlemi?",
-  "image_filename": "KajSeSkrivaPodGozdnimiTlemi-sl.png",
+  "date": "2026-11-13",
+  "person": "Kako ledenik preoblikuje dolino?",
+  "image_filename": "KakoLedenikPreoblikujeDolino-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.rhs.org.uk/biodiversity/mycorrhizal-fungi",
-    "https://www.nrcs.usda.gov/state-offices/illinois/soil-tech-note-11a-biological-underground-community"
+    "https://www.nps.gov/glac/learn/nature/glacial-geology.htm",
+    "https://www.triglavskazakladnica.si/sl/programi-za-sole/izbira-programov/gore-in-doline/",
+    "https://kranjska-gora.si/znamenitosti/dolina-vrata"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -29,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 258,
+  "total_entries": 259,
   "total_pages": 26,
   "per_page": 10
 }

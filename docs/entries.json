@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 258,
+    "total_entries": 259,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 224
+      "age_6": 225
     },
     "category_counts": {
-      "school_poster": 70,
+      "school_poster": 71,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,83 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 209,
+      "sl": 210,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 258,
+      "infographic": 259,
       "podcast": 37,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-13",
+      "person": "Kako ledenik preoblikuje dolino?",
+      "filename": "KakoLedenikPreoblikujeDolino-sl.png",
+      "image_filename": "KakoLedenikPreoblikujeDolino-sl.png",
+      "sources": [
+        "https://www.nps.gov/glac/learn/nature/glacial-geology.htm",
+        "https://www.triglavskazakladnica.si/sl/programi-za-sole/izbira-programov/gore-in-doline/",
+        "https://kranjska-gora.si/znamenitosti/dolina-vrata"
+      ],
+      "original_article_url": null,
+      "title": "Kako ledenik preoblikuje dolino?",
+      "summary": "Ledenik je počasi premikajoč se led, ki pogosto preoblikuje že obstoječo rečno dolino. Kamenje v ledu brusi skalno podlago, led pa trga in odnaša kose kamnin. Dolino poglobi in razširi: iz ozkega prereza V nastane širši prerez U. Dolina Vrata je primer ledeniško preoblikovane doline v slovenskih Alpah; voda in podiranje skal jo spreminjata tudi po umiku ledu.",
+      "age_suitability_details": {
+        "age_6": "Spozna, da se tudi led počasi premika in s kamenjem preoblikuje gore. Loči ozko in široko dolino.",
+        "age_13": "Poveže brušenje in trganje kamnin z ledeniškim poglabljanjem ter širjenjem rečne doline. Primerja prereza V in U ter prepozna Vrata kot domač primer.",
+        "adult": "Razlikuje rečno vrezovanje od ledeniške abrazije in trganja podlage. Oblika doline je rezultat več dejavnikov, po umiku ledu pa jo še naprej spreminjajo voda in pobočni procesi."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "728e2849-0fde-4a68-b66f-a64c2aab0f32",
+      "_kind": "native",
+      "_source_mtime": 1794549986.1464674,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "kako ledenik preoblikuje dolino? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-12",
       "person": "Kaj se skriva pod gozdnimi tlemi?",
