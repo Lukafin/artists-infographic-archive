@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 259,
-      "podcast": 37,
+      "podcast": 38,
       "interactive_site": 1
     }
   },
@@ -105,8 +105,18 @@
       "source_count": 3,
       "search_text": "kako ledenik preoblikuje dolino? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/af9895ac3ad9aa4f5225195a0f8d5b347f3d25ff01d837387bd30282d20e4bbf.m4a",
+        "title": "Kako ledenik preoblikuje dolino?",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 388.656,
+        "source": "NotebookLM",
+        "companion_id": "881e48833af0c71e6e5f129342618dc7c9cb33b546a55546582f6810b78611b3"
+      }
     },
     {
       "date": "2026-11-12",
