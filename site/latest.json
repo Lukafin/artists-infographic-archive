@@ -1,25 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/af9895ac3ad9aa4f5225195a0f8d5b347f3d25ff01d837387bd30282d20e4bbf.m4a",
-    "title": "Kako ledenik preoblikuje dolino?",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 388.656,
-    "source": "NotebookLM",
-    "companion_id": "881e48833af0c71e6e5f129342618dc7c9cb33b546a55546582f6810b78611b3"
-  },
-  "date": "2026-11-13",
-  "person": "Kako ledenik preoblikuje dolino?",
-  "image_filename": "KakoLedenikPreoblikujeDolino-sl.png",
+  "date": "2026-11-14",
+  "person": "Ni vse res, kar piše na spletu",
+  "image_filename": "NiVseResKarPiseNaSpletu-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.nps.gov/glac/learn/nature/glacial-geology.htm",
-    "https://www.triglavskazakladnica.si/sl/programi-za-sole/izbira-programov/gore-in-doline/",
-    "https://kranjska-gora.si/znamenitosti/dolina-vrata"
+    "https://safe.si/napotek/nasveti-za-prepoznavanje-laznih-novic-fake-news",
+    "https://safe.si/napotek/preverjanje-verodostojnosti-spletnih-informacij",
+    "https://www.childline.org.uk/info-advice/bullying-abuse-safety/online-mobile-safety/fake-news-and-misinformation/"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -30,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 259,
+  "total_entries": 260,
   "total_pages": 26,
   "per_page": 10
 }

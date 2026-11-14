@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 259,
+    "total_entries": 260,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 225
+      "age_6": 226
     },
     "category_counts": {
-      "school_poster": 71,
+      "school_poster": 72,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,83 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 210,
+      "sl": 211,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 259,
+      "infographic": 260,
       "podcast": 38,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-14",
+      "person": "Ni vse res, kar piše na spletu",
+      "filename": "NiVseResKarPiseNaSpletu-sl.png",
+      "image_filename": "NiVseResKarPiseNaSpletu-sl.png",
+      "sources": [
+        "https://safe.si/napotek/nasveti-za-prepoznavanje-laznih-novic-fake-news",
+        "https://safe.si/napotek/preverjanje-verodostojnosti-spletnih-informacij",
+        "https://www.childline.org.uk/info-advice/bullying-abuse-safety/online-mobile-safety/fake-news-and-misinformation/"
+      ],
+      "original_article_url": null,
+      "title": "Ni vse res, kar piše na spletu",
+      "summary": "Prijazna detektivska pot za preverjanje spletnih trditev: ustavimo se, preberemo več kot naslov ter preverimo avtorja, izvirni vir, datum, okoliščine in dokaze. Primerjamo zanesljive neodvisne vire, saj kopije iste novice niso neodvisne potrditve. Če nismo prepričani, vsebine ne delimo in vprašamo zaupanja vrednega odraslega.",
+      "age_suitability_details": {
+        "age_6": "Spozna, da vsaka spletna zgodba ni resnična. Pred deljenjem se ustavi in za pomoč vpraša odraslega.",
+        "age_13": "Preveri avtorja, datum, izvor in dokaze ter razlikuje med neodvisnimi potrditvami in kopijami iste novice.",
+        "adult": "Presoja izvor, kontekst in dokazno oporo spletnih trditev. Večkratno povzemanje ni neodvisna potrditev, posamični znaki verodostojnosti pa niso jamstvo resničnosti."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "ed59e823-24a6-4f47-b28c-b5eac404b771",
+      "_kind": "native",
+      "_source_mtime": 1794636310.9954038,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "ni vse res, kar piše na spletu school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-13",
       "person": "Kako ledenik preoblikuje dolino?",
