@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/76c76627de1f584302ff89c3aa44abd062fda18d669be2ddfe589837ef6bc6db.m4a",
+    "title": "Ni vse res, kar piše na spletu",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 396.922,
+    "source": "NotebookLM",
+    "companion_id": "8f15c76453a394f5e982fd9f521f22db261e4602dd7b8f6adc4fb099aaf01d9f"
+  },
   "date": "2026-11-14",
   "person": "Ni vse res, kar piše na spletu",
   "image_filename": "NiVseResKarPiseNaSpletu-sl.png",
