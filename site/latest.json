@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/774bf365d83d30a4a3f9936b58abb40e002091c701a50fa01bf26fc9a02dba31.m4a",
+    "title": "Od Sonca do Neptuna: potovanje med planeti",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 304.739,
+    "source": "NotebookLM",
+    "companion_id": "bc93e3cc2d03bae15b8418f5469ed57b90c65d512940848afbdc5abcdfb26a25"
+  },
   "date": "2026-11-15",
   "person": "Od Sonca do Neptuna: potovanje med planeti",
   "image_filename": "OdSoncaDoNeptunaPotovanjeMedPlaneti-sl.png",
