@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 260,
+    "total_entries": 261,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 226
+      "age_6": 227
     },
     "category_counts": {
-      "school_poster": 72,
+      "school_poster": 73,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,84 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 211,
+      "sl": 212,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 260,
+      "infographic": 261,
       "podcast": 39,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-15",
+      "person": "Od Sonca do Neptuna: potovanje med planeti",
+      "filename": "OdSoncaDoNeptunaPotovanjeMedPlaneti-sl.png",
+      "image_filename": "OdSoncaDoNeptunaPotovanjeMedPlaneti-sl.png",
+      "sources": [
+        "https://science.nasa.gov/solar-system/planets/planet-sizes-and-locations-in-our-solar-system/",
+        "https://science.nasa.gov/solar-system/planets/",
+        "https://science.nasa.gov/uranus/facts/",
+        "https://science.nasa.gov/venus/facts/"
+      ],
+      "original_article_url": null,
+      "title": "Od Sonca do Neptuna: potovanje med planeti",
+      "summary": "Potovanje mimo osmih planetov po vrsti od Sonca: kamniti Merkur, Venera, Zemlja in Mars, plinasta velikana Jupiter in Saturn ter ledena velikana Uran in Neptun. Kratke značilnosti pomagajo razlikovati planete, ločeni primerjavi pa pojasnita razliko med premerom planeta in povprečno oddaljenostjo od Sonca. Risba ni zemljevid dejanskih položajev in ni v merilu.",
+      "age_suitability_details": {
+        "age_6": "Spozna imena osmih planetov in njihov vrstni red od Sonca. Zemlja je naš dom, Sonce pa je zvezda.",
+        "age_13": "Razlikuje kamnite planete, plinasta in ledena velikana ter premer planeta od oddaljenosti od Sonca.",
+        "adult": "Razume omejitve shematskega prikaza Osončja in razliko med primerjavo premerov ter povprečnih heliocentričnih razdalj."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "54a23fd3-109c-4894-8e97-dcb09c2f7cd1",
+      "_kind": "native",
+      "_source_mtime": 1794722761.8344998,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "od sonca do neptuna: potovanje med planeti school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-14",
       "person": "Ni vse res, kar piše na spletu",
