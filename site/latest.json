@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/d740179157d25ed570a2d96c7580bd4910211a239383bf6920088c95c113fe50.m4a",
+    "title": "Snežinka od blizu",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 360.118,
+    "source": "NotebookLM",
+    "companion_id": "86d1f583190ae532e5b1c28ee916395c057a75f4d3ddf4e59d67068ad270abfa"
+  },
   "date": "2026-11-16",
   "person": "Snežinka od blizu",
   "image_filename": "SnezinkaOdBlizu-sl.png",
