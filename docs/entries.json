@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 261,
+    "total_entries": 262,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 227
+      "age_6": 228
     },
     "category_counts": {
-      "school_poster": 73,
+      "school_poster": 74,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,83 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 212,
+      "sl": 213,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 261,
+      "infographic": 262,
       "podcast": 40,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-16",
+      "person": "Snežinka od blizu",
+      "filename": "SnezinkaOdBlizu-sl.png",
+      "image_filename": "SnezinkaOdBlizu-sl.png",
+      "sources": [
+        "https://www.its.caltech.edu/~atomic/snowcrystals/faqs/faqs.htm",
+        "https://nsidc.org/learn/parts-cryosphere/snow/science-snow",
+        "https://www.noaa.gov/stories/how-do-snowflakes-form-science-behind-snow"
+      ],
+      "original_article_url": null,
+      "title": "Snežinka od blizu",
+      "summary": "Pot ledenega kristala od zmrznjene kapljice v oblaku do rasti z neposrednim nalaganjem vodne pare v led. Šestkotna zgradba pojasni šest glavnih krakov zvezdastih kristalov; temperatura in vlaga vplivata na obliko. Ploščica, stebriček in skupek kristalov pokažejo, zakaj vse snežinke niso popolne zvezdice.",
+      "age_suitability_details": {
+        "age_6": "Spozna snežinko kot led in opazi šest glavnih krakov ter različne oblike kristalov.",
+        "age_13": "Razume rast ledenega kristala iz vodne pare, povezavo s šestkotno zgradbo in vpliv temperature ter vlage.",
+        "adult": "Loči idealizirano šestkratno simetrijo od pogostih nepravilnih oblik in posamezne kristale od agregatov."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "4038a585-898e-4cce-87a7-fecd7e70f20a",
+      "_kind": "native",
+      "_source_mtime": 1794809127.2995875,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 3,
+      "search_text": "snežinka od blizu school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-15",
       "person": "Od Sonca do Neptuna: potovanje med planeti",
