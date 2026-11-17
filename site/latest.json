@@ -1,25 +1,15 @@
 {
-  "podcast": {
-    "url": "audio/d740179157d25ed570a2d96c7580bd4910211a239383bf6920088c95c113fe50.m4a",
-    "title": "Snežinka od blizu",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 360.118,
-    "source": "NotebookLM",
-    "companion_id": "86d1f583190ae532e5b1c28ee916395c057a75f4d3ddf4e59d67068ad270abfa"
-  },
-  "date": "2026-11-16",
-  "person": "Snežinka od blizu",
-  "image_filename": "SnezinkaOdBlizu-sl.png",
+  "date": "2026-11-17",
+  "person": "Ulomki na pikniku",
+  "image_filename": "UlomkiNaPikniku-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.its.caltech.edu/~atomic/snowcrystals/faqs/faqs.htm",
-    "https://nsidc.org/learn/parts-cryosphere/snow/science-snow",
-    "https://www.noaa.gov/stories/how-do-snowflakes-form-science-behind-snow"
+    "https://nrich.maths.org/articles/teaching-fractions-understanding-part-whole-concept",
+    "https://www.mathlearningcenter.org/apps/fractions"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -30,7 +20,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 262,
+  "total_entries": 263,
   "total_pages": 27,
   "per_page": 10
 }

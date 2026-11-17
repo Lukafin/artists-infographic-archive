@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 262,
+    "total_entries": 263,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 228
+      "age_6": 229
     },
     "category_counts": {
-      "school_poster": 74,
+      "school_poster": 75,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,82 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 213,
+      "sl": 214,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 262,
+      "infographic": 263,
       "podcast": 41,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-17",
+      "person": "Ulomki na pikniku",
+      "filename": "UlomkiNaPikniku-sl.png",
+      "image_filename": "UlomkiNaPikniku-sl.png",
+      "sources": [
+        "https://nrich.maths.org/articles/teaching-fractions-understanding-part-whole-concept",
+        "https://www.mathlearningcenter.org/apps/fractions"
+      ],
+      "original_article_url": null,
+      "title": "Ulomki na pikniku",
+      "summary": "Piknik pojasni enako velike dele in jasno določeno celoto. Tri enako velike pravokotne pogače primerjajo polovico, tretjino in četrtino, dva trakova pa pokažeta, da dve četrtini pomenita enako količino kot polovica. Števec pove število izbranih delov, imenovalec pa število enakih delov celote.",
+      "age_suitability_details": {
+        "age_6": "Razlikuje celoto od enako velikih delov ter ob skupnem branju prepozna polovico in četrtino.",
+        "age_13": "Razume števec in imenovalec, primerjavo enotskih ulomkov pri enaki celoti ter enakost polovice in dveh četrtin.",
+        "adult": "Loči vrednost ulomka od velikosti izbrane celote in poveže pravično delitev s ploščinskim modelom ekvivalence."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "86a6d67c-fbed-4810-9090-1a2765dd8bc4",
+      "_kind": "native",
+      "_source_mtime": 1794895666.95294,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 2,
+      "search_text": "ulomki na pikniku school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-16",
       "person": "Snežinka od blizu",
