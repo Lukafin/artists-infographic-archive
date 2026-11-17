@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/92bb99d8ad0a4103dcc61e74ac96aeb6ab75b0ec87ff77cc2174858d0ef7aa5c.m4a",
+    "title": "Ulomki na pikniku",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 267.494,
+    "source": "NotebookLM",
+    "companion_id": "fbdd7e5ad3aacc118cb2bc8618570a29eef687daa692ce0168497f989ac0bac1"
+  },
   "date": "2026-11-17",
   "person": "Ulomki na pikniku",
   "image_filename": "UlomkiNaPikniku-sl.png",
