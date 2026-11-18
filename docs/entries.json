@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 263,
+    "total_entries": 264,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 229
+      "age_6": 230
     },
     "category_counts": {
-      "school_poster": 75,
+      "school_poster": 76,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,84 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 214,
+      "sl": 215,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 263,
+      "infographic": 264,
       "podcast": 42,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-18",
+      "person": "Zakaj imajo živali različne kljune?",
+      "filename": "ZakajImajoZivaliRazlicneKljune-sl.png",
+      "image_filename": "ZakajImajoZivaliRazlicneKljune-sl.png",
+      "sources": [
+        "https://www.rspb.org.uk/birds-and-wildlife/house-sparrow",
+        "https://www.bto.org/learn/about-birds/bird-families/passeridae-sparrows",
+        "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/animals/birds/great-spotted-woodpecker/",
+        "https://www.nwcu.police.uk/animal-of-the-month/animal-of-the-month-grey-heron/"
+      ],
+      "original_article_url": null,
+      "title": "Zakaj imajo živali različne kljune?",
+      "summary": "Trije konkretni primeri povežejo obliko kljuna z načinom pridobivanja hrane: domači vrabec lušči semena, veliki detel odpira lubje in z jezikom doseže ličinke, siva čaplja pa v plitvi vodi lovi ribe. To niso njihovi edini viri hrane.",
+      "age_suitability_details": {
+        "age_6": "Prepozna tri ptice ter poveže kratek ali dolg kljun s semenom, ličinko in ribo.",
+        "age_13": "Poveže obliko kljuna z načinom hranjenja in loči delovanje kljuna od vloge detlovega jezika.",
+        "adult": "Razume povezavo med obliko in funkcijo ter omejitev primerov: nobena prikazana hrana ne določa celotne prehrane vrste."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "e9ea5809-9acd-4b3b-8ec6-604add971b1c",
+      "_kind": "native",
+      "_source_mtime": 1794982109.9228294,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "zakaj imajo živali različne kljune? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-17",
       "person": "Ulomki na pikniku",

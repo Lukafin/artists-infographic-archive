@@ -1,24 +1,17 @@
 {
-  "podcast": {
-    "url": "audio/92bb99d8ad0a4103dcc61e74ac96aeb6ab75b0ec87ff77cc2174858d0ef7aa5c.m4a",
-    "title": "Ulomki na pikniku",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 267.494,
-    "source": "NotebookLM",
-    "companion_id": "fbdd7e5ad3aacc118cb2bc8618570a29eef687daa692ce0168497f989ac0bac1"
-  },
-  "date": "2026-11-17",
-  "person": "Ulomki na pikniku",
-  "image_filename": "UlomkiNaPikniku-sl.png",
+  "date": "2026-11-18",
+  "person": "Zakaj imajo živali različne kljune?",
+  "image_filename": "ZakajImajoZivaliRazlicneKljune-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://nrich.maths.org/articles/teaching-fractions-understanding-part-whole-concept",
-    "https://www.mathlearningcenter.org/apps/fractions"
+    "https://www.rspb.org.uk/birds-and-wildlife/house-sparrow",
+    "https://www.bto.org/learn/about-birds/bird-families/passeridae-sparrows",
+    "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/animals/birds/great-spotted-woodpecker/",
+    "https://www.nwcu.police.uk/animal-of-the-month/animal-of-the-month-grey-heron/"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -29,7 +22,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 263,
+  "total_entries": 264,
   "total_pages": 27,
   "per_page": 10
 }
