@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 264,
-      "podcast": 42,
+      "podcast": 43,
       "interactive_site": 1
     }
   },
@@ -106,8 +106,18 @@
       "source_count": 4,
       "search_text": "zakaj imajo živali različne kljune? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/426ff778a67c89d1b20e1149354238927033c2229a83869d1ea379fe70bf47f2.m4a",
+        "title": "Zakaj imajo živali različne kljune?",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 390.699,
+        "source": "NotebookLM",
+        "companion_id": "7e52ff0a4c0d1580d9c23081eb9f3e7562beb5527bf57a52242c284b05a66863"
+      }
     },
     {
       "date": "2026-11-17",
