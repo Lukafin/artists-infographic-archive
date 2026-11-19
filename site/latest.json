@@ -1,26 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/426ff778a67c89d1b20e1149354238927033c2229a83869d1ea379fe70bf47f2.m4a",
-    "title": "Zakaj imajo živali različne kljune?",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 390.699,
-    "source": "NotebookLM",
-    "companion_id": "7e52ff0a4c0d1580d9c23081eb9f3e7562beb5527bf57a52242c284b05a66863"
-  },
-  "date": "2026-11-18",
-  "person": "Zakaj imajo živali različne kljune?",
-  "image_filename": "ZakajImajoZivaliRazlicneKljune-sl.png",
+  "date": "2026-11-19",
+  "person": "Zakaj imamo dan in noč?",
+  "image_filename": "ZakajImamoDanInNoc-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.rspb.org.uk/birds-and-wildlife/house-sparrow",
-    "https://www.bto.org/learn/about-birds/bird-families/passeridae-sparrows",
-    "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/animals/birds/great-spotted-woodpecker/",
-    "https://www.nwcu.police.uk/animal-of-the-month/animal-of-the-month-grey-heron/"
+    "https://supernova.eso.org/exhibition/0203/?lang=en",
+    "https://www.lpi.usra.edu/education/skytellers/day_night/",
+    "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-earth/"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -31,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 264,
+  "total_entries": 265,
   "total_pages": 27,
   "per_page": 10
 }
