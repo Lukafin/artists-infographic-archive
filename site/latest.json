@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/2b595d41b269c6be5e18c8db791f447fc611759a2efdb4e2937185f3df02ae8b.m4a",
+    "title": "Zakaj imamo dan in noč?",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 351.597,
+    "source": "NotebookLM",
+    "companion_id": "0379af05a55f102fc3a3bfa791724f13bfb4a89d0afeda5e9451d244626a4907"
+  },
   "date": "2026-11-19",
   "person": "Zakaj imamo dan in noč?",
   "image_filename": "ZakajImamoDanInNoc-sl.png",

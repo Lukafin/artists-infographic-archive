@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 265,
-      "podcast": 43,
+      "podcast": 44,
       "interactive_site": 1
     }
   },
@@ -105,8 +105,18 @@
       "source_count": 3,
       "search_text": "zakaj imamo dan in noč? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/2b595d41b269c6be5e18c8db791f447fc611759a2efdb4e2937185f3df02ae8b.m4a",
+        "title": "Zakaj imamo dan in noč?",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 351.597,
+        "source": "NotebookLM",
+        "companion_id": "0379af05a55f102fc3a3bfa791724f13bfb4a89d0afeda5e9451d244626a4907"
+      }
     },
     {
       "date": "2026-11-18",
