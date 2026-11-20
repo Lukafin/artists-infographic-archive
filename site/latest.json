@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/3748c11e22fc9aed84594017ffd11c125cd99d480aacd79c22bb29384bfaeda4.m4a",
+    "title": "Zakaj ogledalo obrne sliko?",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 422.534,
+    "source": "NotebookLM",
+    "companion_id": "92bfd2e8095f38d80d07be8acc251ead71f0f89b132620a0726fdeb165bddea9"
+  },
   "date": "2026-11-20",
   "person": "Zakaj ogledalo obrne sliko?",
   "image_filename": "ZakajOgledaloObrneSliko-sl.png",
