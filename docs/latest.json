@@ -1,25 +1,15 @@
 {
-  "podcast": {
-    "url": "audio/2b595d41b269c6be5e18c8db791f447fc611759a2efdb4e2937185f3df02ae8b.m4a",
-    "title": "Zakaj imamo dan in noč?",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 351.597,
-    "source": "NotebookLM",
-    "companion_id": "0379af05a55f102fc3a3bfa791724f13bfb4a89d0afeda5e9451d244626a4907"
-  },
-  "date": "2026-11-19",
-  "person": "Zakaj imamo dan in noč?",
-  "image_filename": "ZakajImamoDanInNoc-sl.png",
+  "date": "2026-11-20",
+  "person": "Zakaj ogledalo obrne sliko?",
+  "image_filename": "ZakajOgledaloObrneSliko-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://supernova.eso.org/exhibition/0203/?lang=en",
-    "https://www.lpi.usra.edu/education/skytellers/day_night/",
-    "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-earth/"
+    "https://animations.physics.unsw.edu.au/jw/light/mirrors-and-images.htm",
+    "https://openstax.org/books/college-physics-2e/pages/25-7-image-formation-by-mirrors"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -30,7 +20,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 265,
+  "total_entries": 266,
   "total_pages": 27,
   "per_page": 10
 }

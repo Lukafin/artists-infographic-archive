@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 265,
+    "total_entries": 266,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 231
+      "age_6": 232
     },
     "category_counts": {
-      "school_poster": 77,
+      "school_poster": 78,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,82 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 216,
+      "sl": 217,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 265,
+      "infographic": 266,
       "podcast": 44,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-20",
+      "person": "Zakaj ogledalo obrne sliko?",
+      "filename": "ZakajOgledaloObrneSliko-sl.png",
+      "image_filename": "ZakajOgledaloObrneSliko-sl.png",
+      "sources": [
+        "https://animations.physics.unsw.edu.au/jw/light/mirrors-and-images.htm",
+        "https://openstax.org/books/college-physics-2e/pages/25-7-image-formation-by-mirrors"
+      ],
+      "original_article_url": null,
+      "title": "Zakaj ogledalo obrne sliko?",
+      "summary": "Ravno ogledalo zrcali smer pravokotno na svojo površino. Igrača in njena navidezna slika sta enako oddaljeni od ogledala; slika ni drug predmet za njim. Pogled od zgoraj ter varno kazanje s prstom ločita zrcaljenje od zamišljenega obračanja človeka.",
+      "age_suitability_details": {
+        "age_6": "S kazanjem navzgor in proti ogledalu opazuje, kako nastane zrcalna slika.",
+        "age_13": "Razlikuje zrcaljenje pravokotne smeri od zasuka in prepozna enako oddaljenost predmeta ter navidezne slike.",
+        "adult": "Poveže geometrijsko zrcaljenje, odboj svetlobe in opazovalčevo primerjavo z zasukano osebo; navidezna slika ni vir svetlobe za ogledalom."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "68988133-d60a-49a8-9200-dddced4f7c17",
+      "_kind": "native",
+      "_source_mtime": 1795154844.613272,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 2,
+      "search_text": "zakaj ogledalo obrne sliko? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-19",
       "person": "Zakaj imamo dan in noč?",
