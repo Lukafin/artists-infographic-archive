@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 266,
+    "total_entries": 267,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 232
+      "age_6": 233
     },
     "category_counts": {
-      "school_poster": 78,
+      "school_poster": 79,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,82 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 217,
+      "sl": 218,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 266,
+      "infographic": 267,
       "podcast": 45,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-21",
+      "person": "Zakaj piha veter?",
+      "filename": "ZakajPihaVeter-sl.png",
+      "image_filename": "ZakajPihaVeter-sl.png",
+      "sources": [
+        "https://www.nesdis.noaa.gov/about/k-12-education/atmosphere/why-does-wind-blow",
+        "https://www.eia.gov/energyexplained/wind/"
+      ],
+      "original_article_url": null,
+      "title": "Zakaj piha veter?",
+      "summary": "Veter je gibanje zraka, ki ga poganjajo razlike v zračnem tlaku. Dnevni morski vetrič ponazori povezavo med neenakim segrevanjem tal in vode, dviganjem zraka nad kopnim in dotokom hladnejšega zraka z morja. To je lokalni primer; na dejanske smeri vplivajo tudi vrtenje Zemlje, relief in trenje.",
+      "age_suitability_details": {
+        "age_6": "Prepozna veter kot premikajoči se zrak in na obali poveže segrevanje tal z dotokom zraka z morja.",
+        "age_13": "Razloži razlike v tlaku, dviganje toplejšega zraka in kroženje pri dnevnem morskem vetriču.",
+        "adult": "Loči lokalni poenostavljeni primer od splošne dinamike vetra, pri kateri poleg tlačnega gradienta sodelujejo Coriolisova sila, relief in trenje."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "583f3bec-61fe-42e3-9853-1402e8de787f",
+      "_kind": "native",
+      "_source_mtime": 1795241090.8640924,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 2,
+      "search_text": "zakaj piha veter? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-20",
       "person": "Zakaj ogledalo obrne sliko?",

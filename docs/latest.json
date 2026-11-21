@@ -1,24 +1,15 @@
 {
-  "podcast": {
-    "url": "audio/3748c11e22fc9aed84594017ffd11c125cd99d480aacd79c22bb29384bfaeda4.m4a",
-    "title": "Zakaj ogledalo obrne sliko?",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 422.534,
-    "source": "NotebookLM",
-    "companion_id": "92bfd2e8095f38d80d07be8acc251ead71f0f89b132620a0726fdeb165bddea9"
-  },
-  "date": "2026-11-20",
-  "person": "Zakaj ogledalo obrne sliko?",
-  "image_filename": "ZakajOgledaloObrneSliko-sl.png",
+  "date": "2026-11-21",
+  "person": "Zakaj piha veter?",
+  "image_filename": "ZakajPihaVeter-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://animations.physics.unsw.edu.au/jw/light/mirrors-and-images.htm",
-    "https://openstax.org/books/college-physics-2e/pages/25-7-image-formation-by-mirrors"
+    "https://www.nesdis.noaa.gov/about/k-12-education/atmosphere/why-does-wind-blow",
+    "https://www.eia.gov/energyexplained/wind/"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -29,7 +20,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 266,
+  "total_entries": 267,
   "total_pages": 27,
   "per_page": 10
 }
