@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/ebd71d6698ce3dff73b556dbddebe5a1789f378ee60ec63337c87847ff57a921.m4a",
+    "title": "Zakaj piha veter?",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 279.684,
+    "source": "NotebookLM",
+    "companion_id": "ce4311ce1ed71d585b3dc2d13fac28ca28e8d02280f2438f2c9841f5fa409aaa"
+  },
   "date": "2026-11-21",
   "person": "Zakaj piha veter?",
   "image_filename": "ZakajPihaVeter-sl.png",
