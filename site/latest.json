@@ -1,24 +1,17 @@
 {
-  "podcast": {
-    "url": "audio/ebd71d6698ce3dff73b556dbddebe5a1789f378ee60ec63337c87847ff57a921.m4a",
-    "title": "Zakaj piha veter?",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 279.684,
-    "source": "NotebookLM",
-    "companion_id": "ce4311ce1ed71d585b3dc2d13fac28ca28e8d02280f2438f2c9841f5fa409aaa"
-  },
-  "date": "2026-11-21",
-  "person": "Zakaj piha veter?",
-  "image_filename": "ZakajPihaVeter-sl.png",
+  "date": "2026-11-22",
+  "person": "Zakaj so alpske rastline nizke?",
+  "image_filename": "ZakajSoAlpskeRastlineNizke-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.nesdis.noaa.gov/about/k-12-education/atmosphere/why-does-wind-blow",
-    "https://www.eia.gov/energyexplained/wind/"
+    "https://blogs.ubc.ca/alpineplants/alpine-plant-adaptations/",
+    "https://plants.ces.ncsu.edu/plants/silene-acaulis/",
+    "https://herbaria.plants.ox.ac.uk/bol/plants400/Profiles/CD/Dryas",
+    "https://www.unibas.ch/en/News-Events/News/Uni-Research/Alpine-plants-are-losing-their-white-protective-coat.html"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -29,7 +22,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 267,
+  "total_entries": 268,
   "total_pages": 27,
   "per_page": 10
 }
