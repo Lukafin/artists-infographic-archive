@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/39cab3c0d2b3dfe1656d7f6ca0d0d266bf4f3d9329e71bb1aec5047ef1ca7eb1.m4a",
+    "title": "Zakaj so alpske rastline nizke?",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 359.886,
+    "source": "NotebookLM",
+    "companion_id": "bc54f649926469a42d7fd2359563aae874e3378bb061b40ef5a0244206e832c4"
+  },
   "date": "2026-11-22",
   "person": "Zakaj so alpske rastline nizke?",
   "image_filename": "ZakajSoAlpskeRastlineNizke-sl.png",
