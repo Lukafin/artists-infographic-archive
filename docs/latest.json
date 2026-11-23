@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/4da2ba925d09bbe4b7d9aed78c5b336b7d92cd6ec60163066d8443440b49f36f.m4a",
+    "title": "Gams v strmem svetu",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 299.886,
+    "source": "NotebookLM",
+    "companion_id": "32945d1b51e8e844cd5232fa0ed028fbc1a9022bda958213b27ed3576c689886"
+  },
   "date": "2026-11-23",
   "person": "Gams v strmem svetu",
   "image_filename": "GamsVStrmemSvetu-sl.png",

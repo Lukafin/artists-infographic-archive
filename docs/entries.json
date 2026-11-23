@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 269,
-      "podcast": 47,
+      "podcast": 48,
       "interactive_site": 1
     }
   },
@@ -106,8 +106,18 @@
       "source_count": 4,
       "search_text": "gams v strmem svetu school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/4da2ba925d09bbe4b7d9aed78c5b336b7d92cd6ec60163066d8443440b49f36f.m4a",
+        "title": "Gams v strmem svetu",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 299.886,
+        "source": "NotebookLM",
+        "companion_id": "32945d1b51e8e844cd5232fa0ed028fbc1a9022bda958213b27ed3576c689886"
+      }
     },
     {
       "date": "2026-11-22",
