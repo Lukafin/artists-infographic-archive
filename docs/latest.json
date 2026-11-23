@@ -1,26 +1,17 @@
 {
-  "podcast": {
-    "url": "audio/39cab3c0d2b3dfe1656d7f6ca0d0d266bf4f3d9329e71bb1aec5047ef1ca7eb1.m4a",
-    "title": "Zakaj so alpske rastline nizke?",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 359.886,
-    "source": "NotebookLM",
-    "companion_id": "bc54f649926469a42d7fd2359563aae874e3378bb061b40ef5a0244206e832c4"
-  },
-  "date": "2026-11-22",
-  "person": "Zakaj so alpske rastline nizke?",
-  "image_filename": "ZakajSoAlpskeRastlineNizke-sl.png",
+  "date": "2026-11-23",
+  "person": "Gams v strmem svetu",
+  "image_filename": "GamsVStrmemSvetu-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://blogs.ubc.ca/alpineplants/alpine-plant-adaptations/",
-    "https://plants.ces.ncsu.edu/plants/silene-acaulis/",
-    "https://herbaria.plants.ox.ac.uk/bol/plants400/Profiles/CD/Dryas",
-    "https://www.unibas.ch/en/News-Events/News/Uni-Research/Alpine-plants-are-losing-their-white-protective-coat.html"
+    "https://www.tnp.si/sl/park/narava-in-kultura/zivalstvo/",
+    "https://nationalpark.ch/en/flora-and-fauna/chamois/",
+    "https://www.doc.govt.nz/parks-and-recreation/things-to-do/hunting/what-to-hunt/chamois/",
+    "https://nationalpark.ch/en/flora-and-fauna/ibex/"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -31,7 +22,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 268,
+  "total_entries": 269,
   "total_pages": 27,
   "per_page": 10
 }

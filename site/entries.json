@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 268,
+    "total_entries": 269,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 234
+      "age_6": 235
     },
     "category_counts": {
-      "school_poster": 80,
+      "school_poster": 81,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,84 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 219,
+      "sl": 220,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 268,
+      "infographic": 269,
       "podcast": 47,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-23",
+      "person": "Gams v strmem svetu",
+      "filename": "GamsVStrmemSvetu-sl.png",
+      "image_filename": "GamsVStrmemSvetu-sl.png",
+      "sources": [
+        "https://www.tnp.si/sl/park/narava-in-kultura/zivalstvo/",
+        "https://nationalpark.ch/en/flora-and-fauna/chamois/",
+        "https://www.doc.govt.nz/parks-and-recreation/things-to-do/hunting/what-to-hunt/chamois/",
+        "https://nationalpark.ch/en/flora-and-fauna/ibex/"
+      ],
+      "original_article_url": null,
+      "title": "Gams v strmem svetu",
+      "summary": "Gams je spreten prebivalec strmih pobočij. Dvodelni parklji s trdim robom in mehkejšo notranjo podlago pomagajo pri oprijemu skale. Prepoznamo ga po temni progi čez oči in tankih rogovih s kavljastima konicama, ki jih imata samec in samica. Za razliko od odraslega samca kozoroga nima dolgih, močno nazaj ukrivljenih rogov. Poleti živi tudi nad gozdno mejo, pozimi pa tudi v gozdu.",
+      "age_suitability_details": {
+        "age_6": "Prepozna gamsa po obrazni progi in kavljastih rogovih ter poveže njegove parklje s plezanjem po skalah.",
+        "age_13": "Razloži sodelovanje trdega roba in mehkejšega podplata pri oprijemu ter loči gamsa od odraslega samca kozoroga.",
+        "adult": "Poveže zgradbo dvodelnih parkljev in značilnosti rogov z življenjem v razgibanem alpskem okolju, brez pretiravanja o varnosti ali sezonskih pravilih."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "837393cd-2c92-4ca0-8d33-fdac772de277",
+      "_kind": "native",
+      "_source_mtime": 1795413922.8132153,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "gams v strmem svetu school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-22",
       "person": "Zakaj so alpske rastline nizke?",
