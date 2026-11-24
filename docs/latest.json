@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/fdd25bdcad7095ebf604dbb00abdc52e47ed69fcf20f4420f26386f4a5c5aa76.m4a",
+    "title": "Kaj je v resnici zvezda?",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 409.879,
+    "source": "NotebookLM",
+    "companion_id": "6412dee5f2f8d84d08de9e2e59de2e176f761950dec06c6f051efaaa2dc66a88"
+  },
   "date": "2026-11-24",
   "person": "Kaj je v resnici zvezda?",
   "image_filename": "KajJeVResniciZvezda-sl.png",

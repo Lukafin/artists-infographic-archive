@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 270,
-      "podcast": 48,
+      "podcast": 49,
       "interactive_site": 1
     }
   },
@@ -105,8 +105,18 @@
       "source_count": 3,
       "search_text": "kaj je v resnici zvezda? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/fdd25bdcad7095ebf604dbb00abdc52e47ed69fcf20f4420f26386f4a5c5aa76.m4a",
+        "title": "Kaj je v resnici zvezda?",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 409.879,
+        "source": "NotebookLM",
+        "companion_id": "6412dee5f2f8d84d08de9e2e59de2e176f761950dec06c6f051efaaa2dc66a88"
+      }
     },
     {
       "date": "2026-11-23",
