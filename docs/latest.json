@@ -1,26 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/4da2ba925d09bbe4b7d9aed78c5b336b7d92cd6ec60163066d8443440b49f36f.m4a",
-    "title": "Gams v strmem svetu",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 299.886,
-    "source": "NotebookLM",
-    "companion_id": "32945d1b51e8e844cd5232fa0ed028fbc1a9022bda958213b27ed3576c689886"
-  },
-  "date": "2026-11-23",
-  "person": "Gams v strmem svetu",
-  "image_filename": "GamsVStrmemSvetu-sl.png",
+  "date": "2026-11-24",
+  "person": "Kaj je v resnici zvezda?",
+  "image_filename": "KajJeVResniciZvezda-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://www.tnp.si/sl/park/narava-in-kultura/zivalstvo/",
-    "https://nationalpark.ch/en/flora-and-fauna/chamois/",
-    "https://www.doc.govt.nz/parks-and-recreation/things-to-do/hunting/what-to-hunt/chamois/",
-    "https://nationalpark.ch/en/flora-and-fauna/ibex/"
+    "https://science.nasa.gov/universe/stars/",
+    "https://spaceplace.nasa.gov/sun-heat/en/",
+    "https://science.nasa.gov/sun/facts/"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -31,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 269,
+  "total_entries": 270,
   "total_pages": 27,
   "per_page": 10
 }
