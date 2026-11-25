@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 270,
+    "total_entries": 271,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 236
+      "age_6": 237
     },
     "category_counts": {
-      "school_poster": 82,
+      "school_poster": 83,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,84 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 221,
+      "sl": 222,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 270,
+      "infographic": 271,
       "podcast": 49,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-25",
+      "person": "Kaj naredim, če me nekaj na spletu prestraši?",
+      "filename": "KajNaredimCeMeNekajNaSpletuPrestrasi-sl.png",
+      "image_filename": "KajNaredimCeMeNekajNaSpletuPrestrasi-sl.png",
+      "sources": [
+        "https://otroci.safe.si/ustrahovanje",
+        "https://safe.si/novice/ce-naletis-na-grozljivo-ali-strasljivo-vsebino-jo-prijavi",
+        "https://www.e-tom.si/",
+        "https://www.e-tom.si/tom-klepetalnica-pogosta-vprasanja-odgovori"
+      ],
+      "original_article_url": null,
+      "title": "Kaj naredim, če me nekaj na spletu prestraši?",
+      "summary": "Ko otroka spletna vsebina prestraši, se lahko ustavi in jo zapre. Na žaljiva sporočila ne odgovarja in strašljivih posnetkov ne pošilja naprej. O stiski pove odraslemu, ki mu zaupa; skupaj poiščeta pomoč, prijavita vsebino in po potrebi blokirata osebo. Če prvi odrasli ne pomaga, se obrne na drugega. Za pogovor je na voljo brezplačni TOM telefon 116 111 vsak dan od 12. do 20. ure. Otrok za nadlegovanje ni kriv in težave ne rešuje sam.",
+      "age_suitability_details": {
+        "age_6": "Pozna tri korake ob strašljivi spletni vsebini: ustavi se, povej odraslemu in skupaj poiščita pomoč.",
+        "age_13": "Razlikuje prekinitev stika, prijavo vsebine in blokiranje osebe ter ve, da nadlegovanja ni treba reševati samostojno.",
+        "adult": "Razume vlogo neobsojajoče podpore otroku, odgovorne prijave brez širjenja škodljivih vsebin in omejitve svetovalnih storitev."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "0c007169-0c71-4dc8-a5ed-c6bbcc5a941c",
+      "_kind": "native",
+      "_source_mtime": 1795586740.310888,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 4,
+      "search_text": "kaj naredim, če me nekaj na spletu prestraši? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-24",
       "person": "Kaj je v resnici zvezda?",

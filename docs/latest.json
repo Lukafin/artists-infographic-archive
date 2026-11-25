@@ -1,25 +1,17 @@
 {
-  "podcast": {
-    "url": "audio/fdd25bdcad7095ebf604dbb00abdc52e47ed69fcf20f4420f26386f4a5c5aa76.m4a",
-    "title": "Kaj je v resnici zvezda?",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 409.879,
-    "source": "NotebookLM",
-    "companion_id": "6412dee5f2f8d84d08de9e2e59de2e176f761950dec06c6f051efaaa2dc66a88"
-  },
-  "date": "2026-11-24",
-  "person": "Kaj je v resnici zvezda?",
-  "image_filename": "KajJeVResniciZvezda-sl.png",
+  "date": "2026-11-25",
+  "person": "Kaj naredim, če me nekaj na spletu prestraši?",
+  "image_filename": "KajNaredimCeMeNekajNaSpletuPrestrasi-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://science.nasa.gov/universe/stars/",
-    "https://spaceplace.nasa.gov/sun-heat/en/",
-    "https://science.nasa.gov/sun/facts/"
+    "https://otroci.safe.si/ustrahovanje",
+    "https://safe.si/novice/ce-naletis-na-grozljivo-ali-strasljivo-vsebino-jo-prijavi",
+    "https://www.e-tom.si/",
+    "https://www.e-tom.si/tom-klepetalnica-pogosta-vprasanja-odgovori"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -30,7 +22,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 270,
+  "total_entries": 271,
   "total_pages": 27,
   "per_page": 10
 }
