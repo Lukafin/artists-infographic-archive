@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 271,
-      "podcast": 49,
+      "podcast": 50,
       "interactive_site": 1
     }
   },
@@ -106,8 +106,18 @@
       "source_count": 4,
       "search_text": "kaj naredim, če me nekaj na spletu prestraši? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/ac2d9dd1a07576b35105a5c087cf904ab6e62c6e591c0fc9d3577dd6074b9def.m4a",
+        "title": "Kaj naredim, če me nekaj na spletu prestraši?",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 362.556,
+        "source": "NotebookLM",
+        "companion_id": "f33d49745fb6a9c324e1227a7ec1f3948d8bdcc6dd5e85b929cd1261a8d80ea8"
+      }
     },
     {
       "date": "2026-11-24",
