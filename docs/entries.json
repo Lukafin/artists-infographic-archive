@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 272,
-      "podcast": 50,
+      "podcast": 51,
       "interactive_site": 1
     }
   },
@@ -105,8 +105,18 @@
       "source_count": 3,
       "search_text": "kako mravlje sodelujejo? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/34b21a7090cbb6c53131b4d7beb0845b58027b05cb80f6989055898266ffc93a.m4a",
+        "title": "Kako mravlje sodelujejo?",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 322.688,
+        "source": "NotebookLM",
+        "companion_id": "b21234635c5ec3945533f6c44c60763a63648bb7ebfe2351f88d49f09a3088ea"
+      }
     },
     {
       "date": "2026-11-25",
