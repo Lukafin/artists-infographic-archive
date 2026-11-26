@@ -1,26 +1,16 @@
 {
-  "podcast": {
-    "url": "audio/ac2d9dd1a07576b35105a5c087cf904ab6e62c6e591c0fc9d3577dd6074b9def.m4a",
-    "title": "Kaj naredim, če me nekaj na spletu prestraši?",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 362.556,
-    "source": "NotebookLM",
-    "companion_id": "f33d49745fb6a9c324e1227a7ec1f3948d8bdcc6dd5e85b929cd1261a8d80ea8"
-  },
-  "date": "2026-11-25",
-  "person": "Kaj naredim, če me nekaj na spletu prestraši?",
-  "image_filename": "KajNaredimCeMeNekajNaSpletuPrestrasi-sl.png",
+  "date": "2026-11-26",
+  "person": "Kako mravlje sodelujejo?",
+  "image_filename": "KakoMravljeSodelujejo-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://otroci.safe.si/ustrahovanje",
-    "https://safe.si/novice/ce-naletis-na-grozljivo-ali-strasljivo-vsebino-jo-prijavi",
-    "https://www.e-tom.si/",
-    "https://www.e-tom.si/tom-klepetalnica-pogosta-vprasanja-odgovori"
+    "https://askabiologist.asu.edu/explore/secrets-superorganism",
+    "https://askabiologist.asu.edu/explore/ant-anatomy",
+    "https://askabiologist.asu.edu/explore/ant-life-part-1"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -31,7 +21,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 271,
-  "total_pages": 27,
+  "total_entries": 272,
+  "total_pages": 28,
   "per_page": 10
 }
