@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/da869133b4093da1c69c0e1e6dd55722496fb6b71ed6160798a5f918d92e2673.m4a",
+    "title": "Kako nastane jutranja rosa?",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 349.205,
+    "source": "NotebookLM",
+    "companion_id": "5c5bff3f29746e4d721aca7b4a3c34b7f20001beba0085cda56a5af7ca8c9388"
+  },
   "date": "2026-11-27",
   "person": "Kako nastane jutranja rosa?",
   "image_filename": "KakoNastaneJutranjaRosa-sl.png",
