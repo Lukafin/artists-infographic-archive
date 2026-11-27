@@ -1,25 +1,15 @@
 {
-  "podcast": {
-    "url": "audio/34b21a7090cbb6c53131b4d7beb0845b58027b05cb80f6989055898266ffc93a.m4a",
-    "title": "Kako mravlje sodelujejo?",
-    "language": "sl",
-    "mime_type": "audio/mp4",
-    "duration_seconds": 322.688,
-    "source": "NotebookLM",
-    "companion_id": "b21234635c5ec3945533f6c44c60763a63648bb7ebfe2351f88d49f09a3088ea"
-  },
-  "date": "2026-11-26",
-  "person": "Kako mravlje sodelujejo?",
-  "image_filename": "KakoMravljeSodelujejo-sl.png",
+  "date": "2026-11-27",
+  "person": "Kako nastane jutranja rosa?",
+  "image_filename": "KakoNastaneJutranjaRosa-sl.png",
   "category": "school_poster",
   "category_label": "Šolski plakat",
   "language": "sl",
   "language_label": "SL",
   "original_article_url": null,
   "sources": [
-    "https://askabiologist.asu.edu/explore/secrets-superorganism",
-    "https://askabiologist.asu.edu/explore/ant-anatomy",
-    "https://askabiologist.asu.edu/explore/ant-life-part-1"
+    "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/temperature/dew",
+    "https://www.weather.gov/source/zhu/ZHU_Training_Page/fog_stuff/Dew_Frost/Dew_Frost.htm"
   ],
   "age_suitability_keys": [
     "age_6"
@@ -30,7 +20,7 @@
   "age_suitability_labels_sl": [
     "6+ let"
   ],
-  "total_entries": 272,
+  "total_entries": 273,
   "total_pages": 28,
   "per_page": 10
 }

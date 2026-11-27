@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 272,
+    "total_entries": 273,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 238
+      "age_6": 239
     },
     "category_counts": {
-      "school_poster": 84,
+      "school_poster": 85,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,82 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 223,
+      "sl": 224,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 272,
+      "infographic": 273,
       "podcast": 51,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-27",
+      "person": "Kako nastane jutranja rosa?",
+      "filename": "KakoNastaneJutranjaRosa-sl.png",
+      "image_filename": "KakoNastaneJutranjaRosa-sl.png",
+      "sources": [
+        "https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/temperature/dew",
+        "https://www.weather.gov/source/zhu/ZHU_Training_Page/fog_stuff/Dew_Frost/Dew_Frost.htm"
+      ],
+      "original_article_url": null,
+      "title": "Kako nastane jutranja rosa?",
+      "summary": "Jutranja rosa nastane iz vodne pare v zraku, ki se na dovolj ohlajeni površini zgosti v tekoče kapljice. Jasne in mirne noči omogočajo močno ohlajanje travnih bilk. Rosišče označuje temperaturo začetka kondenzacije. Podoben pojav opazimo na zunanji steni hladnega kozarca. Rosa nastane na površini in ne pada iz oblaka kot dež.",
+      "age_suitability_details": {
+        "age_6": "Razume, da se na hladni travi iz vode v zraku pojavijo kapljice, čeprav ni deževalo.",
+        "age_13": "Poveže nočno ohlajanje površine, rosišče in kondenzacijo ter primerja roso s kapljicami na hladnem kozarcu.",
+        "adult": "Razlikuje sevalno ohlajanje površin od temperature okoliškega zraka ter razume vlogo vlage, oblačnosti in vetra pri nastanku rose."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "c15f0d5c-988d-43b5-bbfe-318da5ebc5ac",
+      "_kind": "native",
+      "_source_mtime": 1795759492.6987967,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 2,
+      "search_text": "kako nastane jutranja rosa? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-26",
       "person": "Kako mravlje sodelujejo?",
