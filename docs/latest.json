@@ -1,4 +1,13 @@
 {
+  "podcast": {
+    "url": "audio/875760b1f16de973ade24bd0120a8f9d9f9fdea222c8e44ceca3f9d091a15641.m4a",
+    "title": "Kako potujejo semena?",
+    "language": "sl",
+    "mime_type": "audio/mp4",
+    "duration_seconds": 375.699,
+    "source": "NotebookLM",
+    "companion_id": "7e79075185579396d1ab2a1c6f40d8970dcdc23839e110b12b8f3c6212973f0c"
+  },
   "date": "2026-11-28",
   "person": "Kako potujejo semena?",
   "image_filename": "KakoPotujejoSemena-sl.png",

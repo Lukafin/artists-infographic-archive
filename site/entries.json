@@ -37,7 +37,7 @@
     },
     "format_counts": {
       "infographic": 274,
-      "podcast": 52,
+      "podcast": 53,
       "interactive_site": 1
     }
   },
@@ -104,8 +104,18 @@
       "source_count": 2,
       "search_text": "kako potujejo semena? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
       "formats": [
-        "infographic"
-      ]
+        "infographic",
+        "podcast"
+      ],
+      "podcast": {
+        "url": "audio/875760b1f16de973ade24bd0120a8f9d9f9fdea222c8e44ceca3f9d091a15641.m4a",
+        "title": "Kako potujejo semena?",
+        "language": "sl",
+        "mime_type": "audio/mp4",
+        "duration_seconds": 375.699,
+        "source": "NotebookLM",
+        "companion_id": "7e79075185579396d1ab2a1c6f40d8970dcdc23839e110b12b8f3c6212973f0c"
+      }
     },
     {
       "date": "2026-11-27",
