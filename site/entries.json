@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_entries": 273,
+    "total_entries": 274,
     "categories": [
       "artist",
       "nobel_prize",
@@ -20,10 +20,10 @@
       "adult"
     ],
     "age_suitability_counts": {
-      "age_6": 239
+      "age_6": 240
     },
     "category_counts": {
-      "school_poster": 85,
+      "school_poster": 86,
       "artist": 56,
       "scientist": 112,
       "sport": 10,
@@ -31,17 +31,82 @@
       "science_news": 8
     },
     "language_counts": {
-      "sl": 224,
+      "sl": 225,
       "de": 15,
       "en": 34
     },
     "format_counts": {
-      "infographic": 273,
+      "infographic": 274,
       "podcast": 52,
       "interactive_site": 1
     }
   },
   "entries": [
+    {
+      "date": "2026-11-28",
+      "person": "Kako potujejo semena?",
+      "filename": "KakoPotujejoSemena-sl.png",
+      "image_filename": "KakoPotujejoSemena-sl.png",
+      "sources": [
+        "https://www.mainegardens.org/magic-of-plants-seed-dispersal/",
+        "https://www.rhs.org.uk/education-learning/school-gardening/resources/curriculum-linked/seed-dispersal"
+      ],
+      "original_article_url": null,
+      "title": "Kako potujejo semena?",
+      "summary": "Semena se lahko razširjajo z vetrom, vodo in živalmi. Regratovo padalce upočasni padanje ploda s semenom, repinčevi kaveljčki se oprimejo živalske dlake, vlaknat kokosov plod pa plava po vodi. Razširjanje daje semenom možnost rasti na novem kraju, vendar vsako seme ne vzklije.",
+      "age_suitability_details": {
+        "age_6": "Na regratu, repincu in kokosu spozna, kako semenom pri poti pomagajo veter, živali in voda.",
+        "age_13": "Poveže zgradbo padalca, kaveljčkov in vlaknatega ploda z načinom razširjanja ter loči seme od ploda.",
+        "adult": "Razume pomen razširjanja za naseljevanje novih rastišč, povezavo med obliko razširjevalne enote in prenašalcem ter omejitve uspešnega kaljenja."
+      },
+      "age_suitability_levels": [
+        {
+          "key": "age_6",
+          "label": "Age 6",
+          "target_age": 6,
+          "complexity": "simple",
+          "guidance": "Use concrete, playful, one-sentence explanations with very little abstraction; this is the current kid-friendly level."
+        },
+        {
+          "key": "age_13",
+          "label": "Age 13",
+          "target_age": 13,
+          "complexity": "intermediate",
+          "guidance": "Use richer context, cause-and-effect, dates, and terms a curious early teenager can understand without specialist knowledge."
+        },
+        {
+          "key": "adult",
+          "label": "Adults",
+          "target_age": null,
+          "complexity": "advanced",
+          "guidance": "Use accurate adult-level context, nuance, historical trade-offs, field-specific terminology when helpful, and why the person matters."
+        }
+      ],
+      "category": "school_poster",
+      "award_year": null,
+      "award_field": null,
+      "language": "sl",
+      "assignment_id": "f275a1a3-269c-4733-b8e3-e0eb87e3a940",
+      "_kind": "native",
+      "_source_mtime": 1795845932.7877529,
+      "category_label": "Šolski plakat",
+      "category_class": "school-poster",
+      "language_label": "SL",
+      "age_suitability_keys": [
+        "age_6"
+      ],
+      "age_suitability_labels_en": [
+        "Ages 6+"
+      ],
+      "age_suitability_labels_sl": [
+        "6+ let"
+      ],
+      "source_count": 2,
+      "search_text": "kako potujejo semena? school_poster šolski plakat sl age_6 ages 6+ 6+ let",
+      "formats": [
+        "infographic"
+      ]
+    },
     {
       "date": "2026-11-27",
       "person": "Kako nastane jutranja rosa?",
